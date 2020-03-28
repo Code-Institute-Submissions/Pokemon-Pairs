@@ -25,7 +25,7 @@ $("#secondCard").click(function(){
 $("#thirdCard").click(function(){
     y++;
     console.log(y);
-    if ( x == 2){
+    if ( y == 2){
         console.log("Well done!")
     }
 });
@@ -33,7 +33,7 @@ $("#thirdCard").click(function(){
 $("#fourthCard").click(function(){
     y++;
     console.log(y);
-    if ( x == 2){
+    if ( y == 2){
         console.log("Well done!")
     }
 });
