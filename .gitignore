@@ -1,4 +1,4 @@
 .gitpod.dockerfile
 .gitpod.yml
 .theia
-main.scss
+assets/main.scss
