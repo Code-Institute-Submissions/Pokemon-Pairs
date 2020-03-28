@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.showCard {
+  background-color: green;
+}
+
+#firstCard,
+#secondCard,
+#thirdCard,
+#fourthCard {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  background-color: blue;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
