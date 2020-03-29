@@ -6,6 +6,7 @@ $(".box").click(function(){
 let x = 0;
 let y = 0;
 
+
 $("#firstCard").click(function(){
     if (y == 1) {
         console.log("Sorry not a match!");
@@ -20,8 +21,7 @@ $("#firstCard").click(function(){
             console.log("Well done!");
             $(this).css("display", "none");
             $("#secondCard").css("display", "none");
-            x = 0;
-        } 
+    } 
     else {
         x++;
         console.log(x);
@@ -42,7 +42,6 @@ $("#secondCard").click(function(){
             console.log("Well done!");
             $(this).css("display", "none");
             $("#firstCard").css("display", "none");
-            x = 0;
         } 
     else {
         x++;
@@ -64,7 +63,6 @@ $("#thirdCard").click(function(){
             console.log("Well done!");
             $(this).css("display", "none");
             $("#fourthCard").css("display", "none");
-            y = 0;
         } 
     else {
         y++;
@@ -76,21 +74,21 @@ $("#fourthCard").click(function(){
    if (x == 1) {
         console.log("Sorry not a match!");
         console.log(y);
-        $(".box").css("background-color", "blue");
+      $(".box").css("background-color", "blue");
         x = 0;
         console.log(x);
     }
     else if(y == 1){
             y++;
-
             console.log(y);
             console.log("Well done!");
             $(this).css("display", "none");
             $("#thirdCard").css("display", "none");
-            y = 0;
         } 
     else {
         y++;
         console.log(y);
     }
 });
+
+
