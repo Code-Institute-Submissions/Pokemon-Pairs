@@ -1,12 +1,10 @@
-$(".box").click(function(){
-    $(this).css("background-color", "green");
 
-});
 
 let x = 0;
 let y = 0;
+let z = 0;
 
-
+    
 $("#firstCard").click(function(){
     if (y == 1) {
         console.log("Sorry not a match!");
@@ -88,6 +86,15 @@ $("#fourthCard").click(function(){
     else {
         y++;
         console.log(y);
+    }
+});
+
+$(".box").click(function(){
+    $(this).css("background-color", "green");
+    z++;
+    console.log("You have used" + " " + z + " " + "moves!")
+    if(x == 2 && y == 2){
+        console.log("Game over!");
     }
 });
 
