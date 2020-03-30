@@ -40,6 +40,9 @@ let number9 = number2 * 2;
 let number10 = number3 * 2;
 let number11 = number4 * 2;
 let number12 = number5 * 2;
+let number13 = number3 * 3;
+let number14 = number4 * 3;
+let number15 = number5 * 3;
 
 console.log(number8);
 console.log(number9);
