@@ -53,7 +53,7 @@
 // console.log(number14);
 // console.log(number15);
 // console.log(number16);
-// console.log("The total is" + " " + test + ". These numbers are random.");
+// console.log("The total is" + " " + test + ". These numbers have no duplicates.");
 // });
 
 
@@ -158,11 +158,10 @@
 
 
 // support and initial ideas from the following URL. Answered by Michael Walter on Nov 20 '17 at 14:50
-//https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
+// https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
 $("#start").click(function(){
 let elem= document.getElementById("card-grid");
-    //elem.style.gridTemplateAreas = '"pair1a pair2a" "pair1b pair2b" "pair3a pair4a" "pair4a pair4b"';
-      elem.style.gridTemplateAreas = '"pair1b pair1a"'
+      elem.style.gridTemplateAreas = '"pair1b pair1a" "pair2b pair2a" "pair3b pair3a" "pair4b pair4a';
       console.log("The grid-template area should have been redefined now.");
 });
       
