@@ -1,15 +1,14 @@
 $("#start").click(function(){
+    //Declaring the arrays
 let array1 = [1, 7];
 let array2 = [3, 4, 5];
 let array3 = [11, 13, 16];
 
+//Randomly giving each value from each array to its own variable, ensuring no duplicates.
 do {
 var number1 = array1[Math.floor(Math.random() * 2)];
 var number2 = array1[Math.floor(Math.random() * 2)];
 } while(number2 == number1);
-
-console.log(number1);
-console.log(number2);
 
 do {
     var number3 = array2[Math.floor(Math.random() * 3)];
@@ -17,19 +16,13 @@ do {
     var number5 = array2[Math.floor(Math.random() * 3)];
     } while(number4 == number3 || number5 == number4 || number5 == number3);
 
-console.log(number3);
-console.log(number4);
-console.log(number5);
-
 do {
 var number6 = array3[Math.floor(Math.random() * 3)];
 var number7 = array3[Math.floor(Math.random() * 3)];
 var number8 = array3[Math.floor(Math.random() * 3)];
 } while(number7 == number6 || number8 == number6 || number8 == number7);
 
-console.log(number6);
-console.log(number7);
-
+//Randomly generating numbers 9-16
 let number9 = number1 * 2;
 let number10 = number2 * 2;
 let number11 = number3 * 2;
@@ -39,6 +32,19 @@ let number14 = number3 * 3;
 let number15 = number4 * 3;
 let number16 = number5 * 3;
 
+//Console.log the number plus automated test to check all the numbers are random.
+let test =  number1 + number2 + number3 + number4 +
+            number5 + number6 + number7 + number8 +
+            number9 + number10 + number11 + number12 +
+            number13 + number14 + number15 + number16 ;
+
+console.log(number1);
+console.log(number2);
+console.log(number3);
+console.log(number4);
+console.log(number5);
+console.log(number6);
+console.log(number7);
 console.log(number8);
 console.log(number9);
 console.log(number10);
@@ -48,10 +54,5 @@ console.log(number13);
 console.log(number14);
 console.log(number15);
 console.log(number16);
-
-
-console.log(number1 + number2 + number3 + number4 +
-            number5 + number6 + number7 + number8 +
-            number9 + number10 + number11 + number12 +
-            number13 + number14 + number15 + number16);
+console.log("The total is" + " " + test + ". These are no duplicates.");
 });
