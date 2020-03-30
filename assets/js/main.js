@@ -31,4 +31,15 @@ var number5 = array2[Math.floor(Math.random() * 3)];
 console.log(number3);
 console.log(number4);
 console.log(number5);
+
+do {
+var number6 = array3[Math.floor(Math.random() * 2)];
+} while(number6 == comparison);
+
+do {
+var number7 = array3[Math.floor(Math.random() * 2)];
+} while(number7 == comparison || number7 == number1);
+
+console.log(number6);
+console.log(number7);
 });
