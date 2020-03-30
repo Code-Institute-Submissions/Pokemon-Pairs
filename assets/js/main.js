@@ -165,7 +165,7 @@
 $("#start").click(function(){
 
 //Put in a function to randomly generate these arrays. 
-// ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"]
+var originalArray = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
 
 var array0 = ["pair1b", "pair1a"];
 var array1 = ["pair2b", "pair2a"];
