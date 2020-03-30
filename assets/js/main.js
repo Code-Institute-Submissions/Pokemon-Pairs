@@ -160,21 +160,9 @@
 // support and initial ideas from the following URL. Answered by Michael Walter on Nov 20 '17 at 14:50
 // https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
 $("#start").click(function(){
-var b1 = 'pair1b';
-var a1 = 'pair1a';
-var b2 = "pair2b";
-var a2 = "pair2a";
-var b3 = "pair3b";
-var a3 = "pair3a";
-var b4 = "pair4b";
-var a4 = "pair4a";
-var array4 = [b1, a1, b2, a2, b3, a3, b4, a4];
-// var array4 = [b1, a1, b2, a2];
-console.log(`'${array4[0]} ${array4[1]}' '${array4[2]} ${array4[3]}'`);
-//console.log(`'"${array4[0]} ${array4[1]}" "${array4[2]} ${array4[3]}" "${array4[4]} ${array4[5]}" "${array4[6]} ${array4[7]}"'`);
+var array4 = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
+
 let elem= document.getElementById("card-grid");
-      //elem.style.gridTemplateAreas = '"pair1b pair1a" "pair2b pair2a" "pair3b pair3a" "pair4b pair4a"';
-      //elem.style.gridTemplateAreas =`'"${array4[0]} ${array4[1]}" "${array4[2]} ${array4[3]}" "${array4[4]} ${array4[5]}" "${array4[6]} ${array4[7]}"'`;
       elem.style.gridTemplateAreas =`'${array4[0]} ${array4[1]}' '${array4[2]} ${array4[3]}' '${array4[4]} ${array4[5]}' '${array4[6]} ${array4[7]}' `;
       console.log("The grid-template area should have been redefined now.");
 });
