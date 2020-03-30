@@ -3,9 +3,8 @@ let array1 = [1, 7];
 let array2 = [3, 4, 5];
 let array3 = [11, 13, 16];
 
-var number1 = array1[Math.floor(Math.random() * 2)];
-
 do {
+var number1 = array1[Math.floor(Math.random() * 2)];
 var number2 = array1[Math.floor(Math.random() * 2)];
 } while(number2 == number1);
 
