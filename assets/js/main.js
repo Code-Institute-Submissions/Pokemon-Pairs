@@ -164,11 +164,12 @@ var b1 = "pair1b";
 var a1 = "pair1a";
 var b2 = "pair2b";
 var a2 = "pair2a";
+var array4 = ["pair1b", "pair1a"];
 
-console.log(`'"${b1} ${a1}"'`);
+console.log(`'${array4[0]} ${array4[1]}'`);
 let elem= document.getElementById("card-grid");
       //elem.style.gridTemplateAreas = '"pair1b pair1a" "pair2b pair2a" "pair3b pair3a" "pair4b pair4a"';
-      elem.style.gridTemplateAreas = `'${b1} ${a1}'`;
+      elem.style.gridTemplateAreas = `'${array4[0]} ${array4[1]}'`;
       console.log("The grid-template area should have been redefined now.");
 });
       
