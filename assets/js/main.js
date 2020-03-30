@@ -1,104 +1,190 @@
 $("#start").click(function(){
-
-
-// let x = 0;
-// let y = 0;
-// let z = 0;
-
+    let a = 0;
+    let b = 0;
+    let x = 0;
+    let y = 0;
+    let w = 0;   
+    let z = 0;
     
-// $("#firstCard").click(function(){
-//     if (y == 1) {
-//         console.log("Sorry not a match!");
-//         console.log(x);
-//         $(".box").css("background-color", "blue");
-//         y = 0;
-//         console.log(y);
-//     }
-//     else if(x == 1){
-//             x++;
-//             console.log(x);
-//             console.log("Well done!");
-//             $(this).css("display", "none");
-//             $("#secondCard").css("display", "none");
-//     } 
-//     else {
-//         x++;
-//         console.log(x);
-//     }
-// });
+ $("#card1").click(function(){
+     if (y == 1 || a == 1 || b == 1 ){
+         console.log("Sorry not a match!");
+         console.log(x);
+         $(".box").css("background-color", "blue");
+         y = 0;
+         a = 0;
+         b = 0;
+         console.log(y);
+     }
+     else if(x == 1){
+             x++;
+             console.log(x);
+             console.log("Well done!");
+             $(this).css("display", "none");
+             $("#card2").css("display", "none");
+             z++;
+     } 
+     else {
+         x++;
+         console.log(x);
+     }
+ });
 
-// $("#secondCard").click(function(){
-//      if (y == 1) {
-//         console.log("Sorry not a match!");
-//         console.log(x);
-//         $(".box").css("background-color", "blue");
-//         y = 0;
-//         console.log(y);
-//     }
-//     else if(x == 1){
-//             x++;
-//             console.log(x);
-//             console.log("Well done!");
-//             $(this).css("display", "none");
-//             $("#firstCard").css("display", "none");
-//         } 
-//     else {
-//         x++;
-//         console.log(x);
-//     }
-// });
+$("#card2").click(function(){
+     if (y == 1 || a == 1 || b == 1 ){
+        console.log("Sorry not a match!");
+        console.log(x);
+        $(".box").css("background-color", "blue");
+        y = 0;
+        a = 0;
+        b = 0;
+        console.log(y);
+    }
+    else if(x == 1){
+            x++;
+            console.log(x);
+            console.log("Well done!");
+            $(this).css("display", "none");
+            $("#card1").css("display", "none");
+            z++;
+        } 
+    else {
+        x++;
+        console.log(x);
+    }
+});
 
-// $("#thirdCard").click(function(){
-//     if (x == 1) {
-//         console.log("Sorry not a match!");
-//         console.log(y);
-//       $(".box").css("background-color", "blue");
-//         x = 0;
-//         console.log(x);
-//     }
-//     else if(y == 1){
-//             y++;
-//             console.log(y);
-//             console.log("Well done!");
-//             $(this).css("display", "none");
-//             $("#fourthCard").css("display", "none");
-//         } 
-//     else {
-//         y++;
-//         console.log(y);
-//     }
-// });
+$("#card3").click(function(){
+    if (x == 1) {
+        console.log("Sorry not a match!");
+        console.log(y);
+      $(".box").css("background-color", "blue");
+        x = 0;
+        console.log(x);
+    }
+    else if(y == 1){
+            y++;
+            console.log(y);
+            console.log("Well done!");
+            $(this).css("display", "none");
+            $("#card4").css("display", "none");
+            z++;
+        } 
+    else {
+        y++;
+        console.log(y);
+    }
+});
 
-// $("#fourthCard").click(function(){
-//    if (x == 1) {
-//         console.log("Sorry not a match!");
-//         console.log(y);
-//       $(".box").css("background-color", "blue");
-//         x = 0;
-//         console.log(x);
-//     }
-//     else if(y == 1){
-//             y++;
-//             console.log(y);
-//             console.log("Well done!");
-//             $(this).css("display", "none");
-//             $("#thirdCard").css("display", "none");
-//         } 
-//     else {
-//         y++;
-//         console.log(y);
-//     }
-// });
+$("#card4").click(function(){
+   if (x == 1) {
+        console.log("Sorry not a match!");
+        console.log(y);
+      $(".box").css("background-color", "blue");
+        x = 0;
+        console.log(x);
+    }
+    else if(y == 1){
+            y++;
+            console.log(y);
+            console.log("Well done!");
+            $(this).css("display", "none");
+            $("#card3").css("display", "none");
+            z++;
+        } 
+    else {
+        y++;
+        console.log(y);
+    }
+});
 
-// $(".box").click(function(){
-//     $(this).css("background-color", "green");
-//     z++;
-//     console.log("You have used" + " " + z + " " + "moves!")
-//     if(x == 2 && y == 2){
-//         console.log("Game over!");
-//     }
-// });
+$("#card5").click(function(){
+     if (a == 1) {
+         console.log("Sorry not a match!");
+         console.log(b);
+         $(".box").css("background-color", "blue");
+         a = 0;
+         console.log(a);
+     }
+     else if(b == 1){
+             b++;
+             console.log(b);
+             console.log("Well done!");
+             $(this).css("display", "none");
+             $("#card6").css("display", "none");
+             z++;
+     } 
+     else {
+         b++;
+         console.log(b);
+     }
+ });
 
+$("#card6").click(function(){
+     if (a == 1) {
+         console.log("Sorry not a match!");
+         console.log(b);
+         $(".box").css("background-color", "blue");
+         a = 0;
+         console.log(a);
+     }
+     else if(b == 1){
+             b++;
+             console.log(b);
+             console.log("Well done!");
+             $(this).css("display", "none");
+             $("#card5").css("display", "none");
+             z++;
+     } 
+     else {
+         b++;
+         console.log(b);
+     }
+ });
+
+$("#card7").click(function(){
+    if (b == 1) {
+         console.log("Sorry not a match!");
+         console.log(a);
+         $(".box").css("background-color", "blue");
+         b = 0;
+         console.log(b);
+     }
+     else if(a == 1){
+             a++;
+             console.log(a);
+             console.log("Well done!");
+             $(this).css("display", "none");
+             $("#card8").css("display", "none");
+             z++;
+     } 
+     else {
+         a++;
+         console.log(a);
+     }
+ });
+
+$("#card8").click(function(){
+   if (b == 1) {
+         console.log("Sorry not a match!");
+         console.log(a);
+         $(".box").css("background-color", "blue");
+         b = 0;
+         console.log(b);
+     }
+     else if(a == 1){
+             a++;
+             console.log(a);
+             console.log("Well done!");
+             $(this).css("display", "none");
+             $("#card8").css("display", "none");
+             z++;
+     } 
+     else {
+         a++;
+         console.log(a);
+     }
+ });
 
 // support and initial ideas from the following URL. Answered by Michael Walter on Nov 20 '17 at 14:50
 // https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript

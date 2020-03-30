@@ -32,7 +32,7 @@
     background-color: blue;
 }
 .pair3{
-    background-color: green;
+    background-color: purple;
 }
 .pair4{
     background-color:yellow;
@@ -52,14 +52,14 @@
   background-color: green;
 }
 
-#firstCard,
-#secondCard,
-#thirdCard,
-#fourthCard {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  display: inline-block;
-  background-color: blue;
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7,
+#card8 {
+   display: inline-block;    
 }
 
