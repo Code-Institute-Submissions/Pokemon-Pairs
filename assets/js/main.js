@@ -1,3 +1,76 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $("#start").click(function(){
     //Declaring the arrays
 let array1 = [1, 7];
@@ -36,8 +109,7 @@ let number16 = number5 * 3;
 let test =  number1 + number2 + number3 + number4 +
             number5 + number6 + number7 + number8 +
             number9 + number10 + number11 + number12 +
-            number13 + number14 + number15 + number16 ;
-
+            number13 + number14 + number15 + number16;
 console.log(number1);
 console.log(number2);
 console.log(number3);
@@ -54,5 +126,5 @@ console.log(number13);
 console.log(number14);
 console.log(number15);
 console.log(number16);
-console.log("The total is" + " " + test + ". These are no duplicates.");
+console.log("The total is" + " " + test + ". These numbers are random.");
 });
