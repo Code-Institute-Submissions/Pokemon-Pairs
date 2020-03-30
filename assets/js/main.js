@@ -160,8 +160,12 @@
 // support and initial ideas from the following URL. Answered by Michael Walter on Nov 20 '17 at 14:50
 // https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
 $("#start").click(function(){
+
+var b1 = "pair1b";
+var a1 = "pair1a";
 let elem= document.getElementById("card-grid");
-      elem.style.gridTemplateAreas = '"pair1b pair1a" "pair2b pair2a" "pair3b pair3a" "pair4b pair4a';
+      //elem.style.gridTemplateAreas = '"pair1b pair1a" "pair2b pair2a" "pair3b pair3a" "pair4b pair4a"';
+      elem.style.gridTemplateAreas = '"b1 a1" "pair2b pair2a"';
       console.log("The grid-template area should have been redefined now.");
 });
       
