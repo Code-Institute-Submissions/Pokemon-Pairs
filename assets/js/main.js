@@ -105,11 +105,6 @@
 
 
 
-// $("#start").click(function(){
-
-//Put in a function to randomly generate these arrays. 
-
-
 //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -142,35 +137,31 @@ console.log(array0, array1, array2, array3);
 
 do {
     var card1 = array0[Math.floor(Math.random() * 2)];
-    console.log(card1);
     var card2 = array0[Math.floor(Math.random() * 2)];
-    console.log(card2);
 }while(card1 == card2); 
-console.log(card1, card2);
+
 
 do {
-    var card1 = array0[Math.floor(Math.random() * 2)];
-    console.log(card1);
-    var card2 = array0[Math.floor(Math.random() * 2)];
-    console.log(card2);
-}while(card1 == card2); 
-console.log(card1, card2);
+    var card3 = array1[Math.floor(Math.random() * 2)];
+    var card4 = array1[Math.floor(Math.random() * 2)];
+}while(card3 == card4); 
+
 
 do {
-    var card1 = array0[Math.floor(Math.random() * 2)];
-    console.log(card1);
-    var card2 = array0[Math.floor(Math.random() * 2)];
-    console.log(card2);
-}while(card1 == card2); 
-console.log(card1, card2);
+    var card5 = array2[Math.floor(Math.random() * 2)];
+    var card6 = array2[Math.floor(Math.random() * 2)];
+}while(card5 == card6); 
+
 
 do {
-    var card1 = array0[Math.floor(Math.random() * 2)];
-    console.log(card1);
-    var card2 = array0[Math.floor(Math.random() * 2)];
-    console.log(card2);
-}while(card1 == card2); 
+    var card7 = array3[Math.floor(Math.random() * 2)];
+    var card8 = array3[Math.floor(Math.random() * 2)];
+}while(card7 == card8); 
+
 console.log(card1, card2);
+console.log(card3, card4);
+console.log(card5, card6);
+console.log(card7, card8);
 // //This block will give each choice a random array.
 // do{
 //     var arrayChoice1 = totalArray[Math.floor(Math.random() * 4)];
