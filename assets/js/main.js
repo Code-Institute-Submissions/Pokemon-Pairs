@@ -162,49 +162,57 @@
 
 
 
-$("#start").click(function(){
+// $("#start").click(function(){
 
 //Put in a function to randomly generate these arrays. 
 var originalArray = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
 
-var array0 = ["pair1b", "pair1a"];
-var array1 = ["pair2b", "pair2a"];
-var array2 = ["pair3b", "pair3a"];
-var array3 = ["pair4b", "pair4a"];
-var totalArray = [array0, array1, array2, array3];
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var noFruits = ["test"];
+console.log(fruits);
+
+function myFunction() {
+  noFruits.unshift(fruits[Math.floor(Math.random() * 4)]);
+  console.log(noFruits);
+}
+// var array0 = ["pair1b", "pair1a"];
+// var array1 = ["pair2b", "pair2a"];
+// var array2 = ["pair3b", "pair3a"];
+// var array3 = ["pair4b", "pair4a"];
+// var totalArray = [array0, array1, array2, array3];
 
 
-do{
-    var arrayChoice1 = totalArray[Math.floor(Math.random() * 4)];
-    var arrayChoice2 = totalArray[Math.floor(Math.random() * 4)];
-    var arrayChoice3 = totalArray[Math.floor(Math.random() * 4)];
-    var arrayChoice4 = totalArray[Math.floor(Math.random() * 4)];
-}while(arrayChoice1 == arrayChoice2 || arrayChoice3 == arrayChoice4 || arrayChoice1 == arrayChoice3 || arrayChoice2 == arrayChoice4 || arrayChoice2 == arrayChoice3 || arrayChoice1 == arrayChoice4);
-console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
+// do{
+//     var arrayChoice1 = totalArray[Math.floor(Math.random() * 4)];
+//     var arrayChoice2 = totalArray[Math.floor(Math.random() * 4)];
+//     var arrayChoice3 = totalArray[Math.floor(Math.random() * 4)];
+//     var arrayChoice4 = totalArray[Math.floor(Math.random() * 4)];
+// }while(arrayChoice1 == arrayChoice2 || arrayChoice3 == arrayChoice4 || arrayChoice1 == arrayChoice3 || arrayChoice2 == arrayChoice4 || arrayChoice2 == arrayChoice3 || arrayChoice1 == arrayChoice4);
+// console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
 
-do {
-    var card1 = arrayChoice1[Math.floor(Math.random() * 2)];
-    var card5 = arrayChoice1[Math.floor(Math.random() * 2)];
-}while(card1 == card5); 
-console.log(card1, card5);
+// do {
+//     var card1 = arrayChoice1[Math.floor(Math.random() * 2)];
+//     var card5 = arrayChoice1[Math.floor(Math.random() * 2)];
+// }while(card1 == card5); 
+// console.log(card1, card5);
 
-do {
-    var card2 = arrayChoice2[Math.floor(Math.random() * 2)];
-    var card6 = arrayChoice2[Math.floor(Math.random() * 2)];
-}while(card2 == card6); 
-console.log(card2, card6);
+// do {
+//     var card2 = arrayChoice2[Math.floor(Math.random() * 2)];
+//     var card6 = arrayChoice2[Math.floor(Math.random() * 2)];
+// }while(card2 == card6); 
+// console.log(card2, card6);
 
-do {
-    var card3 = arrayChoice3[Math.floor(Math.random() * 2)];
-    var card7 = arrayChoice3[Math.floor(Math.random() * 2)];
-}while(card3 == card7); 
-console.log(card3, card7);
+// do {
+//     var card3 = arrayChoice3[Math.floor(Math.random() * 2)];
+//     var card7 = arrayChoice3[Math.floor(Math.random() * 2)];
+// }while(card3 == card7); 
+// console.log(card3, card7);
 
-do {
-    var card4 = arrayChoice4[Math.floor(Math.random() * 2)];
-    var card8 = arrayChoice4[Math.floor(Math.random() * 2)];
-}while(card4 == card8); 
-console.log(card4, card8);
+// do {
+//     var card4 = arrayChoice4[Math.floor(Math.random() * 2)];
+//     var card8 = arrayChoice4[Math.floor(Math.random() * 2)];
+// }while(card4 == card8); 
+// console.log(card4, card8);
 //     var card2 = arrayChoice2[Math.floor(Math.random() * 2)];
 //     var card3 = arrayChoice3[Math.floor(Math.random() * 2)];
 //     var card4 = arrayChoice4[Math.floor(Math.random() * 2)];
@@ -232,5 +240,5 @@ console.log(card4, card8);
 // let elem= document.getElementById("card-grid");
 //       elem.style.gridTemplateAreas =`'${array4[0]} ${array4[1]}' '${array4[2]} ${array4[3]}' '${array4[4]} ${array4[5]}' '${array4[6]} ${array4[7]}' `;
 //       console.log("The grid-template area should have been redefined now.");
-});
+// });
       
