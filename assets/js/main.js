@@ -161,26 +161,17 @@
 // https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
 $("#start").click(function(){
 var array4 = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
-var array5 = [1, 2, 3, 4, 5, 6, 7, 8];
 do {
-    var card1 = array5[Math.floor(Math.random() * 4)];
-    var card2 = array5[Math.floor(Math.random() * 4)];
-    var card3 = array5[Math.floor(Math.random() * 4)];
-    var card4 = array5[Math.floor(Math.random() * 4)];
+    var card1 = array4[Math.floor(Math.random() * 4)];
+    var card2 = array4[Math.floor(Math.random() * 4)];
+    var card3 = array4[Math.floor(Math.random() * 4)];
+    var card4 = array4[Math.floor(Math.random() * 4)];
     // var card1 = array4[Math.floor(Math.random() * 8)];
     // var card2 = array4[Math.floor(Math.random() * 8)];
     // var card1 = array4[Math.floor(Math.random() * 8)];
     // var card2 = array4[Math.floor(Math.random() * 8)];
 } while(card1 == card2 || card3 == card4 || card1 == card3 || card2 == card4 || card2 == card3 || card1 == card4);
 console.log(card1, card2, card3, card4);
-
-var total = 10;
-console.log(card1 + card2 +card3 +card4);
-if(total = 10){
-    console.log("This is correct. There are no duplicates.");
-} else {
-    console.log("There is a duplicate.");
-}
 
 // let elem= document.getElementById("card-grid");
 //       elem.style.gridTemplateAreas =`'${array4[0]} ${array4[1]}' '${array4[2]} ${array4[3]}' '${array4[4]} ${array4[5]}' '${array4[6]} ${array4[7]}' `;
