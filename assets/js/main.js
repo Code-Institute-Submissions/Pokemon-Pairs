@@ -1,61 +1,4 @@
 // $("#start").click(function(){
-//     //Declaring the arrays
-// let array1 = [1, 7];
-// let array2 = [3, 4, 5];
-// let array3 = [11, 13, 16];
-
-// //Randomly giving each value from each array to its own variable, ensuring no duplicates.
-// do {
-// var number1 = array1[Math.floor(Math.random() * 2)];
-// var number2 = array1[Math.floor(Math.random() * 2)];
-// } while(number2 == number1);
-
-// do {
-//     var number3 = array2[Math.floor(Math.random() * 3)];
-//     var number4 = array2[Math.floor(Math.random() * 3)];
-//     var number5 = array2[Math.floor(Math.random() * 3)];
-//     } while(number4 == number3 || number5 == number4 || number5 == number3);
-
-// do {
-// var number6 = array3[Math.floor(Math.random() * 3)];
-// var number7 = array3[Math.floor(Math.random() * 3)];
-// var number8 = array3[Math.floor(Math.random() * 3)];
-// } while(number7 == number6 || number8 == number6 || number8 == number7);
-
-// //Randomly generating numbers 9-16
-// let number9 = number1 * 2;
-// let number10 = number2 * 2;
-// let number11 = number3 * 2;
-// let number12 = number4 * 2;
-// let number13 = number5 * 2;
-// let number14 = number3 * 3;
-// let number15 = number4 * 3;
-// let number16 = number5 * 3;
-
-// //Console.log the number plus automated test to check all the numbers are random.
-// let test =  number1 + number2 + number3 + number4 +
-//             number5 + number6 + number7 + number8 +
-//             number9 + number10 + number11 + number12 +
-//             number13 + number14 + number15 + number16;
-// console.log(number1);
-// console.log(number2);
-// console.log(number3);
-// console.log(number4);
-// console.log(number5);
-// console.log(number6);
-// console.log(number7);
-// console.log(number8);
-// console.log(number9);
-// console.log(number10);
-// console.log(number11);
-// console.log(number12);
-// console.log(number13);
-// console.log(number14);
-// console.log(number15);
-// console.log(number16);
-// console.log("The total is" + " " + test + ". These numbers have no duplicates.");
-// });
-
 
 
 // let x = 0;
@@ -167,37 +110,72 @@
 //Put in a function to randomly generate these arrays. 
 var originalArray = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
 
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-var noFruits = ["test"];
-console.log(fruits);
+//https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
 
-function myFunction(){
-  do{
-    noFruits.push(fruits[Math.floor(Math.random() * 4)]);
-  }while(noFruits.length < 5 || noFruits[1] == noFruits[2] || noFruits[1] == noFruits[3]);
-    // || noFruits[1] == noFruits[4] || noFruits[2] == noFruits[3] || noFruits[2] == noFruits[4] || noFruits[3] == noFruits[4]);
-  console.log(noFruits);
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
 
+// Used like so
+var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+shuffle(arr);
+test = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + arr[7] + arr[8] + arr[9] + arr[10] + arr[11] + arr[12] + arr[13] + arr[14] + arr[15];
+console.log(arr);
+if(test == 136){
+  console.log("This test passed");
+}
+
+
+
   
-// var array0 = ["pair1b", "pair1a"];
-// var array1 = ["pair2b", "pair2a"];
-// var array2 = ["pair3b", "pair3a"];
-// var array3 = ["pair4b", "pair4a"];
+// var array0 = ["pair3b", "pair1a"];
+// var array1 = ["pair2b", "pair4a"];
+// var array2 = ["pair1b", "pair3a"];
+// var array3 = ["pair2a", "pair4b"];
 // var totalArray = [array0, array1, array2, array3];
 
-
+// //This block will give each choice a random array.
 // do{
 //     var arrayChoice1 = totalArray[Math.floor(Math.random() * 4)];
 //     var arrayChoice2 = totalArray[Math.floor(Math.random() * 4)];
 //     var arrayChoice3 = totalArray[Math.floor(Math.random() * 4)];
 //     var arrayChoice4 = totalArray[Math.floor(Math.random() * 4)];
 // }while(arrayChoice1 == arrayChoice2 || arrayChoice3 == arrayChoice4 || arrayChoice1 == arrayChoice3 || arrayChoice2 == arrayChoice4 || arrayChoice2 == arrayChoice3 || arrayChoice1 == arrayChoice4);
-// console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
+// // console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
+
+
+// //This block of code will randomly give the card a choice.
+//  var arrayChoices = [arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4];
+
+//      do{
+//     var card1ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
+//     var card2ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
+//     var card3ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
+//     var card4ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
+// }while(card1ArrayChoice == arrayChoice2 || arrayChoice3 == arrayChoice4 || arrayChoice1 == arrayChoice3 || arrayChoice2 == arrayChoice4 || arrayChoice2 == arrayChoice3 || arrayChoice1 == arrayChoice4);
+// // console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
+
+
 
 // do {
-//     var card1 = arrayChoice1[Math.floor(Math.random() * 2)];
+//     var card1 = arrayChoices[0][Math.floor(Math.random() * 2)];
+//     console.log(card1);
 //     var card5 = arrayChoice1[Math.floor(Math.random() * 2)];
+//     console.log(card5);
 // }while(card1 == card5); 
 // console.log(card1, card5);
 
@@ -218,11 +196,7 @@ function myFunction(){
 //     var card8 = arrayChoice4[Math.floor(Math.random() * 2)];
 // }while(card4 == card8); 
 // console.log(card4, card8);
-//     var card2 = arrayChoice2[Math.floor(Math.random() * 2)];
-//     var card3 = arrayChoice3[Math.floor(Math.random() * 2)];
-//     var card4 = arrayChoice4[Math.floor(Math.random() * 2)];
-// }while(card1 == card2 || card3 == card4 || card1 == card3 || card2 == card4 || card2 == card3 || card1 == card4);
-// console.log(card1, card2, card3, card4); 
+
 
   
 
