@@ -130,20 +130,47 @@ function shuffle(array) {
   return array;
 }
 var originalArray = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
-// Used like so
-shuffle(originalArray);
-console.log(originalArray);
+var shuffledArray = shuffle(originalArray);
+console.log(shuffledArray);
 
+var array0 = [shuffledArray[0], shuffledArray[1]];
+var array1 = [shuffledArray[2], shuffledArray[3]];
+var array2 = [shuffledArray[4], shuffledArray[5]];
+var array3 = [shuffledArray[6], shuffledArray[7]];
 
+console.log(array0, array1, array2, array3);
 
+do {
+    var card1 = array0[Math.floor(Math.random() * 2)];
+    console.log(card1);
+    var card2 = array0[Math.floor(Math.random() * 2)];
+    console.log(card2);
+}while(card1 == card2); 
+console.log(card1, card2);
 
-  
-// var array0 = ["pair3b", "pair1a"];
-// var array1 = ["pair2b", "pair4a"];
-// var array2 = ["pair1b", "pair3a"];
-// var array3 = ["pair2a", "pair4b"];
-// var totalArray = [array0, array1, array2, array3];
+do {
+    var card1 = array0[Math.floor(Math.random() * 2)];
+    console.log(card1);
+    var card2 = array0[Math.floor(Math.random() * 2)];
+    console.log(card2);
+}while(card1 == card2); 
+console.log(card1, card2);
 
+do {
+    var card1 = array0[Math.floor(Math.random() * 2)];
+    console.log(card1);
+    var card2 = array0[Math.floor(Math.random() * 2)];
+    console.log(card2);
+}while(card1 == card2); 
+console.log(card1, card2);
+
+do {
+    var card1 = array0[Math.floor(Math.random() * 2)];
+    console.log(card1);
+    var card2 = array0[Math.floor(Math.random() * 2)];
+    console.log(card2);
+}while(card1 == card2); 
+console.log(card1, card2);
 // //This block will give each choice a random array.
 // do{
 //     var arrayChoice1 = totalArray[Math.floor(Math.random() * 4)];
