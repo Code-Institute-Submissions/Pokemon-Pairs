@@ -34,7 +34,7 @@ var number7 = array3[Math.floor(Math.random() * 3)];
 
 do {
     var number8 = array3[Math.floor(Math.random() * 3)];
-} while(number8 == number6 || number8 == number6);
+} while(number8 == number6 || number8 == number7);
 
 console.log(number6);
 console.log(number7);
