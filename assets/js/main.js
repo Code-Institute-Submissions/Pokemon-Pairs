@@ -10,7 +10,7 @@ $("#start").click(function(){
      if (y == 1 || a == 1 || b == 1 ){
          console.log("Sorry not a match!");
          console.log(x);
-         $(".box").css("background-color", "blue");
+        // $(".box").css("background-color", "blue");
          y = 0;
          a = 0;
          b = 0;
@@ -34,7 +34,7 @@ $("#card2").click(function(){
      if (y == 1 || a == 1 || b == 1 ){
         console.log("Sorry not a match!");
         console.log(x);
-        $(".box").css("background-color", "blue");
+       // $(".box").css("background-color", "blue");
         y = 0;
         a = 0;
         b = 0;
@@ -58,7 +58,7 @@ $("#card3").click(function(){
     if (x == 1) {
         console.log("Sorry not a match!");
         console.log(y);
-      $(".box").css("background-color", "blue");
+     // $(".box").css("background-color", "blue");
         x = 0;
         console.log(x);
     }
@@ -80,7 +80,7 @@ $("#card4").click(function(){
    if (x == 1) {
         console.log("Sorry not a match!");
         console.log(y);
-      $(".box").css("background-color", "blue");
+    //  $(".box").css("background-color", "blue");
         x = 0;
         console.log(x);
     }
@@ -102,7 +102,7 @@ $("#card5").click(function(){
      if (a == 1) {
          console.log("Sorry not a match!");
          console.log(b);
-         $(".box").css("background-color", "blue");
+      //   $(".box").css("background-color", "blue");
          a = 0;
          console.log(a);
      }
@@ -124,7 +124,7 @@ $("#card6").click(function(){
      if (a == 1) {
          console.log("Sorry not a match!");
          console.log(b);
-         $(".box").css("background-color", "blue");
+      //   $(".box").css("background-color", "blue");
          a = 0;
          console.log(a);
      }
@@ -146,7 +146,7 @@ $("#card7").click(function(){
     if (b == 1) {
          console.log("Sorry not a match!");
          console.log(a);
-         $(".box").css("background-color", "blue");
+      //   $(".box").css("background-color", "blue");
          b = 0;
          console.log(b);
      }
@@ -168,7 +168,7 @@ $("#card8").click(function(){
    if (b == 1) {
          console.log("Sorry not a match!");
          console.log(a);
-         $(".box").css("background-color", "blue");
+     //    $(".box").css("background-color", "blue");
          b = 0;
          console.log(b);
      }
@@ -177,7 +177,7 @@ $("#card8").click(function(){
              console.log(a);
              console.log("Well done!");
              $(this).css("display", "none");
-             $("#card8").css("display", "none");
+             $("#card7").css("display", "none");
              z++;
      } 
      else {
@@ -185,6 +185,17 @@ $("#card8").click(function(){
          console.log(a);
      }
  });
+
+
+$(".box").click(function(){
+    $(this).css("background-color", "green");
+    w++;
+    console.log("You have used" + " " + w + " " + "moves!")
+    if(z == 4){
+        console.log("Game over!");
+    }
+});
+
 
 // support and initial ideas from the following URL. Answered by Michael Walter on Nov 20 '17 at 14:50
 // https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
