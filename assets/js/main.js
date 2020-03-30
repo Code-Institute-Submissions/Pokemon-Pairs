@@ -159,13 +159,66 @@
 
 // support and initial ideas from the following URL. Answered by Michael Walter on Nov 20 '17 at 14:50
 // https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
-$("#start").click(function(){
-var array1 = ["pair1b", "pair1a"];
-var array2 = ["pair2b", "pair2a"];
-var array3 = ["pair3b", "pair3a"];
-var array4 = ["pair4b", "pair4a"];
-   
 
+
+
+$("#start").click(function(){
+
+//Put in a function to randomly generate these arrays. 
+// ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"]
+
+var array0 = ["pair1b", "pair1a"];
+var array1 = ["pair2b", "pair2a"];
+var array2 = ["pair3b", "pair3a"];
+var array3 = ["pair4b", "pair4a"];
+var totalArray = [array0, array1, array2, array3];
+
+
+do{
+    var arrayChoice1 = totalArray[Math.floor(Math.random() * 4)];
+    var arrayChoice2 = totalArray[Math.floor(Math.random() * 4)];
+    var arrayChoice3 = totalArray[Math.floor(Math.random() * 4)];
+    var arrayChoice4 = totalArray[Math.floor(Math.random() * 4)];
+}while(arrayChoice1 == arrayChoice2 || arrayChoice3 == arrayChoice4 || arrayChoice1 == arrayChoice3 || arrayChoice2 == arrayChoice4 || arrayChoice2 == arrayChoice3 || arrayChoice1 == arrayChoice4);
+console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
+
+do {
+    var card1 = arrayChoice1[Math.floor(Math.random() * 2)];
+    var card5 = arrayChoice1[Math.floor(Math.random() * 2)];
+}while(card1 == card5); 
+console.log(card1, card5);
+
+do {
+    var card2 = arrayChoice2[Math.floor(Math.random() * 2)];
+    var card6 = arrayChoice2[Math.floor(Math.random() * 2)];
+}while(card2 == card6); 
+console.log(card2, card6);
+
+do {
+    var card3 = arrayChoice3[Math.floor(Math.random() * 2)];
+    var card7 = arrayChoice3[Math.floor(Math.random() * 2)];
+}while(card3 == card7); 
+console.log(card3, card7);
+
+do {
+    var card4 = arrayChoice4[Math.floor(Math.random() * 2)];
+    var card8 = arrayChoice4[Math.floor(Math.random() * 2)];
+}while(card4 == card8); 
+console.log(card4, card8);
+//     var card2 = arrayChoice2[Math.floor(Math.random() * 2)];
+//     var card3 = arrayChoice3[Math.floor(Math.random() * 2)];
+//     var card4 = arrayChoice4[Math.floor(Math.random() * 2)];
+// }while(card1 == card2 || card3 == card4 || card1 == card3 || card2 == card4 || card2 == card3 || card1 == card4);
+// console.log(card1, card2, card3, card4); 
+
+  
+
+    
+
+
+    // arrayX[Y]
+ 
+//card1 will be chosen from a random array and a random value of that array. 
 
 
 // do {
