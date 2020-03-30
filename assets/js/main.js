@@ -160,18 +160,21 @@
 // support and initial ideas from the following URL. Answered by Michael Walter on Nov 20 '17 at 14:50
 // https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
 $("#start").click(function(){
-var array4 = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
-do {
-    var card1 = array4[Math.floor(Math.random() * 4)];
-    var card2 = array4[Math.floor(Math.random() * 4)];
-    var card3 = array4[Math.floor(Math.random() * 4)];
-    var card4 = array4[Math.floor(Math.random() * 4)];
-    // var card1 = array4[Math.floor(Math.random() * 8)];
-    // var card2 = array4[Math.floor(Math.random() * 8)];
-    // var card1 = array4[Math.floor(Math.random() * 8)];
-    // var card2 = array4[Math.floor(Math.random() * 8)];
-} while(card1 == card2 || card3 == card4 || card1 == card3 || card2 == card4 || card2 == card3 || card1 == card4);
-console.log(card1, card2, card3, card4);
+var array1 = ["pair1b", "pair1a"];
+var array2 = ["pair2b", "pair2a"];
+var array3 = ["pair3b", "pair3a"];
+var array4 = ["pair4b", "pair4a"];
+   
+
+
+
+// do {
+//     // var card1 = array4[Math.floor(Math.random() * 8)];
+//     // var card2 = array4[Math.floor(Math.random() * 8)];
+//     // var card1 = array4[Math.floor(Math.random() * 8)];
+//     // var card2 = array4[Math.floor(Math.random() * 8)];
+// } while(card1 == card2 || card3 == card4 || card1 == card3 || card2 == card4 || card2 == card3 || card1 == card4);
+// console.log(card1, card2, card3, card4);
 
 // let elem= document.getElementById("card-grid");
 //       elem.style.gridTemplateAreas =`'${array4[0]} ${array4[1]}' '${array4[2]} ${array4[3]}' '${array4[4]} ${array4[5]}' '${array4[6]} ${array4[7]}' `;
