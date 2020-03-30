@@ -108,7 +108,7 @@
 // $("#start").click(function(){
 
 //Put in a function to randomly generate these arrays. 
-var originalArray = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
+
 
 //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
@@ -129,15 +129,11 @@ function shuffle(array) {
 
   return array;
 }
-
+var originalArray = ["pair1b", "pair1a", "pair2b", "pair2a", "pair3b", "pair3a", "pair4b", "pair4a"];
 // Used like so
-var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
-shuffle(arr);
-test = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + arr[7] + arr[8] + arr[9] + arr[10] + arr[11] + arr[12] + arr[13] + arr[14] + arr[15];
-console.log(arr);
-if(test == 136){
-  console.log("This test passed");
-}
+shuffle(originalArray);
+console.log(originalArray);
+
 
 
 
