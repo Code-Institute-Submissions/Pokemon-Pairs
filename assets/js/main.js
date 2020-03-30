@@ -171,10 +171,15 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 var noFruits = ["test"];
 console.log(fruits);
 
-function myFunction() {
-  noFruits.unshift(fruits[Math.floor(Math.random() * 4)]);
+function myFunction(){
+  do{
+    noFruits.push(fruits[Math.floor(Math.random() * 4)]);
+  }while(noFruits.length < 5 || noFruits[1] == noFruits[2] || noFruits[1] == noFruits[3]);
+    // || noFruits[1] == noFruits[4] || noFruits[2] == noFruits[3] || noFruits[2] == noFruits[4] || noFruits[3] == noFruits[4]);
   console.log(noFruits);
 }
+
+  
 // var array0 = ["pair1b", "pair1a"];
 // var array1 = ["pair2b", "pair2a"];
 // var array2 = ["pair3b", "pair3a"];
