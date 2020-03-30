@@ -9,5 +9,10 @@ do {
 var number1 = array1[Math.floor(Math.random() * 2)];
 } while(number1 == comparison);
 
+do {
+var number2 = array1[Math.floor(Math.random() * 2)];
+} while(number2 == comparison || number2 == number1);
+
 console.log(number1);
+console.log(number2);
 });
