@@ -1,4 +1,4 @@
-// $("#start").click(function(){
+$("#start").click(function(){
 
 
 // let x = 0;
@@ -162,76 +162,12 @@ console.log(card1, card2);
 console.log(card3, card4);
 console.log(card5, card6);
 console.log(card7, card8);
-// //This block will give each choice a random array.
-// do{
-//     var arrayChoice1 = totalArray[Math.floor(Math.random() * 4)];
-//     var arrayChoice2 = totalArray[Math.floor(Math.random() * 4)];
-//     var arrayChoice3 = totalArray[Math.floor(Math.random() * 4)];
-//     var arrayChoice4 = totalArray[Math.floor(Math.random() * 4)];
-// }while(arrayChoice1 == arrayChoice2 || arrayChoice3 == arrayChoice4 || arrayChoice1 == arrayChoice3 || arrayChoice2 == arrayChoice4 || arrayChoice2 == arrayChoice3 || arrayChoice1 == arrayChoice4);
-// // console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
 
+var cardArray = [card1, card2, card3, card4, card5, card6, card7, card8];
+console.log(cardArray);
 
-// //This block of code will randomly give the card a choice.
-//  var arrayChoices = [arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4];
-
-//      do{
-//     var card1ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
-//     var card2ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
-//     var card3ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
-//     var card4ArrayChoice = arrayChoices[Math.floor(Math.random() * 4)];
-// }while(card1ArrayChoice == arrayChoice2 || arrayChoice3 == arrayChoice4 || arrayChoice1 == arrayChoice3 || arrayChoice2 == arrayChoice4 || arrayChoice2 == arrayChoice3 || arrayChoice1 == arrayChoice4);
-// // console.log(arrayChoice1, arrayChoice2, arrayChoice3, arrayChoice4);
-
-
-
-// do {
-//     var card1 = arrayChoices[0][Math.floor(Math.random() * 2)];
-//     console.log(card1);
-//     var card5 = arrayChoice1[Math.floor(Math.random() * 2)];
-//     console.log(card5);
-// }while(card1 == card5); 
-// console.log(card1, card5);
-
-// do {
-//     var card2 = arrayChoice2[Math.floor(Math.random() * 2)];
-//     var card6 = arrayChoice2[Math.floor(Math.random() * 2)];
-// }while(card2 == card6); 
-// console.log(card2, card6);
-
-// do {
-//     var card3 = arrayChoice3[Math.floor(Math.random() * 2)];
-//     var card7 = arrayChoice3[Math.floor(Math.random() * 2)];
-// }while(card3 == card7); 
-// console.log(card3, card7);
-
-// do {
-//     var card4 = arrayChoice4[Math.floor(Math.random() * 2)];
-//     var card8 = arrayChoice4[Math.floor(Math.random() * 2)];
-// }while(card4 == card8); 
-// console.log(card4, card8);
-
-
-  
-
-    
-
-
-    // arrayX[Y]
- 
-//card1 will be chosen from a random array and a random value of that array. 
-
-
-// do {
-//     // var card1 = array4[Math.floor(Math.random() * 8)];
-//     // var card2 = array4[Math.floor(Math.random() * 8)];
-//     // var card1 = array4[Math.floor(Math.random() * 8)];
-//     // var card2 = array4[Math.floor(Math.random() * 8)];
-// } while(card1 == card2 || card3 == card4 || card1 == card3 || card2 == card4 || card2 == card3 || card1 == card4);
-// console.log(card1, card2, card3, card4);
-
-// let elem= document.getElementById("card-grid");
-//       elem.style.gridTemplateAreas =`'${array4[0]} ${array4[1]}' '${array4[2]} ${array4[3]}' '${array4[4]} ${array4[5]}' '${array4[6]} ${array4[7]}' `;
-//       console.log("The grid-template area should have been redefined now.");
-// });
+let elem= document.getElementById("card-grid");
+      elem.style.gridTemplateAreas =`'${cardArray[0]} ${cardArray[1]}' '${cardArray[2]} ${cardArray[3]}' '${cardArray[4]} ${cardArray[5]}' '${cardArray[6]} ${cardArray[7]}' `;
+      console.log("The grid-template area should have been redefined now.");
+});
       
