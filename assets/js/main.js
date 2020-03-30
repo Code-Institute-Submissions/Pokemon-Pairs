@@ -37,10 +37,15 @@ console.log(number7);
 
 let number8 = number1 * 2;
 let number9 = number2 * 2;
+let number10 = number3 * 2;
+let number11 = number4 * 2;
+let number12 = number5 * 2;
 
 console.log(number8);
 console.log(number9);
-
+console.log(number10);
+console.log(number11);
+console.log(number12);
 
 
 });
