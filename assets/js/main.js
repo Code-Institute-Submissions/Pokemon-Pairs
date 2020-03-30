@@ -164,7 +164,11 @@ var b1 = "pair1b";
 var a1 = "pair1a";
 var b2 = "pair2b";
 var a2 = "pair2a";
-var array4 = ["pair1b", "pair1a"];
+var b3 = "pair1b";
+var a3 = "pair1a";
+var b4 = "pair2b";
+var a4 = "pair2a";
+var array4 = [b1, a1, b2, a2, b3, a3, b4, a4];
 
 console.log(`'${array4[0]} ${array4[1]}'`);
 let elem= document.getElementById("card-grid");
