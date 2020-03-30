@@ -34,4 +34,13 @@ var number7 = array3[Math.floor(Math.random() * 2)];
 
 console.log(number6);
 console.log(number7);
+
+let number8 = number1 * 2;
+let number9 = number2 * 2;
+
+console.log(number8);
+console.log(number9);
+
+
+
 });
