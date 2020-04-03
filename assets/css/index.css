@@ -1,0 +1,7 @@
+#navList {
+    height: 100vh;
+    width: 500px;
+    position: absolute;
+    background-color: green;
+    left: -500px;
+}
