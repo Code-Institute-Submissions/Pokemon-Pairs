@@ -63,3 +63,6 @@
    display: inline-block;    
 }
 
+footer{
+    display: none;
+}

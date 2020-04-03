@@ -268,3 +268,7 @@ let elem= document.getElementById("card-grid");
       console.log("The grid-template area should have been redefined now.");
 });
       
+
+$("body").click(function(){
+    $("footer").css("display", "block");
+});
