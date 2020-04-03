@@ -1,6 +1,7 @@
 $("#menuButton").click(function(){
-    $("#navList").toggle("display", "none");
+    $("#navList").css("left", "0px");
 });
+
 
 $("#linkPlay").click(function(){
     $("#iframe").attr("src", "game.html");
