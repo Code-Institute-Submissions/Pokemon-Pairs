@@ -1,3 +1,37 @@
+/* Grid Layout for responsive design */
+
+.gridItemMenu{grid-area: menu;}
+.gridItemHeader{grid-area: header;}
+.gridItemGameInfo{grid-area: game-info;}
+.gridItemGame{grid-area: game;}
+
+#grid-container{
+     display: grid;
+     grid-template-areas:
+    'menu header header header'
+    'menu game-info game-info game-info'
+    'menu game game game';
+     grid-gap: 10px;
+     background-color: yellow;
+     padding: 10px;
+}
+
+.gridItemMenu{
+    background-color: blue;
+}
+
+.gridItemHeader{
+    background-color: green;
+}
+.gridItemGameInfo{
+    background-color: rgb(173, 173, 192);
+}
+.gridItemGame{
+    background-color: orange;
+}
+
+/* Navbar CSS */
+
 #navList {
     height: 20vh;
     width: 500px;
