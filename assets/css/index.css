@@ -58,6 +58,7 @@ body {
 }
 #gridItemGame{
     background-color: orange;
+    height: 69vh;
 }
 /* Header */
 
@@ -114,12 +115,12 @@ ul{
 
 #frame {
     width: 95vw;
-    height: 500px;
     margin:0;
     border:0;
 }
 
 .iframe{
+    height:69vh;
     width: 100%;
     margin:0;
     border:0;
