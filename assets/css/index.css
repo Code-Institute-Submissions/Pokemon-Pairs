@@ -10,20 +10,31 @@ body {
 #gridItemHeader{grid-area: header;}
 #gridItemGameInfo{grid-area: game-info;}
 #gridItemGame{grid-area: game;}
+#gridItemName{grid-area: name;}
+#gridItemTimer{grid-area: timer;}
+#gridItemResults{grid-area: results;}
 
-#grid-container{
+.grid-container{
      display: grid;
-     grid-template-areas:
-    'header'
-    'game-info'
-    'game';
      grid-gap: 10px;
      background-color: yellow;
      padding: 10px;
-     width: 100vw;
+     width: 100%;
      margin: 0;
-     overflow: hidden;
- 
+     overflow: hidden; 
+}
+
+#index-grid{
+ grid-template-areas:
+    'header'
+    'game-info'
+    'game';
+}
+
+#gridGameInfo {
+    grid-template-areas:
+    'results name timer';
+    background-color: rgb(211, 51, 211);
 }
 
 #gridItemHeader{
