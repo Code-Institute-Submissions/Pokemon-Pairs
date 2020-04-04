@@ -61,13 +61,23 @@ body {
     top:50px;
 }
 
-#navList ul{
+/* Generic CSS */
+
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul{
     padding: 0.5rem;
 }
 
-#navList ul li{
-    text-decoration: none;
-    list-style-type: none;
+/* Grid game information */
+
+
+#gridItemGameInfo ul li {
+    display: inline-block;
+    padding: 0 10px;
 }
 
 /* Frame */
