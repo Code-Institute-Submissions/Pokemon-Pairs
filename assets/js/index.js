@@ -1,5 +1,6 @@
 $("#menuButton").click(function(){
-    $("#gridItemMenu").css("left", "10px");
+    $("#gridItemMenu").toggleClass("show");
+    $("#index-grid").toggleClass("insertMenu");
 });
 
 

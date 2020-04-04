@@ -76,6 +76,18 @@ body {
     top:50px;
 }
 
+.insertMenu {
+     grid-template-areas:
+    'header header' 
+    'menu game-info' 
+    'menu game';
+}
+
+.show {
+    grid-template-columns: 80px 1fr;
+    left: 0!important;    
+}
+
 /* Generic CSS */
 
 ul li{
