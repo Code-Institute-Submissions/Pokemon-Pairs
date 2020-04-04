@@ -1,3 +1,9 @@
+body {
+    padding:0;
+    margin:0;
+    border:0;
+}
+
 /* Grid Layout for responsive design */
 
 #gridItemMenu{grid-area: menu;}
@@ -8,18 +14,20 @@
 #grid-container{
      display: grid;
      grid-template-areas:
-    'header header header header'
-    'menu game-info game-info game-info'
-    'menu game game game';
+    'header'
+    'game-info'
+    'game';
      grid-gap: 10px;
      background-color: yellow;
      padding: 10px;
-     grid-template-columns: 100px 1fr 1fr 1fr;
+     width: 100vw;
+     margin: 0;
+     overflow: hidden;
  
 }
 
 #gridItemMenu{
-    background-color: blue;
+    background-color: green;
     width: 80px;
     position:absolute;
     left: -150px;
@@ -27,21 +35,26 @@
 }
 
 #gridItemHeader{
-    background-color: green;
+    background-color: blue;
+    
 }
 #gridItemGameInfo{
-    background-color: rgb(173, 173, 192);
+    background-color: rgb(233, 49, 156);
 }
 #gridItemGame{
     background-color: orange;
 }
 /* Header */
+
+
 #menuButton {
     display: inline-block;
+
 }
 
-#logo{
+.logo{
     display: inline-block;
+    
 }
 
 
@@ -51,4 +64,26 @@
     height: 20vh;
     width: 100px;
     background-color: green;
+}
+
+/* Frame */
+
+#frame {
+    width: 95vw;
+    height: 500px;
+    margin:0;
+    border:0;
+}
+
+#iframe{
+    width: 95vw;
+    height: 500px;
+    margin:0;
+    border:0;
+    padding:0;
+}
+
+/* Footer */
+footer{
+    display: none;
 }
