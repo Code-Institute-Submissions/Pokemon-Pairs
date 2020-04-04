@@ -10,14 +10,9 @@ body {
 #gridItemHeader{grid-area: header;}
 #gridItemGameInfo{grid-area: game-info;}
 #gridItemGame{grid-area: game;}
-#gridItemName{grid-area: name;}
-#gridItemTimer{grid-area: timer;}
-#gridItemResults{grid-area: results;}
-#gridItemTopResult1{grid-area: top-result-1;}
-#gridItemTopResult2{grid-area: top-result-2;}
-#gridItemTopResult3{grid-area: top-result-3;}
-#gridItemPlayerName{grid-area: player-name;}
-#gridItemTimerDisplay{grid-area: timer-display;}
+#gridItemName{grid-area: name; border: 1px solid white;}
+#gridItemTimer{grid-area: timer; border: 1px solid white;}
+#gridItemResults{grid-area: results; border: 1px solid white;}
 
 .grid-container{
      display: grid;
@@ -27,6 +22,7 @@ body {
      width: 100%;
      margin: 0;
      overflow: hidden; 
+     text-align: left;
 }
 
 #index-grid{
@@ -38,11 +34,11 @@ body {
 
 #gridGameInfo {
     grid-template-areas:
-    'results name timer'
-    'top-result-1 player-name timer-display' 
-    'top-result-2 none none'
-    'top-result-3 none none';
+    'name'
+    'results' 
+    'timer';
     background-color: rgb(211, 51, 211);
+    text-align: center;
 }
 
 #gridItemHeader{
