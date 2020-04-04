@@ -1,9 +1,9 @@
 /* Grid Layout for responsive design */
 
-.gridItemMenu{grid-area: menu;}
-.gridItemHeader{grid-area: header;}
-.gridItemGameInfo{grid-area: game-info;}
-.gridItemGame{grid-area: game;}
+#gridItemMenu{grid-area: menu;}
+#gridItemHeader{grid-area: header;}
+#gridItemGameInfo{grid-area: game-info;}
+#gridItemGame{grid-area: game;}
 
 #grid-container{
      display: grid;
@@ -18,20 +18,21 @@
  
 }
 
-.gridItemMenu{
+#gridItemMenu{
     background-color: blue;
     width: 80px;
     position:absolute;
-    left: -80px;
+    left: -150px;
+    top:150px;
 }
 
-.gridItemHeader{
+#gridItemHeader{
     background-color: green;
 }
-.gridItemGameInfo{
+#gridItemGameInfo{
     background-color: rgb(173, 173, 192);
 }
-.gridItemGame{
+#gridItemGame{
     background-color: orange;
 }
 
@@ -40,7 +41,5 @@
 #navList {
     height: 20vh;
     width: 100px;
-    position: absolute;
     background-color: green;
-    left: -500px;
 }

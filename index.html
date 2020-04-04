@@ -10,21 +10,7 @@
 </head>
 <body>
    <div id="grid-container">
-        <aside class="gridItemMenu"> 
-            <nav id="nav" class="navbar-light">
-                <div id="navList">
-                <ul>
-                    <li id="linkPlay">Play!</li>
-                    <li id="linkHelp">Help</li>
-                    <li id="linkContactUs">Contact Us</li>
-                    <li><a href="work-in-progress.html">Link to work in progress</a></li>
-                </ul>
-            </div>
-            </nav>
-        </aside>
-
-
-        <header class="gridItemHeader">
+        <header id="gridItemHeader">
             <button id="menuButton" class="navbar-toggler navbar-light" type="button" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,15 +18,27 @@
                 <h1>Logo of the game</h1>        
             </div>
         </header>
+         <aside id="gridItemMenu"> 
+            <nav>
+                <div id="navList">
+                <ul>
+                    <li id="linkPlay">Play!</li>
+                    <li id="linkHelp">Help</li>
+                    <li id="linkContactUs">Contact Us</li>
+                    <li><a href="work-in-progress.html">Link to work in progress</a></li>
+                </ul>
+                </div>
+            </nav>
+        </aside>
        
-        <aside class="gridItemGameInfo">
+        <aside id="gridItemGameInfo">
             <ul>
                 <li>Previous Results</li>
                 <li>Name</li>            
                 <li>Timer</li>
             </ul>   
         </aside>
-        <section class="gridItemGame">
+        <section id="gridItemGame">
             <div id="frame">
                 <iframe id="iframe" src="placeholder.png" frameborder="1"></iframe>
             </div>        

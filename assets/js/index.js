@@ -1,5 +1,5 @@
 $("#menuButton").click(function(){
-    $("#navList").css("left", "0px");
+    $("#gridItemMenu").css("left", "10px");
 });
 
 
