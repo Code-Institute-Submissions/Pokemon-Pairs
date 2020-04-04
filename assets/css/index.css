@@ -88,11 +88,8 @@ ul{
 }
 
 /* Grid game information */
-
-
-#gridItemGameInfo ul li {
-    display: inline-block;
-    padding: 0 10px;
+#topResultsWrapper, #gridItemTimerDisplay {
+    display: none;
 }
 
 /* Frame */
