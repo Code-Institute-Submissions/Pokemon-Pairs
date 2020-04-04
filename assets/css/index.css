@@ -13,6 +13,11 @@ body {
 #gridItemName{grid-area: name;}
 #gridItemTimer{grid-area: timer;}
 #gridItemResults{grid-area: results;}
+#gridItemTopResult1{grid-area: top-result-1;}
+#gridItemTopResult2{grid-area: top-result-2;}
+#gridItemTopResult3{grid-area: top-result-3;}
+#gridItemPlayerName{grid-area: player-name;}
+#gridItemTimerDisplay{grid-area: timer-display;}
 
 .grid-container{
      display: grid;
@@ -33,7 +38,10 @@ body {
 
 #gridGameInfo {
     grid-template-areas:
-    'results name timer';
+    'results name timer'
+    'top-result-1 player-name timer-display' 
+    'top-result-2 none none'
+    'top-result-3 none none';
     background-color: rgb(211, 51, 211);
 }
 
