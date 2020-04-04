@@ -8,16 +8,21 @@
 #grid-container{
      display: grid;
      grid-template-areas:
-    'menu header header header'
+    'header header header header'
     'menu game-info game-info game-info'
     'menu game game game';
      grid-gap: 10px;
      background-color: yellow;
      padding: 10px;
+     columns: 100px 1fr 1fr 1fr;
+ 
 }
 
 .gridItemMenu{
     background-color: blue;
+    width: 80px;
+    position:absolute;
+    left: -80px;
 }
 
 .gridItemHeader{
@@ -34,7 +39,7 @@
 
 #navList {
     height: 20vh;
-    width: 500px;
+    width: 100px;
     position: absolute;
     background-color: green;
     left: -500px;
