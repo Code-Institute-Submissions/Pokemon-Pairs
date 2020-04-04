@@ -1,6 +1,7 @@
 $("#menuButton").click(function(){
-    $("#gridItemMenu").toggleClass("show");
-    $("#index-grid").toggleClass("insertMenu");
+    $("#indexGrid").toggleClass("index-grid");
+    $("#indexGrid").toggleClass("index-grid-menuShow");
+    $("#gridItemMenu").toggle("display", "block");
 });
 
 
