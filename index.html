@@ -9,77 +9,43 @@
         <title>Pokemon Pairs!</title>
 </head>
 <body>
-    <header>
-        <nav id="nav" class="navbar-light">
-            <button id="menuButton" class="navbar-toggler navbar-light" type="button" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="logo">
-                <h1>Logo of the game</h1>        
-            </div>
-            <div id="navList">
+   <div id="grid-container">
+        <aside class="gridItemMenu"> 
+            <nav id="nav" class="navbar-light">
+                <button id="menuButton" class="navbar-toggler navbar-light" type="button" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navList">
                 <ul>
                     <li id="linkPlay">Play!</li>
                     <li id="linkHelp">Help</li>
                     <li id="linkContactUs">Contact Us</li>
+                    <li><a href="work-in-progress.html">Link to work in progress</a></li>
                 </ul>
             </div>
-        </nav>
-               
-    </header>
-    <!--Mobile view above the cards-->
-    <aside>
-        <ul>
-            <li>Previous Results</li>
-            <li>Name</li>            
-            <li>Timer</li>
-        </ul>            
-    </aside>
-    <!--=======For larger screen=======-->
-    <!--Right-hand side-->    
-    <aside>
-        <ul>
-            <li>Timer</li>
-            <li>Your current score</li>
-            <li>Target score</li>   
-        </ul>
-    </aside>
-    <!--Left-hand side-->
-    <aside>
-        <ul>
-            <li>Name</li>
-            <li>Previous Scores</li>   
-        </ul>
-    </aside>
-    <section>
-        <div id="frame">
-            <iframe id="iframe" src="placeholder.png" frameborder="1"></iframe>
-    </section>
-    <footer>
-        <div id="footer-contact">
-            <h3><a href="#">Contact Us</a></h3>
+            </nav>
+        </aside>
+
+
+        <header class="gridItemHeader">
+            <div class="logo">
+                <h1>Logo of the game</h1>        
+            </div>
+        </header>
+       
+        <aside class="gridItemGameInfo">
             <ul>
-                <li>Tel: 0398183774616</li>
-                <li>Email</li>
-            </ul>
-        </div>
-        <div id="footer-more-games">
-            <h3>More Games</h3>
-            <ul>
-                <li><a href="#">Kids games website 1</a></li>
-                <li><a href="#">Kids games website 2</a></li>
-            </ul>
-        </div>
-        <div id="footer-social-media">
-            <h3>Social Media</h3>
-            <ul>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Pinterest</a></li>
-            </ul>
-        </div>
-    </footer>
-     
-    
+                <li>Previous Results</li>
+                <li>Name</li>            
+                <li>Timer</li>
+            </ul>   
+        </aside>
+        <section class="gridItemGame">
+            <div id="frame">
+                <iframe id="iframe" src="placeholder.png" frameborder="1"></iframe>
+            </div>        
+        </section>
+    </div> 
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
