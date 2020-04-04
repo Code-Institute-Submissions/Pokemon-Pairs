@@ -78,9 +78,6 @@ body {
 #gridItemMenu{
     background-color: rgba(105, 105, 105, 0.589);
     width: 80px;
-    height: 90vh;
-    position:absolute;
-    top:50px;
     display: none;
 }
 
@@ -121,7 +118,15 @@ ul{
     border:0;
 }
 
-#iframe{
+.iframe{
+    width: 100%;
+    margin:0;
+    border:0;
+    padding:0;
+}
+
+.iframeMenuShow{
+    width: 75%;
     height: 500px;
     margin:0;
     border:0;
