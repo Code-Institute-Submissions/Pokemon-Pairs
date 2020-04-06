@@ -45,7 +45,7 @@ body {
     'name'
     'results' 
     'timer';
-    background-color: rgb(211, 51, 211);
+    background-color: purple;
     text-align: center;
 }
 
@@ -54,7 +54,7 @@ body {
     
 }
 #gridItemGameInfo{
-    background-color: rgb(233, 49, 156);
+    background-color: purple;
 }
 #gridItemGame{
     background-color: orange;
@@ -125,6 +125,24 @@ ul{
     margin:0;
     border:0;
     padding:0;
+}
+
+
+/* Difficulty selection */
+
+.difficultyMode{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+.easy, .medium, .hard {
+    background-color: grey;
+    color: white;
+    display: inline-block;
+    width:30%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
+    margin:0;    
 }
 
 /* Footer */
