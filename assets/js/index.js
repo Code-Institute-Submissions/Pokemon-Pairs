@@ -49,3 +49,10 @@ $("#easy").click(function(){
     </div>`);
   });
 
+$(".gridItemCollapsedBar").click(function(){
+    $("#gridItemName").toggleClass("d-none");
+    $("#gridItemResults").toggleClass("d-none");
+    $("#gridItemTimer").toggleClass("d-none");
+    $("#gameInfoShow").toggleClass("display");
+    $("#gameInfoHide").toggleClass("display");    
+  });
