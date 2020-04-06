@@ -136,7 +136,7 @@ ul{
     justify-content: center;
 }
 
-.easy, .medium, .hard {
+#easy, #medium, #hard {
     background-color: grey;
     color: white;
     display: inline-block;
