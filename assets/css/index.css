@@ -13,6 +13,7 @@ body {
 #gridItemName{grid-area: name; border: 1px solid white;}
 #gridItemTimer{grid-area: timer; border: 1px solid white;}
 #gridItemResults{grid-area: results; border: 1px solid white;}
+#gridItemCollapsedBar{grid-area: collapsed-bar; border: 1px solid white;}
 
 .grid-container{
      display: grid;
@@ -42,11 +43,13 @@ body {
 
 .grid-game-info {
     grid-template-areas:
+    'collapsed-bar'
     'name'
     'results' 
     'timer';
     background-color: purple;
     text-align: center;
+    color: white;
 }
 
 #gridItemHeader{
