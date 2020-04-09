@@ -155,21 +155,7 @@ a:active {
 
 
 
-/* Frame */
 
-#frame {
-    width: 95vw;
-    margin:0;
-    border:0;
-}
-
-.iframe{
-    height:69vh;
-    width: 100%;
-    margin:0;
-    border:0;
-    padding:0;
-}
 
 
 /* Difficulty selection */
