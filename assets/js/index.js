@@ -5,22 +5,6 @@ $("#menuButton").click(function(){
     $("#gridItemMenu").toggleClass("display");
 });
 
-
-//NAV - Changing the contents of the iframe
-$("#linkPlay").click(function(){
-    $("#iframe").attr("src", "game.html");
-});
-
-$("#linkHelp").click(function(){
-    $("#iframe").attr("src", "help.html");
-});
-
-$("#linkContactUs").click(function(){
-    $("#iframe").attr("src", "contactUs.html");
-});
-
-
-
 //Game information display
 $("#gridItemResults").click(function(){
     $("#topResultsWrapper").toggle("display", "block");
