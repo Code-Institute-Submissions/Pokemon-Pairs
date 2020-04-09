@@ -41,7 +41,7 @@ $(".gridItemCollapsedBar").click(function(){
 
 //JS for selecting difficulty
 $("#easy").click(function(){
-    $("#game").html(`<button id="start">Click to start</button> 
+    $("#game").html(`
     <div id="card-grid" class="card-grid-container">
         <div id="card1" class="box pair1" onclick="myfunction('card1');">card1</div>   
         <div id="card2" class="box pair1" onclick="myfunction('card2');">card2</div>
@@ -60,7 +60,7 @@ $("#easy").click(function(){
  
  
 $("#medium").click(function(){
-    $("#game").html(`<button id="start">Click to start</button> 
+    $("#game").html(`
     <div id="card-grid" class="card-grid-container">
         <div id="card1" class="box pair1" onclick="myfunction('card1');">card1</div>   
         <div id="card2" class="box pair1" onclick="myfunction('card2');">card2</div>
@@ -75,7 +75,7 @@ $("#medium").click(function(){
   });
 
 $("#hard").click(function(){
-    $("#game").html(`<button id="start">Click to start</button> 
+    $("#game").html(`
     <div id="card-grid" class="card-grid-container">
         <div id="card1" class="box pair1" onclick="pair1();">card1</div>   
         <div id="card2" class="box pair1" onclick="pair1();">card2</div>
