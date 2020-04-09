@@ -25,7 +25,6 @@ body {
      margin: 0;
      overflow: hidden; 
      text-align: left;
-       height: 100vh;
 }
 
 .index-grid{
@@ -106,9 +105,6 @@ ul{
 }
 
 /* Grid game information */
-#topResultsWrapper, #gridItemTimerDisplay {
-    display: none;
-}
 
 .display {
     display: none;
