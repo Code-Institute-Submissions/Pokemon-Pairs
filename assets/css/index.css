@@ -65,7 +65,7 @@ body {
 
 
 #menuButton {
-    display: inline-block;
+    float: right;
 
 }
 
