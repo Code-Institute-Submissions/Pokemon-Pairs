@@ -3,7 +3,7 @@ body {
     margin:0;
     border:0;
     font-family: 'Ruluko', sans-serif;
-    background-color: yellow;
+    background-color: midnightblue;
    
 }
 
@@ -18,7 +18,7 @@ body {
 .grid-container{
      display: grid;
      grid-gap: 10px;
-     background-color: yellow;
+     background-color: midnightblue;
      padding: 15px;
      width: 100%;
      margin: 0;
@@ -43,26 +43,27 @@ body {
  grid-template-columns: 80px 1fr;
 }
 
-.grid-game-info {
-    background-color: purple;
-    text-align: center;
-    color: white;
-    border: 1px solid white;
+#gridItemHeader{
+    background-color: red;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    color: yellow;
 }
 
-#gridItemHeader{
-    background-color: blue;
-    border-left: 1px solid white;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
+.grid-game-info {
+    background-color: rgb(38, 109, 240);
+    text-align: center;
+    color: yellow;
+    border: 1px solid black;
 }
-    
+  
 
 #gridItemGame{
-    background-color: orange;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
+    background-color: rgb(238, 238, 238);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
 
 
@@ -72,6 +73,7 @@ body {
 #menuButton {
     float: right;
     width: 80px;
+    color: yellow;
 
 }
 
@@ -84,12 +86,13 @@ body {
 /* Navbar CSS */
 
 #gridItemMenu{
-    background-color: rgba(105, 105, 105, 0.589);
+    background-color: rgba(123, 175, 243, 0.938);
     width: 80px;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
     text-align: center;
+    color: yellow;
 }
 
 .insertMenu {
@@ -142,7 +145,8 @@ a:active {
 /* Grid game information */
 
 #gridItemName, #gridItemResults, #gridItemTimer{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
+    
 }
 .display {
     display: none;
