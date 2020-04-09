@@ -53,10 +53,10 @@ $("#easy").click(function(){
     $(this).css("background", "green");
   });
 
-$(".gridItemCollapsedBar").click(function(){
-    $("#gridItemName").toggleClass("d-none");
-    $("#gridItemResults").toggleClass("d-none");
-    $("#gridItemTimer").toggleClass("d-none");
-    $("#gameInfoShow").toggleClass("display");
-    $("#gameInfoHide").toggleClass("display");    
-  });
+// $(".gridItemCollapsedBar").click(function(){
+//     $("#gridItemName").toggleClass("d-none");
+//     $("#gridItemResults").toggleClass("d-none");
+//     $("#gridItemTimer").toggleClass("d-none");
+//     $("#gameInfoShow").toggleClass("display");
+//     $("#gameInfoHide").toggleClass("display");    
+//   });
