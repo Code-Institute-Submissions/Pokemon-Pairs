@@ -49,13 +49,48 @@ $("#easy").click(function(){
     
   });
 
-  //make sure the id and the parameter are equal. Make sure there is a paramter or the functions won't work!
-  
-  function myfunction(this_is_just_a_variable_it_does_not_matter_what_we_call_it){
+   
+
+  //make sure the id and the parameter are equal. Make sure there is a paramter or the functions won't work!  
+ 
+
+  function myfunction(test){
       console.log("This has worked!");
-      document.getElementById(this_is_just_a_variable_it_does_not_matter_what_we_call_it).style.backgroundColor = "green";
-    //   $(".pair1").css("background-color", "green"); This turns everything that is pair one green. Could come in handy for a hint in the game!
+      document.getElementById(test).style.backgroundColor = "green";
   }; 
+
+ 
+// $("#medium").click(function(){
+//     $("#message").html(`<button id="start">Click to start</button> 
+//     <div id="card-grid" class="card-grid-container">
+//         <div id="card1" class="box pair1" onclick="myfunction('card1');">card1</div>   
+//         <div id="card2" class="box pair1" onclick="myfunction('card2');">card2</div>
+//         <div id="card3" class="box pair2">card3</div>
+//         <div id="card4" class="box pair2">card4</div>
+//         <div id="card5" class="box pair3">card5</div>
+//         <div id="card6" class="box pair3">card6</div>
+//         <div id="card7" class="box pair4">card7</div>
+//         <div id="card8" class="box pair4">card8</div>    
+//     </div>`);
+    
+//   });
+
+// $("#hard").click(function(){
+//     $("#message").html(`<button id="start">Click to start</button> 
+//     <div id="card-grid" class="card-grid-container">
+//         <div id="card1" class="box pair1" onclick="myfunction('card1');">card1</div>   
+//         <div id="card2" class="box pair1" onclick="myfunction('card2');">card2</div>
+//         <div id="card3" class="box pair2">card3</div>
+//         <div id="card4" class="box pair2">card4</div>
+//         <div id="card5" class="box pair3">card5</div>
+//         <div id="card6" class="box pair3">card6</div>
+//         <div id="card7" class="box pair4">card7</div>
+//         <div id="card8" class="box pair4">card8</div>    
+//     </div>`);
+    
+//   });
+
+
 
 
 // $(".gridItemCollapsedBar").click(function(){
