@@ -153,11 +153,6 @@ a:active {
 }
 
 
-
-
-
-
-
 /* Difficulty selection */
 
 .difficultyMode{
@@ -168,7 +163,7 @@ a:active {
 
 #easy, #medium, #hard {
     background-color: grey;
-    color: white;
+    color: yellow;
     display: inline-block;
     width:25%;
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
