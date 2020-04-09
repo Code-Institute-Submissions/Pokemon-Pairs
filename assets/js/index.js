@@ -7,16 +7,6 @@ $("#menuButton").click(function(){
     $("#gridItemMenu").toggle("display", "block");
 });
 
-//Game information display
-$("#gridItemResults").click(function(){
-    $("#topResultsWrapper").toggle("display", "block");
-});
-
-$("#gridItemTimer").click(function(){
-    $("#gridItemTimerDisplay").toggle("display", "block");
-});
-
-
 
 //NAV - Changing the contents of the iframe
 $("#linkPlay").click(function(){
@@ -30,6 +20,20 @@ $("#linkHelp").click(function(){
 $("#linkContactUs").click(function(){
     $("#iframe").attr("src", "contactUs.html");
 });
+
+
+
+//Game information display
+$("#gridItemResults").click(function(){
+    $("#topResultsWrapper").toggle("display", "block");
+});
+
+$(".gridItemCollapsedBar").click(function(){
+    $("#gridItemName").toggleClass("d-none");
+    $("#gridItemResults").toggleClass("d-none");
+    $("#gameInfoShow").toggleClass("display");
+    $("#gameInfoHide").toggleClass("display");    
+  });
 
 
 
@@ -83,16 +87,6 @@ $("#hard").click(function(){
     
   });
 
-
-
-
-// $(".gridItemCollapsedBar").click(function(){
-//     $("#gridItemName").toggleClass("d-none");
-//     $("#gridItemResults").toggleClass("d-none");
-//     $("#gridItemTimer").toggleClass("d-none");
-//     $("#gameInfoShow").toggleClass("display");
-//     $("#gameInfoHide").toggleClass("display");    
-//   });
 
 
 
