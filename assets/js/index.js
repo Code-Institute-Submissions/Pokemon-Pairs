@@ -37,8 +37,8 @@ $("#linkContactUs").click(function(){
 $("#easy").click(function(){
     $("#message").html(`<button id="start">Click to start</button> 
     <div id="card-grid" class="card-grid-container">
-        <div id="card1" class="box pair1">card1</div>
-        <div id="card2" class="box pair1">card2</div>
+        <div id="card1" class="box pair1" onclick="myfunction('card1');">card1</div>   
+        <div id="card2" class="box pair1" onclick="myfunction('card2');">card2</div>
         <div id="card3" class="box pair2">card3</div>
         <div id="card4" class="box pair2">card4</div>
         <div id="card5" class="box pair3">card5</div>
@@ -49,9 +49,14 @@ $("#easy").click(function(){
     
   });
 
-  $("#card1").click(function(){
-    $(this).css("background", "green");
-  });
+  //make sure the id and the parameter are equal. Make sure there is a paramter or the functions won't work!
+  
+  function myfunction(this_is_just_a_variable_it_does_not_matter_what_we_call_it){
+      console.log("This has worked!");
+      document.getElementById(this_is_just_a_variable_it_does_not_matter_what_we_call_it).style.backgroundColor = "green";
+    //   $(".pair1").css("background-color", "green"); This turns everything that is pair one green. Could come in handy for a hint in the game!
+  }; 
+
 
 // $(".gridItemCollapsedBar").click(function(){
 //     $("#gridItemName").toggleClass("d-none");
