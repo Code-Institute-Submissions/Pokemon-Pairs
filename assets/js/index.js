@@ -28,13 +28,18 @@ $("#gridItemResults").click(function(){
     $("#topResultsWrapper").toggle("display", "block");
 });
 
-$(".gridItemCollapsedBar").click(function(){
-    $("#gridItemName").toggleClass("d-none");
-    $("#gridItemResults").toggleClass("d-none");
+$("#gameInfoHide").click(function(){
+    $("#gridItemName").toggleClass("display");
+    $("#gridItemResults").toggleClass("display");
     $("#gameInfoShow").toggleClass("display");
-    $("#gameInfoHide").toggleClass("display"); 
-    // $("#gridItemGame").toggleClass("height-full");
-    // $("#gridItemGame").toggleClass("height");
+    $("#gameInfoHide").toggleClass("display");
+  });
+
+$("#gameInfoShow").click(function(){
+    $("#gridItemName").toggleClass("display");
+    $("#gridItemResults").toggleClass("display");
+    $("#gameInfoShow").toggleClass("display");
+    $("#gameInfoHide").toggleClass("display");
   });
 
 

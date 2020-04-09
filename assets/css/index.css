@@ -2,6 +2,7 @@ body {
     padding:0;
     margin:0;
     border:0;
+    background-color: yellow;
    
 }
 
@@ -77,7 +78,6 @@ body {
 #gridItemMenu{
     background-color: rgba(105, 105, 105, 0.589);
     width: 80px;
-    display: none;
 }
 
 .insertMenu {
@@ -104,11 +104,26 @@ ul{
     padding: 0.5rem;
 }
 
+/* Toggle classes */
+.display {
+    display: none;
+}
+
+.height{
+    height:68.5vh;
+}
+.height-full {
+    height: 76.5vh;
+}
+
 /* Grid game information */
 
 .display {
     display: none;
 }
+
+
+
 
 /* Frame */
 
