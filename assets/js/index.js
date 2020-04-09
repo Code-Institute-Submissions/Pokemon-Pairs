@@ -34,7 +34,6 @@ $("#linkContactUs").click(function(){
 
 
 //JS for selecting difficulty
-
 $("#easy").click(function(){
     $("#message").html(`<button id="start">Click to start</button> 
     <div id="card-grid" class="card-grid-container">
@@ -47,6 +46,11 @@ $("#easy").click(function(){
         <div id="card7" class="box pair4">card7</div>
         <div id="card8" class="box pair4">card8</div>    
     </div>`);
+    
+  });
+
+  $("#card1").click(function(){
+    $(this).css("background", "green");
   });
 
 $(".gridItemCollapsedBar").click(function(){
