@@ -125,6 +125,11 @@ a {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: none;
+    color:midnightblue;
+}
+
 a:active {
     color: inherit;
     text-decoration: none;
