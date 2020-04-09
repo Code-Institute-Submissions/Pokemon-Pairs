@@ -8,7 +8,7 @@
 #card7 { grid-area: pair4a; }
 #card8 { grid-area: pair4b; }
 
-
+/* Grid settings */
 .card-grid-container {
   display: grid;
   grid-template-areas:
@@ -25,6 +25,22 @@
     margin: 0;
 }
 
+.card-grid-container .eight-cards {
+   color: white;
+    padding: 10px;
+    height: 16vh;
+    text-align: center;   
+}
+
+.card-grid-container .sixteen-cards {
+   color: white;
+    padding: 10px;
+    height: 16vh;
+    text-align: center;   
+}
+
+/* Individual CSS */
+
 .pair1{
     background-color: red;
 }
@@ -38,12 +54,7 @@
     background-color:yellow;
 }
 
-.card-grid-container>div {
-   color: white;
-    padding: 10px;
-    height: 10.2vh;
-    text-align: center;   
-}
+
 
 
 

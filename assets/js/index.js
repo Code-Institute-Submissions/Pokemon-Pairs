@@ -30,14 +30,14 @@ $("#gameInfoShow").click(function(){
 $("#easy").click(function(){
     $("#game").html(`
     <div id="card-grid" class="card-grid-container">
-        <div id="card1" class="easy pair1" onclick="myfunction('card1');">card1</div>   
-        <div id="card2" class="easy pair1" onclick="myfunction('card2');">card2</div>
-        <div id="card3" class="easy pair2">card3</div>
-        <div id="card4" class="easy pair2">card4</div>
-        <div id="card5" class="easy pair3">card5</div>
-        <div id="card6" class="easy pair3">card6</div>
-        <div id="card7" class="easy pair4">card7</div>
-        <div id="card8" class="easy pair4">card8</div>    
+        <div id="card1" class="eight-cards pair1" onclick="myfunction('card1');">card1</div>   
+        <div id="card2" class="eight-cards pair1" onclick="myfunction('card2');">card2</div>
+        <div id="card3" class="eight-cards pair2">card3</div>
+        <div id="card4" class="eight-cards pair2">card4</div>
+        <div id="card5" class="eight-cards pair3">card5</div>
+        <div id="card6" class="eight-cards pair3">card6</div>
+        <div id="card7" class="eight-cards pair4">card7</div>
+        <div id="card8" class="eight-cards pair4">card8</div>    
     </div>`);
     $("#gridItemName").addClass("display");
     $("#gridItemResults").addClass("display");
