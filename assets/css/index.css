@@ -118,6 +118,15 @@ ul{
     margin-bottom: 0;
 }
 
+a {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Toggle classes */
 .display {
     display: none;
