@@ -1,10 +1,8 @@
-
-
 //Menu opening JS
 $("#menuButton").click(function(){
     $("#indexGrid").toggleClass("index-grid");
     $("#indexGrid").toggleClass("index-grid-menuShow");
-    $("#gridItemMenu").toggle("display", "block");
+    $("#gridItemMenu").toggleClass("display");
 });
 
 
@@ -57,8 +55,9 @@ $("#easy").click(function(){
         <div id="card7" class="box pair4">card7</div>
         <div id="card8" class="box pair4">card8</div>    
     </div>`);
-    
-  });
+    $("#gridItemName").addClass("display");
+    $("#gridItemResults").addClass("display");
+});
 
    
 
