@@ -99,10 +99,10 @@ $("#hard").click(function(){
 
 //JS for the game
 
- var color = "blue";
-  function pair1(){
-    //   console.log("This has worked!");
-    //   document.getElementById().style.backgroundColor = color;
-      $('#card1').css("color", "yellow");
-      $('#card1').css("background-color", color)
-  }; 
+//  var color = "blue";
+//   function pair1(){
+//     //   console.log("This has worked!");
+//     //   document.getElementById().style.backgroundColor = color;
+//       $('#card1').css("color", "yellow");
+//       $('#card1').css("background-color", color)
+//   }; 
