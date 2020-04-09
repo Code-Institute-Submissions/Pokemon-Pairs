@@ -1,3 +1,8 @@
+ function myfunction(test){
+      console.log("This has worked!");
+      document.getElementById(test).style.backgroundColor = "green";
+  }; 
+
 // $("#start").click(function(){
 //     let a = 0;
 //     let b = 0;
