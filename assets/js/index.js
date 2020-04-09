@@ -41,6 +41,8 @@ $("#easy").click(function(){
     </div>`);
     $("#gridItemName").addClass("display");
     $("#gridItemResults").addClass("display");
+    $("#gameInfoShow").toggleClass("display");
+    $("#gameInfoHide").toggleClass("display");
 });
 
    
@@ -61,6 +63,8 @@ $("#medium").click(function(){
     </div>`);
     $("#gridItemName").addClass("display");
     $("#gridItemResults").addClass("display");
+    $("#gameInfoShow").toggleClass("display");
+    $("#gameInfoHide").toggleClass("display");
   });
 
 $("#hard").click(function(){
@@ -77,6 +81,8 @@ $("#hard").click(function(){
     </div>`);
     $("#gridItemName").addClass("display");
     $("#gridItemResults").addClass("display");
+    $("#gameInfoShow").toggleClass("display");
+    $("#gameInfoHide").toggleClass("display");
   });
 
 
