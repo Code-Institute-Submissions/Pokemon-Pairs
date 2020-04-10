@@ -54,11 +54,6 @@
     background-color:yellow;
 }
 
-
-
-
-
-
 .showCard {
   background-color: green;
 }
@@ -72,5 +67,18 @@
 #card7,
 #card8 {
    display: inline-block;    
+}
+
+
+
+/* Landscape for mobile */
+
+@media screen and (orientation: landscape) and (max-height: 376px) {
+.card-grid-container .eight-cards{
+    height: 18.5vh;
+}
+
+
+
 }
 
