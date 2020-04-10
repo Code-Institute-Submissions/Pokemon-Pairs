@@ -1,9 +1,8 @@
 //Menu opening JS
 $("#menuButton").click(function(){
-    $("#indexGrid").toggleClass("index-grid");
-    $("#indexGrid").toggleClass("index-grid-menuShow");
-    $("#gridItemMenu").toggleClass("display");
+    $("#navList").slideToggle();
 });
+
 
 //Game information display
 $("#gridItemResults").click(function(){

@@ -41,14 +41,6 @@ body {
     'game';    
 }
 
-.index-grid-menuShow{
- grid-template-areas:
-    'header header header header' 
-    'game-info game-info game-info menu' 
-    'game game game game'; 
- grid-template-columns: 80px 1fr;
-}
-
 #gridItemHeader{
     background-color: red;
     border: 1px solid black;
@@ -89,21 +81,8 @@ body {
 
 /* Navbar CSS */
 
-#gridItemMenu{
-    background-color: skyblue;
-    width: 80px;
-    /* border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid black; */
-    text-align: center;
-    color: yellow;
-}
-
-.insertMenu {
-     grid-template-areas:
-    'header header' 
-    'menu game-info' 
-    'menu game';
+#navList {
+    display: block;
 }
 
 /* Clean up the code so you don't have an !important */
