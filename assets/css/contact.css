@@ -1,0 +1,10 @@
+body {
+    color: yellow;
+    background-color: rgb(38, 109, 240);
+}
+
+section {
+    margin: 15px;
+    padding: 15px;
+    background-color:midnightblue;
+}
