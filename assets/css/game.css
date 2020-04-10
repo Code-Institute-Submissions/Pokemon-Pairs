@@ -9,7 +9,7 @@
 #card8 { grid-area: pair4b; }
 
 /* Grid settings */
-.card-grid-container-8 {
+.card-grid-container {
   display: grid;
   grid-template-areas:
     'pair1a pair1b'
@@ -25,12 +25,13 @@
     margin: 0;
 }
 
-.card-grid-container-8 .eight-cards {
+.card-grid-container .eight-cards {
    color: white;
     padding: 10px;
     height: 16vh;
     text-align: center;   
 }
+
 
 .card-grid-container .sixteen-cards {
    color: white;

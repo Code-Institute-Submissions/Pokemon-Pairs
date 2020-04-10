@@ -29,7 +29,7 @@ $("#gameInfoShow").click(function(){
 //JS for selecting difficulty
 $("#easy").click(function(){
     $("#game").html(`
-    <div id="card-grid" class="card-grid-container-8">
+    <div id="card-grid" class="card-grid-container">
         <div id="card1" class="eight-cards pair1" onclick="myfunction('card1');">card1</div>   
         <div id="card2" class="eight-cards pair1" onclick="myfunction('card2');">card2</div>
         <div id="card3" class="eight-cards pair2">card3</div>
