@@ -80,7 +80,7 @@
 
 @media screen and (orientation: landscape) and (max-height: 376px) {
 body .grid-container {
-    padding: 0;
+    padding: 5px;
 }
 .card-grid-container{
     display:grid;
@@ -93,11 +93,11 @@ body .grid-container {
 }
 
 .card-grid-container .eight-cards{
-    height: 40vh;
+    height: 38.5vh;
 }
 
 .card-grid-container .sixteen-cards {
-   height: 17.9vh;
+   height: 17.3vh;
 }
 
 }
