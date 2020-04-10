@@ -173,16 +173,17 @@ a:active {
 }
 
 #easy, #medium, #hard {
-    background-color: midnightblue;
-    color: yellow;
+    background-color: lightgray;
+    color: black;
     display: inline-block;
     width:25%;
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
     margin:0;    
 }
 
-.active-mode {
-
+#difficultyMode .active-mode {
+    background-color: midnightblue;
+    color: yellow;
 }
 
 /* Footer */

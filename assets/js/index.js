@@ -43,6 +43,9 @@ $("#easy").click(function(){
     $("#gridItemResults").addClass("display");
     $("#gameInfoShow").toggleClass("display");
     $("#gameInfoHide").toggleClass("display");
+    $(this).addClass("active-mode");
+    $("#medium").removeClass("active-mode");
+    $("#hard").removeClass("active-mode");
 });
 
    
@@ -73,6 +76,9 @@ $("#medium").click(function(){
     $("#gridItemResults").addClass("display");
     $("#gameInfoShow").toggleClass("display");
     $("#gameInfoHide").toggleClass("display");
+    $(this).addClass("active-mode");
+    $("#easy").removeClass("active-mode");
+    $("#hard").removeClass("active-mode");
   });
 
 $("#hard").click(function(){
@@ -99,6 +105,9 @@ $("#hard").click(function(){
     $("#gridItemResults").addClass("display");
     $("#gameInfoShow").toggleClass("display");
     $("#gameInfoHide").toggleClass("display");
+    $(this).addClass("active-mode");
+    $("#easy").removeClass("active-mode");
+    $("#medium").removeClass("active-mode");
   });
 
 
