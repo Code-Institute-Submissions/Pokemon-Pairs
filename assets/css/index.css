@@ -81,12 +81,20 @@ body {
 /* Navbar CSS */
 
 .navbar{
-    text-align: right;
+    text-align: center;
+}
 
+.navbar-nav {
+    display: inline;
+}
+
+.navbar-collapse{
+    margin-top: 8px;
 }
 
 .nav-item{
-    margin-right: 0;
+    display: inline-block;
+    width: 30%;
 }
 
 
@@ -114,17 +122,13 @@ ul li{
 
 /* Generic CSS */
 
-a {
-    color: inherit;
-}
-
-a:hover {
+.navbar .nav-item .nav-link:hover {
     text-decoration: none;
-    color:midnightblue;
+    color: yellow;
 }
 
-a:active {
-    color: inherit;
+.navbar .nav-item a:active {
+    color: yellow;
     text-decoration: none;
 }
 
