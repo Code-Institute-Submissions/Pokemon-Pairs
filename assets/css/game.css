@@ -9,7 +9,7 @@
 #card8 { grid-area: pair4b; }
 
 /* Grid settings */
-.card-grid-container {
+.card-grid-container-8 {
   display: grid;
   grid-template-areas:
     'pair1a pair1b'
@@ -25,7 +25,7 @@
     margin: 0;
 }
 
-.card-grid-container .eight-cards {
+.card-grid-container-8 .eight-cards {
    color: white;
     padding: 10px;
     height: 16vh;
@@ -74,11 +74,13 @@
 /* Landscape for mobile */
 
 @media screen and (orientation: landscape) and (max-height: 376px) {
-.card-grid-container .eight-cards{
+.card-grid-container-8 .eight-cards{
     height: 18.5vh;
 }
 
+.card-grid-container .sixteen-cards{
 
+}
 
 }
 
