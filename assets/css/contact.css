@@ -17,24 +17,3 @@ section {
 }
 
 /* Nav bar */
-
-#navList {
-    text-align: right;
-}
-
-ul {
-    padding: 0.5rem;
-    margin-bottom: 0;
-    border:0;
-}
-
-ul li {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0 0 15px 0;
-    margin-right: 14px;
-}
-
-ul #linkContactUs{
-    padding-bottom: 7px;
-}
