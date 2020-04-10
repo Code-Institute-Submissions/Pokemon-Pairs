@@ -1,3 +1,8 @@
+
+
+
+//Sending emails
+
 function sendEnquiry(enquiryForm) {
     emailjs.send("cgpalmer91_gmail_com", "pokemon_template", {
         "from_name": enquiryForm.userName.value,
