@@ -13,6 +13,9 @@ function sendEnquiry(enquiryForm) {
     .then(
         function(response) {
             console.log("Success", response);
+            $("#sendButton").html("Sent!");
+            
+            
         },
         function(error){
             console.log("Failed", error);
