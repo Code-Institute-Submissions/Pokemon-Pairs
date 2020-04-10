@@ -47,6 +47,10 @@ h1{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.btn-styling a{
+    color: yellow;
+}
+
 .btn-styling:active, .btn-styling:hover {
     color: yellow;
     background-color: blue;
@@ -56,4 +60,8 @@ h1{
 #successMessage {
     display: none;
     text-align: center;
+}
+
+#successMessage h1, #successMessage h4 {
+    margin-bottom: 32px;
 }
