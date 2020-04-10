@@ -160,7 +160,7 @@ a:active {
 
 /* Difficulty selection */
 
-.difficultyMode{
+#difficultyMode{
     text-align: center;
     display:flex;
     justify-content: center;
@@ -178,4 +178,16 @@ a:active {
 /* Footer */
 footer{
     display: none;
+}
+
+
+
+/* Landscape for mobile */
+
+@media screen and (orientation: landscape) and (max-height: 376px) {
+#gridItemHeader, #gridItemName, #gridItemResults, #timerTitle, #gameInfoHide, #gameInfoShow, #difficultyMode{
+    display: none;
+}
+
+
 }
