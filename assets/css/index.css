@@ -11,7 +11,13 @@ body {
 
 #gridItemMenu{grid-area: menu;}
 #gridItemHeader{grid-area: header;}
-#gridItemGameInfo{grid-area: game-info;}
+#gridItemGameInfo{
+    grid-area: game-info;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+                   
+}
 #gridItemGame{grid-area: game;}
 
 
@@ -45,9 +51,7 @@ body {
 
 #gridItemHeader{
     background-color: red;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
+    border: 1px solid black;
     color: yellow;
 }
 
@@ -55,12 +59,12 @@ body {
     background-color: rgb(38, 109, 240);
     text-align: center;
     color: yellow;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
   
 
 #gridItemGame{
-    background-color: rgb(238, 238, 238);
+    background-color: skyblue;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
@@ -86,11 +90,11 @@ body {
 /* Navbar CSS */
 
 #gridItemMenu{
-    background-color: rgba(123, 175, 243, 0.938);
+    background-color: skyblue;
     width: 80px;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black;
     border-top: 1px solid black;
-    border-right: 1px solid black;
+    border-right: 1px solid black; */
     text-align: center;
     color: yellow;
 }
@@ -119,6 +123,8 @@ ul li{
 ul{
     padding: 0.5rem;
     margin-bottom: 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 a {
@@ -167,12 +173,16 @@ a:active {
 }
 
 #easy, #medium, #hard {
-    background-color: grey;
+    background-color: midnightblue;
     color: yellow;
     display: inline-block;
     width:25%;
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
     margin:0;    
+}
+
+.active-mode {
+
 }
 
 /* Footer */

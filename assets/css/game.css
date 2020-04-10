@@ -19,10 +19,14 @@
     ; */
     grid-template-columns: 1fr 1fr;
     grid-gap: 2vh;
-    background-color: #929292;
+    background-color: skyblue;
     text-align: center;
     padding: 2vh;
     margin: 0;
+    border-top: 1px solid black;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+    
 }
 
 .card-grid-container .eight-cards {
