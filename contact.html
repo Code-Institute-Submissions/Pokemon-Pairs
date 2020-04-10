@@ -6,7 +6,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">    
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css"> 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_0XBxWooJXDClaRYNDfedS");
+    })();
+    </script> 
         <title>Pokemon Pairs! - Contact Page</title>
 </head>
 <body>
@@ -31,26 +39,27 @@
         
     <section>
         <h1>This is the Contact Page!</h1>
-        <form>
+        <form onsubmit="return sendEnquiry(this);">
             <div class="form-group">
                 <label for="userName">Name</label>
-                <input type="text" class="form-control" id="userName" placeholder="Please type in your name here.">
+                <input type="text" class="form-control" id="userName" name="userName"  placeholder="Please type in your name here.">
             </div>
             <div class="form-group">
                 <label for="userEmail">Email address</label>
-                <input type="email" class="form-control" id="userEmail" placeholder="Please type in your email address here." required>
+                <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Please type in your email address here." required>
             </div>
             <div class="form-group">
                 <label for="ageConsent">Do you have permission to use this email address?</label>
-                <select class="form-control" id="ageConsent" required>
+                <select class="form-control" id="ageConsent" name="ageConsent" required>
                     <option>Yes</option>
                     <option>No</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="reasonForEnquiry">Please write your feedback or questions here.</label>
-                <textarea class="form-control" id="reasonForEnquiry" required></textarea>
+                <textarea class="form-control" id="reasonForEnquiry" name="reasonForEnquiry" required></textarea>
             </div>
+            <button type="submit" class="btn btn-secondary center-block">Send</button>
         </form>
     </section>
 
