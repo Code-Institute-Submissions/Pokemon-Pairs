@@ -9,10 +9,14 @@ section {
     background-color:midnightblue;
 }
 
+/* Header */
+
 #gridItemHeader {
     background-color: red;
     margin: 15px;
 }
+
+/* Nav bar */
 
 #navList {
     text-align: right;
