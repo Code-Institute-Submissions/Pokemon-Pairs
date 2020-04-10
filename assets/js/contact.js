@@ -12,9 +12,10 @@ function sendEnquiry(enquiryForm) {
     })
     .then(
         function(response) {
-            console.log("Success", response);
+            console.log("Success", response); 
             $("#sendButton").html("Sent!");
-            
+            $("#contactForm").css("display", "none");
+            $("#successMessage").css("display", "block");         
             
         },
         function(error){
