@@ -9,7 +9,6 @@ body {
 
 /* Grid Layout for responsive design */
 
-#gridItemMenu{grid-area: menu;}
 #gridItemHeader{grid-area: header;}
 #gridItemGameInfo{
     grid-area: game-info;
@@ -81,30 +80,39 @@ body {
 
 /* Navbar CSS */
 
-#navList {
-    display: block;
+.navbar{
+    text-align: right;
 }
 
-/* Clean up the code so you don't have an !important */
-.show {
-    grid-template-columns: 80px 1fr;
-    right: 0!important;     
+.nav-item{
+    margin-right: 0;
 }
 
-/* Generic CSS */
 
-ul li{
+#navList { 
+    right:0;
+}
+
+ul {
+    padding: 0.5rem;
+    margin-bottom: 0;
+    border:0;
+}
+
+ul li {
     text-decoration: none;
     list-style-type: none;
     padding: 0 0 15px 0;
+    margin-right: 14px;
 }
 
-ul{
-    padding: 0.5rem;
-    margin-bottom: 0;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+ul #linkContactUs{
+    padding-bottom: 7px;
 }
+
+/* Clean up the code so you don't have an !important */
+
+/* Generic CSS */
 
 a {
     color: inherit;
@@ -125,12 +133,7 @@ a:active {
     display: none;
 }
 
-.height{
-    height:68.5vh;
-}
-.height-full {
-    height: 76.5vh;
-}
+
 
 /* Grid game information */
 
