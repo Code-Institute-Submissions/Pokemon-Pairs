@@ -82,6 +82,7 @@ body {
 
 .navbar{
     text-align: right;
+
 }
 
 .nav-item{
@@ -89,25 +90,24 @@ body {
 }
 
 
-#navList { 
-    right:0;
-}
-
 ul {
     padding: 0.5rem;
     margin-bottom: 0;
     border:0;
 }
 
-ul li {
+ul li{
     text-decoration: none;
     list-style-type: none;
-    padding: 0 0 15px 0;
-    margin-right: 14px;
 }
 
-ul #linkContactUs{
-    padding-bottom: 7px;
+.navbar-light .navbar-nav .active>.nav-link{
+    color:yellow;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:rgba(240, 255, 0, 0.8)
+
 }
 
 /* Clean up the code so you don't have an !important */
@@ -155,7 +155,7 @@ a:active {
 }
 
 #easy, #medium, #hard {
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
     color: black;
     display: inline-block;
     width:25%;
