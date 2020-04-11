@@ -84,6 +84,11 @@ body {
     text-align: center;
 }
 
+.navbar .navbar-brand {
+    color: yellow;
+    font-size: 2rem;
+}
+
 .navbar-nav {
     display: inline;
 }
