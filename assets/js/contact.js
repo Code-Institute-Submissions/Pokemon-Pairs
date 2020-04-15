@@ -1,6 +1,4 @@
 
-
-
 //Sending emails
 
 function sendEnquiry(enquiryForm) {
@@ -13,13 +11,15 @@ function sendEnquiry(enquiryForm) {
     .then(
         function(response) {
             console.log("Success", response); 
-            $("#sendButton").html("Sent!");
-            $("#contactForm").css("display", "none");
-            $("#successMessage").css("display", "block");         
-            
+            $("#sendButton").html("Sent!");  
+            $("#successModal").css("display", "block");
+            $("#successModal").addClass("in");
+            $("#successModal").addClass("show");
+            $("#contact").addClass("modal-open");    
         },
         function(error){
             console.log("Failed", error);
         });
     return false;
 }
+
