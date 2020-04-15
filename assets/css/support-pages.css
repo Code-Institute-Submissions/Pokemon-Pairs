@@ -73,6 +73,9 @@ h1{
     margin: 24px 0 ;
 }
 
+#info-text-help a {
+    color: whitesmoke;
+}
 #help {
     text-align: center;
 }
