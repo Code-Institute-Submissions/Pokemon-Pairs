@@ -55,17 +55,17 @@ $("#easy").click(function(){
  
 $("#medium").click(function(){
     $("#game").html(`
-    <div id="card-grid" class="card-grid-container">
-        <div id="card1" class="sixteen-cards pair1" onclick="myfunction('card1');">card1</div>   
-        <div id="card2" class="sixteen-cards pair1" onclick="myfunction('card2');">card2</div>
+    <div id="card-grid" class="card-grid-container-sixteen">
+        <div id="card1" class="sixteen-cards pair1mh" onclick="myfunction('card1');">card1</div>   
+        <div id="card2" class="sixteen-cards pair1mh" onclick="myfunction('card2');">card2</div>
         <div id="card3" class="sixteen-cards pair2">card3</div>
         <div id="card4" class="sixteen-cards pair2">card4</div>
         <div id="card5" class="sixteen-cards pair3">card5</div>
         <div id="card6" class="sixteen-cards pair3">card6</div>
         <div id="card7" class="sixteen-cards pair4">card7</div>
         <div id="card8" class="sixteen-cards pair4">card8</div>   
-        <div id="card9" class="sixteen-cards pair1" onclick="myfunction('card1');">card1</div>   
-        <div id="card10" class="sixteen-cards pair1" onclick="myfunction('card2');">card2</div>
+        <div id="card9" class="sixteen-cards pair1mh" onclick="myfunction('card1');">card1</div>   
+        <div id="card10" class="sixteen-cards pair1mh" onclick="myfunction('card2');">card2</div>
         <div id="card11" class="sixteen-cards pair2">card3</div>
         <div id="card12" class="sixteen-cards pair2">card4</div>
         <div id="card13" class="sixteen-cards pair3">card5</div>
@@ -84,17 +84,17 @@ $("#medium").click(function(){
 
 $("#hard").click(function(){
     $("#game").html(`
-    <div id="card-grid" class="card-grid-container">     
-        <div id="card1" class="sixteen-cards pair1" onclick="myfunction('card1');">card1</div>   
-        <div id="card2" class="sixteen-cards pair1" onclick="myfunction('card2');">card2</div>
+    <div id="card-grid" class="card-grid-container-sixteen">     
+        <div id="card1" class="sixteen-cards pair1mh" onclick="myfunction('card1');">card1</div>   
+        <div id="card2" class="sixteen-cards pair1mh" onclick="myfunction('card2');">card2</div>
         <div id="card3" class="sixteen-cards pair2">card3</div>
         <div id="card4" class="sixteen-cards pair2">card4</div>
         <div id="card5" class="sixteen-cards pair3">card5</div>
         <div id="card6" class="sixteen-cards pair3">card6</div>
         <div id="card7" class="sixteen-cards pair4">card7</div>
         <div id="card8" class="sixteen-cards pair4">card8</div>   
-        <div id="card9" class="sixteen-cards pair1" onclick="myfunction('card1');">card1</div>   
-        <div id="card10" class="sixteen-cards pair1" onclick="myfunction('card2');">card2</div>
+        <div id="card9" class="sixteen-cards pair1mh" onclick="myfunction('card1');">card1</div>   
+        <div id="card10" class="sixteen-cards pair1mh" onclick="myfunction('card2');">card2</div>
         <div id="card11" class="sixteen-cards pair2">card3</div>
         <div id="card12" class="sixteen-cards pair2">card4</div>
         <div id="card13" class="sixteen-cards pair3">card5</div>
