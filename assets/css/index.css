@@ -177,6 +177,15 @@ ul li{
     color: yellow;
 }
 
+
+/* Modals */
+
+.modal{
+    background-color: rgba(112, 157, 199, 0.8);
+
+}
+
+
 /* Footer */
 footer{
     display: none;
