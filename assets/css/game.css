@@ -47,7 +47,9 @@
 /* Individual CSS */
 
 .pair1{
-    background-color: red;
+    background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
+    background-size: 11vh;
+    background-repeat: no-repeat;
 }
 .pair2{
     background-color: blue;
