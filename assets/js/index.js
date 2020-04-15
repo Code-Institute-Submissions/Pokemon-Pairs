@@ -1,4 +1,13 @@
-//Menu opening JS
+$( document ).ready(function() {
+    console.log( "ready!" );
+    $("#welcomeModal").css("display", "block");
+    $("#welcomeModal").addClass("in");
+    $("#welcomeModal").addClass("show");
+    $("body").addClass("modal-open");
+});
+
+
+//Menu opening Js
 $("#menuButton").click(function(){
     $("#navList").slideToggle();
 });
