@@ -6,6 +6,15 @@ $( document ).ready(function() {
     $("body").addClass("modal-open");
 });
 
+function insertName() {
+	var playerName = document.getElementById("nameInput").value;
+	console.log(playerName)
+	$("#welcomeModal").css("display", "none");
+	$("#welcomeModal").removeClass("in");
+	$("#welcomeModal").removeClass("show");
+	$("body").removeClass("modal-open");
+	$("#playerName").html(playerName);
+}
 
 //Menu opening Js
 $("#menuButton").click(function(){
