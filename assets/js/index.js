@@ -5,15 +5,17 @@ $( document ).ready(function() {
     $("#welcomeModal").addClass("show");
     $("body").addClass("modal-open");
 });
-
+var nameChosen = 0;
 function insertName() {
 	var playerName = document.getElementById("nameInput").value;
-	console.log(playerName)
-	$("#welcomeModal").css("display", "none");
+    console.log(playerName)
+    nameChosen++;
+    $("#welcomeModal").css("display", "none");
 	$("#welcomeModal").removeClass("in");
 	$("#welcomeModal").removeClass("show");
 	$("body").removeClass("modal-open");
-	$("#playerName").html(playerName);
+    $("#playerName").html(playerName);
+    console.log(nameChosen);
 }
 
 //Menu opening Js
