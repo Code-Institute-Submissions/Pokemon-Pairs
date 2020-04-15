@@ -1,7 +1,18 @@
+  
+ // This is the modal for finished  
+  var clicks = 0;
  function myfunction(test){
-      console.log("This has worked!");
-      document.getElementById(test).style.backgroundColor = "green";
-  }; 
+    //   console.log("This has worked!");
+    //   document.getElementById(test).style.backgroundColor = "green";
+        clicks++;
+        console.log(clicks);
+    if(clicks == 8){
+        $("#finishedModal").css("display", "block");
+        $("#finishedModal").addClass("in");
+        $("#finishedModal").addClass("show");
+        $("#indexBody").addClass("modal-open");
+    }        
+}; 
 
 // $("#start").click(function(){
 //     let a = 0;
