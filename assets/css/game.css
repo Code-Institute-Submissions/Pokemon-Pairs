@@ -17,22 +17,46 @@
     'pair3a pair3b'
     'pair4a pair4b'
     ; */
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vh;
     background-color: skyblue;
     text-align: center;
-    padding: 2vh;
+    padding: 2vh 2vh 0 2vh;
     margin: 0;
     border-top: 1px solid black;
     /* border-left: 1px solid black;
-    border-right: 1px solid black; */
-    
+    border-right: 1px solid black; */  
+}
+.card-grid-container-final {
+  display: grid;
+  /* grid-template-areas:
+    'pair1a pair1b'
+    'pair2a pair2b'
+    'pair3a pair3b'
+    'pair4a pair4b'
+    ; */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vh;
+    background-color: skyblue;
+    text-align: center;
+    padding: 1vh 10.75vh 0 10.75vh;
+    margin: 0;
+    /* border-top: 1px solid black; */
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */  
 }
 
 .card-grid-container .eight-cards {
    color: white;
-    padding: 10px;
-    height: 16vh;
+    padding: 0 0;
+    height: 23vh;
+    text-align: center;   
+}
+
+.card-grid-container-final .eight-cards {
+   color: white;
+    padding: 0 0;
+    height: 23vh;
     text-align: center;   
 }
 
@@ -48,17 +72,21 @@
 
 .pair1{
     background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
-    background-size: 11vh;
+    background-size: 16.5vh;
     background-repeat: no-repeat;
 }
 .pair2{
-    background-color: blue;
+   background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
+    background-size: 16.5vh;
+    background-repeat: no-repeat;
 }
 .pair3{
     background-color: purple;
 }
 .pair4{
     background-color:yellow;
+    margin-bottom: 2vh;
+   
 }
 
 .showCard {

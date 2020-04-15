@@ -35,6 +35,8 @@ $("#easy").click(function(){
         <div id="card4" class="eight-cards pair2">card4</div>
         <div id="card5" class="eight-cards pair3">card5</div>
         <div id="card6" class="eight-cards pair3">card6</div>
+    </div>
+    <div id="card-grid-final" class="card-grid-container-final">
         <div id="card7" class="eight-cards pair4">card7</div>
         <div id="card8" class="eight-cards pair4">card8</div>    
     </div>`);
