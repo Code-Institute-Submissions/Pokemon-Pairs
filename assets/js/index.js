@@ -3,7 +3,7 @@ var nameChosen = 0;
 $( document ).ready(function() {
     console.log( "ready!" );
     console.log(nameChosen);
-    if (nameChosen == 0){
+    if (nameChosen = 0){
     $("#welcomeModal").css("display", "block");
     $("#welcomeModal").addClass("in");
     $("#welcomeModal").addClass("show");
@@ -28,11 +28,11 @@ $("#menuButton").click(function(){
     $("#navList").slideToggle();
 });
 
-
-//Game information display
-$("#gridItemResults").click(function(){
-    $("#topResultsWrapper").toggle("display", "block");
-});
+//Broken - fix later
+// //Game information display
+// $("#gridItemResults").click(function(){
+//     $("#topResultsWrapper").toggle("display", "block");
+// });
 
 $("#gameInfoHide").click(function(){
     $("#gridItemName").toggleClass("display");
