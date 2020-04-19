@@ -5,15 +5,46 @@
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+   function cardAnimation(){
+        $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
+
+   function cardAnimation(){
+        $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
+
+   function cardAnimation(){
+        $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
+
+   function cardAnimation(){
+        $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
+
+   function cardAnimation(){
+        $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
+
+   function cardAnimation(){
+        $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
+
+   function cardAnimation(){
+        $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
+
+  
+
+
+  
 //End of code for animating cards 
  
  // This is the modal for finished  
