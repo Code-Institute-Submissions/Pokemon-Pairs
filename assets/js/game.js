@@ -13,8 +13,8 @@
   function card1Animation(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card1Counter++;
-        console.log("card 1 = " + card1Counter);
+        pair1Counter++;
+        console.log("card 1 = " + pair1Counter);
         if(pair1Counter == 2){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
@@ -26,50 +26,85 @@
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair1Counter++;
-        console.log("card 2 = " + card2Counter);
-  }
+        console.log("card 2 = " + pair1Counter);
+        if(pair1Counter == 2){
+                $("#card1").css("display", "none");
+                $("#card2").css("display", "none");
+                }
+        }
+  
 
    function card3Animation(){
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair2Counter++;
-        console.log("card 3 = " + card3Counter);
-  }
+        console.log("card 3 = " + pair2Counter);
+        if(pair2Counter == 2){
+                $("#card3").css("display", "none");
+                $("#card4").css("display", "none");
+                }
+        }
+  
 
    function card4Animation(){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair2Counter++;
-        console.log("card 4 = " + card4Counter);
-  }
+        console.log("card 4 = " + pair2Counter);
+        if(pair2Counter == 2){
+                $("#card3").css("display", "none");
+                $("#card4").css("display", "none");
+                }
+        }
+  
 
    function card5Animation(){
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair3Counter++;
-        console.log("card 5 = " + card5Counter);
-  }
+        console.log("card 5 = " + pair3Counter);
+        if(pair3Counter == 2){
+                $("#card5").css("display", "none");
+                $("#card6").css("display", "none");
+                }
+        }
+  
 
    function card6Animation(){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair3Counter++;
-        console.log("card 6 = " + card6Counter);
-  }
+        console.log("card 6 = " + pair3Counter);
+        if(pair3Counter == 2){
+                $("#card5").css("display", "none");
+                $("#card6").css("display", "none");
+                }
+        }
+  
 
    function card7Animation(){
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair4Counter++;
-        console.log("card 7 = " + card7Counter);
-  }
+        console.log("card 7 = " + pair4Counter);
+        if(pair4Counter == 2){
+                $("#card7").css("display", "none");
+                $("#card8").css("display", "none");
+                }
+        }
+  
 
    function card8Animation(){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair4Counter++;
-        console.log("card 8 = " + card8Counter);
-  }
+        console.log("card 8 = " + pair4Counter);
+        if(pair4Counter == 2){
+                $("#card7").css("display", "none");
+                $("#card8").css("display", "none");
+                }
+        }
+  
 
   
 
