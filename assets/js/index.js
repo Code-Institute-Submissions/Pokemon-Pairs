@@ -81,7 +81,7 @@ $("#easy").click(function(){
         </div>
         <div id="card-grid-final" class="card-grid-container-final">
                 <div id="card7" class="eight-cards  card" onclick="card7Animation('card7');">
-                    <div id="card7Cover" class="eight-cards  cover">card7</div> 
+                    <div id="card7Cover" class="eight-cards cover">card7</div> 
                     <div id="card7face" class="eight-cards pair4 face">card7</div>
                 </div>
                 <div id="card8" class="eight-cards  card" onclick="card8Animation('card8');">
