@@ -111,6 +111,9 @@
    
 }
 
+#card1Match, #card2Match{
+    background-color: grey;
+}
 
 
 /* CSS for pairs - medium/hard */

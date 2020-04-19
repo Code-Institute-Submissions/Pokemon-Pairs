@@ -52,6 +52,8 @@
                 function pairFound(){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
+                $("#card1Match").removeClass("display");
+                $("#card2Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
