@@ -1,42 +1,42 @@
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
-  function cardAnimation(){
+  function card1Animation(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
 
-   function cardAnimation(){
+   function card2Animation(){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
 
-   function cardAnimation(){
+   function card3Animation(){
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
 
-   function cardAnimation(){
+   function card4Animation(){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
 
-   function cardAnimation(){
+   function card5Animation(){
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
 
-   function cardAnimation(){
+   function card6Animation(){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
 
-   function cardAnimation(){
+   function card7Animation(){
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
 
-   function cardAnimation(){
+   function card8Animation(){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
   }
