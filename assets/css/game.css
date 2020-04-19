@@ -183,7 +183,7 @@ body .grid-container {
    It has been modified to fit my purpose */
 
 
-.flip3D > .cover{
+.cover{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
@@ -193,7 +193,7 @@ body .grid-container {
 	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.flip3D > .face{
+.face{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 180deg );
 	transform: perspective( 600px ) rotateY( 180deg );
@@ -203,11 +203,11 @@ body .grid-container {
 	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.flip3D:hover > .front{
+.cover:hover{
 	-webkit-transform: perspective( 600px ) rotateY( -180deg );
 	transform: perspective( 600px ) rotateY( -180deg );
 }
-.flip3D:hover > .back{
+.face:hover{
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
 }
