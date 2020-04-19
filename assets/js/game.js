@@ -15,7 +15,8 @@
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair1Counter++;
         console.log("card 1 = " + pair1Counter);
-        if ( pair2Counter == 1){  
+        if ( pair2Counter || pair3Counter || pair4Counter || pair5Counter 
+             || pair6Counter || pair7Counter || pair8Counter == 1){  
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){   
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
