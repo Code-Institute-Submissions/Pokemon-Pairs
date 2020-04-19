@@ -1,4 +1,18 @@
   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  // This is the modal for finished  
   var clicks = 0;
  function myfunction(test){
