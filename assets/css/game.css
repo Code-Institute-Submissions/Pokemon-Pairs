@@ -176,31 +176,24 @@ body .grid-container {
 /* Tutorial from http://www.developphp.com/video/CSS/Flip-3D-Boxes-and-Cards-Animation-CSS-Tutorial.
    It has been modified to fit my purpose */
 
-
-.card > .cover{
+.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+.flip3D > .front{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
-	background:#FC0; 
+	background:#FC0; width:240px; height:200px; border-radius: 7px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.card > .face{
+.flip3D > .back{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 180deg );
 	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
-}
-.card:hover > .cover{
-	-webkit-transform: perspective( 600px ) rotateY( -180deg );
-	transform: perspective( 600px ) rotateY( -180deg );
-}
-.card:hover >.face{
-	-webkit-transform: perspective( 600px ) rotateY( 0deg );
-	transform: perspective( 600px ) rotateY( 0deg );
 }
