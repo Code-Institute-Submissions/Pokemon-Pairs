@@ -21,7 +21,29 @@
         function pairNotFound(){   
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        }
      } 
         }
         else{
@@ -46,7 +68,30 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair2Counter--; } 
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        }
+    } 
         } 
         else{
         if(pair1Counter == 2){
@@ -71,7 +116,30 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        } 
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        }
+    } 
         } 
         else{
         if(pair2Counter == 2){
@@ -95,7 +163,29 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair2Counter--; } 
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        } } 
         } 
         else{
         if(pair2Counter == 2){
@@ -119,7 +209,29 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair2Counter--; } 
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        } } 
         } 
         else{
         if(pair3Counter == 2){
@@ -144,7 +256,29 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair2Counter--; } 
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        } } 
         } 
         else{
         if(pair3Counter == 2){
@@ -168,7 +302,29 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair2Counter--; } 
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        } } 
         } 
         else{
         if(pair4Counter == 2){
@@ -194,7 +350,29 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair2Counter--; } 
+        if(pair1Counter == 1){
+            pair1Counter--;
+        }
+        if(pair2Counter == 1){
+            pair2Counter--;
+        }
+        if(pair3Counter == 1){
+            pair3Counter--;
+        }
+        if(pair4Counter == 1){
+            pair4Counter--;
+        }
+        if(pair5Counter == 1){
+            pair5Counter--;
+        }
+        if(pair6Counter == 1){
+            pair6Counter--;
+        }
+        if(pair7Counter == 1){
+            pair7Counter--;
+        }if(pair8Counter == 1){
+            pair8Counter--;
+        } } 
         } 
         else{
         if(pair4Counter == 2){
