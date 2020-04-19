@@ -54,38 +54,38 @@ $("#gameInfoShow").click(function(){
 $("#easy").click(function(){
     $("#game").html(`
         <div id="card-grid" class="card-grid-container">
-            <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+            <div id="card1" class="eight-cards card1" onclick="myfunction('card1');">
+                <div id="card1Cover" class="eight-cards cover" onclick="myfunction('card1');">card1</div> 
                 <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
             </div>
-            <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+            <div id="card1" class="eight-cards  card1" onclick="myfunction('card1');">
+                <div id="card1Cover" class="eight-cards cover" onclick="myfunction('card1');">card1</div> 
                 <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
             </div>
-            <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+            <div id="card1" class="eight-cards card1" onclick="myfunction('card1');">
+                <div id="card1Cover" class="eight-cards cover" onclick="myfunction('card1');">card1</div> 
                 <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
             </div>
-            <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+            <div id="card1" class="eight-cards card1" onclick="myfunction('card1');">
+                <div id="card1Cover" class="eight-cards cover" onclick="myfunction('card1');">card1</div> 
                 <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
             </div>
-            <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+            <div id="card1" class="eight-cards card1" onclick="myfunction('card1');">
+                <div id="card1Cover" class="eight-cards  cover" onclick="myfunction('card1');">card1</div> 
                 <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
             </div>
-            <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+            <div id="card1" class="eight-cards card1" onclick="myfunction('card1');">
+                <div id="card1Cover" class="eight-cards cover" onclick="myfunction('card1');">card1</div> 
                 <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
             </div>
         </div>
         <div id="card-grid-final" class="card-grid-container-final">
-                <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                    <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+                <div id="card1" class="eight-cards  card1" onclick="myfunction('card1');">
+                    <div id="card1Cover" class="eight-cards  cover" onclick="myfunction('card1');">card1</div> 
                     <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
                 </div>
-                <div id="card1" class="eight-cards pair1 card1" onclick="myfunction('card1');">
-                    <div id="card1Cover" class="eight-cards pair1 cover" onclick="myfunction('card1');">card1</div> 
+                <div id="card1" class="eight-cards  card1" onclick="myfunction('card1');">
+                    <div id="card1Cover" class="eight-cards cover" onclick="myfunction('card1');">card1</div> 
                     <div id="card1face" class="eight-cards pair1 face" onclick="myfunction('card1');">card1</div>
                 </div>
         </div>`);

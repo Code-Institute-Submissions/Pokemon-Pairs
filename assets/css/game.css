@@ -94,23 +94,23 @@
 
 
 .pair1{
-    /* background-image: url("https://images.pokemontcg.io/base1/52_hires.png"); */
+    background-image: url("https://images.pokemontcg.io/base1/52_hires.png");
     background-size: 15.5vh;
     background-repeat: no-repeat;
 }
 
 .pair2{
-    /* background-image: url("https://images.pokemontcg.io/base6/13_hires.png"); */
+    background-image: url("https://images.pokemontcg.io/base6/13_hires.png");
     background-size: 15.5vh;
     background-repeat: no-repeat;
 }
 .pair3{
-    /* background-image: url("https://images.pokemontcg.io/base1/1_hires.png"); */
+    background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
     background-size: 15.5vh;
     background-repeat: no-repeat;
 }
 .pair4{
-  /* background-image: url("https://images.pokemontcg.io/base1/1_hires.png"); */
+  background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
     background-size: 15.5vh;
     background-repeat: no-repeat;
    
@@ -197,7 +197,6 @@ body .grid-container {
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 180deg );
 	transform: perspective( 600px ) rotateY( 180deg );
-	background: #80BFFF; 
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transition: -webkit-transform .5s linear 0s;
