@@ -68,28 +68,34 @@ $("#easy").click(function(){
                 <div id="card3Cover" class="eight-cards cover">card3</div> 
                 <div id="card3Face" class="eight-cards pair2 face">card3</div>
             </div>
+            <div id="card3Match" class="eight-cards card display"></div>
             <div id="card4" class="eight-cards card" onclick="card4Animation('card4');">
                 <div id="card4Cover" class="eight-cards cover" >card4</div> 
                 <div id="card4Face" class="eight-cards pair2 face" >card4</div>
             </div>
+            <div id="card4Match" class="eight-cards card display"></div>
             <div id="card5" class="eight-cards card" onclick="card5Animation('card5');">
                 <div id="card5Cover" class="eight-cards  cover" >card5</div> 
                 <div id="card5Face" class="eight-cards pair3 face" >card5</div>
             </div>
+            <div id="card5Match" class="eight-cards card display"></div>
             <div id="card6" class="eight-cards card" onclick="card6Animation('card6');">
                 <div id="card6Cover" class="eight-cards cover">card6</div> 
                 <div id="card6Face" class="eight-cards pair3 face">card6</div>
             </div>
+            <div id="card6Match" class="eight-cards card display"></div>
         </div>
         <div id="card-grid-final" class="card-grid-container-final">
                 <div id="card7" class="eight-cards  card" onclick="card7Animation('card7');">
                     <div id="card7Cover" class="eight-cards cover">card7</div> 
                     <div id="card7Face" class="eight-cards pair4 face">card7</div>
                 </div>
+                <div id="card7Match" class="eight-cards card display"></div>
                 <div id="card8" class="eight-cards  card" onclick="card8Animation('card8');">
                     <div id="card8Cover" class="eight-cards cover">card8</div> 
                     <div id="card8Face" class="eight-cards pair4 face">card8</div>
                 </div>
+                <div id="card8Match" class="eight-cards card display"></div>
         </div>`);
 
 

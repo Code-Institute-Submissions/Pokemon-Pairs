@@ -52,8 +52,7 @@
                 function pairFound(){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
-                $("#card1Match").removeClass("display");
-                $("#card2Match").removeClass("display");
+                $("#card1Match, #card2Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
@@ -102,6 +101,7 @@
                 function pairFound(){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
+                $("#card1Match, #card2Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
@@ -151,6 +151,7 @@
                 function pairFound(){
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
+                $("#card3Match, #card4Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
@@ -198,6 +199,7 @@
                 function pairFound(){
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
+                $("#card3Match, #card4Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
@@ -245,6 +247,7 @@
                 function pairFound(){
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
+                $("#card5Match, #card6Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
@@ -293,6 +296,7 @@
                 function pairFound(){
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
+                $("#card5Match, #card6Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
@@ -340,6 +344,7 @@
                 function pairFound(){
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
+                $("#card7Match, #card8Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
@@ -389,6 +394,7 @@
                 function pairFound(){
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
+                $("#card7Match, #card8Match").removeClass("display");
                 console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
