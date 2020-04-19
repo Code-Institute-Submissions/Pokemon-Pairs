@@ -177,7 +177,7 @@ body .grid-container {
    It has been modified to fit my purpose */
 
 
-.card1 > .cover{
+.card > .cover{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
@@ -187,7 +187,7 @@ body .grid-container {
 	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.card1 > .face{
+.card > .face{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 180deg );
 	transform: perspective( 600px ) rotateY( 180deg );
@@ -196,11 +196,11 @@ body .grid-container {
 	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.card1:hover > .cover{
+.card:hover > .cover{
 	-webkit-transform: perspective( 600px ) rotateY( -180deg );
 	transform: perspective( 600px ) rotateY( -180deg );
 }
-.card1:hover >.face{
+.card:hover >.face{
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
 }
