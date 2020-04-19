@@ -1,4 +1,10 @@
-  
+//This will be the code for animating the cards
+/* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
+   It has been modified to fit my purpose */
+  function cardAnimation(){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  }
  
  
  
@@ -8,10 +14,7 @@
  
  
  
- 
- 
- 
- 
+//End of code for animating cards 
  
  // This is the modal for finished  
   var clicks = 0;
