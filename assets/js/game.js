@@ -15,8 +15,8 @@
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair1Counter++;
         console.log("card 1 = " + pair1Counter);
-        if ( pair2Counter || pair3Counter || pair4Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){  
+        if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){  
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){   
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -52,6 +52,7 @@
                 function pairFound(){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
@@ -62,8 +63,8 @@
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair1Counter++;
         console.log("card 2 = " + pair1Counter);
-        if ( pair2Counter || pair3Counter || pair4Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){
+        if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -99,6 +100,7 @@
                 function pairFound(){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
@@ -110,8 +112,8 @@
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair2Counter++;
         console.log("card 3 = " + pair2Counter);
-         if ( pair1Counter || pair3Counter || pair4Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){
+         if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -147,6 +149,7 @@
                 function pairFound(){
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
@@ -157,8 +160,8 @@
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair2Counter++;
         console.log("card 4 = " + pair2Counter);
-         if ( pair1Counter || pair3Counter || pair4Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){
+         if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -193,6 +196,7 @@
                 function pairFound(){
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
@@ -203,8 +207,8 @@
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair3Counter++;
         console.log("card 5 = " + pair3Counter);
-         if ( pair1Counter || pair2Counter || pair4Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){
+         if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -239,6 +243,7 @@
                 function pairFound(){
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
@@ -250,8 +255,8 @@
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair3Counter++;
         console.log("card 6 = " + pair3Counter);
-         if ( pair1Counter || pair2Counter || pair4Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){
+         if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -286,6 +291,7 @@
                 function pairFound(){
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
@@ -296,8 +302,8 @@
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair4Counter++;
         console.log("card 7 = " + pair4Counter);
-         if ( pair1Counter || pair2Counter || pair3Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){
+         if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -332,6 +338,7 @@
                 function pairFound(){
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
@@ -344,8 +351,8 @@
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair4Counter++;
         console.log("card 8 = " + pair4Counter);
-         if ( pair1Counter || pair2Counter || pair3Counter || pair5Counter 
-             || pair6Counter || pair7Counter || pair8Counter == 1){
+         if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
+             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -380,6 +387,7 @@
                 function pairFound(){
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
+                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
                 }
             }
         }
