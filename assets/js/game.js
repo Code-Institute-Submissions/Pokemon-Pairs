@@ -14,48 +14,56 @@
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card1Counter++;
+        console.log("card 1 = " + card1Counter);
   }
 
    function card2Animation(){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card2Counter++;
+        console.log("card 2 = " + card2Counter);
   }
 
    function card3Animation(){
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card3Counter++;
+        console.log("card 3 = " + card3Counter);
   }
 
    function card4Animation(){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card4Counter++;
+        console.log("card 4 = " + card4Counter);
   }
 
    function card5Animation(){
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card5Counter++;
+        console.log("card 5 = " + card5Counter);
   }
 
    function card6Animation(){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card6Counter++;
+        console.log("card 6 = " + card6Counter);
   }
 
    function card7Animation(){
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card7Counter++;
+        console.log("card 7 = " + card7Counter);
   }
 
    function card8Animation(){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card8Counter++;
+        console.log("card 8 = " + card8Counter);
   }
 
   
