@@ -16,9 +16,12 @@
         pair1Counter++;
         console.log("card 1 = " + pair1Counter);
         if(pair1Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
                 }
+            }
         }
 
 
@@ -28,9 +31,12 @@
         pair1Counter++;
         console.log("card 2 = " + pair1Counter);
         if(pair1Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
                 }
+            }
         }
   
 
@@ -40,9 +46,12 @@
         pair2Counter++;
         console.log("card 3 = " + pair2Counter);
         if(pair2Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
                 }
+            }
         }
   
 
@@ -52,9 +61,12 @@
         pair2Counter++;
         console.log("card 4 = " + pair2Counter);
         if(pair2Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
                 }
+            }
         }
   
 
@@ -64,9 +76,12 @@
         pair3Counter++;
         console.log("card 5 = " + pair3Counter);
         if(pair3Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
                 }
+            }
         }
   
 
@@ -76,9 +91,12 @@
         pair3Counter++;
         console.log("card 6 = " + pair3Counter);
         if(pair3Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
                 }
+            }
         }
   
 
@@ -88,9 +106,12 @@
         pair4Counter++;
         console.log("card 7 = " + pair4Counter);
         if(pair4Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
                 }
+            }
         }
   
 
@@ -100,9 +121,12 @@
         pair4Counter++;
         console.log("card 8 = " + pair4Counter);
         if(pair4Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
                 }
+            }
         }
   
 
