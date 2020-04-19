@@ -15,7 +15,12 @@
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card1Counter++;
         console.log("card 1 = " + card1Counter);
-  }
+        if(card1Counter == 2){
+                $("#card1").css("display", "none");
+                $("#card2").css("display", "none");
+                }
+        }
+
 
    function card2Animation(){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
