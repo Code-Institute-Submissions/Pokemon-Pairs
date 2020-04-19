@@ -54,39 +54,39 @@ $("#gameInfoShow").click(function(){
 $("#easy").click(function(){
     $("#game").html(`
         <div id="card-grid" class="card-grid-container">
-            <div id="card1" class="eight-cards card" onclick="cardAnimation('card1');">
-                <div id="card1Cover" class="eight-cards cover" onclick="cardAnimation('card1');">card1</div> 
-                <div id="card1face" class="eight-cards pair1 face" onclick="cardAnimation('card1');">card1</div>
+            <div id="card1" class="eight-cards card" onclick="card1Animation('card1');">
+                <div id="card1Cover" class="eight-cards cover">card1</div> 
+                <div id="card1face" class="eight-cards pair1 face">card1</div>
             </div>
-            <div id="card2" class="eight-cards  card" onclick="cardAnimation('card2');">
-                <div id="card2Cover" class="eight-cards cover" onclick="cardAnimation('card2');">card2</div> 
-                <div id="card2face" class="eight-cards pair1 face" onclick="cardAnimation('card2');">card2</div>
+            <div id="card2" class="eight-cards  card" onclick="card2Animation();">
+                <div id="card2Cover" class="eight-cards cover">card2</div> 
+                <div id="card2face" class="eight-cards pair1 face">card2</div>
             </div>
-            <div id="card3" class="eight-cards card" onclick="cardAnimation('card3');">
-                <div id="card3Cover" class="eight-cards cover" onclick="cardAnimation('card3');">card3</div> 
-                <div id="card3face" class="eight-cards pair2 face" onclick="cardAnimation('card3');">card3</div>
+            <div id="card3" class="eight-cards card" onclick="card3Animation('card3');">
+                <div id="card3Cover" class="eight-cards cover">card3</div> 
+                <div id="card3face" class="eight-cards pair2 face">card3</div>
             </div>
-            <div id="card4" class="eight-cards card" onclick="cardAnimation('card4');">
-                <div id="card4Cover" class="eight-cards cover" onclick="cardAnimation('card4');">card4</div> 
-                <div id="card4face" class="eight-cards pair2 face" onclick="cardAnimation('card4');">card4</div>
+            <div id="card4" class="eight-cards card" onclick="card4Animation('card4');">
+                <div id="card4Cover" class="eight-cards cover" >card4</div> 
+                <div id="card4face" class="eight-cards pair2 face" >card4</div>
             </div>
-            <div id="card5" class="eight-cards card" onclick="cardAnimation('card5');">
-                <div id="card5Cover" class="eight-cards  cover" onclick="cardAnimation('card5');">card5</div> 
-                <div id="card5face" class="eight-cards pair3 face" onclick="cardAnimation('card5');">card5</div>
+            <div id="card5" class="eight-cards card" onclick="card5Animation('card5');">
+                <div id="card5Cover" class="eight-cards  cover" >card5</div> 
+                <div id="card5face" class="eight-cards pair3 face" >card5</div>
             </div>
-            <div id="card6" class="eight-cards card" onclick="cardAnimation('card6');">
-                <div id="card6Cover" class="eight-cards cover" onclick="cardAnimation('card6');">card6</div> 
-                <div id="card6face" class="eight-cards pair3 face" onclick="cardAnimation('card6');">card6</div>
+            <div id="card6" class="eight-cards card" onclick="card6Animation('card6');">
+                <div id="card6Cover" class="eight-cards cover">card6</div> 
+                <div id="card6face" class="eight-cards pair3 face">card6</div>
             </div>
         </div>
         <div id="card-grid-final" class="card-grid-container-final">
-                <div id="card7" class="eight-cards  card" onclick="cardAnimation('card7');">
-                    <div id="card7Cover" class="eight-cards  cover" onclick="cardAnimation('card7');">card7</div> 
-                    <div id="card7face" class="eight-cards pair4 face" onclick="cardAnimation('card7');">card7</div>
+                <div id="card7" class="eight-cards  card" onclick="card7Animation('card7');">
+                    <div id="card7Cover" class="eight-cards  cover">card7</div> 
+                    <div id="card7face" class="eight-cards pair4 face">card7</div>
                 </div>
-                <div id="card8" class="eight-cards  card" onclick="cardAnimation('card8');">
-                    <div id="card8Cover" class="eight-cards cover" onclick="cardAnimation('card8');">card8</div> 
-                    <div id="card8face" class="eight-cards pair4 face" onclick="cardAnimation('card8');">card8</div>
+                <div id="card8" class="eight-cards  card" onclick="card8Animation('card8');">
+                    <div id="card8Cover" class="eight-cards cover">card8</div> 
+                    <div id="card8face" class="eight-cards pair4 face">card8</div>
                 </div>
         </div>`);
 
