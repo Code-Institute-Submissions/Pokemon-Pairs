@@ -1,15 +1,15 @@
 var nameChosen = 0;
 
-// $( document ).ready(function() {
-//     console.log( "ready!" );
-//     console.log(nameChosen);
-//     if (nameChosen == 0){
-//     $("#welcomeModal").css("display", "block");
-//     $("#welcomeModal").addClass("in");
-//     $("#welcomeModal").addClass("show");
-//     $("#indexBody").addClass("modal-open");
-//     } 
-// });
+$( document ).ready(function() {
+    console.log( "ready!" );
+    console.log(nameChosen);
+    if (nameChosen == 0){
+    $("#welcomeModal").css("display", "block");
+    $("#welcomeModal").addClass("in");
+    $("#welcomeModal").addClass("show");
+    $("#indexBody").addClass("modal-open");
+    } 
+});
 
 function insertName() {
 	var playerName = document.getElementById("nameInput").value;
