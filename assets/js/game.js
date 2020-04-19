@@ -1,21 +1,21 @@
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
-    var card1Counter = 0;
-    var card2Counter = 0;
-    var card3Counter = 0;
-    var card4Counter = 0;
-    var card5Counter = 0;
-    var card6Counter = 0;
-    var card7Counter = 0;
-    var card8Counter = 0;
+    var pair1Counter = 0;
+    var pair2Counter = 0;
+    var pair3Counter = 0;
+    var pair4Counter = 0;
+    var pair5Counter = 0;
+    var pair6Counter = 0;
+    var pair7Counter = 0;
+    var pair8Counter = 0;
 
   function card1Animation(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         card1Counter++;
         console.log("card 1 = " + card1Counter);
-        if(card1Counter == 2){
+        if(pair1Counter == 2){
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
                 }
@@ -25,49 +25,49 @@
    function card2Animation(){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card2Counter++;
+        pair1Counter++;
         console.log("card 2 = " + card2Counter);
   }
 
    function card3Animation(){
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card3Counter++;
+        pair2Counter++;
         console.log("card 3 = " + card3Counter);
   }
 
    function card4Animation(){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card4Counter++;
+        pair2Counter++;
         console.log("card 4 = " + card4Counter);
   }
 
    function card5Animation(){
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card5Counter++;
+        pair3Counter++;
         console.log("card 5 = " + card5Counter);
   }
 
    function card6Animation(){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card6Counter++;
+        pair3Counter++;
         console.log("card 6 = " + card6Counter);
   }
 
    function card7Animation(){
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card7Counter++;
+        pair4Counter++;
         console.log("card 7 = " + card7Counter);
   }
 
    function card8Animation(){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        card8Counter++;
+        pair4Counter++;
         console.log("card 8 = " + card8Counter);
   }
 
