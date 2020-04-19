@@ -15,7 +15,12 @@
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair1Counter++;
         console.log("card 1 = " + pair1Counter);
-        if(pair1Counter == 2){
+        if ( pair2Counter == 1){     
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        pair2Counter--; } 
+        else{
+            if(pair1Counter == 2){
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card1").css("display", "none");
@@ -23,13 +28,18 @@
                 }
             }
         }
-
+    }
 
    function card2Animation(){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         pair1Counter++;
         console.log("card 2 = " + pair1Counter);
+        if ( pair2Counter == 1){     
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        pair2Counter--; } 
+        else{
         if(pair1Counter == 2){
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
@@ -38,6 +48,7 @@
                 }
             }
         }
+   }
   
 
    function card3Animation(){
