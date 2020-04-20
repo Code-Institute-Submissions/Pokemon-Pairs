@@ -70,19 +70,19 @@ $("#easyButton").click(function(){
 	$("#difficultyModal").removeClass("show");
     $("body").removeClass("modal-open");
 
-    // var image1 = test[0].toString();
-    // var image2 = test[1].toString();
-    // var image3 = test[2].toString();
-    // var image4 = test[3].toString();
-    // var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
-    //                            'url('+ '"' + image2 + '"' + ')', 
-    //                            'url('+ '"' + image3 + '"' + ')', 
-    //                            'url('+ '"' + image4 + '"' + ')'];
+    var image1 = test[0].toString();
+    var image2 = test[1].toString();
+    var image3 = test[2].toString();
+    var image4 = test[3].toString();
+    var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
+                               'url('+ '"' + image2 + '"' + ')', 
+                               'url('+ '"' + image3 + '"' + ')', 
+                               'url('+ '"' + image4 + '"' + ')'];
 
-    // $(".pair1").css("background-image", imageContainerArray[0]);
-    // $(".pair2").css("background-image", imageContainerArray[1]);
-    // $(".pair3").css("background-image", imageContainerArray[2]);
-    // $(".pair4").css("background-image", imageContainerArray[3]);
+    $(".pair1").css("background-image", imageContainerArray[0]);
+    $(".pair2").css("background-image", imageContainerArray[1]);
+    $(".pair3").css("background-image", imageContainerArray[2]);
+    $(".pair4").css("background-image", imageContainerArray[3]);
 
     //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     var originalArray = ["pair1a ", "pair1b ", 
@@ -118,7 +118,6 @@ $("#easyButton").click(function(){
     $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
-
 });
 
 
