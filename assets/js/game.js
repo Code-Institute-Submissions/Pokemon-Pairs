@@ -1,14 +1,14 @@
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
-    var pair1Counter = 0;
-    var pair2Counter = 0;
-    var pair3Counter = 0;
-    var pair4Counter = 0;
-    var pair5Counter = 0;
-    var pair6Counter = 0;
-    var pair7Counter = 0;
-    var pair8Counter = 0;
+    pair1Counter = 0;
+    pair2Counter = 0;
+    pair3Counter = 0;
+    pair4Counter = 0;
+    pair5Counter = 0;
+    pair6Counter = 0;
+    pair7Counter = 0;
+    pair8Counter = 0;
     count1 = 0;
     count2 = 0;
     count3 = 0;
@@ -27,13 +27,26 @@
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
         } else {
-        count1 = 1;
-        pair1Counter++;
+            count1 = 1;
+        if (pair1Counter == 1){
+            pair1Counter = 2;
+            console.log(pair1Counter);
+        } else { 
+            pair1Counter = 1;
+        }
         console.log("card 1 = " + pair1Counter);
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){  
         var wrongWait = setTimeout(pairNotFound, 1000);
-        function pairNotFound(){   
+        function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         if(pair1Counter == 1){
@@ -77,19 +90,32 @@
 
    function card2Animation(){
        if(count2 == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
         } else {
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        count2 = 1;
-        pair1Counter++;
+            count2 = 1;
+        if (pair1Counter == 1){
+            pair1Counter = 2;
+            console.log(pair1Counter);
+        } else { 
+            pair1Counter = 1;
+        }        
         console.log("card 2 = " + pair1Counter);
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         if(pair1Counter == 1){
@@ -134,14 +160,19 @@
 
    function card3Animation(){
          if(count3 == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
         } else {
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        count3 = 1;
-        pair2Counter++;
+            count3 = 1;
+        if (pair2Counter == 1){
+            pair2Counter = 2;
+            console.log(pair1Counter);
+        } else { 
+            pair2Counter = 1;
+        }
         console.log("card 3 = " + pair2Counter);
          if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
@@ -149,6 +180,14 @@
         function pairNotFound(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         if(pair1Counter == 1){
             pair1Counter--;
         }
@@ -190,19 +229,32 @@
 
    function card4Animation(){
          if(count4 == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count4);
         } else {
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        count4 = 1;
-        pair2Counter++;
+            count4 = 1;
+        if (pair2Counter == 1){
+            pair2Counter = 2;
+            console.log(pair2Counter);
+        } else { 
+            pair2Counter = 1;
+        }
         console.log("card 4 = " + pair2Counter);
          if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         if(pair1Counter == 1){
@@ -245,19 +297,32 @@
 
    function card5Animation(){
          if(count5 == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count5);
         } else {
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        count5 = 1;
-        pair3Counter++;
+            count5 = 1;
+        if (pair3Counter == 1){
+            pair3Counter = 2;
+            console.log(pair1Counter);
+        } else { 
+            pair3Counter = 1;
+        }
         console.log("card 5 = " + pair3Counter);
          if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         if(pair1Counter == 1){
@@ -301,19 +366,32 @@
 
    function card6Animation(){
          if(count6 == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count6);
         } else {
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        count6 = 1;
-        pair3Counter++;
+            count6 = 1;
+        if (pair3Counter == 1){
+            pair3Counter = 2;
+            console.log(pair3Counter);
+        } else { 
+            pair3Counter = 1;
+        }
         console.log("card 6 = " + pair3Counter);
          if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         if(pair1Counter == 1){
@@ -356,19 +434,32 @@
 
    function card7Animation(){  
        if(count7 == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
         } else {
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        count7 = 1;
-        pair4Counter++;
+            count7 = 1;
+        if (pair4Counter == 1){
+            pair4Counter = 2;
+            console.log(pair1Counter);
+        } else { 
+            pair4Counter = 1;
+        }
         console.log("card 7 = " + pair4Counter);
          if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         if(pair1Counter == 1){
@@ -413,19 +504,32 @@
 
          function card8Animation(){  
         if(count8 == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count8);
         } else {
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        count8 = 1;
-        pair4Counter++;
+           count8 = 1;
+        if (pair4Counter == 1){
+            pair4Counter = 2;
+            console.log(pair4Counter);
+        } else { 
+            pair4Counter = 1;
+        }
         console.log("card 8 = " + pair4Counter);
          if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         if(pair1Counter == 1){
