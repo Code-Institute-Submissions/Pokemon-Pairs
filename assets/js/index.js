@@ -93,6 +93,10 @@ $("#easyButton").click(function(){
                          "pair6a ", "pair6b "];
     console.log("this is the original array " + originalArray);
     var shuffledArray = shuffle(originalArray);
+     function shuffle(array) {
+
+        
+     }
 
 
 
