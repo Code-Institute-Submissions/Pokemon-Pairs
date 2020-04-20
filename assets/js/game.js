@@ -9,14 +9,16 @@
     var pair6Counter = 0;
     var pair7Counter = 0;
     var pair8Counter = 0;
-
+    count1 = 0;
   function card1Animation(){
-       count1 = 1;  
-       if(count1 == 1  || count1 == 2){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+       if(count1 == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
         } else {
+        count1 = 1;
         pair1Counter++;
         console.log("card 1 = " + pair1Counter);
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
