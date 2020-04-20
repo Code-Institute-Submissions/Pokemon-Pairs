@@ -74,14 +74,7 @@
    
 }
 
-#card1Match,
-#card2Match,
-#card3Match,
-#card4Match,
-#card5Match,
-#card6Match,
-#card7Match,
-#card8Match{
+.match{
     background-color: grey;
 }
 
