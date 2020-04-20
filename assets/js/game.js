@@ -1,3 +1,14 @@
+$( document ).ready(function() {
+    $.ajax({
+        method:"GET",                
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=5" 
+        }).then(function(response){
+            console.log(response); 
+        })
+});
+
+
+
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
