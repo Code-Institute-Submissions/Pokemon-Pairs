@@ -74,15 +74,21 @@ $("#easyButton").click(function(){
     var image2 = test[1].toString();
     var image3 = test[2].toString();
     var image4 = test[3].toString();
+    var image5 = test[4].toString();
+    var image6 = test[5].toString();
     var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
                                'url('+ '"' + image2 + '"' + ')', 
                                'url('+ '"' + image3 + '"' + ')', 
-                               'url('+ '"' + image4 + '"' + ')'];
+                               'url('+ '"' + image4 + '"' + ')',
+                               'url('+ '"' + image5 + '"' + ')', 
+                               'url('+ '"' + image6 + '"' + ')'];
 
     $(".pair1").css("background-image", imageContainerArray[0]);
     $(".pair2").css("background-image", imageContainerArray[1]);
     $(".pair3").css("background-image", imageContainerArray[2]);
     $(".pair4").css("background-image", imageContainerArray[3]);
+    $(".pair5").css("background-image", imageContainerArray[4]);
+    $(".pair6").css("background-image", imageContainerArray[5]);
 
     //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     var originalArray = ["pair1a ", "pair1b ", 
