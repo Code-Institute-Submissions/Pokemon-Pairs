@@ -57,7 +57,9 @@ $("#gameInfoShow").click(function(){
     $("#gameInfoHide").toggleClass("display");
   });
 
-
+  var imageArray = ["https://images.pokemontcg.io/base1/51_hires.png", "https://images.pokemontcg.io/base1/50_hires.png", "https://images.pokemontcg.io/base1/49_hires.png"]
+var pair1Image = imageArray[2];
+var pair1ImageContainer = 'url('+ '"' + pair1Image + '"' + ')'; 
 
 //JS for selecting difficulty
 
@@ -65,7 +67,9 @@ $("#easyButton").click(function(){
     $("#difficultyModal").css("display", "none");
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
-	$("body").removeClass("modal-open");
+    $("body").removeClass("modal-open");
+    $(".pair1").css("background-image", pair1ImageContainer);
+    console.log(pair1ImageContainer);
 });
 
 
