@@ -108,8 +108,14 @@ $("#easyButton").click(function(){
     return array;                             
     }
 
-
-
+    //End of tutorial code
+    console.log("this is the shuffled array " + shuffledArray);
+    var formattedShuffledArray = "'" + shuffledArray[0] + shuffledArray[1] + shuffledArray[2] + "'"
+                                + "'" + shuffledArray[3] +shuffledArray[4] + shuffledArray[5] + "'" 
+                                + "'" + shuffledArray[6] + shuffledArray[7] +shuffledArray[8] + "'"
+                                + "'" + shuffledArray[9] + shuffledArray[10] +shuffledArray[11] + "'" ;
+    console.log(formattedShuffledArray);
+    $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
 
