@@ -70,27 +70,31 @@ $("#easyButton").click(function(){
 	$("#difficultyModal").removeClass("show");
     $("body").removeClass("modal-open");
 
-    var image1 = test[0].toString();
-    var image2 = test[1].toString();
-    var image3 = test[2].toString();
-    var image4 = test[3].toString();
-    var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
-                               'url('+ '"' + image2 + '"' + ')', 
-                               'url('+ '"' + image3 + '"' + ')', 
-                               'url('+ '"' + image4 + '"' + ')',
-                               'url('+ '"' + image1 + '"' + ')', 
-                               'url('+ '"' + image2 + '"' + ')', 
-                               'url('+ '"' + image3 + '"' + ')', 
-                               'url('+ '"' + image4 + '"' + ')'];
+    // var image1 = test[0].toString();
+    // var image2 = test[1].toString();
+    // var image3 = test[2].toString();
+    // var image4 = test[3].toString();
+    // var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
+    //                            'url('+ '"' + image2 + '"' + ')', 
+    //                            'url('+ '"' + image3 + '"' + ')', 
+    //                            'url('+ '"' + image4 + '"' + ')'];
 
-    $("#card1").css("background-image", imageContainerArray[0]);
-    $("#card2").css("background-image", imageContainerArray[1]);
-    $("#card3").css("background-image", imageContainerArray[2]);
-    $("#card4").css("background-image", imageContainerArray[3]);
-    $("#card5").css("background-image", imageContainerArray[4]);
-    $("#card6").css("background-image", imageContainerArray[5]);
-    $("#card7").css("background-image", imageContainerArray[6]);
-    $("#card8").css("background-image", imageContainerArray[7]);
+    // $(".pair1").css("background-image", imageContainerArray[0]);
+    // $(".pair2").css("background-image", imageContainerArray[1]);
+    // $(".pair3").css("background-image", imageContainerArray[2]);
+    // $(".pair4").css("background-image", imageContainerArray[3]);
+
+    //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    var originalArray = ["pair1a ", "pair1b ", 
+                         "pair2a ", "pair2b ", 
+                         "pair3a ", "pair3b ", 
+                         "pair4a ", "pair4b ", 
+                         "pair5a ", "pair5b ", 
+                         "pair6a ", "pair6b "];
+    console.log("this is the original array " + originalArray);
+    var shuffledArray = shuffle(originalArray);
+
+
 
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
