@@ -61,5 +61,26 @@ $("#gameInfoShow").click(function(){
 
 //JS for selecting difficulty
 
+$("#easyButton").click(function(){
+    $("#difficultyModal").css("display", "none");
+	$("#difficultyModal").removeClass("in");
+	$("#difficultyModal").removeClass("show");
+	$("body").removeClass("modal-open");
+});
 
-    
+
+$("#mediumButton").click(function(){
+    $("#difficultyModal").css("display", "none");
+	$("#difficultyModal").removeClass("in");
+	$("#difficultyModal").removeClass("show");
+	$("body").removeClass("modal-open");
+});
+
+
+$("#hardButton").click(function(){
+    $("#difficultyModal").css("display", "none");
+	$("#difficultyModal").removeClass("in");
+	$("#difficultyModal").removeClass("show");
+	$("body").removeClass("modal-open");
+});
+
