@@ -2,6 +2,7 @@
 //It has been modified for my benefit
 
 $( document ).ready(function() {
+    for (i = 0; i < 24; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
         method:"GET",                
@@ -9,6 +10,7 @@ $( document ).ready(function() {
         }).then(function(response){
             console.log(response); 
         })
+    }
 });
 
 
