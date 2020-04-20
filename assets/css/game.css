@@ -50,30 +50,6 @@
 /* CSS for pairs - easy */
 
 
-.pair1{
-    background-image: url("https://images.pokemontcg.io/base1/52_hires.png");
-    background-size: 15.5vh;
-    background-repeat: no-repeat;
-}
-
-.pair2{
-    background-image: url("https://images.pokemontcg.io/base6/13_hires.png");
-    background-size: 15.5vh;
-    background-repeat: no-repeat;
-}
-.pair3{
-    background-image: url("https://images.pokemontcg.io/bw8/136_hires.png");
-    background-size: 15.5vh;
-    background-repeat: no-repeat;
-}
-.pair4{
-  background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
-    background-size: 15.5vh;
-    background-repeat: no-repeat;
-   
-   
-}
-
 .match{
     background-color: grey;
 }
