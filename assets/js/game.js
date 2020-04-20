@@ -11,6 +11,9 @@ $( document ).ready(function() {
             console.log(response); 
         })
     }
+    if(test.length == 8){
+    console.log("Array is finished");
+    }
 });
 
 
