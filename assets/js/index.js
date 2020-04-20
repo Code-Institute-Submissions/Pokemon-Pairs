@@ -11,6 +11,7 @@ $( document ).ready(function() {
     } 
 });
 
+
 function insertName() {
 	var playerName = document.getElementById("nameInput").value;
     console.log(playerName)
@@ -21,7 +22,15 @@ function insertName() {
 	$("body").removeClass("modal-open");
     $("#playerName").html(playerName);
     console.log(nameChosen);
+    //open new modal.
+    $("#difficultyModal").css("display", "block");
+    $("#difficultyModal").addClass("in");
+    $("#difficultyModal").addClass("show");
+    $("#difficultyModal").addClass("modal-open");
 }
+
+
+
 
 //Menu opening Js
 $("#menuButton").click(function(){
