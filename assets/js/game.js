@@ -1,6 +1,6 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
-
+var test = [];
 $( document ).ready(function() {
     for (i = 0; i < 24; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
@@ -9,11 +9,10 @@ $( document ).ready(function() {
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
             console.log(response); 
-        })
-    }
-    if(test.length == 8){
-    console.log("Array is finished");
-    }
+            test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
+    });
+}
+ console.log(test);
 });
 
 
