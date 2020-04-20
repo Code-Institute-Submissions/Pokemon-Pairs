@@ -55,38 +55,6 @@
 }
 
 
-/* CSS for pairs - medium/hard */
-
-.pair1mh{
-    background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
-    background-size: 11vh;
-    background-repeat: no-repeat;
-}
-
-.pair2mh{
-    background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
-    background-size: 11vh;
-    background-repeat: no-repeat;
-}
-.pair3mh{
-    background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
-    background-size: 11vh;
-    background-repeat: no-repeat;
-}
-.pair4mh{
-  background-image: url("https://images.pokemontcg.io/base1/1_hires.png");
-    background-size: 11vh;
-    background-repeat: no-repeat;
-   
-   
-}
-
-.showCard {
-  background-color: green;
-}
-
-
-
 /* Landscape for mobile */
 
 @media screen and (orientation: landscape) and (max-height: 376px) {
