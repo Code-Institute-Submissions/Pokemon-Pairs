@@ -49,29 +49,14 @@
         count8 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        if(pair1Counter == 1){
-            pair1Counter--;
-        }
-        if(pair2Counter == 1){
-            pair2Counter--;
-        }
-        if(pair3Counter == 1){
-            pair3Counter--;
-        }
-        if(pair4Counter == 1){
-            pair4Counter--;
-        }
-        if(pair5Counter == 1){
-            pair5Counter--;
-        }
-        if(pair6Counter == 1){
-            pair6Counter--;
-        }
-        if(pair7Counter == 1){
-            pair7Counter--;
-        }if(pair8Counter == 1){
-            pair8Counter--;
-        }
+        pair1Counter = 0;
+        pair2Counter = 0;
+        pair3Counter = 0;
+        pair4Counter = 0;
+        pair5Counter = 0;
+        pair6Counter = 0;
+        pair7Counter = 0;
+        pair8Counter = 0;
      } 
         }
         else{
