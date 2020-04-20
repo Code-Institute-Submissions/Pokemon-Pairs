@@ -70,6 +70,9 @@ $("#easyButton").click(function(){
     $("body").removeClass("modal-open");
     $(".pair1").css("background-image", pair1ImageContainer);
     console.log(pair1ImageContainer);
+    $("#easy").addClass("active-mode");
+    $("#medium, #hard").removeClass("active-mode");
+
 });
 
 
@@ -77,7 +80,9 @@ $("#mediumButton").click(function(){
     $("#difficultyModal").css("display", "none");
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
-	$("body").removeClass("modal-open");
+    $("body").removeClass("modal-open");
+    $("#medium").addClass("active-mode");
+    $("#easy, #hard").removeClass("active-mode");
 });
 
 
@@ -85,6 +90,8 @@ $("#hardButton").click(function(){
     $("#difficultyModal").css("display", "none");
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
-	$("body").removeClass("modal-open");
+    $("body").removeClass("modal-open");
+    $("#hard").addClass("active-mode");
+    $("#medium, #easy").removeClass("active-mode");
 });
 
