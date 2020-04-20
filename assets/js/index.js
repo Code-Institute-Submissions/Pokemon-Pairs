@@ -57,8 +57,7 @@ $("#gameInfoShow").click(function(){
     $("#gameInfoHide").toggleClass("display");
   });
 
-  var imageArray = ["https://images.pokemontcg.io/base1/51_hires.png", "https://images.pokemontcg.io/base1/50_hires.png", "https://images.pokemontcg.io/base1/49_hires.png"]
-  console.log(imageArray[2]);
+var cardSelection = []
   
 
 
@@ -70,18 +69,23 @@ $("#easyButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("body").removeClass("modal-open");
-    var pair1Image = test[0].toString();
-    var pair1ImageContainer = 'url('+ '"' + pair1Image + '"' + ')'; 
-    var pair2Image = test[1].toString();
-    var pair2ImageContainer = 'url('+ '"' + pair2Image + '"' + ')'; 
-    var pair3Image = test[2].toString();
-    var pair3ImageContainer = 'url('+ '"' + pair3Image + '"' + ')'; 
-    var pair4Image = test[3].toString();
-    var pair4ImageContainer = 'url('+ '"' + pair4Image + '"' + ')'; 
-    $(".pair1").css("background-image", pair1ImageContainer);
-    $(".pair2").css("background-image", pair2ImageContainer);
-    $(".pair3").css("background-image", pair3ImageContainer);
-    $(".pair4").css("background-image", pair4ImageContainer);
+    var image1 = test[0].toString();
+    // var image1Container = 'url('+ '"' + image1 + '"' + ')'; 
+    var image2 = test[1].toString();
+    // var image2Container = 'url('+ '"' + image2 + '"' + ')'; 
+    var image3 = test[2].toString();
+    // var image3Container = 'url('+ '"' + image3 + '"' + ')'; 
+    var image4 = test[3].toString();
+    // var image4Container = 'url('+ '"' + image4 + '"' + ')'; 
+    var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
+                               'url('+ '"' + image2 + '"' + ')', 
+                               'url('+ '"' + image3 + '"' + ')', 
+                               'url('+ '"' + image4 + '"' + ')'];
+    $(".pair1").css("background-image", imageContainerArray[0]);
+    $(".pair2").css("background-image", imageContainerArray[1]);
+    $(".pair3").css("background-image", imageContainerArray[2]);
+    $(".pair4").css("background-image", imageContainerArray[3]);
+
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
 
