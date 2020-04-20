@@ -1,22 +1,22 @@
 /*Card grid names*/
-/* #card1 { grid-area: pair1a; }
+#card1 { grid-area: pair1a; }
 #card2 { grid-area: pair1b; }
 #card3 { grid-area: pair2a; }
 #card4 { grid-area: pair2b; }
 #card5 { grid-area: pair3a; }
 #card6 { grid-area: pair3b; }
 #card7 { grid-area: pair4a; }
-#card8 { grid-area: pair4b; } */
+#card8 { grid-area: pair4b; }
 
 /* Grid settings */
 .card-grid-container {
   display: grid;
-  /* grid-template-areas:
+  grid-template-areas:
     'pair1a pair1b'
     'pair2a pair2b'
     'pair3a pair3b'
     'pair4a pair4b'
-    ; */
+    ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1vh;
     background-color: skyblue;
@@ -28,43 +28,7 @@
     border-right: 1px solid black; */  
 }
 
-.card-grid-container-sixteen {
-  display: grid;
-  /* grid-template-areas:
-    'pair1a pair1b'
-    'pair2a pair2b'
-    'pair3a pair3b'
-    'pair4a pair4b'
-    ; */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1vh;
-    background-color: skyblue;
-    text-align: center;
-    padding: 2vh 1vh 0 2vh;
-    margin: 0;
-    border-top: 1px solid black;
-    /* border-left: 1px solid black;
-    border-right: 1px solid black; */  
-}
 
-.card-grid-container-final {
-  display: grid;
-  /* grid-template-areas:
-    'pair1a pair1b'
-    'pair2a pair2b'
-    'pair3a pair3b'
-    'pair4a pair4b'
-    ; */
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1vh;
-    background-color: skyblue;
-    text-align: center;
-    padding: 1vh 10.75vh 0 10.75vh;
-    margin-bottom: 2vh;
-    /* border-top: 1px solid black; */
-    /* border-left: 1px solid black;
-    border-right: 1px solid black; */  
-}
 
  .eight-cards {
    color: white;
@@ -75,12 +39,7 @@
 }
 
 
-.sixteen-cards {
-   color: white;
-    padding: 10px;
-    height: 16vh;
-    text-align: center;   
-}
+
 
 /* Individual CSS */
 

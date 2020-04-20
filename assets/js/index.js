@@ -69,22 +69,28 @@ $("#easyButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("body").removeClass("modal-open");
+
     var image1 = test[0].toString();
-    // var image1Container = 'url('+ '"' + image1 + '"' + ')'; 
     var image2 = test[1].toString();
-    // var image2Container = 'url('+ '"' + image2 + '"' + ')'; 
     var image3 = test[2].toString();
-    // var image3Container = 'url('+ '"' + image3 + '"' + ')'; 
     var image4 = test[3].toString();
-    // var image4Container = 'url('+ '"' + image4 + '"' + ')'; 
     var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
                                'url('+ '"' + image2 + '"' + ')', 
                                'url('+ '"' + image3 + '"' + ')', 
+                               'url('+ '"' + image4 + '"' + ')',
+                               'url('+ '"' + image1 + '"' + ')', 
+                               'url('+ '"' + image2 + '"' + ')', 
+                               'url('+ '"' + image3 + '"' + ')', 
                                'url('+ '"' + image4 + '"' + ')'];
-    $(".pair1").css("background-image", imageContainerArray[0]);
-    $(".pair2").css("background-image", imageContainerArray[1]);
-    $(".pair3").css("background-image", imageContainerArray[2]);
-    $(".pair4").css("background-image", imageContainerArray[3]);
+
+    $("#card1").css("background-image", imageContainerArray[0]);
+    $("#card2").css("background-image", imageContainerArray[1]);
+    $("#card3").css("background-image", imageContainerArray[2]);
+    $("#card4").css("background-image", imageContainerArray[3]);
+    $("#card5").css("background-image", imageContainerArray[4]);
+    $("#card6").css("background-image", imageContainerArray[5]);
+    $("#card7").css("background-image", imageContainerArray[6]);
+    $("#card8").css("background-image", imageContainerArray[7]);
 
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
