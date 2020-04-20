@@ -1,24 +1,24 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
-// var test = [];
-// $( document ).ready(function() {
-//     for (i = 0; i < 24; i++){
-//     var pokemonID = Math.floor((Math.random() * 645)+1); 
-//     $.ajax({
-//         method:"GET",                
-//         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
-//         }).then(function(response){
-//             console.log(response); 
-//             test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
-//             if(test.length == 6){
-//         	console.log("Array is finished");
-//     }
+var test = [];
+$( document ).ready(function() {
+    for (i = 0; i < 24; i++){
+    var pokemonID = Math.floor((Math.random() * 645)+1); 
+    $.ajax({
+        method:"GET",                
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+        }).then(function(response){
+            console.log(response); 
+            test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
+            if(test.length == 6){
+        	console.log("Array is finished");
+    }
 
-// });
+});
 
-// }
-//  console.log(test);
-// });
+}
+ console.log(test);
+});
 
 
 
@@ -722,8 +722,8 @@ function card12Animation(){
         if(pair6Counter == 2){
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card7").css("display", "none");
-                $("#card8").css("display", "none");
+                $("#card11").css("display", "none");
+                $("#card12").css("display", "none");
                 $("#card7Match, #card8Match").removeClass("display");
                 
                 }

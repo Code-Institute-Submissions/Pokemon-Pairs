@@ -50,9 +50,21 @@
 /* CSS for pairs - easy */
 
 
+.pair1,
+.pair2,
+.pair3,
+.pair4,
+.pair5,
+.pair6{
+    background-size: 15.5vh;
+    background-repeat: no-repeat;
+}
+
 .match{
     background-color: grey;
 }
+
+
 
 
 /* Landscape for mobile */
