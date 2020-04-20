@@ -1,24 +1,24 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
-var test = [];
-$( document ).ready(function() {
-    for (i = 0; i < 24; i++){
-    var pokemonID = Math.floor((Math.random() * 645)+1); 
-    $.ajax({
-        method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
-        }).then(function(response){
-            console.log(response); 
-            test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
-            if(test.length == 6){
-        	console.log("Array is finished");
-    }
+// var test = [];
+// $( document ).ready(function() {
+//     for (i = 0; i < 24; i++){
+//     var pokemonID = Math.floor((Math.random() * 645)+1); 
+//     $.ajax({
+//         method:"GET",                
+//         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+//         }).then(function(response){
+//             console.log(response); 
+//             test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
+//             if(test.length == 6){
+//         	console.log("Array is finished");
+//     }
 
-});
+// });
 
-}
- console.log(test);
-});
+// }
+//  console.log(test);
+// });
 
 
 
@@ -31,8 +31,6 @@ $( document ).ready(function() {
     pair4Counter = 0;
     pair5Counter = 0;
     pair6Counter = 0;
-    pair7Counter = 0;
-    pair8Counter = 0;
     count1 = 0;
     count2 = 0;
     count3 = 0;
@@ -41,7 +39,10 @@ $( document ).ready(function() {
     count6 = 0;
     count7 = 0;
     count8 = 0;
-
+    count9 = 0;
+    count10 = 0;
+    count11 = 0;
+    count12 = 0;
 
   function card1Animation(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -60,7 +61,7 @@ $( document ).ready(function() {
         }
         console.log("card 1 = " + pair1Counter);
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){  
+             || pair6Counter == 1){  
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -71,6 +72,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         pair1Counter = 0;
@@ -79,8 +84,6 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
      } 
         }
         else{
@@ -90,7 +93,7 @@ $( document ).ready(function() {
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
                 $("#card1Match, #card2Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
                 }
             }
         }
@@ -114,7 +117,7 @@ $( document ).ready(function() {
         }        
         console.log("card 2 = " + pair1Counter);
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
+             || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -125,6 +128,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         pair1Counter = 0;
@@ -133,8 +140,7 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
+
     } 
         } 
         else{
@@ -144,7 +150,7 @@ $( document ).ready(function() {
                 $("#card1").css("display", "none");
                 $("#card2").css("display", "none");
                 $("#card1Match, #card2Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
                 }
             }
         }
@@ -169,7 +175,7 @@ $( document ).ready(function() {
         }
         console.log("card 3 = " + pair2Counter);
          if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
+             || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -180,6 +186,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         pair1Counter = 0;
@@ -188,8 +198,6 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
           
     } 
         } 
@@ -200,7 +208,7 @@ $( document ).ready(function() {
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
                 $("#card3Match, #card4Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
                 }
             }
         }
@@ -224,7 +232,7 @@ $( document ).ready(function() {
         }
         console.log("card 4 = " + pair2Counter);
          if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
+             || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -235,6 +243,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         pair1Counter = 0;
@@ -243,8 +255,6 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
      } 
         } 
         else{
@@ -254,7 +264,7 @@ $( document ).ready(function() {
                 $("#card3").css("display", "none");
                 $("#card4").css("display", "none");
                 $("#card3Match, #card4Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
                 }
             }
         }
@@ -278,7 +288,7 @@ $( document ).ready(function() {
         }
         console.log("card 5 = " + pair3Counter);
          if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
+             || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -289,6 +299,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
          pair1Counter = 0;
@@ -297,8 +311,7 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
+
      } 
         } 
         else{
@@ -308,7 +321,7 @@ $( document ).ready(function() {
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
                 $("#card5Match, #card6Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
                 }
             }
         }
@@ -333,7 +346,7 @@ $( document ).ready(function() {
         }
         console.log("card 6 = " + pair3Counter);
          if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
+             || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -344,6 +357,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         pair1Counter = 0;
@@ -352,8 +369,7 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
+
     } 
         } 
         else{
@@ -363,7 +379,7 @@ $( document ).ready(function() {
                 $("#card5").css("display", "none");
                 $("#card6").css("display", "none");
                 $("#card5Match, #card6Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
                 }
             }
         }
@@ -387,7 +403,7 @@ $( document ).ready(function() {
         }
         console.log("card 7 = " + pair4Counter);
          if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
+             || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -398,6 +414,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         pair1Counter = 0;
@@ -406,8 +426,7 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
+
     } 
         } 
         else{
@@ -417,7 +436,7 @@ $( document ).ready(function() {
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
                 $("#card7Match, #card8Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
                 }
             }
         }
@@ -443,7 +462,7 @@ $( document ).ready(function() {
         }
         console.log("card 8 = " + pair4Counter);
          if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1 || pair7Counter == 1 || pair8Counter == 1){
+             || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
         count1 = 0;
@@ -454,6 +473,10 @@ $( document ).ready(function() {
         count6 = 0;
         count7 = 0;
         count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         pair1Counter = 0;
@@ -462,8 +485,7 @@ $( document ).ready(function() {
         pair4Counter = 0;
         pair5Counter = 0;
         pair6Counter = 0;
-        pair7Counter = 0;
-        pair8Counter = 0;
+
     } 
         } 
         else{
@@ -473,13 +495,242 @@ $( document ).ready(function() {
                 $("#card7").css("display", "none");
                 $("#card8").css("display", "none");
                 $("#card7Match, #card8Match").removeClass("display");
-                console.log(pair1Counter, pair2Counter, pair3Counter, pair4Counter, pair5Counter, pair6Counter, pair7Counter, pair8Counter);
+                
+                }
+            }
+        }
+   }
+}
+
+
+function card9Animation(){  
+        if(count9 == 1){
+        $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count9);
+        } else {
+        $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+           count9 = 1;
+        if (pair5Counter == 1){
+            pair5Counter = 2;
+            console.log(pair5Counter);
+        } else { 
+            pair5Counter = 1;
+        }
+        console.log("card 9 = " + pair5Counter);
+         if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair4Counter == 1 
+             || pair6Counter == 1){
+        var wrongWait = setTimeout(pairNotFound, 1000);
+        function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        pair1Counter = 0;
+        pair2Counter = 0;
+        pair3Counter = 0;
+        pair4Counter = 0;
+        pair5Counter = 0;
+        pair6Counter = 0;
+
+    } 
+        } 
+        else{
+        if(pair5Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
+                $("#card9").css("display", "none");
+                $("#card10").css("display", "none");
+                $("#card9Match, #card10Match").removeClass("display");
+                
+                }
+            }
+        }
+   }
+}
+
+
+function card10Animation(){  
+        if(count10 == 1){
+        $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count10);
+        } else {
+        $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+           count10 = 1;
+        if (pair5Counter == 1){
+            pair5Counter = 2;
+            console.log(pair5Counter);
+        } else { 
+            pair5Counter = 1;
+        }
+        console.log("card 10 = " + pair5Counter);
+         if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair4Counter == 1 
+             || pair6Counter == 1){
+        var wrongWait = setTimeout(pairNotFound, 1000);
+        function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        pair1Counter = 0;
+        pair2Counter = 0;
+        pair3Counter = 0;
+        pair4Counter = 0;
+        pair5Counter = 0;
+        pair6Counter = 0;
+
+    } 
+        } 
+        else{
+        if(pair5Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
+                $("#card9").css("display", "none");
+                $("#card10").css("display", "none");
+                $("#card9Match, #card10Match").removeClass("display");
+                
                 }
             }
         }
    }
 }
   
+function card11Animation(){  
+        if(count11 == 1){
+        $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count11);
+        } else {
+        $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+           count11 = 1;
+        if (pair6Counter == 1){
+            pair6Counter = 2;
+            console.log(pair6Counter);
+        } else { 
+            pair6Counter = 1;
+        }
+        console.log("card 11 = " + pair5Counter);
+         if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair4Counter == 1 
+             || pair5Counter == 1){
+        var wrongWait = setTimeout(pairNotFound, 1000);
+        function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        pair1Counter = 0;
+        pair2Counter = 0;
+        pair3Counter = 0;
+        pair4Counter = 0;
+        pair5Counter = 0;
+        pair6Counter = 0;
+    } 
+        } 
+        else{
+        if(pair6Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
+                $("#card11").css("display", "none");
+                $("#card12").css("display", "none");
+                $("#card11Match, #card12Match").removeClass("display");
+                
+                }
+            }
+        }
+   }
+}
+
+
+function card12Animation(){  
+        if(count12 == 1){
+        $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count12);
+        } else {
+        $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+           count12 = 1;
+        if (pair6Counter == 1){
+            pair6Counter = 2;
+            console.log(pair5Counter);
+        } else { 
+            pair6Counter = 1;
+        }
+        console.log("card 12 = " + pair5Counter);
+         if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair4Counter == 1 
+             || pair5Counter == 1){
+        var wrongWait = setTimeout(pairNotFound, 1000);
+        function pairNotFound(){
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0; 
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
+        count9 = 0;
+        count10 = 0;
+        count11 = 0;
+        count12 = 0;
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        pair1Counter = 0;
+        pair2Counter = 0;
+        pair3Counter = 0;
+        pair4Counter = 0;
+        pair5Counter = 0;
+        pair6Counter = 0;
+
+    } 
+        } 
+        else{
+        if(pair6Counter == 2){
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
+                $("#card7").css("display", "none");
+                $("#card8").css("display", "none");
+                $("#card7Match, #card8Match").removeClass("display");
+                
+                }
+            }
+        }
+   }
+}
 
   
 
