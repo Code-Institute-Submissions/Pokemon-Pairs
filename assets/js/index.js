@@ -70,10 +70,18 @@ $("#easyButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("body").removeClass("modal-open");
-    var pair1Image = test[2].toString();
+    var pair1Image = test[0].toString();
     var pair1ImageContainer = 'url('+ '"' + pair1Image + '"' + ')'; 
+    var pair2Image = test[1].toString();
+    var pair2ImageContainer = 'url('+ '"' + pair2Image + '"' + ')'; 
+    var pair3Image = test[2].toString();
+    var pair3ImageContainer = 'url('+ '"' + pair3Image + '"' + ')'; 
+    var pair4Image = test[3].toString();
+    var pair4ImageContainer = 'url('+ '"' + pair4Image + '"' + ')'; 
     $(".pair1").css("background-image", pair1ImageContainer);
-    console.log(pair1ImageContainer);
+    $(".pair2").css("background-image", pair2ImageContainer);
+    $(".pair3").css("background-image", pair3ImageContainer);
+    $(".pair4").css("background-image", pair4ImageContainer);
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
 
