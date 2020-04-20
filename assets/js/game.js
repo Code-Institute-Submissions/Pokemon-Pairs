@@ -1,6 +1,7 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
 var test = [];
+ var click = 0;
 $( document ).ready(function() {
     for (i = 0; i < 24; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
@@ -88,6 +89,7 @@ $( document ).ready(function() {
         }
         else{
             if(pair1Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card1").css("display", "none");
@@ -145,6 +147,7 @@ $( document ).ready(function() {
         } 
         else{
         if(pair1Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card1").css("display", "none");
@@ -203,6 +206,7 @@ $( document ).ready(function() {
         } 
         else{
         if(pair2Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card3").css("display", "none");
@@ -259,6 +263,7 @@ $( document ).ready(function() {
         } 
         else{
         if(pair2Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card3").css("display", "none");
@@ -316,6 +321,7 @@ $( document ).ready(function() {
         } 
         else{
         if(pair3Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card5").css("display", "none");
@@ -374,6 +380,7 @@ $( document ).ready(function() {
         } 
         else{
         if(pair3Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card5").css("display", "none");
@@ -431,6 +438,7 @@ $( document ).ready(function() {
         } 
         else{
         if(pair4Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card7").css("display", "none");
@@ -490,6 +498,7 @@ $( document ).ready(function() {
         } 
         else{
         if(pair4Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card7").css("display", "none");
@@ -548,6 +557,7 @@ function card9Animation(){
         } 
         else{
         if(pair5Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card9").css("display", "none");
@@ -606,6 +616,7 @@ function card10Animation(){
         } 
         else{
         if(pair5Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card9").css("display", "none");
@@ -662,6 +673,7 @@ function card11Animation(){
         } 
         else{
         if(pair6Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card11").css("display", "none");
@@ -720,6 +732,7 @@ function card12Animation(){
         } 
         else{
         if(pair6Counter == 2){
+                click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card11").css("display", "none");
@@ -739,13 +752,12 @@ function card12Animation(){
 //End of code for animating cards 
  
  // This is the modal for finished  
-  var clicks = 0;
+ 
  function myfunction(test){
     //   console.log("This has worked!");
     //   document.getElementById(test).style.backgroundColor = "green";
-        clicks++;
         console.log(clicks);
-    if(clicks == 8){
+    if(click == 6){
         $("#finishedModal").css("display", "block");
         $("#finishedModal").addClass("in");
         $("#finishedModal").addClass("show");
