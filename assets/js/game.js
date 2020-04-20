@@ -10,9 +10,14 @@ $( document ).ready(function() {
         }).then(function(response){
             console.log(response); 
             test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
-    });
-}
+            if(test.length == 8){
+        	console.log("Array is finished");
+    }
+
+});
  console.log(test);
+}
+
 });
 
 
