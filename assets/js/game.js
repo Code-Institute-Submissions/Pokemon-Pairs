@@ -10,6 +10,15 @@
     var pair7Counter = 0;
     var pair8Counter = 0;
     count1 = 0;
+    count2 = 0;
+    count3 = 0;
+    count4 = 0;
+    count5 = 0;
+    count6 = 0;
+    count7 = 0;
+    count8 = 0;
+
+
   function card1Animation(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -67,8 +76,14 @@
     }
 
    function card2Animation(){
+       if(count2 == 1){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count1);
+        } else {
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        count2 = 1;
         pair1Counter++;
         console.log("card 2 = " + pair1Counter);
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
@@ -113,12 +128,19 @@
                 }
             }
         }
+    } 
    }
   
 
    function card3Animation(){
+         if(count3 == 1){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count1);
+        } else {
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        count3 = 1;
         pair2Counter++;
         console.log("card 3 = " + pair2Counter);
          if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
@@ -164,10 +186,17 @@
             }
         }
     }
+    }
 
    function card4Animation(){
+         if(count4 == 1){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count1);
+        } else {
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        count4 = 1;
         pair2Counter++;
         console.log("card 4 = " + pair2Counter);
          if ( pair1Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
@@ -212,10 +241,17 @@
             }
         }
     }
+    }
 
    function card5Animation(){
+         if(count5 == 1){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count1);
+        } else {
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        count5 = 1;
         pair3Counter++;
         console.log("card 5 = " + pair3Counter);
          if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
@@ -260,11 +296,18 @@
             }
         }
     }
+}
   
 
    function card6Animation(){
+         if(count6 == 1){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count1);
+        } else {
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        count6 = 1;
         pair3Counter++;
         console.log("card 6 = " + pair3Counter);
          if ( pair2Counter == 1 || pair1Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
@@ -309,10 +352,17 @@
             }
         }
     }
+}
 
-   function card7Animation(){
+   function card7Animation(){  
+       if(count7 == 1){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count1);
+        } else {
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        count7 = 1;
         pair4Counter++;
         console.log("card 7 = " + pair4Counter);
          if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
@@ -357,12 +407,19 @@
             }
         }
    }
+}
 
    
 
-         function card8Animation(){
+         function card8Animation(){  
+        if(count8 == 1){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        console.log(count1);
+        } else {
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        count8 = 1;
         pair4Counter++;
         console.log("card 8 = " + pair4Counter);
          if ( pair2Counter == 1 || pair3Counter == 1 || pair1Counter == 1 || pair5Counter == 1 
@@ -407,6 +464,7 @@
             }
         }
    }
+}
   
 
   
