@@ -1,7 +1,11 @@
+//tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
+//It has been modified for my benefit
+
 $( document ).ready(function() {
+    var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=5" 
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
             console.log(response); 
         })
