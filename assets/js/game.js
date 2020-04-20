@@ -2,7 +2,7 @@
 //It has been modified for my benefit
 var test = [];
 $( document ).ready(function() {
-    for (i = 0; i < 8; i++){
+    for (i = 0; i < 24; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
         method:"GET",                
@@ -10,7 +10,7 @@ $( document ).ready(function() {
         }).then(function(response){
             console.log(response); 
             test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
-            if(test.length == 9){
+            if(test.length == 6){
         	console.log("Array is finished");
     }
 
