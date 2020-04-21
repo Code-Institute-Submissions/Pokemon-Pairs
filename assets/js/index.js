@@ -82,12 +82,12 @@ var cardSelection = []
 
 //JS for selecting difficulty
 
-$("#easyButton").click(function(){
+$("#easyButton, #mediumButton, #hardButton").click(function(){
     $("#difficultyModal").css("display", "none");
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("body").removeClass("modal-open");
-
+    //Enter - shuffle array here. 
     var image1 = test[0].toString();
     var image2 = test[1].toString();
     var image3 = test[2].toString();
@@ -144,22 +144,18 @@ $("#easyButton").click(function(){
     $("#medium, #hard").removeClass("active-mode");
 });
 
+$("#easyButton").click(function(){
+    $("#easy").addClass("active-mode");
+    $("#medium, #hard").removeClass("active-mode");
+});
 
 $("#mediumButton").click(function(){
-    $("#difficultyModal").css("display", "none");
-	$("#difficultyModal").removeClass("in");
-	$("#difficultyModal").removeClass("show");
-    $("body").removeClass("modal-open");
     $("#medium").addClass("active-mode");
     $("#easy, #hard").removeClass("active-mode");
 });
 
 
 $("#hardButton").click(function(){
-    $("#difficultyModal").css("display", "none");
-	$("#difficultyModal").removeClass("in");
-	$("#difficultyModal").removeClass("show");
-    $("body").removeClass("modal-open");
     $("#hard").addClass("active-mode");
     $("#medium, #easy").removeClass("active-mode");
 });
