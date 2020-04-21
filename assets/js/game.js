@@ -763,7 +763,7 @@ function card12Animation(){
  $(".card").click(function(){
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
-        var wait = setTimeout(finishedModal, 100);
+        var wait = setTimeout(finishedModal, 1000);
         function finishedModal(){
         $("#finishedModal").css("display", "block");
         $("#finishedModal").addClass("in");
