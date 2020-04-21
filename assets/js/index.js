@@ -22,14 +22,15 @@ $("#enterName").click(function(){
 	$("body").removeClass("modal-open");
     $("#playerName").html(playerName);
     console.log(nameChosen);
-    //open new modal.
+});
+
+$("#startGame").click(function(){
+
     $("#difficultyModal").css("display", "block");
     $("#difficultyModal").addClass("in");
     $("#difficultyModal").addClass("show");
     $("#difficultyModal").addClass("modal-open");
 });
-
-
 
 
 //Menu opening Js
