@@ -45,6 +45,10 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+    $("#difficultyModal").css("display", "block");
+    $("#difficultyModal").addClass("in");
+    $("#difficultyModal").addClass("show");
+    $("#difficultyModal").addClass("modal-open");
 });
 
 $("#playAgainButton").click(function(){
