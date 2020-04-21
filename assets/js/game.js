@@ -771,11 +771,6 @@ function card12Animation(){
 	$("#finishedModal").removeClass("in");
 	$("#finishedModal").removeClass("show");
     $("#indexBody").removeClass("modal-open");
-
-    $("#displayCardsModal").css("display", "block");
-    $("#displayCardsModal").addClass("in");
-    $("#displayCardsModal").addClass("show");
-    $("#indexBody").addClass("modal-open");
 });
 
 
