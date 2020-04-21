@@ -26,7 +26,7 @@ $( document ).ready(function() {
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
-$("#easy, #medium, #hard").click(function(){
+$("#easyButton, #mediumButton, #hardButton").click(function(){
 
     pair1Counter = 0;
     pair2Counter = 0;
@@ -46,6 +46,8 @@ $("#easy, #medium, #hard").click(function(){
     count10 = 0;
     count11 = 0;
     count12 = 0;
+
+});
 
   function card1Animation(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -747,7 +749,7 @@ function card12Animation(){
    }
 }
 
-});
+
   
 
 
