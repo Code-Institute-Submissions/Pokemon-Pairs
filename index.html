@@ -66,6 +66,7 @@
                         <div id="card1Face" class="eight-cards pair1 face">card1</div> 
                     </div>
                     <div id="card1Match" class="eight-cards match card display"></div>
+                    
                     <div id="card2" class="eight-cards  card" onclick="card2Animation();">
                         <div id="card2Cover" class="eight-cards cover">card2</div> 
                         <div id="card2Face" class="eight-cards pair1 face">card2</div>
@@ -142,14 +143,14 @@
 
         </div>
         <div id="welcomeModalFooter" class="modal-footer">
-          <button id="enterName" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal">Enter</button>
+          <button id="enterName" class="btn btn-primary" data-toggle="modal" data-target="#difficultyModal">Enter</button>
         </div>
       </div>
     </div>
   </div>
 
 <!-- Loading Modal -->
-<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalCenterTitle" style="display: none;" aria-hidden="true">
+<!-- <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalCenterTitle" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div id="loadingModalHeader" class="modal-header">
@@ -163,7 +164,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <!-- ***** Difficulty Modal ***** -->
   <div class="modal fade" id="difficultyModal" tabindex="-1" role="dialog" aria-labelledby="finishedModalCenterTitle" style="display: none;" aria-hidden="true">
@@ -191,7 +192,7 @@
 
 
 <!-- ***** Finished Modal ***** -->
-  <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModalCenterTitle" style="display: none;" aria-hidden="true">
+  <!-- <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModalCenterTitle" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -207,14 +208,14 @@
         </div>
         <div class="modal-footer">
           <button id="seeCardsButton" data-toggle="modal" data-target="#displayCardsModal" class="btn btn-secondary">See which pokemon cards you sorted.</button>
-          <button id="playAgainButtonDisplay" class="btn btn-primary">Play Again</button>
+          <button id="playAgainButton" class="btn btn-primary">Play Again</button>
         </div>
       </div>
     </div>
   </div>
-  
+   -->
   <!-- ***** Display Cards Modal ***** -->
-  <div class="modal fade" id="displayCardsModal" tabindex="-1" role="dialog" aria-labelledby="displayCardsModalTitle" aria-hidden="true">
+  <!-- <div class="modal fade" id="displayCardsModal" tabindex="-1" role="dialog" aria-labelledby="displayCardsModalTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -231,11 +232,11 @@
           <div class="eight-cards pair6"> </div>
       </div>
       <div class="modal-footer">
-        <button type="playAgainButton" class="btn btn-primary" data-dismiss="modal">Play again!</button>
+        <button type="playAgainButtonDisplay" class="btn btn-primary" data-dismiss="modal">Play again!</button>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
