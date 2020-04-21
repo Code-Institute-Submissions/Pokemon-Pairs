@@ -24,13 +24,13 @@ $("#enterName").click(function(){
     console.log(nameChosen);
 });
 
-$("#startGame").click(function(){
-
+$("#startGame, #playAgainButton").click(function(){
     $("#difficultyModal").css("display", "block");
     $("#difficultyModal").addClass("in");
     $("#difficultyModal").addClass("show");
     $("#difficultyModal").addClass("modal-open");
 });
+
 
 
 //Menu opening Js
