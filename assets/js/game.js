@@ -754,10 +754,8 @@ function card12Animation(){
  // This is the modal for finished  
  
 
- //Swap this function for a card selector. Then each time a card is clicked it will check if the clicks are 6 and end the game.
+ //Opening up the finished modal
  $(".card").click(function(){
-    //   console.log("This has worked!");
-    //   document.getElementById(test).style.backgroundColor = "green";
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
         $("#finishedModal").css("display", "block");
@@ -766,6 +764,23 @@ function card12Animation(){
         $("#indexBody").addClass("modal-open");
     }        
 }); 
+
+//Opening up the display cards modal
+    $("#seeCardsButton").click(function(){
+    $("#finishedModal").css("display", "none");
+	$("#finishedModal").removeClass("in");
+	$("#finishedModal").removeClass("show");
+    $("#indexBody").removeClass("modal-open");
+
+    $("#displayCardsModal").css("display", "block");
+    $("#displayCardsModal").addClass("in");
+    $("#displayCardsModal").addClass("show");
+    $("#indexBody").addClass("modal-open");
+});
+
+
+
+
 
 // $("#start").click(function(){
 //     let a = 0;
