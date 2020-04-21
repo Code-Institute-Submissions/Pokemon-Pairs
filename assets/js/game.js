@@ -3,7 +3,7 @@
 var test = [];
  var click = 0;
 $( document ).ready(function() {
-    for (i = 0; i < 24; i++){
+    for (i = 0; i < 6; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
         method:"GET",                
@@ -737,7 +737,7 @@ function card12Animation(){
                 function pairFound(){
                 $("#card11").css("display", "none");
                 $("#card12").css("display", "none");
-                $("#card7Match, #card8Match").removeClass("display");
+                $("#card11Match, #card12Match").removeClass("display");
                 
                 }
             }
@@ -753,17 +753,19 @@ function card12Animation(){
  
  // This is the modal for finished  
  
- function myfunction(test){
+
+ //Swap this function for a card selector. Then each time a card is clicked it will check if the clicks are 6 and end the game.
+ $(".card").click(function(){
     //   console.log("This has worked!");
     //   document.getElementById(test).style.backgroundColor = "green";
-        console.log(clicks);
+        console.log("This is the amount of clicks =" + click);
     if(click == 6){
         $("#finishedModal").css("display", "block");
         $("#finishedModal").addClass("in");
         $("#finishedModal").addClass("show");
         $("#indexBody").addClass("modal-open");
     }        
-}; 
+}); 
 
 // $("#start").click(function(){
 //     let a = 0;
