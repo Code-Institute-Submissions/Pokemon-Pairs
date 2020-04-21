@@ -12,7 +12,7 @@ $( document ).ready(function() {
 });
 
 
-function insertName() {
+$("#enterName").click(function(){
 	var playerName = document.getElementById("nameInput").value;
     console.log(playerName)
     nameChosen++;
@@ -27,7 +27,7 @@ function insertName() {
     $("#difficultyModal").addClass("in");
     $("#difficultyModal").addClass("show");
     $("#difficultyModal").addClass("modal-open");
-}
+});
 
 
 
