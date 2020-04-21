@@ -1,7 +1,7 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
 var test = [];
- var click = 0;
+ 
 $( document ).ready(function() {
     for (i = 0; i < 6; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
@@ -27,7 +27,7 @@ $( document ).ready(function() {
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
 $("#easyButton, #mediumButton, #hardButton").click(function(){
-
+    click = 0;
     pair1Counter = 0;
     pair2Counter = 0;
     pair3Counter = 0;
