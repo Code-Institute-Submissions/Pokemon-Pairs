@@ -19,7 +19,7 @@ $("#enterName").click(function(){
     $("#welcomeModal").css("display", "none");
 	$("#welcomeModal").removeClass("in");
 	$("#welcomeModal").removeClass("show");
-    $("body").removeClass("modal-open");
+    $("indexBody").removeClass("modal-open");
     
     $("#playerName").html(playerName);
     $("#loadingModalHeader").html(`<h5 class="modal-title" id="loadingModalTitle">Welcome, ${playerName}!</h5>`);
@@ -35,7 +35,7 @@ $("#enterName").click(function(){
 
 });
 
-$("#startGame, #playAgainButton, #playAgainButtonDisplay").click(function(){
+$("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $("#difficultyModal").css("display", "block");
     $("#difficultyModal").addClass("in");
     $("#difficultyModal").addClass("show");
@@ -82,11 +82,7 @@ var cardSelection = []
 
 //JS for selecting difficulty
 
-$("#easyButton, #mediumButton, #hardButton").click(function(){
-    $("#difficultyModal").css("display", "none");
-	$("#difficultyModal").removeClass("in");
-	$("#difficultyModal").removeClass("show");
-    $("body").removeClass("modal-open");
+$("#startGame").click(function(){
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
     //Enter - shuffle array here. 
@@ -142,8 +138,6 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                                 + "'" + shuffledArray[9] + shuffledArray[10] +shuffledArray[11] + "'" ;
     console.log(formattedShuffledArray);
     $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
-    $("#easy").addClass("active-mode");
-    $("#medium, #hard").removeClass("active-mode");
 });
 
 $("#easyButton").click(function(){
