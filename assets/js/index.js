@@ -45,14 +45,15 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-    
 });
 
-$("#playAgainButtonDisplay").click(function(){
-     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-
+$("#playAgainButton").click(function(){
+    $("#finishedModal").css("display", "none");
+	$("#finishedModal").removeClass("in");
+	$("#finishedModal").removeClass("show");
+    $("#indexBody").removeClass("modal-open");
 });
+
 
 //Opening up the display cards modal
 $("#seeCardsButton").click(function(){
