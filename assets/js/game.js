@@ -769,19 +769,12 @@ function card12Animation(){
         $("#finishedModal").addClass("in");
         $("#finishedModal").addClass("show");
         $("#indexBody").addClass("modal-open");
-        $(".match").addClass("display");
-        $(".card").css("display", "block");
+        $("#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
+        $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
         }
     }        
 }); 
 
-//Opening up the display cards modal
-    $("#seeCardsButton").click(function(){
-    $("#finishedModal").css("display", "none");
-	$("#finishedModal").removeClass("in");
-	$("#finishedModal").removeClass("show");
-    $("#indexBody").removeClass("modal-open");
-});
 
 
 
