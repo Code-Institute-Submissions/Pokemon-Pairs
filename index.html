@@ -150,7 +150,7 @@
   </div>
 
 <!-- Loading Modal -->
-<!-- <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalCenterTitle" style="display: none;" aria-hidden="true">
+<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalCenterTitle" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div id="loadingModalHeader" class="modal-header">
@@ -164,7 +164,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
 <!-- ***** Difficulty Modal ***** -->
   <div class="modal fade" id="difficultyModal" tabindex="-1" role="dialog" aria-labelledby="finishedModalCenterTitle" style="display: none;" aria-hidden="true">
@@ -175,9 +175,9 @@
         </div>
         <div class="modal-body">
           <div class="">Please select your difficulty! </div>
-          <button id="easyButton" class="btn btn-primary" data-dismiss="modal">Easy</button>
-          <button id="mediumButton" class="btn btn-primary" data-dismiss="modal">Medium</button>
-          <button id="hardButton" class="btn btn-primary" data-dismiss="modal">Hard</button>
+          <button id="easyButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal">Easy</button>
+          <button id="mediumButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal">Medium</button>
+          <button id="hardButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal">Hard</button>
         </div>
         <div class="modal-footer">
           <div id="seeInstructions">
