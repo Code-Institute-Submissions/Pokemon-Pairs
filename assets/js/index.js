@@ -43,17 +43,15 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 });
 
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
-    $("#difficultyModal").css("display", "block");
-    $("#difficultyModal").addClass("in");
-    $("#difficultyModal").addClass("show");
-    $("#difficultyModal").addClass("modal-open");
+    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+    
 });
 
 $("#playAgainButtonDisplay").click(function(){
-    $("#finishedModal").css("display", "none");
-	$("#finishedModal").removeClass("in");
-	$("#finishedModal").removeClass("show");
-	$("indexBody").removeClass("modal-open");
+     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+
 });
 
 //Opening up the display cards modal
