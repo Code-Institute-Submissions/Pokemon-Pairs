@@ -26,6 +26,8 @@ $( document ).ready(function() {
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
+$("#easy, #medium, #hard").click(function(){
+
     pair1Counter = 0;
     pair2Counter = 0;
     pair3Counter = 0;
@@ -745,6 +747,7 @@ function card12Animation(){
    }
 }
 
+});
   
 
 
@@ -758,7 +761,7 @@ function card12Animation(){
  $(".card").click(function(){
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
-        var wait = setTimeout(finishedModal, 1500);
+        var wait = setTimeout(finishedModal, 100);
         function finishedModal(){
         $("#finishedModal").css("display", "block");
         $("#finishedModal").addClass("in");
