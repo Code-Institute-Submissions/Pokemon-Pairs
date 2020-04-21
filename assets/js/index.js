@@ -24,13 +24,19 @@ $("#enterName").click(function(){
     console.log(nameChosen);
 });
 
-$("#startGame, #playAgainButton").click(function(){
+$("#startGame, #playAgainButton, #playAgainButtonDisplay").click(function(){
     $("#difficultyModal").css("display", "block");
     $("#difficultyModal").addClass("in");
     $("#difficultyModal").addClass("show");
     $("#difficultyModal").addClass("modal-open");
 });
 
+$("#playAgainButtonDisplay").click(function(){
+    $("#finishedModal").css("display", "none");
+	$("#finishedModal").removeClass("in");
+	$("#finishedModal").removeClass("show");
+	$("indexBody").removeClass("modal-open");
+});
 
 
 //Menu opening Js
