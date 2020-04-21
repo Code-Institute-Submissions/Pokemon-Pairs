@@ -21,6 +21,7 @@ $("#enterName").click(function(){
 	$("#welcomeModal").removeClass("show");
 	$("body").removeClass("modal-open");
     $("#playerName").html(playerName);
+    $("#loadingModalHeader").html(`<h5 class="modal-title" id="loadingModalTitle">Welcome, ${playerName}!</h5>`);
     console.log(nameChosen);
 });
 
