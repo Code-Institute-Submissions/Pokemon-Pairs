@@ -56,6 +56,15 @@ $("#playAgainButtonDisplay").click(function(){
 	$("indexBody").removeClass("modal-open");
 });
 
+//Opening up the display cards modal
+$("#seeCardsButton").click(function(){
+    $("#finishedModal").css("display", "none");
+	$("#finishedModal").removeClass("in");
+	$("#finishedModal").removeClass("show");
+    $("#indexBody").removeClass("modal-open");
+});
+
+
 
 //Menu opening Js
 $("#menuButton").click(function(){
