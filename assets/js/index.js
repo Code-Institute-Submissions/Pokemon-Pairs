@@ -35,6 +35,13 @@ $("#enterName").click(function(){
 
 });
 
+$("#easyButton, #mediumButton, #hardButton").click(function(){
+    $("#difficultyModal").css("display", "none");
+	$("#difficultyModal").removeClass("in");
+	$("#difficultyModal").removeClass("show");
+    $("indexBody").removeClass("modal-open");
+});
+
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $("#difficultyModal").css("display", "block");
     $("#difficultyModal").addClass("in");
