@@ -87,6 +87,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("body").removeClass("modal-open");
+    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
     //Enter - shuffle array here. 
     var image1 = test[0].toString();
     var image2 = test[1].toString();

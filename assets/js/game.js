@@ -769,6 +769,8 @@ function card12Animation(){
         $("#finishedModal").addClass("in");
         $("#finishedModal").addClass("show");
         $("#indexBody").addClass("modal-open");
+        $(".match").addClass("display");
+        $(".card").css("display", "block");
         }
     }        
 }); 
