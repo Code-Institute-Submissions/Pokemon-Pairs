@@ -763,9 +763,12 @@ function card12Animation(){
  $(".card").click(function(){
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
+        var revealTime = setTimeout(revealCards,1000);
+        function revealCards(){
         $("#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
         $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
-        var wait = setTimeout(finishedModal, 1000);
+        }
+        var wait = setTimeout(finishedModal, 2000);
         function finishedModal(){
         $("#finishedModal").css("display", "block");
         $("#finishedModal").addClass("in");
