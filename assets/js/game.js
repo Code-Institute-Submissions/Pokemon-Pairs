@@ -40,7 +40,9 @@ function timer(){
         clearInterval(stopWatch);
         results.push(movesTaken);
         results.sort(function(a, b){return b - a});
-        console.log(results);
+        $("#gridItemTopResult1").html("1st: " + results[0]);
+        $("#gridItemTopResult2").html("2nd: " +results[1]);
+        $("#gridItemTopResult3").html("3rd: " +results[2]);
         $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`)
     }
 
