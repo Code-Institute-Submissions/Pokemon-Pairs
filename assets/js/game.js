@@ -3,6 +3,7 @@
 var types =[];
 var movesTaken = 0;
 var timeTaken = 0; 
+var results = [6,3,5,2];
 click = 0;
 
 $(document).ready(function(){
@@ -37,6 +38,9 @@ function timer(){
         console.log(timeTaken);
     } else{
         clearInterval(stopWatch);
+        results.push(movesTaken);
+        results.sort(function(a, b){return b - a});
+        console.log(results);
         $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`)
     }
 
@@ -44,6 +48,8 @@ function timer(){
 });
 
 //*********************************************************Organising results
+
+
 
 
 
@@ -876,10 +882,6 @@ function card12Animation(){
 
 
     
-
-
-
-
 
 
 
