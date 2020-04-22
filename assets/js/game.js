@@ -1,6 +1,24 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
+var types =[];
+$(document).ready(function(){
+    $.ajax({
+        method:"GET",                
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/types" 
+        }).then(function(response){
+            console.log(response);
+            for (i=0; i<response.types.length; i++){
+            // make this random as it is only pushing the first card of the array
+            types.push(response.types[i]);
+            }
+        });
+        console.log(types);
+});
+
+
 var test = [];
+
+
  
 $("#easyButton").click(function(){
     for (i = 0; i < 6; i++){
@@ -38,6 +56,27 @@ $("#mediumButton").click(function(){
         	console.log("Array is finished");
 }}
         });
+ console.log(test);
+});
+
+$("#hardButton").click(function(){
+    for (i = 0; i < 3; i++){
+    var pokemonID = Math.floor((Math.random() * 645)+1); 
+    $.ajax({
+        method:"GET",                
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+        }).then(function(response){
+            console.log(response); 
+            //make this random as it is only pushing the first card of the array
+            test.push(response.cards[0].imageUrlHiRes);
+            test.push(response.cards[1].imageUrlHiRes);
+            if(test.length == 6){
+        	console.log("Array is finished");
+    }
+
+});
+
+}
  console.log(test);
 });
 
