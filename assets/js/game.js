@@ -1,6 +1,7 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
 var types =[];
+var movesTaken = 0;
 $(document).ready(function(){
     $.ajax({
         method:"GET",                
@@ -15,10 +16,13 @@ $(document).ready(function(){
         console.log(types);
 });
 
-
+var movesTaken = 0;
 var test = [];
 
-
+$(".card").click(function(){
+    movesTaken++;
+    console.log("You have made " + movesTaken + " moves.")
+});
  
 $("#easyButton").click(function(){
     for (i = 0; i < 6; i++){
@@ -28,7 +32,6 @@ $("#easyButton").click(function(){
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
             console.log(response); 
-            //make this random as it is only pushing the first card of the array
             test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
