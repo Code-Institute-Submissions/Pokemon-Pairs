@@ -7,6 +7,22 @@ body {
    
 }
 
+.jumbotron{
+    background: red;
+    height: 100vh;
+    margin-bottom: 0;
+    text-align: center;
+    
+}
+
+.jumbo-text, .jumbo-text-header{
+    color: yellow;
+}
+
+.jumbo-text-header{
+    margin-top: 47vh;
+}
+
 /* Grid Layout for responsive design */
 
 #gridItemHeader{grid-area: header;}
