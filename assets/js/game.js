@@ -43,6 +43,8 @@ function timer(){
         clearInterval(stopWatch);
         results.unshift(movesTaken);
         results.sort(function(a, b){return a - b});
+        resultsTime.unshift(timeTaken);
+        resultsTime.sort(function(a, b){return a - b});
 
         $("#totalMoves").html(`<h6>Total moves: ${movesTaken} </h6>`);
         $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`);
@@ -51,9 +53,9 @@ function timer(){
         $("#gridItemTopResult2").html("2nd: " +results[1]);
         $("#gridItemTopResult3").html("3rd: " +results[2]);
 
-        $("#gridItemTopResult1").html("1st: " + results[0]);
-        $("#gridItemTopResult2").html("2nd: " +results[1]);
-        $("#gridItemTopResult3").html("3rd: " +results[2]);
+        $("#topTimeResult1").html("1st: " + resultsTime[0] + " seconds");
+        $("#topTimeResult2").html("2nd: " +resultsTime[1] + " seconds");
+        $("#topTimeResult3").html("3rd: " +resultsTime[2] + " seconds");
         
     }
 
