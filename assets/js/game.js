@@ -44,7 +44,7 @@ $("#easyButton").click(function(){
 $("#mediumButton").click(function(){
     
     // var pageNumber = Math.floor((Math.random() * 6)+1); 
-    var pageNumber = ;
+    var pageNumber = [Math.floor(Math.random() * 4)] ;
     $.ajax({
         method:"GET",                
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types="+ types[Math.floor(Math.random() * types.length)] +"&&page" + pageNumber
@@ -69,7 +69,8 @@ $("#hardButton").click(function(){
             console.log(response); 
             //make this random as it is only pushing the first card of the array
             test.push(response.cards[0].imageUrlHiRes);
-            test.push(response.cards[1].imageUrlHiRes);
+            //Make this Maths.random + 1 as it will never choose 0. 
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)+1].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
     }
