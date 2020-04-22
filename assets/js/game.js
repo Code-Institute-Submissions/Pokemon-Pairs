@@ -3,6 +3,7 @@
 var types =[];
 var movesTaken = 0;
 var timeTaken = 0; 
+click = 0;
 
 $(document).ready(function(){
     $.ajax({
@@ -28,10 +29,14 @@ $(".card").click(function(){
 
 var stopWatch = setInterval(timer, 1000);
 function timer(){
-    for(i=0; i<61; i++){
+    if(click < 6){
         timeTaken++;
-        console.log
-    } 
+        console.log(timeTaken);
+    } else{
+        clearInterval(stopWatch);
+        $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`)
+    }
+
 }
 
 
