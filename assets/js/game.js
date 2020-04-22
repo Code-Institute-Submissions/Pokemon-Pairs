@@ -47,7 +47,7 @@ $("#mediumButton").click(function(){
     var pageNumber = 1;
     $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=metal&&page" + pageNumber
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types="+ types[3] +"&&page" + pageNumber
         }).then(function(response){
             console.log(response);
             for(i=0; i<7; i++){
