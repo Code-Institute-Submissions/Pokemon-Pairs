@@ -102,7 +102,6 @@ var cardSelection = []
 //Distributing card images.
 
 $("#startGame").click(function(){
-    $("#gridItemResults").toggleClass("display");
     $("#gridItemName").toggleClass("display");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
