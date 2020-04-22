@@ -31,6 +31,8 @@ $(".card").click(function(){
 //***************************************************************Results
 //***************************************************************Timer 
 $("#startGame").click(function(){
+    timeTaken = 0;
+    movesTaken = 0;  
 var stopWatch = setInterval(timer, 1000);
 function timer(){
     if(click < 6){
