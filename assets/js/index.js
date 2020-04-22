@@ -160,6 +160,13 @@ $("#startGame").click(function(){
     $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
 });
 
+
+$("#revealResults").click(function(){
+    $("#gridItemResults").toggleClass("display");
+});
+
+
+
 $("#easyButton").click(function(){
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
