@@ -161,11 +161,6 @@ $("#startGame").click(function(){
 });
 
 
-$("#revealResults").click(function(){
-    $("#gridItemResults").toggleClass("display");
-});
-
-
 
 $("#easyButton").click(function(){
     $("#easy").addClass("active-mode");
