@@ -10,6 +10,7 @@ $("#easyButton").click(function(){
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
             console.log(response); 
+            //make this random as it is only pushing the first card of the array
             test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
@@ -23,20 +24,17 @@ $("#easyButton").click(function(){
 
 
 $("#mediumButton").click(function(){
-    for (i = 0; i < 6; i++){
-    var pageNumber = Math.floor((Math.random() * 6)+1); 
+    
+    // var pageNumber = Math.floor((Math.random() * 6)+1); 
+    var pageNumber = 1;
     $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=metal&&page" + pokemonID 
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=metal&&page" + pageNumber
         }).then(function(response){
-            console.log(response); 
+            console.log(response);
             test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
-    }
-
-});
-
 }
  console.log(test);
 });
