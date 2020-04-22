@@ -3,7 +3,7 @@
 var types =[];
 var movesTaken = 0;
 var timeTaken = 0; 
-var results = [6,3,5,2];
+var results = ["-","-"];
 click = 0;
 
 $(document).ready(function(){
@@ -38,8 +38,8 @@ function timer(){
         console.log(timeTaken);
     } else{
         clearInterval(stopWatch);
-        results.push(movesTaken);
-        results.sort(function(a, b){return b - a});
+        results.unshift(movesTaken);
+        results.sort(function(a, b){return a - b});
         $("#gridItemTopResult1").html("1st: " + results[0]);
         $("#gridItemTopResult2").html("2nd: " +results[1]);
         $("#gridItemTopResult3").html("3rd: " +results[2]);
@@ -124,7 +124,7 @@ $("#hardButton").click(function(){
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
 $("#easyButton, #mediumButton, #hardButton").click(function(){
-    click = 0;
+    //click = 0;
     pair1Counter = 0;
     pair2Counter = 0;
     pair3Counter = 0;
@@ -872,6 +872,7 @@ function card12Animation(){
         $("#finishedModal").addClass("in");
         $("#finishedModal").addClass("show");
         $("#indexBody").addClass("modal-open");
+        click = 0;
         
         }
     }        

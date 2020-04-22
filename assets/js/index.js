@@ -73,30 +73,7 @@ $("#menuButton").click(function(){
     $("#navList").slideToggle();
 });
 
-//Broken - fix later
-// //Game information display
-// $("#gridItemResults").click(function(){
-//     $("#topResultsWrapper").toggle("display", "block");
-// });
-
-$("#gameInfoHide").click(function(){
-    $("#gridItemName").toggleClass("display");
-    $("#gridItemResults").toggleClass("display");
-    $("#gameInfoShow").toggleClass("display");
-    $("#gameInfoHide").toggleClass("display");
-  });
-
-$("#gameInfoShow").click(function(){
-    $("#gridItemName").toggleClass("display");
-    $("#gridItemResults").toggleClass("display");
-    $("#gameInfoShow").toggleClass("display");
-    $("#gameInfoHide").toggleClass("display");
-  });
-
-var cardSelection = []
   
-
-
 
 //Distributing card images.
 
@@ -158,11 +135,6 @@ $("#startGame").click(function(){
     console.log(formattedShuffledArray);
     $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
 });
-
-
-
-
-
 
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
