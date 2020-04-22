@@ -2,12 +2,32 @@
 //It has been modified for my benefit
 var test = [];
  
-$( document ).ready(function() {
+$("#easyButton").click(function(){
     for (i = 0; i < 6; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
         method:"GET",                
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+        }).then(function(response){
+            console.log(response); 
+            test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
+            if(test.length == 6){
+        	console.log("Array is finished");
+    }
+
+});
+
+}
+ console.log(test);
+});
+
+
+$("#mediumButton").click(function(){
+    for (i = 0; i < 6; i++){
+    var pageNumber = Math.floor((Math.random() * 6)+1); 
+    $.ajax({
+        method:"GET",                
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=metal&&page" + pokemonID 
         }).then(function(response){
             console.log(response); 
             test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
@@ -768,7 +788,7 @@ function card12Animation(){
         $("#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
         $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
         }
-        var wait = setTimeout(finishedModal, 2000);
+        var wait = setTimeout(finishedModal, 3000);
         function finishedModal(){
         $("#finishedModal").css("display", "block");
         $("#finishedModal").addClass("in");
