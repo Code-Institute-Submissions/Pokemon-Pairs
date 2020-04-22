@@ -136,15 +136,6 @@ $("#startGame").click(function(){
     $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
 });
 
-$("#playAgainButton, #playAgainButtonDisplay").click(function(){
-    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-    for(i=0; i<7; i++){
-        test.pop();
-    };
-    console.log(test); 
-
-});
 
 $("#playAgainButton").click(function(){
     $("#finishedModal").css("display", "none");
@@ -153,11 +144,21 @@ $("#playAgainButton").click(function(){
     $("#indexBody").removeClass("modal-open");
 });
 
-$("#playAgainButtonDisplay").click(function(){
-   
-    $("#difficultyModal").css("display", "block");
+$("#playAgainButton, #playAgainButtonDisplay").click(function(){
+    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+
+     $("#difficultyModal").css("display", "block");
     $("#difficultyModal").addClass("in");
     $("#difficultyModal").addClass("show");
     $("#difficultyModal").addClass("modal-open");
 
+    for(i=0; i<7; i++){
+        test.pop();
+    };
+    console.log(test); 
+
 });
+
+
+
