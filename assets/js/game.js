@@ -29,7 +29,7 @@ $("#easyButton").click(function(){
         }).then(function(response){
             console.log(response); 
             //make this random as it is only pushing the first card of the array
-            test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
     }
