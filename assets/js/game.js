@@ -32,10 +32,12 @@ $("#mediumButton").click(function(){
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=metal&&page" + pageNumber
         }).then(function(response){
             console.log(response);
-            test.push(response.cards[Math.floor((Math.random() * 1))].imageUrlHiRes);
+            for(i=0; i<7; i++){
+            test.push(response.cards[i].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
-}
+}}
+        });
  console.log(test);
 });
 
