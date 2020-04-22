@@ -42,22 +42,21 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     $("indexBody").removeClass("modal-open");
 });
 
-$("#playAgainButton, #playAgainButtonDisplay").click(function(){
-    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-    $("#difficultyModal").css("display", "block");
-    $("#difficultyModal").addClass("in");
-    $("#difficultyModal").addClass("show");
-    $("#difficultyModal").addClass("modal-open");
+$("#easyButton").click(function(){
+    $("#easy").addClass("active-mode");
+    $("#medium, #hard").removeClass("active-mode");
 });
 
-$("#playAgainButton").click(function(){
-    $("#finishedModal").css("display", "none");
-	$("#finishedModal").removeClass("in");
-	$("#finishedModal").removeClass("show");
-    $("#indexBody").removeClass("modal-open");
+$("#mediumButton").click(function(){
+    $("#medium").addClass("active-mode");
+    $("#easy, #hard").removeClass("active-mode");
 });
 
+
+$("#hardButton").click(function(){
+    $("#hard").addClass("active-mode");
+    $("#medium, #easy").removeClass("active-mode");
+});
 
 //Opening up the display cards modal
 $("#seeCardsButton").click(function(){
@@ -162,19 +161,31 @@ $("#startGame").click(function(){
 
 
 
-$("#easyButton").click(function(){
-    $("#easy").addClass("active-mode");
-    $("#medium, #hard").removeClass("active-mode");
+
+
+
+$("#playAgainButton, #playAgainButtonDisplay").click(function(){
+    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+    for(i=0; i<7; i++){
+        test.pop();
+    };
+    console.log(test); 
+
 });
 
-$("#mediumButton").click(function(){
-    $("#medium").addClass("active-mode");
-    $("#easy, #hard").removeClass("active-mode");
+$("#playAgainButton").click(function(){
+    $("#finishedModal").css("display", "none");
+	$("#finishedModal").removeClass("in");
+	$("#finishedModal").removeClass("show");
+    $("#indexBody").removeClass("modal-open");
 });
 
+$("#playAgainButton").click(function(){
+   
+    $("#difficultyModal").css("display", "block");
+    $("#difficultyModal").addClass("in");
+    $("#difficultyModal").addClass("show");
+    $("#difficultyModal").addClass("modal-open");
 
-$("#hardButton").click(function(){
-    $("#hard").addClass("active-mode");
-    $("#medium, #easy").removeClass("active-mode");
 });
-
