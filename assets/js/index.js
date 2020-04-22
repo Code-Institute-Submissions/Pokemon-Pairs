@@ -153,7 +153,7 @@ $("#playAgainButton").click(function(){
     $("#indexBody").removeClass("modal-open");
 });
 
-$("#playAgainButton").click(function(){
+$("#playAgainButtonDisplay").click(function(){
    
     $("#difficultyModal").css("display", "block");
     $("#difficultyModal").addClass("in");
