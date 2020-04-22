@@ -44,10 +44,10 @@ $("#easyButton").click(function(){
 $("#mediumButton").click(function(){
     
     // var pageNumber = Math.floor((Math.random() * 6)+1); 
-    var pageNumber = 1;
+    var pageNumber = ;
     $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types="+ types[3] +"&&page" + pageNumber
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types="+ types[Math.floor(Math.random() * 11)] +"&&page" + pageNumber
         }).then(function(response){
             console.log(response);
             for(i=0; i<7; i++){
