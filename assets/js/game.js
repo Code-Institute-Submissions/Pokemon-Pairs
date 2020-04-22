@@ -4,6 +4,7 @@ var types =[];
 var movesTaken = 0;
 var timeTaken = 0; 
 var results = ["-","-"];
+var resultsTime = ["-", "-"]
 click = 0;
 
 $(document).ready(function(){
@@ -42,10 +43,18 @@ function timer(){
         clearInterval(stopWatch);
         results.unshift(movesTaken);
         results.sort(function(a, b){return a - b});
+
+        $("#totalMoves").html(`<h6>Total moves: ${movesTaken} </h6>`);
+        $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`);
+
         $("#gridItemTopResult1").html("1st: " + results[0]);
         $("#gridItemTopResult2").html("2nd: " +results[1]);
         $("#gridItemTopResult3").html("3rd: " +results[2]);
-        $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`)
+
+        $("#gridItemTopResult1").html("1st: " + results[0]);
+        $("#gridItemTopResult2").html("2nd: " +results[1]);
+        $("#gridItemTopResult3").html("3rd: " +results[2]);
+        
     }
 
 }
@@ -869,7 +878,7 @@ function card12Animation(){
         }
         var wait = setTimeout(finishedModal, 2500);
         function finishedModal(){
-        $("#totalMoves").html(`<h6>Total moves: ${movesTaken} </h6>`);
+        
         $("#finishedModal").css("display", "block");
         $("#finishedModal").addClass("in");
         $("#finishedModal").addClass("show");
