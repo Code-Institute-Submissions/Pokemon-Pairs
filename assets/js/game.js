@@ -27,6 +27,9 @@ $(".card").click(function(){
     console.log("You have made " + movesTaken + " moves.")
 });
 
+//***************************************************************Results
+//***************************************************************Timer 
+$("#startGame").click(function(){
 var stopWatch = setInterval(timer, 1000);
 function timer(){
     if(click < 6){
@@ -38,6 +41,12 @@ function timer(){
     }
 
 }
+});
+
+//*********************************************************Organising results
+
+
+
 
 
  
