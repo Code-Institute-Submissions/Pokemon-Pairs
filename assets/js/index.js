@@ -17,30 +17,22 @@ $( document ).ready(function() {
             $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
             $(".jumbotron").slideUp("slow"); 
 
-            
+            var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
+            function revealWelcomeModal(){
             $("#welcomeModal").css("display", "block");
             $("#welcomeModal").addClass("in");
             $("#welcomeModal").addClass("show");
             $("#indexBody").addClass("modal-open");
-            clearInterval(checkTime);
+            }
         }
     }
 }
-      
-    
-    //     var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
-    //     function revealWelcomeModal(){
-        
-        
-    //     }
         // else {
         // $("#difficultyModal").css("display", "block");
         // $("#difficultyModal").addClass("in");
         // $("#difficultyModal").addClass("show");
         // $("#difficultyModal").addClass("modal-open");
-        // }
-        // }
-// }
+     
 
           
 });
