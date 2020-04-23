@@ -10,6 +10,7 @@ $( document ).ready(function() {
     var checkTime = setInterval(typesArrayLoaded, 500)
     function typesArrayLoaded(){
         if(types.length > 1){
+            console.log("Types length is:" + types.length);
         clearInterval(checkTime);
         $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
         $(".jumbotron").slideUp("slow");       
@@ -102,6 +103,7 @@ $("#menuButton").click(function(){
 //Distributing card images.
 
 $("#startGame").click(function(){
+    
     $("#gridItemName").toggleClass("display");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
@@ -169,6 +171,11 @@ $("#playAgainButton").click(function(){
 });
 
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
+    var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
+            return a + b;
+            }, 0);
+    console.log(ajaxCallsSum);
+    console.log(5000 - ajaxCallsSum);
     $("#gridItemTimerDisplay").html("0 seconds");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
