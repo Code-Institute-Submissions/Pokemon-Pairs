@@ -176,6 +176,14 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
             }, 0);
     console.log(ajaxCallsSum);
     console.log(5000 - ajaxCallsSum);
+
+    if(ajaxCallsSum < 1000){
+        if(ajaxCallsSum < 400){
+            $("#usageWarning").html("This is your final game. Please play again in one hour!");
+        }else {$("#usageWarning").html("You have only have a few games left before you reach the hourly limit! We will tell you when you have one game left.");
+    } 
+    }
+
     $("#gridItemTimerDisplay").html("0 seconds");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
