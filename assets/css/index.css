@@ -22,6 +22,46 @@ body {
     margin-top: 47vh;
 }
 
+.pokemon{
+    height:100px;
+    width: 100px;
+}
+#articuno{
+    background-image: url("/assets/images/articuno.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#moltres{
+    background-image: url("/assets/images/moltres.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#zapdos{
+    background-image: url("/assets/images/zapdos.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#charmander{
+    background-image: url("/assets/images/charmander.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#squirtle{
+    background-image: url("/assets/images/squirtle.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#pikachu{
+    background-image: url("/assets/images/pikachu.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
 /* Grid Layout for responsive design */
 
 #gridItemHeader{grid-area: header;}

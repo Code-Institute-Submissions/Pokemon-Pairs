@@ -1,38 +1,38 @@
 var nameChosen = 0;
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-    console.log(nameChosen);
-    if (nameChosen == 0){
-    $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
-    // var time = setTimeout(removeJumbo, 3000);
-    // function removeJumbo(){
-    var checkTime = setInterval(typesArrayLoaded, 500)
-    function typesArrayLoaded(){
-        if(types.length > 1){
-            console.log("Types length is:" + types.length);
-            clearInterval(checkTime);
+// // $( document ).ready(function() {
+// //     console.log( "ready!" );
+// //     console.log(nameChosen);
+// //     if (nameChosen == 0){
+// //     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+// //     // var time = setTimeout(removeJumbo, 3000);
+// //     // function removeJumbo(){
+// //     var checkTime = setInterval(typesArrayLoaded, 500)
+// //     function typesArrayLoaded(){
+// //         if(types.length > 1){
+// //             console.log("Types length is:" + types.length);
+// //             clearInterval(checkTime);
             
-            $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
-            $(".jumbotron").slideUp("slow"); 
+// //             $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
+// //             $(".jumbotron").slideUp("slow"); 
 
-            var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
-            function revealWelcomeModal(){
-            $("#welcomeModal").css("display", "block");
-            $("#welcomeModal").addClass("in");
-            $("#welcomeModal").addClass("show");
-            $("#indexBody").addClass("modal-open");
-            }
-        }
-    }
-}
-        else {
-        $("#difficultyModal").css("display", "block");
-        $("#difficultyModal").addClass("in");
-        $("#difficultyModal").addClass("show");
-        $("#difficultyModal").addClass("modal-open");
-        }        
-});
+// //             var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
+// //             function revealWelcomeModal(){
+// //             $("#welcomeModal").css("display", "block");
+// //             $("#welcomeModal").addClass("in");
+// //             $("#welcomeModal").addClass("show");
+// //             $("#indexBody").addClass("modal-open");
+// //             }
+// //         }
+// //     }
+// // }
+//         else {
+//         $("#difficultyModal").css("display", "block");
+//         $("#difficultyModal").addClass("in");
+//         $("#difficultyModal").addClass("show");
+//         $("#difficultyModal").addClass("modal-open");
+//         }        
+// });
 
 
 $("#enterName").click(function(){
