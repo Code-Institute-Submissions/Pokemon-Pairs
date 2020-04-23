@@ -10,6 +10,7 @@ $( document ).ready(function() {
     var checkTime = setInterval(typesArrayLoaded, 500)
     function typesArrayLoaded(){
         if(types.length > 1){
+        clearInterval(checkTime);
         $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
         $(".jumbotron").slideUp("slow");       
     
