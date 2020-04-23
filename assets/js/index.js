@@ -6,7 +6,14 @@ $( document ).ready(function() {
 
     var time = setTimeout(removeJumbo, 3000);
     function removeJumbo(){
-        $(".jumbotron").slideUp("slow");
+        var checkTime = setInterval(typesArrayLoaded, 500)
+        function typesArrayLoaded(){
+            if(types.length > 1){
+                $(".jumbotron").slideUp("slow");
+            }
+            
+        }
+        
     }
     var welcomeModalTime = setTimeout(revealWelcomeModal, 4000)
     function revealWelcomeModal(){
