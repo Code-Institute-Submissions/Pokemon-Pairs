@@ -1,4 +1,4 @@
-var nameChosen = 1;
+var nameChosen = 0;
 
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -13,7 +13,7 @@ $( document ).ready(function() {
             console.log("Types length is:" + types.length);
             clearInterval(checkTime);
             
-            $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
+            $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
             $(".jumbotron").slideUp("slow"); 
 
             var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
