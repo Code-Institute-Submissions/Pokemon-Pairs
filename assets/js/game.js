@@ -5,6 +5,9 @@ var movesTaken = 0;
 var timeTaken = 0; 
 var results = ["-","-"];
 var resultsTime = ["-", "-"]
+var ajaxCalls = [0];    
+    // Getting sum of numbers
+    
 click = 0;
 
 $(document).ready(function(){
@@ -19,6 +22,7 @@ $(document).ready(function(){
             }
         });
         console.log(types);
+        
 });
 
 var movesTaken = 0;
@@ -117,10 +121,14 @@ $("#hardButton").click(function(){
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
             console.log(response); 
+            console.log(response.cards.length);
+            ajaxCalls.push(Number(response.cards.length));
+            console.log(ajaxCalls);
+
             //make this random as it is only pushing the first card of the array
             test.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-            test.push(response.cards[Math.floor(Math.random() * response.cards.length)+1].imageUrlHiRes);
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
     }
