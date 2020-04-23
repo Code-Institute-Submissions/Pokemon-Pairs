@@ -3,12 +3,20 @@ var nameChosen = 0;
 $( document ).ready(function() {
     console.log( "ready!" );
     console.log(nameChosen);
+
+    var time = setTimeout(removeJumbo, 3000);
+    function removeJumbo(){
+        $(".jumbotron").slideUp("slow");
+    }
+    var welcomeModalTime = setTimeout(revealWelcomeModal, 4000)
+    function revealWelcomeModal(){
     if (nameChosen == 0){
     $("#welcomeModal").css("display", "block");
     $("#welcomeModal").addClass("in");
     $("#welcomeModal").addClass("show");
     $("#indexBody").addClass("modal-open");
-    } 
+    }    
+    }
 });
 
 
