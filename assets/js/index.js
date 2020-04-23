@@ -15,7 +15,12 @@ $( document ).ready(function() {
     $("#welcomeModal").addClass("in");
     $("#welcomeModal").addClass("show");
     $("#indexBody").addClass("modal-open");
-    }    
+    }else {
+    $("#difficultyModal").css("display", "block");
+    $("#difficultyModal").addClass("in");
+    $("#difficultyModal").addClass("show");
+    $("#difficultyModal").addClass("modal-open");
+    }
     }
 });
 
