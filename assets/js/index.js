@@ -4,11 +4,13 @@ $( document ).ready(function() {
     console.log( "ready!" );
     console.log(nameChosen);
     if (nameChosen == 0){
+    $("#gridItemHeader, #gridItemInfo, #gridItemGame").addClass("display");
     var time = setTimeout(removeJumbo, 3000);
     function removeJumbo(){
     var checkTime = setInterval(typesArrayLoaded, 500)
     function typesArrayLoaded(){
         if(types.length > 1){
+        $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
         $(".jumbotron").slideUp("slow");       
     
         var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
@@ -28,8 +30,7 @@ $( document ).ready(function() {
         }
 }
 }
-            
-        
+       
 });
 
 
