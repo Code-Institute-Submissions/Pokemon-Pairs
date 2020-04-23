@@ -6,29 +6,29 @@ $( document ).ready(function() {
 
     var time = setTimeout(removeJumbo, 3000);
     function removeJumbo(){
-        var checkTime = setInterval(typesArrayLoaded, 500)
-        function typesArrayLoaded(){
-            if(types.length > 1){
-                $(".jumbotron").slideUp("slow");
-            }
+    var checkTime = setInterval(typesArrayLoaded, 500)
+    function typesArrayLoaded(){
+        if(types.length > 1){
+        $(".jumbotron").slideUp("slow");       
+    
+        var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
+        function revealWelcomeModal(){
+        if (nameChosen == 0){
+        $("#welcomeModal").css("display", "block");
+        $("#welcomeModal").addClass("in");
+        $("#welcomeModal").addClass("show");
+        $("#indexBody").addClass("modal-open");
+        }else {
+        $("#difficultyModal").css("display", "block");
+        $("#difficultyModal").addClass("in");
+        $("#difficultyModal").addClass("show");
+        $("#difficultyModal").addClass("modal-open");
+        }
+        }
+}
+}
             
         }
-        
-    }
-    var welcomeModalTime = setTimeout(revealWelcomeModal, 4000)
-    function revealWelcomeModal(){
-    if (nameChosen == 0){
-    $("#welcomeModal").css("display", "block");
-    $("#welcomeModal").addClass("in");
-    $("#welcomeModal").addClass("show");
-    $("#indexBody").addClass("modal-open");
-    }else {
-    $("#difficultyModal").css("display", "block");
-    $("#difficultyModal").addClass("in");
-    $("#difficultyModal").addClass("show");
-    $("#difficultyModal").addClass("modal-open");
-    }
-    }
 });
 
 
