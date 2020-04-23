@@ -49,14 +49,6 @@ $("#enterName").click(function(){
     $("#loadingModalHeader").html(`<h5 class="modal-title" id="loadingModalTitle">Welcome, ${playerName}!</h5>`);
     console.log(nameChosen);
 
-    var time= setInterval(loadingArray, 1000);
-    function loadingArray(){
-        if(test.length >= 6){
-            $("#startGame").removeClass("display");
-            clearInterval(loadingArray);
-        }
-    }
-
 });
 
 $("#easyButton, #mediumButton, #hardButton").click(function(){
@@ -64,6 +56,13 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("indexBody").removeClass("modal-open");
+    var time= setInterval(loadingArray, 1000);
+    function loadingArray(){
+        if(test.length >= 6){
+            $("#startGame").removeClass("display");
+            clearInterval(time);
+        }
+    }
 });
 
 $("#easyButton").click(function(){
