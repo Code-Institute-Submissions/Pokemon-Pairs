@@ -1,4 +1,4 @@
-var nameChosen = 0;
+var nameChosen = 1;
 
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -13,7 +13,6 @@ $( document ).ready(function() {
             console.log("Types length is:" + types.length);
             clearInterval(checkTime);
             
-            
             $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
             $(".jumbotron").slideUp("slow"); 
 
@@ -27,14 +26,12 @@ $( document ).ready(function() {
         }
     }
 }
-        // else {
-        // $("#difficultyModal").css("display", "block");
-        // $("#difficultyModal").addClass("in");
-        // $("#difficultyModal").addClass("show");
-        // $("#difficultyModal").addClass("modal-open");
-     
-
-          
+        else {
+        $("#difficultyModal").css("display", "block");
+        $("#difficultyModal").addClass("in");
+        $("#difficultyModal").addClass("show");
+        $("#difficultyModal").addClass("modal-open");
+        }        
 });
 
 
