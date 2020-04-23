@@ -7,22 +7,31 @@ $( document ).ready(function() {
     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
     // var time = setTimeout(removeJumbo, 3000);
     // function removeJumbo(){
-    // var checkTime = setInterval(typesArrayLoaded, 500)
-    // function typesArrayLoaded(){
-    //     if(types.length > 1){
-    //         console.log("Types length is:" + types.length);
-    //     clearInterval(checkTime);
-    //     $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
-    //     $(".jumbotron").slideUp("slow");       
+    var checkTime = setInterval(typesArrayLoaded, 500)
+    function typesArrayLoaded(){
+        if(types.length > 1){
+            console.log("Types length is:" + types.length);
+            clearInterval(checkTime);
+            
+            
+            $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
+            $(".jumbotron").slideUp("slow"); 
+
+            
+            $("#welcomeModal").css("display", "block");
+            $("#welcomeModal").addClass("in");
+            $("#welcomeModal").addClass("show");
+            $("#indexBody").addClass("modal-open");
+            clearInterval(checkTime);
+        }
+    }
+}
+      
     
     //     var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
     //     function revealWelcomeModal(){
         
-        $("#welcomeModal").css("display", "block");
-        $("#welcomeModal").addClass("in");
-        $("#welcomeModal").addClass("show");
-        $("#indexBody").addClass("modal-open");
-        }
+        
     //     }
         // else {
         // $("#difficultyModal").css("display", "block");
@@ -33,7 +42,7 @@ $( document ).ready(function() {
         // }
 // }
 
-       
+          
 });
 
 
