@@ -4,34 +4,35 @@ $( document ).ready(function() {
     console.log( "ready!" );
     console.log(nameChosen);
     if (nameChosen == 0){
-    $("#gridItemHeader, #gridItemInfo, #gridItemGame").addClass("display");
-    var time = setTimeout(removeJumbo, 3000);
-    function removeJumbo(){
-    var checkTime = setInterval(typesArrayLoaded, 500)
-    function typesArrayLoaded(){
-        if(types.length > 1){
-            console.log("Types length is:" + types.length);
-        clearInterval(checkTime);
-        $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
-        $(".jumbotron").slideUp("slow");       
+    $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+    // var time = setTimeout(removeJumbo, 3000);
+    // function removeJumbo(){
+    // var checkTime = setInterval(typesArrayLoaded, 500)
+    // function typesArrayLoaded(){
+    //     if(types.length > 1){
+    //         console.log("Types length is:" + types.length);
+    //     clearInterval(checkTime);
+    //     $("#gridItemHeader, #gridItemInfo, #gridItemGame").removeClass("display");
+    //     $(".jumbotron").slideUp("slow");       
     
-        var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
-        function revealWelcomeModal(){
+    //     var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
+    //     function revealWelcomeModal(){
         
         $("#welcomeModal").css("display", "block");
         $("#welcomeModal").addClass("in");
         $("#welcomeModal").addClass("show");
         $("#indexBody").addClass("modal-open");
         }
-        }else {
-        $("#difficultyModal").css("display", "block");
-        $("#difficultyModal").addClass("in");
-        $("#difficultyModal").addClass("show");
-        $("#difficultyModal").addClass("modal-open");
-        }
-        }
-}
-}
+    //     }
+        // else {
+        // $("#difficultyModal").css("display", "block");
+        // $("#difficultyModal").addClass("in");
+        // $("#difficultyModal").addClass("show");
+        // $("#difficultyModal").addClass("modal-open");
+        // }
+        // }
+// }
+
        
 });
 
@@ -179,7 +180,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
 
     if(ajaxCallsSum < 1000){
         if(ajaxCallsSum < 400){
-            $("#usageWarning").html("This is your final game. Please play again in one hour!");
+        $("#usageWarning").html("This is your final game. Please play again in one hour!");
         }else {$("#usageWarning").html("You have only have a few games left before you reach the hourly limit! We will tell you when you have one game left.");
     } 
     }
