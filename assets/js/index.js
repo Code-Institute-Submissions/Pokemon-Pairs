@@ -3,7 +3,7 @@ var nameChosen = 0;
 $( document ).ready(function() {
     console.log( "ready!" );
     console.log(nameChosen);
-
+    if (nameChosen == 0){
     var time = setTimeout(removeJumbo, 3000);
     function removeJumbo(){
     var checkTime = setInterval(typesArrayLoaded, 500)
@@ -13,11 +13,12 @@ $( document ).ready(function() {
     
         var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
         function revealWelcomeModal(){
-        if (nameChosen == 0){
+        
         $("#welcomeModal").css("display", "block");
         $("#welcomeModal").addClass("in");
         $("#welcomeModal").addClass("show");
         $("#indexBody").addClass("modal-open");
+        }
         }else {
         $("#difficultyModal").css("display", "block");
         $("#difficultyModal").addClass("in");
@@ -28,7 +29,7 @@ $( document ).ready(function() {
 }
 }
             
-        }
+        
 });
 
 
