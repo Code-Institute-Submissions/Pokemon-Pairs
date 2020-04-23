@@ -159,6 +159,7 @@ $("#playAgainButton").click(function(){
 });
 
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
+    $("#gridItemTimerDisplay").html("0 seconds");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
 
