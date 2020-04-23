@@ -30,16 +30,16 @@ $(".card").click(function(){
 });
 
 //***************************************************************Results
-//***************************************************************Timer 
+
 $("#startGame").click(function(){
     timeTaken = 0;
     movesTaken = 0;  
-var stopWatch = setInterval(timer, 1000);
-function timer(){
-    if(click < 6){
+    var stopWatch = setInterval(timer, 1000);
+    function timer(){
+        if(click < 6){
         timeTaken++;
-        console.log(timeTaken);
-    } else{
+        $("#gridItemTimerDisplay").html(timeTaken + " seconds");
+        } else{
         clearInterval(stopWatch);
         results.unshift(movesTaken);
         results.sort(function(a, b){return a - b});
@@ -62,7 +62,7 @@ function timer(){
 }
 });
 
-//*********************************************************Organising results
+
 
 
 
