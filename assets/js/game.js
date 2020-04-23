@@ -5,7 +5,7 @@ var movesTaken = 0;
 var timeTaken = 0; 
 var results = ["-","-"];
 var resultsTime = ["-", "-"]
-var ajaxCalls = [0];    
+var ajaxCalls = [];    
     // Getting sum of numbers
     
 click = 0;
@@ -18,6 +18,7 @@ $(document).ready(function(){
             console.log(response);
             for (i=0; i<response.types.length; i++){
             // make this random as it is only pushing the first card of the array
+            ajaxCalls.push(response.types.length);
             types.push(response.types[i]);
             }
         });
@@ -83,6 +84,8 @@ $("#easyButton").click(function(){
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
             console.log(response); 
+            ajaxCalls.push(Number(response.cards.length));
+            console.log(ajaxCalls);
             test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
@@ -104,6 +107,8 @@ $("#mediumButton").click(function(){
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types="+ types[Math.floor(Math.random() * types.length)] +"&&page" + pageNumber
         }).then(function(response){
             console.log(response);
+            ajaxCalls.push(Number(response.cards.length));
+            console.log(ajaxCalls);
             for(i=0; i<7; i++){
             test.push(response.cards[i].imageUrlHiRes);
             if(test.length == 6){
@@ -120,8 +125,6 @@ $("#hardButton").click(function(){
         method:"GET",                
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
-            console.log(response); 
-            console.log(response.cards.length);
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
 
