@@ -86,7 +86,6 @@
    It has been modified to fit my purpose */
 .card{
     border:0;
-    border-radius: 0;
 }
 
 .card > .cover{
