@@ -254,6 +254,9 @@ h5{
     height: 200px;
 }
 
+.current-game-results{
+    border-bottom: 1px solid #dee2e6;
+}
 /* Footer */
 footer{
     display: none;
