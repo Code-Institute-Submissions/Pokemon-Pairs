@@ -254,6 +254,24 @@ h5{
     height: 200px;
 }
 
+#results{
+    display: inline-block;
+}
+
+#topResultsWrapper{
+    margin: 0.5rem 2rem;
+    float: left;
+}
+
+#topResultsWrapperTime{
+    margin: 0.5rem 2rem;
+    float: right;
+}
+
+#timeResultHeader, #moveResultHeader{
+    text-decoration: underline;
+}
+
 .current-game-results{
     border-bottom: 1px solid #dee2e6;
 }
