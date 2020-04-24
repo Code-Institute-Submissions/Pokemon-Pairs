@@ -104,8 +104,9 @@ body {
 }
 
 .navbar .navbar-brand {
-    color: yellow;
-    font-size: 2rem;
+    background-image: url("/assets/images/pokemon-pairs-title.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navbar-nav {
