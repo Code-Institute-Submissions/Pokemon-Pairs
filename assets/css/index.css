@@ -9,10 +9,19 @@ body {
 
 .jumbotron{
     background: red;
+    
     height: 100vh;
     margin-bottom: 0;
     text-align: center;  
     border-radius: 0;  
+}
+
+#jumboimage{
+    background-image: url(/assets/images/cover6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 73vh;
+    margin-top: 60px;
 }
 
 .jumbo-text, .jumbo-text-header{

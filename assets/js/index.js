@@ -8,62 +8,62 @@ $( document ).ready(function() {
     var time = setTimeout(removeJumbo, 3000);
     function removeJumbo(){
     var checkTime = setInterval(typesArrayLoaded, 500)
-    function typesArrayLoaded(){
-        if(types.length > 1){
-            console.log("Types length is:" + types.length);
-            clearInterval(checkTime);
+    // function typesArrayLoaded(){
+    //     if(types.length > 1){
+            // console.log("Types length is:" + types.length);
+            // clearInterval(checkTime);
             
-            $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
-            $(".jumbotron").slideUp("slow"); 
+            // $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
+            // $(".jumbotron").slideUp("slow"); 
 
-            var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
-            function revealWelcomeModal(){
-            $("#welcomeModal").css("display", "block");
-            $("#welcomeModal").addClass("in");
-            $("#welcomeModal").addClass("show");
-            $("#indexBody").addClass("modal-open");
-            }
-        }
-    }
-}
-}else {
-        $("#difficultyModal").css("display", "block");
-        $("#difficultyModal").addClass("in");
-        $("#difficultyModal").addClass("show");
-        $("#difficultyModal").addClass("modal-open");
-        }        
-});
+//             var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
+//             function revealWelcomeModal(){
+//             $("#welcomeModal").css("display", "block");
+//             $("#welcomeModal").addClass("in");
+//             $("#welcomeModal").addClass("show");
+//             $("#indexBody").addClass("modal-open");
+//             }
+//         }
+//     }
+// }
+// }else {
+//         $("#difficultyModal").css("display", "block");
+//         $("#difficultyModal").addClass("in");
+//         $("#difficultyModal").addClass("show");
+//         $("#difficultyModal").addClass("modal-open");
+//         }        
+// });
 
 
-$("#enterName").click(function(){
-	var playerName = document.getElementById("nameInput").value;
-    console.log(playerName)
-    nameChosen++;
-    $("#welcomeModal").css("display", "none");
-	$("#welcomeModal").removeClass("in");
-	$("#welcomeModal").removeClass("show");
-    $("indexBody").removeClass("modal-open");
+// $("#enterName").click(function(){
+// 	var playerName = document.getElementById("nameInput").value;
+//     console.log(playerName)
+//     nameChosen++;
+//     $("#welcomeModal").css("display", "none");
+// 	$("#welcomeModal").removeClass("in");
+// 	$("#welcomeModal").removeClass("show");
+//     $("indexBody").removeClass("modal-open");
 
     
-    $("#playerName").html(playerName);
-    $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
-    console.log(nameChosen);
+//     $("#playerName").html(playerName);
+//     $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
+//     console.log(nameChosen);
 
-});
+// });
 
-$("#easyButton, #mediumButton, #hardButton").click(function(){
-    $("#difficultyModal").css("display", "none");
-	$("#difficultyModal").removeClass("in");
-	$("#difficultyModal").removeClass("show");
-    $("indexBody").removeClass("modal-open");
-    var time= setInterval(loadingArray, 1000);
-    function loadingArray(){
-        if(test.length >= 6){
-            $("#startGame").removeClass("display");
-            clearInterval(time);
-        }
-    }
-});
+// $("#easyButton, #mediumButton, #hardButton").click(function(){
+//     $("#difficultyModal").css("display", "none");
+// 	$("#difficultyModal").removeClass("in");
+// 	$("#difficultyModal").removeClass("show");
+//     $("indexBody").removeClass("modal-open");
+//     var time= setInterval(loadingArray, 1000);
+//     function loadingArray(){
+//         if(test.length >= 6){
+//             $("#startGame").removeClass("display");
+//             clearInterval(time);
+//         }
+//     }
+// });
 
 $("#easyButton").click(function(){
     $("#easy").addClass("active-mode");
