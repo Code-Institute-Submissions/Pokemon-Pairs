@@ -11,7 +11,8 @@ body {
     background: red;
     height: 100vh;
     margin-bottom: 0;
-    text-align: center;    
+    text-align: center;  
+    border-radius: 0;  
 }
 
 .jumbo-text, .jumbo-text-header{
@@ -111,6 +112,16 @@ body {
     display: inline;
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+
+
+.navbar-toggler-icon, .navbar-light .navbar-toggler{
+    border-color: yellow;
+}
 .navbar-collapse{
     margin-top: 8px;
 }
