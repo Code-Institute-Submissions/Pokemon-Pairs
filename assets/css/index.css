@@ -275,6 +275,18 @@ h5{
 .current-game-results{
     border-bottom: 1px solid #dee2e6;
 }
+
+.modal-display{
+    margin: 1rem;
+}
+
+.modal-content-display{
+    margin: 0;
+}
+
+#displayCardsWrapper{
+    text-align: center;
+}
 /* Footer */
 footer{
     display: none;
