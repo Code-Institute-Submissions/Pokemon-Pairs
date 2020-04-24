@@ -233,12 +233,17 @@ ul li{
     color: yellow;
 }
 
+h5{
+    font-size: 2rem;
+}
+
 #welcomeModalLongTitle{
     margin: 5px 0 0 0;
 }
 
 .btn-primary{
     color:yellow;
+    margin: 0 0.5rem;
 }
 
 #loading-gif{
