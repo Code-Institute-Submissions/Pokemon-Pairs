@@ -122,9 +122,6 @@ body {
 .navbar-toggler-icon, .navbar-light .navbar-toggler{
     border-color: yellow;
 }
-.navbar-collapse{
-    margin-top: 8px;
-}
 
 .nav-item{
     display: inline-block;
@@ -133,7 +130,7 @@ body {
 
 
 ul {
-    padding: 0.5rem;
+    
     margin-bottom: 0;
     border:0;
 }
@@ -143,13 +140,14 @@ ul li{
     list-style-type: none;
 }
 
-.navbar-light .navbar-nav .active>.nav-link{
-    color:yellow;
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link{
+    color:rgba(240, 255, 0, 0.8);
+    padding:0;
+    font-size: 1.25rem;
 }
 
-.navbar-light .navbar-nav .nav-link{
-    color:rgba(240, 255, 0, 0.8)
-
+.navbar-light .navbar-nav .active>.nav-link{
+    color:yellow;
 }
 
 /* Clean up the code so you don't have an !important */
@@ -175,7 +173,7 @@ ul li{
 
 /* Grid game information */
 
-#gridItemName, #gridItemResults, #gridItemTimer{
+#gridItemName, #gridItemTimer{
     border-bottom: 1px solid black;
     padding: 5px 0;
     
