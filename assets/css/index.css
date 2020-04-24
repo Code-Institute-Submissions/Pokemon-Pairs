@@ -233,6 +233,10 @@ ul li{
     color: yellow;
 }
 
+#welcomeModalLongTitle{
+    margin: 5px 0 0 0;
+}
+
 .btn-primary{
     color:yellow;
 }
