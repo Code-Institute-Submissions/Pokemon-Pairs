@@ -46,7 +46,7 @@ $("#enterName").click(function(){
 
     
     $("#playerName").html(playerName);
-    $("#loadingModalHeader").html(`<h5 class="modal-title" id="loadingModalTitle">Welcome, ${playerName}!</h5>`);
+    $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
     console.log(nameChosen);
 
 });
