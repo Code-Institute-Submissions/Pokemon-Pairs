@@ -107,6 +107,8 @@ body {
     background-image: url("/assets/images/pokemon-pairs-title.png");
     background-size: cover;
     background-repeat: no-repeat;
+    width: 62%;
+    height: 40px;
 }
 
 .navbar-nav {
