@@ -39,7 +39,8 @@
     padding: 0 0;
     width: 110px;
     height: 23vh;
-    text-align: center;   
+    text-align: center; 
+    border-radius: 0.25rem;  
 }
 
  .display-cards {
@@ -79,7 +80,34 @@
     background-color: grey;
 }
 
+/* CSS for the animation when the cards are clicked */
+/* Tutorial from http://www.developphp.com/video/CSS/Flip-3D-Boxes-and-Cards-Animation-CSS-Tutorial.
+   It has been modified to fit my purpose */
+.card{
+    border:0;
+}
 
+.card > .cover{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background-image: url("/assets/images/card-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.card > .face{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg ); 
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
 
 
 /* Landscape for mobile */
@@ -109,29 +137,4 @@ body .grid-container {
 }
 
 
-/* CSS for the animation when the cards are clicked */
-/* Tutorial from http://www.developphp.com/video/CSS/Flip-3D-Boxes-and-Cards-Animation-CSS-Tutorial.
-   It has been modified to fit my purpose */
 
-
-.card > .cover{
-	position:absolute;
-	-webkit-transform: perspective( 600px ) rotateY( 0deg );
-	transform: perspective( 600px ) rotateY( 0deg );
-	background-image: url("/assets/images/card-cover.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	transition: -webkit-transform .5s linear 0s;
-	transition: transform .5s linear 0s;
-}
-.card > .face{
-	position:absolute;
-	-webkit-transform: perspective( 600px ) rotateY( 180deg );
-	transform: perspective( 600px ) rotateY( 180deg ); 
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	transition: -webkit-transform .5s linear 0s;
-	transition: transform .5s linear 0s;
-}
