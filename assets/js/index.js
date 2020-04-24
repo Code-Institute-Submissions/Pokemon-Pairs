@@ -176,6 +176,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     console.log(5000 - ajaxCallsSum);
 
     if(ajaxCallsSum < 1000){
+        $("#usageWarning").removeClass("display");
         if(ajaxCallsSum < 400){
         $("#usageWarning").html("This is your final game. Please play again in one hour!");
         }else {$("#usageWarning").html("You have only have a few games left before you reach the hourly limit! We will tell you when you have one game left.");
