@@ -223,10 +223,14 @@ ul li{
     background-color: rgba(112, 157, 199, 0.8);
 
 }
-
+.modal-header, .modal-body, .modal-footer{
+    text-align: center;
+    display: inline-block;
+}
 .modal-content{
     background-color: midnightblue;
     text-align: center;
+    color: yellow;
 }
 
 
