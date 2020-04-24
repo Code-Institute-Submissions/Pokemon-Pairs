@@ -36,7 +36,11 @@ body {
   
                    
 }
-#gridItemGame{grid-area: game;}
+#gridItemGame{
+    grid-area: game;
+    background-color: midnightblue;
+
+}
 
 
 .grid-container{
@@ -74,7 +78,7 @@ body {
   
 
 #gridItemGame{
-    background-color: skyblue;
+    background-color: rgb(38, 109, 240);
     border-left: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
@@ -107,7 +111,7 @@ body {
     background-image: url("/assets/images/pokemon-pairs-title.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 62%;
+    width: 65%;
     height: 40px;
 }
 
