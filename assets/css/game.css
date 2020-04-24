@@ -14,22 +14,19 @@
 
 /* Grid settings */
 .card-grid-container {
-  display: grid;
-  grid-template-areas:
-    'pair1a pair1b pair2a'
-    'pair2b pair3a pair3b'
-    'pair4a pair4b pair5a'
-    'pair5b pair6a pair6b'
-    ;
+    display: grid;
+    grid-template-areas:
+        'pair1a pair1b pair2a'
+        'pair2b pair3a pair3b'
+        'pair4a pair4b pair5a'
+        'pair5b pair6a pair6b';
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vh;
+    grid-gap: 1.5vh;
     background-color: midnightblue;
     text-align: center;
-    padding: 2vh 2vh 0 2vh;
+    padding: 2vh 2vh 2vh 3.5vh;
     margin: 0;
     border-top: 1px solid black;
-    /* border-left: 1px solid black;
-    border-right: 1px solid black; */  
 }
 
 
@@ -38,8 +35,8 @@
    color: white;
    background-color: midnightblue;
     padding: 0 0;
-    width: 110px;
-    height: 23vh;
+    width: 95px;
+    height: 20vh;
     text-align: center; 
    
 }
