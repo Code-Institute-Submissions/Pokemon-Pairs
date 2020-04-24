@@ -224,6 +224,11 @@ ul li{
 
 }
 
+.modal-content{
+    background-color: midnightblue;
+    text-align: center;
+}
+
 
 /* Footer */
 footer{
