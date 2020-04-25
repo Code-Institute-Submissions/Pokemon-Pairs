@@ -91,7 +91,7 @@
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
-	background-image: url("/assets/images/card-cover.png");
+	background-image: url("../images/cover6.png");
     background-size: cover;
     background-repeat: no-repeat;
 	-webkit-backface-visibility: hidden;
