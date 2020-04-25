@@ -117,7 +117,7 @@ body {
 }
 
 .navbar .navbar-brand {
-    background-image: url("..images/pokemon-pairs-title.png");
+    background-image: url("../images/pokemon-pairs-title.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 69%;
