@@ -90,7 +90,7 @@ $("#easyButton").click(function(){
             if(test.length == 6){
         	console.log("Array is finished");
     }
-
+    
 });
 
 }
@@ -99,8 +99,9 @@ $("#easyButton").click(function(){
 
 
 $("#mediumButton").click(function(){
-    
+    var time =setTimeout(ajax, 3000);
     // var pageNumber = Math.floor((Math.random() * 6)+1); 
+    function ajax(){
     var pageNumber = [Math.floor(Math.random() * 4)] ;
     $.ajax({
         method:"GET",                
@@ -114,7 +115,7 @@ $("#mediumButton").click(function(){
             if(test.length == 6){
         	console.log("Array is finished");
 }}
-        });
+        });}
  console.log(test);
 });
 
