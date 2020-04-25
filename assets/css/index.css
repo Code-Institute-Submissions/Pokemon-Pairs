@@ -17,7 +17,7 @@ body {
 }
 
 #jumboimage{
-    background-image: url("assets/images/cover6.png");
+    background-image: url("../assets/images/cover6.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 73vh;
