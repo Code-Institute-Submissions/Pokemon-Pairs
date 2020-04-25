@@ -8,21 +8,21 @@ body {
 }
 
 .jumbotron{
-    background: red;
-    
+    background: #fe0000;
+    padding:0;
     height: 100vh;
     margin-bottom: 0;
-    text-align: center;  
+   
     border-radius: 0;  
 }
 
 #jumboimage{
-    background-image: url("../images/cover6.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 73vh;
-    margin-top: 60px;
+ vertical-align: middle;
+    border-style: none;
+    height: 537px;
+    margin-top: 74px;
 }
+
 
 .jumbo-text, .jumbo-text-header{
     color: yellow;
