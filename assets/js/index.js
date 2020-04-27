@@ -35,13 +35,15 @@ $( document ).ready(function() {
         }        
 });
 
-var playerName = document.getElementById("nameInput").value;
+
 
 $("#enterName").click(function(){
-	sessionStorage.setItem("playerName", "bob");
-    console.log(playerName)
+    var playerName = document.getElementById("nameInput").value;
+    console.log(playerName);
+	sessionStorage.setItem("playerName", playerName);
     sessionStorage.setItem("name", "1");
     console.log(sessionStorage.getItem("name"));
+    console.log(sessionStorage.getItem("playerName"));
 
     $("#welcomeModal").css("display", "none");
 	$("#welcomeModal").removeClass("in");
