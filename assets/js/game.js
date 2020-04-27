@@ -897,7 +897,7 @@ function card12Animation(){
         $(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $(".card > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         }
-        var wait = setTimeout(finishedModal, 5500);
+        var wait = setTimeout(finishedModal, 2000);
         function finishedModal(){
         
         $("#finishedModal").css("display", "block");
