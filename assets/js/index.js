@@ -1,9 +1,9 @@
 var nameChosen = 0;
+console.log(sessionStorage.getItem("name"));
+
 
 $( document ).ready(function() {
-    console.log( "ready!" );
-    console.log(nameChosen);
-    if (nameChosen == 0){
+    if (sessionStorage.getItem("name") === 0){
     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
     var time = setTimeout(removeJumbo, 3000);
     function removeJumbo(){
@@ -27,6 +27,7 @@ $( document ).ready(function() {
     }
 }
 }else {
+        $(".jumbotron").slideUp();
         $("#difficultyModal").css("display", "block");
         $("#difficultyModal").addClass("in");
         $("#difficultyModal").addClass("show");
@@ -38,7 +39,9 @@ $( document ).ready(function() {
 $("#enterName").click(function(){
 	var playerName = document.getElementById("nameInput").value;
     console.log(playerName)
-    nameChosen++;
+    sessionStorage.setItem("name", "1");
+    console.log(sessionStorage.getItem("name"));
+
     $("#welcomeModal").css("display", "none");
 	$("#welcomeModal").removeClass("in");
 	$("#welcomeModal").removeClass("show");
@@ -47,7 +50,7 @@ $("#enterName").click(function(){
     
     $("#playerName").html(playerName);
     $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
-    console.log(nameChosen);
+    
 
 });
 
