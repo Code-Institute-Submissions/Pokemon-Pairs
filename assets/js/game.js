@@ -887,10 +887,13 @@ function card12Animation(){
     if(click == 6){
         var revealTime = setTimeout(revealCards,1000);
         function revealCards(){
-        $("#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
         $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
+        $("#card1, #card2, #card3, #card4, #card5, #card6").css("display", "block");
+        $("#card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
+        $(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $(".card > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         }
-        var wait = setTimeout(finishedModal, 2500);
+        var wait = setTimeout(finishedModal, 5500);
         function finishedModal(){
         
         $("#finishedModal").css("display", "block");
@@ -898,8 +901,8 @@ function card12Animation(){
         $("#finishedModal").addClass("show");
         $("#indexBody").addClass("modal-open");
         click = 0;
-        
         }
+        
     }        
 }); 
 
