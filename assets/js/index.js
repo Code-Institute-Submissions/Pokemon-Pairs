@@ -56,7 +56,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("indexBody").removeClass("modal-open");
-    var time= setInterval(loadingArray, 1000);
+    var time= setInterval(loadingArray, 3000);
     function loadingArray(){
         if(test.length >= 6){
             $("#startGame").removeClass("display");
