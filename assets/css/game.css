@@ -45,10 +45,12 @@
     color: white;
     background-color: midnightblue;
     padding: 0 0;
-    width: 100%;
-    height: 66vh;
-    text-align: center;  
-}
+    height: 58vh;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 20px;
+} 
+
 
 
 /* Modal CSS */
