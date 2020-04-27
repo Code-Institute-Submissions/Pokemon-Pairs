@@ -123,6 +123,7 @@ $("#mediumButton").click(function(){
 });
 
 $("#hardButton").click(function(){
+    if(test.length == 0){
     for (i = 0; i < 3; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
@@ -136,13 +137,13 @@ $("#hardButton").click(function(){
             test.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
             test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
-            if(test.length == 6){
-        	console.log("Array is finished");
+                if(test.length == 6){
+        	    console.log("Array is finished");
     }
 
 });
 
-}
+}}
  console.log(test);
 });
 
