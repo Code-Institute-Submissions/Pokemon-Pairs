@@ -38,7 +38,7 @@ $( document ).ready(function() {
 var playerName = document.getElementById("nameInput").value;
 
 $("#enterName").click(function(){
-	sessionStorage.setItem("playerName", playerName);
+	sessionStorage.setItem("playerName", "bob");
     console.log(playerName)
     sessionStorage.setItem("name", "1");
     console.log(sessionStorage.getItem("name"));
@@ -49,7 +49,7 @@ $("#enterName").click(function(){
     $("indexBody").removeClass("modal-open");
 
     
-    $("#playerName").html(playerName);
+    $("#playerName").html(sessionStorage.getItem("playerName"));
     $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
     
 
