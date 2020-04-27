@@ -100,9 +100,10 @@ $("#easyButton").click(function(){
 
 
 $("#mediumButton").click(function(){
-    var time =setTimeout(ajax, 3000);
+    if(test.length == 0){
+    
     // var pageNumber = Math.floor((Math.random() * 6)+1); 
-    function ajax(){
+  
     var pageNumber = [Math.floor(Math.random() * 4)] ;
     $.ajax({
         method:"GET",                
@@ -115,8 +116,9 @@ $("#mediumButton").click(function(){
             test.push(response.cards[i].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
-}}
-        });}
+            }}
+        });
+    }
  console.log(test);
 });
 
