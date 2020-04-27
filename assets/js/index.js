@@ -3,7 +3,7 @@ console.log(sessionStorage.getItem("name"));
 
 
 $( document ).ready(function() {
-    if (sessionStorage.getItem("name") === 0){
+    if (sessionStorage.name == null){
     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
     var time = setTimeout(removeJumbo, 3000);
     function removeJumbo(){
