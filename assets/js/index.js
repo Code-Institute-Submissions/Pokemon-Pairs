@@ -35,9 +35,10 @@ $( document ).ready(function() {
         }        
 });
 
+var playerName = document.getElementById("nameInput").value;
 
 $("#enterName").click(function(){
-	var playerName = document.getElementById("nameInput").value;
+	sessionStorage.setItem("playerName", playerName);
     console.log(playerName)
     sessionStorage.setItem("name", "1");
     console.log(sessionStorage.getItem("name"));
