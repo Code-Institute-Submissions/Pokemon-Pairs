@@ -1,5 +1,9 @@
 var nameChosen = 0;
+
 console.log(sessionStorage.getItem("name"));
+console.log(sessionStorage.getItem("playerName"));
+
+
 
 
 $( document ).ready(function() {
@@ -27,6 +31,8 @@ $( document ).ready(function() {
     }
 }
 }else {
+        $("#playerName").html(sessionStorage.getItem("playerName"));
+
         $(".jumbotron").slideUp();
         $("#difficultyModal").css("display", "block");
         $("#difficultyModal").addClass("in");
