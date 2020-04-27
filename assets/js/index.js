@@ -32,7 +32,7 @@ $( document ).ready(function() {
 }
 }else {
         $("#playerName").html(sessionStorage.getItem("playerName"));
-
+        $("#difficultyModalTitle").html("Are you ready, " + sessionStorage.getItem("playerName") + "?");
         $(".jumbotron").slideUp();
         $("#difficultyModal").css("display", "block");
         $("#difficultyModal").addClass("in");
