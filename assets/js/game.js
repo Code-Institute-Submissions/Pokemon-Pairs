@@ -77,6 +77,7 @@ $("#startGame").click(function(){
 
  
 $("#easyButton").click(function(){
+    if(test.length == 0){
     for (i = 0; i < 6; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
@@ -94,7 +95,7 @@ $("#easyButton").click(function(){
 });
 
 }
- console.log(test);
+ console.log(test);}
 });
 
 
