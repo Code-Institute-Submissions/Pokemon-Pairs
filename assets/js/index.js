@@ -10,16 +10,9 @@ $( document ).ready(function() {
     if (sessionStorage.name == null){
     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
     var time = setTimeout(removeJumbo, 3000);
-    function removeJumbo(){
-    var checkTime = setInterval(typesArrayLoaded, 500)
-    function typesArrayLoaded(){
-        if(types.length > 1){
-            console.log("Types length is:" + types.length);
-            clearInterval(checkTime);
-            
-            $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
-            $(".jumbotron").slideUp("slow"); 
-
+    function removeJumbo(){           
+    $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
+    $(".jumbotron").slideUp("slow"); 
             var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
             function revealWelcomeModal(){
             $("#welcomeModal").css("display", "block");
@@ -28,8 +21,6 @@ $( document ).ready(function() {
             $("#indexBody").addClass("modal-open");
             }
         }
-    }
-}
 }else {
         $("#playerName").html(sessionStorage.getItem("playerName"));
         $("#difficultyModalTitle").html("Are you ready, " + sessionStorage.getItem("playerName") + "?");
