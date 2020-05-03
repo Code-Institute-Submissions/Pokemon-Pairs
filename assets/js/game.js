@@ -107,7 +107,7 @@ $("#mediumButton").click(function(){
             console.log(response);
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
-            for(i=0; i<7; i++){
+            for(i=0; i<6; i++){
             test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
