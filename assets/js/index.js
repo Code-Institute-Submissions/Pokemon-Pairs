@@ -59,14 +59,17 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("indexBody").removeClass("modal-open");
-    var time= setInterval(loadingArray, 3000);
-    function loadingArray(){
-        if(test.length >= 6){
-            $("#startGame").removeClass("display");
-            clearInterval(time);
-        }
+    if(test.length == 0){
+        var time = setInterval(loadingArray, 3000);
+        function loadingArray(){
+            if(test.length >= 6){
+                $("#startGame").removeClass("display");
+                clearInterval(time);
+            }
     }
+}
 });
+
 
 $("#easyButton").click(function(){
     $("#easy").addClass("active-mode");
@@ -172,6 +175,10 @@ $("#playAgainButton").click(function(){
 });
 
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
+    for(i=0; i<7; i++){
+        test.pop();
+        console.log("This is emptying the test array " + test); 
+    };
     var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
             return a + b;
             }, 0);
@@ -196,10 +203,8 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $("#difficultyModal").addClass("show");
     $("#difficultyModal").addClass("modal-open");
 
-    for(i=0; i<7; i++){
-        test.pop();
-    };
-    console.log(test); 
+    
+    
 
 });
 
