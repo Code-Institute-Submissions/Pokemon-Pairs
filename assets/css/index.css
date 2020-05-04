@@ -42,8 +42,7 @@ body {
     grid-area: game-info;
     border-left: 1px solid black;
     border-right: 1px solid black;
-  
-                   
+    margin: 0 16px;
 }
 #gridItemGame{
     grid-area: game;
@@ -76,15 +75,13 @@ body {
     background-color: rgb(38, 109, 240);
     text-align: center;
     color: yellow;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
   
 
 #gridItemGame{
     background-color: rgb(38, 109, 240);
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border: 1px solid black;
 }
 
 
@@ -209,6 +206,7 @@ ul li{
     text-align: center;
     display:flex;
     justify-content: center;
+    background-color: rgb(38, 109, 240);
 }
 
 #easy, #medium, #hard {
@@ -306,6 +304,10 @@ footer{
 /* Landscape for mobile */
 
 @media screen and (min-width: 768px){
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
+    font-size: 1.75rem;
+}
     .navbar .navbar-brand {
     height: 90px;
 }

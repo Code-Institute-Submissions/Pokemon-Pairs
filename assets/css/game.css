@@ -118,13 +118,14 @@
 body .grid-container {
     padding: 5px;
 }
+
 .card-grid-container{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 4vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vh;
     background-color: #929292;
     text-align: center;
-    padding: 4vh;
+    padding: 1vh;
     margin: 0;
 }
 
