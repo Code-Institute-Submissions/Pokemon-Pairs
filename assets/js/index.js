@@ -97,10 +97,10 @@ $("#seeCardsButton").click(function(){
 
 
 
-//Menu opening Js
-$("#menuButton").click(function(){
-    $("#navList").slideToggle();
-});
+// //Menu opening Js
+// $("#menuButton").click(function(){
+//     $("#navList").slideToggle();
+// });
 
   
 
