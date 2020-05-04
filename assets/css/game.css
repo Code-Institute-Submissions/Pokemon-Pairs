@@ -23,10 +23,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5vh;
     background-color: midnightblue;
+    justify-content: space-between;
     text-align: center;
-    padding: 2vh 2vh 2vh 3.5vh;
+    padding: 2vh 2vh 2vh 2vh;
     margin: 0;
-    border-top: 1px solid black;
+   
 }
 
 

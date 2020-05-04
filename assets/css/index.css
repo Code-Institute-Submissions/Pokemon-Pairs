@@ -40,8 +40,6 @@ body {
 #gridItemHeader{grid-area: header;}
 #gridItemGameInfo{
     grid-area: game-info;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     margin: 0 16px;
 }
 #gridItemGame{
@@ -186,10 +184,9 @@ ul li{
 
 /* Grid game information */
 
-#gridItemName, #gridItemTimer{
+#gridItemName{
     border-bottom: 1px solid black;
-    padding: 5px 0;
-    
+    padding: 5px 0; 
 }
 .display {
     display: none;
@@ -207,6 +204,8 @@ ul li{
     display:flex;
     justify-content: center;
     background-color: rgb(38, 109, 240);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 #easy, #medium, #hard {
