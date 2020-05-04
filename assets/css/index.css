@@ -72,12 +72,6 @@ body {
     'game';    
 }
 
-#gridItemHeader{
-    background-color: red;
-    border: 1px solid black;
-    color: yellow;
-}
-
 .grid-game-info {
     background-color: rgb(38, 109, 240);
     text-align: center;
@@ -95,7 +89,12 @@ body {
 
 
 /* Header */
-
+#gridItemHeader{
+    margin: 15px;
+    background-color: red;
+    border: 1px solid black;
+    color: yellow;
+}
 
 #menuButton {
     float: right;
@@ -306,9 +305,9 @@ footer{
 
 /* Landscape for mobile */
 
-@media screen and (orientation: landscape) and (max-height: 376px) {
-#gridItemHeader, #gridItemName, #gridItemResults, #timerTitle, #gameInfoHide, #gameInfoShow, #difficultyMode{
-    display: none;
+@media screen and (min-width: 768px){
+    .navbar .navbar-brand {
+    height: 90px;
 }
 
 
