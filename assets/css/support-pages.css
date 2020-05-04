@@ -73,6 +73,10 @@ h1{
     margin: 24px 0 ;
 }
 
+#info-text-help h5{
+    font-size: 1.25rem;
+}
+
 #info-text-help a {
     color: whitesmoke;
 }
