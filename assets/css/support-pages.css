@@ -10,12 +10,6 @@ section {
 }
 
 /* Header */
-
-#gridItemHeader {
-    background-color: red;
-    margin: 15px;
-}
-
 h1{
     text-align: center;
 }
@@ -100,4 +94,20 @@ h1{
 .instruction-text{
     padding:16px;
     margin-bottom: 0;
+}
+
+
+/* Landscape for mobile */
+
+@media screen and (min-width: 768px){
+#contactForm h1, #help h1{
+    font-size: 4.5rem;
+}
+
+#info-text, #info-text-help h5{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
 }
