@@ -164,6 +164,7 @@ ul li{
 
 .navbar-light .navbar-nav .active>.nav-link{
     color:yellow;
+    font-weight: bold;
 }
 
 /* Clean up the code so you don't have an !important */
