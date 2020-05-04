@@ -3,7 +3,7 @@ body {
     background-color: rgb(38, 109, 240);
 }
 
-section {
+.content {
     margin: 15px;
     padding: 24px;
     background-color:midnightblue;
@@ -100,6 +100,26 @@ h1{
 /* Landscape for mobile */
 
 @media screen and (min-width: 768px){
+
+.content{
+    padding: 24px 32px;
+
+}
+.navbar-toggler-icon, .navbar-light .navbar-toggler {
+    font-size: 2rem;
+}
+
+/* help */
+.instruction-text {
+    padding: 16px 32px;
+    font-size: 24px;
+}
+
+.instruction-header{
+    font-size: 2rem;
+}
+
+/* Contact Page */
 #contactForm h1, #help h1{
     font-size: 4.5rem;
 }
