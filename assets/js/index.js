@@ -23,8 +23,9 @@ $( document ).ready(function() {
         }
 }else {
         $("#playerName").html(sessionStorage.getItem("playerName"));
+         $(".jumbotron").slideUp();
         $("#difficultyModalTitle").html("Are you ready, " + sessionStorage.getItem("playerName") + "?");
-        $(".jumbotron").slideUp();
+       
         $("#difficultyModal").css("display", "block");
         $("#difficultyModal").addClass("in");
         $("#difficultyModal").addClass("show");
@@ -59,13 +60,13 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 	$("#difficultyModal").removeClass("in");
 	$("#difficultyModal").removeClass("show");
     $("indexBody").removeClass("modal-open");
-    // var time = setInterval(loadingArray, 3000);
-    // function loadingArray(){
-    //         if(test.length >= 6){
-    //             $("#startGame").removeClass("display");
-    //             clearInterval(time);
-    //         }
-    // }
+    var time = setInterval(loadingArray, 3000);
+    function loadingArray(){
+            if(test.length >= 6){
+                $("#startGame").removeClass("display");
+                clearInterval(time);
+            }
+    }
 
 });
 
@@ -178,8 +179,6 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
         test.pop();
         console.log("This is emptying the test array " + test); 
     };
-      
-
     
     var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
             return a + b;
