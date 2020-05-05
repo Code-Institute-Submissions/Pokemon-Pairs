@@ -338,6 +338,15 @@ footer{
 
 .btn{
     font-size: 2rem;
-    
+ 
+}
+
+/* Loading Modal */
+#loading-gif{
+    height: 402px;
+}
+
+#loadingModalBody{
+    padding: 1.5rem 3rem;
 }
 }
