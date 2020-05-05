@@ -324,6 +324,14 @@ footer{
     width: 75%;
 }
 
+.modal-title{
+    font-size: 3.5rem;
+}
+
+.modal-body, #seeInstructions h6 {
+    font-size: 2rem;
+}
+
 #nameInput{
     font-size: 2rem;
 }
