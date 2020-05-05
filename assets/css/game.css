@@ -115,29 +115,25 @@
 
 /* Landscape for mobile */
 
-@media screen and (orientation: landscape) and (max-height: 376px) {
-body .grid-container {
-    padding: 5px;
+@media screen and (min-width: 768px) {
+
+.grid-game-info h6{
+    font-size: 1.75rem;
 }
 
 .card-grid-container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vh;
-    background-color: #929292;
-    text-align: center;
-    padding: 1vh;
-    margin: 0;
+    justify-content: space-evenly;
+    padding: 2vh 4vh 2vh 4vh;
 }
 
-.card-grid-container .eight-cards{
-    height: 38.5vh;
+.eight-cards{
+    width: 148px;
+    height: 20.5vh;
 }
 
-.card-grid-container .sixteen-cards {
-   height: 17.3vh;
+#difficultyMode{
+    font-size: 1.25rem;
 }
-
 }
 
 
