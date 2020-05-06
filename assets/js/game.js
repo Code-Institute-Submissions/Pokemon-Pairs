@@ -169,7 +169,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 
 });
 
-  function card1Animation(){
+
+ $("#card1").click(function(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
        if(count1 == 1){
@@ -226,9 +227,9 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
     }
-    }
+    });
 
-   function card2Animation(){
+   $("#card2").click(function(){
        if(count2 == 1){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -284,10 +285,11 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
     } 
-   }
+   });
   
 
-   function card3Animation(){
+   $("#card3").click(function(){
+       //stops the same card being clicked twice.
          if(count3 == 1){
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -343,9 +345,9 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
     }
-    }
+    });
 
-   function card4Animation(){
+   $("#card4").click(function(){
          if(count4 == 1){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -400,9 +402,9 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
     }
-    }
+    });
 
-   function card5Animation(){
+$("#card5").click(function(){
          if(count5 == 1){
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -458,10 +460,10 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
     }
-}
+});
   
 
-   function card6Animation(){
+   $("#card6").click(function(){
          if(count6 == 1){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -517,9 +519,9 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
     }
-}
+});
 
-   function card7Animation(){  
+$("#card7").click(function(){  
        if(count7 == 1){
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -575,11 +577,11 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
    }
-}
+});
 
    
 
-         function card8Animation(){  
+$("#card8").click(function(){
         if(count8 == 1){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -635,10 +637,10 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }
         }
    }
-}
+});
 
 
-function card9Animation(){  
+$("#card9").click(function(){  
         if(count9 == 1){
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -694,10 +696,10 @@ function card9Animation(){
             }
         }
    }
-}
+});
 
 
-function card10Animation(){  
+$("#card10").click(function(){  
         if(count10 == 1){
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -753,9 +755,9 @@ function card10Animation(){
             }
         }
    }
-}
+});
   
-function card11Animation(){  
+$("#card11").click(function(){  
         if(count11 == 1){
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -810,10 +812,10 @@ function card11Animation(){
             }
         }
    }
-}
+});
 
 
-function card12Animation(){  
+$("#card12").click(function(){  
         if(count12 == 1){
         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -869,7 +871,7 @@ function card12Animation(){
             }
         }
    }
-}
+});
 
 
   
