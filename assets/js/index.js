@@ -128,7 +128,11 @@ var shuffledCardID = shuffle(cardIDArray);
             for(j=1;j<13;j++){
                 var pairArray =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
                 $(`#card${j}, #card${j}Match`).addClass(`pair${pairArray[j]}`);
-            }        
+            }   
+            
+            for(k=1; k<7; k++){
+                $(`#displayCard${k}`).addClass(`pair${k}`);
+            }
      
     }
     
