@@ -13,7 +13,9 @@ var test = [];
 
 $(".card").click(function(){
     movesTaken++;
-    console.log("You have made " + movesTaken + " moves.")
+    console.log("You have made " + movesTaken + " moves.");
+     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
 });
 
 //***************************************************************Results
@@ -147,15 +149,12 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 
 
  $("#card1").click(function(){
-        //this turns the card around
-        $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
-
+         
         //this makes sure if the card is already turned around, nothing happens.
        if(countArray[1] == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(countArray[1]);
+        console.log("this is count array  " + countArray[1]);
         } else {
 
         //this checks to see if the pair has already been selected. If it has it redeclares it as two
@@ -199,6 +198,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     });
 
 $("#card2").click(function(){
+     $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
        if(countArray[2] == 1){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
