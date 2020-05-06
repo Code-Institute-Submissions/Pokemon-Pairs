@@ -742,7 +742,7 @@ function cardFunction12(){
  
 
  //Opening up the finished modal
- $(".card").click(function(){
+ $("#game").click(function(){
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
         var revealTime = setTimeout(revealCards,1000);
