@@ -747,9 +747,7 @@ $("#card12").click(function(){
         var wait = setTimeout(finishedModal, 2000);
         function finishedModal(){
         
-        $("#finishedModal").css("display", "block");
-        $("#finishedModal").addClass("in");
-        $("#finishedModal").addClass("show");
+        $("#finishedModal").css("display", "block").addClass("in").addClass("show");
         $("#indexBody").addClass("modal-open");
         click = 0;
         }
