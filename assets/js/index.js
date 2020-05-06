@@ -125,20 +125,14 @@ $("#startGame").click(function(){
                                'url('+ '"' + image5 + '"' + ')', 
                                'url('+ '"' + image6 + '"' + ')'];
 
-    $(".pair1").css("background-image", imageContainerArray[0]);
-    $(".pair2").css("background-image", imageContainerArray[1]);
-    $(".pair3").css("background-image", imageContainerArray[2]);
-    $(".pair4").css("background-image", imageContainerArray[3]);
-    $(".pair5").css("background-image", imageContainerArray[4]);
-    $(".pair6").css("background-image", imageContainerArray[5]);
 
     //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-    var originalArray = ["pair1a ", "pair1b ", 
-                         "pair2a ", "pair2b ", 
-                         "pair3a ", "pair3b ", 
-                         "pair4a ", "pair4b ", 
-                         "pair5a ", "pair5b ", 
-                         "pair6a ", "pair6b "];
+    var originalArray = ["pair1 ", "pair1 ", 
+                         "pair2 ", "pair2 ", 
+                         "pair3 ", "pair3 ", 
+                         "pair4 ", "pair4 ", 
+                         "pair5 ", "pair5 ", 
+                         "pair6 ", "pair6 "];
     console.log("this is the original array " + originalArray);
     var shuffledArray = shuffle(originalArray);
      function shuffle(array) {
@@ -155,15 +149,24 @@ $("#startGame").click(function(){
     }
     return array;                             
     }
-
+    
+   
     //End of tutorial code
     console.log("this is the shuffled array " + shuffledArray);
-    var formattedShuffledArray = "'" + shuffledArray[0] + shuffledArray[1] + shuffledArray[2] + "'"
-                                + "'" + shuffledArray[3] +shuffledArray[4] + shuffledArray[5] + "'" 
-                                + "'" + shuffledArray[6] + shuffledArray[7] +shuffledArray[8] + "'"
-                                + "'" + shuffledArray[9] + shuffledArray[10] +shuffledArray[11] + "'" ;
-    console.log(formattedShuffledArray);
-    $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
+    $("#card1Face").addClass(shuffledArray[0]);
+    // var formattedShuffledArray = "'" + shuffledArray[0] + shuffledArray[1] + shuffledArray[2] + "'"
+    //                             + "'" + shuffledArray[3] +shuffledArray[4] + shuffledArray[5] + "'" 
+    //                             + "'" + shuffledArray[6] + shuffledArray[7] +shuffledArray[8] + "'"
+    //                             + "'" + shuffledArray[9] + shuffledArray[10] +shuffledArray[11] + "'" ;
+    // console.log(formattedShuffledArray);
+    // $(".card-grid-container").css("grid-template-areas", formattedShuffledArray); 
+
+    $(".pair1").css("background-image", imageContainerArray[0]);
+    $(".pair2").css("background-image", imageContainerArray[1]);
+    $(".pair3").css("background-image", imageContainerArray[2]);
+    $(".pair4").css("background-image", imageContainerArray[3]);
+    $(".pair5").css("background-image", imageContainerArray[4]);
+    $(".pair6").css("background-image", imageContainerArray[5]);
 });
 
 
