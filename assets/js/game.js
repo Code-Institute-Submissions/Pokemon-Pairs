@@ -188,8 +188,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card1").css("display", "none");
-                $("#card2").css("display", "none");
+                $("#card1, #card2").css("display", "none");
                 $("#card1Match, #card2Match").removeClass("display");
                 
                 }
