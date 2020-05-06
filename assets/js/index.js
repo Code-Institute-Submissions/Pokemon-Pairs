@@ -106,9 +106,29 @@ $("#seeCardsButton").click(function(){
 
 //Distributing card images.
 var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
-
+console.log("This is the cardID array " + cardIDArray);
 
 $("#startGame").click(function(){
+var shuffledCardID = shuffle(cardIDArray);
+    function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+         // Pick a remaining element...
+         randomIndex = Math.floor(Math.random() * currentIndex);
+         currentIndex -= 1;
+
+         // And swap it with the current element.
+         temporaryValue = array[currentIndex];
+         array[currentIndex] = array[randomIndex];
+         array[randomIndex] = temporaryValue;
+         }
+
+         return array;
+      }
+
     for(i=0; i<12; i++){
     $(".row").append(`
                     <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards card" onclick="firstFunction${shuffledCardID[i]}();">
