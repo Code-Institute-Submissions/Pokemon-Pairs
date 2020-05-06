@@ -222,7 +222,7 @@ $("#card2").click(function(){
             console.log(pairCounterArray[1]);
         } else { 
             pairCounterArray[1] = 1;
-        }        
+                
         console.log("card 2 = " + pairCounterArray[1]);
         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
              || pairCounterArray[6] == 1){
@@ -245,7 +245,7 @@ $("#card2").click(function(){
     } 
         } 
        
-    } 
+    } }
    });
   
 
@@ -271,7 +271,7 @@ $("#card2").click(function(){
             console.log(pairCounterArray[1]);
         } else { 
             pairCounterArray[2] = 1;
-        }
+        
         console.log("card 3 = " + pairCounterArray[2]);
          if ( pairCounterArray[1] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
              || pairCounterArray[6] == 1){
@@ -292,7 +292,7 @@ $("#card2").click(function(){
     } 
         } 
        
-    }
+    }}
     });
 
    $("#card4").click(function(){
@@ -315,7 +315,7 @@ $("#card2").click(function(){
             console.log(pairCounterArray[2]);
         } else { 
             pairCounterArray[2] = 1;
-        }
+        
         console.log("card 4 = " + pairCounterArray[2]);
          if ( pairCounterArray[1] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
              || pairCounterArray[6] == 1){
@@ -338,7 +338,7 @@ $("#card2").click(function(){
      } 
         } 
         
-    }
+    }}
     });
 
 $("#card5").click(function(){
@@ -362,7 +362,7 @@ $("#card5").click(function(){
             console.log(pairCounterArray[1]);
         } else { 
             pairCounterArray[3] = 1;
-        }
+        
         console.log("card 5 = " + pairCounterArray[3]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
              || pairCounterArray[6] == 1){
@@ -384,7 +384,7 @@ $("#card5").click(function(){
      } 
         } 
         
-    }
+    }}
 });
   
 
@@ -408,7 +408,7 @@ $("#card6").click(function(){
             console.log(pairCounterArray[3]);
         } else { 
             pairCounterArray[3] = 1;
-        }
+        
         console.log("card 6 = " + pairCounterArray[3]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
              || pairCounterArray[6] == 1){
@@ -430,7 +430,7 @@ $("#card6").click(function(){
     } 
         } 
         
-    }
+    }}
 });
 
 $("#card7").click(function(){  
@@ -454,7 +454,7 @@ $("#card7").click(function(){
             console.log(pairCounterArray[1]);
         } else { 
             pairCounterArray[4] = 1;
-        }
+        
         console.log("card 7 = " + pairCounterArray[4]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[5] == 1 
              || pairCounterArray[6] == 1){
@@ -477,7 +477,7 @@ $("#card7").click(function(){
     } 
         } 
         
-   }
+   }}
 });
 
    
@@ -503,7 +503,7 @@ $("#card8").click(function(){
             console.log(pairCounterArray[4]);
         } else { 
             pairCounterArray[4] = 1;
-        }
+        
         console.log("card 8 = " + pairCounterArray[4]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[5] == 1 
              || pairCounterArray[6] == 1){
@@ -525,7 +525,7 @@ $("#card8").click(function(){
     } 
         } 
         
-   }
+   }}
 });
 
 
@@ -550,7 +550,7 @@ $("#card9").click(function(){
             console.log(pairCounterArray[5]);
         } else { 
             pairCounterArray[5] = 1;
-        }
+        
         console.log("card 9 = " + pairCounterArray[5]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
              || pairCounterArray[6] == 1){
@@ -576,7 +576,7 @@ $("#card9").click(function(){
                 
             }
         }
-   }
+   }}
 });
 
 
@@ -601,7 +601,7 @@ $("#card10").click(function(){
             console.log(pairCounterArray[5]);
         } else { 
             pairCounterArray[5] = 1;
-        }
+        
         console.log("card 10 = " + pairCounterArray[5]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
              || pairCounterArray[6] == 1){
@@ -623,7 +623,7 @@ $("#card10").click(function(){
     } 
         } 
         
-   }
+   }}
 });
   
 $("#card11").click(function(){  
@@ -647,7 +647,7 @@ $("#card11").click(function(){
             console.log(pairCounterArray[6]);
         } else { 
             pairCounterArray[6] = 1;
-        }
+        
         console.log("card 11 = " + pairCounterArray[5]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
              || pairCounterArray[5] == 1){
@@ -668,7 +668,7 @@ $("#card11").click(function(){
    } 
         } 
         
-   }
+   }}
 });
 
 
@@ -691,7 +691,7 @@ $("#card12").click(function(){
                 }
         } else { 
             pairCounterArray[6] = 1;
-        }
+        
         console.log("card 12 = " + pairCounterArray[5]);
          if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
              || pairCounterArray[5] == 1){
@@ -715,7 +715,7 @@ $("#card12").click(function(){
         
         
         }
-   }
+   }}
 });
 
 
