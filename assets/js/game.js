@@ -41,10 +41,12 @@ $("#startGame").click(function(){
         }
         // $("#gridItemTopResult2").html("2nd: " +results[1]);
         // $("#gridItemTopResult3").html("3rd: " +results[2]);
-
-        $("#topTimeResult1").html("1st: " + resultsTime[0] + " seconds");
-        $("#topTimeResult2").html("2nd: " +resultsTime[1] + " seconds");
-        $("#topTimeResult3").html("3rd: " +resultsTime[2] + " seconds");
+        for(j=1; j<4; j++){
+        $(`#topTimeResult${j}`).html(`${i}st: ${results[j-1]} seconds`);
+        }
+        // $("#topTimeResult1").html("1st: " + resultsTime[0] + " seconds");
+        // $("#topTimeResult2").html("2nd: " +resultsTime[1] + " seconds");
+        // $("#topTimeResult3").html("3rd: " +resultsTime[2] + " seconds");
         
     }
 
