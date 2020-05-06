@@ -127,12 +127,12 @@ $("#startGame").click(function(){
 
 
     //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-    var originalArray = ["pair1 ", "pair1 ", 
-                         "pair2 ", "pair2 ", 
-                         "pair3 ", "pair3 ", 
-                         "pair4 ", "pair4 ", 
-                         "pair5 ", "pair5 ", 
-                         "pair6 ", "pair6 "];
+    var originalArray = ["pair1", "pair1", 
+                         "pair2", "pair2", 
+                         "pair3", "pair3", 
+                         "pair4", "pair4", 
+                         "pair5", "pair5", 
+                         "pair6", "pair6"];
     console.log("this is the original array " + originalArray);
     var shuffledArray = shuffle(originalArray);
      function shuffle(array) {
