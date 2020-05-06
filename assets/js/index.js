@@ -154,6 +154,17 @@ $("#startGame").click(function(){
     //End of tutorial code
     console.log("this is the shuffled array " + shuffledArray);
     $("#card1Face").addClass(shuffledArray[0]);
+    $("#card2Face").addClass(shuffledArray[1]);
+    $("#card3Face").addClass(shuffledArray[2]);
+    $("#card4Face").addClass(shuffledArray[3]);
+    $("#card5Face").addClass(shuffledArray[4]);
+    $("#card6Face").addClass(shuffledArray[5]);
+    $("#card7Face").addClass(shuffledArray[6]);
+    $("#card8Face").addClass(shuffledArray[7]);
+    $("#card9Face").addClass(shuffledArray[8]);
+    $("#card10Face").addClass(shuffledArray[9]);
+    $("#card11Face").addClass(shuffledArray[10]);
+    $("#card12Face").addClass(shuffledArray[11]);
     // var formattedShuffledArray = "'" + shuffledArray[0] + shuffledArray[1] + shuffledArray[2] + "'"
     //                             + "'" + shuffledArray[3] +shuffledArray[4] + shuffledArray[5] + "'" 
     //                             + "'" + shuffledArray[6] + shuffledArray[7] +shuffledArray[8] + "'"
