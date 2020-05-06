@@ -160,7 +160,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
        if(countArray[1] == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        console.log(countArray[1]);
         } else {
 
         //this checks to see if the pair has already been selected. If it has it redeclares it as two
@@ -209,14 +209,14 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     });
 
 $("#card2").click(function(){
-       if(count2 == 1){
+       if(countArray[2] == 1){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        console.log(countArray[1]);
         } else {
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            count2 = 1;
+            countArray[2] = 1;
         if (pairCounterArray[1] == 1){
             pairCounterArray[1] = 2;
             console.log(pairCounterArray[1]);
@@ -261,14 +261,14 @@ $("#card2").click(function(){
 
    $("#card3").click(function(){
        //stops the same card being clicked twice.
-         if(count3 == 1){
+         if(countArray[3] == 1){
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        console.log(countArray[1]);
         } else {
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            count3 = 1;
+            countArray[3] = 1;
         if (pairCounterArray[2] == 1){
             pairCounterArray[2] = 2;
             console.log(pairCounterArray[1]);
@@ -310,14 +310,14 @@ $("#card2").click(function(){
     });
 
    $("#card4").click(function(){
-         if(count4 == 1){
+         if(countArray[4] == 1){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count4);
+        console.log(countArray[4]);
         } else {
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            count4 = 1;
+            countArray[4] = 1;
         if (pairCounterArray[2] == 1){
             pairCounterArray[2] = 2;
             console.log(pairCounterArray[2]);
@@ -360,14 +360,14 @@ $("#card2").click(function(){
     });
 
 $("#card5").click(function(){
-         if(count5 == 1){
+         if(countArray[5] == 1){
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count5);
+        console.log(countArray[5]);
         } else {
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            count5 = 1;
+            countArray[5] = 1;
         if (pairCounterArray[3] == 1){
             pairCounterArray[3] = 2;
             console.log(pairCounterArray[1]);
@@ -412,14 +412,14 @@ $("#card5").click(function(){
   
 
 $("#card6").click(function(){
-         if(count6 == 1){
+         if(countArray[6] == 1){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count6);
+        console.log(countArray[6]);
         } else {
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            count6 = 1;
+            countArray[6] = 1;
         if (pairCounterArray[3] == 1){
             pairCounterArray[3] = 2;
             console.log(pairCounterArray[3]);
@@ -461,14 +461,14 @@ $("#card6").click(function(){
 });
 
 $("#card7").click(function(){  
-       if(count7 == 1){
+       if(countArray[7] == 1){
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count1);
+        console.log(countArray[1]);
         } else {
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            count7 = 1;
+            countArray[7] = 1;
         if (pairCounterArray[4] == 1){
             pairCounterArray[4] = 2;
             console.log(pairCounterArray[1]);
@@ -509,14 +509,14 @@ $("#card7").click(function(){
    
 
 $("#card8").click(function(){
-        if(count8 == 1){
+        if(countArray[8] == 1){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count8);
+        console.log(countArray[8]);
         } else {
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           count8 = 1;
+           countArray[8] = 1;
         if (pairCounterArray[4] == 1){
             pairCounterArray[4] = 2;
             console.log(pairCounterArray[4]);
@@ -555,14 +555,14 @@ $("#card8").click(function(){
 
 
 $("#card9").click(function(){  
-        if(count9 == 1){
+        if(countArray[9] == 1){
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count9);
+        console.log(countArray[9]);
         } else {
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           count9 = 1;
+           countArray[9] = 1;
         if (pairCounterArray[5] == 1){
             pairCounterArray[5] = 2;
             console.log(pairCounterArray[5]);
@@ -601,14 +601,14 @@ $("#card9").click(function(){
 
 
 $("#card10").click(function(){  
-        if(count10 == 1){
+        if(countArray[10] == 1){
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count10);
+        console.log(countArray[10]);
         } else {
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           count10 = 1;
+           countArray[10] = 1;
         if (pairCounterArray[5] == 1){
             pairCounterArray[5] = 2;
             console.log(pairCounterArray[5]);
@@ -646,14 +646,14 @@ $("#card10").click(function(){
 });
   
 $("#card11").click(function(){  
-        if(count11 == 1){
+        if(countArray[11] == 1){
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count11);
+        console.log(countArray[11]);
         } else {
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           count11 = 1;
+           countArray[11] = 1;
         if (pairCounterArray[6] == 1){
             pairCounterArray[6] = 2;
             console.log(pairCounterArray[6]);
@@ -691,14 +691,14 @@ $("#card11").click(function(){
 
 
 $("#card12").click(function(){  
-        if(count12 == 1){
+        if(countArray[12] == 1){
         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        console.log(count12);
+        console.log(countArray[12]);
         } else {
         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           count12 = 1;
+           countArray[12] = 1;
         if (pairCounterArray[6] == 1){
             pairCounterArray[6] = 2;
         } else { 
