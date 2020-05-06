@@ -190,11 +190,6 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                 for(i=1; i<13; i++){
                 countArray[i] = 0;
                 console.log("This is array number" + i + " and it is " + countArray[i]);
-                }  
-                //for loop to reset them all. 
-                for(i=1; i<13; i++){
-                countArray[i] = 0;
-                console.log("This is array number" + i + " and it is " + countArray[i]);
                 }      
                 $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
                 $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
@@ -233,13 +228,14 @@ $("#card2").click(function(){
                 countArray[i] = 0;
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
-                //for loop to reset them all.
+                    
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        //for loop to reset them all.
                 for(j=1; j<7; j++){
                 pairCounterArray[j] = 0;
                 console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
-            }     
-        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+            } 
             
     } 
         } 
@@ -284,14 +280,14 @@ $("#card2").click(function(){
                 for(i=1; i<13; i++){
                 countArray[i] = 0;
                 console.log("This is array number" + i + " and it is " + countArray[i]);
-                }  
+                }          
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         //for loop to reset them all.
                 for(j=1; j<7; j++){
                 pairCounterArray[j] = 0;
                 console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
-            }         
-        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+            } 
     } 
         } 
         else{
@@ -335,13 +331,14 @@ $("#card2").click(function(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
         
+    
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         //for loop to reset them all.
                 for(j=1; j<7; j++){
                 pairCounterArray[j] = 0;
                 console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
             } 
-        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
      } 
         } 
         else{
@@ -385,14 +382,13 @@ $("#card5").click(function(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
         
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         //for loop to reset them all.
                 for(j=1; j<7; j++){
                 pairCounterArray[j] = 0;
                 console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
             } 
-        
-        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
      } 
         } 
         else{
@@ -436,13 +432,14 @@ $("#card6").click(function(){
                 countArray[i] = 0;
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
-        //for loop to reset them all.
+        
+        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+         //for loop to reset them all.
                 for(j=1; j<7; j++){
                 pairCounterArray[j] = 0;
                 console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
-            }   
-        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+            }  
     } 
         } 
         else{
@@ -488,6 +485,11 @@ $("#card7").click(function(){
         
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");  
+         //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }  
 
     } 
         } 
@@ -535,6 +537,11 @@ $("#card8").click(function(){
                 }          
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+         //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }  
 
     } 
         } 
@@ -582,6 +589,11 @@ $("#card9").click(function(){
        
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+         //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }  
      } 
         } 
         else{
@@ -628,6 +640,11 @@ $("#card10").click(function(){
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
 
+         //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }  
     } 
         } 
         else{
@@ -672,6 +689,11 @@ $("#card11").click(function(){
                 }  
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+         //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }  
    } 
         } 
         else{
@@ -717,6 +739,11 @@ $("#card12").click(function(){
         
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+         //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }  
 
     } 
         } 
