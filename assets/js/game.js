@@ -148,7 +148,6 @@ $("#hardButton").click(function(){
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
 $("#easyButton, #mediumButton, #hardButton").click(function(){
-    //click = 0;
     pair1Counter = 0;
     pair2Counter = 0;
     pair3Counter = 0;
@@ -190,6 +189,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
              || pair6Counter == 1){  
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
+        //for loop to reset them all.
         count1 = 0;
         count2 = 0;
         count3 = 0;
@@ -204,6 +204,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+        //for loop to reset them all.
         pair1Counter = 0;
         pair2Counter = 0;
         pair3Counter = 0;
@@ -886,7 +887,9 @@ function card12Animation(){
     if(click == 6){
         var revealTime = setTimeout(revealCards,1000);
         function revealCards(){
+        //change this to a for loop.
         $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
+        //change this to a for loop.
         $("#card1, #card2, #card3, #card4, #card5, #card6").css("display", "block");
         $("#card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
         $(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
