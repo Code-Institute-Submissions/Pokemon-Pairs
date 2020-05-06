@@ -463,7 +463,7 @@ $("#card5").click(function(){
 });
   
 
-   $("#card6").click(function(){
+$("#card6").click(function(){
          if(count6 == 1){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
