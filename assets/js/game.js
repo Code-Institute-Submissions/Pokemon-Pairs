@@ -7,6 +7,7 @@ var results = ["-","-"];
 var resultsTime = ["-", "-"]
 var ajaxCalls = [];   
 countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
+pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0]
     // Getting sum of numbers
     
 click = 0;
@@ -51,15 +52,6 @@ $("#startGame").click(function(){
 
 }
 });
-
-
-
-
-
-
-
-
-
  
 $("#easyButton").click(function(){
     if(test.length == 0){
@@ -143,8 +135,6 @@ $("#hardButton").click(function(){
  console.log(test);
 });
 
-
-
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
@@ -184,9 +174,9 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         //this checks to see if the pair has already been selected. If it has it redecalrs it as two
             countArray[1] = 1;
             console.log("count array is now at " + countArray[1]);
-        if (pair1Counter == 1){
-            pair1Counter = 2;
-            if(pair1Counter == 2){
+        if (pairCounterArray[1] == 1){
+            pairCounterArray[1] = 2;
+            if(pairCounterArray[1] == 2){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
@@ -195,12 +185,12 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                 
                 }
             }
-            console.log(pair1Counter);
+            console.log(pairCounterArray[1]);
         } else { 
             //if this is the first of the pair, it will put if as one.
             pair1Counter = 1;
         }
-        console.log("card 1 = " + pair1Counter);
+        console.log("card 1 = " + pairCounterArray[1]);
         //this checks no other card has been turned over.
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1){  
@@ -211,27 +201,19 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
           countArray[i] = 0;
           console.log("This is array number" + i + " and it is " + countArray[i]);
       }      
-        // count1 = 0;
-        // count2 = 0;
-        // count3 = 0;
-        // count4 = 0; 
-        // count5 = 0;
-        // count6 = 0;
-        // count7 = 0;
-        // count8 = 0;
-        // count9 = 0;
-        // count10 = 0;
-        // count11 = 0;
-        // count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         //for loop to reset them all.
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
+        for(j=1; j<7; j++){
+          pairCounterArray[j] = 0;
+          console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+      }   
+        // pair1Counter = 0;
+        // pair2Counter = 0;
+        // pair3Counter = 0;
+        // pair4Counter = 0;
+        // pair5Counter = 0;
+        // pair6Counter = 0;
      } 
         }
         //This is the action if the pair is found.
