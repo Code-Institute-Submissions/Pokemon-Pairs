@@ -736,8 +736,11 @@ $("#card12").click(function(){
         }
         // $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
         //change this to a for loop.
-        $("#card1, #card2, #card3, #card4, #card5, #card6").css("display", "block");
-        $("#card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
+        for(i=1; i<13; i++){
+            $(`#card${[i]}`).css("display", "block");
+        }
+        // $("#card1, #card2, #card3, #card4, #card5, #card6").css("display", "block");
+        // $("#card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
         $(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $(".card > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         }
