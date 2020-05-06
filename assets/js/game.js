@@ -139,24 +139,16 @@ $("#hardButton").click(function(){
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
 $("#easyButton, #mediumButton, #hardButton").click(function(){
-    pair1Counter = 0;
-    pair2Counter = 0;
-    pair3Counter = 0;
-    pair4Counter = 0;
-    pair5Counter = 0;
-    pair6Counter = 0;
-    count1 = 0;
-    count2 = 0;
-    count3 = 0;
-    count4 = 0;
-    count5 = 0;
-    count6 = 0;
-    count7 = 0;
-    count8 = 0;
-    count9 = 0;
-    count10 = 0;
-    count11 = 0;
-    count12 = 0;
+    for(i=1; i<13; i++){
+        countArray[i] = 0;
+        console.log("Initial reset of countArray. Number " + i + " and it is " + countArray[i]);
+    } 
+
+    for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                 console.log("Initial reset of pairArray. Number " + j + " and it is " + pairCounterArray[j]);
+        }     
+
 
 });
 
@@ -165,38 +157,36 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         //this turns the card around
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+
         //this makes sure if the card is already turned around, nothing happens.
        if(countArray[1] == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
-        }
-    });
-        
-    $("#card1").click(function(){    
-        if (countArray[1] == 0) {
+        } else {
+
         //this checks to see if the pair has already been selected. If it has it redeclares it as two
             countArray[1] = 1;
             console.log("count array is now at " + countArray[1]);
             if (pairCounterArray[1] == 1){
                 pairCounterArray[1] = 2;
-                if(pairCounterArray[1] == 2){
+                // if(pairCounterArray[1] == 2){ unsure if I need?
                     click++;
                     var wait = setTimeout(pairFound, 1000);
                     function pairFound(){
                     $("#card1, #card2").css("display", "none");
                     $("#card1Match, #card2Match").removeClass("display");  
                     }
-                }
                  console.log(pairCounterArray[1]);
                 } else { 
                 //if this is the first of the pair, it will put if as one.
+                // pairCounterArray[1] = 1;
                 pair1Counter = 1;
-            }
-        console.log("card 1 = " + pairCounterArray[1]);
+            } console.log("card 1 = " + pairCounterArray[1]);
+        
         //this checks no other card has been turned over.
-        if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-             || pair6Counter == 1){  
+            if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
+                || pair6Counter == 1){  
                 var wrongWait = setTimeout(pairNotFound, 1000);
                 function pairNotFound(){
                 //for loop to reset them all. 
@@ -213,10 +203,10 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             }          
          } 
         }  
-    }
+        }
     });
 
-   $("#card2").click(function(){
+$("#card2").click(function(){
        if(count2 == 1){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
