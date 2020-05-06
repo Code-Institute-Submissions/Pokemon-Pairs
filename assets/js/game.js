@@ -11,10 +11,7 @@ click = 0;
 
 var test = [];
 
-$(".card").click(function(){
-    movesTaken++;
-    console.log("You have made " + movesTaken + " moves.");
-});
+
 
 //***************************************************************Results
 
@@ -156,6 +153,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         console.log("this is count array  " + countArray[1]);
         } else {
         //this checks to see if the pair has already been selected. If it has it redeclares it as two
+             movesTaken++;
+            console.log("You have made " + movesTaken + " moves.");
             countArray[1] = 1;
             console.log("count array is now at " + countArray[1]);
             if (pairCounterArray[1] == 1){
@@ -205,6 +204,8 @@ function cardFunction2(){
         } else {
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+             movesTaken++;
+            console.log("You have made " + movesTaken + " moves.");
             countArray[2] = 1;
         if (pairCounterArray[1] == 1){
             pairCounterArray[1] = 2;
@@ -255,7 +256,9 @@ function cardFunction2(){
         } else {
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            countArray[3] = 1;
+             movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");    
+        countArray[3] = 1;
         if (pairCounterArray[2] == 1){
             pairCounterArray[2] = 2;
             click++;
@@ -302,7 +305,9 @@ function cardFunction2(){
         } else {
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            countArray[4] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");    
+        countArray[4] = 1;
         if (pairCounterArray[2] == 1){
             pairCounterArray[2] = 2;
              click++;
@@ -350,7 +355,9 @@ function cardFunction5(){
         } else {
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            countArray[5] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");    
+        countArray[5] = 1;
         if (pairCounterArray[3] == 1){
             pairCounterArray[3] = 2;
             click++;
@@ -399,7 +406,9 @@ function cardFunction6(){
         } else {
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            countArray[6] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");    
+        countArray[6] = 1;
         if (pairCounterArray[3] == 1){
             pairCounterArray[3] = 2;
              click++;
@@ -444,7 +453,9 @@ function cardFunction7(){
         } else {
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            countArray[7] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");   
+        countArray[7] = 1;
         if (pairCounterArray[4] == 1){
             pairCounterArray[4] = 2;
             click++;
@@ -495,7 +506,9 @@ function cardFunction8(){
         } else {
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           countArray[8] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves."); 
+        countArray[8] = 1;
         if (pairCounterArray[4] == 1){
             pairCounterArray[4] = 2;
              click++;
@@ -544,7 +557,9 @@ function cardFunction9(){
         } else {
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           countArray[9] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");  
+        countArray[9] = 1;
         if (pairCounterArray[5] == 1){
             pairCounterArray[5] = 2;
             click++;
@@ -597,7 +612,9 @@ function cardFunction10(){
         } else {
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           countArray[10] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");
+        countArray[10] = 1;
         if (pairCounterArray[5] == 1){
             pairCounterArray[5] = 2;
              click++;
@@ -645,7 +662,9 @@ function cardFunction11(){
         } else {
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           countArray[11] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");
+        countArray[11] = 1;
         if (pairCounterArray[6] == 1){
             pairCounterArray[6] = 2;
              click++;
@@ -693,7 +712,9 @@ function cardFunction12(){
         } else {
         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-           countArray[12] = 1;
+         movesTaken++;
+    console.log("You have made " + movesTaken + " moves.");
+        countArray[12] = 1;
         if (pairCounterArray[6] == 1){
             pairCounterArray[6] = 2;
             click++;
@@ -743,6 +764,7 @@ function cardFunction12(){
 
  //Opening up the finished modal
  $("#game").click(function(){
+
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
         var revealTime = setTimeout(revealCards,1000);
