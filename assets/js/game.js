@@ -5,7 +5,8 @@ var movesTaken = 0;
 var timeTaken = 0; 
 var results = ["-","-"];
 var resultsTime = ["-", "-"]
-var ajaxCalls = [];    
+var ajaxCalls = [];   
+countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
     // Getting sum of numbers
     
 click = 0;
@@ -175,13 +176,14 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         //this makes sure if the card is already turned around, nothing happens.
-       if(count1 == 1){
+       if(countArray[1] == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
         } else {
         //this checks to see if the pair has already been selected. If it has it redecalrs it as two
-            count1 = 1;
+            countArray[1] = 1;
+            console.log("count array is now at " + countArray[1]);
         if (pair1Counter == 1){
             pair1Counter = 2;
             if(pair1Counter == 2){
@@ -204,19 +206,23 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
              || pair6Counter == 1){  
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        //for loop to reset them all.       
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+        //for loop to reset them all. 
+        for(i=1; i<13; i++){
+          countArray[i] = 0;
+          console.log("This is array number" + i + " and it is " + countArray[i]);
+      }      
+        // count1 = 0;
+        // count2 = 0;
+        // count3 = 0;
+        // count4 = 0; 
+        // count5 = 0;
+        // count6 = 0;
+        // count7 = 0;
+        // count8 = 0;
+        // count9 = 0;
+        // count10 = 0;
+        // count11 = 0;
+        // count12 = 0;
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
         //for loop to reset them all.
