@@ -153,6 +153,7 @@ $("#startGame").click(function(){
    
     //End of tutorial code
     console.log("this is the shuffled array " + shuffledArray);
+    //for loop all of these.
     $("#card1Face").addClass(shuffledArray[0]);
     $("#card2Face").addClass(shuffledArray[1]);
     $("#card3Face").addClass(shuffledArray[2]);
@@ -165,6 +166,18 @@ $("#startGame").click(function(){
     $("#card10Face").addClass(shuffledArray[9]);
     $("#card11Face").addClass(shuffledArray[10]);
     $("#card12Face").addClass(shuffledArray[11]);
+    $("#card1").addClass(`"${shuffledArray[0]}A"`);
+    $("#card2").addClass(`"${shuffledArray[1]}A"`);
+    $("#card3").addClass(`"${shuffledArray[2]}A"`)
+    $("#card4").addClass(`"${shuffledArray[3]}A"`);
+    $("#card5").addClass(`"${shuffledArray[4]}A"`);
+    $("#card6").addClass(`"${shuffledArray[5]}A"`);
+    $("#card7").addClass(`"${shuffledArray[6]}A"`);
+    $("#card8").addClass(`"${shuffledArray[7]}A"`);
+    $("#card9").addClass(`"${shuffledArray[8]}A"`);
+    $("#card10").addClass(`"${shuffledArray[9]}A"`);
+    $("#card11").addClass(`"${shuffledArray[10]}A"`);
+    $("#card12").addClass(`"${shuffledArray[11]}A"`);
     // var formattedShuffledArray = "'" + shuffledArray[0] + shuffledArray[1] + shuffledArray[2] + "'"
     //                             + "'" + shuffledArray[3] +shuffledArray[4] + shuffledArray[5] + "'" 
     //                             + "'" + shuffledArray[6] + shuffledArray[7] +shuffledArray[8] + "'"
