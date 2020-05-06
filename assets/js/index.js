@@ -139,7 +139,7 @@ var shuffledCardID = shuffle(cardIDArray);
     //   }
     for(i=0; i<12; i++){
     $(".row").append(`
-                    <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards card" onclick="cardFunction${shuffledCardID[i+1]}();">
+                    <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards card" onclick="cardFunction${shuffledCardID[i]}();">
                         <div id="card${shuffledCardID[i]}Cover" class=" col-4 eight-cards cover"></div> 
                         <div id="card${shuffledCardID[i]}Face" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards face"></div> 
                     </div>
