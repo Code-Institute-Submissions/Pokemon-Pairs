@@ -107,6 +107,15 @@ $("#seeCardsButton").click(function(){
 //Distributing card images.
 
 $("#startGame").click(function(){
+    for(i=0; i<12; i++){
+    $(".row").append(`
+                    <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards card" onclick="firstFunction${shuffledCardID[i]}();">
+                        <div id="card${shuffledCardID[i]}Cover" class=" col-4 eight-cards cover"></div> 
+                        <div id="card${shuffledCardID[i]}Face" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards  face"></div> 
+                    </div>
+                    <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards match card display"></div>`
+                    );
+    }
     
     $("#gridItemName").toggleClass("display");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
