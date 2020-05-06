@@ -257,6 +257,9 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
         console.log("This is emptying the test array " + test); 
     };
     
+    $(".row").html(``);
+
+
     var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
             return a + b;
             }, 0);
