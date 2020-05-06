@@ -170,56 +170,49 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
-        } else {
-        //this checks to see if the pair has already been selected. If it has it redecalrs it as two
+        }
+    });
+        
+    $("#card1").click(function(){    
+        if (countArray[1] == 0) {
+        //this checks to see if the pair has already been selected. If it has it redeclares it as two
             countArray[1] = 1;
             console.log("count array is now at " + countArray[1]);
-        if (pairCounterArray[1] == 1){
-            pairCounterArray[1] = 2;
-            if(pairCounterArray[1] == 2){
-                click++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                $("#card1, #card2").css("display", "none");
-                $("#card1Match, #card2Match").removeClass("display");
-                
+            if (pairCounterArray[1] == 1){
+                pairCounterArray[1] = 2;
+                if(pairCounterArray[1] == 2){
+                    click++;
+                    var wait = setTimeout(pairFound, 1000);
+                    function pairFound(){
+                    $("#card1, #card2").css("display", "none");
+                    $("#card1Match, #card2Match").removeClass("display");  
+                    }
                 }
+                 console.log(pairCounterArray[1]);
+                } else { 
+                //if this is the first of the pair, it will put if as one.
+                pair1Counter = 1;
             }
-            console.log(pairCounterArray[1]);
-        } else { 
-            //if this is the first of the pair, it will put if as one.
-            pair1Counter = 1;
-        }
         console.log("card 1 = " + pairCounterArray[1]);
         //this checks no other card has been turned over.
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1){  
-        var wrongWait = setTimeout(pairNotFound, 1000);
-        function pairNotFound(){
-        //for loop to reset them all. 
-        for(i=1; i<13; i++){
-          countArray[i] = 0;
-          console.log("This is array number" + i + " and it is " + countArray[i]);
-      }      
-        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        //for loop to reset them all.
-        for(j=1; j<7; j++){
-          pairCounterArray[j] = 0;
-          console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
-      }   
-        // pair1Counter = 0;
-        // pair2Counter = 0;
-        // pair3Counter = 0;
-        // pair4Counter = 0;
-        // pair5Counter = 0;
-        // pair6Counter = 0;
-     } 
-        }
-        //This is the action if the pair is found.
-        // else{
-            
-        // }
+                var wrongWait = setTimeout(pairNotFound, 1000);
+                function pairNotFound(){
+                //for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }      
+                $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+                $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+                //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }          
+         } 
+        }  
     }
     });
 
