@@ -14,8 +14,6 @@ var test = [];
 $(".card").click(function(){
     movesTaken++;
     console.log("You have made " + movesTaken + " moves.");
-     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
 });
 
 //***************************************************************Results
@@ -148,7 +146,9 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 });
 
 
- $("#card1").click(function(){
+ function cardFunction1(){
+        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         //this makes sure if the card is already turned around, nothing happens.
        if(countArray[1] == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -193,10 +193,10 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         } 
        }  
         }
-    });
+    };
 
-$("#card2").click(function(){
-     $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+function cardFunction2(){
+        $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
        if(countArray[2] == 1){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -241,10 +241,12 @@ $("#card2").click(function(){
         } 
        
     } }
-   });
+   };
   
 
-   $("#card3").click(function(){
+  function cardFunction3(){
+      $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
        //stops the same card being clicked twice.
          if(countArray[3] == 1){
         $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -288,9 +290,11 @@ $("#card2").click(function(){
         } 
        
     }}
-    });
+    };
 
-   $("#card4").click(function(){
+   function cardFunction4(){
+        $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
          if(countArray[4] == 1){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -334,9 +338,11 @@ $("#card2").click(function(){
         } 
         
     }}
-    });
+    };
 
-$("#card5").click(function(){
+function cardFunction5(){
+         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
          if(countArray[5] == 1){
         $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -380,10 +386,12 @@ $("#card5").click(function(){
         } 
         
     }}
-});
+};
   
 
-$("#card6").click(function(){
+function cardFunction6(){
+        $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
          if(countArray[6] == 1){
         $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -426,9 +434,9 @@ $("#card6").click(function(){
         } 
         
     }}
-});
+};
 
-$("#card7").click(function(){  
+function cardFunction7(){
        if(countArray[7] == 1){
         $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -473,11 +481,13 @@ $("#card7").click(function(){
         } 
         
    }}
-});
+};
 
    
 
-$("#card8").click(function(){
+function cardFunction8(){
+    $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         if(countArray[8] == 1){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -521,10 +531,12 @@ $("#card8").click(function(){
         } 
         
    }}
-});
+};
 
 
-$("#card9").click(function(){  
+function cardFunction9(){ 
+            $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         if(countArray[9] == 1){
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -572,10 +584,12 @@ $("#card9").click(function(){
             }
         }
    }}
-});
+};
 
 
-$("#card10").click(function(){  
+function cardFunction10(){
+    $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         if(countArray[10] == 1){
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -619,9 +633,11 @@ $("#card10").click(function(){
         } 
         
    }}
-});
+};
   
-$("#card11").click(function(){  
+function cardFunction11(){ 
+        $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         if(countArray[11] == 1){
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -664,10 +680,12 @@ $("#card11").click(function(){
         } 
         
    }}
-});
+};
 
 
-$("#card12").click(function(){  
+function cardFunction12(){ 
+    $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         if(countArray[12] == 1){
         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -711,7 +729,7 @@ $("#card12").click(function(){
         
         }
    }}
-});
+};
 
 
   
