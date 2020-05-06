@@ -106,21 +106,16 @@ $("#seeCardsButton").click(function(){
 
 //Distributing card images.
 var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
+// var pairIDArray = [1,1,2,2,3,3,4,4,5,5,6,6];
 console.log("This is the cardID array " + cardIDArray);
 
 $("#startGame").click(function(){
 var shuffledCardID = shuffle(cardIDArray);
     function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-
-         // Pick a remaining element...
          randomIndex = Math.floor(Math.random() * currentIndex);
          currentIndex -= 1;
-
-         // And swap it with the current element.
          temporaryValue = array[currentIndex];
          array[currentIndex] = array[randomIndex];
          array[randomIndex] = temporaryValue;
@@ -128,16 +123,40 @@ var shuffledCardID = shuffle(cardIDArray);
 
          return array;
       }
+      
+    // var shuffledPairIDArray = shuffle(pairIDArray);
+    // function shuffle(array) {
+    // var currentIndex = array.length, temporaryValue, randomIndex;
+    // while (0 !== currentIndex) {
+    //      randomIndex = Math.floor(Math.random() * currentIndex);
+    //      currentIndex -= 1;
+    //      temporaryValue = array[currentIndex];
+    //      array[currentIndex] = array[randomIndex];
+    //      array[randomIndex] = temporaryValue;
+    //      }
 
+    //      return array;
+    //   }
     for(i=0; i<12; i++){
     $(".row").append(`
-                    <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards card" onclick="cardFunction${shuffledCardID[i]}();">
+                    <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards card" onclick="cardFunction${shuffledCardID[i+1]}();">
                         <div id="card${shuffledCardID[i]}Cover" class=" col-4 eight-cards cover"></div> 
-                        <div id="card${shuffledCardID[i]}Face" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards  pair${i} face"></div> 
+                        <div id="card${shuffledCardID[i]}Face" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards face"></div> 
                     </div>
-                    <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards match card pair${i} display"></div>`
+                    <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards match card display"></div>
+                    `
                     );
+            
+            $("#card1, #card2").addClass("pair1");
+            $("#card3, #card4").addClass("pair2");
+            $("#card5, #card6").addClass("pair3");
+            $("#card7, #card8").addClass("pair4");
+            $("#card9, #card10").addClass("pair5");
+            $("#card11, #card12").addClass("pair6");
+            
+     
     }
+    
     
     $("#gridItemName").toggleClass("display");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
