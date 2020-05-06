@@ -148,8 +148,6 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                 pairCounterArray[j] = 0;
                  console.log("Initial reset of pairArray. Number " + j + " and it is " + pairCounterArray[j]);
         }     
-
-
 });
 
 
@@ -185,10 +183,14 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
             } console.log("card 1 = " + pairCounterArray[1]);
         
         //this checks no other card has been turned over.
-            if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
-                || pair6Counter == 1){  
+            if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 || pair6Counter == 1){  
                 var wrongWait = setTimeout(pairNotFound, 1000);
                 function pairNotFound(){
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
                 //for loop to reset them all. 
                 for(i=1; i<13; i++){
                 countArray[i] = 0;
@@ -226,27 +228,19 @@ $("#card2").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+                //for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
+                //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }     
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
-
+            
     } 
         } 
         else{
@@ -286,27 +280,18 @@ $("#card2").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
+        //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }         
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
-          
     } 
         } 
         else{
@@ -344,26 +329,19 @@ $("#card2").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
+        
+        //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            } 
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
      } 
         } 
         else{
@@ -401,27 +379,20 @@ $("#card5").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
+        
+        //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            } 
+        
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-         pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
-
      } 
         } 
         else{
@@ -460,27 +431,18 @@ $("#card6").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
+        //for loop to reset them all.
+                for(j=1; j<7; j++){
+                pairCounterArray[j] = 0;
+                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
+            }   
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
-
     } 
         } 
         else{
@@ -518,26 +480,14 @@ $("#card7").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                } 
+        
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
+        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");  
 
     } 
         } 
@@ -578,26 +528,13 @@ $("#card8").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }          
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
 
     } 
         } 
@@ -637,28 +574,15 @@ $("#card9").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
+       
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
-
-    } 
+     } 
         } 
         else{
         if(pair5Counter == 2){
@@ -696,26 +620,13 @@ $("#card10").click(function(){
              || pair6Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }         
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
 
     } 
         } 
@@ -754,26 +665,14 @@ $("#card11").click(function(){
              || pair5Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
+
     } 
         } 
         else{
@@ -812,27 +711,14 @@ $("#card12").click(function(){
              || pair5Counter == 1){
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        count1 = 0;
-        count2 = 0;
-        count3 = 0;
-        count4 = 0; 
-        count5 = 0;
-        count6 = 0;
-        count7 = 0;
-        count8 = 0;
-        count9 = 0;
-        count10 = 0;
-        count11 = 0;
-        count12 = 0;
+//for loop to reset them all. 
+                for(i=1; i<13; i++){
+                countArray[i] = 0;
+                console.log("This is array number" + i + " and it is " + countArray[i]);
+                }  
+      
         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-        pair1Counter = 0;
-        pair2Counter = 0;
-        pair3Counter = 0;
-        pair4Counter = 0;
-        pair5Counter = 0;
-        pair6Counter = 0;
-
     } 
         } 
         else{
