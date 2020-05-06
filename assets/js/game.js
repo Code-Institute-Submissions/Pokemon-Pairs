@@ -171,26 +171,41 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 
 
  $("#card1").click(function(){
+        //this turns the card around
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        //this makes sure if the card is already turned around, nothing happens.
        if(count1 == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(count1);
         } else {
+        //this checks to see if the pair has already been selected. If it has it redecalrs it as two
             count1 = 1;
         if (pair1Counter == 1){
             pair1Counter = 2;
+            if(pair1Counter == 2){
+                click++;
+                var wait = setTimeout(pairFound, 1000);
+                function pairFound(){
+                $("#card1").css("display", "none");
+                $("#card2").css("display", "none");
+                $("#card1Match, #card2Match").removeClass("display");
+                
+                }
+            }
             console.log(pair1Counter);
         } else { 
+            //if this is the first of the pair, it will put if as one.
             pair1Counter = 1;
         }
         console.log("card 1 = " + pair1Counter);
+        //this checks no other card has been turned over.
         if ( pair2Counter == 1 || pair3Counter == 1 || pair4Counter == 1 || pair5Counter == 1 
              || pair6Counter == 1){  
         var wrongWait = setTimeout(pairNotFound, 1000);
         function pairNotFound(){
-        //for loop to reset them all.
+        //for loop to reset them all.       
         count1 = 0;
         count2 = 0;
         count3 = 0;
@@ -214,18 +229,10 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         pair6Counter = 0;
      } 
         }
-        else{
-            if(pair1Counter == 2){
-                click++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                $("#card1").css("display", "none");
-                $("#card2").css("display", "none");
-                $("#card1Match, #card2Match").removeClass("display");
-                
-                }
-            }
-        }
+        //This is the action if the pair is found.
+        // else{
+            
+        // }
     }
     });
 
