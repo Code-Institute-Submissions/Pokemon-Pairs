@@ -39,14 +39,10 @@ $("#startGame").click(function(){
         for(i=1; i<4; i++){
         $(`#gridItemTopResult${i}`).html(`${i}st: ${results[i-1]}`);
         }
-        // $("#gridItemTopResult2").html("2nd: " +results[1]);
-        // $("#gridItemTopResult3").html("3rd: " +results[2]);
+
         for(j=1; j<4; j++){
         $(`#topTimeResult${j}`).html(`${i}st: ${results[j-1]} seconds`);
         }
-        // $("#topTimeResult1").html("1st: " + resultsTime[0] + " seconds");
-        // $("#topTimeResult2").html("2nd: " +resultsTime[1] + " seconds");
-        // $("#topTimeResult3").html("3rd: " +resultsTime[2] + " seconds");
         
     }
 
@@ -152,8 +148,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 
  $("#card1").click(function(){
         //this turns the card around
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+        $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+        $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
 
         //this makes sure if the card is already turned around, nothing happens.
        if(countArray[1] == 1){
