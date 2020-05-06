@@ -1,18 +1,14 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
 var types =[];
-var movesTaken = 0;
-var timeTaken = 0; 
-var results = ["-","-"];
-var resultsTime = ["-", "-"]
+results = ["-","-"];
+resultsTime = ["-", "-"]
 var ajaxCalls = [];   
 countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
-pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0]
-    // Getting sum of numbers
-    
+pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0];  
 click = 0;
 
-var movesTaken = 0;
+
 var test = [];
 
 $(".card").click(function(){
@@ -143,7 +139,6 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         countArray[i] = 0;
         console.log("Initial reset of countArray. Number " + i + " and it is " + countArray[i]);
     } 
-
     for(j=1; j<7; j++){
                 pairCounterArray[j] = 0;
                  console.log("Initial reset of pairArray. Number " + j + " and it is " + pairCounterArray[j]);
@@ -244,8 +239,7 @@ $("#card2").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card1").css("display", "none");
-                $("#card2").css("display", "none");
+                $("#card1, #card2").css("display", "none");
                 $("#card1Match, #card2Match").removeClass("display");
                 
                 }
@@ -295,8 +289,7 @@ $("#card2").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card3").css("display", "none");
-                $("#card4").css("display", "none");
+                $("#card3, #card4").css("display", "none");
                 $("#card3Match, #card4Match").removeClass("display");
                 
                 }
@@ -346,8 +339,7 @@ $("#card2").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card3").css("display", "none");
-                $("#card4").css("display", "none");
+                $("#card3, #card4").css("display", "none");
                 $("#card3Match, #card4Match").removeClass("display");
                 
                 }
@@ -396,8 +388,7 @@ $("#card5").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card5").css("display", "none");
-                $("#card6").css("display", "none");
+                $$("#card5, #card6").css("display", "none");
                 $("#card5Match, #card6Match").removeClass("display");
                 
                 }
@@ -447,8 +438,7 @@ $("#card6").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card5").css("display", "none");
-                $("#card6").css("display", "none");
+               $("#card5, #card6").css("display", "none");
                 $("#card5Match, #card6Match").removeClass("display");
                 
                 }
@@ -498,8 +488,7 @@ $("#card7").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card7").css("display", "none");
-                $("#card8").css("display", "none");
+                $("#card7, #card8").css("display", "none");
                 $("#card7Match, #card8Match").removeClass("display");
                 
                 }
@@ -550,8 +539,7 @@ $("#card8").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card7").css("display", "none");
-                $("#card8").css("display", "none");
+                $("#card7, #card8").css("display", "none");
                 $("#card7Match, #card8Match").removeClass("display");
                 
                 }
@@ -601,8 +589,7 @@ $("#card9").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card9").css("display", "none");
-                $("#card10").css("display", "none");
+                $("#card9, #card10").css("display", "none");
                 $("#card9Match, #card10Match").removeClass("display");
                 
                 }
@@ -652,8 +639,7 @@ $("#card10").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card9").css("display", "none");
-                $("#card10").css("display", "none");
+                $("#card9, #card10").css("display", "none");
                 $("#card9Match, #card10Match").removeClass("display");
                 
                 }
@@ -701,8 +687,7 @@ $("#card11").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card11").css("display", "none");
-                $("#card12").css("display", "none");
+                $("#card11, #card12").css("display", "none");
                 $("#card11Match, #card12Match").removeClass("display");
                 
                 }
@@ -752,8 +737,7 @@ $("#card12").click(function(){
                 click++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card11").css("display", "none");
-                $("#card12").css("display", "none");
+                $("#card11, #card12").css("display", "none");
                 $("#card11Match, #card12Match").removeClass("display");
                 
                 }
