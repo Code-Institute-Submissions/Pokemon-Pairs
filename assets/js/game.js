@@ -36,9 +36,11 @@ $("#startGame").click(function(){
         $("#totalMoves").html(`<h6>Total moves: ${movesTaken} </h6>`);
         $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`);
 
-        $("#gridItemTopResult1").html("1st: " + results[0]);
-        $("#gridItemTopResult2").html("2nd: " +results[1]);
-        $("#gridItemTopResult3").html("3rd: " +results[2]);
+        for(i=1; i<4; i++){
+        $(`#gridItemTopResult${i}`).html(`${i}st: ${results[i-1]}`);
+        }
+        // $("#gridItemTopResult2").html("2nd: " +results[1]);
+        // $("#gridItemTopResult3").html("3rd: " +results[2]);
 
         $("#topTimeResult1").html("1st: " + resultsTime[0] + " seconds");
         $("#topTimeResult2").html("2nd: " +resultsTime[1] + " seconds");
@@ -732,12 +734,12 @@ $("#card12").click(function(){
         function revealCards(){
         //change this to a for loop.
         for(j=1; j<13; j++){
-            $(`#card${[j]}Match`).addClass("display");
+            $(`#card${j}Match`).addClass("display");
         }
         // $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
         //change this to a for loop.
         for(i=1; i<13; i++){
-            $(`#card${[i]}`).css("display", "block");
+            $(`#card${i}`).css("display", "block");
         }
         // $("#card1, #card2, #card3, #card4, #card5, #card6").css("display", "block");
         // $("#card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
