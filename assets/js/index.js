@@ -118,8 +118,8 @@ var shuffledCardID = shuffle(cardIDArray);
     for(i=0; i<12; i++){
     $("#gameRow").append(`
                     <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards card" onclick="cardFunction${shuffledCardID[i]}();">
-                        <div id="card${shuffledCardID[i]}Cover" class=" col-4 eight-cards cover"></div> 
-                        <div id="card${shuffledCardID[i]}Face" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards face"></div> 
+                        <div id="card${shuffledCardID[i]}Cover" class=" eight-cards cover"></div> 
+                        <div id="card${shuffledCardID[i]}Face" class=" eight-cards face"></div> 
                     </div>
                     <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards match card display"></div>
                     `
@@ -127,7 +127,7 @@ var shuffledCardID = shuffle(cardIDArray);
             
             for(j=1;j<13;j++){
                 var pairArray =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
-                $(`#card${j}, #card${j}Match`).addClass(`pair${pairArray[j]}`);
+                $(`.face${j}, #card${j}Match`).addClass(`pair${pairArray[j]}`);
             }   
             
             for(k=1; k<7; k++){
@@ -140,7 +140,8 @@ var shuffledCardID = shuffle(cardIDArray);
     $("#gridItemName").toggleClass("display");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-    //Enter - shuffle array here. 
+    //Enter - shuffle array here.
+    //for loop here 
     var image1 = test[0].toString();
     var image2 = test[1].toString();
     var image3 = test[2].toString();
@@ -156,7 +157,7 @@ var shuffledCardID = shuffle(cardIDArray);
 
 
     // //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-    
+    //for loop here
     $(".pair1").css("background-image", imageContainerArray[0]);
     $(".pair2").css("background-image", imageContainerArray[1]);
     $(".pair3").css("background-image", imageContainerArray[2]);
