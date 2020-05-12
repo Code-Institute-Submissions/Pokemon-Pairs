@@ -154,18 +154,12 @@ h1{
 
 @media screen and (min-width: 1024px) and (min-height: 1000px){
 
-.navbar .navbar-brand {
-    width: 55%;
-    height: 98px;
+#contactForm h1, #help h1{
+    font-size: 6.5rem;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
-    font-size: 2.25rem;
-}
-
-.nav-item{
-    margin:0 15px;
-    width: auto;
+#info-text, #info-text-help h5{
+    font-size: 3rem;
 }
 
 #info-text-help {
@@ -175,6 +169,10 @@ h1{
 .instruction-card{
     width: 80%;
     margin: auto auto 24px auto;
+}
+
+.instruction-header{
+    font-size: 3rem;
 }
 
 .instruction-text{
