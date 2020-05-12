@@ -43,7 +43,7 @@ body {
 #gridItemGame{
     grid-area: game;
     background-color: midnightblue;
-
+    margin-top: 10px;
 }
 
 
@@ -75,10 +75,6 @@ body {
 }
   
 
-#gridItemGame{
-    background-color: rgb(38, 109, 240);
-    border: 1px solid black;
-}
 
 
 /* Header */
