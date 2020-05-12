@@ -300,7 +300,7 @@ footer{
 
 /* Landscape for mobile */
 
-@media screen and (min-width: 667px){
+@media screen and (min-width: 667px) and (max-width: 400px){
     .navbar .navbar-brand{
         height: 78px;
     }
@@ -343,6 +343,7 @@ footer{
         margin-right: 10px;
         margin-left: 10px;
     }
+}
 
 /* iPad */
 @media screen and (min-width: 768px){
@@ -389,6 +390,8 @@ footer{
 /* Loading Modal */
 #loading-gif{
     height: 402px;
+    width: 100%;
+    margin: 0;
 }
 
 #loadingModalBody{
