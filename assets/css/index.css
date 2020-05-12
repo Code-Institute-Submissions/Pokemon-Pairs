@@ -457,7 +457,10 @@ ul li {
     height: 27vh;
     padding-left: 28px;
     }
-
+    
+.display-cards {
+    margin-left: 160px;
+}
 
 
 }
