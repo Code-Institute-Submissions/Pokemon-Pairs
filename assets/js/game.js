@@ -34,11 +34,11 @@ $("#startGame").click(function(){
         $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`);
 
         for(i=1; i<4; i++){
-        $(`#gridItemTopResult${i}`).html(`${i}st: ${results[i-1]}`);
+        $(`#gridItemTopResult${i}`).append(` ${results[i-1]}`);
         }
 
         for(j=1; j<4; j++){
-        $(`#topTimeResult${j}`).html(`${i}st: ${results[j-1]} seconds`);
+        $(`#topTimeResult${j}`).append(` ${resultsTime[j-1]} seconds`);
         }
         
     }
