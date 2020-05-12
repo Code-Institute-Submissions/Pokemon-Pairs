@@ -305,6 +305,10 @@ footer{
         height: 78px;
     }
 
+    .navbar .navbar-brand-modal {
+        height: 60px;
+    }
+
    .eight-cards{ 
     width: 90px;
     height: 34vh;
