@@ -121,6 +121,10 @@ body {
 
 }
 
+.navbar-toggler-icon, .navbar-light .navbar-toggler {
+    font-size: 2rem;
+}
+
 
 
 .navbar-toggler-icon, .navbar-light .navbar-toggler{
@@ -451,16 +455,26 @@ ul li {
 
 }
 
+
+
 @media screen and (min-width: 1280px) and (max-height: 801px){
+.navbar .navbar-brand {
+    width: 35%;
+}    
+    
     .eight-cards{
     width: 154px;
     height: 27vh;
     padding-left: 28px;
     }
-    
+
 .display-cards {
     margin-left: 160px;
 }
 
 
+
+
 }
+
+@media screen and (min-width: 1280px) and (max-height: 801px)
