@@ -39,6 +39,8 @@
     width: 95px;
     height: 20vh;
     text-align: center; 
+    border: 0;
+    border-radius: 0;
    
 }
 
@@ -50,9 +52,13 @@
     margin-bottom: 10px;
     text-align: center;
     margin-left: 20px;
+        
 } 
 
-
+.col-4 {
+    max-width: 33.333333%;
+    flex: 0 0 25.333333%;
+}
 
 /* Modal CSS */
 
@@ -86,12 +92,9 @@
 /* CSS for the animation when the cards are clicked */
 /* Tutorial from http://www.developphp.com/video/CSS/Flip-3D-Boxes-and-Cards-Animation-CSS-Tutorial.
    It has been modified to fit my purpose */
-.card{
-    border:0;
-    border-radius: 0;
-}
 
-.card > .cover{
+
+.cards > .cover{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
@@ -103,7 +106,7 @@
 	transition: -webkit-transform .5s linear 0s;
 	transition: transform .5s linear 0s;
 }
-.card > .face{
+.cards > .face{
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 180deg );
 	transform: perspective( 600px ) rotateY( 180deg ); 
