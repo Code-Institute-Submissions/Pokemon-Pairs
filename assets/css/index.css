@@ -54,7 +54,6 @@ body {
      padding: 15px;
      width: 100%;
      margin: 0;
-     overflow: hidden; 
      text-align: left;
      column-gap: 0;
      row-gap: 0;
@@ -76,7 +75,7 @@ body {
   
 
 #gridItemGame{
-    background-color: rgb(38, 109, 240);
+    background-color: midnightblue;
     border: 1px solid black;
 }
 
