@@ -151,3 +151,33 @@ h1{
 }
 
 }
+
+@media screen and (min-width: 1024px) and (min-height: 1000px){
+
+.navbar .navbar-brand {
+    width: 55%;
+    height: 98px;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
+    font-size: 2.25rem;
+}
+
+.nav-item{
+    margin:0 15px;
+    width: auto;
+}
+
+#info-text-help {
+    margin: 48px 0;
+}
+
+.instruction-card{
+    width: 80%;
+    margin: auto auto 24px auto;
+}
+
+.instruction-text{
+    font-size: 30px;
+}
+}
