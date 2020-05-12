@@ -408,7 +408,12 @@ footer{
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px) and (max-height: 770px){
+.navbar .navbar-brand {
+    height: 77px;
+    width: 43%;
+}
+
 #loading-gif{
     height: 370px;
 }
