@@ -222,6 +222,8 @@ ul li{
 
 .modal{
     background-color: rgba(112, 157, 199, 0.8);
+    overflow-x: auto;
+    overflow-y: auto;
 
 }
 .modal-header, .modal-body, .modal-footer{
@@ -257,7 +259,7 @@ h5{
 }
 
 #results{
-    display: inline-block;
+    display: block;
 }
 
 #topResultsWrapper{
