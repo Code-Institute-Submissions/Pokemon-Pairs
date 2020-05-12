@@ -40,7 +40,7 @@
     height: 20vh;
     text-align: center; 
     padding-left: 15px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
    
 }
 
@@ -82,7 +82,7 @@
 }
 
 .match{
-    background-color: grey;
+    background-color: midnightblue;
 }
 
 /* CSS for the animation when the cards are clicked */
