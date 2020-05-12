@@ -140,3 +140,14 @@ h1{
 }
 
 }
+
+@media screen and (min-width: 1280px) and (max-height: 801px){
+#info-text-help {
+    margin: 48px 0;
+}
+
+.instruction-card{
+    margin: 0 auto 24px auto;
+}
+
+}
