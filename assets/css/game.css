@@ -116,7 +116,7 @@
 
 /* Landscape for mobile */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 667px) and (max-height: 400px){
 
 .grid-game-info h6{
     font-size: 1.75rem;
@@ -128,14 +128,13 @@
 }
 
 .eight-cards{
-    width: 148px;
-    height: 20.5vh;
+    width: 152px;
+    height: 21vh;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 #difficultyMode{
     font-size: 1.25rem;
 }
 }
-
-
-
