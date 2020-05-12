@@ -30,8 +30,8 @@
     width: 95px;
     height: 20vh;
     text-align: center; 
-    border: 0;
-    border-radius: 0;
+    padding-left: 15px;
+    margin-bottom: 10px;
    
 }
 
@@ -77,7 +77,7 @@
 }
 
 .match{
-    background-color: grey;
+    background-color: midnightblue;
 }
 
 /* CSS for the animation when the cards are clicked */
@@ -117,8 +117,10 @@
 }
 
 .eight-cards{
-    width: 148px;
-    height: 20.5vh;
+    width: 152px;
+    height: 21vh;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 #difficultyMode{
