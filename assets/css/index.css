@@ -266,14 +266,9 @@ h5{
     display: block;
 }
 
-#topResultsWrapper{
-    margin: 0.5rem 1rem 0.5rem 3rem;
-    float: left;
-}
-
-#topResultsWrapperTime{
-    margin: 0.5rem 3rem 0.5rem 1rem;
-    float: right;
+#topResultsWrapper, #topResultsWrapperTime{
+    margin-bottom: 2rem;
+  
 }
 
 #timeResultHeader, #moveResultHeader{
