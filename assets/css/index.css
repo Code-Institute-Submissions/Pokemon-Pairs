@@ -43,7 +43,7 @@ body {
 #gridItemGame{
     grid-area: game;
     background-color: midnightblue;
-
+    margin-top: 10px;
 }
 
 
@@ -54,6 +54,7 @@ body {
      padding: 15px;
      width: 100%;
      margin: 0;
+     overflow: hidden; 
      text-align: left;
      column-gap: 0;
      row-gap: 0;
@@ -74,10 +75,6 @@ body {
 }
   
 
-#gridItemGame{
-    background-color: midnightblue;
-    border-top: 1px solid black;
-}
 
 
 /* Header */
@@ -203,6 +200,7 @@ ul li{
     background-color: rgb(38, 109, 240);
     border-left: 1px solid black;
     border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #easy, #medium, #hard {
@@ -224,6 +222,8 @@ ul li{
 
 .modal{
     background-color: rgba(112, 157, 199, 0.8);
+    overflow-x: auto;
+    overflow-y: auto;
 
 }
 .modal-header, .modal-body, .modal-footer{
@@ -235,7 +235,6 @@ ul li{
     text-align: center;
     color: yellow;
     margin: 0.5rem;
-
 }
 
 h5{
@@ -260,7 +259,7 @@ h5{
 }
 
 #results{
-    display: inline-block;
+    display: block;
 }
 
 #topResultsWrapper{
@@ -301,6 +300,52 @@ footer{
 
 /* Landscape for mobile */
 
+@media screen and (min-width: 667px) and (max-height: 400px){
+    .navbar .navbar-brand{
+        height: 78px;
+    }
+
+    .navbar .navbar-brand-modal {
+        height: 60px;
+    }
+
+    #loading-gif{
+    width: 36%;
+    height: 100px;
+    margin-left: 140px;
+
+    }
+
+    .modal-dialog{
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+    
+   .eight-cards{ 
+    width: 90px;
+    height: 34vh;
+    padding: 0;
+    margin-left: 0;
+    }
+
+    .display-cards{
+        display: inline-block;
+        width: 25%;
+    }
+    
+    .container{
+        max-width: 700px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .row {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+/* iPad */
 @media screen and (min-width: 768px){
 
 #jumboimage{
@@ -314,6 +359,11 @@ footer{
     .navbar .navbar-brand {
     height: 90px;
 }
+
+.row{
+    margin-top: 2.5rem;
+}
+
 
 /* Modals */
 /* Welcome modal */
@@ -345,6 +395,8 @@ footer{
 /* Loading Modal */
 #loading-gif{
     height: 402px;
+    width: 100%;
+    margin: 0;
 }
 
 #loadingModalBody{

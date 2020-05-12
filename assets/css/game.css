@@ -110,15 +110,10 @@
 
 /* Landscape for mobile */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 667px) and (max-height: 400px){
 
 .grid-game-info h6{
     font-size: 1.75rem;
-}
-
-.card-grid-container{
-    justify-content: space-evenly;
-    padding: 2vh 4vh 2vh 4vh;
 }
 
 .eight-cards{
