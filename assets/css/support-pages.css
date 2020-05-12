@@ -178,4 +178,17 @@ h1{
 .instruction-text{
     font-size: 30px;
 }
+
+/* Contact form */
+.form-group label{
+    font-size: 2.75rem;
+}
+
+.form-group input, .form-control{
+    font-size: 2.35rem;
+}
+
+.btn-styling{
+    font-size: 2.75rem;
+}
 }
