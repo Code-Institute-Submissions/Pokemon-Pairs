@@ -161,7 +161,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                 pairCounterArray[1] = 2;
                 // if(pairCounterArray[1] == 2){ unsure if I need?
                     click++;
-                    var wait = setTimeout(pairFound, 1500);
+                    var wait = setTimeout(pairFound, 1000);
                     function pairFound(){
                     $("#card1, #card2").css("display", "none");
                     $("#card1Match, #card2Match").removeClass("display");  
@@ -210,7 +210,7 @@ function cardFunction2(){
         if (pairCounterArray[1] == 1){
             pairCounterArray[1] = 2;
              click++;
-            var wait = setTimeout(pairFound, 1500);
+            var wait = setTimeout(pairFound, 1000);
             function pairFound(){
             $("#card1, #card2").css("display", "none");
             $("#card1Match, #card2Match").removeClass("display");
@@ -262,7 +262,7 @@ function cardFunction2(){
         if (pairCounterArray[2] == 1){
             pairCounterArray[2] = 2;
             click++;
-            var wait = setTimeout(pairFound, 1500);
+            var wait = setTimeout(pairFound, 1000);
             function pairFound(){
             $("#card3, #card4").css("display", "none");
             $("#card3Match, #card4Match").removeClass("display");
@@ -311,7 +311,7 @@ function cardFunction2(){
         if (pairCounterArray[2] == 1){
             pairCounterArray[2] = 2;
              click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card3, #card4").css("display", "none");
                 $("#card3Match, #card4Match").removeClass("display");
@@ -361,7 +361,7 @@ function cardFunction5(){
         if (pairCounterArray[3] == 1){
             pairCounterArray[3] = 2;
             click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card5, #card6").css("display", "none");
                 $("#card5Match, #card6Match").removeClass("display");
@@ -412,7 +412,7 @@ function cardFunction6(){
         if (pairCounterArray[3] == 1){
             pairCounterArray[3] = 2;
              click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                $("#card5, #card6").css("display", "none");
                 $("#card5Match, #card6Match").removeClass("display");
@@ -459,7 +459,7 @@ function cardFunction7(){
         if (pairCounterArray[4] == 1){
             pairCounterArray[4] = 2;
             click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card7, #card8").css("display", "none");
                 $("#card7Match, #card8Match").removeClass("display");
@@ -512,7 +512,7 @@ function cardFunction8(){
         if (pairCounterArray[4] == 1){
             pairCounterArray[4] = 2;
              click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card7, #card8").css("display", "none");
                 $("#card7Match, #card8Match").removeClass("display");
@@ -563,7 +563,7 @@ function cardFunction9(){
         if (pairCounterArray[5] == 1){
             pairCounterArray[5] = 2;
             click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card9, #card10").css("display", "none");
                 $("#card9Match, #card10Match").removeClass("display");
@@ -618,7 +618,7 @@ function cardFunction10(){
         if (pairCounterArray[5] == 1){
             pairCounterArray[5] = 2;
              click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card9, #card10").css("display", "none");
                 $("#card9Match, #card10Match").removeClass("display");
@@ -668,7 +668,7 @@ function cardFunction11(){
         if (pairCounterArray[6] == 1){
             pairCounterArray[6] = 2;
              click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                 $("#card11, #card12").css("display", "none");
                 $("#card11Match, #card12Match").removeClass("display");
@@ -718,9 +718,9 @@ function cardFunction12(){
         if (pairCounterArray[6] == 1){
             pairCounterArray[6] = 2;
             click++;
-                var wait = setTimeout(pairFound, 1500);
+                var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
-                $("#card11Cover, #card11Face, #card12Cover, #card12Face").css("display", "none");
+                $("#card11, #card12").css("display", "none");
                 $("#card11Match, #card12Match").removeClass("display");
                 }
         } else { 
@@ -767,7 +767,7 @@ function cardFunction12(){
 
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
-        var revealTime = setTimeout(revealCards, 1000);
+        var revealTime = setTimeout(revealCards,1000);
         function revealCards(){
         //change this to a for loop.
         for(j=1; j<13; j++){
