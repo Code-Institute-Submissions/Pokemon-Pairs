@@ -364,11 +364,14 @@ footer{
     margin-top: 2.5rem;
 }
 
-
+.display-cards{
+    margin-left: 120px;
+}
 /* Modals */
 /* Welcome modal */
 .modal-dialog {
     max-width: 700px;
+    margin: 1.75rem auto;
 }
 
 #welcomeModalLongTitle{
