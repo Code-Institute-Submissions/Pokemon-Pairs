@@ -121,13 +121,13 @@ var shuffledCardID = shuffle(cardIDArray);
                         <div id="card${shuffledCardID[i]}Cover" class=" eight-cards cover"></div> 
                         <div id="card${shuffledCardID[i]}Face" class=" eight-cards face"></div> 
                     </div>
-                    <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-xl-2 eight-cards match card display"></div>
+                    <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-xl-2 cover eight-cards match card display"></div>
                     `
                     );
             
             for(j=1;j<13;j++){
                 var pairArray =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
-                $(`#card${j}Face, #card${j}Match`).addClass(`pair${pairArray[j]}`);
+                $(`#card${j}Face`).addClass(`pair${pairArray[j]}`);
             }   
             
             for(k=1; k<7; k++){

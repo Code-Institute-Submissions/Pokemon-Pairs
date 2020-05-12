@@ -767,7 +767,7 @@ function cardFunction12(){
 
         console.log("This is the amount of clicks =" + click);
     if(click == 6){
-        var revealTime = setTimeout(revealCards,1000);
+        var revealTime = setTimeout(revealCards, 1000);
         function revealCards(){
         //change this to a for loop.
         for(j=1; j<13; j++){
