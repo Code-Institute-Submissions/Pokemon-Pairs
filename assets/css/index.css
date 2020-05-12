@@ -309,6 +309,18 @@ footer{
         height: 60px;
     }
 
+    #loading-gif{
+    width: 36%;
+    height: 100px;
+    margin-left: 140px;
+
+    }
+
+    .modal-dialog{
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+    
    .eight-cards{ 
     width: 90px;
     height: 34vh;
