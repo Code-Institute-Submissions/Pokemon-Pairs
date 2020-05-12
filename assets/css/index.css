@@ -346,7 +346,7 @@ footer{
 }
 
 /* iPad */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
 #jumboimage{
     height: 1037px;
@@ -414,8 +414,39 @@ footer{
     width: 43%;
 }
 
+.nav-item{
+    width: 25%;
+}
+
+.ml-auto{
+    margin-right: 20px;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+
 #loading-gif{
     height: 370px;
+}
+
+.row{
+    margin-top: 3rem;
+}
+
+#difficultyMode{
+    font-size: 2rem;
+}
+
+.grid-game-info h6 {
+    font-size: 2.5rem;
+}
+
+.eight-cards{
+    width: 136px;
+    height: 25vh;
+    margin-bottom: 42px;
 }
 
 }
