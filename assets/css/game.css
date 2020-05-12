@@ -130,8 +130,10 @@
 }
 
 .eight-cards{
-    width: 148px;
-    height: 20.5vh;
+    width: 152px;
+    height: 21vh;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 #difficultyMode{

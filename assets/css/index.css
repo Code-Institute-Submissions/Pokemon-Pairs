@@ -300,7 +300,7 @@ footer{
 
 /* Landscape for mobile */
 
-@media screen and (min-width: 667px) and (max-width: 400px){
+@media screen and (min-width: 667px) and (max-height: 400px){
     .navbar .navbar-brand{
         height: 78px;
     }
@@ -359,6 +359,11 @@ footer{
     .navbar .navbar-brand {
     height: 90px;
 }
+
+.row{
+    margin-top: 2.5rem;
+}
+
 
 /* Modals */
 /* Welcome modal */
