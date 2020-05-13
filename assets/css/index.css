@@ -361,6 +361,18 @@ footer{
     font-size: 2rem;
 }
 
+#gridItemGame{
+    margin-top: 45px;
+}
+
+.grid-game-info h6 {
+    font-size: 2rem;
+}
+
+#easy, #medium, #hard {
+    font-size: 1.5rem;
+}
+
 .row{
     margin-top: 2.5rem;
 }
