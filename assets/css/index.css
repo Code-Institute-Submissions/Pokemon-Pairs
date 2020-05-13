@@ -547,8 +547,8 @@ ul li {
     font-size:3rem;
 }
 
-.navbar .navbar-brand-modal{
-    height: 115px;
+.modal-header .navbar-brand-modal{
+    height: 122px;
 }
 
 #nameInput{
