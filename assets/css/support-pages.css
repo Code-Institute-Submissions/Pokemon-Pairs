@@ -148,7 +148,8 @@ h1{
 }
 
 .instruction-card{
-    margin: 0 auto 24px auto;
+    width: 80%;
+    margin: auto auto 24px auto;
 }
 
 }
@@ -191,5 +192,36 @@ h1{
 
 .btn-styling{
     font-size: 2.75rem;
+}
+
+}
+@media screen and (min-width: 1440px) and (max-height: 901px){
+
+
+.instruction-card{
+    width: 80%;
+    margin: auto auto 24px auto;
+}
+
+#contactForm h1, #help h1 {
+    font-size: 5.5rem;
+}
+
+#info-text, #info-text-help h5 {
+    font-size: 3rem;
+}
+
+
+/* Contact form */
+.form-group label{
+    font-size: 2.25rem;
+}
+
+.form-group input, .form-control{
+    font-size: 2rem;
+}
+
+.btn-styling{
+    font-size: 2.25rem;
 }
 }
