@@ -271,6 +271,7 @@ h5{
 
 #timeResultHeader, #moveResultHeader{
     text-decoration: underline;
+    font-size: 2rem;
 }
 
 .current-game-results{
@@ -339,6 +340,14 @@ footer{
     .row {
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .results-wrapper{
+        font-size: 1.25rem;
+    }
+
+    #timeResultHeader, #moveResultHeader {
+        font-size: 2rem;
     }
 }
 
