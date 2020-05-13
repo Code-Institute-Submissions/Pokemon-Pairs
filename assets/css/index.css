@@ -518,10 +518,16 @@ ul li {
     width: auto;
 }
 
+
+
 }
 
 @media screen and (min-width: 1366px) and (min-height: 1000px){
     .navbar .navbar-brand{
         width: 41%;
     }
+
+.row {
+    margin-top: 5.5rem;
+}
 }
