@@ -522,6 +522,22 @@ ul li {
 
 }
 
+@media screen and (min-width: 1024px) and (min-height: 1366px){
+.row {
+    margin-top: 4.5rem;
+}
+
+#easy, #medium, #hard{
+    font-size: 2.25rem;
+}
+
+.grid-game-info h6{
+    font-size: 2.5rem;
+}
+
+
+}
+
 @media screen and (min-width: 1366px) and (min-height: 1000px){
     .navbar .navbar-brand{
         width: 41%;
