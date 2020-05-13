@@ -427,6 +427,19 @@ footer{
 #loadingModalBody{
     padding: 1.5rem 3rem;
 }
+
+#topResultsWrapper, #topResultsWrapperTime {
+    display: inline-block;
+}
+
+#topResultsWrapper{
+    margin-right: 50px;
+}
+
+#topResultsWrapperTime {
+    margin-left: 50px;
+}
+
 }
 
 
