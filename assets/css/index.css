@@ -121,9 +121,7 @@ body {
 
 }
 
-.navbar-toggler-icon, .navbar-light .navbar-toggler {
-    font-size: 2rem;
-}
+
 
 
 
@@ -340,7 +338,7 @@ footer{
 
     .row {
         margin-right: 10px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
 
