@@ -388,7 +388,7 @@ footer{
 }
 
 .display-cards{
-    margin-left: 150px;
+    margin:0 0 40px 120px;
 }
 /* Modals */
 /* Welcome modal */
@@ -494,6 +494,12 @@ ul li {
     height: 25vh;
     margin-bottom: 42px;
 }
+
+.display-cards {
+    margin: 0 0 20px 15px;
+    width: 40%;
+    display: inline-block;
+    height: 48vh;
 
 }
 
