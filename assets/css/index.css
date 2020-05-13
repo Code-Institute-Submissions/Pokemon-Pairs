@@ -121,10 +121,6 @@ body {
 
 }
 
-
-
-
-
 .navbar-toggler-icon, .navbar-light .navbar-toggler{
     border-color: yellow;
 }
@@ -338,7 +334,7 @@ footer{
 
     .row {
         margin-right: 10px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
 
@@ -355,6 +351,10 @@ footer{
 }
     .navbar .navbar-brand {
     height: 90px;
+}
+
+.navbar-toggler-icon, .navbar-light .navbar-toggler {
+    font-size: 2rem;
 }
 
 .row{
