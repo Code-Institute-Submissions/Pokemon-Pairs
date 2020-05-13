@@ -440,6 +440,16 @@ footer{
     margin-left: 50px;
 }
 
+#revealResults{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#totalMoves h6, #timeTaken h6{
+    font-size: 2rem;
+
+}
+
 }
 
 
