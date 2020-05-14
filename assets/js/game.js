@@ -67,7 +67,7 @@ $("#mediumButton").click(function(){
         console.log("Types loaded.");
         $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 10)+1] +"&&page" + pageNumber
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] +"&&page" + pageNumber
         }).then(function(response){
             console.log(response);
             ajaxCalls.push(Number(response.cards.length));
