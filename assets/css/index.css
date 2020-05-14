@@ -552,6 +552,10 @@ ul li {
     margin:0 15px;
     width: auto;
 }
+
+.display-cards {
+    margin: 0 0 20px 145px;
+}
 }
 
 @media screen and (min-width: 1400px) and (min-height: 899px){
@@ -643,5 +647,15 @@ ul li {
 
 #loading-gif{
     height: 360px;
+}
+.display-cards {
+    margin: 0px 0 20px 55px;
+    width: 37%;
+    display: inline-block;
+}
+
+#displayCardsWrapper{
+    margin-top: 40px;
+    margin-right: 30px;
 }
 }
