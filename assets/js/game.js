@@ -7,11 +7,7 @@ var ajaxCalls = [];
 countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
 pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0];  
 click = 0;
-
-
 var test = [];
-
-
 
 //***************************************************************Results
 
@@ -39,10 +35,8 @@ $("#startGame").click(function(){
 
         for(j=1; j<4; j++){
         $(`#topTimeResult${j}`).append(` ${resultsTime[j-1]} seconds`);
-        }
-        
+        }   
     }
-
 }
 });
  
@@ -71,10 +65,8 @@ $("#easyButton").click(function(){
             test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
-    }
-    
+    }  
 });
-
 }
  console.log(test);}
 });
@@ -82,9 +74,6 @@ $("#easyButton").click(function(){
 
 $("#mediumButton").click(function(){
     if(test.length == 0){
-    
-    // var pageNumber = Math.floor((Math.random() * 6)+1); 
-  
     var pageNumber = [Math.floor(Math.random() * 4)] ;
     $.ajax({
         method:"GET",                
@@ -113,17 +102,14 @@ $("#hardButton").click(function(){
         }).then(function(response){
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
-
             //make this random as it is only pushing the first card of the array
             test.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)+1].imageUrlHiRes);
                 if(test.length == 6){
         	    console.log("Array is finished");
     }
-
 });
-
 }}
  console.log(test);
 });
@@ -142,8 +128,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
         }     
 });
 
-
- function cardFunction1(){
+function cardFunction1(){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         //this makes sure if the card is already turned around, nothing happens.
@@ -745,27 +730,18 @@ function cardFunction12(){
                 console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
             }  
 
-    } 
-        
-        
+    }     
         }
    }}
 };
-
-
-  
-
-
   
 //End of code for animating cards 
  
  // This is the modal for finished  
  
-
  //Opening up the finished modal
  $("#game").click(function(){
-
-        console.log("This is the amount of clicks =" + click);
+    console.log("This is the amount of clicks =" + click);
     if(click == 6){
         var revealTime = setTimeout(revealCards,1000);
         function revealCards(){
@@ -778,8 +754,6 @@ function cardFunction12(){
         for(i=1; i<13; i++){
             $(`#card${i}`).css("display", "block");
         }
-        // $("#card1, #card2, #card3, #card4, #card5, #card6").css("display", "block");
-        // $("#card7, #card8, #card9, #card10, #card11, #card12").css("display", "block");
         $(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $(".card > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         }
@@ -793,16 +767,3 @@ function cardFunction12(){
         
     }        
 }); 
-
-
-
-
-
-
-
-    
-
-
-
-
-
