@@ -3,9 +3,6 @@ var nameChosen = 0;
 console.log(sessionStorage.getItem("name"));
 console.log(sessionStorage.getItem("playerName"));
 
-
-
-
 $( document ).ready(function() {
     if (sessionStorage.name == null){
     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
@@ -15,9 +12,7 @@ $( document ).ready(function() {
     $(".jumbotron").slideUp("slow"); 
             var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
             function revealWelcomeModal(){
-            $("#welcomeModal").css("display", "block");
-            $("#welcomeModal").addClass("in");
-            $("#welcomeModal").addClass("show");
+            $("#welcomeModal").css("display", "block").addClass("in").addClass("show");
             $("#indexBody").addClass("modal-open");
             }
         }
@@ -25,15 +20,9 @@ $( document ).ready(function() {
         $("#playerName").html(sessionStorage.getItem("playerName"));
          $(".jumbotron").slideUp();
         $("#difficultyModalTitle").html("Are you ready, " + sessionStorage.getItem("playerName") + "?");
-       
-        $("#difficultyModal").css("display", "block");
-        $("#difficultyModal").addClass("in");
-        $("#difficultyModal").addClass("show");
-        $("#difficultyModal").addClass("modal-open");
+        $("#difficultyModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
         }        
 });
-
-
 
 $("#enterName").click(function(){
     var playerName = document.getElementById("nameInput").value;
@@ -43,22 +32,15 @@ $("#enterName").click(function(){
     console.log(sessionStorage.getItem("name"));
     console.log(sessionStorage.getItem("playerName"));
 
-    $("#welcomeModal").css("display", "none");
-	$("#welcomeModal").removeClass("in");
-	$("#welcomeModal").removeClass("show");
+    $("#welcomeModal").css("display", "none").removeClass("in").removeClass("show");
     $("indexBody").removeClass("modal-open");
 
-    
     $("#playerName").html(sessionStorage.getItem("playerName"));
     $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
-    
-
 });
 
 $("#easyButton, #mediumButton, #hardButton").click(function(){
-    $("#difficultyModal").css("display", "none");
-	$("#difficultyModal").removeClass("in");
-	$("#difficultyModal").removeClass("show");
+    $("#difficultyModal").css("display", "none").removeClass("in").removeClass("show");
     $("indexBody").removeClass("modal-open");
     var time = setInterval(loadingArray, 3000);
     function loadingArray(){
@@ -67,9 +49,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                 clearInterval(time);
             }
     }
-
 });
-
 
 $("#easyButton").click(function(){
     $("#easy").addClass("active-mode");
@@ -81,7 +61,6 @@ $("#mediumButton").click(function(){
     $("#easy, #hard").removeClass("active-mode");
 });
 
-
 $("#hardButton").click(function(){
     $("#hard").addClass("active-mode");
     $("#medium, #easy").removeClass("active-mode");
@@ -89,13 +68,10 @@ $("#hardButton").click(function(){
 
 //Opening up the display cards modal
 $("#seeCardsButton").click(function(){
-    $("#finishedModal").css("display", "none");
-	$("#finishedModal").removeClass("in");
-	$("#finishedModal").removeClass("show");
+    $("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
 });
  
-
 //Distributing card images.
 var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
 console.log("This is the cardID array " + cardIDArray);
@@ -111,7 +87,6 @@ var shuffledCardID = shuffle(cardIDArray);
          array[currentIndex] = array[randomIndex];
          array[randomIndex] = temporaryValue;
          }
-
          return array;
       }
       
@@ -123,7 +98,7 @@ var shuffledCardID = shuffle(cardIDArray);
                     </div>
                     <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-lg-2 col-xl-2 cover eight-cards match card display"></div>
                     `
-                    );
+                );
             
             for(j=1;j<13;j++){
                 var pairArray =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
@@ -132,10 +107,8 @@ var shuffledCardID = shuffle(cardIDArray);
             
             for(k=1; k<7; k++){
                 $(`#displayCard${k}`).addClass(`pair${k}`);
-            }
-     
+            }     
     }
-    
     
     $("#gridItemName").toggleClass("display");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -158,19 +131,19 @@ var shuffledCardID = shuffle(cardIDArray);
 
     // //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     //for loop here
-    $(".pair1").css("background-image", imageContainerArray[0]);
-    $(".pair2").css("background-image", imageContainerArray[1]);
-    $(".pair3").css("background-image", imageContainerArray[2]);
-    $(".pair4").css("background-image", imageContainerArray[3]);
-    $(".pair5").css("background-image", imageContainerArray[4]);
-    $(".pair6").css("background-image", imageContainerArray[5]);
+    for (j=1; j<7; j++){
+        console.log(j);
+    $(`.pair${j}`).css("background-image", imageContainerArray[j-1]);
+    // $(".pair2").css("background-image", imageContainerArray[1]);
+    // $(".pair3").css("background-image", imageContainerArray[2]);
+    // $(".pair4").css("background-image", imageContainerArray[3]);
+    // $(".pair5").css("background-image", imageContainerArray[4]);
+    // $(".pair6").css("background-image", imageContainerArray[5]);
+    }
 });
 
-
 $("#playAgainButton").click(function(){
-    $("#finishedModal").css("display", "none");
-	$("#finishedModal").removeClass("in");
-	$("#finishedModal").removeClass("show");
+    $("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
 });
 
@@ -181,8 +154,6 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     };
     
     $("#gameRow").html(``);
-
-
     var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
             return a + b;
             }, 0);
