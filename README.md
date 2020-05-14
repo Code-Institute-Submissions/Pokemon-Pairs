@@ -1,21 +1,24 @@
-# The Book Club
+# Pokémon Pairs!
 
 ![picture](assets/images/test_response2.png)
 
 
-### Pokémon Pairs!  - [Live page](https://cgpalmer.github.io/The-Book-Club/)
+### [Live page](https://cgpalmer.github.io/The-Book-Club/)
 ___
 
 ## Contents
 + Rationale
++ Planes
 + UX 
    - User Stories 
 + Features
-+ 
-+ 
-+ 
-+ 
-+ 
+   - Existing Features
+   - Features left To Implement
++ Technologies Used
++ Testing
++ Responsive design
++ Deployment
++ Credit
 
 
 
