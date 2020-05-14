@@ -173,12 +173,5 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
 
-     $("#difficultyModal").css("display", "block");
-    $("#difficultyModal").addClass("in");
-    $("#difficultyModal").addClass("show");
-    $("#difficultyModal").addClass("modal-open");
-
+     $("#difficultyModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
 });
-
-
-
