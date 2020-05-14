@@ -160,7 +160,7 @@ function cardFunction1(){
         
             //this checks no other card has been turned over.
             if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
-                var wrongWait = setTimeout(pairNotFound, 1000);
+                var wrongWait = setTimeout(pairNotFound, 500);
                 function pairNotFound(){
                 //for loop to reset them all. 
                 for(i=1; i<13; i++){
