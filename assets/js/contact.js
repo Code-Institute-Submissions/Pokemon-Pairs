@@ -12,9 +12,7 @@ function sendEnquiry(enquiryForm) {
         function(response) {
             console.log("Success", response); 
             $("#sendButton").html("Sent!");  
-            $("#successModal").css("display", "block");
-            $("#successModal").addClass("in");
-            $("#successModal").addClass("show");
+            $("#successModal").css("display", "block").addClass("in").addClass("show");
             $("#contact").addClass("modal-open");    
         },
         function(error){
