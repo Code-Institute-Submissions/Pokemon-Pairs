@@ -529,10 +529,15 @@ ul li {
     }
 
 .display-cards {
-    margin-left: 160px;
+    margin-left: 30px;
+    display: inline-block;
+    width: 30%;
 }
 
-
+#displayCardsWrapper {
+    margin-top: 32px;
+    margin-left: 40px;
+}
 
 
 }
@@ -573,7 +578,16 @@ ul li {
     width: auto;
 }
 
+.display-cards {
+    margin-left: 30px;
+    display: inline-block;
+    width: 30%;
+}
 
+#displayCardsWrapper {
+    margin-top: 32px;
+    margin-left: 40px;
+}
 
 }
 
