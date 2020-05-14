@@ -320,7 +320,7 @@ footer{
     }
 
     .navbar .navbar-brand-modal {
-        height: 60px;
+        height: 55px;
     }
 
     #loading-gif{
@@ -489,6 +489,11 @@ footer{
     height: 700px;
     padding: 0 50px 0 0;
 }
+
+#welcomeModalLongTitle{
+    width: 65%;
+}
+
 .navbar .navbar-brand {
     height: 77px;
     width: 43%;
@@ -625,6 +630,10 @@ ul li {
     width: auto;
 }
 
+#welcomeModalLongTitle {
+    width: 82%;
+}
+
 .display-cards {
     margin-left: 30px;
     display: inline-block;
@@ -701,8 +710,9 @@ ul li {
         width: 41%;
     }
 
-#welcomeModalLongTitle{
-    width: 80%;
+#welcomeModalLongTitle {
+    width: 50%;
+    height: 90px;
 }
 
 .row {
