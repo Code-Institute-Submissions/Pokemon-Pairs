@@ -30,11 +30,11 @@ $("#startGame").click(function(){
         $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`);
 
         for(i=1; i<4; i++){
-        $(`#gridItemTopResult${i}`).append(` ${results[i-1]}`);
+        $(`#resultMove${i}`).html(` ${results[i-1]}`);
         }
 
         for(j=1; j<4; j++){
-        $(`#topTimeResult${j}`).append(` ${resultsTime[j-1]} seconds`);
+        $(`#resultTime${j}`).html(` ${resultsTime[j-1]} seconds`);
         }   
     }
 }
