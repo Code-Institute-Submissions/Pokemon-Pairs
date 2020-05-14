@@ -95,7 +95,7 @@ $("#hardButton").click(function(){
             //make this random as it is only pushing the first card of the array
             test.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-            test.push(response.cards[Math.floor(Math.random() * response.cards.length)+1].imageUrlHiRes);
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
                 if(test.length == 6){
         	    console.log("Array is finished");
     }
