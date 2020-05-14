@@ -43,7 +43,7 @@ body {
 #gridItemGame{
     grid-area: game;
     background-color: midnightblue;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
@@ -332,8 +332,8 @@ footer{
 
     .display-cards{
         display: inline-block;
-        width: 30%;
-        height: 48vh;
+        width: 44%;
+        height: 73vh;
     }
     
     .container{
@@ -648,6 +648,11 @@ ul li {
 #loading-gif{
     height: 360px;
 }
+
+.modal-dialog{
+    max-width: 1200px;
+} 
+
 .display-cards {
     margin: 0px 0 20px 55px;
     width: 37%;
