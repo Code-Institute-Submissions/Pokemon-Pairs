@@ -21,6 +21,10 @@ body {
     margin-top: 74px;
 }
 
+#jumboimageLandscape{
+    display: none;
+}
+
 
 .jumbo-text, .jumbo-text-header{
     color: yellow;
@@ -564,6 +568,17 @@ ul li {
 }
 
 @media screen and (min-width: 1400px) and (min-height: 899px){
+
+ #jumboimagePortrait{
+        display: none;
+    }
+
+#jumboimageLandscape {
+    display: block;
+    width: 100%;
+    height: 900px;
+    padding: 130px 50px 0 0;
+}
 .navbar .navbar-brand {
     width: 38%;
     height: 98px;
@@ -639,6 +654,17 @@ ul li {
 }
 
 @media screen and (min-width: 1366px) and (min-height: 1000px){
+    #jumboimagePortrait{
+        display: none;
+    }
+
+    #jumboimageLandscape {
+    display: block;
+    width: 100%;
+    height: 900px;
+    padding: 130px 50px 0 0;
+}
+    
     .navbar .navbar-brand{
         width: 41%;
     }
