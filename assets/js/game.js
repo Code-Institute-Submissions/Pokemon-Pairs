@@ -75,6 +75,7 @@ $("#mediumButton").click(function(){
             }
         });
     var pageNumber = [Math.floor(Math.random() * 4)] ;
+    if(test.length == 11){
     $.ajax({
         method:"GET",                
         url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types="+ types[Math.floor(Math.random() * types.length)] +"&&page" + pageNumber
@@ -88,7 +89,7 @@ $("#mediumButton").click(function(){
         	console.log("Array is finished");
             }}
         });
-    }
+    }}
  console.log(test);
 });
 
