@@ -1,6 +1,6 @@
 //tutorial at https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 //It has been modified for my benefit
-var types =[];
+var types =["darkness", "water", "lightning", "fighting", "metal", "grass", "fire", "psychic", "fairy", "dragon", "colorless"];
 results = ["-","-"];
 resultsTime = ["-", "-"]
 var ajaxCalls = [];   
@@ -62,23 +62,12 @@ $("#easyButton").click(function(){
 
 
 $("#mediumButton").click(function(){
-    if(test.length == 0){     
+    if(test.length == 0){
+    var pageNumber = [Math.floor(Math.random() * 4)] ;
+        console.log("Types loaded.");
         $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/types" 
-        }).then(function(response){
-            console.log(response);
-            for (i=0; i<response.types.length; i++){
-            // make this random as it is only pushing the first card of the array
-            ajaxCalls.push(response.types.length);
-            types.push(response.types[i]);
-            }
-        });
-    var pageNumber = [Math.floor(Math.random() * 4)] ;
-    if(test.length == 11){
-    $.ajax({
-        method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types="+ types[Math.floor(Math.random() * types.length)] +"&&page" + pageNumber
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 10)+1] +"&&page" + pageNumber
         }).then(function(response){
             console.log(response);
             ajaxCalls.push(Number(response.cards.length));
@@ -89,7 +78,7 @@ $("#mediumButton").click(function(){
         	console.log("Array is finished");
             }}
         });
-    }}
+    }
  console.log(test);
 });
 
