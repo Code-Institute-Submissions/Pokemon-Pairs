@@ -42,17 +42,6 @@ $("#startGame").click(function(){
  
 $("#easyButton").click(function(){
     if(test.length == 0){
-        $.ajax({
-        method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/types" 
-        }).then(function(response){
-            console.log(response);
-            for (i=0; i<response.types.length; i++){
-            // make this random as it is only pushing the first card of the array
-            ajaxCalls.push(response.types.length);
-            types.push(response.types[i]);
-            }
-        });
     for (i = 0; i < 6; i++){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
@@ -73,7 +62,18 @@ $("#easyButton").click(function(){
 
 
 $("#mediumButton").click(function(){
-    if(test.length == 0){
+    if(test.length == 0){     
+        $.ajax({
+        method:"GET",                
+        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/types" 
+        }).then(function(response){
+            console.log(response);
+            for (i=0; i<response.types.length; i++){
+            // make this random as it is only pushing the first card of the array
+            ajaxCalls.push(response.types.length);
+            types.push(response.types[i]);
+            }
+        });
     var pageNumber = [Math.floor(Math.random() * 4)] ;
     $.ajax({
         method:"GET",                
