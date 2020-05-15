@@ -185,7 +185,7 @@ var shuffledCardID = shuffle(cardIDArray);
                                'url('+ '"' + image4 + '"' + ')',
                                'url('+ '"' + image5 + '"' + ')', 
                                'url('+ '"' + image6 + '"' + ')'];
-    } else {
+    } if(difficultyMode == 3) {
         var image1 = backupCardsArrayHard[0].toString();
         var image2 = backupCardsArrayHard[1].toString();
         var image3 = backupCardsArrayHard[2].toString();
