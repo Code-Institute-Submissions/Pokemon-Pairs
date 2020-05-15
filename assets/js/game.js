@@ -51,7 +51,7 @@ $("#easyButton").click(function(){
             console.log(response); 
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
-            //test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
     }  
@@ -73,7 +73,7 @@ $("#mediumButton").click(function(){
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
             for(i=0; i<6; i++){
-            //test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
             }}
@@ -93,9 +93,9 @@ $("#hardButton").click(function(){
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
             //make this random as it is only pushing the first card of the array
-            //test.push(response.cards[0].imageUrlHiRes);
+            test.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-            //test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
                 if(test.length == 6){
         	    console.log("Array is finished");
     }
