@@ -123,7 +123,7 @@ var shuffledCardID = shuffle(cardIDArray);
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
     //Enter - shuffle array here.
     //for loop here 
-    // if (test.length == 6){
+    if (test.length == 6){
     var image1 = test[0].toString();
     var image2 = test[1].toString();
     var image3 = test[2].toString();
@@ -149,9 +149,9 @@ var shuffledCardID = shuffle(cardIDArray);
     // $(".pair5").css("background-image", imageContainerArray[4]);
     // $(".pair6").css("background-image", imageContainerArray[5]);
     }
-// } else {
-//     alert("Broken - CORS Issue");
-// }
+} else {
+    alert("Broken - CORS Issue");
+}
 
 
 });

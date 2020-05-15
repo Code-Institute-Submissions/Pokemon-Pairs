@@ -46,12 +46,13 @@ $("#easyButton").click(function(){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+        //url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+        url: "https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
         }).then(function(response){
             console.log(response); 
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
-            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+            //test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
     }  
@@ -67,13 +68,14 @@ $("#mediumButton").click(function(){
         console.log("Types loaded.");
         $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] +"&&page" + pageNumber
+        //url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] +"&&page" + pageNumber
+        url: "https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] +"&&page" + pageNumber
         }).then(function(response){
             console.log(response);
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
             for(i=0; i<6; i++){
-            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+            //test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             if(test.length == 6){
         	console.log("Array is finished");
             }}
@@ -88,14 +90,15 @@ $("#hardButton").click(function(){
     var pokemonID = Math.floor((Math.random() * 645)+1); 
     $.ajax({
         method:"GET",                
-        url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+        //url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+        url: "https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID
         }).then(function(response){
             ajaxCalls.push(Number(response.cards.length));
             console.log(ajaxCalls);
             //make this random as it is only pushing the first card of the array
-            test.push(response.cards[0].imageUrlHiRes);
+            //test.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-            test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+            //test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
                 if(test.length == 6){
         	    console.log("Array is finished");
     }
@@ -774,8 +777,6 @@ function cardFunction12(){
         for(j=1; j<13; j++){
             $(`#card${j}Match`).addClass("display");
         }
-        // $("#card1Match, #card2Match, #card3Match, #card4Match, #card5Match, #card6Match, #card7Match, #card8Match, #card9Match, #card10Match, #card11Match, #card12Match").addClass("display");
-        //change this to a for loop.
         for(i=1; i<13; i++){
             $(`#card${i}`).css("display", "block");
         }
