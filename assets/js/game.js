@@ -160,7 +160,7 @@ function cardFunction1(){
                 }  
                 //for loop to reset them all.
              
-                var wrongWait = setTimeout(pairNotFound, 500);
+                var wrongWait = setTimeout(pairNotFound, 750);
                 function pairNotFound(){                  
                 $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
                 $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
@@ -210,7 +210,7 @@ function cardFunction2(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
             }
 
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
                 //for loop to reset them all. 
                 
@@ -267,7 +267,7 @@ function cardFunction2(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }
                 
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
                          
@@ -317,7 +317,7 @@ function cardFunction2(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 } 
                 
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
                  
@@ -371,7 +371,7 @@ function cardFunction5(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }
                 
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
                   
@@ -424,7 +424,7 @@ function cardFunction6(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
                   
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
                
@@ -475,7 +475,7 @@ function cardFunction7(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
                  
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
                
@@ -531,7 +531,7 @@ function cardFunction8(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
                  
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
                      
@@ -585,7 +585,7 @@ function cardFunction9(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
             
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
           
@@ -643,7 +643,7 @@ function cardFunction10(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
                 
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
                        
@@ -694,7 +694,7 @@ function cardFunction11(){
                 console.log("This is array number" + i + " and it is " + countArray[i]);
                 }  
                  
-        var wrongWait = setTimeout(pairNotFound, 500);
+        var wrongWait = setTimeout(pairNotFound, 750);
         function pairNotFound(){
 //for loop to reset them all. 
             
@@ -745,7 +745,7 @@ function cardFunction12(){
                     console.log("This is array number" + i + " and it is " + countArray[i]);
                     }  
                     
-            var wrongWait = setTimeout(pairNotFound, 500);
+            var wrongWait = setTimeout(pairNotFound, 750);
             function pairNotFound(){
     //for loop to reset them all. 
         
