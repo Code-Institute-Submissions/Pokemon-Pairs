@@ -705,43 +705,43 @@ function cardFunction12(){
         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         console.log(countArray[12]);
         } else {
-        $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-         movesTaken++;
-    console.log("You have made " + movesTaken + " moves.");
-        countArray[12] = 1;
-        if (pairCounterArray[6] == 1){
-            pairCounterArray[6] = 2;
-            click++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                $("#card11, #card12").css("display", "none");
-                $("#card11Match, #card12Match").removeClass("display");
-                }
-        } else { 
-            pairCounterArray[6] = 1;
-        
-        console.log("card 12 = " + pairCounterArray[5]);
-         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
-             || pairCounterArray[5] == 1){
-                  for(i=1; i<13; i++){
-                countArray[i] = 0;
-                console.log("This is array number" + i + " and it is " + countArray[i]);
+            $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+            $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+            movesTaken++;
+        console.log("You have made " + movesTaken + " moves.");
+            countArray[12] = 1;
+            if (pairCounterArray[6] == 1){
+                pairCounterArray[6] = 2;
+                click++;
+                    var wait = setTimeout(pairFound, 1000);
+                    function pairFound(){
+                    $("#card11, #card12").css("display", "none");
+                    $("#card11Match, #card12Match").removeClass("display");
+                    }
+            } else { 
+                pairCounterArray[6] = 1;
+            
+            console.log("card 12 = " + pairCounterArray[5]);
+            if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+                || pairCounterArray[5] == 1){
+                    for(i=1; i<13; i++){
+                    countArray[i] = 0;
+                    console.log("This is array number" + i + " and it is " + countArray[i]);
+                    }  
+                    for(j=1; j<7; j++){
+                    pairCounterArray[j] = 0;
+                    console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
                 }  
-                  for(j=1; j<7; j++){
-                pairCounterArray[j] = 0;
-                console.log("This is array number" + j + " and it is " + pairCounterArray[j]);
-            }  
-        var wrongWait = setTimeout(pairNotFound, 1000);
-        function pairNotFound(){
-//for loop to reset them all. 
-      
+            var wrongWait = setTimeout(pairNotFound, 1000);
+            function pairNotFound(){
+    //for loop to reset them all. 
         
-        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-         //for loop to reset them all. 
+            
+            $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+            $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+            //for loop to reset them all. 
 
-    }     
+        }     
         }
    }}
 };
