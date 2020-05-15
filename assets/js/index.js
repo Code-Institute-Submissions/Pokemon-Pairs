@@ -1,4 +1,5 @@
 var nameChosen = 0;
+var backupCardsArray = ["https://images.pokemontcg.io/pl4/1_hires.png"];
 
 console.log(sessionStorage.getItem("name"));
 console.log(sessionStorage.getItem("playerName"));
@@ -151,9 +152,27 @@ var shuffledCardID = shuffle(cardIDArray);
     }
 } else {
     alert("Broken - CORS Issue");
+    var image1 = test[0].toString();
+    var image2 = test[1].toString();
+    var image3 = test[2].toString();
+    var image4 = test[3].toString();
+    var image5 = test[4].toString();
+    var image6 = test[5].toString();
+    var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
+                               'url('+ '"' + image2 + '"' + ')', 
+                               'url('+ '"' + image3 + '"' + ')', 
+                               'url('+ '"' + image4 + '"' + ')',
+                               'url('+ '"' + image5 + '"' + ')', 
+                               'url('+ '"' + image6 + '"' + ')'];
+
+
+    // //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    //for loop here
+    for (j=1; j<7; j++){
+        console.log(j);
+    $(`.pair${j}`).css("background-image", imageContainerArray[j-1]);
 }
-
-
+}
 });
 
 $("#playAgainButton").click(function(){
