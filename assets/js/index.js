@@ -44,7 +44,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     $("indexBody").removeClass("modal-open");
     var time = setInterval(loadingArray, 3000);
     function loadingArray(){
-            if(test.length >= 6){
+            if(test.length == 6){
                 $("#startGame").removeClass("display");
                 clearInterval(time);
             }
@@ -148,11 +148,6 @@ $("#playAgainButton").click(function(){
 });
 
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
-    for(i=0; i<7; i++){
-        test.pop();
-        console.log("This is emptying the test array " + test); 
-    };
-    
     $("#gameRow").html(``);
     var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
             return a + b;
