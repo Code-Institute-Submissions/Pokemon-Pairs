@@ -46,7 +46,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     $("#difficultyModal").css("display", "none").removeClass("in").removeClass("show");
     $("indexBody").removeClass("modal-open");
     
-    var timeBackup = setTimeout(backupCards, 5000);
+    var timeBackup = setTimeout(backupCards, 60000);
     function backupCards(){
         if(test.length < 6){
             $("#startGame").removeClass("display");
