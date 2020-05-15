@@ -152,12 +152,12 @@ var shuffledCardID = shuffle(cardIDArray);
     }
 } else {
     alert("Broken - CORS Issue");
-    var image1 = test[0].toString();
-    var image2 = test[1].toString();
-    var image3 = test[2].toString();
-    var image4 = test[3].toString();
-    var image5 = test[4].toString();
-    var image6 = test[5].toString();
+    var image1 = backupCardsArray[0].toString();
+    var image2 = backupCardsArray[1].toString();
+    var image3 = backupCardsArray[2].toString();
+    var image4 = backupCardsArray[3].toString();
+    var image5 = backupCardsArray[4].toString();
+    var image6 = backupCardsArray[5].toString();
     var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
                                'url('+ '"' + image2 + '"' + ')', 
                                'url('+ '"' + image3 + '"' + ')', 
