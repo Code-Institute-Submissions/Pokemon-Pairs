@@ -63,16 +63,19 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 $("#easyButton").click(function(){
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
+    difficultyMode = 1;
 });
 
 $("#mediumButton").click(function(){
     $("#medium").addClass("active-mode");
     $("#easy, #hard").removeClass("active-mode");
+    difficultyMode = 2;
 });
 
 $("#hardButton").click(function(){
     $("#hard").addClass("active-mode");
     $("#medium, #easy").removeClass("active-mode");
+    difficultyMode = 3;
 });
 
 //Opening up the display cards modal
@@ -152,18 +155,48 @@ var shuffledCardID = shuffle(cardIDArray);
     }
 } else {
     alert("Broken - CORS Issue");
-    var image1 = backupCardsArray[0].toString();
-    var image2 = backupCardsArray[1].toString();
-    var image3 = backupCardsArray[2].toString();
-    var image4 = backupCardsArray[3].toString();
-    var image5 = backupCardsArray[4].toString();
-    var image6 = backupCardsArray[5].toString();
+    console.log(difficultyMode);
+    if(difficultyMode == 1){
+    var image1 = backupCardsArrayEasy[0].toString();
+    var image2 = backupCardsArrayEasy[1].toString();
+    var image3 = backupCardsArrayEasy[2].toString();
+    var image4 = backupCardsArrayEasy[3].toString();
+    var image5 = backupCardsArrayEasy[4].toString();
+    var image6 = backupCardsArrayEasy[5].toString();
     var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
                                'url('+ '"' + image2 + '"' + ')', 
                                'url('+ '"' + image3 + '"' + ')', 
                                'url('+ '"' + image4 + '"' + ')',
                                'url('+ '"' + image5 + '"' + ')', 
                                'url('+ '"' + image6 + '"' + ')'];
+    }
+    if(difficultyMode == 2){
+    var image1 = backupCardsArrayMedium[0].toString();
+    var image2 = backupCardsArrayMedium[1].toString();
+    var image3 = backupCardsArrayMedium[2].toString();
+    var image4 = backupCardsArrayMedium[3].toString();
+    var image5 = backupCardsArrayMedium[4].toString();
+    var image6 = backupCardsArrayMedium[5].toString();
+    var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
+                               'url('+ '"' + image2 + '"' + ')', 
+                               'url('+ '"' + image3 + '"' + ')', 
+                               'url('+ '"' + image4 + '"' + ')',
+                               'url('+ '"' + image5 + '"' + ')', 
+                               'url('+ '"' + image6 + '"' + ')'];
+    } else {
+        var image1 = backupCardsArrayHard[0].toString();
+        var image2 = backupCardsArrayHard[1].toString();
+        var image3 = backupCardsArrayHard[2].toString();
+        var image4 = backupCardsArrayHard[3].toString();
+        var image5 = backupCardsArrayHard[4].toString();
+        var image6 = backupCardsArrayHard[5].toString();
+        var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
+                                   'url('+ '"' + image2 + '"' + ')', 
+                                   'url('+ '"' + image3 + '"' + ')', 
+                                   'url('+ '"' + image4 + '"' + ')',
+                                   'url('+ '"' + image5 + '"' + ')', 
+                                   'url('+ '"' + image6 + '"' + ')'];
+    } 
 
 
     // //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
