@@ -765,6 +765,7 @@ function cardFunction12(){
  
  //Opening up the finished modal
  $("#game").click(function(){
+    $("#startGame").addClass("display");
     console.log("This is the amount of clicks =" + click);
     if(click == 6){
         var revealTime = setTimeout(revealCards,1000);
@@ -787,6 +788,11 @@ function cardFunction12(){
         $("#finishedModal").css("display", "block").addClass("in").addClass("show");
         $("#indexBody").addClass("modal-open");
         click = 0;
+        for(k=0; k<7; k++){
+        test.pop();
+        console.log("This is emptying the test array. " + k + " has gone."); 
+        }
+        console.log(test);
         }
         
     }        
