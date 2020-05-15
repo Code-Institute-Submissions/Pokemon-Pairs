@@ -1,5 +1,5 @@
 var nameChosen = 0;
-var backupCardsArray = ["https://images.pokemontcg.io/pl4/1_hires.png"];
+var backupCardsArray = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png"];
 
 console.log(sessionStorage.getItem("name"));
 console.log(sessionStorage.getItem("playerName"));
