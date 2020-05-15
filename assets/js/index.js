@@ -1,7 +1,7 @@
 var nameChosen = 0;
 var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "https://images.pokemontcg.io/xyp/XY05_hires.png", "https://images.pokemontcg.io/xy11/41_hires.png", "https://images.pokemontcg.io/xy7/21_hires.png", "https://images.pokemontcg.io/dp6/107_hires.png", "https://images.pokemontcg.io/xy0/14_hires.png"]
 var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"]
-var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png","https://images.pokemontcg.io/pl4/1_hires.png"];
+var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
 
 console.log(sessionStorage.getItem("name"));
 console.log(sessionStorage.getItem("playerName"));
