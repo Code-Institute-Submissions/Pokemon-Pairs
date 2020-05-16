@@ -1,6 +1,6 @@
 # Pokémon Pairs!
 
-![picture](assets/images/test_response2.png)
+![picture](/assets/images/test_response2.png)
 
 
 ### [Live page](https://cgpalmer.github.io/The-Book-Club/)
@@ -14,6 +14,7 @@ ___
 + <a href="#features">Features</a>
    - <a href="#existingFeatures">Existing Features</a>
    - <a href="#featuresLeftToImplement">Features left To Implement</a>
++ <a href="#defensiveFeatures">Defensive Features</a>
 + <a href="#technologiesUsed">Technologies Used</a>
 + <a href="#testing">Testing</a>
 + <a href="#responsiveDesign">Responsive design</a>
@@ -23,6 +24,9 @@ ___
 + <a href="#credit">Credit</a>
    - <a href="#media">Media</a>
    - <a href="#acknowledgements">Acknowledgements</a>
++ <a href="#project">Project Evaluation</a>
+   - <a href="#improvements">Improvements</a>
+
 
 
 
@@ -60,7 +64,19 @@ ___
 ### Features Left to Implement
 
  
+___
+<span id="defensiveFeatures"></span>
+## Defensive Features
 
+As this project is designed for children, it was imperative that I build in multiple fail-safes.
+These following design features are in place to stop children from unintentionally breaking the game.
++ If the api doesn't load, then an emergency set of cards will be drawn. 
++ Clicking on the same card consectutively will not affect the game.
++ Cards will disappear when a pair is chosen to prevent children from clicking them again. 
++ Users cannot swap difficulties halfway through a game. 
++ Clicking the same card twice will not increase the amount of moves recorded. 
++ User must enter a valid email address to send a contact email. 
++ User must confirm that they have permission to use an email address. 
 ___
 <span id="technologiesUsed"></span>
 ### Technologies Used
@@ -68,7 +84,9 @@ ___
  
 
 Bootstrap – https://getbootstrap.com/  
-The project uses Bootstrap to simplify the process of building a grid layout, implementing carousels and forms, cards, and creating buttons. Bootstrap was also used for responsive design. 
+The project uses Bootstrap to simplify the process of building a grid layout, implementing forms, cards, and creating buttons. Bootstrap was also used for responsive design. 
+
+emailJS - I have used emailJS to allow the users to contact the game producers and give feedback.
 
 JQuery – https://jquery.com/  
 JQuery was not used discreetly by me. However, elements of Bootstrap used JQuery and Javascript, therefore I have added the necessary scripts on each page. 
@@ -131,7 +149,11 @@ Some examples are:
 
 
 
-
+___
+<span id="project"></span>
+## Project Evaluation
+<span id="improvements"></span>
+### Improvements
    
 
 
