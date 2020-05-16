@@ -53,15 +53,22 @@ h1{
     font-weight: 600;
 }
 
-#successMessage {
+/* #successMessage {
     display: none;
     text-align: center;
 }
 
 #successMessage h1, #successMessage h4 {
     margin-bottom: 32px;
+} */
+
+#messageSent h5{
+    font-size: 1.5rem;
 }
 
+#successModalTitle h4{
+    font-size: 2.5rem;
+}
 
 /* ****************Help Page****************** */
 #info-text-help{
