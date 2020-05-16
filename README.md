@@ -154,9 +154,15 @@ ___
 ## Project Evaluation
 <span id="improvements"></span>
 ### Improvements
-   
 
+JavaScript code
+   + In future I want to explore using switch cases.
+   + I want to look at short hand for conditional statements to make it clearer where the loops and functions are defined.
 
-
+Jasmine testing  
+I would like to use unit testing from the beginning of the project. 
+I think it will be useful to find out which functions are/aren't being called.
+I used JS to check which functions are called, by using alerts or console.log. 
+However, this was inefficient. 
 
 ___
