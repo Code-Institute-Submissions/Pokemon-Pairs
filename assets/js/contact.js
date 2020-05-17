@@ -1,4 +1,3 @@
-
 //Sending emails
 
 function sendEnquiry(enquiryForm) {
@@ -10,13 +9,12 @@ function sendEnquiry(enquiryForm) {
     })
     .then(
         function(response) {
-            console.log("Success", response); 
             $("#sendButton").html("Sent!");  
             $("#successModal").css("display", "block").addClass("in").addClass("show");
             $("#contact").addClass("modal-open");    
         },
         function(error){
-            console.log("Failed", error);
+            alert("Something has gone wrong. Please refresh the page and try again.")
         });
     return false;
 }
