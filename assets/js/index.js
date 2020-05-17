@@ -1,11 +1,10 @@
+// Set variables and arrays
 var nameChosen = 0;
 var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "https://images.pokemontcg.io/xyp/XY05_hires.png", "https://images.pokemontcg.io/xy11/41_hires.png", "https://images.pokemontcg.io/xy7/21_hires.png", "https://images.pokemontcg.io/dp6/107_hires.png", "https://images.pokemontcg.io/xy0/14_hires.png"]
 var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"]
 var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
 
-console.log(sessionStorage.getItem("name"));
-console.log(sessionStorage.getItem("playerName"));
-
+// Checking if this is the first time 
 $( document ).ready(function(){
     if (sessionStorage.name == null){
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
@@ -27,13 +26,11 @@ $( document ).ready(function(){
             }        
 });
 
+// Storing the players name when the user inputs the data
 $("#enterName").click(function(){
     var playerName = document.getElementById("nameInput").value;
-    console.log(playerName);
 	sessionStorage.setItem("playerName", playerName);
     sessionStorage.setItem("name", "1");
-    console.log(sessionStorage.getItem("name"));
-    console.log(sessionStorage.getItem("playerName"));
 
     $("#welcomeModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
@@ -42,6 +39,7 @@ $("#enterName").click(function(){
     $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
 });
 
+// Triggering the loading modal
 $("#easyButton, #mediumButton, #hardButton").click(function(){
     $("#difficultyModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
@@ -62,6 +60,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     }
 });
 
+// Highlighting which difficulty the user has selected.
 $("#easyButton").click(function(){
     $("#easy").addClass("active-mode");
     $("#medium, #hard").removeClass("active-mode");
@@ -88,8 +87,10 @@ $("#seeCardsButton").click(function(){
  
 //Distributing card images.
 var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
-console.log("This is the cardID array " + cardIDArray);
 
+//Shuffling the array ID number
+//Shuffling array found at this tutorial
+//https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 $("#startGame").click(function(){
     var shuffledCardID = shuffle(cardIDArray);
     function shuffle(array) {
@@ -103,7 +104,8 @@ $("#startGame").click(function(){
         }
          return array;
     }
-      
+    
+    //Generating html for each card
     for(i=0; i<12; i++){
         $("#gameRow").append(`
                     <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-lg-2 col-xl-2 eight-cards card" onclick="cardFunction${shuffledCardID[i]}();">
@@ -113,7 +115,8 @@ $("#startGame").click(function(){
                     <div id="card${shuffledCardID[i]}Match" class="col-4 col-sm-2  col-md-3 col-lg-2 col-xl-2 cover eight-cards match card display"></div>
                     `);
     }
-            
+    
+    // Adding images to the correct cards and display cards
     for(j=1;j<13;j++){
         var pairArray =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
         $(`#card${j}Face`).addClass(`pair${pairArray[j]}`);
@@ -123,12 +126,15 @@ $("#startGame").click(function(){
         $(`#displayCard${k}`).addClass(`pair${k}`);
     }     
     
-    
+    //Hiding the name to increase screen size
     $("#gridItemName").toggleClass("display");
+
+    //Ensuring all the cards are face down
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-    //Enter - shuffle array here.
-    //for loop here 
+   
+
+    // Assigning the image variables a url from the ajax call
     if (test.length == 6){
         var image1 = test[0].toString();
         var image2 = test[1].toString();
@@ -143,14 +149,14 @@ $("#startGame").click(function(){
                                    'url('+ '"' + image5 + '"' + ')', 
                                    'url('+ '"' + image6 + '"' + ')'];
 
-    // //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-    //for loop here
+    // Assigning urls to the correct pair class 
         for (j=1; j<7; j++){
-            console.log(j);
+            
             $(`.pair${j}`).css("background-image", imageContainerArray[j-1]);
             }
     }   else {
-        console.log(difficultyMode);
+
+        // Arranging back-up cards to be assigned to the pair class if the ajax call fails.
         if(difficultyMode == 1){
             var image1 = backupCardsArrayEasy[0].toString();
             var image2 = backupCardsArrayEasy[1].toString();
@@ -194,28 +200,25 @@ $("#startGame").click(function(){
                                     'url('+ '"' + image6 + '"' + ')'];
         } 
 
-
-    // //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-    //for loop here
         for (j=1; j<7; j++){
-            console.log(j);
             $(`.pair${j}`).css("background-image", imageContainerArray[j-1]);
         }
     }
 });
 
+
+//Closing 'play again' modal
 $("#playAgainButton").click(function(){
     $("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
 });
 
+// Calculating the number of ajax calls previously made and alerting the user if they are close to the limit
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $("#gameRow").html(``);
         var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
                 return a + b;
                 }, 0);
-        console.log(ajaxCallsSum);
-        console.log(5000 - ajaxCallsSum);
         var totalAjaxCalls = (5000 - ajaxCallsSum);
 
         if(totalAjaxCalls < 1000){
@@ -226,6 +229,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
         } 
     }
 
+    // Displaying difficulty modal at the beginning of each new game.
     $("#gridItemTimerDisplay").html("0 seconds");
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
