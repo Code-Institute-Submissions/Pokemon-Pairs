@@ -11,8 +11,7 @@ body {
     background: #fe0000;
     padding:0;
     height: 100vh;
-    margin-bottom: 0;
-   
+    margin-bottom: 0;  
     border-radius: 0;  
 }
 
@@ -25,7 +24,6 @@ body {
     display: none;
 }
 
-
 .jumbo-text, .jumbo-text-header{
     color: yellow;
 }
@@ -37,9 +35,18 @@ body {
 .pokemon-font{
     width: 90%;
 }
-/* Grid Layout for responsive design */
 
-#gridItemHeader{grid-area: header;}
+
+/****** Grid Layout for responsive design ********/
+
+#gridItemHeader{
+    grid-area: header;
+    margin: 15px;
+    background-color: red;
+    border: 1px solid black;
+    color: yellow;
+}
+
 #gridItemGameInfo{
     grid-area: game-info;
     margin: 0 16px;
@@ -49,7 +56,6 @@ body {
     background-color: midnightblue;
     margin-top: 15px;
 }
-
 
 .grid-container{
      display: grid;
@@ -78,30 +84,6 @@ body {
     border: 1px solid black;
 }
   
-
-
-
-/* Header */
-#gridItemHeader{
-    margin: 15px;
-    background-color: red;
-    border: 1px solid black;
-    color: yellow;
-}
-
-#menuButton {
-    float: right;
-    width: 80px;
-    color: yellow;
-
-}
-
-.logo{
-    display: inline-block;
-    
-}
-
-
 /* Navbar CSS */
 
 .navbar{
@@ -126,10 +108,6 @@ body {
 
 }
 
-
-
-
-
 .navbar-toggler-icon, .navbar-light .navbar-toggler{
     border-color: yellow;
 }
@@ -138,7 +116,6 @@ body {
     display: inline-block;
     width: 30%;
 }
-
 
 ul {
     
@@ -162,8 +139,6 @@ ul li{
     font-weight: bold;
 }
 
-/* Clean up the code so you don't have an !important */
-
 /* Generic CSS */
 
 .navbar .nav-item .nav-link:hover {
@@ -181,16 +156,11 @@ ul li{
     display: none;
 }
 
-
-
-/* Grid game information */
+/* Game information */
 
 #gridItemName{
     border-bottom: 1px solid black;
     padding: 5px 0; 
-}
-.display {
-    display: none;
 }
 
 .game-info-text{
@@ -248,7 +218,7 @@ h5{
     font-size: 2rem;
 }
 
-#welcomeModalLongTitle{
+#welcomeModalTitle{
     margin: 5px 0 0 0;
 }
 
@@ -261,8 +231,6 @@ h5{
 .btn-primary a{
     color: yellow;
 }
-
-
 
 #loading-gif{
     background-image:url("../images/loading.gif") ;
@@ -277,7 +245,6 @@ h5{
 
 #topResultsWrapper, #topResultsWrapperTime{
     margin-bottom: 2rem;
-  
 }
 
 #timeResultHeader, #moveResultHeader{
@@ -300,15 +267,9 @@ h5{
 #displayCardsWrapper{
     text-align: center;
 }
-/* Footer */
-footer{
-    display: none;
-}
-
 
 
 /* Landscape for mobile */
-
 @media screen and (min-width: 667px) and (max-height: 400px){
 
 #jumboimagePortrait{
@@ -378,7 +339,7 @@ footer{
     }
 }
 
-/* iPad */
+/* iPad Portrait*/
 @media screen and (min-width: 768px) {
 
 #jumboimagePortrait{
@@ -420,6 +381,7 @@ footer{
 #displayCardsWrapper{
     margin-top: 20px;
 }
+
 /* Modals */
 /* Welcome modal */
 .modal-dialog {
@@ -427,7 +389,7 @@ footer{
     margin: 1.75rem auto;
 }
 
-#welcomeModalLongTitle{
+#welcomeModalTitle{
     width: 75%;
 }
 
@@ -483,7 +445,7 @@ footer{
 
 }
 
-
+/********** iPad Landscape **********/
 @media screen and (min-width: 1024px) and (max-height: 801px){
 #jumboimagePortrait{
         display: none;
@@ -496,7 +458,7 @@ footer{
     padding: 0 50px 0 0;
 }
 
-#welcomeModalLongTitle{
+#welcomeModalTitle{
     width: 65%;
 }
 
@@ -554,6 +516,7 @@ ul li {
 
 }
 
+/******** Laptop MD - Screen ***********/
 @media screen and (min-width: 1280px) and (max-height: 801px){
         #jumboimagePortrait{
         display: none;
@@ -589,6 +552,7 @@ ul li {
 
 }
 
+/* Settings for screens bigger than iPad */
 @media screen and (min-width: 1024px) and (min-height: 1000px){
 
 .navbar .navbar-brand {
@@ -610,6 +574,7 @@ ul li {
 }
 }
 
+/* Laptop HD - Screen */
 @media screen and (min-width: 1400px) and (min-height: 899px){
 
  #jumboimagePortrait{
@@ -636,7 +601,7 @@ ul li {
     width: auto;
 }
 
-#welcomeModalLongTitle {
+#welcomeModalTitle {
     width: 82%;
 }
 
@@ -653,6 +618,7 @@ ul li {
 
 }
 
+/* iPad Pro Portrait */
 @media screen and (min-width: 1024px) and (min-height: 1366px){
 #jumboimagePortrait{
     height: 1326px;
@@ -700,6 +666,8 @@ ul li {
 }
 }
 
+
+/* iPad Pro Landscape */
 @media screen and (min-width: 1366px) and (min-height: 1000px){
     #jumboimagePortrait{
         display: none;
@@ -716,7 +684,7 @@ ul li {
         width: 41%;
     }
 
-#welcomeModalLongTitle {
+#welcomeModalTitle {
     width: 50%;
     height: 110px;
 }
