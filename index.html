@@ -78,7 +78,7 @@
 
     <!-- ***** Welcome modal ***** -->
 
-    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalCenterTitle" style="display: none;" aria-hidden="true">
+    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModal" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header navbar">
@@ -86,7 +86,6 @@
         </div>
         <div id="welcomeModalBody" class="modal-body">
           <input type="text" id="nameInput" value="Guest">
-
         </div>
         <div id="welcomeModalFooter" class="modal-footer">
           <button id="enterName" class="btn btn-primary" data-toggle="modal" data-target="#difficultyModal">Enter</button>
@@ -96,11 +95,11 @@
   </div>
 
 <!-- ***** Difficulty Modal ***** -->
-  <div class="modal fade" id="difficultyModal" tabindex="-1" role="dialog" aria-labelledby="finishedModalCenterTitle" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+  <div class="modal fade" id="difficultyModal" tabindex="-1" role="dialog" aria-labelledby="difficultyModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="difficultyModalTitle"></h5>
+          <h5 class="modal-title" id="difficultyModalTitle">Let's start!</h5>
         </div>
         <div class="modal-body">
           <p id="usageWarning" class="display"></p>
@@ -112,7 +111,7 @@
         <div class="modal-footer">
           <div id="seeInstructions">
             <h6>Or...</h6>
-            <a href="help.html"><button id="seeInstructionsButton" class="btn btn-primary">See instructions</button></a>
+            <div id="seeInstructionsButton" class="btn btn-primary"><a href="help.html">See instructions</a></div>
           </div>
         </div>
       </div>
@@ -121,7 +120,7 @@
 
 
 <!-- Loading Modal -->
-<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalCenterTitle" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div id="loadingModalHeader" class="modal-header">
@@ -140,7 +139,7 @@
 
 
 <!-- ***** Finished Modal ***** -->
-  <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModalCenterTitle" style="display: none;" aria-hidden="true">
+  <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModal" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -197,7 +196,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button id="playAgainButtonDisplay" type="playAgainButtonDisplay" class="btn btn-primary" data-dismiss="modal">Play again!</button>
+        <button id="playAgainButtonDisplay" class="btn btn-primary" data-dismiss="modal">Play again!</button>
       </div>
     </div>
   </div>
@@ -211,8 +210,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/game.js" type="text/javascript"></script>
-     <script src="assets/js/index.js" type="text/javascript"></script>
+    <script src="assets/js/game.js"></script>
+     <script src="assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/3129319209.js" crossorigin="anonymous"></script>
  
 </body>
