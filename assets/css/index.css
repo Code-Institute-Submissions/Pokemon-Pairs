@@ -549,30 +549,17 @@ ul li {
     margin-left: 40px;
 }
 
+.modal-display {
+    max-width: 1200px;
+}
+
+#displayCardsModal{
+    padding-left: 17px;
+}
 
 }
 
-/* Settings for screens bigger than iPad */
-/* @media screen and (min-width: 1024px) and (min-height: 1000px){
 
-.navbar .navbar-brand {
-    width: 55%;
-    height: 98px;
-}
-
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
-    font-size: 2.25rem;
-}
-
-.nav-item{
-    margin:0 15px;
-    width: auto;
-}
-
-.display-cards {
-    margin: 0 0 20px 145px;
-}
-} */
 
 /* Laptop HD - Screen */
 @media screen and (min-width: 1400px) and (min-height: 899px){
@@ -605,23 +592,25 @@ ul li {
     width: 82%;
 }
 
-/* #displayCardsModal{
-    padding: 0!important;
-
-} */
+.modal-display {
+    max-width: 1200px;
+}
 
 .display-cards {
     margin-left: 30px;
     display: inline-block;
     width: 30%;
+    height: 54vh;
 }
 
 #displayCardsWrapper {
     margin-top: 32px;
-    margin-left: 40px;
+    margin-right: 24px;
 }
 
-
+#displayCardsModal{
+    padding-left: 17px;
+}
 
 }
 
