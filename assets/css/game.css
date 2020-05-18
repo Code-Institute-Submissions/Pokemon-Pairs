@@ -11,15 +11,14 @@
      padding-right: 0;
  }
 
- .eight-cards {
-   color: white;
+.eight-cards {
+    color: white;
     background-color: midnightblue;
     padding: 0 0;
-    width: 151px;
-    height: 32vh;
+    width: 136px;
+    height: 30vh;
     text-align: center;
     margin-bottom: 10px;
-   
 }
 
  .display-cards {
@@ -91,7 +90,23 @@
 
 
 
+@media screen and (min-width: 375px){
+    
+ .eight-cards {
+   color: white;
+    background-color: midnightblue;
+    padding: 0 0;
+    width: 151px;
+    height: 32vh;
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+}
+
+
 /******* Landscape for mobile ******************/
+
 
 @media screen and (min-width: 768px) {
 
