@@ -8,7 +8,7 @@ var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "htt
 $( document ).ready(function(){
     if (sessionStorage.name == null){
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
-        var time = setTimeout(removeJumbo, 3000);
+        var time = setTimeout(removeJumbo, 2000);
         function removeJumbo(){           
             $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
              $(".jumbotron").slideUp("slow"); 
@@ -133,77 +133,25 @@ $("#startGame").click(function(){
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
    
+     var imageContainerArray = [];
+        var backupCardsArray;
+        function selectImages(difficultyMode){
+            if(test.length == 6) backupCardsArray = test;
+            else if(difficultyMode == 1) backupCardsArray = backupCardsArrayEasy;
+            else if (difficultyMode == 2) backupCardsArray = backupCardsArrayMedium;
+            else backupCardsArray = backupCardsArrayHard;
 
-    // Assigning the image variables a url from the ajax call
-    if (test.length == 6){
-        var image1 = test[0].toString();
-        var image2 = test[1].toString();
-        var image3 = test[2].toString();
-        var image4 = test[3].toString();
-        var image5 = test[4].toString();
-        var image6 = test[5].toString();
-        var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
-                                   'url('+ '"' + image2 + '"' + ')', 
-                                   'url('+ '"' + image3 + '"' + ')', 
-                                   'url('+ '"' + image4 + '"' + ')',
-                                   'url('+ '"' + image5 + '"' + ')', 
-                                   'url('+ '"' + image6 + '"' + ')'];
-
-    // Assigning urls to the correct pair class 
-        for (j=1; j<7; j++){
-            
-            $(`.pair${j}`).css("background-image", imageContainerArray[j-1]);
+            for(let i=0; i<6; i++){
+               var image = backupCardsArray[i].toString();
+               imageContainerArray.push('url('+ '"' + image + '"' + ')');
             }
-    }   else {
-
-        // Arranging back-up cards to be assigned to the pair class if the ajax call fails.
-        if(difficultyMode == 1){
-            var image1 = backupCardsArrayEasy[0].toString();
-            var image2 = backupCardsArrayEasy[1].toString();
-            var image3 = backupCardsArrayEasy[2].toString();
-            var image4 = backupCardsArrayEasy[3].toString();
-            var image5 = backupCardsArrayEasy[4].toString();
-            var image6 = backupCardsArrayEasy[5].toString();
-            var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
-                                    'url('+ '"' + image2 + '"' + ')', 
-                                    'url('+ '"' + image3 + '"' + ')', 
-                                    'url('+ '"' + image4 + '"' + ')',
-                                    'url('+ '"' + image5 + '"' + ')', 
-                                    'url('+ '"' + image6 + '"' + ')'];
         }
-        if(difficultyMode == 2){
-            var image1 = backupCardsArrayMedium[0].toString();
-            var image2 = backupCardsArrayMedium[1].toString();
-            var image3 = backupCardsArrayMedium[2].toString();
-            var image4 = backupCardsArrayMedium[3].toString();
-            var image5 = backupCardsArrayMedium[4].toString();
-            var image6 = backupCardsArrayMedium[5].toString();
-            var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
-                                    'url('+ '"' + image2 + '"' + ')', 
-                                    'url('+ '"' + image3 + '"' + ')', 
-                                    'url('+ '"' + image4 + '"' + ')',
-                                    'url('+ '"' + image5 + '"' + ')', 
-                                    'url('+ '"' + image6 + '"' + ')'];
-        } 
-        if(difficultyMode == 3) {
-            var image1 = backupCardsArrayHard[0].toString();
-            var image2 = backupCardsArrayHard[1].toString();
-            var image3 = backupCardsArrayHard[2].toString();
-            var image4 = backupCardsArrayHard[3].toString();
-            var image5 = backupCardsArrayHard[4].toString();
-            var image6 = backupCardsArrayHard[5].toString();
-            var imageContainerArray = ['url('+ '"' + image1 + '"' + ')', 
-                                    'url('+ '"' + image2 + '"' + ')', 
-                                    'url('+ '"' + image3 + '"' + ')', 
-                                    'url('+ '"' + image4 + '"' + ')',
-                                    'url('+ '"' + image5 + '"' + ')', 
-                                    'url('+ '"' + image6 + '"' + ')'];
-        } 
-
+        selectImages(difficultyMode);
         for (j=1; j<7; j++){
             $(`.pair${j}`).css("background-image", imageContainerArray[j-1]);
         }
-    }
+    
+    
 });
 
 
@@ -235,3 +183,5 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
     $("#difficultyModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
 });
+
+
