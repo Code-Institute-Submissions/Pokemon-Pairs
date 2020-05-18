@@ -554,7 +554,31 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 //     }
 // };
 
+$('#gameRow').on('click', '#card11, #card12', function(){
+                   
+                if (pairCounterArray[6] == 1){
+                    pairCounterArray[6] = 2;
+                    console.log(pairCounterArray[6]);
 
+                    } else {
+                        pairCounterArray[6] = 1;
+                        console.log(pairCounterArray[6]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+                        || pairCounterArray[5] == 1){
+                        for(j=1; j<7; j++){
+                        pairCounterArray[j] = 0;
+                        }  
+                        for(i=1; i<13; i++){
+                        countArray[i] = 0;
+                        }  
+                    
+                        var wrongWait = setTimeout(pairNotFound, 750);
+                        function pairNotFound(){
+                        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+                        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+                        }
+                    }}
+});
 // function cardFunction12(){ 
 //     if(countArray[12] == 1){
 //         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -631,8 +655,15 @@ $('#gameRow').on('click', '.card', function(){
 
     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
+    for (let i=1; i<7; i++)
+    if(pairCounterArray[i] == 2){
+        pairMatch++;
+        var wait = setTimeout(pairFound, 1000);
+        function pairFound(){
+        $(`.pairMatchID${i}`).css("display", "none");
+        $("#card11Match, #card12Match").removeClass("display");
+        }
+    }
 });
 
-$('#gameRow').on('click', '#card11, #card12', function(){
-    console.log("You clicked 11 or 12");
-});
+
