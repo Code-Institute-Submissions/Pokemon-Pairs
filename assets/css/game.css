@@ -114,10 +114,6 @@
     font-size: 1.75rem;
 }
 
-.card-grid-container{
-    justify-content: space-evenly;
-    padding: 2vh 4vh 2vh 4vh;
-}
 
 .eight-cards{
     width: 152px;
