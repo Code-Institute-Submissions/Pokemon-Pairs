@@ -2,7 +2,7 @@
 //It has been modified for my benefit
 var types =["darkness", "water", "lightning", "fighting", "metal", "grass", "fire", "psychic", "fairy", "dragon", "colorless"];
 var ajaxCalls = [];
-var test = [];
+var apiResponseArray = [];
 results = ["-","-"];
 resultsTime = ["-", "-"]
 countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
@@ -42,7 +42,7 @@ $("#startGame").click(function(){
 });
  
 $("#easyButton").click(function(){
-    if(test.length == 0){
+    if(apiResponseArray.length == 0){
         for (i = 0; i < 6; i++){
             var pokemonID = Math.floor((Math.random() * 645)+1); 
             $.ajax({
@@ -50,7 +50,7 @@ $("#easyButton").click(function(){
                     url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
                 }).then(function(response){
                     ajaxCalls.push(Number(response.cards.length));
-                    test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+                    apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             });
         }
     }
@@ -58,7 +58,7 @@ $("#easyButton").click(function(){
 
 
 $("#mediumButton").click(function(){
-    if(test.length == 0){
+    if(apiResponseArray.length == 0){
         var pageNumber = [Math.floor(Math.random() * 4)];
             $.ajax({
                 method:"GET",                
@@ -66,14 +66,14 @@ $("#mediumButton").click(function(){
             }).then(function(response){
                 ajaxCalls.push(Number(response.cards.length));
                 for(i=0; i<6; i++){
-                    test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+                    apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
                 }
             });
     }  
 });
 
 $("#hardButton").click(function(){
-    if(test.length == 0){
+    if(apiResponseArray.length == 0){
         for (i = 0; i < 3; i++){
             var pokemonID = Math.floor((Math.random() * 645)+1); 
             $.ajax({
@@ -81,9 +81,9 @@ $("#hardButton").click(function(){
                 url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
             }).then(function(response){
                 ajaxCalls.push(Number(response.cards.length));
-                test.push(response.cards[0].imageUrlHiRes);
+                apiResponseArray.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-                test.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+                apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             });
         }
     }
@@ -265,7 +265,7 @@ $("#game").click(function(){
             $("#indexBody").addClass("modal-open");
             pairMatch = 0;
             for(k=0; k<7; k++){
-                test.pop();
+                apiResponseArray.pop();
             }
         }
     }        
