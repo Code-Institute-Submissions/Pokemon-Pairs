@@ -49,8 +49,14 @@ ___
 <span id="userStories"></span> 
 ### User Stories
 
-
-   7.	As a user type, I want to click on the “Logo”, so that I can go back to the home page.  
+1. As a child, I want to easily navigate through the website.
+2. As a child or a parent, I want to find the help page so I can learn how to play the game.
+3. As a child or a parent, I want to contact the company so I can give feedback on the game or have some questions answered.
+4. As a child, I want to personalise the game to me by giving the webpage data.
+5. As a child, I want to be able to easily play the game without having to workout instructions.
+6. As a child, I want to see how well I have done at the end of the game by review the scores from my game.
+7. As a child, I to be able to see if I have improved by looking at my previous scores.
+8. As a child, I want to able to choose whether I play again, so I can beat my previous score.
 
 
 ___
