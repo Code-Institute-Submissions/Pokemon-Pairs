@@ -250,7 +250,7 @@ $('#gameRow').on('click', '.cardMatchID6', function(){
 $("#game").click(function(){
     $("#startGame").addClass("display");
     if(pairMatch == 6){
-        var revealTime = setTimeout(revealCards,1000);
+        var revealTime = setTimeout(revealCards,2000);
         function revealCards(){
         //change this to a for loop.
             for(j=1; j<13; j++){
@@ -288,7 +288,7 @@ $('#gameRow').on('click', '.card', function(){
         }
         $(`.cardMatchID${i}`).fadeOut();
         //$(`.cardMatchID${i}`).css("display", "none");
-        
+
         $(`.pairFound${i}`).removeClass("display");
         }
     }}
