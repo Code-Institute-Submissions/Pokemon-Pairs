@@ -605,6 +605,11 @@ ul li {
     width: 82%;
 }
 
+/* #displayCardsModal{
+    padding: 0!important;
+
+} */
+
 .display-cards {
     margin-left: 30px;
     display: inline-block;
@@ -615,6 +620,8 @@ ul li {
     margin-top: 32px;
     margin-left: 40px;
 }
+
+
 
 }
 
