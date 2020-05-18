@@ -102,16 +102,19 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     }     
 });
 
+
+
+
 function cardFunction1(){
-    //$("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  
     //this makes sure if the card is already turned around, nothing happens.
     if(countArray[1] == 1){
         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+     
     } else {
         //this checks to see if the pair has already been selected. If it has it redeclares it as two
-        //movesTaken++;
+        
         countArray[1] = 1;
         if (pairCounterArray[1] == 1){
             pairCounterArray[1] = 2;
@@ -148,8 +151,7 @@ function cardFunction1(){
 };
 
 function cardFunction2(){
-    //$("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    
     if(countArray[2] == 1){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
@@ -157,7 +159,7 @@ function cardFunction2(){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
 
-        //movesTaken++;
+        
         countArray[2] = 1;
 
         if (pairCounterArray[1] == 1){
@@ -194,8 +196,7 @@ function cardFunction2(){
   
 
 function cardFunction3(){
-    //$("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+   
     //stops the same card being clicked twice.
         if(countArray[3] == 1){
             $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -203,7 +204,7 @@ function cardFunction3(){
         } else {
             $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            //movesTaken++;
+           
             countArray[3] = 1;
             if (pairCounterArray[2] == 1){
                 pairCounterArray[2] = 2;
@@ -237,15 +238,14 @@ function cardFunction3(){
 };
 
 function cardFunction4(){
-    //$("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  
     if(countArray[4] == 1){
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     } else {
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        //movesTaken++;
+        
         countArray[4] = 1;
         if (pairCounterArray[2] == 1){
                 pairCounterArray[2] = 2;
@@ -277,8 +277,6 @@ function cardFunction4(){
 };
 
 function cardFunction5(){
-        //$("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        //$("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         
         if(countArray[5] == 1){
             $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -286,7 +284,7 @@ function cardFunction5(){
         } else {
             $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            //movesTaken++;
+          
             countArray[5] = 1;
             if (pairCounterArray[3] == 1){
                 pairCounterArray[3] = 2;
@@ -320,8 +318,6 @@ function cardFunction5(){
   
 
 function cardFunction6(){
-        //$("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        //$("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         
         if(countArray[6] == 1){
             $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -329,7 +325,7 @@ function cardFunction6(){
         } else {
             $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            //movesTaken++;         
+             
             countArray[6] = 1;
             if (pairCounterArray[3] == 1){
                 pairCounterArray[3] = 2;
@@ -361,15 +357,13 @@ function cardFunction6(){
 };
 
 function cardFunction7(){
-    //$("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    
        if(countArray[7] == 1){
             $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         } else {
             $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            //movesTaken++;
             
             countArray[7] = 1;
             if (pairCounterArray[4] == 1){
@@ -404,15 +398,14 @@ function cardFunction7(){
    
 
 function cardFunction8(){
-    //$("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    
     if(countArray[8] == 1){
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     } else {
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        //movesTaken++;
+     
         countArray[8] = 1;
         if (pairCounterArray[4] == 1){
                 pairCounterArray[4] = 2;
@@ -445,15 +438,14 @@ function cardFunction8(){
 
 
 function cardFunction9(){ 
-    //$("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    
     if(countArray[9] == 1){
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     } else {
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        //movesTaken++;  
+        
         countArray[9] = 1;
         if (pairCounterArray[5] == 1){
                 pairCounterArray[5] = 2;
@@ -487,15 +479,14 @@ function cardFunction9(){
 
 
 function cardFunction10(){
-    //$("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+  
     if(countArray[10] == 1){
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     } else {
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        //movesTaken++;
+     
         countArray[10] = 1;
         if (pairCounterArray[5] == 1){
                 pairCounterArray[5] = 2;
@@ -528,15 +519,13 @@ function cardFunction10(){
 };
   
 function cardFunction11(){ 
-    //$("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     if(countArray[11] == 1){
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     } else {
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        //movesTaken++;
+        
         countArray[11] = 1;
         if (pairCounterArray[6] == 1){
                 pairCounterArray[6] = 2;
@@ -569,15 +558,12 @@ function cardFunction11(){
 
 
 function cardFunction12(){ 
-    //$("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-    //$("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     if(countArray[12] == 1){
         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         } else {
             $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            //movesTaken++;
             countArray[12] = 1;
             if (pairCounterArray[6] == 1){
                     pairCounterArray[6] = 2;
@@ -648,3 +634,4 @@ $('#gameRow').on('click', '.cover', function(){
     $(this).css("transform", "perspective( 600px ) rotateY( -180deg )");
     $(this > ".face").css("transform", "perspective( 600px ) rotateY( 0deg )");
 });
+
