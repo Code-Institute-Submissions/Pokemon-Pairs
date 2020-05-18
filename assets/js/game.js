@@ -288,8 +288,8 @@ $('#gameRow').on('click', '.card', function(){
         for(k=1; k<13; k++){
         $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
         }
-        $(`.cardMatchID${i}`).fadeOut();
-        //$(`.cardMatchID${i}`).css("display", "none");
+        //$(`.cardMatchID${i}`).fadeOut();
+        $(`.cardMatchID${i}`).css("display", "none");
 
         var delay = setTimeout(matchCardsAppear, 400);
         function matchCardsAppear(){
