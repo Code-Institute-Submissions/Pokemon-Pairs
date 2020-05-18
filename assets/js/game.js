@@ -554,15 +554,28 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 //     }
 // };
 
-$('#gameRow').on('click', '#card11, #card12', function(){
-                   
+// function notAPair(){
+//     alert("This function has been called");
+//     for(j=1; j<7; j++){
+//                         pairCounterArray[j] = 0;
+//                         }  
+//                         for(i=1; i<13; i++){
+//                         countArray[i] = 0;
+//                         }  
+                    
+//                         var wrongWait = setTimeout(pairNotFound, 750);
+//                         function pairNotFound(){
+//                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                         }
+// }
+
+$('#gameRow').on('click', '.pairMatchID6', function(){ 
                 if (pairCounterArray[6] == 1){
                     pairCounterArray[6] = 2;
                     console.log(pairCounterArray[6]);
-
                     } else {
                         pairCounterArray[6] = 1;
-                        console.log(pairCounterArray[6]);
                         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
                         || pairCounterArray[5] == 1){
                         for(j=1; j<7; j++){
@@ -576,9 +589,60 @@ $('#gameRow').on('click', '#card11, #card12', function(){
                         function pairNotFound(){
                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+
                         }
-                    }}
+
+                        // notAPair();
+                    }
+                }
 });
+
+$('#gameRow').on('click', '.pairMatchID5', function(){ 
+                if (pairCounterArray[5] == 1){
+                    pairCounterArray[5] = 2;
+                    console.log(pairCounterArray[5]);
+                    } else {
+                        pairCounterArray[5] = 1;
+                    }
+                });
+
+$('#gameRow').on('click', '.pairMatchID4', function(){ 
+                if (pairCounterArray[4] == 1){
+                    pairCounterArray[4] = 2;
+                    console.log(pairCounterArray[4]);
+                    } else {
+                        pairCounterArray[4] = 1;
+                    }
+                });                
+
+$('#gameRow').on('click', '.pairMatchID3', function(){ 
+                if (pairCounterArray[3] == 1){
+                    pairCounterArray[3] = 2;
+                    console.log(pairCounterArray[3]);
+                    } else {
+                        pairCounterArray[3] = 1;
+                    }
+                });
+
+$('#gameRow').on('click', '.pairMatchID2', function(){ 
+                if (pairCounterArray[2] == 1){
+                    pairCounterArray[2] = 2;
+                    console.log(pairCounterArray[2]);
+                    } else {
+                        pairCounterArray[2] = 1;
+                    }
+                });
+
+$('#gameRow').on('click', '.pairMatchID1', function(){ 
+                if (pairCounterArray[1] == 1){
+                    pairCounterArray[1] = 2;
+                    console.log(pairCounterArray[1]);
+                    } else {
+                        pairCounterArray[1] = 1;
+                    }
+                });
+
+
 // function cardFunction12(){ 
 //     if(countArray[12] == 1){
 //         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -661,9 +725,10 @@ $('#gameRow').on('click', '.card', function(){
         var wait = setTimeout(pairFound, 1000);
         function pairFound(){
         $(`.pairMatchID${i}`).css("display", "none");
-        $("#card11Match, #card12Match").removeClass("display");
+        $(`.pairFound${i}`).removeClass("display");
         }
     }
+
 });
 
 
