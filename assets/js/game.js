@@ -648,7 +648,7 @@ function notAPair(){
 
 
 $('#gameRow').on('click', '.cardMatchID6', function(){
-                    //movesTaken++
+                    movesTaken++
                     console.log(movesTaken);
                     if (pairCounterArray[6] == 1){
                     pairCounterArray[6] = 2;
@@ -669,7 +669,7 @@ $('#gameRow').on('click', '.cardMatchID6', function(){
 
 
 $('#gameRow').on('click', '.cardMatchID5', function(){ 
-//movesTaken++
+movesTaken++
     console.log(movesTaken);
                 if (pairCounterArray[5] == 1){
                     pairCounterArray[5] = 2;
@@ -689,7 +689,7 @@ $('#gameRow').on('click', '.cardMatchID5', function(){
                 });
 
 $('#gameRow').on('click', '.cardMatchID4', function(){ 
-    //movesTaken++
+    movesTaken++
     console.log(movesTaken);
                 if (pairCounterArray[4] == 1){
                     pairCounterArray[4] = 2;
@@ -709,7 +709,7 @@ $('#gameRow').on('click', '.cardMatchID4', function(){
                 });                
 
 $('#gameRow').on('click', '.cardMatchID3', function(){ 
-    //movesTaken++
+    movesTaken++
     console.log(movesTaken);
                 if (pairCounterArray[3] == 1){
                     pairCounterArray[3] = 2;
@@ -729,7 +729,7 @@ $('#gameRow').on('click', '.cardMatchID3', function(){
                 });
 
 $('#gameRow').on('click', '.cardMatchID2', function(){ 
-    //movesTaken++
+    movesTaken++
     console.log(movesTaken);
                 if (pairCounterArray[2] == 1){
                     pairCounterArray[2] = 2;
@@ -749,7 +749,7 @@ $('#gameRow').on('click', '.cardMatchID2', function(){
                 });
 
 $('#gameRow').on('click', '.cardMatchID1', function(){ 
-    //movesTaken++
+    movesTaken++
     console.log(movesTaken);
                 if (pairCounterArray[1] == 1){
                     pairCounterArray[1] = 2;
