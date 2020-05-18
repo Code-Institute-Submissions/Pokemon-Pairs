@@ -122,83 +122,22 @@ function notAPair(){
     }                        
 }
 
-$('#gameRow').on('click', '.cardMatchID6', function(){
-                    movesTaken++
-                    console.log(movesTaken);
-                    if (pairCounterArray[6] == 1){
-                    pairCounterArray[6] = 2;
+$('#gameRow').on('click', '.cardMatchID1', function(){ 
+    movesTaken++
+    console.log(movesTaken);
+                if (pairCounterArray[1] == 1){
+                    pairCounterArray[1] = 2;
                     pairMatch++;
-                    console.log(pairCounterArray[6]);
+                    console.log(pairCounterArray[1]);
                     } else {
-                        
-                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
-                        || pairCounterArray[5] == 1){
+                        pairCounterArray[1] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
+                        || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
                         notAPair();
-                    } else {
-                        pairCounterArray[6] = 1;
-                        $(this).removeClass('cardMatchID6');
-                    }
-                }
-            
-});
-
-
-$('#gameRow').on('click', '.cardMatchID5', function(){ 
-movesTaken++
-    console.log(movesTaken);
-                if (pairCounterArray[5] == 1){
-                    pairCounterArray[5] = 2;
-                    pairMatch++;
-                    console.log(pairCounterArray[5]);
-                    } else {
-                        pairCounterArray[5] = 1;
-                        console.log("This is pairCounter1 " + pairCounterArray[1]);
-                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
-                            || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
-                                notAPair();
-                            }else {
-                        pairCounterArray[5] = 1;
-                        $(this).removeClass('cardMatchID5');
-                    }
-                    }
-                });
-
-$('#gameRow').on('click', '.cardMatchID4', function(){ 
-    movesTaken++
-    console.log(movesTaken);
-                if (pairCounterArray[4] == 1){
-                    pairCounterArray[4] = 2;
-                    pairMatch++;
-                    console.log(pairCounterArray[4]);
-                    } else {
-                        pairCounterArray[4] = 1;
-                        console.log("This is pairCounter1 " + pairCounterArray[1]);
-                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
-                            || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){
-                                notAPair();
-                            }else {
-                        pairCounterArray[4] = 1;
-                        $(this).removeClass('cardMatchID4');
-                    }
-                    }
-                });                
-
-$('#gameRow').on('click', '.cardMatchID3', function(){ 
-    movesTaken++
-    console.log(movesTaken);
-                if (pairCounterArray[3] == 1){
-                    pairCounterArray[3] = 2;
-                    pairMatch++;
-                    console.log(pairCounterArray[3]);
-                    } else {
-                        pairCounterArray[3] = 1;
-                        console.log("This is pairCounter1 " + pairCounterArray[1]);
-                        if ( pairCounterArray[2] == 1 || pairCounterArray[5] == 1 || pairCounterArray[1] == 1 
-                            || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
-                                notAPair();
-                            }else {
-                        pairCounterArray[3] = 1;
-                        $(this).removeClass('cardMatchID3');
+                        }else {
+                        pairCounterArray[1] = 1;
+                        $(this).removeClass('cardMatchID1');
                     }
                     }
                 });
@@ -223,25 +162,89 @@ $('#gameRow').on('click', '.cardMatchID2', function(){
                     }
                 });
 
-$('#gameRow').on('click', '.cardMatchID1', function(){ 
+$('#gameRow').on('click', '.cardMatchID3', function(){ 
     movesTaken++
     console.log(movesTaken);
-                if (pairCounterArray[1] == 1){
-                    pairCounterArray[1] = 2;
+                if (pairCounterArray[3] == 1){
+                    pairCounterArray[3] = 2;
                     pairMatch++;
-                    console.log(pairCounterArray[1]);
+                    console.log(pairCounterArray[3]);
                     } else {
-                        pairCounterArray[1] = 1;
+                        pairCounterArray[3] = 1;
                         console.log("This is pairCounter1 " + pairCounterArray[1]);
-                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
-                        || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
-                        notAPair();
-                        }else {
-                        pairCounterArray[1] = 1;
-                        $(this).removeClass('cardMatchID1');
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[5] == 1 || pairCounterArray[1] == 1 
+                            || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
+                                notAPair();
+                            }else {
+                        pairCounterArray[3] = 1;
+                        $(this).removeClass('cardMatchID3');
                     }
                     }
                 });
+
+$('#gameRow').on('click', '.cardMatchID4', function(){ 
+    movesTaken++
+    console.log(movesTaken);
+                if (pairCounterArray[4] == 1){
+                    pairCounterArray[4] = 2;
+                    pairMatch++;
+                    console.log(pairCounterArray[4]);
+                    } else {
+                        pairCounterArray[4] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
+                            || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){
+                                notAPair();
+                            }else {
+                        pairCounterArray[4] = 1;
+                        $(this).removeClass('cardMatchID4');
+                    }
+                    }
+                });                
+
+
+
+$('#gameRow').on('click', '.cardMatchID5', function(){ 
+movesTaken++
+    console.log(movesTaken);
+                if (pairCounterArray[5] == 1){
+                    pairCounterArray[5] = 2;
+                    pairMatch++;
+                    console.log(pairCounterArray[5]);
+                    } else {
+                        pairCounterArray[5] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
+                            || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
+                                notAPair();
+                            }else {
+                        pairCounterArray[5] = 1;
+                        $(this).removeClass('cardMatchID5');
+                    }
+                    }
+                });
+
+
+$('#gameRow').on('click', '.cardMatchID6', function(){
+                    movesTaken++
+                    console.log(movesTaken);
+                    if (pairCounterArray[6] == 1){
+                    pairCounterArray[6] = 2;
+                    pairMatch++;
+                    console.log(pairCounterArray[6]);
+                    } else {
+                        
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+                        || pairCounterArray[5] == 1){
+                        notAPair();
+                    } else {
+                        pairCounterArray[6] = 1;
+                        $(this).removeClass('cardMatchID6');
+                    }
+                }
+            
+});
+
  
  //Opening up the finished modal
 $("#game").click(function(){
@@ -285,8 +288,14 @@ $('#gameRow').on('click', '.card', function(){
         for(k=1; k<13; k++){
         $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
         }
-        $(`.cardMatchID${i}`).css("display", "none");
+        $(`.cardMatchID${i}`).fadeOut();
+        //$(`.cardMatchID${i}`).css("display", "none");
+
+        var delay = setTimeout(matchCardsAppear, 400);
+        function matchCardsAppear(){
         $(`.pairFound${i}`).removeClass("display");
+        }
+        
         }
     }
 
