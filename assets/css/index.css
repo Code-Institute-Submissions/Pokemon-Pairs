@@ -553,7 +553,7 @@ ul li {
 }
 
 /* Settings for screens bigger than iPad */
-@media screen and (min-width: 1024px) and (min-height: 1000px){
+/* @media screen and (min-width: 1024px) and (min-height: 1000px){
 
 .navbar .navbar-brand {
     width: 55%;
@@ -572,7 +572,7 @@ ul li {
 .display-cards {
     margin: 0 0 20px 145px;
 }
-}
+} */
 
 /* Laptop HD - Screen */
 @media screen and (min-width: 1400px) and (min-height: 899px){
@@ -631,6 +631,23 @@ ul li {
     height: 1326px;
     margin: 1rem 1rem 1rem 2.5rem;
 }
+.navbar .navbar-brand {
+    width: 55%;
+    height: 98px;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
+    font-size: 2.25rem;
+}
+
+.nav-item{
+    margin:0 15px;
+    width: auto;
+}
+
+.display-cards {
+    margin: 0 0 20px 145px;
+}
 
 .row {
     margin-top: 4.5rem;
@@ -671,6 +688,7 @@ ul li {
 #loading-gif{
     height: 487px;
 }
+
 }
 
 
