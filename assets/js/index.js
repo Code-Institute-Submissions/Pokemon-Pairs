@@ -121,7 +121,8 @@ $("#startGame").click(function(){
     for(j=1;j<13;j++){
         var pairArray =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
         $(`#card${j}Face`).addClass(`pair${pairArray[j]}`);
-        $(`#card${j}`).addClass(`pairMatchID${pairArray[j]}`)
+        $(`#card${j}`).addClass(`pairMatchID${pairArray[j]}`);
+        $(`#card${j}Match`).addClass(`pairFound${pairArray[j]}`)
     }   
             
     for(k=1; k<7; k++){
