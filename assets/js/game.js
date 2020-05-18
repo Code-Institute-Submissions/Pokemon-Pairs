@@ -7,7 +7,7 @@ results = ["-","-"];
 resultsTime = ["-", "-"]
 countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
 pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0];  
-click = 0;
+pairMatch = 0;
 
 
 //***************************************************************Results
@@ -17,7 +17,7 @@ $("#startGame").click(function(){
     movesTaken = 0;  
     var stopWatch = setInterval(timer, 1000);
     function timer(){
-        if(click < 6){
+        if(pairMatch < 6){
             timeTaken++;
             $("#gridItemTimerDisplay").html(timeTaken + " seconds");
         } else{
@@ -111,11 +111,11 @@ function cardFunction1(){
         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
     } else {
         //this checks to see if the pair has already been selected. If it has it redeclares it as two
-        movesTaken++;
+        //movesTaken++;
         countArray[1] = 1;
         if (pairCounterArray[1] == 1){
             pairCounterArray[1] = 2;
-            click++;
+            pairMatch++;
             var wait = setTimeout(pairFound, 1000);
             function pairFound(){
                 $("#card1, #card2").css("display", "none");
@@ -157,12 +157,12 @@ function cardFunction2(){
         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
 
-        movesTaken++;
+        //movesTaken++;
         countArray[2] = 1;
 
         if (pairCounterArray[1] == 1){
                 pairCounterArray[1] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card1, #card2").css("display", "none");
@@ -203,11 +203,11 @@ function cardFunction3(){
         } else {
             $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            movesTaken++;
+            //movesTaken++;
             countArray[3] = 1;
             if (pairCounterArray[2] == 1){
                 pairCounterArray[2] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card3, #card4").css("display", "none");
@@ -245,11 +245,11 @@ function cardFunction4(){
     } else {
         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        movesTaken++;
+        //movesTaken++;
         countArray[4] = 1;
         if (pairCounterArray[2] == 1){
                 pairCounterArray[2] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card3, #card4").css("display", "none");
@@ -286,11 +286,11 @@ function cardFunction5(){
         } else {
             $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            movesTaken++;
+            //movesTaken++;
             countArray[5] = 1;
             if (pairCounterArray[3] == 1){
                 pairCounterArray[3] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card5, #card6").css("display", "none");
@@ -329,11 +329,11 @@ function cardFunction6(){
         } else {
             $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            movesTaken++;         
+            //movesTaken++;         
             countArray[6] = 1;
             if (pairCounterArray[3] == 1){
                 pairCounterArray[3] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card5, #card6").css("display", "none");
@@ -367,12 +367,12 @@ function cardFunction7(){
         } else {
             $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            movesTaken++;
+            //movesTaken++;
             
             countArray[7] = 1;
             if (pairCounterArray[4] == 1){
                 pairCounterArray[4] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card7, #card8").css("display", "none");
@@ -410,11 +410,11 @@ function cardFunction8(){
     } else {
         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        movesTaken++;
+        //movesTaken++;
         countArray[8] = 1;
         if (pairCounterArray[4] == 1){
                 pairCounterArray[4] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card7, #card8").css("display", "none");
@@ -451,11 +451,11 @@ function cardFunction9(){
     } else {
         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        movesTaken++;  
+        //movesTaken++;  
         countArray[9] = 1;
         if (pairCounterArray[5] == 1){
                 pairCounterArray[5] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card9, #card10").css("display", "none");
@@ -493,11 +493,11 @@ function cardFunction10(){
     } else {
         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        movesTaken++;
+        //movesTaken++;
         countArray[10] = 1;
         if (pairCounterArray[5] == 1){
                 pairCounterArray[5] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card9, #card10").css("display", "none");
@@ -534,11 +534,11 @@ function cardFunction11(){
     } else {
         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        movesTaken++;
+        //movesTaken++;
         countArray[11] = 1;
         if (pairCounterArray[6] == 1){
                 pairCounterArray[6] = 2;
-                click++;
+                pairMatch++;
                 var wait = setTimeout(pairFound, 1000);
                 function pairFound(){
                     $("#card11, #card12").css("display", "none");
@@ -575,11 +575,11 @@ function cardFunction12(){
         } else {
             $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            movesTaken++;
+            //movesTaken++;
             countArray[12] = 1;
             if (pairCounterArray[6] == 1){
                     pairCounterArray[6] = 2;
-                    click++;
+                    pairMatch++;
                     var wait = setTimeout(pairFound, 1000);
                         function pairFound(){
                             $("#card11, #card12").css("display", "none");
@@ -613,7 +613,7 @@ function cardFunction12(){
  //Opening up the finished modal
 $("#game").click(function(){
     $("#startGame").addClass("display");
-    if(click == 6){
+    if(pairMatch == 6){
         var revealTime = setTimeout(revealCards,1000);
         function revealCards(){
         //change this to a for loop.
@@ -637,3 +637,9 @@ $("#game").click(function(){
         }
     }        
 }); 
+
+$('#gameRow').on('click', '.cover', function(){
+    console.log("Card clicked");
+    movesTaken++
+    console.log(movesTaken);
+});
