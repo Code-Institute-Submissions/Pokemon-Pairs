@@ -103,494 +103,494 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 });
 
 
-function cardFunction1(){
+// function cardFunction1(){
   
-    //this makes sure if the card is already turned around, nothing happens.
-    if(countArray[1] == 1){
-        $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     //this makes sure if the card is already turned around, nothing happens.
+//     if(countArray[1] == 1){
+//         $("#card1 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card1 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
      
-    } else {
-        //this checks to see if the pair has already been selected. If it has it redeclares it as two
+//     } else {
+//         //this checks to see if the pair has already been selected. If it has it redeclares it as two
         
-        countArray[1] = 1;
-        if (pairCounterArray[1] == 1){
-            pairCounterArray[1] = 2;
-            pairMatch++;
-            var wait = setTimeout(pairFound, 1000);
-            function pairFound(){
-                $("#card1, #card2").css("display", "none");
-                $("#card1Match, #card2Match").removeClass("display");  
-            }
-        } else { 
-                //if this is the first of the pair, it will put if as one.
-                // pairCounterArray[1] = 1;
-            pairCounterArray[1] = 1;
-            } 
+//         countArray[1] = 1;
+//         if (pairCounterArray[1] == 1){
+//             pairCounterArray[1] = 2;
+//             pairMatch++;
+//             var wait = setTimeout(pairFound, 1000);
+//             function pairFound(){
+//                 $("#card1, #card2").css("display", "none");
+//                 $("#card1Match, #card2Match").removeClass("display");  
+//             }
+//         } else { 
+//                 //if this is the first of the pair, it will put if as one.
+//                 // pairCounterArray[1] = 1;
+//             pairCounterArray[1] = 1;
+//             } 
         
-            //this checks no other card has been turned over.
-        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
-            for(j=1; j<7; j++){
-                pairCounterArray[j] = 0;
-            }  
+//             //this checks no other card has been turned over.
+//         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
+//             for(j=1; j<7; j++){
+//                 pairCounterArray[j] = 0;
+//             }  
 
-            for(i=1; i<13; i++){
-                countArray[i] = 0;
-            }  
+//             for(i=1; i<13; i++){
+//                 countArray[i] = 0;
+//             }  
 
-            var wrongWait = setTimeout(pairNotFound, 750);
-            function pairNotFound(){                  
-                $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");    
-            }          
-        } 
-    }  
+//             var wrongWait = setTimeout(pairNotFound, 750);
+//             function pairNotFound(){                  
+//                 $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                 $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");    
+//             }          
+//         } 
+//     }  
         
-};
+// };
 
-function cardFunction2(){
+// function cardFunction2(){
     
-    if(countArray[2] == 1){
-        $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    } else {
-        $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     if(countArray[2] == 1){
+//         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     } else {
+//         $("#card2 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card2 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
 
         
-        countArray[2] = 1;
+//         countArray[2] = 1;
 
-        if (pairCounterArray[1] == 1){
-                pairCounterArray[1] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card1, #card2").css("display", "none");
-                    $("#card1Match, #card2Match").removeClass("display");
-                }
-        } else { 
-            pairCounterArray[1] = 1;
-            if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
-             || pairCounterArray[6] == 1){
+//         if (pairCounterArray[1] == 1){
+//                 pairCounterArray[1] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card1, #card2").css("display", "none");
+//                     $("#card1Match, #card2Match").removeClass("display");
+//                 }
+//         } else { 
+//             pairCounterArray[1] = 1;
+//             if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
+//              || pairCounterArray[6] == 1){
     
-                for(j=1; j<7; j++){
-                    pairCounterArray[j] = 0;
-                } 
+//                 for(j=1; j<7; j++){
+//                     pairCounterArray[j] = 0;
+//                 } 
 
-                for(i=1; i<13; i++){
-                countArray[i] = 0;
-                }
+//                 for(i=1; i<13; i++){
+//                 countArray[i] = 0;
+//                 }
 
-                var wrongWait = setTimeout(pairNotFound, 750);
-                function pairNotFound(){            
+//                 var wrongWait = setTimeout(pairNotFound, 750);
+//                 function pairNotFound(){            
 
-                $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");              
-                } 
-            } 
-        } 
-    }
-};
+//                 $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                 $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");              
+//                 } 
+//             } 
+//         } 
+//     }
+// };
   
 
-function cardFunction3(){
+// function cardFunction3(){
    
-    //stops the same card being clicked twice.
-        if(countArray[3] == 1){
-            $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        } else {
-            $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     //stops the same card being clicked twice.
+//         if(countArray[3] == 1){
+//             $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//         } else {
+//             $("#card3 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card3 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
            
-            countArray[3] = 1;
-            if (pairCounterArray[2] == 1){
-                pairCounterArray[2] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card3, #card4").css("display", "none");
-                    $("#card3Match, #card4Match").removeClass("display");
-                }
-            } else { 
-                pairCounterArray[2] = 1;
-                if ( pairCounterArray[1] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
-                || pairCounterArray[6] == 1){
-                    for(j=1; j<7; j++){
-                        pairCounterArray[j] = 0;
-                    }  
+//             countArray[3] = 1;
+//             if (pairCounterArray[2] == 1){
+//                 pairCounterArray[2] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card3, #card4").css("display", "none");
+//                     $("#card3Match, #card4Match").removeClass("display");
+//                 }
+//             } else { 
+//                 pairCounterArray[2] = 1;
+//                 if ( pairCounterArray[1] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
+//                 || pairCounterArray[6] == 1){
+//                     for(j=1; j<7; j++){
+//                         pairCounterArray[j] = 0;
+//                     }  
                  
-                    for(i=1; i<13; i++){
-                        countArray[i] = 0;
-                    }
+//                     for(i=1; i<13; i++){
+//                         countArray[i] = 0;
+//                     }
                 
-                    var wrongWait = setTimeout(pairNotFound, 750);
-                    function pairNotFound(){
+//                     var wrongWait = setTimeout(pairNotFound, 750);
+//                     function pairNotFound(){
                         
-                    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-                    } 
-                }   
-            }
-        }
-};
+//                     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                     } 
+//                 }   
+//             }
+//         }
+// };
 
-function cardFunction4(){
+// function cardFunction4(){
   
-    if(countArray[4] == 1){
-        $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    } else {
-        $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     if(countArray[4] == 1){
+//         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     } else {
+//         $("#card4 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card4 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         
-        countArray[4] = 1;
-        if (pairCounterArray[2] == 1){
-                pairCounterArray[2] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card3, #card4").css("display", "none");
-                    $("#card3Match, #card4Match").removeClass("display");
-                }
-        } else { 
-                pairCounterArray[2] = 1;
-                if ( pairCounterArray[1] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
-                || pairCounterArray[6] == 1){
-                    for(j=1; j<7; j++){
-                        pairCounterArray[j] = 0;
-                    }  
-                    for(i=1; i<13; i++){
-                        countArray[i] = 0;
-                    } 
+//         countArray[4] = 1;
+//         if (pairCounterArray[2] == 1){
+//                 pairCounterArray[2] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card3, #card4").css("display", "none");
+//                     $("#card3Match, #card4Match").removeClass("display");
+//                 }
+//         } else { 
+//                 pairCounterArray[2] = 1;
+//                 if ( pairCounterArray[1] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
+//                 || pairCounterArray[6] == 1){
+//                     for(j=1; j<7; j++){
+//                         pairCounterArray[j] = 0;
+//                     }  
+//                     for(i=1; i<13; i++){
+//                         countArray[i] = 0;
+//                     } 
                     
-                    var wrongWait = setTimeout(pairNotFound, 750);
-                    function pairNotFound(){             
-                        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-                    } 
-                } 
-        }
-    }
-};
+//                     var wrongWait = setTimeout(pairNotFound, 750);
+//                     function pairNotFound(){             
+//                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                     } 
+//                 } 
+//         }
+//     }
+// };
 
-function cardFunction5(){
+// function cardFunction5(){
         
-        if(countArray[5] == 1){
-            $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        } else {
-            $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//         if(countArray[5] == 1){
+//             $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//         } else {
+//             $("#card5 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card5 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
           
-            countArray[5] = 1;
-            if (pairCounterArray[3] == 1){
-                pairCounterArray[3] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card5, #card6").css("display", "none");
-                    $("#card5Match, #card6Match").removeClass("display");
-                }
-            } else { 
-                pairCounterArray[3] = 1;
-                if ( pairCounterArray[2] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
-                || pairCounterArray[6] == 1){
-                    for(j=1; j<7; j++){
-                        pairCounterArray[j] = 0;
-                    }  
+//             countArray[5] = 1;
+//             if (pairCounterArray[3] == 1){
+//                 pairCounterArray[3] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card5, #card6").css("display", "none");
+//                     $("#card5Match, #card6Match").removeClass("display");
+//                 }
+//             } else { 
+//                 pairCounterArray[3] = 1;
+//                 if ( pairCounterArray[2] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
+//                 || pairCounterArray[6] == 1){
+//                     for(j=1; j<7; j++){
+//                         pairCounterArray[j] = 0;
+//                     }  
 
-                    for(i=1; i<13; i++){
-                        countArray[i] = 0;
-                    }
+//                     for(i=1; i<13; i++){
+//                         countArray[i] = 0;
+//                     }
 
-                    var wrongWait = setTimeout(pairNotFound, 750);
-                    function pairNotFound(){                 
-                        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");              
-                    } 
-                }         
-            }
-        }
-};
+//                     var wrongWait = setTimeout(pairNotFound, 750);
+//                     function pairNotFound(){                 
+//                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");              
+//                     } 
+//                 }         
+//             }
+//         }
+// };
   
 
-function cardFunction6(){
+// function cardFunction6(){
         
-        if(countArray[6] == 1){
-            $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        } else {
-            $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//         if(countArray[6] == 1){
+//             $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//         } else {
+//             $("#card6 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card6 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
              
-            countArray[6] = 1;
-            if (pairCounterArray[3] == 1){
-                pairCounterArray[3] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card5, #card6").css("display", "none");
-                    $("#card5Match, #card6Match").removeClass("display");
-                }
-            } else { 
-                pairCounterArray[3] = 1;
-                if ( pairCounterArray[2] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
-                || pairCounterArray[6] == 1){
-                    for(j=1; j<7; j++){
-                        pairCounterArray[j] = 0;
-                    }  
-                    for(i=1; i<13; i++){
-                        countArray[i] = 0;
-                    }  
+//             countArray[6] = 1;
+//             if (pairCounterArray[3] == 1){
+//                 pairCounterArray[3] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card5, #card6").css("display", "none");
+//                     $("#card5Match, #card6Match").removeClass("display");
+//                 }
+//             } else { 
+//                 pairCounterArray[3] = 1;
+//                 if ( pairCounterArray[2] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 || pairCounterArray[5] == 1 
+//                 || pairCounterArray[6] == 1){
+//                     for(j=1; j<7; j++){
+//                         pairCounterArray[j] = 0;
+//                     }  
+//                     for(i=1; i<13; i++){
+//                         countArray[i] = 0;
+//                     }  
                         
-                    var wrongWait = setTimeout(pairNotFound, 750);
-                    function pairNotFound(){
-                        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");   
-                    } 
-                } 
-            }
-        }
-};
+//                     var wrongWait = setTimeout(pairNotFound, 750);
+//                     function pairNotFound(){
+//                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");   
+//                     } 
+//                 } 
+//             }
+//         }
+// };
 
-function cardFunction7(){
+// function cardFunction7(){
     
-       if(countArray[7] == 1){
-            $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        } else {
-            $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//        if(countArray[7] == 1){
+//             $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//         } else {
+//             $("#card7 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card7 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
             
-            countArray[7] = 1;
-            if (pairCounterArray[4] == 1){
-                pairCounterArray[4] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card7, #card8").css("display", "none");
-                    $("#card7Match, #card8Match").removeClass("display");    
-                }
-            } else { 
-                pairCounterArray[4] = 1;      
-                if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[5] == 1 
-                || pairCounterArray[6] == 1){
-                    for(j=1; j<7; j++){
-                        pairCounterArray[j] = 0;
-                    }  
-                    for(i=1; i<13; i++){
-                        countArray[i] = 0;
-                    }  
+//             countArray[7] = 1;
+//             if (pairCounterArray[4] == 1){
+//                 pairCounterArray[4] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card7, #card8").css("display", "none");
+//                     $("#card7Match, #card8Match").removeClass("display");    
+//                 }
+//             } else { 
+//                 pairCounterArray[4] = 1;      
+//                 if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[5] == 1 
+//                 || pairCounterArray[6] == 1){
+//                     for(j=1; j<7; j++){
+//                         pairCounterArray[j] = 0;
+//                     }  
+//                     for(i=1; i<13; i++){
+//                         countArray[i] = 0;
+//                     }  
                  
-                    var wrongWait = setTimeout(pairNotFound, 750);
-                    function pairNotFound(){
-                        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");                
-                    } 
-                } 
-            }
-        }
-};
+//                     var wrongWait = setTimeout(pairNotFound, 750);
+//                     function pairNotFound(){
+//                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");                
+//                     } 
+//                 } 
+//             }
+//         }
+// };
 
    
 
-function cardFunction8(){
+// function cardFunction8(){
     
-    if(countArray[8] == 1){
-        $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    } else {
-        $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     if(countArray[8] == 1){
+//         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     } else {
+//         $("#card8 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card8 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
      
-        countArray[8] = 1;
-        if (pairCounterArray[4] == 1){
-                pairCounterArray[4] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card7, #card8").css("display", "none");
-                    $("#card7Match, #card8Match").removeClass("display");
-                }
-        } else { 
-            pairCounterArray[4] = 1;
-            if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[5] == 1 
-            || pairCounterArray[6] == 1){
-                for(j=1; j<7; j++){
-                    pairCounterArray[j] = 0;
-                }  
-                for(i=1; i<13; i++){
-                    countArray[i] = 0;
-                }  
+//         countArray[8] = 1;
+//         if (pairCounterArray[4] == 1){
+//                 pairCounterArray[4] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card7, #card8").css("display", "none");
+//                     $("#card7Match, #card8Match").removeClass("display");
+//                 }
+//         } else { 
+//             pairCounterArray[4] = 1;
+//             if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[5] == 1 
+//             || pairCounterArray[6] == 1){
+//                 for(j=1; j<7; j++){
+//                     pairCounterArray[j] = 0;
+//                 }  
+//                 for(i=1; i<13; i++){
+//                     countArray[i] = 0;
+//                 }  
                  
-                var wrongWait = setTimeout(pairNotFound, 750);
-                function pairNotFound(){                     
-                    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-                } 
-            } 
-        }
-    }
-};
+//                 var wrongWait = setTimeout(pairNotFound, 750);
+//                 function pairNotFound(){                     
+//                     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                 } 
+//             } 
+//         }
+//     }
+// };
 
 
-function cardFunction9(){ 
+// function cardFunction9(){ 
     
-    if(countArray[9] == 1){
-        $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    } else {
-        $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     if(countArray[9] == 1){
+//         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     } else {
+//         $("#card9 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card9 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         
-        countArray[9] = 1;
-        if (pairCounterArray[5] == 1){
-                pairCounterArray[5] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card9, #card10").css("display", "none");
-                    $("#card9Match, #card10Match").removeClass("display");
-                }
-        } else { 
-            pairCounterArray[5] = 1;
-            if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
-            || pairCounterArray[6] == 1){
-                for(j=1; j<7; j++){
-                    pairCounterArray[j] = 0;
-                }  
+//         countArray[9] = 1;
+//         if (pairCounterArray[5] == 1){
+//                 pairCounterArray[5] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card9, #card10").css("display", "none");
+//                     $("#card9Match, #card10Match").removeClass("display");
+//                 }
+//         } else { 
+//             pairCounterArray[5] = 1;
+//             if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+//             || pairCounterArray[6] == 1){
+//                 for(j=1; j<7; j++){
+//                     pairCounterArray[j] = 0;
+//                 }  
                 
-                for(i=1; i<13; i++){
-                    countArray[i] = 0;
-                }  
+//                 for(i=1; i<13; i++){
+//                     countArray[i] = 0;
+//                 }  
             
-                var wrongWait = setTimeout(pairNotFound, 750);
-                function pairNotFound(){
-                    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-                } 
-            }
-        }
-    }
-};
+//                 var wrongWait = setTimeout(pairNotFound, 750);
+//                 function pairNotFound(){
+//                     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                 } 
+//             }
+//         }
+//     }
+// };
 
 
-function cardFunction10(){
+// function cardFunction10(){
   
-    if(countArray[10] == 1){
-        $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    } else {
-        $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     if(countArray[10] == 1){
+//         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     } else {
+//         $("#card10 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card10 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
      
-        countArray[10] = 1;
-        if (pairCounterArray[5] == 1){
-                pairCounterArray[5] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card9, #card10").css("display", "none");
-                    $("#card9Match, #card10Match").removeClass("display");
+//         countArray[10] = 1;
+//         if (pairCounterArray[5] == 1){
+//                 pairCounterArray[5] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card9, #card10").css("display", "none");
+//                     $("#card9Match, #card10Match").removeClass("display");
                 
-                }
-        } else { 
-            pairCounterArray[5] = 1;
-            if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
-            || pairCounterArray[6] == 1){
-                for(j=1; j<7; j++){
-                    pairCounterArray[j] = 0; 
-                }  
-                for(i=1; i<13; i++){
-                    countArray[i] = 0;
-                }  
+//                 }
+//         } else { 
+//             pairCounterArray[5] = 1;
+//             if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+//             || pairCounterArray[6] == 1){
+//                 for(j=1; j<7; j++){
+//                     pairCounterArray[j] = 0; 
+//                 }  
+//                 for(i=1; i<13; i++){
+//                     countArray[i] = 0;
+//                 }  
                 
-                var wrongWait = setTimeout(pairNotFound, 750);
-                function pairNotFound(){
-                    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-                } 
-            } 
-        }    
-    }
-};
+//                 var wrongWait = setTimeout(pairNotFound, 750);
+//                 function pairNotFound(){
+//                     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                 } 
+//             } 
+//         }    
+//     }
+// };
   
-function cardFunction11(){ 
-    if(countArray[11] == 1){
-        $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    } else {
-        $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+// function cardFunction11(){ 
+//     if(countArray[11] == 1){
+//         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     } else {
+//         $("#card11 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card11 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         
-        countArray[11] = 1;
-        if (pairCounterArray[6] == 1){
-                pairCounterArray[6] = 2;
-                pairMatch++;
-                var wait = setTimeout(pairFound, 1000);
-                function pairFound(){
-                    $("#card11, #card12").css("display", "none");
-                    $("#card11Match, #card12Match").removeClass("display");
-                }
-        } else { 
-            pairCounterArray[6] = 1;
-            if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
-            || pairCounterArray[5] == 1){
-                for(j=1; j<7; j++){
-                    pairCounterArray[j] = 0;     
-                }  
-                for(i=1; i<13; i++){
-                    countArray[i] = 0;
-                }  
+//         countArray[11] = 1;
+//         if (pairCounterArray[6] == 1){
+//                 pairCounterArray[6] = 2;
+//                 pairMatch++;
+//                 var wait = setTimeout(pairFound, 1000);
+//                 function pairFound(){
+//                     $("#card11, #card12").css("display", "none");
+//                     $("#card11Match, #card12Match").removeClass("display");
+//                 }
+//         } else { 
+//             pairCounterArray[6] = 1;
+//             if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+//             || pairCounterArray[5] == 1){
+//                 for(j=1; j<7; j++){
+//                     pairCounterArray[j] = 0;     
+//                 }  
+//                 for(i=1; i<13; i++){
+//                     countArray[i] = 0;
+//                 }  
                  
-                var wrongWait = setTimeout(pairNotFound, 750);
-                function pairNotFound(){
-                    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-                } 
-            } 
-        }
-    }
-};
+//                 var wrongWait = setTimeout(pairNotFound, 750);
+//                 function pairNotFound(){
+//                     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                 } 
+//             } 
+//         }
+//     }
+// };
 
 
-function cardFunction12(){ 
-    if(countArray[12] == 1){
-        $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-        $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-        } else {
-            $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
-            $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
-            countArray[12] = 1;
-            if (pairCounterArray[6] == 1){
-                    pairCounterArray[6] = 2;
-                    pairMatch++;
-                    var wait = setTimeout(pairFound, 1000);
-                        function pairFound(){
-                            $("#card11, #card12").css("display", "none");
-                            $("#card11Match, #card12Match").removeClass("display");
-                        }
-            } else { 
-                pairCounterArray[6] = 1;
-                if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
-                || pairCounterArray[5] == 1){
-                    for(j=1; j<7; j++){
-                        pairCounterArray[j] = 0;
-                    }  
-                    for(i=1; i<13; i++){
-                        countArray[i] = 0;
-                    }  
+// function cardFunction12(){ 
+//     if(countArray[12] == 1){
+//         $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//         $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//         } else {
+//             $("#card12 > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
+//             $("#card12 > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//             countArray[12] = 1;
+//             if (pairCounterArray[6] == 1){
+//                     pairCounterArray[6] = 2;
+//                     pairMatch++;
+//                     var wait = setTimeout(pairFound, 1000);
+//                         function pairFound(){
+//                             $("#card11, #card12").css("display", "none");
+//                             $("#card11Match, #card12Match").removeClass("display");
+//                         }
+//             } else { 
+//                 pairCounterArray[6] = 1;
+//                 if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+//                 || pairCounterArray[5] == 1){
+//                     for(j=1; j<7; j++){
+//                         pairCounterArray[j] = 0;
+//                     }  
+//                     for(i=1; i<13; i++){
+//                         countArray[i] = 0;
+//                     }  
                     
-                    var wrongWait = setTimeout(pairNotFound, 750);
-                    function pairNotFound(){
-                        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-                    }     
-                }
-            }        
-    }
-};
+//                     var wrongWait = setTimeout(pairNotFound, 750);
+//                     function pairNotFound(){
+//                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+//                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+//                     }     
+//                 }
+//             }        
+//     }
+// };
   
 //End of code for animating cards 
  
@@ -624,12 +624,12 @@ $("#game").click(function(){
     }        
 }); 
 
-$('#gameRow').on('click', '.cover', function(){
+$('#gameRow').on('click', '.card', function(){
     console.log("Card clicked");
     movesTaken++
     console.log(movesTaken);
 
-    $(this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-    $(this > ".face").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
 });
 
