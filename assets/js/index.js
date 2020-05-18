@@ -106,6 +106,7 @@ $("#startGame").click(function(){
     }
     
     //Generating html for each card
+    var pairMatchID = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12];
     for(i=0; i<12; i++){
         $("#gameRow").append(`
                     <div id="card${shuffledCardID[i]}" class="col-4 col-sm-2  col-md-3 col-lg-2 col-xl-2 eight-cards card" onclick="cardFunction${shuffledCardID[i]}();">
@@ -120,6 +121,7 @@ $("#startGame").click(function(){
     for(j=1;j<13;j++){
         var pairArray =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
         $(`#card${j}Face`).addClass(`pair${pairArray[j]}`);
+        $(`#card${j}`).addClass(`pairMatchID${pairArray[j]}`)
     }   
             
     for(k=1; k<7; k++){
