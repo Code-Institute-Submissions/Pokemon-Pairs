@@ -262,7 +262,7 @@ $("#game").click(function(){
             $(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
             $(".card > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
         }
-        var wait = setTimeout(finishedModal, 2000);
+        var wait = setTimeout(finishedModal, 4000);
         function finishedModal(){
             $("#finishedModal").css("display", "block").addClass("in").addClass("show");
             $("#indexBody").addClass("modal-open");
