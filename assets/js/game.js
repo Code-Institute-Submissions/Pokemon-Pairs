@@ -288,8 +288,9 @@ $('#gameRow').on('click', '.card', function(){
         }
         $(`.cardMatchID${i}`).fadeOut();
         //$(`.cardMatchID${i}`).css("display", "none");
-
-        $(`.pairFound${i}`).removeClass("display");
+        var wait2 = setTimeout(pairFound2, 400);
+        function pairFound2(){
+        $(`.pairFound${i}`).removeClass("display");}
         }
     }}
 
