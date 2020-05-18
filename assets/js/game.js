@@ -554,31 +554,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 //     }
 // };
 
-// function notAPair(){
-//     alert("This function has been called");
-//     for(j=1; j<7; j++){
-//                         pairCounterArray[j] = 0;
-//                         }  
-//                         for(i=1; i<13; i++){
-//                         countArray[i] = 0;
-//                         }  
-                    
-//                         var wrongWait = setTimeout(pairNotFound, 750);
-//                         function pairNotFound(){
-//                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-//                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-//                         }
-// }
-
-$('#gameRow').on('click', '.pairMatchID6', function(){ 
-                if (pairCounterArray[6] == 1){
-                    pairCounterArray[6] = 2;
-                    console.log(pairCounterArray[6]);
-                    } else {
-                        pairCounterArray[6] = 1;
-                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
-                        || pairCounterArray[5] == 1){
-                        for(j=1; j<7; j++){
+function notAPair(){
+    for(j=1; j<7; j++){
                         pairCounterArray[j] = 0;
                         }  
                         for(i=1; i<13; i++){
@@ -589,10 +566,18 @@ $('#gameRow').on('click', '.pairMatchID6', function(){
                         function pairNotFound(){
                         $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
                         $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-
                         }
+}
 
-                        // notAPair();
+$('#gameRow').on('click', '.pairMatchID6', function(){ 
+                if (pairCounterArray[6] == 1){
+                    pairCounterArray[6] = 2;
+                    console.log(pairCounterArray[6]);
+                    } else {
+                        pairCounterArray[6] = 1;
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 || pairCounterArray[4] == 1 
+                        || pairCounterArray[5] == 1){
+                        notAPair();
                     }
                 }
 });
@@ -603,6 +588,11 @@ $('#gameRow').on('click', '.pairMatchID5', function(){
                     console.log(pairCounterArray[5]);
                     } else {
                         pairCounterArray[5] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
+                            || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
+                                notAPair();
+                            }
                     }
                 });
 
@@ -612,6 +602,11 @@ $('#gameRow').on('click', '.pairMatchID4', function(){
                     console.log(pairCounterArray[4]);
                     } else {
                         pairCounterArray[4] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
+                            || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){
+                                notAPair();
+                            }
                     }
                 });                
 
@@ -621,6 +616,11 @@ $('#gameRow').on('click', '.pairMatchID3', function(){
                     console.log(pairCounterArray[3]);
                     } else {
                         pairCounterArray[3] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[5] == 1 || pairCounterArray[1] == 1 
+                            || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
+                                notAPair();
+                            }
                     }
                 });
 
@@ -630,6 +630,11 @@ $('#gameRow').on('click', '.pairMatchID2', function(){
                     console.log(pairCounterArray[2]);
                     } else {
                         pairCounterArray[2] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[5] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
+                            || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
+                                notAPair();
+                            }
                     }
                 });
 
@@ -639,6 +644,11 @@ $('#gameRow').on('click', '.pairMatchID1', function(){
                     console.log(pairCounterArray[1]);
                     } else {
                         pairCounterArray[1] = 1;
+                        console.log("This is pairCounter1 " + pairCounterArray[1]);
+                        if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
+                        || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
+                        notAPair();
+                        }
                     }
                 });
 
