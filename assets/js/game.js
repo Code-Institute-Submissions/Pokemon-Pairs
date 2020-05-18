@@ -577,57 +577,57 @@ function notAPair(){
                         
 }
 
-$('#gameRow').on('click', '#card1', function(){ 
-    countArray[1] = 1;
-    $(this).removeClass('cardMatchID1');
-});
+// $('#gameRow').on('click', '#card1', function(){ 
+//     countArray[1] = 1;
+//     $(this).removeClass('cardMatchID1');
+// });
 
-$('#gameRow').on('click', '#card2', function(){ 
-    countArray[2] = 1;
-    $(this).removeClass('cardMatchID1');
-});
+// $('#gameRow').on('click', '#card2', function(){ 
+//     countArray[2] = 1;
+//     $(this).removeClass('cardMatchID1');
+// });
 
-$('#gameRow').on('click', '#card3', function(){ 
-    countArray[3] = 1;
-    $(this).removeClass('cardMatchID2');
-});
+// $('#gameRow').on('click', '#card3', function(){ 
+//     countArray[3] = 1;
+//     $(this).removeClass('cardMatchID2');
+// });
 
-$('#gameRow').on('click', '#card4', function(){ 
-    countArray[4] = 1;
-    $(this).removeClass('cardMatchID2');
-});
+// $('#gameRow').on('click', '#card4', function(){ 
+//     countArray[4] = 1;
+//     $(this).removeClass('cardMatchID2');
+// });
 
-$('#gameRow').on('click', '#card5', function(){ 
-    $(this).removeClass('cardMatchID3');
-});
+// $('#gameRow').on('click', '#card5', function(){ 
+//     $(this).removeClass('cardMatchID3');
+// });
 
-$('#gameRow').on('click', '#card6', function(){ 
-    $(this).removeClass('cardMatchID3');
-});
+// $('#gameRow').on('click', '#card6', function(){ 
+//     $(this).removeClass('cardMatchID3');
+// });
 
-$('#gameRow').on('click', '#card7', function(){ 
-    $(this).removeClass('cardMatchID4');
-});
+// $('#gameRow').on('click', '#card7', function(){ 
+//     $(this).removeClass('cardMatchID4');
+// });
 
-$('#gameRow').on('click', '#card8', function(){ 
-    $(this).removeClass('cardMatchID4');
-});
+// $('#gameRow').on('click', '#card8', function(){ 
+//     $(this).removeClass('cardMatchID4');
+// });
 
-$('#gameRow').on('click', '#card9', function(){ 
-    $(this).removeClass('cardMatchID5');
-});
+// $('#gameRow').on('click', '#card9', function(){ 
+//     $(this).removeClass('cardMatchID5');
+// });
 
-$('#gameRow').on('click', '#card10', function(){ 
-    $(this).removeClass('cardMatchID5');
-});
+// $('#gameRow').on('click', '#card10', function(){ 
+//     $(this).removeClass('cardMatchID5');
+// });
 
-$('#gameRow').on('click', '#card11', function(){ 
-    $(this).removeClass('cardMatchID6');
-});
+// $('#gameRow').on('click', '#card11', function(){ 
+//     //$(this).removeClass('cardMatchID6');
+// });
 
-$('#gameRow').on('click', '#card12', function(){ 
-    $(this).removeClass('cardMatchID6');
-});
+// $('#gameRow').on('click', '#card12', function(){ 
+//     //$(this).removeClass('cardMatchID6');
+// });
 
 
 
@@ -661,7 +661,7 @@ $('#gameRow').on('click', '.cardMatchID6', function(){
                         notAPair();
                     } else {
                         pairCounterArray[6] = 1;
-                        // $(this).removeClass('.cardMatchID6');
+                        $(this).removeClass('cardMatchID6');
                     }
                 }
             
@@ -681,7 +681,10 @@ $('#gameRow').on('click', '.cardMatchID5', function(){
                         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
                             || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
                                 notAPair();
-                            }
+                            }else {
+                        pairCounterArray[5] = 1;
+                        $(this).removeClass('cardMatchID5');
+                    }
                     }
                 });
 
@@ -698,7 +701,10 @@ $('#gameRow').on('click', '.cardMatchID4', function(){
                         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
                             || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){
                                 notAPair();
-                            }
+                            }else {
+                        pairCounterArray[4] = 1;
+                        $(this).removeClass('cardMatchID4');
+                    }
                     }
                 });                
 
@@ -715,7 +721,10 @@ $('#gameRow').on('click', '.cardMatchID3', function(){
                         if ( pairCounterArray[2] == 1 || pairCounterArray[5] == 1 || pairCounterArray[1] == 1 
                             || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
                                 notAPair();
-                            }
+                            }else {
+                        pairCounterArray[3] = 1;
+                        $(this).removeClass('cardMatchID3');
+                    }
                     }
                 });
 
@@ -732,7 +741,10 @@ $('#gameRow').on('click', '.cardMatchID2', function(){
                         if ( pairCounterArray[5] == 1 || pairCounterArray[3] == 1 || pairCounterArray[1] == 1 
                             || pairCounterArray[4] == 1 || pairCounterArray[6] == 1){
                                 notAPair();
-                            }
+                            }else {
+                        pairCounterArray[2] = 1;
+                        $(this).removeClass('cardMatchID2');
+                    }
                     }
                 });
 
@@ -749,7 +761,10 @@ $('#gameRow').on('click', '.cardMatchID1', function(){
                         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
                         || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
                         notAPair();
-                        }
+                        }else {
+                        pairCounterArray[1] = 1;
+                        $(this).removeClass('cardMatchID1');
+                    }
                     }
                 });
 
@@ -828,9 +843,15 @@ $('#gameRow').on('click', '.card', function(){
     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
     for (let i=1; i<7; i++)
     if(pairCounterArray[i] == 2){
+        
+
         console.log("We have a pair!");
         var wait = setTimeout(pairFound, 1000);
         function pairFound(){
+        var cardMatchingIDs =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
+        for(k=1; k<13; k++){
+        $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
+        }
         $(`.cardMatchID${i}`).css("display", "none");
         $(`.pairFound${i}`).removeClass("display");
         }
