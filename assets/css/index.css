@@ -48,9 +48,14 @@ body {
 }
 
 #gridItemGameInfo{
+
     grid-area: game-info;
     margin: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 #gridItemGame{
     grid-area: game;
     background-color: midnightblue;
