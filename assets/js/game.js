@@ -103,8 +103,6 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 });
 
 
-
-
 function cardFunction1(){
   
     //this makes sure if the card is already turned around, nothing happens.
@@ -618,7 +616,7 @@ $("#game").click(function(){
         function finishedModal(){
             $("#finishedModal").css("display", "block").addClass("in").addClass("show");
             $("#indexBody").addClass("modal-open");
-            click = 0;
+            pairMatch = 0;
             for(k=0; k<7; k++){
                 test.pop();
             }
