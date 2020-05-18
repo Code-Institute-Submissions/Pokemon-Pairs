@@ -633,3 +633,6 @@ $('#gameRow').on('click', '.card', function(){
     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
 });
 
+$('#gameRow').on('click', '#card11, #card12', function(){
+    console.log("You clicked 11 or 12");
+});
