@@ -277,10 +277,8 @@ $("#game").click(function(){
 $('#gameRow').on('click', '.card', function(){
     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
-    for (let i=1; i<7; i++)
+    for (let i=1; i<7; i++){
     if(pairCounterArray[i] == 2){
-        
-
         console.log("We have a pair!");
         var wait = setTimeout(pairFound, 1000);
         function pairFound(){
@@ -288,16 +286,12 @@ $('#gameRow').on('click', '.card', function(){
         for(k=1; k<13; k++){
         $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
         }
-        //$(`.cardMatchID${i}`).fadeOut();
-        $(`.cardMatchID${i}`).css("display", "none");
-
-        var delay = setTimeout(matchCardsAppear, 400);
-        function matchCardsAppear(){
+        $(`.cardMatchID${i}`).fadeOut();
+        //$(`.cardMatchID${i}`).css("display", "none");
+        
         $(`.pairFound${i}`).removeClass("display");
         }
-        
-        }
-    }
+    }}
 
 });
 
