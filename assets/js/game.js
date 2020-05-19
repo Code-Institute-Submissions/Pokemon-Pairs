@@ -26,7 +26,7 @@ $("#startGame").click(function(){
             results.sort(function(a, b){return a - b});
             resultsTime.unshift(timeTaken);
             resultsTime.sort(function(a, b){return a - b});
-
+            
             $("#totalMoves").html(`<h6>Total moves: ${movesTaken} </h6>`);
             $("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`);
 
@@ -36,6 +36,10 @@ $("#startGame").click(function(){
 
             for(j=1; j<4; j++){
             $(`#resultTime${j}`).html(` ${resultsTime[j-1]} seconds`);
+            var recordMoves = results.toString(",");
+            console.log(" moves " + recordMoves);
+            
+           
             }   
         }
     }
@@ -245,6 +249,28 @@ $('#gameRow').on('click', '.cardMatchID6', function(){
             
 });
 
+$('#gameRow').on('click', '.card', function(){
+    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
+    for (let i=1; i<7; i++){
+    if(pairCounterArray[i] == 2){
+        console.log("We have a pair!");
+        var wait = setTimeout(pairFound, 1000);
+        function pairFound(){
+        var cardMatchingIDs =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
+        for(k=1; k<13; k++){
+        $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
+        }
+        $(`.cardMatchID${i}`).fadeOut();
+        //$(`.cardMatchID${i}`).css("display", "none");
+        var wait2 = setTimeout(pairFound2, 400);
+        function pairFound2(){
+        $(`.pairFound${i}`).removeClass("display");}
+        }
+    }}
+
+});
+
  
  //Opening up the finished modal
 $("#game").click(function(){
@@ -274,26 +300,6 @@ $("#game").click(function(){
     }        
 }); 
 
-$('#gameRow').on('click', '.card', function(){
-    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
-    for (let i=1; i<7; i++){
-    if(pairCounterArray[i] == 2){
-        console.log("We have a pair!");
-        var wait = setTimeout(pairFound, 1000);
-        function pairFound(){
-        var cardMatchingIDs =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
-        for(k=1; k<13; k++){
-        $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
-        }
-        $(`.cardMatchID${i}`).fadeOut();
-        //$(`.cardMatchID${i}`).css("display", "none");
-        var wait2 = setTimeout(pairFound2, 400);
-        function pairFound2(){
-        $(`.pairFound${i}`).removeClass("display");}
-        }
-    }}
 
-});
 
 
