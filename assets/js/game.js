@@ -306,7 +306,9 @@ $('#gameRow').on('click', '.card', function(){
 $("#game").click(function(){
     $("#startGame").addClass("display");
     if(pairMatch == 6){
+       
         var revealTime = setTimeout(revealCards,2000);
+        toggleMainTheme();
         function revealCards(){
         //change this to a for loop.
             for(j=1; j<13; j++){
