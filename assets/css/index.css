@@ -173,7 +173,7 @@ ul li{
     font-size: 1.25rem;
 }
 
-.modal-header .fa-volume-up{
+.modal-header .fa-volume-up, #gridItemTimer .fa-volume-up{
     display: none;
 }
 
