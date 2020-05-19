@@ -7,9 +7,9 @@ var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "htt
 
 // Checking if this is the first time 
 $( document ).ready(function(){
+
   //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
 $("#mainThemeMusic").get(0).play();
-
 
 
     if (sessionStorage.name == null){
@@ -98,6 +98,8 @@ var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
 //Shuffling array found at this tutorial
 //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 $("#startGame").click(function(){
+     
+    $("#mainThemeMusic").get(0).pause();
     var shuffledCardID = shuffle(cardIDArray);
     function shuffle(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
