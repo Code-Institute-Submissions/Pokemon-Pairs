@@ -6,6 +6,17 @@ var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "htt
 
 // Checking if this is the first time 
 $( document ).ready(function(){
+console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
+if(sessionStorage.getItem("recordedMoves")== null){
+    alert("You got nothing there");
+}
+results = sessionStorage.getItem("recordedMoves").split(',');
+results.unshift("-", "-");
+console.log(results);
+
+
+//resultsTime = ["-", "-"]
+
     if (sessionStorage.name == null){
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
         var time = setTimeout(removeJumbo, 2000);
