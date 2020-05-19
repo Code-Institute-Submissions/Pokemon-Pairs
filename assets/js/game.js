@@ -16,47 +16,31 @@ $("#startGame").click(function(){
     timeTaken = 0;
     movesTaken = 0; 
 
-    console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
-    console.log("Storage  " + sessionStorage.getItem("recordedTime"));
   
    
         function resultToString(){
             recordMoves = results.toString(",");
-            console.log(" moves " + recordMoves);
+          
             recordTimes = resultsTime.toString(",");
-            console.log(" time " + recordTimes);
+            
         }
 
         function storageToArray(){
                results = sessionStorage.getItem("recordedMoves").split(",");
-    console.log("result " + results);
+
     resultsTime = sessionStorage.getItem("recordedTime").split(",");
-    console.log("result " + resultsTime);
+ 
         }
 
 
-    if(sessionStorage.getItem("recordedMoves") === null || sessionStorage.getItem("recordedMoves") === null ){
-        alert("session is null");
-        // recordMoves = results.toString(",");
-        // console.log(" moves " + recordMoves);
-        // recordTimes = resultsTime.toString(",");
-        // console.log(" time " + recordTimes);
+    if(sessionStorage.getItem("recordedMoves") === null || sessionStorage.getItem("recordedMoves") === null ){  
         resultToString();
         sessionStorage.setItem("recordedMoves", recordMoves);
         sessionStorage.setItem("recordedTime", recordTimes);
-        console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
-        console.log("Storage  " + sessionStorage.getItem("recordedTime"));
-    //     results = sessionStorage.getItem("recordedMoves").split(",");
-    // console.log("result " + results);
-    // resultsTime = sessionStorage.getItem("recordedTime").split(",");
-    // console.log("result " + resultsTime);
-    storageToArray();
 
+        storageToArray();
     } else {
-    results = sessionStorage.getItem("recordedMoves").split(",");
-    console.log("result " + results);
-    resultsTime = sessionStorage.getItem("recordedTime").split(",");
-    console.log("result " + resultsTime);
+    storageToArray();
     }
 
     var stopWatch = setInterval(timer, 1000);
@@ -65,9 +49,6 @@ $("#startGame").click(function(){
             timeTaken++;
             $("#gridItemTimerDisplay").html(timeTaken + " seconds");
         } else{
-            // console.log(sessionStorage.getItem("recordedMoves"));
-            // recordMoves.unshift(sessionStorage.getItem("recordedMoves"));
-            // console.log(recordMoves);
             clearInterval(stopWatch);
             results.unshift(movesTaken);
             results.sort(function(a, b){return a - b});
@@ -84,16 +65,10 @@ $("#startGame").click(function(){
             for(j=1; j<4; j++){
             $(`#resultTime${j}`).html(` ${resultsTime[j-1]} seconds`);
             }
-            recordMoves = results.toString(",");
-            console.log(" moves " + recordMoves);
-            recordTimes = resultsTime.toString(",");
-            console.log(" time " + recordTimes);
-            
+            resultToString();           
 
             sessionStorage.setItem("recordedMoves", recordMoves);
             sessionStorage.setItem("recordedTime", recordTimes);
-            console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
-            console.log("Storage  " + sessionStorage.getItem("recordedTime"));
            
                
         }
