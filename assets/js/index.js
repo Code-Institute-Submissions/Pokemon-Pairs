@@ -38,6 +38,18 @@ $("#mainThemeMusic").get(0).play();
             }        
 });
 
+$(".fa-volume-mute").click(function(){
+    alert("this has been pressed");
+    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    $("#mainThemeMusic").prop('muted', true);
+})
+
+$(".fa-volume-up").click(function(){
+    alert("this has been pressed");
+    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    $("#mainThemeMusic").prop('muted', false);
+})
+
 // Storing the players name when the user inputs the data
 $("#enterName").click(function(){
     var playerName = document.getElementById("nameInput").value;
