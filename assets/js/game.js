@@ -17,6 +17,10 @@ $("#startGame").click(function(){
     movesTaken = 0;  
     console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
     console.log("Storage  " + sessionStorage.getItem("recordedTime"));
+    results = sessionStorage.getItem("recordedMoves").split(",");
+    console.log("result " + results);
+    resultsTime = sessionStorage.getItem("recordedTime").split(",");
+    console.log("result " + resultsTime);
     var stopWatch = setInterval(timer, 1000);
     function timer(){
         if(pairMatch < 6){
@@ -45,7 +49,7 @@ $("#startGame").click(function(){
             recordMoves = results.toString(",");
             console.log(" moves " + recordMoves);
             recordTimes = resultsTime.toString(",");
-            console.log(" time " + recordMoves);
+            console.log(" time " + recordTimes);
             
 
             sessionStorage.setItem("recordedMoves", recordMoves);
