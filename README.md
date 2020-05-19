@@ -63,6 +63,9 @@ ___
 <span id="features"></span>
 ## Features
 
+1. Consistent navbar style across all pages.
+2. Link
+
 <span id="existingFeatures"></span>
 ### Existing Features
 
@@ -76,7 +79,8 @@ ___
 
 As this project is designed for children, it was imperative that I build in multiple fail-safes.
 These following design features are in place to stop children from unintentionally breaking the game.
-+ If the api doesn't load, then an emergency set of cards will be drawn. 
++ If the api doesn't load, then an emergency set of cards will be drawn.
++ If a child does not input their name, it has a default of "guest". 
 + Clicking on the same card consectutively will not affect the game.
 + Cards will disappear when a pair is chosen to prevent children from clicking them again. 
 + Users cannot swap difficulties halfway through a game. 
@@ -145,6 +149,8 @@ Media
 The photos used in this site were obtained from Google. They were all free so share and edit. 
 
 https://www.ionos.co.uk/tools/favicon-generator
+
+https://www.youtube.com/watch?v=PxzY57ImZdQ
 
 <span id="acknowledgements"></span>
 Acknowledgements  
