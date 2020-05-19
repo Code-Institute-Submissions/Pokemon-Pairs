@@ -8,10 +8,10 @@ var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "htt
 $( document ).ready(function(){
 console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
 if(sessionStorage.getItem("recordedMoves")== null){
-    alert("You got nothing there");
+    results.unshift("-", "-");
 }
 results = sessionStorage.getItem("recordedMoves").split(',');
-results.unshift("-", "-");
+
 console.log(results);
 
 
