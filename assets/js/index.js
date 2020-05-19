@@ -3,7 +3,13 @@ var nameChosen = 0;
 var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "https://images.pokemontcg.io/xyp/XY05_hires.png", "https://images.pokemontcg.io/xy11/41_hires.png", "https://images.pokemontcg.io/xy7/21_hires.png", "https://images.pokemontcg.io/dp6/107_hires.png", "https://images.pokemontcg.io/xy0/14_hires.png"]
 var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"]
 var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
+const mainTheme = document.getElementById("mainThemeMusic");
 
+
+//https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+function toggleMainTheme(){
+     return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
+}
 
 // Checking if this is the first time 
 $( document ).ready(function(){
@@ -99,7 +105,7 @@ var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
 //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 $("#startGame").click(function(){
      
-    $("#mainThemeMusic").get(0).pause();
+    toggleMainTheme();
     var shuffledCardID = shuffle(cardIDArray);
     function shuffle(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
