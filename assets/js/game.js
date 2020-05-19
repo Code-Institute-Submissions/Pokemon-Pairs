@@ -19,12 +19,22 @@ $("#startGame").click(function(){
     console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
     console.log("Storage  " + sessionStorage.getItem("recordedTime"));
   
-    if(sessionStorage.getItem("recordedMoves") === null){
+   
+        function resultToString(){
+            recordMoves = results.toString(",");
+            console.log(" moves " + recordMoves);
+            recordTimes = resultsTime.toString(",");
+            console.log(" time " + recordTimes);
+        }
+
+
+    if(sessionStorage.getItem("recordedMoves") === null || sessionStorage.getItem("recordedMoves") === null ){
         alert("session is null");
-        recordMoves = results.toString(",");
-        console.log(" moves " + recordMoves);
-        recordTimes = resultsTime.toString(",");
-        console.log(" time " + recordTimes);
+        // recordMoves = results.toString(",");
+        // console.log(" moves " + recordMoves);
+        // recordTimes = resultsTime.toString(",");
+        // console.log(" time " + recordTimes);
+        resultToString();
         sessionStorage.setItem("recordedMoves", recordMoves);
         sessionStorage.setItem("recordedTime", recordTimes);
         console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
