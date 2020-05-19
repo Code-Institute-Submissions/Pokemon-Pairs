@@ -15,12 +15,17 @@ pairMatch = 0;
 $("#startGame").click(function(){
     timeTaken = 0;
     movesTaken = 0;  
+    console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
+    console.log("Storage  " + sessionStorage.getItem("recordedTime"));
     var stopWatch = setInterval(timer, 1000);
     function timer(){
         if(pairMatch < 6){
             timeTaken++;
             $("#gridItemTimerDisplay").html(timeTaken + " seconds");
         } else{
+            // console.log(sessionStorage.getItem("recordedMoves"));
+            // recordMoves.unshift(sessionStorage.getItem("recordedMoves"));
+            // console.log(recordMoves);
             clearInterval(stopWatch);
             results.unshift(movesTaken);
             results.sort(function(a, b){return a - b});
@@ -37,12 +42,16 @@ $("#startGame").click(function(){
             for(j=1; j<4; j++){
             $(`#resultTime${j}`).html(` ${resultsTime[j-1]} seconds`);
             }
-            var recordMoves = results.toString(",");
+            recordMoves = results.toString(",");
             console.log(" moves " + recordMoves);
-            var recordTimes = resultsTime.toString(",");
-            console.log(" moves " + recordMoves);
+            recordTimes = resultsTime.toString(",");
+            console.log(" time " + recordMoves);
             
 
+            sessionStorage.setItem("recordedMoves", recordMoves);
+            sessionStorage.setItem("recordedTime", recordTimes);
+            console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
+            console.log("Storage  " + sessionStorage.getItem("recordedTime"));
            
                
         }
