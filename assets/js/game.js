@@ -27,6 +27,13 @@ $("#startGame").click(function(){
             console.log(" time " + recordTimes);
         }
 
+        function storageToArray(){
+               results = sessionStorage.getItem("recordedMoves").split(",");
+    console.log("result " + results);
+    resultsTime = sessionStorage.getItem("recordedTime").split(",");
+    console.log("result " + resultsTime);
+        }
+
 
     if(sessionStorage.getItem("recordedMoves") === null || sessionStorage.getItem("recordedMoves") === null ){
         alert("session is null");
@@ -39,10 +46,11 @@ $("#startGame").click(function(){
         sessionStorage.setItem("recordedTime", recordTimes);
         console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
         console.log("Storage  " + sessionStorage.getItem("recordedTime"));
-        results = sessionStorage.getItem("recordedMoves").split(",");
-    console.log("result " + results);
-    resultsTime = sessionStorage.getItem("recordedTime").split(",");
-    console.log("result " + resultsTime);
+    //     results = sessionStorage.getItem("recordedMoves").split(",");
+    // console.log("result " + results);
+    // resultsTime = sessionStorage.getItem("recordedTime").split(",");
+    // console.log("result " + resultsTime);
+    storageToArray();
 
     } else {
     results = sessionStorage.getItem("recordedMoves").split(",");
