@@ -4,21 +4,13 @@ var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "htt
 var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"]
 var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
 
+
 // Checking if this is the first time 
 $( document ).ready(function(){
-//     sessionStorage.setItem("recordedMoves", recordMoves);
-//     sessionStorage.setItem("recordedTime", recordTimes);
-//     console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
-   
-// if(sessionStorage.getItem("recordedMoves")== null){
-//     results.unshift("-", "-");
-// }
-// results = sessionStorage.getItem("recordedMoves").split(',');
-
-console.log(results);
+  //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
+$("#mainThemeMusic").get(0).play();
 
 
-//resultsTime = ["-", "-"]
 
     if (sessionStorage.name == null){
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
