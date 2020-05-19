@@ -36,11 +36,15 @@ $("#startGame").click(function(){
 
             for(j=1; j<4; j++){
             $(`#resultTime${j}`).html(` ${resultsTime[j-1]} seconds`);
+            }
             var recordMoves = results.toString(",");
             console.log(" moves " + recordMoves);
+            var recordTimes = resultsTime.toString(",");
+            console.log(" moves " + recordMoves);
             
+
            
-            }   
+               
         }
     }
 });
