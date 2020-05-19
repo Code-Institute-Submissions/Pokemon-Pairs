@@ -173,6 +173,10 @@ ul li{
     font-size: 1.25rem;
 }
 
+.modal-header .fa-volume-up{
+    display: none;
+}
+
 /* Difficulty selection */
 
 #difficultyMode{
