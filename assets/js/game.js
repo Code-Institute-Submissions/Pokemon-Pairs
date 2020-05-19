@@ -14,13 +14,20 @@ pairMatch = 0;
 
 $("#startGame").click(function(){
     timeTaken = 0;
-    movesTaken = 0;  
+    movesTaken = 0; 
+
     console.log("Storage  " + sessionStorage.getItem("recordedMoves"));
     console.log("Storage  " + sessionStorage.getItem("recordedTime"));
+
+    if(sessionStorage.getItem("recordedMoves") || sessionStorage.getItem("recordedTime") == null){
+        alert("session is null");
+    } else {
     results = sessionStorage.getItem("recordedMoves").split(",");
     console.log("result " + results);
     resultsTime = sessionStorage.getItem("recordedTime").split(",");
     console.log("result " + resultsTime);
+    }
+
     var stopWatch = setInterval(timer, 1000);
     function timer(){
         if(pairMatch < 6){
