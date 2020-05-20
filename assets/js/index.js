@@ -33,7 +33,7 @@ $(".fa-volume-up, #volumeAllowed").click(function(){
      console.log(sessionStorage.getItem("muted"));
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', false);
-    toggleMainTheme();
+    // toggleMainTheme();
     
 });
 
@@ -50,8 +50,9 @@ $( document ).ready(function(){
         $(".volume").click(function(){
 
         if(sessionStorage.muted == 0){
-                $(".fa-volume-up").css("display", "inline-block");
-                // toggleMainTheme();
+                // $(".fa-volume-up").css("display", "inline-block");
+                // $(".fa-volume-mute").css("display", "none");
+                toggleMainTheme();
                 $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
         }
         var time = setTimeout(removeJumbo, 2000);
@@ -69,6 +70,11 @@ $( document ).ready(function(){
               //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
             if(sessionStorage.muted == 0){
                toggleMainTheme();
+                } else {
+                    toggleMainTheme();
+                    if(sessionStorage.muted == 1){
+                        $("#mainThemeMusic").prop('muted', true);
+                    }
                 }
 
                 $("#playerName").html(sessionStorage.getItem("playerName"));
