@@ -4,7 +4,7 @@ var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "htt
 var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"]
 var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
 const mainTheme = document.getElementById("mainThemeMusic");
-
+var mute;
 
 //https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
 function toggleMainTheme(){
@@ -39,13 +39,16 @@ $("#mainThemeMusic").get(0).play();
 });
 
 $(".fa-volume-mute").click(function(){
-    alert("this has been pressed");
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', true);
+     mute = 1;
+     console.log(mute);
+     sessionStorage.setItem("muted", mute);
 })
 
 $(".fa-volume-up").click(function(){
-    alert("this has been pressed");
+    mute = 2;
+     console.log(mute);
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', false);
 })
