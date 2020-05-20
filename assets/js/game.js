@@ -299,16 +299,13 @@ $('#gameRow').on('click', '.card', function(){
  
  //Opening up the finished modal
 $("#game").click(function(){
-    $("#startGame").addClass("display");
+     $("#startGame").addClass("display");
     if(pairMatch == 6){
        
         var revealTime = setTimeout(revealCards,2000);
-        if(sessionStorage.muted == 0){
-            toggleMainTheme();
-    console.log("music playing");
-    }
         
         function revealCards(){
+            toggleMainTheme();
         //change this to a for loop.
             for(j=1; j<13; j++){
                 $(`#card${j}Match`).addClass("display");
