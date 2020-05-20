@@ -11,11 +11,6 @@ function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
 
-$("#homePage, #play").click(function(){
-    routeFromSupportPage = 1;
-    console.log(routeFromSupportPage);
-});
-
 
 $(".fa-volume-mute, #volumeNotAllowed").click(function(){
     $(".fa-volume-mute").css("display", "none");
@@ -94,6 +89,10 @@ $( document ).ready(function(){
 
 // Storing the players name when the user inputs the data
 $("#enterName").click(function(){
+    userInteraction = 1;
+    console.log(userInteraction);
+    sessionStorage.setItem("userInteraction", userInteraction);
+
     var playerName = document.getElementById("nameInput").value;
 	sessionStorage.setItem("playerName", playerName);
     sessionStorage.setItem("name", "1");
@@ -107,6 +106,24 @@ $("#enterName").click(function(){
 
 // Triggering the loading modal
 $("#easyButton, #mediumButton, #hardButton").click(function(){
+    // if(sessionStorage.userInteraction == 1){
+    //     if(sessionStorage.muted == 0){
+    //         alert("This has been reached");
+    //            toggleMainTheme();
+    //            $(".fa-volume-up").css("display", "none");
+    //                 $(".fa-volume-mute").css("display", "inline-block");
+               
+    //             } else {
+    //                 alert("Else has been reached.");
+    //                  $(".fa-volume-up").css("display", "inline-block");
+    //             $(".fa-volume-mute").css("display", "none");
+    //                 toggleMainTheme();
+    //                 if(sessionStorage.muted == 1){
+    //                     $("#mainThemeMusic").prop('muted', true);
+    //                 }
+    //             }
+    // }
+
     $("#difficultyModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
     
