@@ -21,6 +21,14 @@ function toggleSpeakerIconToLoud(){
     $(".fa-volume-mute").css("display", "none");
 }
 
+function playSongOnMute(){
+    toggleMainTheme();
+        if(sessionStorage.muted == 1){
+            toggleSpeakerIconToMuted();
+            $("#mainThemeMusic").prop('muted', true);
+        }
+}
+
 $(".fa-volume-up, #volumeNotAllowed").click(function(){
     toggleSpeakerIconToMuted();
     //https://codepen.io/calebzahnd/pen/VvZZeJ
@@ -56,11 +64,7 @@ $( document ).ready(function(){
                 toggleMainTheme();  
                 toggleSpeakerIconToLoud();  
         } else {
-                    toggleMainTheme();
-                    if(sessionStorage.muted == 1){
-                        toggleSpeakerIconToMuted();
-                        $("#mainThemeMusic").prop('muted', true);
-                    }
+                    playSongOnMute();
                 }
         var time = setTimeout(removeJumbo, 2000);
         function removeJumbo(){           
@@ -81,11 +85,7 @@ $( document ).ready(function(){
                
                 } else {
                 
-                    toggleMainTheme();
-                    if(sessionStorage.muted == 1){
-                        toggleSpeakerIconToMuted();
-                        $("#mainThemeMusic").prop('muted', true);
-                    }
+                    playSongOnMute();
                 }
 
                 $("#playerName").html(sessionStorage.getItem("playerName"));
@@ -136,24 +136,42 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     }
 });
 
+// var backupCardsArray;
+//         function selectImages(difficultyMode){
+//             if(apiResponseArray.length == 6) backupCardsArray = apiResponseArray;
+//             else if(difficultyMode == 1) backupCardsArray = backupCardsArrayEasy;
+//             else if (difficultyMode == 2) backupCardsArray = backupCardsArrayMedium;
+//             else backupCardsArray = backupCardsArrayHard;
+
+
 // Highlighting which difficulty the user has selected.
 $("#easyButton").click(function(){
-    $("#easy").addClass("active-mode");
-    $("#medium, #hard").removeClass("active-mode");
     difficultyMode = 1;
+    selectingActiveLink();
 });
 
 $("#mediumButton").click(function(){
-    $("#medium").addClass("active-mode");
-    $("#easy, #hard").removeClass("active-mode");
     difficultyMode = 2;
+    selectingActiveLink();
 });
 
 $("#hardButton").click(function(){
-    $("#hard").addClass("active-mode");
-    $("#medium, #easy").removeClass("active-mode");
     difficultyMode = 3;
+    selectingActiveLink();
 });
+
+
+var activeLink;
+var nonActiveLink;
+function selectingActiveLink(difficultyMode2){
+        console.log(difficultyMode);
+        if(difficultyMode == 1) activeLink = "#easy";
+        else if(difficultyMode == 2) activeLink = "#medium";
+        else activeLink = "#hard";
+
+        $(activeLink).addClass("active-mode");
+
+}
 
 //Opening up the display cards modal
 $("#seeCardsButton").click(function(){
