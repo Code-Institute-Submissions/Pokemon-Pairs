@@ -18,20 +18,15 @@ $("#startGame").click(function(){
 
   
    
-        function resultToString(){
-            recordMoves = results.toString(",");
-          
-            recordTimes = resultsTime.toString(",");
-            
-        }
+    function resultToString(){
+        recordMoves = results.toString(",");        
+        recordTimes = resultsTime.toString(",");        
+    }
 
-        function storageToArray(){
-               results = sessionStorage.getItem("recordedMoves").split(",");
-
-    resultsTime = sessionStorage.getItem("recordedTime").split(",");
- 
-        }
-
+    function storageToArray(){
+        results = sessionStorage.getItem("recordedMoves").split(",");
+        resultsTime = sessionStorage.getItem("recordedTime").split(",");
+    }
 
     if(sessionStorage.getItem("recordedMoves") === null || sessionStorage.getItem("recordedMoves") === null ){  
         resultToString();
@@ -308,7 +303,11 @@ $("#game").click(function(){
     if(pairMatch == 6){
        
         var revealTime = setTimeout(revealCards,2000);
-        toggleMainTheme();
+        if(sessionStorage.muted == 0){
+            toggleMainTheme();
+    console.log("music playing");
+    }
+        
         function revealCards(){
         //change this to a for loop.
             for(j=1; j<13; j++){

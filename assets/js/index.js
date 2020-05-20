@@ -11,14 +11,38 @@ function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
 
+$(".fa-volume-mute, #volumeNotAllowed").click(function(){
+    $(".fa-volume-mute").css("display", "none");
+    $(".fa-volume-up").css("display", "inline-block");
+    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    $("#mainThemeMusic").prop('muted', true);
+     mute = 1;
+     console.log(mute);
+     sessionStorage.setItem("muted", mute);
+     console.log(sessionStorage.getItem("muted"));
+});
+
+$(".fa-volume-up, #volumeAllowed").click(function(){
+     $(".fa-volume-mute").css("display", "inline-block");
+    $(".fa-volume-up").css("display", "none");
+    mute = 0;
+     console.log(mute);
+     sessionStorage.setItem("muted", mute);
+     console.log(sessionStorage.getItem("muted"));
+    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    $("#mainThemeMusic").prop('muted', false);
+});
+
 
 
 
 // Checking if this is the first time 
 $( document ).ready(function(){
+    if(sessionStorage.muted == null){
+        console.log(sessionStorage.muted);
     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
     $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
-
+    }
 });
 
 $(".volume").click(function(){
@@ -48,27 +72,7 @@ $(".volume").click(function(){
             }        
 });
 
-$(".fa-volume-mute").click(function(){
-    $(".fa-volume-mute").css("display", "none");
-    $(".fa-volume-up").css("display", "inline-block");
-    //https://codepen.io/calebzahnd/pen/VvZZeJ
-    $("#mainThemeMusic").prop('muted', true);
-     mute = 1;
-     console.log(mute);
-     sessionStorage.setItem("muted", mute);
-     console.log(sessionStorage.getItem("muted"));
-})
 
-$(".fa-volume-up").click(function(){
-     $(".fa-volume-mute").css("display", "inline-block");
-    $(".fa-volume-up").css("display", "none");
-    mute = 0;
-     console.log(mute);
-     sessionStorage.setItem("muted", mute);
-     console.log(sessionStorage.getItem("muted"));
-    //https://codepen.io/calebzahnd/pen/VvZZeJ
-    $("#mainThemeMusic").prop('muted', false);
-})
 
 // Storing the players name when the user inputs the data
 $("#enterName").click(function(){
