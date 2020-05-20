@@ -273,6 +273,58 @@ function notAPair(){
             
 // });
 
+var whichCardClicked; 
+
+
+$('#gameRow').on('click', '.cardMatchID1', function(){
+    
+    whichCardClicked = 1;
+});
+
+$('#gameRow').on('click', '.cardMatchID1', function(){
+    
+    whichCardClicked = 1;
+});
+
+$('#gameRow').on('click', '.cardMatchID2', function(){
+    whichCardClicked = 2;
+});
+
+$('#gameRow').on('click', '.cardMatchID2', function(){
+    whichCardClicked = 2;
+});
+
+$('#gameRow').on('click', '.cardMatchID3', function(){
+    whichCardClicked = 3;
+});
+
+$('#gameRow').on('click', '.cardMatchID3', function(){
+    whichCardClicked = 3;
+});
+
+$('#gameRow').on('click', '.cardMatchID4', function(){
+    whichCardClicked = 4;
+});
+
+$('#gameRow').on('click', '.cardMatchID4', function(){
+    whichCardClicked = 4;
+});
+
+$('#gameRow').on('click', '.cardMatchID5', function(){
+    whichCardClicked = 5;
+});
+
+$('#gameRow').on('click', '.cardMatchID5', function(){
+    whichCardClicked = 5;
+});
+
+$('#gameRow').on('click', '.cardMatchID6', function(){
+    whichCardClicked = 6;
+});
+
+$('#gameRow').on('click', '.cardMatchID12', function(){
+    whichCardClicked = 6;
+});
 
 
 
