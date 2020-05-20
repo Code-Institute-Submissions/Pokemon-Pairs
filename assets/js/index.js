@@ -37,20 +37,7 @@ $(".fa-volume-up, #volumeAllowed").click(function(){
 
 
 // Checking if this is the first time 
-$( document ).ready(function(){
-//     if(sessionStorage.muted == 1){
-
-//     }
-//     if(sessionStorage.muted == null){
-//         console.log(sessionStorage.muted);
-//     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
-//     $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
-//     }
-// });
-
-// $(".volume").click(function(){
-//     
-//     
+$( document ).ready(function(){    
     if (sessionStorage.name == null){
          $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
         $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
@@ -58,8 +45,7 @@ $( document ).ready(function(){
         $(".volume").click(function(){
 
         if(sessionStorage.muted == 0){
-                $("#mainThemeMusic").get(0).play();
-                console.log("music playing");
+                toggleMainTheme();
                 $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
         }
         var time = setTimeout(removeJumbo, 2000);
@@ -76,7 +62,7 @@ $( document ).ready(function(){
     } else {
               //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
             if(sessionStorage.muted == 0){
-                $("#mainThemeMusic").get(0).play();
+               toggleMainTheme();
                 console.log("music playing");
                 }
                 $("#playerName").html(sessionStorage.getItem("playerName"));
