@@ -118,6 +118,9 @@ $("#hardButton").click(function(){
     }
 });
 
+
+
+
 //This will be the code for animating the cards
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */

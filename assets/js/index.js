@@ -6,6 +6,9 @@ var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "htt
 const mainTheme = document.getElementById("mainThemeMusic");
 var mute;
 var supportPageSelected;
+
+// Sound Support
+
 //https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
 function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
@@ -50,9 +53,9 @@ $(".fa-volume-mute, #volumeAllowed").click(function(){
 });
 
 
+// *******************************************************************************
 
-
-// Checking if this is the first time 
+// Checking if this is the first time loggin on. 
 $( document ).ready(function(){    
     if (sessionStorage.name == null){
         $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
