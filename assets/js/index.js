@@ -43,12 +43,12 @@ $( document ).ready(function(){
         $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
 
-        $(".volume").click(function(){
-
+    $(".volume").click(function(){
+        $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
         if(sessionStorage.muted == 0){
               
                 toggleMainTheme();
-                $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
+                
         }
         var time = setTimeout(removeJumbo, 2000);
         function removeJumbo(){           
