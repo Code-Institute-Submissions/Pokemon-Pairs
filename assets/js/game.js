@@ -326,6 +326,15 @@ $('#gameRow').on('click', '.cardMatchID12', function(){
     whichCardClicked = 6;
 });
 
+var cardSelected;
+function cardFunction(whichCardClicked){
+            if(whichCardClicked == 1) cardSelected = '.cardMatchID1';
+            else if(whichCardClicked == 2) cardSelected = '.cardMatchID2';
+            else if (whichCardClicked == 3) cardSelected = '.cardMatchID3';
+            else if(whichCardClicked == 4) cardSelected = '.cardMatchID4';
+            else if (whichCardClicked == 5) cardSelected = '.cardMatchID5';
+            else cardSelected = '.cardMatch6';
+}
 
 
 
