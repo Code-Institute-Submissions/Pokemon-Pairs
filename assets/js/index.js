@@ -38,22 +38,30 @@ $(".fa-volume-up, #volumeAllowed").click(function(){
 
 // Checking if this is the first time 
 $( document ).ready(function(){
-    if(sessionStorage.muted == null){
-        console.log(sessionStorage.muted);
-    $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
-    $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
-    }
-});
+//     if(sessionStorage.muted == 1){
 
-$(".volume").click(function(){
-      //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
-    if(sessionStorage.muted == 0){
-    $("#mainThemeMusic").get(0).play();
-    console.log("music playing");
-    }
-    $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
+//     }
+//     if(sessionStorage.muted == null){
+//         console.log(sessionStorage.muted);
+//     $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+//     $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
+//     }
+// });
+
+// $(".volume").click(function(){
+//     
+//     
     if (sessionStorage.name == null){
+         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+        $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+        $(".volume").click(function(){
+
+        if(sessionStorage.muted == 0){
+                $("#mainThemeMusic").get(0).play();
+                console.log("music playing");
+                $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
+        }
         var time = setTimeout(removeJumbo, 2000);
         function removeJumbo(){           
             $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
@@ -64,11 +72,18 @@ $(".volume").click(function(){
                 $("#indexBody").addClass("modal-open");
             }
         }
+        });
     } else {
+              //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
+            if(sessionStorage.muted == 0){
+                $("#mainThemeMusic").get(0).play();
+                console.log("music playing");
+                }
                 $("#playerName").html(sessionStorage.getItem("playerName"));
                 $(".jumbotron").slideUp();
                 $("#difficultyModalTitle").html("Are you ready, " + sessionStorage.getItem("playerName") + "?");
                 $("#difficultyModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
+                
             }        
 });
 
