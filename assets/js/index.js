@@ -11,10 +11,18 @@ function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
 
-
-$(".fa-volume-up, #volumeNotAllowed").click(function(){
+function toggleSpeakerIconToMuted(){
     $(".fa-volume-up").css("display", "none");
     $(".fa-volume-mute").css("display", "inline-block");
+}
+
+function toggleSpeakerIconToLoud(){
+    $(".fa-volume-up").css("display", "inline-block");
+    $(".fa-volume-mute").css("display", "none");
+}
+
+$(".fa-volume-up, #volumeNotAllowed").click(function(){
+    toggleSpeakerIconToMuted();
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', true);
      mute = 1;
@@ -24,8 +32,7 @@ $(".fa-volume-up, #volumeNotAllowed").click(function(){
 });
 
 $(".fa-volume-mute, #volumeAllowed").click(function(){
-     $(".fa-volume-up").css("display", "inline-block");
-    $(".fa-volume-mute").css("display", "none");
+    toggleSpeakerIconToLoud();
     mute = 0;
      console.log(mute);
      sessionStorage.setItem("muted", mute);
@@ -46,12 +53,12 @@ $( document ).ready(function(){
     $(".volume").click(function(){
         $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
         if(sessionStorage.muted == 0){
-                toggleMainTheme();    
+                toggleMainTheme();  
+                toggleSpeakerIconToLoud();  
         } else {
-        $(".fa-volume-up").css("display", "inline-block");
-                $(".fa-volume-mute").css("display", "none");
                     toggleMainTheme();
                     if(sessionStorage.muted == 1){
+                        toggleSpeakerIconToMuted();
                         $("#mainThemeMusic").prop('muted', true);
                     }
                 }
@@ -70,14 +77,13 @@ $( document ).ready(function(){
               //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
             if(sessionStorage.muted == 0){
                toggleMainTheme();
-               $(".fa-volume-up").css("display", "none");
-                    $(".fa-volume-mute").css("display", "inline-block");
+               toggleSpeakerIconToLoud();
                
                 } else {
-                $(".fa-volume-up").css("display", "inline-block");
-                $(".fa-volume-mute").css("display", "none");
+                
                     toggleMainTheme();
                     if(sessionStorage.muted == 1){
+                        toggleSpeakerIconToMuted();
                         $("#mainThemeMusic").prop('muted', true);
                     }
                 }
@@ -111,24 +117,6 @@ $("#enterName").click(function(){
 
 // Triggering the loading modal
 $("#easyButton, #mediumButton, #hardButton").click(function(){
-    // if(sessionStorage.userInteraction == 1){
-    //     if(sessionStorage.muted == 0){
-    //         alert("This has been reached");
-    //            toggleMainTheme();
-    //            $(".fa-volume-up").css("display", "none");
-    //                 $(".fa-volume-mute").css("display", "inline-block");
-               
-    //             } else {
-    //                 alert("Else has been reached.");
-    //                  $(".fa-volume-up").css("display", "inline-block");
-    //             $(".fa-volume-mute").css("display", "none");
-    //                 toggleMainTheme();
-    //                 if(sessionStorage.muted == 1){
-    //                     $("#mainThemeMusic").prop('muted', true);
-    //                 }
-    //             }
-    // }
-
     $("#difficultyModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
     
