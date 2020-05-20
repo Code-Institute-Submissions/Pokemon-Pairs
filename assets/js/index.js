@@ -52,6 +52,11 @@ $(".fa-volume-mute, #volumeAllowed").click(function(){
     $("#mainThemeMusic").prop('muted', false);   
 });
 
+function turningCardsFaceDown(){
+    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
+    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+   
+}
 
 // *******************************************************************************
 
@@ -139,14 +144,6 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     }
 });
 
-// var backupCardsArray;
-//         function selectImages(difficultyMode){
-//             if(apiResponseArray.length == 6) backupCardsArray = apiResponseArray;
-//             else if(difficultyMode == 1) backupCardsArray = backupCardsArrayEasy;
-//             else if (difficultyMode == 2) backupCardsArray = backupCardsArrayMedium;
-//             else backupCardsArray = backupCardsArrayHard;
-
-
 // Highlighting which difficulty the user has selected.
 $("#easyButton").click(function(){
     difficultyMode = 1;
@@ -171,7 +168,6 @@ function selectingActiveLink(difficultyMode2){
         if(difficultyMode == 1) activeLink = "#easy";
         else if(difficultyMode == 2) activeLink = "#medium";
         else activeLink = "#hard";
-
         $(activeLink).addClass("active-mode");
 
 }
@@ -233,9 +229,8 @@ $("#startGame").click(function(){
     $("#gridItemName").toggleClass("display");
 
     //Ensuring all the cards are face down
-    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
-   
+    turningCardsFaceDown();
+
      var imageContainerArray = [];
         var backupCardsArray;
         function selectImages(difficultyMode){
@@ -282,8 +277,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
 
     // Displaying difficulty modal at the beginning of each new game.
     $("#gridItemTimerDisplay").html("0 seconds");
-    $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-    $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+   turningCardsFaceDown();
     $("#difficultyModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
 });
 

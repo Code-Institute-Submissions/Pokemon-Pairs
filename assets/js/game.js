@@ -137,8 +137,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 function notAPair(){
     var wrongWait = setTimeout(pairNotFound, 750);
                         function pairNotFound(){
-                        $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
-                        $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
+                        turningCardsFaceDown();
                         }
                     
     for(j=1; j<7; j++){
