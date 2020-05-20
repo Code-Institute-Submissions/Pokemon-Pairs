@@ -88,3 +88,25 @@ $('#gameRow').on('click', cardSelected, function(){
                     }
                     }
                 }); 
+
+
+
+
+// $('#gameRow').on('click', '.cardMatchID1', function(){ 
+//     movesTaken++
+//     console.log(movesTaken);
+//                 if (pairCounterArray[1] == 1){
+//                     pairCounterArray[1] = 2;
+//                     pairMatch++;
+//                     console.log(pairCounterArray[1]);
+//                     } else {
+                        
+//                         if ( pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
+//                         || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){  
+//                         notAPair();
+//                         }else {
+//                         pairCounterArray[1] = 1;
+//                         $(this).removeClass('cardMatchID1');
+//                     }
+//                     }
+//                 });
