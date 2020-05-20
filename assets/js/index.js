@@ -50,7 +50,7 @@ $( document ).ready(function(){
         $(".volume").click(function(){
 
         if(sessionStorage.muted == 0){
-                
+                $(".fa-volume-up").css("display", "inline-block");
                 // toggleMainTheme();
                 $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
         }
