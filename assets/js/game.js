@@ -336,6 +336,29 @@ function cardFunction(whichCardClicked){
             else cardSelected = '.cardMatch6';
 }
 
+$('#gameRow').on('click', cardSelected, function(){ 
+
+
+    
+    console.log("this is which card is clicked = " + whichCardClicked);
+    movesTaken++
+    console.log(movesTaken);
+                if (pairCounterArray[whichCardClicked] == 1){
+                    pairCounterArray[whichCardClicked] = 2;
+                    pairMatch++;
+
+
+
+                    } else {                        
+                        if ( pairCounterArray[1] == 1 || pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
+                        || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){
+                        notAPair();
+                            }else {
+                        pairCounterArray[whichCardClicked] = 1;
+                        $(this).removeClass(`cardMatchID${whichCardClicked}`);
+                    }
+                    }
+}); 
 
 
 $('#gameRow').on('click', '.card', function(){
