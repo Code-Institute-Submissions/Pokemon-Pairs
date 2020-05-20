@@ -12,9 +12,9 @@ function toggleMainTheme(){
 }
 
 
-$(".fa-volume-mute, #volumeNotAllowed").click(function(){
-    $(".fa-volume-mute").css("display", "none");
-    $(".fa-volume-up").css("display", "inline-block");
+$(".fa-volume-up, #volumeNotAllowed").click(function(){
+    $(".fa-volume-up").css("display", "none");
+    $(".fa-volume-mute").css("display", "inline-block");
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', true);
      mute = 1;
@@ -23,9 +23,9 @@ $(".fa-volume-mute, #volumeNotAllowed").click(function(){
      console.log(sessionStorage.getItem("muted"));
 });
 
-$(".fa-volume-up, #volumeAllowed").click(function(){
-     $(".fa-volume-mute").css("display", "inline-block");
-    $(".fa-volume-up").css("display", "none");
+$(".fa-volume-mute, #volumeAllowed").click(function(){
+     $(".fa-volume-up").css("display", "inline-block");
+    $(".fa-volume-mute").css("display", "none");
     mute = 0;
      console.log(mute);
      sessionStorage.setItem("muted", mute);
@@ -46,10 +46,15 @@ $( document ).ready(function(){
     $(".volume").click(function(){
         $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
         if(sessionStorage.muted == 0){
-              
-                toggleMainTheme();
-                
-        }
+                toggleMainTheme();    
+        } else {
+        $(".fa-volume-up").css("display", "inline-block");
+                $(".fa-volume-mute").css("display", "none");
+                    toggleMainTheme();
+                    if(sessionStorage.muted == 1){
+                        $("#mainThemeMusic").prop('muted', true);
+                    }
+                }
         var time = setTimeout(removeJumbo, 2000);
         function removeJumbo(){           
             $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
@@ -69,7 +74,7 @@ $( document ).ready(function(){
                     $(".fa-volume-mute").css("display", "inline-block");
                
                 } else {
-                     $(".fa-volume-up").css("display", "inline-block");
+                $(".fa-volume-up").css("display", "inline-block");
                 $(".fa-volume-mute").css("display", "none");
                     toggleMainTheme();
                     if(sessionStorage.muted == 1){
