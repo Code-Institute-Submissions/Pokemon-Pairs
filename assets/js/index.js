@@ -12,11 +12,7 @@ function toggleMainTheme(){
 }
 
 
-  //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
-if(sessionStorage.muted == 0){
-  $("#mainThemeMusic").get(0).play();
-  console.log("music playing");
-}
+
 
 // Checking if this is the first time 
 $( document ).ready(function(){
@@ -26,6 +22,11 @@ $( document ).ready(function(){
 });
 
 $(".volume").click(function(){
+      //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
+    if(sessionStorage.muted == 0){
+    $("#mainThemeMusic").get(0).play();
+    console.log("music playing");
+    }
     $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
     if (sessionStorage.name == null){
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
