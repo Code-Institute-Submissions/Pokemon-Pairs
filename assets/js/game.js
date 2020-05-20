@@ -216,7 +216,7 @@ $('#gameRow').on('click', cardSelected, function(){
                         notAPair();
                             }else {
                         pairCounterArray[whichCardClicked] = 1;
-                        $(this).removeClass(`cardMatchID${whichCardClicked}`);
+                        $(cardSelected).removeClass(`cardMatchID${whichCardClicked}`);
                     }
                     }
 }); 

@@ -95,7 +95,6 @@ $( document ).ready(function(){
                 
                     playSongOnMute();
                 }
-
                 $("#playerName").html(sessionStorage.getItem("playerName"));
                 $(".jumbotron").slideUp();
                 $("#difficultyModalTitle").html("Are you ready, " + sessionStorage.getItem("playerName") + "?");
