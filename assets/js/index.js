@@ -5,12 +5,16 @@ var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "
 var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
 const mainTheme = document.getElementById("mainThemeMusic");
 var mute;
-
+var supportPageSelected;
 //https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
 function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
 
+$("#homePage, #play").click(function(){
+    routeFromSupportPage = 1;
+    console.log(routeFromSupportPage);
+});
 
 
 $(".fa-volume-mute, #volumeNotAllowed").click(function(){
@@ -32,7 +36,7 @@ $(".fa-volume-up, #volumeAllowed").click(function(){
      sessionStorage.setItem("muted", mute);
      console.log(sessionStorage.getItem("muted"));
     //https://codepen.io/calebzahnd/pen/VvZZeJ
-    $("#mainThemeMusic").prop('muted', false);    
+    $("#mainThemeMusic").prop('muted', false);   
 });
 
 
@@ -41,7 +45,6 @@ $(".fa-volume-up, #volumeAllowed").click(function(){
 // Checking if this is the first time 
 $( document ).ready(function(){    
     if (sessionStorage.name == null){
-         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
         $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
 
