@@ -39,16 +39,22 @@ $("#mainThemeMusic").get(0).play();
 });
 
 $(".fa-volume-mute").click(function(){
+    $(".fa-volume-mute").css("display", "none");
+    $(".fa-volume-up").css("display", "inline-block");
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', true);
      mute = 1;
      console.log(mute);
      sessionStorage.setItem("muted", mute);
+     console.log(sessionStorage.getItem("muted"));
 })
 
 $(".fa-volume-up").click(function(){
+     $(".fa-volume-mute").css("display", "inline-block");
+    $(".fa-volume-up").css("display", "none");
     mute = 2;
      console.log(mute);
+     console.log(sessionStorage.getItem("muted"));
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', false);
 })
