@@ -11,13 +11,22 @@ function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
 
-// Checking if this is the first time 
-$( document ).ready(function(){
 
   //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
-$("#mainThemeMusic").get(0).play();
+if(sessionStorage.muted == 0){
+  $("#mainThemeMusic").get(0).play();
+  console.log("music playing");
+}
 
+// Checking if this is the first time 
+$( document ).ready(function(){
+    $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+    $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
 
+});
+
+$(".volume").click(function(){
+    $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
     if (sessionStorage.name == null){
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
         var time = setTimeout(removeJumbo, 2000);
@@ -52,8 +61,9 @@ $(".fa-volume-mute").click(function(){
 $(".fa-volume-up").click(function(){
      $(".fa-volume-mute").css("display", "inline-block");
     $(".fa-volume-up").css("display", "none");
-    mute = 2;
+    mute = 0;
      console.log(mute);
+     sessionStorage.setItem("muted", mute);
      console.log(sessionStorage.getItem("muted"));
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', false);
