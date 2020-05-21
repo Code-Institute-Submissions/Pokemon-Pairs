@@ -151,24 +151,33 @@
     font-size: 1.75rem;
 }
 
+#gameRow{
+    margin:0 0 0 0.83vw;
+}
+
 .col-md-3{
         -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    flex: 0 0 160px;
     max-width: 25%;
 }
 .eight-cards{
-    width: 160px;
+    width: 15.625vh;
     height: 22vh;
 }
 .gameIndividualCardWrapper:nth-child(odd){
     margin: 0;
 }
-.gameIndividualCardWrapper:nth-child(3n-2){
-    margin: 0 3vw 3vw 3vw;
+.gameIndividualCardWrapper:nth-child(4n-3){
+    margin: 0 0 6vw 3vw;
 }
 
-.gameIndividualCardWrapper:nth-last-child(3n-2){
+.gameIndividualCardWrapper:nth-child(n + 2){
     margin-left: 3vw;
+}
+
+
+.gameIndividualCardWrapper:nth-child(n + 9) {
+    margin-bottom: 0;
 }
 
 #difficultyMode{
