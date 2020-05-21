@@ -114,17 +114,18 @@
 
 
 @media screen and (min-width: 375px){
-    
- .eight-cards {
-   color: white;
-    background-color: midnightblue;
-    padding: 0 0;
-    width: 151px;
-    height: 32vh;
-    text-align: center;
-    margin-bottom: 10px;
-   
+    .gameIndividualCardWrapper:nth-child(odd) {
+    margin: 0 1vw 1vw 1vw;
 }
+
+.gameIndividualCardWrapper:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+#gameRow{
+    margin-left: 4.3125vw;
+}
+
 }
 
 
