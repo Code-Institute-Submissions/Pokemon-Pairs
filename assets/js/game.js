@@ -255,9 +255,15 @@ $('#gameRow').on('click', cardSelected, function(){
         
         pairCounterArray[cardA] = 0;
         pairCounterArray[cardB] = 0;
-
+        if(sessionStorage.muted == 0){
         $("#matchingPairMusic").get(0).play();
-
+        }
+        // if(sessionStorage.muted == 0){
+        //         toggleGameTheme();  
+        //         toggleSpeakerIconToLoud();  
+        // } else {
+        //             playGameThemeOnMute();
+        //         }
         console.log(pairCounterArray);
         console.log("We have a pair!");
         
