@@ -765,7 +765,9 @@ ul li {
 #easy, #medium, #hard{
     font-size: 2.25rem;
 }
-
+#gridItemGame {
+    margin: 50px 0;
+}
 .grid-game-info h6{
     font-size: 2.5rem;
 }
