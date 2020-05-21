@@ -351,18 +351,23 @@ $('#gameRow').on('click', cardSelected, function(){
         //     console.log(pairCounterArray);
         // }
         console.log("We have a pair!");
-        function fadingOutPairs(){
-        
+        //function fadingOutPairs(){
+        animationInProgress = 1;
+        console.log("animation " + animationInProgress);
         var wait = setTimeout(pairFound, 500);
         function pairFound(){
         
         $(`.cardMatchID${cardPair}`).fadeOut();
-       
+        
         var wait2 = setTimeout(pairFound2, 400);
         function pairFound2(){
         $(`.pairFound${cardPair}`).removeClass("display");}
-        }
+        
+        animationInProgress = 0;
+        console.log("animation " + animationInProgress);
     }
+   
+// }
     } else {  
     //Resets if a pair isn't found.
      pairCounterArray[whichCardClicked] = 0;
