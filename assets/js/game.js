@@ -359,7 +359,11 @@ $('#gameRow').on('click', cardSelected, function(){
      //if ( cardClicked already has a value )
     if (pairCounterArray[whichCardClicked] == 1 || pairCounterArray[whichCardClicked] == 1) {
         alert("Careful! You have already clicked this card");
-    } 
+    } else if(pairCounterArray[1] == 1 || pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1
+                    || pairCounterArray[5] == 1 || pairCounterArray[6] == 1 || pairCounterArray[7] == 1 ||pairCounterArray[8] == 1
+                    || pairCounterArray[9] == 1 || pairCounterArray[10] == 1 || pairCounterArray[11] == 1 || pairCounterArray[12] == 1){
+            notAPair();
+        }
     
 
 
