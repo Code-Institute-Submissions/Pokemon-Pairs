@@ -535,6 +535,10 @@ ul li {
     height: 370px;
 }
 
+#gridItemGameInfo{
+    position: static;
+}
+
 .row{
     margin-top: 3rem;
 }
