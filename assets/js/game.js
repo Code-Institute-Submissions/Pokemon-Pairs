@@ -334,19 +334,17 @@ $('#gameRow').on('click', cardSelected, function(){
     console.log(this);
     movesTaken++
      pairCounterArray[whichCardClicked] = 1;
-
-   
                
-               if (pairCounterArray[cardA] == 1 && pairCounterArray[cardB] == 1){
+    if (pairCounterArray[cardA] == 1 && pairCounterArray[cardB] == 1){
                     pairMatch++;
-                    alert("pair match has been reached");
-
-        console.log("We have a pair!");
-        var wait = setTimeout(pairFound, 1000);
-        function pairFound(){
+                  
         for(let i=0; i<13; i++){
             pairCounterArray[i] = 0;
         }
+        console.log("We have a pair!");
+        var wait = setTimeout(pairFound, 1000);
+        function pairFound(){
+        
         $(`.cardMatchID${cardPair}`).fadeOut();
        
         var wait2 = setTimeout(pairFound2, 400);
@@ -372,8 +370,6 @@ $('#gameRow').on('click', cardSelected, function(){
                 console.log(pairCounterArray[whichCardClicked]);
                 console.log(pairCounterArray);
               console.log("this is which card was clicked" + whichCardClicked);}
-                        
-                        //  $(`.cardMatchID${whichCardClicked}`, this).removeClass(`cardMatchID${whichCardClicked}`);
                       
                     }
                     
