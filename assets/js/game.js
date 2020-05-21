@@ -307,7 +307,9 @@ function clickedCard(whichCardClicked){
             else cardSelected = `.cardMatch12`;
 }
 
-
+var cardA;
+var cardB;
+var cardPair;
 
 
 
