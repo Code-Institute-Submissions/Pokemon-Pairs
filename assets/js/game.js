@@ -5,8 +5,8 @@ var ajaxCalls = [];
 var apiResponseArray = [];
 results = ["-","-"];
 resultsTime = ["-", "-"]
-countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
-pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0];  
+// countArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
+// pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0];  
 pairMatch = 0;
 
 
@@ -120,9 +120,9 @@ $("#hardButton").click(function(){
 /* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
    It has been modified to fit my purpose */
 $("#easyButton, #mediumButton, #hardButton").click(function(){
-    for(i=1; i<13; i++){
-        countArray[i] = 0;
-    } 
+    // for(i=1; i<13; i++){
+    //     countArray[i] = 0;
+    // } 
 
     for(j=1; j<7; j++){
         pairCounterArray[j] = 0;
@@ -135,101 +135,216 @@ function notAPair(){
                         turningCardsFaceDown();
                         }
                     
-    for(j=1; j<7; j++){
+    for(j=1; j<13; j++){
         pairCounterArray[j] = 0;
     }  
-    for(i=1; i<13; i++){
-        countArray[i] = 0;
-    }  
+    // for(i=1; i<13; i++){
+    //     countArray[i] = 0;
+    // }  
 
-    var cardMatchingIDs =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
-    for(k=1; k<13; k++){
-        $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
-    }                        
+    // var cardMatchingIDs =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
+    // for(k=1; k<13; k++){
+    //     $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
+    // }                        
 }
 
-var whichCardClicked; 
+// var whichCardClicked; 
 
-$('#gameRow').on('click', '.cardMatchID1', function(){ 
-    whichCardClicked = 1;
-});
+// $('#gameRow').on('click', '.cardMatchID1', function(){ 
+//     whichCardClicked = 1;
+// });
 
-$('#gameRow').on('click', '.cardMatchID2', function(){
-    whichCardClicked = 2;
-});
+// $('#gameRow').on('click', '.cardMatchID2', function(){
+//     whichCardClicked = 2;
+// });
 
-$('#gameRow').on('click', '.cardMatchID3', function(){
-    whichCardClicked = 3;
-});
+// $('#gameRow').on('click', '.cardMatchID3', function(){
+//     whichCardClicked = 3;
+// });
 
-$('#gameRow').on('click', '.cardMatchID4', function(){
-    whichCardClicked = 4;
-});
+// $('#gameRow').on('click', '.cardMatchID4', function(){
+//     whichCardClicked = 4;
+// });
 
-$('#gameRow').on('click', '.cardMatchID5', function(){
-    whichCardClicked = 5;
-});
+// $('#gameRow').on('click', '.cardMatchID5', function(){
+//     whichCardClicked = 5;
+// });
 
-$('#gameRow').on('click', '.cardMatchID6', function(){
-    whichCardClicked = 6;
-});
+// $('#gameRow').on('click', '.cardMatchID6', function(){
+//     whichCardClicked = 6;
+// });
 
 
 
-var cardSelected;
-function cardFunction(whichCardClicked){
+// var cardSelected;
+// var concatTest;
+// function cardFunction(whichCardClicked){
    
-        console.log(whichCardClicked);
-            if(whichCardClicked == 1) cardSelected = `.cardMatchID1`;
-            else if(whichCardClicked == 2) cardSelected = `.cardMatchID2`;
-            else if (whichCardClicked == 3) cardSelected = `.cardMatchID3`;
-            else if(whichCardClicked == 4) cardSelected = `.cardMatchID4`;
-            else if (whichCardClicked == 5) cardSelected = `.cardMatchID5`;
-            else cardSelected = `.cardMatch6`;
-}
-$('#gameRow').on('click', '.card', function(){
-    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
-    cardFunction(whichCardClicked);
-});
-$('#gameRow').on('click', cardSelected, function(){    
-    console.log(cardSelected);
-    console.log(this);
-    movesTaken++
-                if (pairCounterArray[whichCardClicked] == 1){
-                    pairCounterArray[whichCardClicked] = 2;
-                    pairMatch++;
-                    for (let i=1; i<7; i++){
-    if(pairCounterArray[i] == 2){
-        console.log("We have a pair!");
-        var wait = setTimeout(pairFound, 1000);
-        function pairFound(){
-        var cardMatchingIDs =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
-        for(k=1; k<13; k++){
-        $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
-        }
-        $(`.cardMatchID${i}`).fadeOut();
+//         console.log(whichCardClicked);
+//             if(whichCardClicked == 1) cardSelected = `.cardMatchID1`, concatTest = 7;
+//             else if(whichCardClicked == 2) cardSelected = `.cardMatchID2`;
+//             else if (whichCardClicked == 3) cardSelected = `.cardMatchID3`;
+//             else if(whichCardClicked == 4) cardSelected = `.cardMatchID4`;
+//             else if (whichCardClicked == 5) cardSelected = `.cardMatchID5`;
+//             else cardSelected = `.cardMatch6`;
+// }
+// $('#gameRow').on('click', '.card', function(){
+//     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+//     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
+//     cardFunction(whichCardClicked);
+// });
+// $('#gameRow').on('click', cardSelected, function(){    
+//     console.log(cardSelected);
+//     console.log("this is concat " + concatTest);
+//     console.log(this);
+//     movesTaken++
+//                 if (pairCounterArray[whichCardClicked] == 1){
+//                     pairCounterArray[whichCardClicked] = 2;
+//                     pairMatch++;
+//                     for (let i=1; i<7; i++){
+//     if(pairCounterArray[i] == 2){
+//         console.log("We have a pair!");
+//         var wait = setTimeout(pairFound, 1000);
+//         function pairFound(){
+//         var cardMatchingIDs =["placeholder",1,1,2,2,3,3,4,4,5,5,6,6];
+//         for(k=1; k<13; k++){
+//         $(`#card${k}`).addClass(`cardMatchID${cardMatchingIDs[k]}`);
+//         }
+//         $(`.cardMatchID${i}`).fadeOut();
        
-        var wait2 = setTimeout(pairFound2, 400);
-        function pairFound2(){
-        $(`.pairFound${i}`).removeClass("display");}
-        }
-    }}
-} else {                        
-                        if ( pairCounterArray[1] == 1 || pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
-                        || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){
-                        notAPair();
-                            }else {
-                        pairCounterArray[whichCardClicked] = 1;
-                        console.log("this is which card was clicked" + whichCardClicked);
+//         var wait2 = setTimeout(pairFound2, 400);
+//         function pairFound2(){
+//         $(`.pairFound${i}`).removeClass("display");}
+//         }
+//     }}
+// } else {                        
+//                         if ( pairCounterArray[1] == 1 || pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1 
+//                         || pairCounterArray[5] == 1 || pairCounterArray[6] == 1){
+//                         notAPair();
+//                             }else {
+//                         pairCounterArray[whichCardClicked] = 1;
+//                         console.log("this is which card was clicked" + whichCardClicked);
                         
-                         $(`cardMatchID${whichCardClicked}`, this).removeClass(`cardMatchID${whichCardClicked}`);
-                        // $(`.cardMatchID${whichCardClicked}`).removeClass(`cardMatchID${whichCardClicked}`);
-                        //$(`.cardMatchID${whichCardClicked}`).attr("disabled", "true");
-                    }
-                    }
-}); 
- 
+//                          $(`.cardMatchID${whichCardClicked}`, this).removeClass(`cardMatchID${whichCardClicked}`);
+//                         // $(`.cardMatchID${whichCardClicked}`).removeClass(`cardMatchID${whichCardClicked}`);
+//                         //$(`.cardMatchID${whichCardClicked}`).attr("disabled", "true");
+//                     }
+//                     }
+// }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  //Opening up the finished modal
 $("#game").click(function(){
      $("#startGame").addClass("display");
