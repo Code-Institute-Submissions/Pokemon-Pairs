@@ -363,7 +363,19 @@ $('#gameRow').on('click', cardSelected, function(){
                     || pairCounterArray[5] == 1 || pairCounterArray[6] == 1 || pairCounterArray[7] == 1 ||pairCounterArray[8] == 1
                     || pairCounterArray[9] == 1 || pairCounterArray[10] == 1 || pairCounterArray[11] == 1 || pairCounterArray[12] == 1){
             notAPair();
-        }
+        }else {
+                if(pairCounterArray[1] == 0 && pairCounterArray[2] == 0 && pairCounterArray[3] == 0 && pairCounterArray[4] == 0 
+                    && pairCounterArray[5] == 0 && pairCounterArray[6] == 0 && pairCounterArray[7] == 0 &&pairCounterArray[8] == 0
+                    && pairCounterArray[9] == 0 && pairCounterArray[10] == 0 && pairCounterArray[11] == 0 && pairCounterArray[12] == 0){
+                pairCounterArray[whichCardClicked] = 1;
+                console.log(pairCounterArray[whichCardClicked]);
+                console.log(pairCounterArray);
+              console.log("this is which card was clicked" + whichCardClicked);}
+                        
+                        //  $(`.cardMatchID${whichCardClicked}`, this).removeClass(`cardMatchID${whichCardClicked}`);
+                      
+                    }
+                    
     
 
 
