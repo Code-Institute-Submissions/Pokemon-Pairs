@@ -310,6 +310,14 @@ function clickedCard(whichCardClicked){
 var cardA;
 var cardB;
 var cardPair;
+function pairSelected(whichCardClicked){
+    if(whichCardClicked == 1 || whichCardClicked == 2) cardA = 1, cardB = 2, cardPair = 1; 
+    else if(whichCardClicked == 3 || whichCardClicked == 4) cardA = 3, cardB = 4, cardPair = 2; 
+    else if(whichCardClicked == 5 || whichCardClicked == 6) cardA = 5, cardB = 6, cardPair = 3; 
+    else if(whichCardClicked == 7 || whichCardClicked == 8) cardA = 7, cardB = 8, cardPair = 4; 
+    else if(whichCardClicked == 9 || whichCardClicked == 10) cardA = 9, cardB = 10, cardPair = 5; 
+    else cardA = 11, cardB = 12, cardPair = 6;   
+}
 
 
 
