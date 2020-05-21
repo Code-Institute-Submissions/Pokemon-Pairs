@@ -306,8 +306,16 @@ $("#game").click(function(){
 
         var revealTime = setTimeout(revealCards,2000);
         function revealCards(){
-            $("#gameThemeMusic").get(0).pause();
-            $("#endOfGameThemeMusic").get(0).play();
+            // $("#gameThemeMusic").get(0).pause();
+            // $("#endOfGameThemeMusic").get(0).play();
+
+            toggleGameTheme();
+     if(sessionStorage.muted == 0){
+                toggleEndOfGameTheme();  
+                toggleSpeakerIconToLoud();  
+        } else {
+                    playEndOfGameThemeOnMute();
+                }
         //change this to a for loop.
             for(j=1; j<13; j++){
                 $(`#card${j}Match`).addClass("display");
