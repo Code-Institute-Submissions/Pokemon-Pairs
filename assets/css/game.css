@@ -186,6 +186,36 @@
 }
 
 
+/* iPad Landscape */
+
+@media screen and (min-width: 1024px) and (max-height: 801px){
+.eight-cards{    
+    width: 18.25vh;
+    height: 26vh;
+}
+.col-lg-2{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 141px;
+    max-width: 25%;
+}
+
+.gameIndividualCardWrapper:nth-child(n + 2){
+    margin-left: 0;
+}
+    .gameIndividualCardWrapper:nth-child(odd) {
+    margin: 0 2.5vw 6vw 2.5vw;
+}
+
+.gameIndividualCardWrapper:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+#gameRow{
+    margin-left: 0;
+}
+
+}
+
 /******** iPad Pro - Portrait  ***********/
 @media screen and (min-width: 1024px) and (min-height: 1366px){
 .eight-cards {
@@ -208,6 +238,10 @@
     width: 188px;
     height: 26vh;
     margin-bottom: 48px;
+}
+
+.gameIndividualCardWrapper:nth-child(n + 2) {
+    margin-left: 2vw;
 }
 }
 

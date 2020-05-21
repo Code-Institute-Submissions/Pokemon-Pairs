@@ -348,12 +348,12 @@ h5{
         margin: 1.75rem auto;
     }
     
-   .eight-cards{ 
+   /* .eight-cards{ 
     width: 90px;
     height: 34vh;
     padding: 0;
     margin-left: 0;
-    }
+    } */
 
     #displayCardsWrapper{
         margin-top: 18px;
@@ -551,11 +551,11 @@ ul li {
     font-size: 2.5rem;
 }
 
-.eight-cards{
+/* .eight-cards{
     width: 136px;
     height: 25vh;
     margin-bottom: 42px;
-}
+} */
 
 .display-cards {
     margin: 0 0 20px 15px;
