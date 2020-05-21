@@ -174,22 +174,27 @@ $('#gameRow').on('click', '.cardMatchID6', function(){
     whichCardClicked = 6;
 });
 
-$('#gameRow').on('click', '.card', function(){
-    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
-});
+
 
 var cardSelected;
 function cardFunction(whichCardClicked){
-            if(whichCardClicked == 1) cardSelected = '.cardMatchID1';
-            else if(whichCardClicked == 2) cardSelected = '.cardMatchID2';
-            else if (whichCardClicked == 3) cardSelected = '.cardMatchID3';
-            else if(whichCardClicked == 4) cardSelected = '.cardMatchID4';
-            else if (whichCardClicked == 5) cardSelected = '.cardMatchID5';
-            else cardSelected = '.cardMatch6';
+   
+        console.log(whichCardClicked);
+            if(whichCardClicked == 1) cardSelected = `.cardMatchID1`;
+            else if(whichCardClicked == 2) cardSelected = `.cardMatchID2`;
+            else if (whichCardClicked == 3) cardSelected = `.cardMatchID3`;
+            else if(whichCardClicked == 4) cardSelected = `.cardMatchID4`;
+            else if (whichCardClicked == 5) cardSelected = `.cardMatchID5`;
+            else cardSelected = `.cardMatch6`;
 }
-
+$('#gameRow').on('click', '.card', function(){
+    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
+    cardFunction(whichCardClicked);
+});
 $('#gameRow').on('click', cardSelected, function(){    
+    console.log(cardSelected);
+    console.log(this);
     movesTaken++
                 if (pairCounterArray[whichCardClicked] == 1){
                     pairCounterArray[whichCardClicked] = 2;
@@ -216,7 +221,11 @@ $('#gameRow').on('click', cardSelected, function(){
                         notAPair();
                             }else {
                         pairCounterArray[whichCardClicked] = 1;
-                        $(cardSelected).removeClass(`cardMatchID${whichCardClicked}`);
+                        console.log("this is which card was clicked" + whichCardClicked);
+                        
+                         $(`cardMatchID${whichCardClicked}`, this).removeClass(`cardMatchID${whichCardClicked}`);
+                        // $(`.cardMatchID${whichCardClicked}`).removeClass(`cardMatchID${whichCardClicked}`);
+                        //$(`.cardMatchID${whichCardClicked}`).attr("disabled", "true");
                     }
                     }
 }); 
