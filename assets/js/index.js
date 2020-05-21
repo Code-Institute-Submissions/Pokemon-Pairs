@@ -13,6 +13,8 @@ var supportPageSelected;
 // Sound Support
 
 //https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+
+//Allows switching between play and pause.
 function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
 }
@@ -30,6 +32,7 @@ function toggleEndOfGameTheme(){
      return endTheme.paused ? endTheme.play() : endTheme.pause();
 }
 
+//Changes the visible sound icon
 function toggleSpeakerIconToMuted(){
     $(".fa-volume-up").css("display", "none");
     $(".fa-volume-mute").css("display", "inline-block");
@@ -40,11 +43,12 @@ function toggleSpeakerIconToLoud(){
     $(".fa-volume-mute").css("display", "none");
 }
 
+//Plays a theme on mute
 function playMainThemeOnMute(){
     toggleMainTheme();
         if(sessionStorage.muted == 1){
             toggleSpeakerIconToMuted();
-            $("#mainThemeMusic").prop('muted', true);
+            $(mainTheme).prop('muted', true);
         }
 }
 
@@ -52,7 +56,7 @@ function playGameThemeOnMute(){
     toggleGameTheme();
         if(sessionStorage.muted == 1){
             toggleSpeakerIconToMuted();
-            $("#gameThemeMusic").prop('muted', true);
+            $(gameTheme).prop('muted', true);
         }
 }
 
@@ -60,7 +64,7 @@ function playMatchingPairThemeOnMute(){
      toggleMatchingPairTheme();
         if(sessionStorage.muted == 1){
             toggleSpeakerIconToMuted();
-            $("#matchingPairMusic").prop('muted', true);
+            $(matchTheme).prop('muted', true);
         }
 }
 
@@ -68,32 +72,63 @@ function playEndOfGameThemeOnMute(){
      toggleEndOfGameTheme();
         if(sessionStorage.muted == 1){
             toggleSpeakerIconToMuted();
-            $("#endOfGameThemeMusic").prop('muted', true);
+            $(endTheme).prop('muted', true);
         }
 }
 
 
-   
-   
+
+//Will mute all songs   
 $(".fa-volume-up, #volumeNotAllowed").click(function(){
     toggleSpeakerIconToMuted();
     //https://codepen.io/calebzahnd/pen/VvZZeJ
     $("#mainThemeMusic").prop('muted', true);
+
      mute = 1;
      console.log(mute);
      sessionStorage.setItem("muted", mute);
      console.log(sessionStorage.getItem("muted"));
 });
 
-$(".fa-volume-mute, #volumeAllowed").click(function(){
+
+//Will allow specific songs to be played. 
+$(".mainThemeControl, #volumeAllowed").click(function(){
     toggleSpeakerIconToLoud();
     mute = 0;
      console.log(mute);
      sessionStorage.setItem("muted", mute);
      console.log(sessionStorage.getItem("muted"));
     //https://codepen.io/calebzahnd/pen/VvZZeJ
-    $("#mainThemeMusic").prop('muted', false);   
+    $(mainTheme).prop('muted', false);   
 });
+
+
+$(".endGameThemeControl, #volumeAllowed").click(function(){
+    toggleSpeakerIconToLoud();
+    mute = 0;
+     console.log(mute);
+     sessionStorage.setItem("muted", mute);
+     console.log(sessionStorage.getItem("muted"));
+    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    $(endTheme).prop('muted', false);   
+});
+
+$("#gameThemeControl, #volumeAllowed").click(function(){
+    toggleSpeakerIconToLoud();
+    mute = 0;
+     console.log(mute);
+     sessionStorage.setItem("muted", mute);
+     console.log(sessionStorage.getItem("muted"));
+    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    $(gameTheme).prop('muted', false);   
+});
+
+
+
+
+
+
+
 
 function turningCardsFaceDown(){
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
