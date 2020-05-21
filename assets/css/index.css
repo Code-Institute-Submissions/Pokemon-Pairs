@@ -173,11 +173,7 @@ ul li{
     font-size: 1.25rem;
 }
 
-.modal-header .fa-volume-up, #gridItemTimer .fa-volume-up{
-    display: none;
-}
 
-/* Difficulty selection */
 
 #difficultyMode{
     text-align: center;
@@ -397,8 +393,12 @@ h5{
     margin-top: 45px;
 }
 
-.grid-game-info h6 {
+.grid-game-info h6, .grid-game-info .fas {
     font-size: 2rem;
+}
+
+.grid-game-info .fas {
+    margin: 5px;
 }
 
 #easy, #medium, #hard {
