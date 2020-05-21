@@ -290,6 +290,23 @@ $('#gameRow').on('click', '#card12', function(){
     whichCardClicked = 12; 
 });
 
+var cardSelected;
+function clickedCard(whichCardClicked){
+        console.log(whichCardClicked);
+            if(whichCardClicked == 1) cardSelected = `#card1`;
+            else if(whichCardClicked == 2) cardSelected = `#card2`;
+            else if (whichCardClicked == 3) cardSelected = `#card3`;
+            else if(whichCardClicked == 4) cardSelected = `#card4`;
+            else if (whichCardClicked == 5) cardSelected = `#card5`;
+             else if(whichCardClicked == 6) cardSelected = `#card6`;
+            else if (whichCardClicked == 7) cardSelected = `#card7`;
+            else if(whichCardClicked == 8) cardSelected = `#card8`;
+            else if (whichCardClicked == 9) cardSelected = `#card9`;
+            else if(whichCardClicked == 10) cardSelected = `#card10`;
+            else if (whichCardClicked == 11) cardSelected = `#card11`;
+            else cardSelected = `.cardMatch12`;
+}
+
 
 
 
