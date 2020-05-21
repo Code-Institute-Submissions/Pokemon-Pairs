@@ -82,7 +82,9 @@ function playEndOfGameThemeOnMute(){
 $(".fa-volume-up, #volumeNotAllowed").click(function(){
     toggleSpeakerIconToMuted();
     //https://codepen.io/calebzahnd/pen/VvZZeJ
-    $("#mainThemeMusic").prop('muted', true);
+    $(gameTheme).prop('muted', true);
+    $(mainTheme).prop('muted', true);
+    $(endTheme).prop('muted', true);
 
      mute = 1;
      console.log(mute);
