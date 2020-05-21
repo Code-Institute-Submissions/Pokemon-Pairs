@@ -210,12 +210,12 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 
     if(sessionStorage.muted == 0){
                 $(mainTheme).prop('muted', false); 
-                toggleMainTheme();  
+                $(mainTheme).get(0).play();  
                 toggleSpeakerIconToLoud();  
         } else {
                     playMainThemeOnMute();
                 }
-                
+
     var timeBackup = setTimeout(backupCards, 60000);
     function backupCards(){
         if(apiResponseArray.length < 6){
@@ -361,6 +361,7 @@ $("#playAgainButton").click(function(){
 
 // Calculating the number of ajax calls previously made and alerting the user if they are close to the limit
 $("#playAgainButton, #playAgainButtonDisplay").click(function(){
+    $("#easy, #medium, #hard").removeClass("active-mode");
     $("#gameRow").html(``);
         var ajaxCallsSum = ajaxCalls.reduce(function(a, b){
                 return a + b;
