@@ -321,14 +321,16 @@ function pairSelected(whichCardClicked){
 
 
 $('#gameRow').on('click', '.card', function(){
+    
     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
     clickedCard(whichCardClicked);
+
      pairSelected(whichCardClicked); 
 });
 
 $('#gameRow').on('click', cardSelected, function(){ 
-     
+    
     console.log(cardSelected);
     console.log("card a is = " + pairCounterArray[cardA]);
     console.log(this);
@@ -340,12 +342,15 @@ $('#gameRow').on('click', cardSelected, function(){
 
         pairCounterArray[cardA] = 0;
         pairCounterArray[cardB] = 0;
+
+        console.log(pairCounterArray);
                   
         // for(let i=0; i<13; i++){
         //     pairCounterArray[i] = 0;
         //     console.log(pairCounterArray);
         // }
         console.log("We have a pair!");
+        function fadingOutPairs(){
         var wait = setTimeout(pairFound, 500);
         function pairFound(){
         
@@ -355,6 +360,7 @@ $('#gameRow').on('click', cardSelected, function(){
         function pairFound2(){
         $(`.pairFound${cardPair}`).removeClass("display");}
         }
+    }
     } else {  
     //Resets if a pair isn't found.
      pairCounterArray[whichCardClicked] = 0;
