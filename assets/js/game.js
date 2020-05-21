@@ -317,6 +317,7 @@ $("#game").click(function(){
 
             toggleGameTheme();
      if(sessionStorage.muted == 0){
+                $(endTheme).prop('muted', false);
                 toggleEndOfGameTheme();  
                 toggleSpeakerIconToLoud();  
         } else {

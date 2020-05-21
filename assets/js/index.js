@@ -101,7 +101,7 @@ $(".mainThemeControl, #volumeAllowed").click(function(){
      sessionStorage.setItem("muted", mute);
      console.log(sessionStorage.getItem("muted"));
     //https://codepen.io/calebzahnd/pen/VvZZeJ
-    $(mainTheme).prop('muted', false);   
+      $(mainTheme).prop('muted', false); 
 });
 
 
@@ -149,10 +149,11 @@ $( document ).ready(function(){
     $(".volume").click(function(){
         $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
         if(sessionStorage.muted == 0){
+                $(mainTheme).prop('muted', false); 
                 toggleMainTheme();  
                 toggleSpeakerIconToLoud();  
         } else {
-                    playSongOnMute();
+                    playMainThemeOnMute();
                 }
         var time = setTimeout(removeJumbo, 2000);
         function removeJumbo(){           
@@ -270,6 +271,8 @@ $("#startGame").click(function(){
     // $("#gameThemeMusic").prop("volume", "0.1");
     toggleMainTheme();
      if(sessionStorage.muted == 0){
+
+                $(gameTheme).prop('muted', false); 
                 toggleGameTheme();  
                 toggleSpeakerIconToLoud();  
         } else {
@@ -370,6 +373,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
 
 toggleEndOfGameTheme();
      if(sessionStorage.muted == 0){
+                $(mainTheme).prop('muted', false);
                 toggleMainTheme();  
                 toggleSpeakerIconToLoud();  
         } else {
