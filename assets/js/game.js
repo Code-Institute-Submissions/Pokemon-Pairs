@@ -233,7 +233,8 @@ function notAPair(){
 // }); 
 
 
-
+pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];  
+var whichCardClicked;
 
 
 
