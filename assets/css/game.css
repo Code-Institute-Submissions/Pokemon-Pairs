@@ -1,3 +1,6 @@
+#game{
+    text-align: center;
+}
  #gameRow {
     display: flex;
     -ms-flex-wrap: wrap;
@@ -5,6 +8,14 @@
     margin-right: 24px;
     margin-left: 34px;
  }
+
+ #gameCardWrapper{
+        margin: 5px;
+    }
+/* 
+ #gameCardWrapper:nth-last-child(1){
+        margin: 25px;
+    } */
  
  .container-fluid{
      padding-left: 0;

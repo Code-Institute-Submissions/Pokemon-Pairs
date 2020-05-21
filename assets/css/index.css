@@ -206,6 +206,7 @@ ul li{
 }
 
 
+
 /* Modals */
 
 .speaker{
@@ -326,6 +327,12 @@ h5{
     .navbar .navbar-brand-modal {
         height: 55px;
     }
+
+    #gridItemGameInfo{
+    position: static;
+    }
+    
+    
 
     #loading-gif{
     width: 36%;
