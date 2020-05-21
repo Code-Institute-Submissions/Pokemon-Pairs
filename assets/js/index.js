@@ -136,7 +136,7 @@ $( document ).ready(function(){
                
                 } else {
                 
-                    playSongOnMute();
+                    playMainThemeOnMute();
                 }
                 $("#playerName").html(sessionStorage.getItem("playerName"));
                 $(".jumbotron").slideUp();
