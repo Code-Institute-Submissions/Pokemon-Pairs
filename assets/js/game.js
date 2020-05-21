@@ -320,6 +320,13 @@ function pairSelected(whichCardClicked){
 }
 
 
+$('#gameRow').on('click', '.card', function(){
+    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
+    clickedCard(whichCardClicked);
+     pairSelected(whichCardClicked); 
+});
+
 
 
 
