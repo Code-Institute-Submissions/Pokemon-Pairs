@@ -11,6 +11,10 @@
 .gameIndividualCardWrapper:nth-child(odd){
     margin: 0 4vw 4vw 4vw;
 }
+
+.gameIndividualCardWrapper:nth-last-child(1), .gameIndividualCardWrapper:nth-last-child(2){
+    margin-bottom: 0;
+}
  /* #gameIndividualCardWrapper{
         margin: 5px;
     } */
