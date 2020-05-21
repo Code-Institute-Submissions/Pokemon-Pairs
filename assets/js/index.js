@@ -18,6 +18,7 @@ function toggleMainTheme(){
 }
 
 function toggleGameTheme(){
+     $("#gameThemeMusic").prop("volume", "0.1");
      return gameTheme.paused ? gameTheme.play() : gameTheme.pause();
 }
 
@@ -227,9 +228,16 @@ var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
 //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 $("#startGame").click(function(){
      
-    $("#mainThemeMusic").get(0).pause();
-    $("#gameThemeMusic").get(0).play();
-    $("#gameThemeMusic").prop("volume", "0.1");
+    // $("#mainThemeMusic").get(0).pause();
+    // $("#gameThemeMusic").get(0).play();
+    // $("#gameThemeMusic").prop("volume", "0.1");
+    toggleMainTheme();
+     if(sessionStorage.muted == 0){
+                toggleGameTheme();  
+                toggleSpeakerIconToLoud();  
+        } else {
+                    playGameThemeOnMute();
+                }
     
     var shuffledCardID = shuffle(cardIDArray);
     function shuffle(array) {
