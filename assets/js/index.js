@@ -207,7 +207,15 @@ $("#enterName").click(function(){
 $("#easyButton, #mediumButton, #hardButton").click(function(){
     $("#difficultyModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
-    
+
+    if(sessionStorage.muted == 0){
+                $(mainTheme).prop('muted', false); 
+                toggleMainTheme();  
+                toggleSpeakerIconToLoud();  
+        } else {
+                    playMainThemeOnMute();
+                }
+                
     var timeBackup = setTimeout(backupCards, 60000);
     function backupCards(){
         if(apiResponseArray.length < 6){
