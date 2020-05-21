@@ -319,19 +319,20 @@ function pairSelected(whichCardClicked){
     else cardA = 11, cardB = 12, cardPair = 6;   
 }
 
-var animationInProgress;
+var animationInProgress = 0;
 
 $('#gameRow').on('click', '.card', function(){
-    
+    if(animationInProgress == 0){
     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
     clickedCard(whichCardClicked);
 
      pairSelected(whichCardClicked); 
+    }
 });
 
 $('#gameRow').on('click', cardSelected, function(){ 
-    
+    if(animationInProgress == 0){
     console.log(cardSelected);
     console.log("card a is = " + pairCounterArray[cardA]);
     console.log(this);
@@ -363,8 +364,12 @@ $('#gameRow').on('click', cardSelected, function(){
         function pairFound2(){
         $(`.pairFound${cardPair}`).removeClass("display");}
         
-        animationInProgress = 0;
-        console.log("animation " + animationInProgress);
+        var animationResetDelay = setTimeout(resetAnimationValue,"2000");
+        function resetAnimationValue(){
+           animationInProgress = 0;
+        console.log("animation " + animationInProgress); 
+        }
+        
     }
    
 // }
@@ -394,6 +399,7 @@ $('#gameRow').on('click', cardSelected, function(){
 
 
 }
+    }
     });
 
 
