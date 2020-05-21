@@ -327,9 +327,17 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
         } 
     }
 
-   $("#endOfGameThemeMusic").get(0).pause();
-//    $("#mainThemeMusic").get(0).play();
-   toggleMainTheme();
+//    $("#endOfGameThemeMusic").get(0).pause();
+// //    $("#mainThemeMusic").get(0).play();
+//    toggleMainTheme();
+
+toggleEndOfGameTheme();
+     if(sessionStorage.muted == 0){
+                toggleMainTheme();  
+                toggleSpeakerIconToLoud();  
+        } else {
+                    playMainThemeOnMute();
+                }
     // Displaying difficulty modal at the beginning of each new game.
     $("#gridItemTimerDisplay").html("0 seconds");
    turningCardsFaceDown();
