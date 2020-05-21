@@ -36,6 +36,12 @@ body {
     width: 90%;
 }
 
+/********Music *********/
+
+#mainThemeMusic, #gameThemeMusic, #matchingPairMusic, #endOfGameThemeMusic{
+    display: none;
+}
+
 
 /****** Grid Layout for responsive design ********/
 
