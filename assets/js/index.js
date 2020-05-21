@@ -185,7 +185,10 @@ var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
 //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 $("#startGame").click(function(){
      
-      $("#mainThemeMusic").get(0).pause();
+    $("#mainThemeMusic").get(0).pause();
+    $("#gameThemeMusic").get(0).play();
+    $("#gameThemeMusic").prop("volume", "0.1");
+    
     var shuffledCardID = shuffle(cardIDArray);
     function shuffle(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
@@ -217,7 +220,7 @@ $("#startGame").click(function(){
         $(`#card${j}Face`).addClass(`pair${pairArray[j]}`);
         $(`#card${j}`).addClass(`cardMatchID${pairArray[j]}`);
         $(`#card${j}Cover`).addClass(`pairMatchID${pairArray[j]}`);
-        $(`#card${j}Match`).addClass(`pairFound${pairArray[j]}`)
+        $(`#card${j}Match`).addClass(`pairFound${pairArray[j]}`);
     }   
             
     for(k=1; k<7; k++){
