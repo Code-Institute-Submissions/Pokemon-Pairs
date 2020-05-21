@@ -287,23 +287,12 @@ $('#gameRow').on('click', cardSelected, function(){
                     || pairCounterArray[5] == 1 || pairCounterArray[6] == 1 || pairCounterArray[7] == 1 ||pairCounterArray[8] == 1
                     || pairCounterArray[9] == 1 || pairCounterArray[10] == 1 || pairCounterArray[11] == 1 || pairCounterArray[12] == 1){
             notAPair();
-        }else {
-        
-            var checking = 0;
-        for(let i=1; i<13; i++){
-            if(pairCounterArray[i] == 1){
-                checking++
-            }
-            console.log("Checking value = " + checking);
-        }
-        if(checking == 0){
-                
+        }else {             
                 pairCounterArray[whichCardClicked] = 1;
                 console.log(pairCounterArray[whichCardClicked]);
                 console.log(pairCounterArray);
               console.log("this is which card was clicked" + whichCardClicked);}
                       
-                    }
                     }
     }
     });
