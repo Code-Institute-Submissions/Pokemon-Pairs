@@ -355,7 +355,7 @@ $('#gameRow').on('click', cardSelected, function(){
         //function fadingOutPairs(){
         animationInProgress = 1;
         console.log("animation " + animationInProgress);
-        var wait = setTimeout(pairFound, 500);
+        var wait = setTimeout(pairFound, 1000);
         function pairFound(){
         
         $(`.cardMatchID${cardPair}`).fadeOut();
@@ -364,7 +364,7 @@ $('#gameRow').on('click', cardSelected, function(){
         function pairFound2(){
         $(`.pairFound${cardPair}`).removeClass("display");}
         
-        var animationResetDelay = setTimeout(resetAnimationValue,"2000");
+        var animationResetDelay = setTimeout(resetAnimationValue,"1000");
         function resetAnimationValue(){
            animationInProgress = 0;
         console.log("animation " + animationInProgress); 
