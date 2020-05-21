@@ -65,8 +65,10 @@ body {
 #gridItemGame{
     grid-area: game;
     background-color: midnightblue;
-    margin-top: 15px;
+    margin: 20px 0;
 }
+
+
 
 .grid-container{
      display: grid;
@@ -99,7 +101,7 @@ body {
 
 .navbar{
     text-align: center;
-    padding: 20px;
+    padding: 10px 15px;
 }
 
 .navbar .navbar-brand {
