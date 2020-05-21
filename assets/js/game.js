@@ -354,6 +354,7 @@ $('#gameRow').on('click', cardSelected, function(){
         $(`.pairFound${cardPair}`).removeClass("display");}
         }
     } else {  
+    //Resets if a pair isn't found.
      pairCounterArray[whichCardClicked] = 0;
      console.log(pairCounterArray);
      //if ( cardClicked already has a value )
