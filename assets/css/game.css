@@ -112,8 +112,8 @@
 }
 
 
-
-@media screen and (min-width: 375px){
+/* Landscape small mobile */
+@media screen and (min-width: 600px){
     .gameIndividualCardWrapper:nth-child(odd) {
     margin: 0 1vw 1vw 1vw;
 }
@@ -124,6 +124,13 @@
 
 #gameRow{
     margin-left: 4.3125vw;
+}
+
+}
+
+@media screen and (min-width: 667px){
+#gameRow{
+    margin-left: 6.2vw;
 }
 
 }
