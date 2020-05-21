@@ -319,6 +319,7 @@ function pairSelected(whichCardClicked){
     else cardA = 11, cardB = 12, cardPair = 6;   
 }
 
+var animationInProgress;
 
 $('#gameRow').on('click', '.card', function(){
     
@@ -351,6 +352,7 @@ $('#gameRow').on('click', cardSelected, function(){
         // }
         console.log("We have a pair!");
         function fadingOutPairs(){
+        
         var wait = setTimeout(pairFound, 500);
         function pairFound(){
         
