@@ -6,12 +6,14 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 6.225vw;
  }
-
- #gameIndividualCardWrapper{
+.gameIndividualCardWrapper:nth-child(odd){
+    margin: 0 4vw 4vw 4vw;
+}
+ /* #gameIndividualCardWrapper{
         margin: 5px;
-    }
+    } */
 /* 
  #gameCardWrapper:nth-last-child(1){
         margin: 25px;
@@ -22,6 +24,12 @@
      padding-right: 0;
  }
 
+.col-6 {
+    flex: 0 0 90px;
+    max-width: 50%;
+    padding: 0;
+}
+
 .eight-cards {
     color: white;
     background-color: midnightblue;
@@ -29,7 +37,7 @@
     width: 136px;
     height: 30vh;
     text-align: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
  .display-cards {
