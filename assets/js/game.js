@@ -236,7 +236,59 @@ function notAPair(){
 pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];  
 var whichCardClicked;
 
+$('#gameRow').on('click', '#card1', function(){ 
+    whichCardClicked = 1;
+});
 
+$('#gameRow').on('click', '#card2', function(){
+    whichCardClicked = 2;
+});
+
+$('#gameRow').on('click', '#card3', function(){
+    whichCardClicked = 3;
+});
+
+$('#gameRow').on('click', '#card4', function(){
+    whichCardClicked = 4;
+});
+
+$('#gameRow').on('click', '#card5', function(){
+    whichCardClicked = 5;
+});
+
+$('#gameRow').on('click', '#card6', function(){
+    whichCardClicked = 6;
+   
+});
+
+$('#gameRow').on('click', '#card7', function(){ 
+    whichCardClicked = 7;
+   
+});
+
+$('#gameRow').on('click', '#card8', function(){
+    whichCardClicked = 8;
+  
+});
+
+$('#gameRow').on('click', '#card9', function(){
+    whichCardClicked = 9;
+   
+});
+
+$('#gameRow').on('click', '#card10', function(){
+    whichCardClicked = 10;
+   
+});
+
+$('#gameRow').on('click', '#card11', function(){
+    whichCardClicked = 11;
+   
+});
+
+$('#gameRow').on('click', '#card12', function(){
+    whichCardClicked = 12; 
+});
 
 
 
