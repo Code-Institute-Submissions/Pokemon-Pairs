@@ -145,18 +145,30 @@
 /******* iPad ******************/
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 
 .grid-game-info h6{
     font-size: 1.75rem;
 }
 
-
+.col-md-3{
+        -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
 .eight-cards{
-    width: 152px;
-    height: 21vh;
-    padding-left: 20px;
-    margin-bottom: 20px;
+    width: 160px;
+    height: 22vh;
+}
+.gameIndividualCardWrapper:nth-child(odd){
+    margin: 0;
+}
+.gameIndividualCardWrapper:nth-child(3n-2){
+    margin: 0 3vw 3vw 3vw;
+}
+
+.gameIndividualCardWrapper:nth-last-child(3n-2){
+    margin-left: 3vw;
 }
 
 #difficultyMode{
