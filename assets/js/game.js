@@ -337,12 +337,16 @@ $('#gameRow').on('click', cardSelected, function(){
                
     if (pairCounterArray[cardA] == 1 && pairCounterArray[cardB] == 1){
                     pairMatch++;
+
+        pairCounterArray[cardA] = 0;
+        pairCounterArray[cardB] = 0;
                   
-        for(let i=0; i<13; i++){
-            pairCounterArray[i] = 0;
-        }
+        // for(let i=0; i<13; i++){
+        //     pairCounterArray[i] = 0;
+        //     console.log(pairCounterArray);
+        // }
         console.log("We have a pair!");
-        var wait = setTimeout(pairFound, 1000);
+        var wait = setTimeout(pairFound, 500);
         function pairFound(){
         
         $(`.cardMatchID${cardPair}`).fadeOut();
