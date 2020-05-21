@@ -398,6 +398,7 @@ h5{
 }
     .navbar .navbar-brand {
     height: 90px;
+    width: 68%;
 }
 
 .navbar-toggler-icon, .navbar-light .navbar-toggler {
