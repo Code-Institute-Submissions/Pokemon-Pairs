@@ -251,13 +251,12 @@ $('#gameRow').on('click', cardSelected, function(){
      pairCounterArray[whichCardClicked] = 1;
                
     if (pairCounterArray[cardA] == 1 && pairCounterArray[cardB] == 1){
-          $("#matchingPairMusic").get(0).play();            
-        pairMatch++;
+                    pairMatch++;
         
         pairCounterArray[cardA] = 0;
         pairCounterArray[cardB] = 0;
 
-      
+        $("#matchingPairMusic").get(0).play();
 
         console.log(pairCounterArray);
         console.log("We have a pair!");
@@ -304,9 +303,11 @@ $('#gameRow').on('click', cardSelected, function(){
 $("#game").click(function(){
      $("#startGame").addClass("display");
     if(pairMatch == 6){
+
         var revealTime = setTimeout(revealCards,2000);
         function revealCards(){
-            toggleMainTheme();
+            $("#gameThemeMusic").get(0).pause();
+            $("#endOfGameThemeMusic").get(0).play();
         //change this to a for loop.
             for(j=1; j<13; j++){
                 $(`#card${j}Match`).addClass("display");
