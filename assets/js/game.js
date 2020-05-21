@@ -353,8 +353,17 @@ $('#gameRow').on('click', cardSelected, function(){
         function pairFound2(){
         $(`.pairFound${cardPair}`).removeClass("display");}
         }
-    }
+    } else {  
+     pairCounterArray[whichCardClicked] = 0;
+     console.log(pairCounterArray);
+     //if ( cardClicked already has a value )
+    if (pairCounterArray[whichCardClicked] == 1 || pairCounterArray[whichCardClicked] == 1) {
+        alert("Careful! You have already clicked this card");
+    } 
+    
 
+
+}
     });
 
 
