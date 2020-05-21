@@ -82,7 +82,7 @@
       <div class="modal-content">
         <div class="modal-header navbar">
           <h5 class="navbar-brand navbar-brand-modal" id="volumeModalTitle"></h5>
-
+           
         </div>
         <div id="volumeModalBody" class="modal-body">
             <h5>Would you like volume?</h5>
@@ -100,8 +100,11 @@
       <div class="modal-content">
         <div class="modal-header navbar">
           <h5 class="navbar-brand navbar-brand-modal" id="welcomeModalTitle"></h5>
-          <i class="fas fa-volume-up"></i>
-          <i class="fas fa-volume-mute"></i>
+          <div class="speaker"  aria-label="mute/unmute">
+             <i class="fas fa-volume-up" aria-label="unmute"></i>
+             <i class="fas fa-volume-mute" aria-label="mute"></i>
+          </div>
+          
         </div>
         <div id="welcomeModalBody" class="modal-body">
           <input type="text" id="nameInput" value="Guest">
@@ -119,8 +122,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="difficultyModalTitle">Let's start!</h5>
-          <i class="fas fa-volume-up"></i>
-          <i class="fas fa-volume-mute"></i>
+          <div class="speaker"  aria-label="mute/unmute">
+             <i class="fas fa-volume-up" aria-label="unmute"></i>
+             <i class="fas fa-volume-mute" aria-label="mute"></i>
+          </div>
         </div>
         <div class="modal-body">
           <p id="usageWarning" class="display"></p>
@@ -146,8 +151,10 @@
       <div class="modal-content">
         <div id="loadingModalHeader" class="modal-header">
           <h5 class="modal-title">Loading!</h5>
-          <i class="fas fa-volume-up"></i>
-          <i class="fas fa-volume-mute"></i>
+          <div class="speaker"  aria-label="mute/unmute">
+             <i class="fas fa-volume-up" aria-label="unmute"></i>
+             <i class="fas fa-volume-mute" aria-label="mute"></i>
+          </div>
         </div>
         <div id="loadingModalBody" class="modal-body">
           <div class=""> <p>We are carefully selecting your pokémon!</p> </div>
@@ -167,6 +174,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="finishedModalLongTitle">You won!</h5>
+          <div class="speaker"  aria-label="mute/unmute">
+             <i class="fas fa-volume-up" aria-label="unmute"></i>
+             <i class="fas fa-volume-mute" aria-label="mute"></i>
+          </div>
         </div>
         <div class="modal-body current-game-results">
           <h5 id="revealResults">Results</h5>
@@ -206,6 +217,10 @@
     <div class="modal-content modal-content-display">
       <div class="modal-header">
         <h5 class="modal-title" id="displayCardsModalTitle">Here are the cards from your game!!</h5>
+        <div class="speaker"  aria-label="mute/unmute">
+             <i class="fas fa-volume-up" aria-label="unmute"></i>
+             <i class="fas fa-volume-mute" aria-label="mute"></i>
+          </div>
       </div>
       <div class="modal-body">
         <div id="displayCardsWrapper">
