@@ -124,6 +124,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 });
 
 function notAPair(){
+    animationInProgress = 1;
     var wrongWait = setTimeout(pairNotFound, 750);
                         function pairNotFound(){
                         turningCardsFaceDown();
@@ -132,6 +133,12 @@ function notAPair(){
     for(j=1; j<13; j++){
         pairCounterArray[j] = 0;
     }  
+
+   var animationResetDelay = setTimeout(resetAnimationValue, 750);
+        function resetAnimationValue(){
+           animationInProgress = 0;
+    console.log("animation " + animationInProgress);
+        } 
                           
 }
 
@@ -263,7 +270,7 @@ $('#gameRow').on('click', cardSelected, function(){
         function pairFound2(){
         $(`.pairFound${cardPair}`).removeClass("display");}
         
-        var animationResetDelay = setTimeout(resetAnimationValue,"1000");
+        var animationResetDelay = setTimeout(resetAnimationValue, 500);
         function resetAnimationValue(){
            animationInProgress = 0;
         console.log("animation " + animationInProgress); 
