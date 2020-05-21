@@ -251,10 +251,13 @@ $('#gameRow').on('click', cardSelected, function(){
      pairCounterArray[whichCardClicked] = 1;
                
     if (pairCounterArray[cardA] == 1 && pairCounterArray[cardB] == 1){
-                    pairMatch++;
-
+          $("#matchingPairMusic").get(0).play();            
+        pairMatch++;
+        
         pairCounterArray[cardA] = 0;
         pairCounterArray[cardB] = 0;
+
+      
 
         console.log(pairCounterArray);
         console.log("We have a pair!");
