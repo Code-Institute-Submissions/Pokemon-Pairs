@@ -4,6 +4,9 @@ var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "htt
 var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"]
 var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
 const mainTheme = document.getElementById("mainThemeMusic");
+const gameTheme = document.getElementById("gameThemeMusic");
+const matchTheme = document.getElementById("matchingPairMusic");
+const endTheme = document.getElementById("endOfGameThemeMusic");
 var mute;
 var supportPageSelected;
 
@@ -12,6 +15,18 @@ var supportPageSelected;
 //https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
 function toggleMainTheme(){
      return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
+}
+
+function toggleGameTheme(){
+     return gameTheme.paused ? gameTheme.play() : gameTheme.pause();
+}
+
+function toggleMatchingPairTheme(){
+     return matchTheme.paused ? matchTheme.play() : matchTheme.pause();
+}
+
+function toggleEndOfGameTheme(){
+     return endTheme.paused ? endTheme.play() : endTheme.pause();
 }
 
 function toggleSpeakerIconToMuted(){
@@ -24,7 +39,7 @@ function toggleSpeakerIconToLoud(){
     $(".fa-volume-mute").css("display", "none");
 }
 
-function playSongOnMute(){
+function playMainThemeOnMute(){
     toggleMainTheme();
         if(sessionStorage.muted == 1){
             toggleSpeakerIconToMuted();
@@ -32,6 +47,33 @@ function playSongOnMute(){
         }
 }
 
+function playGameThemeOnMute(){
+    toggleGameTheme();
+        if(sessionStorage.muted == 1){
+            toggleSpeakerIconToMuted();
+            $("#gameThemeMusic").prop('muted', true);
+        }
+}
+
+function playMatchingPairThemeOnMute(){
+     toggleMatchingPairTheme();
+        if(sessionStorage.muted == 1){
+            toggleSpeakerIconToMuted();
+            $("#matchingPairMusic").prop('muted', true);
+        }
+}
+
+function playEndOfGameThemeOnMute(){
+     toggleEndOfGameTheme();
+        if(sessionStorage.muted == 1){
+            toggleSpeakerIconToMuted();
+            $("#endOfGameThemeMusic").prop('muted', true);
+        }
+}
+
+
+   
+   
 $(".fa-volume-up, #volumeNotAllowed").click(function(){
     toggleSpeakerIconToMuted();
     //https://codepen.io/calebzahnd/pen/VvZZeJ
@@ -277,6 +319,9 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
         } 
     }
 
+   $("#endOfGameThemeMusic").get(0).pause();
+//    $("#mainThemeMusic").get(0).play();
+   toggleMainTheme();
     // Displaying difficulty modal at the beginning of each new game.
     $("#gridItemTimerDisplay").html("0 seconds");
    turningCardsFaceDown();
