@@ -250,11 +250,6 @@ $('#gameRow').on('click', cardSelected, function(){
         pairCounterArray[cardB] = 0;
 
         console.log(pairCounterArray);
-                  
-        // for(let i=0; i<13; i++){
-        //     pairCounterArray[i] = 0;
-        //     console.log(pairCounterArray);
-        // }
         console.log("We have a pair!");
         
         animationInProgress = 1;
@@ -280,9 +275,6 @@ $('#gameRow').on('click', cardSelected, function(){
     //Resets if a pair isn't found.
      pairCounterArray[whichCardClicked] = 0;
      console.log(pairCounterArray);
-     //if ( cardClicked already has a value )
-    // if (pairCounterArray[whichCardClicked] == 1 || pairCounterArray[whichCardClicked] == 1) {
-    //     alert("Careful! You have already clicked this card");
     var checking = 0;
     for(let i = 1; i<13; i++){
         if(pairCounterArray[i] == 1){
@@ -290,20 +282,11 @@ $('#gameRow').on('click', cardSelected, function(){
         }
     }
     if(checking > 0){
-
-    
-    // (pairCounterArray[1] == 1 || pairCounterArray[2] == 1 || pairCounterArray[3] == 1 || pairCounterArray[4] == 1
-    //                 || pairCounterArray[5] == 1 || pairCounterArray[6] == 1 || pairCounterArray[7] == 1 ||pairCounterArray[8] == 1
-    //                 || pairCounterArray[9] == 1 || pairCounterArray[10] == 1 || pairCounterArray[11] == 1 || pairCounterArray[12] == 1){
         notAPair();
         }else {             
-                pairCounterArray[whichCardClicked] = 1;
-                console.log(pairCounterArray[whichCardClicked]);
-                console.log(pairCounterArray);
-              console.log("this is which card was clicked" + whichCardClicked);}
-                      
+                pairCounterArray[whichCardClicked] = 1;                      
                     }
-    }
+                }}
     });
 
 
