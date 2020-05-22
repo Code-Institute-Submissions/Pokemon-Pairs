@@ -266,12 +266,57 @@
 }
 
 
+/********** Laptop MD ***************/
+
+
+@media screen and (min-width: 1280px) and (max-height: 899px){
+ #gameRow{
+    margin: 1.17vw;
+}
+.eight-cards {
+    width: 187px;
+    height: 32vh;
+}
+
+.col-xl-2 {
+    flex: 0 0 187px;
+}
+
+
+.gameIndividualCardWrapper:nth-child(1), .gameIndividualCardWrapper:nth-child(n + 2) {
+    margin: 0 0 3vw 1.25vw;
+}
+
+.gameIndividualCardWrapper:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+
+}
+
+
 /********** Laptop HD ***************/
 @media screen and (min-width: 1400px) and (min-height: 899px){
+
+#gameRow{
+    margin: 0.81vw;
+}
 .eight-cards {
-    width: 184px;
-    height: 29vh;
-    padding-left: 27px;
-    margin-bottom: 32px;
+        width: 215px;
+    height: 33vh;
+}
+
+.col-xl-2 {
+    flex: 0 0 198px;
+}
+.gameIndividualCardWrapper:nth-child(1) {
+    margin: 0 0 0 1.1vw;
+}
+.gameIndividualCardWrapper:nth-child(n + 2) {
+    margin-left: 1.1vw;
+    margin-bottom: 4vw;
+}
+.gameIndividualCardWrapper:nth-child(n + 7) {
+    margin-bottom: 0;
 }
 }

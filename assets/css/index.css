@@ -585,13 +585,16 @@ ul li {
 }
 .navbar .navbar-brand {
     width: 35%;
-}    
-    
+}   
+
+.grid-game-info h6, .grid-game-info .fas {
+    font-size: 2rem;}
+/*     
     .eight-cards{
     width: 154px;
     height: 27vh;
     padding-left: 28px;
-    }
+    } */
 
 .display-cards {
     margin-left: 30px;
