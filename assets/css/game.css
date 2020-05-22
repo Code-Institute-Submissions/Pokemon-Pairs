@@ -114,8 +114,13 @@
 
 /* Landscape small mobile */
 @media screen and (min-width: 600px){
+
+    .col-6 {
+    flex: 0 0 77px;
+    }
+
     .gameIndividualCardWrapper:nth-child(odd) {
-    margin: 0 1.5vw 1.5vw 1.5vw;
+    margin: 0 3vw 2vw 3vw;
 }
 
 .gameIndividualCardWrapper:nth-child(n + 7) {
@@ -123,20 +128,26 @@
 }
 
 #gameRow{
-    margin-left: 2.5625vw;
+    margin-left: 3.64vw;
 }
 
 }
 
 /* Landscape larger mobile */
 @media screen and (min-width: 667px){
-
+.col-6 {
+    flex: 0 0 79.75px;
+}
  .gameIndividualCardWrapper:nth-child(odd) {
     margin: 0 2vw 2vw 2vw;
 }
 
+.gameIndividualCardWrapper:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
 #gameRow{
-    margin-left: 2.52vw;
+    margin-left: 7.13vw;
 }
 
 }
