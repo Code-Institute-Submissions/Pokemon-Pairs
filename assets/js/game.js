@@ -108,7 +108,7 @@ $("#hardButton").click(function(){
                 ajaxCalls.push(Number(response.cards.length));
                 apiResponseArray.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-                apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+                apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)+1].imageUrlHiRes);
             });
         }
     }
