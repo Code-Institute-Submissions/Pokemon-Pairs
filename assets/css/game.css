@@ -230,15 +230,32 @@
 /******** iPad Pro - Portrait  ***********/
 @media screen and (min-width: 1024px) and (min-height: 1366px){
 .eight-cards {
-    width: 203px;
-    height: 21vh;
-    padding-left: 30px;
+    width: 217px;
+    height: 22vh;
+    
 }
 
 .col-lg-2{
-    flex: 0 0 25%;
+    flex: 0 0 203px;
     max-width: 25%;
 }
+
+#gameRow {
+    margin: 0 0 0 1.365vw;
+}
+
+.gameIndividualCardWrapper:nth-child(n + 2) {
+    margin-left: 2.5vw;
+}
+
+.gameIndividualCardWrapper:nth-child(4n-3) {
+    margin: 0 0 6vw 2.5vw;
+}
+
+.gameIndividualCardWrapper:nth-child(n + 7){
+    margin-bottom: 0;
+}
+
 }
 
 
