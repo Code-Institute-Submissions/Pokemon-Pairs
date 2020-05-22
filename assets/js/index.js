@@ -304,8 +304,8 @@ $("#startGame").click(function(){
     var pairMatchID = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12];
     for(i=0; i<12; i++){
         $("#gameRow").append(`
-                <div  class="gameIndividualCardWrapper">
-                    <div id="card${shuffledCardID[i]}" class="col-6 col-sm-2  col-md-3 col-lg-2 col-xl-2 eight-cards card">
+                <div  class="gameIndividualCardWrapper col-6 col-sm-2  col-md-3 col-lg-2 col-xl-2 ">
+                    <div id="card${shuffledCardID[i]}" class="eight-cards card">
                         <div id="card${shuffledCardID[i]}Cover" class=" eight-cards cover"></div> 
                         <div id="card${shuffledCardID[i]}Face" class=" eight-cards face"></div> 
                     </div>
