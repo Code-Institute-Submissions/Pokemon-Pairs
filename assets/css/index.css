@@ -487,7 +487,9 @@ h5{
 }
 
 .display-cards{
-    margin:0 0 20px 120px;
+    margin: 10px;
+    height: 36vh;
+    display: inline-block;
 }
 
 #displayCardsWrapper{
@@ -639,7 +641,7 @@ ul li {
     height: 48vh;
 }
 
-.display-cards:nth-last-child(1) {
+#displayCard5, #displayCard6 {
     margin-bottom: 0;
 }
 
