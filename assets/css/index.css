@@ -637,7 +637,10 @@ ul li {
     width: 40%;
     display: inline-block;
     height: 48vh;
+}
 
+.display-cards:nth-last-child(1) {
+    margin-bottom: 0;
 }
 
 #displayCardsWrapper{
