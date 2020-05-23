@@ -677,7 +677,9 @@ ul li {
     width: auto;
 }
 
-
+.speaker{
+    font-size: 2.5rem;
+}
 #gridItemGame {
     margin: 70px 0;
 }
@@ -755,11 +757,15 @@ ul li {
         height: 110px;
     }
 
+.speaker{
+    font-size: 2.5rem;
+}
+
 #volumeModalBody h5{
     font-size: 3rem;
 }
 #welcomeModalTitle {
-    width: 50%;
+    width: 68%;
     height: 110px;
 }
 
