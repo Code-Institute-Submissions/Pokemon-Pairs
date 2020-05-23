@@ -940,6 +940,10 @@ ul li {
     height: 98px;
 }
 
+.navbar .navbar-brand-modal {
+    width: 78%;
+}
+
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
     font-size: 2.25rem;
 }
