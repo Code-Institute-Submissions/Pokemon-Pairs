@@ -114,6 +114,7 @@ body {
 
 .navbar .navbar-brand-modal{
     margin-bottom: 0;
+    margin-right: 0;
     padding: 0;
 }
 
@@ -942,6 +943,7 @@ ul li {
 
 .navbar .navbar-brand-modal {
     width: 78%;
+    
 }
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
