@@ -1,8 +1,11 @@
 // Set variables and arrays
 var nameChosen = 0;
-//var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "https://images.pokemontcg.io/xyp/XY05_hires.png", "https://images.pokemontcg.io/xy11/41_hires.png", "https://images.pokemontcg.io/xy7/21_hires.png", "https://images.pokemontcg.io/dp6/107_hires.png", "https://images.pokemontcg.io/xy0/14_hires.png"]
-var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"]
-var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"]
+//var backupCardsArrayEasy = ["https://images.pokemontcg.io/xy7/4_hires.png", "https://images.pokemontcg.io/xyp/XY05_hires.png", "https://images.pokemontcg.io/xy11/41_hires.png", "https://images.pokemontcg.io/xy7/21_hires.png", "https://images.pokemontcg.io/dp6/107_hires.png", "https://images.pokemontcg.io/xy0/14_hires.png"];
+//var backupCardsArrayMedium = ["https://images.pokemontcg.io/xy0/15_hires.png", "https://images.pokemontcg.io/dp1/9_hires.png", "https://images.pokemontcg.io/ex16/56_hires.png", "https://images.pokemontcg.io/ex16/64_hires.png", "https://images.pokemontcg.io/ex8/34_hires.png", "https://images.pokemontcg.io/ex16/99_hires.png"];
+//var backupCardsArrayHard = ["https://images.pokemontcg.io/pl4/1_hires.png", "https://images.pokemontcg.io/ex3/100_hires.png", "https://images.pokemontcg.io/xy7/98_hires.png", "https://images.pokemontcg.io/bw6/85_hires.png", "https://images.pokemontcg.io/xy8/144_hires.png", "https://images.pokemontcg.io/dp6/11_hires.png"];
+var backupCardsArrayEasy = ["assets/images/backupcards/easy1.png", "assets/images/backupcards/easy2.png", "assets/images/backupcards/easy3.png", "assets/images/backupcards/easy4.png", "assets/images/backupcards/easy5.png", "assets/images/backupcards/easy6.png"];
+var backupCardsArrayMedium = ["assets/images/backupcards/medium1.png", "assets/images/backupcards/medium2.png", "assets/images/backupcards/medium3.png", "assets/images/backupcards/medium4.png", "assets/images/backupcards/medium5.png", "assets/images/backupcards/medium6.png"];
+var backupCardsArrayHard = ["assets/images/backupcards/hard1.png", "assets/images/backupcards/hard2.png", "assets/images/backupcards/hard3.png", "assets/images/backupcards/hard4.png", "assets/images/backupcards/hard5.png", "assets/images/backupcards/hard6.png"];
 const mainTheme = document.getElementById("mainThemeMusic");
 const gameTheme = document.getElementById("gameThemeMusic");
 const matchTheme = document.getElementById("matchingPairMusic");
@@ -216,7 +219,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                     playMainThemeOnMute();
                 }
 
-    var timeBackup = setTimeout(backupCards, 60000);
+    var timeBackup = setTimeout(backupCards, 3000);
     function backupCards(){
         if(apiResponseArray.length < 6){
             $("#startGame").removeClass("display");
