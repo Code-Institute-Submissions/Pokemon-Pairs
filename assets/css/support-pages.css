@@ -62,12 +62,14 @@ h1{
     margin-bottom: 32px;
 } */
 
-#messageSent h5{
-    font-size: 1.5rem;
+
+
+#successModalTitle {
+    font-size: 2rem;
 }
 
-#successModalTitle h4{
-    font-size: 2.5rem;
+#messageSent h5{
+    font-size: 1.5rem;
 }
 
 /* ****************Help Page****************** */
@@ -145,6 +147,20 @@ h1{
 .btn-styling{
     font-size: 1.75rem;
     margin-top: 8px;
+}
+
+}
+
+
+/* iPad Portrait*/
+@media screen and (min-width: 768px) {
+
+#successModalTitle {
+    font-size: 4rem;
+}
+
+#messageSent h5{
+    font-size: 2.5rem;
 }
 
 }
