@@ -287,12 +287,13 @@ h5{
     display: block;
 }
 
-.result-wrapper{
+.result-wrapper, .result-wrapper h6{
     font-size: 1.5rem;
 }
 
 #revealResults{
     text-decoration: underline;
+    margin-bottom: 1rem;
 }
 
 #topResultsWrapper, #topResultsWrapperTime{
@@ -333,6 +334,8 @@ h5{
 } 
 
 
+
+
 /* Landscape for small mobile */
 @media screen and (min-width: 640px) and (max-height: 400px){
 
@@ -352,7 +355,7 @@ h5{
 }
 
     .navbar .navbar-brand-modal {
-        height: 55px;
+        height: 43px;
         width: 65%;
     }
 
@@ -391,6 +394,10 @@ h5{
         height: 65vh;
         margin-left: 10px;
     }
+
+    .display-cards:nth-child(odd){
+        margin-left: 10px;
+    }
     
     .container{
         max-width: 700px;
@@ -412,6 +419,29 @@ h5{
     }
 }
 
+/* Larger Mobile  Portrait */
+@media screen and (min-width: 375px) and (min-height: 400px){
+    .display-cards{
+        margin-left: 6.57vw;
+    }
+
+    
+}
+
+
+/* Larger Mobile Landscape */
+@media screen and (min-width: 667px) and (max-height:400px) {
+
+#loading-gif{
+    margin-left: 14.165vw;
+}
+
+.display-cards:nth-child(odd){
+        margin-left: 5px;
+    }
+
+}
+
 /* iPad Portrait*/
 @media screen and (min-width: 768px) {
 
@@ -426,6 +456,10 @@ h5{
     .navbar .navbar-brand {
     height: 90px;
     width: 68%;
+}
+
+.navbar .navbar-brand-modal{
+    width: 73%;
 }
 
 .navbar-toggler-icon, .navbar-light .navbar-toggler {
@@ -461,6 +495,16 @@ h5{
 }
 
 /* Modals */
+
+/* Volume Modal */
+
+#volumeModalBody{
+    padding: 24px 16px;
+}
+
+#volumeModalBody h5{
+    margin-bottom: 1.5rem;
+}
 /* Welcome modal */
 .modal-dialog {
     max-width: 700px;
@@ -543,6 +587,10 @@ h5{
 .navbar .navbar-brand {
     height: 77px;
     width: 43%;
+}
+
+.navbar .navbar-brand-modal{
+    width: 62%;
 }
 
 .nav-item{
