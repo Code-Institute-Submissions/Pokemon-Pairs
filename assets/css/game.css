@@ -29,7 +29,7 @@
  }
 
 .col-6 {
-    flex: 0 0 90px;
+    flex: 0 0 25vw;
     max-width: 50%;
     padding: 0;
 }
@@ -38,10 +38,10 @@
     color: white;
     background-color: midnightblue;
     padding: 0 0;
-    width: 21.25vh;
-    height: 30vh;
+    width: 37.78vw;
+    height: 53.34vw;
     text-align: center;
-    /* margin-bottom: 10px; */
+   
 }
 
 
