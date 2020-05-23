@@ -72,7 +72,7 @@ $("#easyButton").click(function(){
             var pokemonID = Math.floor((Math.random() * 645)+1); 
             $.ajax({
                     method:"GET",                
-                    // url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+                    url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
                 }).then(function(response){
                     ajaxCalls.push(Number(response.cards.length));
                     apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
@@ -87,7 +87,7 @@ $("#mediumButton").click(function(){
         var pageNumber = [Math.floor(Math.random() * 4)];
             $.ajax({
                 method:"GET",                
-                // url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] +"&&page" + pageNumber
+                url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] +"&&page" + pageNumber
             }).then(function(response){
                 ajaxCalls.push(Number(response.cards.length));
                 for(i=0; i<6; i++){
@@ -103,12 +103,12 @@ $("#hardButton").click(function(){
             var pokemonID = Math.floor((Math.random() * 645)+1); 
             $.ajax({
                 method:"GET",                
-                // url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+                url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
             }).then(function(response){
                 ajaxCalls.push(Number(response.cards.length));
                 apiResponseArray.push(response.cards[0].imageUrlHiRes);
             //Make this Maths.random + 1 as it will never choose 0. 
-                apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)+1].imageUrlHiRes);
+                apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
             });
         }
     }

@@ -219,7 +219,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
                     playMainThemeOnMute();
                 }
 
-    var timeBackup = setTimeout(backupCards, 3000);
+    var timeBackup = setTimeout(backupCards, 45000);
     function backupCards(){
         if(apiResponseArray.length < 6){
             $("#startGame").removeClass("display");
