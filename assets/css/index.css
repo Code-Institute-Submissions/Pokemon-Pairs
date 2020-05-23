@@ -220,12 +220,14 @@ ul li{
 .speaker{
     color: yellow;
     opacity: 0.8;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: -1rem -1rem -1rem auto;
-    float: right;
+
+    margin: 0;
+  
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
+    display: block;
+    text-align: right;
 }
 
 .speaker:hover{
@@ -247,6 +249,10 @@ ul li{
 .modal-header, .modal-body, .modal-footer{
     text-align: center;
     display: inline-block;
+}
+
+.modal-header h5{
+    font-size: 3rem;
 }
 .modal-content{
     background-color: midnightblue;
@@ -364,7 +370,9 @@ h5{
     position: static;
     }
     
-    
+    /* #welcomeModalTitle {
+    margin: 0 0 0 61.5px;
+    } */
 
     #loading-gif{
     width: 46%;
@@ -499,6 +507,10 @@ h5{
 
 /* Modals */
 
+.speaker{
+    font-size:2rem;
+}
+
 /* Volume Modal */
 
 #volumeModalBody{
@@ -544,6 +556,12 @@ h5{
 
 #loadingModalBody{
     padding: 1.5rem 3rem;
+}
+
+/* Finished Modal */
+
+.modal-header h5 {
+    font-size: 4.5rem;
 }
 
 #topResultsWrapper, #topResultsWrapperTime {
@@ -603,6 +621,10 @@ h5{
     width: 25%;
 }
 
+.speaker{
+    font-size:2rem;
+}
+
 .ml-auto{
     margin-right: 20px;
 }
@@ -614,6 +636,10 @@ ul li {
 
 #loading-gif{
     height: 370px;
+}
+
+.modal-header h5 {
+    font-size: 5.5rem;
 }
 
 #gridItemGameInfo{
@@ -703,6 +729,10 @@ ul li {
 
 .grid-game-info h6{
     font-size: 2.5rem;
+}
+
+.modal-header h5 {
+    font-size: 5.5rem;
 }
 
 .modal-dialog{
@@ -838,6 +868,10 @@ ul li {
     margin-bottom: 8px;
 }
 
+.modal-header h5 {
+    font-size: 5.5rem;
+}
+
 .modal-dialog{
     max-width: 900px;
 } 
@@ -919,6 +953,10 @@ ul li {
     padding-left: 17px;
 }
 
+.modal-header h5 {
+    font-size: 5.5rem;
+}
+
 }
 
 
@@ -977,6 +1015,10 @@ ul li {
 
 #displayCardsModal{
     padding-left: 17px;
+}
+
+.modal-header h5 {
+    font-size: 5.5rem;
 }
 
 }
