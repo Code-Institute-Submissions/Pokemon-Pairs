@@ -758,14 +758,27 @@ ul li {
 }
     
     .navbar .navbar-brand{
-        width: 41%;
+        width: 37%;
     }
     
     .navbar .navbar-brand-modal{
         width: 68%;
         height: 110px;
     }
+    
+.navbar-nav{
+    margin-right: 10px;
 
+}
+
+.nav-item{
+    width: auto;
+    margin: 0 10px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 2.25rem;
+}
 .speaker{
     font-size: 2.5rem;
 }
