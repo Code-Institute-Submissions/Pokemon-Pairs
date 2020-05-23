@@ -106,11 +106,12 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header navbar">
-          <h5 class="navbar-brand navbar-brand-modal" id="welcomeModalTitle"></h5>
-          <div class="speaker"  aria-label="mute/unmute">
+        <div class="speaker"  aria-label="mute/unmute">
              <i  class="fas fa-volume-up " title="mute" aria-label="mute"></i>
              <i class="fas fa-volume-mute mainThemeControl" title="unmute" aria-label="unmute"></i>
           </div>
+          <h5 class="navbar-brand navbar-brand-modal" id="welcomeModalTitle"></h5>
+          
           
         </div>
         <div id="welcomeModalBody" class="modal-body">
@@ -166,7 +167,7 @@
           
         </div>
         <div id="loadingModalBody" class="modal-body">
-          <div class=""> <p>We are carefully selecting your pokémon!</p> </div>
+          <div> <p>We are carefully selecting your pokémon!</p> </div>
           <div id="loading-gif"></div>
         </div>
         <div class="modal-footer">
@@ -178,7 +179,7 @@
 
 
 <!-- ***** Finished Modal ***** -->
-  <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModal" style="display: none;" aria-hidden="true">
+  <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -191,8 +192,10 @@
         </div>
         <div class="modal-body current-game-results">
           <h5 id="revealResults">Results</h5>
-          <div id="totalMoves">Moves: </div>
-          <div id="timeTaken">Time taken: </div>
+          <div class="result-wrapper">
+            <div id="totalMoves">Moves: </div>
+            <div id="timeTaken">Time taken: </div>
+          </div>
         </div>
         <div id="results" class="modal-body">
           
