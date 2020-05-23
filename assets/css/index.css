@@ -716,6 +716,10 @@ ul li {
     height: 122px;
 }
 
+#seeInstructions h6 {
+    font-size: 3rem;
+}
+
 #nameInput{
     font-size: 3rem;
 }
@@ -724,8 +728,13 @@ ul li {
     font-size: 3rem;
 }
 
+#loadingModalBody p{
+    margin-bottom: 24px;
+}
+
 #loading-gif{
     height: 487px;
+    margin-bottom: 8px;
 }
 
 #volumeModalBody h5{
@@ -764,9 +773,19 @@ ul li {
 #volumeModalBody h5{
     font-size: 3rem;
 }
+
 #welcomeModalTitle {
     width: 68%;
     height: 110px;
+}
+
+#seeInstructions h6 {
+    font-size: 3rem;
+}
+
+#loadingModalBody p{
+    font-size: 2.5rem;
+    margin-bottom: 24px;
 }
 
 .row {
@@ -784,14 +803,19 @@ ul li {
 }
 
 #loading-gif{
-    height: 640px;
+    height: 465px;
     width: 95%;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-bottom: 8px;
 }
 
 .modal-dialog{
     max-width: 900px;
 } 
+
+.modal-title{
+    font-size: 4.5rem;
+}
 
 .display-cards {
     margin: 0px 0 20px 55px;
