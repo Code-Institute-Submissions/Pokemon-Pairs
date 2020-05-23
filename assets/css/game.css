@@ -41,7 +41,7 @@
     width: 37.78vw;
     height: 53.34vw;
     text-align: center;
-   
+  
 }
 
 
@@ -117,6 +117,16 @@
 
 .gameIndividualCardWrapper:nth-child(n + 7) {
     margin-bottom: 0;
+}
+
+.eight-cards {
+    color: white;
+    background-color: midnightblue;
+    padding: 0 0;
+    width: 21.25vh;
+    height: 30vh;
+    text-align: center;
+    /* margin-bottom: 10px; */
 }
 
 #gameRow{
