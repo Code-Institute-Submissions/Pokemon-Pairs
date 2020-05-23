@@ -45,7 +45,8 @@ function toggleSpeakerIconToLoud(){
 
 //Plays a theme on mute
 function playMainThemeOnMute(){
-    toggleMainTheme();
+    $(mainTheme).get(0).play();
+    // toggleMainTheme();
         if(sessionStorage.muted == 1){
             toggleSpeakerIconToMuted();
             $(mainTheme).prop('muted', true);
@@ -376,11 +377,8 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function(){
         } 
     }
 
-//    $("#endOfGameThemeMusic").get(0).pause();
-// //    $("#mainThemeMusic").get(0).play();
-//    toggleMainTheme();
+   $("#endOfGameThemeMusic").get(0).pause();
 
-toggleEndOfGameTheme();
      if(sessionStorage.muted == 0){
                 $(mainTheme).prop('muted', false);
                 toggleMainTheme();  
