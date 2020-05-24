@@ -69,23 +69,51 @@ ___
 <span id="existingFeatures"></span>
 ### Existing Features
 
+Navbar
+
+1. Links to all the other pages allows the user to navigate seamlessly between pages.
+2. The navbar is consistent on every page and therefore a user can navigate to any part of the website from anywhere.
+3. The “Help” link will allow users to go to the “Help” page, where it will explain the rules of the game.
+4. The “Contact” link will allow users to go to the “Contact” page, where they can send off a feedback form.
+5. The "Play!" link will take the user to the game page. 
+6. In mobile view the navbar is collapsed allowing the users more space on the screen. The users can click the “hamburger” icon and still receive the full menu as a drop down function.
+
+Help Page
+
+1. There is a link to a help sheet with image to support children's understanding.
+2. Explains how to navigate the game to start playing.
+3. Explains the difference between each difficulty mode.
+4. Explains your choices after the game has finished.
+
+Contact Page
+
+1. A form is available to fill in and give feedback.
+2. There is an input for the following:
+   + User's name
+   + User's email for a reply.
+   + 
+
+
 <span id="featuresLeftToImplement"></span>
 ### Features Left to Implement
 
- 
+1. I would like to add a timer that displays minutes and seconds.
+2. I would like to add a button that flashes when the game is ready to play.
+3. I would like to add in a hint button, which shows all the cards for a second to give children a clue if they get stuck.
 ___
 <span id="defensiveFeatures"></span>
 ## Defensive Features
 
 As this project is designed for children, it was imperative that I build in multiple fail-safes.
 These following design features are in place to stop children from unintentionally breaking the game.
-+ If the api doesn't load, then an emergency set of cards will be drawn.
++ If the api doesn't load, then an emergency set of cards will be drawn from static images loaded onto the webpage.
 + If a child does not input their name, it has a default of "guest". 
 + Clicking on the same card consectutively will not affect the game.
-+ Cards will disappear when a pair is chosen to prevent children from clicking them again. 
-+ Users cannot swap difficulties halfway through a game. 
 + Clicking the same card twice will not increase the amount of moves recorded. 
-+ User must enter a valid email address to send a contact email. 
++ Cards will disappear when a pair is chosen to prevent children from clicking them again. 
++ User cannot click other cards whilst a pair is diappearing or the wrong pair is resetting.
++ Users cannot swap difficulties halfway through a game. 
++ User must fill in the required forms when sending feedback.
 + User must confirm that they have permission to use an email address. 
 ___
 <span id="technologiesUsed"></span>
