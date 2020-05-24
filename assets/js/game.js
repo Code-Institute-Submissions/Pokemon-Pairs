@@ -2,6 +2,7 @@
 //It has been modified for my benefit
 var types =["darkness", "water", "lightning", "fighting", "metal", "grass", "fire", "psychic", "fairy", "dragon", "colorless"];
 var ajaxCalls = [];
+// var apiResponseArray = ["placeholder"];
 var apiResponseArray = [];
 results = ["-","-"];
 resultsTime = ["-", "-"]
@@ -98,7 +99,8 @@ $("#mediumButton").click(function(){
 });
 
 // $("#hardButton").click(function(){
-//     if(apiResponseArray.length == 0){
+//     console.log("Accessed");
+//     if(apiResponseArray.length == 1){
 //         for (i = 0; i < 3; i++){
 //             var pokemonID = Math.floor((Math.random() * 645)+1); 
 //             $.ajax({
@@ -106,9 +108,23 @@ $("#mediumButton").click(function(){
 //                 url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
 //             }).then(function(response){
 //                 ajaxCalls.push(Number(response.cards.length));
-//                 apiResponseArray.push(response.cards[0].imageUrlHiRes);
+//                 //apiResponseArray.push(response.cards[0].imageUrlHiRes);
 //             //Make this Maths.random + 1 as it will never choose 0. 
-//                 apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+//             // console.log(response.cards);
+//             // do {
+//             //     var hardCard1 = response.cards[Math.floor(Math.random() * 2)].imageUrlHiRes
+//             //     console.log(hardCard1);
+//             // } while (hardCard1 == apiResponseArray[0]){
+//             //     apiResponseArray.unshift(hardCard1);
+//             // };
+
+//             // do {
+//             //     var hardCard2 = response.cards[Math.floor(Math.random() * 2)].imageUrlHiRes
+//             //     console.log(hardCard2);
+//             // } while (hardCard2 == apiResponseArray[0]){
+//             //     apiResponseArray.unshift(hardCard2);
+//             // };
+//                 console.log(apiResponseArray);
 //             });
 //         }
 //     }
@@ -364,6 +380,10 @@ $("#game").click(function(){
             for(k=0; k<7; k++){
                 apiResponseArray.pop();
             }
+            // for(k=0; k<6; k++){
+            //     apiResponseArray.shift();
+            // }
+            console.log(apiResponseArray);
         }
     }        
 }); 
