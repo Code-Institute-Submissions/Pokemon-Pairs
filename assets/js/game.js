@@ -97,6 +97,23 @@ $("#mediumButton").click(function(){
     }  
 });
 
+// $("#hardButton").click(function(){
+//     if(apiResponseArray.length == 0){
+//         for (i = 0; i < 3; i++){
+//             var pokemonID = Math.floor((Math.random() * 645)+1); 
+//             $.ajax({
+//                 method:"GET",                
+//                 url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
+//             }).then(function(response){
+//                 ajaxCalls.push(Number(response.cards.length));
+//                 apiResponseArray.push(response.cards[0].imageUrlHiRes);
+//             //Make this Maths.random + 1 as it will never choose 0. 
+//                 apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+//             });
+//         }
+//     }
+// });
+
 $("#hardButton").click(function(){
     if(apiResponseArray.length == 0){
         for (i = 0; i < 3; i++){
@@ -106,9 +123,15 @@ $("#hardButton").click(function(){
                 url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
             }).then(function(response){
                 ajaxCalls.push(Number(response.cards.length));
-                apiResponseArray.push(response.cards[0].imageUrlHiRes);
+                console.log(response);
+                const firstHalfHardCard = response.cards.length / 2;
+                console.log(firstHalfHardCard);
+                apiResponseArray.push(response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes);
+                console.log(apiResponseArray);
             //Make this Maths.random + 1 as it will never choose 0. 
-                apiResponseArray.push(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
+                console.log(response);
+                apiResponseArray.push(response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes);
+                console.log(apiResponseArray);
             });
         }
     }
