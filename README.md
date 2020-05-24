@@ -90,8 +90,55 @@ Contact Page
 1. A form is available to fill in and give feedback.
 2. There is an input for the following:
    + User's name
-   + User's email for a reply.
-   + 
+   + User's email to which they will receive and auto-reply.
+   + User's have to check whether you have permission to use the email.
+   + A text area to type in a message.
+3. There is a clear button for users to press and submit their feedback.
+4. A modal will appear 
+
+Play! Page
+
+Game information bar
+Contains the following information:
+1. User name
+2. A timer counting up in seconds which starts and finishes with each game. It also resets after every game.
+3. A speaker icon which will allow the user to mute/unmute the music.
+4. Labels showing which difficulty mode you have chosen for each game.
+
+Game
+1. Each game will have 12 cards to choose from.
+
+Modals
+1.	Volume Modal – Users can choose whether they would like the music on or off.
+2.	Welcome Modal – 
+3.	Users can enter their name to personalise the experience.
+4.	A speaker icon which will allow the user to mute/unmute the music.
+
+Difficulty Modal
+1.	Users receive a welcome with their personalised name.
+2.	Users can select which difficulty they would like the game to be.
+3.	Alternatively, there is a button to take the user to the “Instructions” page.
+4.	Alternatively, there is a button to take the user to the “Contact” page.
+1.	A speaker icon which will allow the user to mute/unmute the music.
+
+Loading Modal – 
+2.	An animated gif will play whilst the cards are loading.
+3.	The “start game” will appear when the cards are ready.
+4.	A speaker icon which will allow the user to mute/unmute the music.
+
+Finished Modal
+1.	Users can see their scores from the game (moves taken and how long it took).
+2.	Users can see their previous top 3 scores (moves taken and how long it took).
+3.	There is a button allowing users to play again immediately.
+4.	There is a button allowing users to see the cards that have featured in each game.
+
+
+ 
+
+
+
+
+
 
 
 <span id="featuresLeftToImplement"></span>
@@ -115,6 +162,7 @@ These following design features are in place to stop children from unintentional
 + Users cannot swap difficulties halfway through a game. 
 + User must fill in the required forms when sending feedback.
 + User must confirm that they have permission to use an email address. 
++ COUNT RESPONSE
 ___
 <span id="technologiesUsed"></span>
 ### Technologies Used
