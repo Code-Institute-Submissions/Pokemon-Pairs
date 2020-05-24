@@ -238,7 +238,7 @@ function clickedCard(whichCardClicked){
             else if (whichCardClicked == 9) cardSelected = `#card9`;
             else if(whichCardClicked == 10) cardSelected = `#card10`;
             else if (whichCardClicked == 11) cardSelected = `#card11`;
-            else cardSelected = `.cardMatch12`;
+            else cardSelected = `#card12`;
 }
 
 var cardA;
