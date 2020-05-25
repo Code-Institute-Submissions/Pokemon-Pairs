@@ -235,7 +235,7 @@ I received inspiration for this project Love Running. I liked the idea of a webs
 I also received inspiration from the other projects I took part in during the course. 
 Some examples are:
 
-
+https://devhints.io/jasmine
 
 ___
 <span id="project"></span>

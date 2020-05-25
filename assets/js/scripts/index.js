@@ -336,7 +336,7 @@ $("#startGame").click(function(){
 
      var imageContainerArray = [];
         var backupCardsArray;
-        function selectImages(difficultyMode){
+        function selectImages(){
             // if(apiResponseArray.length == 7) backupCardsArray = apiResponseArray;
             if(apiResponseArray.length == 6) backupCardsArray = apiResponseArray;
             else if(difficultyMode == 1) backupCardsArray = backupCardsArrayEasy;
