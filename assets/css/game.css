@@ -14,15 +14,7 @@
 
 .gameIndividualCardWrapper:nth-last-child(1), .gameIndividualCardWrapper:nth-last-child(2){
     margin-bottom: 0;
-}
- /* #gameIndividualCardWrapper{
-        margin: 5px;
-    } */
-/* 
- #gameCardWrapper:nth-last-child(1){
-        margin: 25px;
-    } */
- 
+} 
  .container-fluid{
      padding-left: 0;
      padding-right: 0;
@@ -78,8 +70,7 @@
 }
 
 /* CSS for the animation when the cards are clicked */
-/* Tutorial from http://www.developphp.com/video/CSS/Flip-3D-Boxes-and-Cards-Animation-CSS-Tutorial.
-   It has been modified to fit my purpose */
+/* Tutorial for the animation of the cards. See README.md */
 .card{
     border:0;
     border-radius: 0;
@@ -131,7 +122,7 @@
     width: 21.25vh;
     height: 30vh;
     text-align: center;
-    /* margin-bottom: 10px; */
+    
 }
 
 #gameRow{
