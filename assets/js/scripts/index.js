@@ -342,7 +342,6 @@ $("#startGame").click(function() {
 
     function selectImages() {
         if (apiResponseArray.length == 7) backupCardsArray = apiResponseArray;
-        // if(apiResponseArray.length == 6) backupCardsArray = apiResponseArray;
         else if (difficultyMode == 1) backupCardsArray = backupCardsArrayEasy;
         else if (difficultyMode == 2) backupCardsArray = backupCardsArrayMedium;
         else backupCardsArray = backupCardsArrayHard;
@@ -394,6 +393,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function() {
     } else {
         playMainThemeOnMute();
     }
+    
     // Displaying difficulty modal at the beginning of each new game.
     $("#gridItemTimerDisplay").html("0 seconds");
     turningCardsFaceDown();
