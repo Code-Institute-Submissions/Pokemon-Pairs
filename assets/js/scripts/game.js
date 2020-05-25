@@ -4,7 +4,7 @@ var types = ["darkness", "water", "lightning", "fighting", "metal", "grass", "fi
 var ajaxCalls = [];
 var apiResponseArray = ["placeholder"];
 results = ["-", "-"];
-resultsTime = ["-", "-"]
+resultsTime = ["-", "-"];
 pairMatch = 0;
 
 
@@ -44,11 +44,11 @@ $("#startGame").click(function() {
             clearInterval(stopWatch);
             results.unshift(movesTaken);
             results.sort(function(a, b) {
-                return a - b
+                return a - b;
             });
             resultsTime.unshift(timeTaken);
             resultsTime.sort(function(a, b) {
-                return a - b
+                return a - b;
             });
 
             $("#totalMoves").html(`<h6>Total moves: ${movesTaken} </h6>`);
@@ -119,7 +119,7 @@ $("#hardButton").click(function() {
                 } while (hardCard1 == apiResponseArray[0]) {
                     apiResponseArray.unshift(hardCard1);
 
-                };
+                }
 
 
                 do {
@@ -128,7 +128,7 @@ $("#hardButton").click(function() {
                 } while (hardCard2 == apiResponseArray[0]) {
                     apiResponseArray.unshift(hardCard2);
 
-                };
+                }
 
 
             });
@@ -242,10 +242,11 @@ var animationInProgress = 0;
 
 function notAPair() {
     animationInProgress = 1;
-    var wrongWait = setTimeout(pairNotFound, 750);
+    var wrongWait = setTimeout(pairNotFound, 17750);
 
     function pairNotFound() {
         turningCardsFaceDown();
+        clearTimeout(wrongWait);
     }
 
     for (j = 1; j < 13; j++) {
@@ -265,7 +266,7 @@ function notAPair() {
 }
 
 $('#gameRow').on('click', '.card', function() {
-    if (animationInProgress == 0) {
+    if (animationInProgress === 0) {
         clickedCard(whichCardClicked);
         pairSelected(whichCardClicked);
         $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -275,11 +276,11 @@ $('#gameRow').on('click', '.card', function() {
 
 $('#gameRow').on('click', cardSelected, function() {
 
-    if (cardSelected != null) {
+    if (cardSelected !== null) {
 
-        if (animationInProgress == 0) {
+        if (animationInProgress === 0) {
 
-            movesTaken++
+            movesTaken++;
             pairCounterArray[whichCardClicked] = 1;
 
             if (pairCounterArray[cardA] == 1 && pairCounterArray[cardB] == 1) {
@@ -287,7 +288,7 @@ $('#gameRow').on('click', cardSelected, function() {
 
                 pairCounterArray[cardA] = 0;
                 pairCounterArray[cardB] = 0;
-                if (sessionStorage.muted == 0) {
+                if (sessionStorage.muted === 0) {
                     $("#matchingPairMusic").get(0).play();
                 }
 
