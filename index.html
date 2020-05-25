@@ -1,274 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/game.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="assets/css/game.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
         <title>Pokémon Pairs!</title>
-</head>
-<body id="#indexBody">
- 
-<section id="landingPage">
-    <div class="jumbotron">
-        <img id="jumboimagePortrait" src="assets/images/cover9.png" alt="Picture of Pokemon">
-        <img id="jumboimageLandscape" src="assets/images/landscape_landing2.png" alt="Picture of Pokemon">
-        <audio id="mainThemeMusic" controls loop>
-            <source src="assets/music/mainTheme.mp3" type="audio/mpeg" >
-        </audio>
-    </div>
-</section>
-     <!-- Image from: https://textcraft.net/style/Textcraft/pokemon -->
-    <header id="gridItemHeader">       
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a id="#homeLinkLogo" class="navbar-brand" href="index.html"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="help.html">Help</a>
-                    </li>
-                    <li  id="homePage" class="nav-item active">
-                        <a class="nav-link" href="index.html">Play!</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    </head>
+    <body id="#indexBody">
+        <section id="landingPage">
+            <div class="jumbotron">
+                <img id="jumboimagePortrait" src="assets/images/cover9.png" alt="Picture of Pokemon" />
+                <img id="jumboimageLandscape" src="assets/images/landscape_landing2.png" alt="Picture of Pokemon" />
+                <audio id="mainThemeMusic" controls loop>
+                    <source src="assets/music/mainTheme.mp3" type="audio/mpeg" />
+                </audio>
             </div>
-        </nav>
-    </header>        
+        </section>
+        <!-- Image from: https://textcraft.net/style/Textcraft/pokemon -->
+        <header id="gridItemHeader">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a id="#homeLinkLogo" class="navbar-brand" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">Help</a>
+                        </li>
+                        <li id="homePage" class="nav-item active">
+                            <a class="nav-link" href="index.html">Play!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <aside id="gridItemGameInfo">
             <div id="gridGameInfo" class="grid-game-info">
                 <div id="gridItemName">
                     <h6 id="playerName" class="game-info-text">Name</h6>
-                                   
-                </div>                        
+                </div>
                 <div id="gridItemTimer">
                     <h6 id="timerTitle" class="game-info-text">Timer</h6>
-                    <h6 id="gridItemTimerDisplay" class="game-info-text">0 seconds</h6>   
-                    <i  class="fas fa-volume-up" aria-label="mute" title="mute"></i>
-                    <i id="gameThemeControl" class="fas fa-volume-mute " aria-label="unmute" title="unmute"></i> 
+                    <h6 id="gridItemTimerDisplay" class="game-info-text">0 seconds</h6>
+                    <i class="fas fa-volume-up" title="mute"></i>
+                    <i id="gameThemeControl" class="fas fa-volume-mute" title="unmute"></i>
                 </div>
-            </div> 
+            </div>
             <div id="difficultyMode">
                 <div id="easy">Easy</div>
                 <div id="medium">Medium</div>
                 <div id="hard">Hard</div>
-                
-            </div>   
+            </div>
         </aside>
         <section id="gridItemGame">
             <audio id="gameThemeMusic" controls loop>
-                <source src="assets/music/gameTheme.mp3" type="audio/mpeg" >
+                <source src="assets/music/gameTheme.mp3" type="audio/mpeg" />
             </audio>
             <audio id="matchingPairMusic" controls>
-                <source src="assets/music/matchingPair.mp3" type="audio/mpeg" >
+                <source src="assets/music/matchingPair.mp3" type="audio/mpeg" />
             </audio>
             <audio id="endOfGameThemeMusic" controls loop>
-                <source src="assets/music/endOfGameTheme.mp3" type="audio/mpeg" >
+                <source src="assets/music/endOfGameTheme.mp3" type="audio/mpeg" />
             </audio>
             <div id="game" class="container-fluid">
-            <div id="gameRow" class="row"> 
-            
+                <div id="gameRow" class="row"></div>
             </div>
-            </div>    
         </section>
-    
-    
 
-    <!-- ******************** Modals ******************* -->
-    <!-- ***** Allow volume modal ***** -->
+        <!-- ******************** Modals ******************* -->
+        <!-- ***** Allow volume modal ***** -->
 
-    <div class="modal fade" id="volumeModal" tabindex="-1" role="dialog" aria-labelledby="volumeModal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header navbar">
-          <h5 class="navbar-brand navbar-brand-modal" id="volumeModalTitle"></h5>
-           
-        </div>
-        <div id="volumeModalBody" class="modal-body">
-            <h5>Would you like volume?</h5>
-          <button id="volumeAllowed" class="btn btn-primary volume">Yes</button>
-          <button id="volumeNotAllowed" class="btn btn-primary volume">No</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- ***** Welcome modal ***** -->
-
-    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header navbar">
-        <div class="speaker"  aria-label="mute/unmute">
-             <i  class="fas fa-volume-up " title="mute" aria-label="mute"></i>
-             <i class="fas fa-volume-mute mainThemeControl" title="unmute" aria-label="unmute"></i>
-          </div>
-          <h5 class="navbar-brand navbar-brand-modal" id="welcomeModalTitle"></h5>
-          
-          
-        </div>
-        <div id="welcomeModalBody" class="modal-body">
-          <input type="text" id="nameInput" value="Guest">
-        </div>
-        <div id="welcomeModalFooter" class="modal-footer">
-          <button id="enterName" class="btn btn-primary" data-toggle="modal" data-target="#difficultyModal">Enter</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- ***** Difficulty Modal ***** -->
-  <div class="modal fade" id="difficultyModal" tabindex="-1" role="dialog" aria-labelledby="difficultyModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-        <div class="speaker"  aria-label="mute/unmute">
-             <i class="fas fa-volume-up " title="mute" aria-label="mute"></i>
-             <i class="fas fa-volume-mute mainThemeControl" title="unmute" aria-label="unmute"></i>
-          </div>
-          <h5 class="modal-title" id="difficultyModalTitle">Let's start!</h5>
-          
-        </div>
-        <div class="modal-body">
-          <p id="usageWarning" class="display"></p>
-          <p>Please select your difficulty!</p>
-          <button id="easyButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" data-dismiss="modal">Easy</button>
-          <button id="mediumButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" data-dismiss="modal">Medium</button>
-          <button id="hardButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" data-dismiss="modal">Hard</button>
-        </div>
-        <div class="modal-footer">
-          <div id="seeInstructions">
-            <h6>Or...</h6>
-            <div id="seeInstructionsButton" class="btn btn-primary"><a href="help.html">See instructions</a></div>
-            <div id="contactPageButton" class="btn btn-primary"><a href="contact.html">Contact Us</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- Loading Modal -->
-<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div id="loadingModalHeader" class="modal-header">
-        <div class="speaker"  aria-label="mute/unmute">
-             <i class="fas fa-volume-up" title="mute" aria-label="mute"></i>
-             <i class="fas fa-volume-mute mainThemeControl" title="unmute" aria-label="unmute"></i>
-          </div>
-          <h5 class="modal-title">Loading!</h5>
-          
-        </div>
-        <div id="loadingModalBody" class="modal-body">
-          <div> 
-            <p>We are carefully selecting your pokémon!</p> 
-            <p class="d-md-none">Turn Landscape for a better experience!</p> 
-         </div>
-          <div id="loading-gif"></div>
-        </div>
-        <div class="modal-footer">
-          <button id="startGame" class="btn btn-primary display" data-dismiss="modal">Start Game</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- ***** Finished Modal ***** -->
-  <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-        <div class="speaker"  aria-label="mute/unmute">
-             <i  class="fas fa-volume-up " title="mute" aria-label="mute"></i>
-             <i class="fas fa-volume-mute endGameThemeControl" title="unmute" aria-label="unmute"></i>
-          </div>
-          <h5 class="modal-title" id="finishedModalTitle">You won!</h5>
-          
-        </div>
-        <div class="modal-body current-game-results">
-          <h5 id="revealResults">Results</h5>
-          <div class="result-wrapper">
-            <div id="totalMoves">Moves: </div>
-            <div id="timeTaken">Time taken: </div>
-          </div>
-        </div>
-        <div id="results" class="modal-body">
-          
-                <div id="topResultsWrapper">
-                    <p id="moveResultHeader">Top moves</p>
-                    <div class="result-wrapper">
-                        <p id="gridItemTopResult1">1<sup>st</sup> :<span id="resultMove1"></span> </p>
-                        <p id="gridItemTopResult2">2<sup>nd</sup> :<span id="resultMove2"></span> </p>            
-                        <p id="gridItemTopResult3">3<sup>rd</sup> :<span id="resultMove3"></span> </p>  
-                    </div>   
-                </div> 
-                <div id="topResultsWrapperTime">
-                    <p id="timeResultHeader">Top times</p>
-                    <div class="result-wrapper">
-                        <p id="topTimeResult1">1<sup>st</sup> : <span id="resultTime1"></span></p>
-                        <p id="topTimeResult2">2<sup>nd</sup> : <span id="resultTime2"></span></p>            
-                        <p id="topTimeResult3">3<sup>rd</sup> : <span id="resultTime3"></span></p>    
+        <div class="modal fade" id="volumeModal" tabindex="-1" role="dialog" aria-labelledby="volumeModal" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header navbar">
+                        <h5 class="navbar-brand navbar-brand-modal" id="volumeModalTitle"></h5>
                     </div>
-                </div>           
+                    <div id="volumeModalBody" class="modal-body">
+                        <h5>Would you like volume?</h5>
+                        <button id="volumeAllowed" class="btn btn-primary volume">Yes</button>
+                        <button id="volumeNotAllowed" class="btn btn-primary volume">No</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button id="seeCardsButton" data-toggle="modal" data-target="#displayCardsModal" class="btn btn-primary">See pokémon cards</button>
-          <button id="playAgainButton" data-toggle="modal" data-target="difficultyModal" class="btn btn-primary">Play Again</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- ***** Display Cards Modal ***** -->
-  <div class="modal fade" id="displayCardsModal" tabindex="-1" role="dialog" aria-labelledby="displayCardsModal" data-backdrop="static" data-keyboard="false" aria-hidden="true">
-  <div class="modal-dialog modal-display" role="document">
-    <div class="modal-content modal-content-display">
-      <div class="modal-header">
-      <div class="speaker"  aria-label="mute/unmute">
-             <i class="fas fa-volume-up" title="mute" aria-label="mute"></i>
-             <i class="fas fa-volume-mute endGameThemeControl" title="unmute" aria-label="unmute"></i>
-          </div>
-        <h5 class="modal-title" id="displayCardsModalTitle">Here are the cards from your game!!</h5>
-        
-      </div>
-      <div class="modal-body">
-        <div id="displayCardsWrapper">
-          <div id="displayCard1" class="display-cards"> </div>
-          <div id="displayCard2" class="display-cards"> </div>
-          <div id="displayCard3" class="display-cards"> </div>
-          <div id="displayCard4" class="display-cards"> </div>
-          <div id="displayCard5" class="display-cards"> </div>
-          <div id="displayCard6" class="display-cards"> </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button id="playAgainButtonDisplay" class="btn btn-primary" data-dismiss="modal">Play again!</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/scripts/game.js"></script>
-     <script src="assets/js/scripts/index.js"></script>
-    <script src="https://kit.fontawesome.com/3129319209.js" crossorigin="anonymous"></script>
- 
-</body>
+        <!-- ***** Welcome modal ***** -->
+
+        <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModal" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header navbar">
+                        <div class="speaker">
+                            <i class="fas fa-volume-up" title="mute"></i>
+                            <i class="fas fa-volume-mute mainThemeControl" title="unmute"></i>
+                        </div>
+                        <h5 class="navbar-brand navbar-brand-modal" id="welcomeModalTitle"></h5>
+                    </div>
+                    <div id="welcomeModalBody" class="modal-body">
+                        <input type="text" id="nameInput" value="Guest" />
+                    </div>
+                    <div id="welcomeModalFooter" class="modal-footer">
+                        <button id="enterName" class="btn btn-primary" data-toggle="modal" data-target="#difficultyModal">Enter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Difficulty Modal ***** -->
+        <div class="modal fade" id="difficultyModal" tabindex="-1" role="dialog" aria-labelledby="difficultyModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="speaker">
+                            <i class="fas fa-volume-up" title="mute"></i>
+                            <i class="fas fa-volume-mute mainThemeControl" title="unmute"></i>
+                        </div>
+                        <h5 class="modal-title" id="difficultyModalTitle">Let's start!</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p id="usageWarning" class="display"></p>
+                        <p>Please select your difficulty!</p>
+                        <button id="easyButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" data-dismiss="modal">Easy</button>
+                        <button id="mediumButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" data-dismiss="modal">Medium</button>
+                        <button id="hardButton" class="btn btn-primary" data-toggle="modal" data-target="#loadingModal" data-dismiss="modal">Hard</button>
+                    </div>
+                    <div class="modal-footer">
+                        <div id="seeInstructions">
+                            <h6>Or...</h6>
+                            <div id="seeInstructionsButton" class="btn btn-primary"><a href="help.html">See instructions</a></div>
+                            <div id="contactPageButton" class="btn btn-primary"><a href="contact.html">Contact Us</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Modal -->
+        <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div id="loadingModalHeader" class="modal-header">
+                        <div class="speaker">
+                            <i class="fas fa-volume-up" title="mute"></i>
+                            <i class="fas fa-volume-mute mainThemeControl" title="unmute"></i>
+                        </div>
+                        <h5 class="modal-title">Loading!</h5>
+                    </div>
+                    <div id="loadingModalBody" class="modal-body">
+                        <div>
+                            <p>We are carefully selecting your pokémon!</p>
+                            <p class="d-md-none">Turn Landscape for a better experience!</p>
+                        </div>
+                        <div id="loading-gif"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="startGame" class="btn btn-primary display" data-dismiss="modal">Start Game</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Finished Modal ***** -->
+        <div class="modal fade" id="finishedModal" tabindex="-1" role="dialog" aria-labelledby="finishedModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="speaker">
+                            <i class="fas fa-volume-up" title="mute"></i>
+                            <i class="fas fa-volume-mute endGameThemeControl" title="unmute"></i>
+                        </div>
+                        <h5 class="modal-title" id="finishedModalTitle">You won!</h5>
+                    </div>
+                    <div class="modal-body current-game-results">
+                        <h5 id="revealResults">Results</h5>
+                        <div class="result-wrapper">
+                            <div id="totalMoves">Moves:</div>
+                            <div id="timeTaken">Time taken:</div>
+                        </div>
+                    </div>
+                    <div id="results" class="modal-body">
+                        <div id="topResultsWrapper">
+                            <p id="moveResultHeader">Top moves</p>
+                            <div class="result-wrapper">
+                                <p id="gridItemTopResult1">1<sup>st</sup> :<span id="resultMove1"></span></p>
+                                <p id="gridItemTopResult2">2<sup>nd</sup> :<span id="resultMove2"></span></p>
+                                <p id="gridItemTopResult3">3<sup>rd</sup> :<span id="resultMove3"></span></p>
+                            </div>
+                        </div>
+                        <div id="topResultsWrapperTime">
+                            <p id="timeResultHeader">Top times</p>
+                            <div class="result-wrapper">
+                                <p id="topTimeResult1">1<sup>st</sup> : <span id="resultTime1"></span></p>
+                                <p id="topTimeResult2">2<sup>nd</sup> : <span id="resultTime2"></span></p>
+                                <p id="topTimeResult3">3<sup>rd</sup> : <span id="resultTime3"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="seeCardsButton" data-toggle="modal" data-target="#displayCardsModal" class="btn btn-primary">See pokémon cards</button>
+                        <button id="playAgainButton" data-toggle="modal" data-target="difficultyModal" class="btn btn-primary">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Display Cards Modal ***** -->
+        <div class="modal fade" id="displayCardsModal" tabindex="-1" role="dialog" aria-labelledby="displayCardsModal" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-display" role="document">
+                <div class="modal-content modal-content-display">
+                    <div class="modal-header">
+                        <div class="speaker">
+                            <i class="fas fa-volume-up" title="mute"></i>
+                            <i class="fas fa-volume-mute endGameThemeControl" title="unmute"></i>
+                        </div>
+                        <h5 class="modal-title" id="displayCardsModalTitle">Here are the cards from your game!!</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div id="displayCardsWrapper">
+                            <div id="displayCard1" class="display-cards"></div>
+                            <div id="displayCard2" class="display-cards"></div>
+                            <div id="displayCard3" class="display-cards"></div>
+                            <div id="displayCard4" class="display-cards"></div>
+                            <div id="displayCard5" class="display-cards"></div>
+                            <div id="displayCard6" class="display-cards"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="playAgainButtonDisplay" class="btn btn-primary" data-dismiss="modal">Play again!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts/game.js"></script>
+        <script src="assets/js/scripts/index.js"></script>
+        <script src="https://kit.fontawesome.com/3129319209.js" crossorigin="anonymous"></script>
+    </body>
 </html>
