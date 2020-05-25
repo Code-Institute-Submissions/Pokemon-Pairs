@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/support-pages.css"> 
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <script
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-    </script>
-    <script>
-    (function(){
-        emailjs.init("user_0XBxWooJXDClaRYNDfedS");
-    })();
-    </script> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/support-pages.css" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+        <script>
+            (function () {
+                emailjs.init("user_0XBxWooJXDClaRYNDfedS");
+            })();
+        </script>
         <title>Pokémon Pairs! - Contact</title>
-</head>
-<body id="contact">
- <header id="gridItemHeader">       
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a id="#homeLinkLogo" class="navbar-brand" href="index.html"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="help.html">Help</a>
-                    </li>
-                    <li  id="homePage" class="nav-item ">
-                        <a class="nav-link" href="index.html">Play!</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link " href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    </head>
+    <body id="contact">
+        <header id="gridItemHeader">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a id="#homeLinkLogo" class="navbar-brand" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">Help</a>
+                        </li>
+                        <li id="homePage" class="nav-item">
+                            <a class="nav-link" href="index.html">Play!</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section id="contactForm" class="content">
+            <h1>Contact Us!</h1>
+            <div id="info-text">
+                <p>
+                    We would love to hear from you!<br />
+                    Please use the form to leave your feedback or to ask any questions!
+                </p>
             </div>
-        </nav>
-    </header>  
-    <section id="contactForm" class="content">
-        <h1>Contact Us!</h1>
-        <div id="info-text">
-            <p>We would love to hear from you!<br>
-               Please use the form to leave your feedback or to ask any questions!</p>
-            
-        </div>
-        <form onsubmit="return sendEnquiry(this);">
-            <div class="form-group">
-                <label for="userName">Name</label>
-                <input type="text" class="form-control" id="userName" name="userName"  placeholder="Please type in your name here.">
-            </div>
-            <div class="form-group">
-                <label for="userEmail">Email address</label>
-                <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Please type in your email address here." required>
-            </div>
-            <div class="form-group">
-                <label for="ageConsent">Do you have permission to use this email address?</label>
-                <select class="form-control" id="ageConsent" name="ageConsent" required>
-                    <option>Yes</option>
-                    <option>No</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="reasonForEnquiry">Please write your feedback or questions here.</label>
-                <textarea class="form-control" id="reasonForEnquiry" name="reasonForEnquiry" required></textarea>
-            </div>
-            <div id="submitButton">
-                <button id="sendButton" type="submit" class="btn-styling">Send</button>
-            </div>
-        </form>
-    </section>
+            <form onsubmit="return sendEnquiry(this);">
+                <div class="form-group">
+                    <label for="userName">Name</label>
+                    <input type="text" class="form-control" id="userName" name="userName" placeholder="Please type in your name here." />
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Please type in your email address here." required />
+                </div>
+                <div class="form-group">
+                    <label for="ageConsent">Do you have permission to use this email address?</label>
+                    <select class="form-control" id="ageConsent" name="ageConsent" required>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reasonForEnquiry">Please write your feedback or questions here.</label>
+                    <textarea class="form-control" id="reasonForEnquiry" name="reasonForEnquiry" required></textarea>
+                </div>
+                <div id="submitButton">
+                    <button id="sendButton" type="submit" class="btn-styling">Send</button>
+                </div>
+            </form>
+        </section>
 
-    <!-- ***** Success Modal ***** -->
-    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="successModalTitle">Message Sent!</h4>
-        </div>
-        <div id="messageSent" class="modal-body">
-            <h5>Thank you!</h5>
-            <h5>We really appreciate your feedback and will get back to you as soon as possible!</h5>
-        </div>
-        <div class="modal-footer">
-            <div id="feedbackOptions">
-                <div id="play" class="btn-styling"><a href="index.html">Play!</a></div>
+        <!-- ***** Success Modal ***** -->
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="successModalTitle">Message Sent!</h4>
+                    </div>
+                    <div id="messageSent" class="modal-body">
+                        <h5>Thank you!</h5>
+                        <h5>We really appreciate your feedback and will get back to you as soon as possible!</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <div id="feedbackOptions">
+                            <div id="play" class="btn-styling"><a href="index.html">Play!</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="assets/js/scripts/contact.js"></script>
-<script src="assets/js/scripts/index.js"></script>
-<script src="https://kit.fontawesome.com/3129319209.js" crossorigin="anonymous"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts/contact.js"></script>
+        <script src="assets/js/scripts/index.js"></script>
+        <script src="https://kit.fontawesome.com/3129319209.js" crossorigin="anonymous"></script>
+    </body>
 </html>
