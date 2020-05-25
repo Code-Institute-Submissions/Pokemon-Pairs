@@ -3,7 +3,7 @@
 ![picture](/assets/images/test_response2.png)
 
 
-### [Live page](https://cgpalmer.github.io/The-Book-Club/)
+### [Live page](https://cgpalmer.github.io/Pokemon-Pairs/)
 ___
 
 ## Contents
@@ -37,6 +37,11 @@ ___
 <span id="rationale"></span>
 ## Rationale
 
+#### Pokémon Pairs - Gotta Match'Em All!
+The rationale for this project is to build a memory game for children. It is aimed at building
+their memory skills whilst keeping them entertained. Pokémon is hugely popular with younger
+children, especially since the release of Pokémon Go. Now, they can build up their skills, whilst
+competing against themselves. Can they complete the game in fewer moves or less time?
 
 ___
 
@@ -222,7 +227,7 @@ ___
 <span id="media"></span>
 Media
 
-The photos used in this site were obtained from Google. They were all free so share and edit. 
+The photos used in this site were obtained from Google. They were all free so share and edit.
 
 https://www.ionos.co.uk/tools/favicon-generator
 
@@ -231,11 +236,10 @@ https://www.youtube.com/watch?v=PxzY57ImZdQ
 <span id="acknowledgements"></span>
 Acknowledgements  
 
-I received inspiration for this project Love Running. I liked the idea of a website that helped people locate groups that they could join in with. I also really like their “next run” section, which I used as inspiration for my “next meeting” section. 
-I also received inspiration from the other projects I took part in during the course. 
-Some examples are:
+Through discussion with my mentor, we decided a matching pairs game would give me an appropriate challenge.
+I received inspiration from playing Pokémon Go. I thought a great way to give the matching game a purpose would 
+be to use Pokémon cards.
 
-https://devhints.io/jasmine
 
 ___
 <span id="project"></span>
