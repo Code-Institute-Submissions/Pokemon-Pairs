@@ -116,10 +116,11 @@ $("#mediumButton").click(function(){
 //             //     console.log(hardCard1);
 //             // } while (hardCard1 == apiResponseArray[0]){
 //             //     apiResponseArray.unshift(hardCard1);
+                        console.log("Checked to ensure it is random.");
 //             // };
 
 //             // do {
-//             //     var hardCard2 = response.cards[Math.floor(Math.random() * 2)].imageUrlHiRes
+//             //     var hardCard2 = response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes
 //             //     console.log(hardCard2);
 //             // } while (hardCard2 == apiResponseArray[0]){
 //             //     apiResponseArray.unshift(hardCard2);
@@ -142,11 +143,24 @@ $("#hardButton").click(function(){
                 console.log(response);
                 const firstHalfHardCard = response.cards.length / 2;
                 console.log(firstHalfHardCard);
-                apiResponseArray.push(response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes);
+                do {
+                var hardCard1 = response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes;
+                console.log(hardCard1);
+                } while (hardCard1 == apiResponseArray[0]){
+                 apiResponseArray.unshift(hardCard1);
+                        console.log("Checked to ensure it is random.");
+                };           
+                console.log(apiResponseArray);
+
+                 do {
+                var hardCard2 = response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes;
+                console.log(hardCard2);
+                } while (hardCard2 == apiResponseArray[0]){
+                 apiResponseArray.unshift(hardCard2);
+                        console.log("Checked to ensure it is random.");
+                };           
                 console.log(apiResponseArray);
             //Make this Maths.random + 1 as it will never choose 0. 
-                console.log(response);
-                apiResponseArray.push(response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes);
                 console.log(apiResponseArray);
             });
         }
