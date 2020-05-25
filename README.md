@@ -22,6 +22,7 @@ ___
    - <a href="#deploymentLive">Deployment Live</a>
    - <a href="#deploymentLive">Deployment Local</a>
 + <a href="#credit">Credit</a>
+   - <a href="#tutorials">Tutorials, libraries and frameworks</a>
    - <a href="#media">Media</a>
    - <a href="#acknowledgements">Acknowledgements</a>
 + <a href="#project">Project Evaluation</a>
@@ -158,6 +159,7 @@ ___
 
 As this project is designed for children, it was imperative that I build in multiple fail-safes.
 These following design features are in place to stop children from unintentionally breaking the game.
++ Modals guide the children through to the game in an easy and straight forward way.
 + If the api doesn't load, then an emergency set of cards will be drawn from static images loaded onto the webpage.
 + If a child does not input their name, it has a default of "guest". 
 + Clicking on the same card consectutively will not affect the game.
@@ -167,12 +169,10 @@ These following design features are in place to stop children from unintentional
 + Users cannot swap difficulties halfway through a game. 
 + User must fill in the required forms when sending feedback.
 + User must confirm that they have permission to use an email address. 
-+ COUNT RESPONSE
++ User will receive a message if the game reaches near its api limit in one session.
 ___
 <span id="technologiesUsed"></span>
 ### Technologies Used
-
- 
 
 Bootstrap – https://getbootstrap.com/  
 The project uses Bootstrap to simplify the process of building a grid layout, implementing forms, cards, and creating buttons. Bootstrap was also used for responsive design. 
@@ -180,14 +180,13 @@ The project uses Bootstrap to simplify the process of building a grid layout, im
 emailJS - I have used emailJS to allow the users to contact the game producers and give feedback.
 
 JQuery – https://jquery.com/  
-JQuery was not used discreetly by me. However, elements of Bootstrap used JQuery and Javascript, therefore I have added the necessary scripts on each page. 
 
- 
+Jasmine testing Framework - https://jasmine.github.io/
 
 <span id="testing"></span>
 ### Testing
 
-Please find the link to the test document here: [Link to testing page](assets/files/README-TESTING.md)   
+Please find the link to the test document here: [Link to testing page]()   
 
 
 
@@ -205,7 +204,7 @@ Deployment – Live Website
    3.	Find the “settings” tab and click on it.
    4.	Scroll down until you arrive at the “GitHub Pages” sections.
    5.	Under the “source” drop down menu, choose a branch. I chose “master branch” and select it. 
-   6.	You will then see a URL to your live webpage. In my case the URL is https://cgpalmer.github.io/The-Book-Club/
+   6.	You will then see a URL to your live webpage. In my case the URL is https://cgpalmer.github.io/Pokemon-Pairs/.
 
 <span id="deploymentLocal"></span>
 Deployment – Run Locally  
@@ -216,7 +215,7 @@ Deployment – Run Locally
    4.	Once you have chose your desired option, then click the copy icon next to the URL.
    5.	Open Git Bash.
    6.	Ensure you are in the correct directory which you want to copy the code into. If not, change the directory now.
-   7.	In the terminal, write the    $ git clone https://github.com/cgpalmer/The-Book-Club.git
+   7.	In the terminal, write the    $ git clonehttps://cgpalmer.github.io/Pokemon-Pairs.git
    8.	Press the enter button and your clone will be created.
 
 
@@ -224,17 +223,8 @@ ___
 <span id="credit"></span>
 ## Credit
 
-<span id="media"></span>
-Media
-
-The photos used in this site were obtained from Google. They were all free so share and edit.
-Favicon generator
-https://www.ionos.co.uk/tools/favicon-generator
-
-Theme songs
-https://www.youtube.com/watch?v=PxzY57ImZdQ
-
-https://www.youtube.com/watch?v=axKDCZd4Mfc
+<span id="#tutorials"></span>
+Tutorials, libraries and frameworks
 
 Animating cards
 http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
@@ -250,12 +240,29 @@ How to toggle sounds playing
 
 How to play sound when clicking a button
 //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
+
+Pokémon cards are taken from an api found at 
+https://pokemontcg.io/
+
+<span id="media"></span>
+Media
+
+The photos used in this site were obtained from Google. They were all free so share and edit.
+Favicon generator
+https://www.ionos.co.uk/tools/favicon-generator
+
+Theme songs
+https://www.youtube.com/watch?v=PxzY57ImZdQ
+
+https://www.youtube.com/watch?v=axKDCZd4Mfc
+
+
 <span id="acknowledgements"></span>
 Acknowledgements  
 
 Through discussion with my mentor, we decided a matching pairs game would give me an appropriate challenge.
 I received inspiration from playing Pokémon Go. I thought a great way to give the matching game a purpose would 
-be to use Pokémon cards.
+be to use Pokémon cards. 
 
 
 ___
