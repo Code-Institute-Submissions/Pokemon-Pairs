@@ -59,5 +59,5 @@ describe("Give an ID based on the card selected", function() {
             var result = clickedCard(12)
             expect(result).toBe("#card12");
         });
-         
 });
+

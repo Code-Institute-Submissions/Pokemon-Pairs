@@ -523,7 +523,7 @@ describe("Give an ID based on the card selected", function() {
 
 
 
-describe("Deciding which link to make active", function() {
+describe("Deciding which difficult to make active", function() {
    
     it("should exist", function() {
             expect(selectingActiveLink).toBeDefined();
