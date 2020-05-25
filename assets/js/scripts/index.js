@@ -235,33 +235,38 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     }
 });
 
+
+
 // Highlighting which difficulty the user has selected.
 $("#easyButton").click(function(){
     difficultyMode = 1;
     selectingActiveLink();
+    $(activeLink).addClass("active-mode");
 });
 
 $("#mediumButton").click(function(){
     difficultyMode = 2;
     selectingActiveLink();
+    $(activeLink).addClass("active-mode");
 });
 
 $("#hardButton").click(function(){
     difficultyMode = 3;
     selectingActiveLink();
+    $(activeLink).addClass("active-mode");
 });
-
 
 var activeLink;
 var nonActiveLink;
-function selectingActiveLink(difficultyMode2){
+function selectingActiveLink(difficultyMode){
         console.log(difficultyMode);
-        if(difficultyMode == 1) activeLink = "#easy";
-        else if(difficultyMode == 2) activeLink = "#medium";
-        else activeLink = "#hard";
-        $(activeLink).addClass("active-mode");
+        if(difficultyMode == 1) return activeLink = "#easy";
+        else if(difficultyMode == 2) return activeLink = "#medium";
+        else return activeLink = "#hard";
+        
 
 }
+
 
 //Opening up the display cards modal
 $("#seeCardsButton").click(function(){
