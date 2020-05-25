@@ -149,18 +149,21 @@ $(document).ready(function() {
             } else {
                 playMainThemeOnMute();
             }
+            
             var time = setTimeout(removeJumbo, 2000);
-
             function removeJumbo() {
                 $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
                 $(".jumbotron").slideUp("slow");
-                var welcomeModalTime = setTimeout(revealWelcomeModal, 750)
-
+                
+                
+                var welcomeModalTime = setTimeout(revealWelcomeModal, 750);
                 function revealWelcomeModal() {
                     $("#welcomeModal").css("display", "block").addClass("in").addClass("show");
                     $("#indexBody").addClass("modal-open");
+                    clearTimeout(welcomeModalTime);
                 }
             }
+            clearTimeout(time);
         });
     } else {
         if (sessionStorage.muted == 0) {
@@ -217,6 +220,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
         if (apiResponseArray.length < 7) {
 
             $("#startGame").removeClass("display");
+            clearTimeout(timeBackup);
         }
     }
 
