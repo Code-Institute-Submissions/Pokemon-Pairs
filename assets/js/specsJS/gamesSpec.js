@@ -10,4 +10,9 @@ describe("Give an ID based on the card selected", function() {
             // Any matcher can evaluate to a negative assertion by chaining the call to expect with a not before calling the matcher.
             expect(clickedCard).toBeDefined();
         });
+
+    it("should return as #card1 when called as clickedCard(1)", function() {
+            var result = clickedCard(1)
+            expect(result).toBe("#card1");
+        });
 });
