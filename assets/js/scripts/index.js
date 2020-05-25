@@ -219,7 +219,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 
     var timeBackup = setTimeout(backupCards, 45000);
     function backupCards(){
-        if(apiResponseArray.length < 6){
+        if(apiResponseArray.length < 7){
             
             $("#startGame").removeClass("display");
         }
@@ -227,8 +227,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
 
     var time = setInterval(loadingArray, 1000);
     function loadingArray(){
-            // if(apiResponseArray.length == 7){
-                if(apiResponseArray.length == 6){
+            if(apiResponseArray.length == 7){
+                // if(apiResponseArray.length == 6){
                 $("#startGame").removeClass("display");
                 clearInterval(time);
             }
@@ -339,8 +339,8 @@ $("#startGame").click(function(){
      var imageContainerArray = [];
         var backupCardsArray;
         function selectImages(){
-            // if(apiResponseArray.length == 7) backupCardsArray = apiResponseArray;
-            if(apiResponseArray.length == 6) backupCardsArray = apiResponseArray;
+            if(apiResponseArray.length == 7) backupCardsArray = apiResponseArray;
+            // if(apiResponseArray.length == 6) backupCardsArray = apiResponseArray;
             else if(difficultyMode == 1) backupCardsArray = backupCardsArrayEasy;
             else if (difficultyMode == 2) backupCardsArray = backupCardsArrayMedium;
             else backupCardsArray = backupCardsArrayHard;

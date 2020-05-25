@@ -2,8 +2,8 @@
 //It has been modified for my benefit
 var types =["darkness", "water", "lightning", "fighting", "metal", "grass", "fire", "psychic", "fairy", "dragon", "colorless"];
 var ajaxCalls = [];
-// var apiResponseArray = ["placeholder"];
-var apiResponseArray = [];
+var apiResponseArray = ["placeholder"];
+// var apiResponseArray = [];
 results = ["-","-"];
 resultsTime = ["-", "-"]
 pairMatch = 0;
@@ -116,7 +116,7 @@ $("#mediumButton").click(function(){
 //             //     console.log(hardCard1);
 //             // } while (hardCard1 == apiResponseArray[0]){
 //             //     apiResponseArray.unshift(hardCard1);
-                        console.log("Checked to ensure it is random.");
+                        // console.log("Checked to ensure it is random.");
 //             // };
 
 //             // do {
@@ -132,7 +132,7 @@ $("#mediumButton").click(function(){
 // });
 
 $("#hardButton").click(function(){
-    if(apiResponseArray.length == 0){
+    if(apiResponseArray.length == 1){
         for (i = 0; i < 3; i++){
             var pokemonID = Math.floor((Math.random() * 645)+1); 
             $.ajax({
