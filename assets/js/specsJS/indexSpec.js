@@ -1,5 +1,7 @@
-describe("Deciding which link to make active", function() {
-    it("should exist", function() {
-            expect(selectingActiveLink).toBeDefined();
-        });
+describe("Give an ID based on the card selected", function() {
+    
+    beforeEach(function() {
+        card = new clickedCard(whichCardClicked);
     });
+
+});
