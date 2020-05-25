@@ -310,7 +310,7 @@ $("#startGame").click(function(){
                         <div id="card${shuffledCardID[i]}Cover" class=" eight-cards cover"></div> 
                         <div id="card${shuffledCardID[i]}Face" class=" eight-cards face"></div> 
                     </div>
-                    <div id="card${shuffledCardID[i]}Match" class="col-6 col-sm-2  col-md-3 col-lg-2 col-xl-2 cover eight-cards match card display"></div>
+                    <div id="card${shuffledCardID[i]}Match" class="col-6 col-sm-2  col-md-3 col-lg-2 col-xl-2 cover eight-cards match display"></div>
                 </div>
                     `);
     }

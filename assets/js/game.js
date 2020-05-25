@@ -177,6 +177,9 @@ function notAPair(){
         function resetAnimationValue(){
            animationInProgress = 0;
     console.log("animation " + animationInProgress);
+    whichCardClicked = 0;
+                cardSelected = null;
+        console.log(whichCardClicked + cardSelected);
         } 
                           
 }
@@ -254,7 +257,8 @@ function clickedCard(whichCardClicked){
             else if (whichCardClicked == 9) cardSelected = `#card9`;
             else if(whichCardClicked == 10) cardSelected = `#card10`;
             else if (whichCardClicked == 11) cardSelected = `#card11`;
-            else cardSelected = `#card12`;
+            else if (whichCardClicked == 12) cardSelected = `#card12`;
+            else cardSelected;
 }
 
 var cardA;
@@ -273,15 +277,21 @@ var animationInProgress = 0;
 
 $('#gameRow').on('click', '.card', function(){
     if(animationInProgress == 0){
-    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
+    // $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+    // $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
     clickedCard(whichCardClicked);
 
      pairSelected(whichCardClicked); 
+    $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
+    $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
     }
 });
 
 $('#gameRow').on('click', cardSelected, function(){ 
+    console.log("function triggered.");
+    if(cardSelected != null){
+        console.log("Card selected");
+    
     if(animationInProgress == 0){
     console.log(cardSelected);
     console.log("card a is = " + pairCounterArray[cardA]);
@@ -321,6 +331,8 @@ $('#gameRow').on('click', cardSelected, function(){
         function resetAnimationValue(){
            animationInProgress = 0;
         console.log("animation " + animationInProgress); 
+        whichCardClicked = 0;
+        cardSelected = null;
         }
         
     }
@@ -338,9 +350,14 @@ $('#gameRow').on('click', cardSelected, function(){
     if(checking > 0){
         notAPair();
         }else {             
-                pairCounterArray[whichCardClicked] = 1;                      
+                pairCounterArray[whichCardClicked] = 1;  
+                whichCardClicked;
+                cardSelected;                    
                     }
                 }}
+            } else {
+                console.log("No card selected.");
+            }
     });
 
 
