@@ -254,6 +254,12 @@ ul li{
 #finishedModalTitle{
     font-size: 3rem;
 }
+
+#loadingModalBody p:nth-child(1){
+    margin:0;
+}
+
+
 .modal-content{
     background-color: midnightblue;
     text-align: center;
@@ -506,6 +512,9 @@ h5{
 }
 
 /* Modals */
+#loadingModalBody p:nth-child(1){
+    margin: 16px;
+}
 
 .speaker{
     font-size:2rem;

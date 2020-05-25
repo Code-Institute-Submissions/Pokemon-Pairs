@@ -204,12 +204,7 @@ pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var whichCardClicked;
 
 $('#gameRow').on('click', '#card1', function(){ 
-    whichCardClicked = 1;
-    console.log(this);
-    var cardID = JSON.stringify(this);
-    console.log(cardID);
-    
-
+    whichCardClicked = 1;    
 });
 
 $('#gameRow').on('click', '#card2', function(){
