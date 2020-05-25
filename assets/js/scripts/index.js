@@ -12,8 +12,6 @@ var supportPageSelected;
 
 // Sound Support
 
-//https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
-
 //Allows switching between play and pause.
 function toggleMainTheme() {
     return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
@@ -165,7 +163,6 @@ $(document).ready(function() {
             }
         });
     } else {
-        //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
         if (sessionStorage.muted == 0) {
             toggleMainTheme();
             toggleSpeakerIconToLoud();
@@ -393,7 +390,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function() {
     } else {
         playMainThemeOnMute();
     }
-    
+
     // Displaying difficulty modal at the beginning of each new game.
     $("#gridItemTimerDisplay").html("0 seconds");
     turningCardsFaceDown();
