@@ -54,15 +54,14 @@ ___
 <span id="userStories"></span> 
 ### User Stories
 
-1. As a child, I want to easily navigate through the website.
+1. As a child, I want to easily navigate through the website so I can see all of the pages.
 2. As a child or a parent, I want to find the help page so I can learn how to play the game.
 3. As a child or a parent, I want to contact the company so I can give feedback on the game or have some questions answered.
-4. As a child, I want to personalise the game to me by giving the webpage data.
+4. As a child, I want to personalise the game to me by giving the webpage data (entering my name).
 5. As a child, I want to be able to easily play the game without having to workout instructions.
-6. As a child, I want to see how well I have done at the end of the game by review the scores from my game.
+6. As a child, I want to see how well I have done at the end of the game by reviewing the scores from my game.
 7. As a child, I to be able to see if I have improved by looking at my previous scores.
 8. As a child, I want to able to choose whether I play again, so I can beat my previous score.
-
 
 ___
 <span id="features"></span>
@@ -126,7 +125,7 @@ Difficulty Modal
 4.	Alternatively, there is a button to take the user to the “Contact” page.
 1.	A speaker icon which will allow the user to mute/unmute the music.
 
-Loading Modal – 
+Loading Modal
 2.	An animated gif will play whilst the cards are loading.
 3.	The “start game” will appear when the cards are ready.
 4.	A speaker icon which will allow the user to mute/unmute the music.
@@ -152,6 +151,7 @@ Finished Modal
 1. I would like to add a timer that displays minutes and seconds.
 2. I would like to add a button that flashes when the game is ready to play.
 3. I would like to add in a hint button, which shows all the cards for a second to give children a clue if they get stuck.
+4. I would like to add a function where the user chooses which Pokémon they would like to see in the game.
 ___
 <span id="defensiveFeatures"></span>
 ## Defensive Features
@@ -228,11 +228,28 @@ ___
 Media
 
 The photos used in this site were obtained from Google. They were all free so share and edit.
-
+Favicon generator
 https://www.ionos.co.uk/tools/favicon-generator
 
+Theme songs
 https://www.youtube.com/watch?v=PxzY57ImZdQ
 
+https://www.youtube.com/watch?v=axKDCZd4Mfc
+
+Animating cards
+http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
+
+Shuffling Array
+https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+Using the Pokémon Cards API - Making the initial Ajax Calls
+https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
+
+How to toggle sounds playing
+//https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+
+How to play sound when clicking a button
+//https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
 <span id="acknowledgements"></span>
 Acknowledgements  
 
@@ -250,6 +267,14 @@ ___
 JavaScript code
    + In future I want to explore using switch cases.
    + I want to look at short hand for conditional statements to make it clearer where the loops and functions are defined.
+
+CSS 
+
+In future projects - use media queries differently.
+Organise css into categories. At the moment there is a lot of repeated code in each media query where it could all just be in
+one query that is for "all screens bigger than mobile." Eg. - Font-size: 2rem on screens bigger than mobile rather than having 
+font-sizes in each query. 
+
 
 Jasmine testing  
 I would like to use unit testing from the beginning of the project. 
