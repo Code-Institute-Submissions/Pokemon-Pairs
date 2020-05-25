@@ -1,51 +1,53 @@
 body {
-    padding:0;
-    margin:0;
-    border:0;
-    font-family: 'Ruluko', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Ruluko", sans-serif;
     background-color: midnightblue;
-   
 }
 
-.jumbotron{
+.jumbotron {
     background: #fe0000;
-    padding:0;
+    padding: 0;
     height: 100vh;
-    margin-bottom: 0;  
-    border-radius: 0;  
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
-#jumboimagePortrait{
+#jumboimagePortrait {
     height: 500px;
     margin-top: 74px;
 }
 
-#jumboimageLandscape{
+#jumboimageLandscape {
     display: none;
 }
 
-.jumbo-text, .jumbo-text-header{
+.jumbo-text,
+.jumbo-text-header {
     color: yellow;
 }
 
-.jumbo-text-header{
+.jumbo-text-header {
     margin-top: 47vh;
 }
 
-.pokemon-font{
+.pokemon-font {
     width: 90%;
 }
 
 /********Music *********/
 
-#mainThemeMusic, #gameThemeMusic, #matchingPairMusic, #endOfGameThemeMusic{
+#mainThemeMusic,
+#gameThemeMusic,
+#matchingPairMusic,
+#endOfGameThemeMusic {
     display: none;
 }
 
-
 /****** Grid Layout for responsive design ********/
 
-#gridItemHeader{
+#gridItemHeader {
     grid-area: header;
     margin: 15px;
     background-color: red;
@@ -53,8 +55,7 @@ body {
     color: yellow;
 }
 
-#gridItemGameInfo{
-
+#gridItemGameInfo {
     grid-area: game-info;
     margin: 0 16px;
     position: sticky;
@@ -62,32 +63,30 @@ body {
     z-index: 1000;
 }
 
-#gridItemGame{
+#gridItemGame {
     grid-area: game;
     background-color: midnightblue;
     margin: 20px 0;
 }
 
-
-
-.grid-container{
-     display: grid;
-     grid-gap: 10px;
-     background-color: midnightblue;
-     padding: 15px;
-     width: 100%;
-     margin: 0;
-     overflow: hidden; 
-     text-align: left;
-     column-gap: 0;
-     row-gap: 0;
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color: midnightblue;
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    text-align: left;
+    column-gap: 0;
+    row-gap: 0;
 }
 
-.index-grid{
- grid-template-areas:
-    'header' 
-    'game-info' 
-    'game';    
+.index-grid {
+    grid-template-areas:
+        "header"
+        "game-info"
+        "game";
 }
 
 .grid-game-info {
@@ -96,10 +95,10 @@ body {
     color: yellow;
     border: 1px solid black;
 }
-  
+
 /* Navbar CSS */
 
-.navbar{
+.navbar {
     text-align: center;
     padding: 10px 15px;
 }
@@ -112,7 +111,7 @@ body {
     height: 40px;
 }
 
-.navbar .navbar-brand-modal{
+.navbar .navbar-brand-modal {
     margin-bottom: 0;
     margin-right: 0;
     padding: 0;
@@ -124,37 +123,37 @@ body {
 
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-
 }
 
-.navbar-toggler-icon, .navbar-light .navbar-toggler{
+.navbar-toggler-icon,
+.navbar-light .navbar-toggler {
     border-color: yellow;
 }
 
-.nav-item{
+.nav-item {
     display: inline-block;
     width: 30%;
 }
 
 ul {
-    
     margin-bottom: 0;
-    border:0;
+    border: 0;
 }
 
-ul li{
+ul li {
     text-decoration: none;
     list-style-type: none;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link{
-    color:rgba(240, 255, 0, 0.8);
-    padding:8px 0 0 0;
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active > .nav-link {
+    color: rgba(240, 255, 0, 0.8);
+    padding: 8px 0 0 0;
     font-size: 1.25rem;
 }
 
-.navbar-light .navbar-nav .active>.nav-link{
-    color:yellow;
+.navbar-light .navbar-nav .active > .nav-link {
+    color: yellow;
     font-weight: bold;
 }
 
@@ -177,21 +176,19 @@ ul li{
 
 /* Game information */
 
-#gridItemName{
+#gridItemName {
     border-bottom: 1px solid black;
-    padding: 5px 0; 
+    padding: 5px 0;
 }
 
-.game-info-text{
-    margin:0;
+.game-info-text {
+    margin: 0;
     font-size: 1.25rem;
 }
 
-
-
-#difficultyMode{
+#difficultyMode {
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: rgb(38, 109, 240);
     border-left: 1px solid black;
@@ -199,13 +196,15 @@ ul li{
     border-bottom: 1px solid black;
 }
 
-#easy, #medium, #hard {
+#easy,
+#medium,
+#hard {
     background-color: rgb(211, 211, 211);
     color: black;
     display: inline-block;
-    width:25%;
+    width: 25%;
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
-    margin:0;    
+    margin: 0;
 }
 
 #difficultyMode .active-mode {
@@ -213,16 +212,14 @@ ul li{
     color: yellow;
 }
 
-
-
 /* Modals */
 
-.speaker{
+.speaker {
     color: yellow;
     opacity: 0.8;
 
     margin: 0;
-  
+
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
@@ -230,112 +227,114 @@ ul li{
     text-align: right;
 }
 
-.speaker:hover{
+.speaker:hover {
     color: yellow;
     opacity: 1;
 }
 
-.speaker.active{
+.speaker.active {
     opacity: 1;
 }
 
-
-.modal{
+.modal {
     background-color: rgba(112, 157, 199, 0.8);
     overflow-x: auto;
     overflow-y: auto;
-
 }
-.modal-header, .modal-body, .modal-footer{
+.modal-header,
+.modal-body,
+.modal-footer {
     text-align: center;
     display: inline-block;
 }
 
-#finishedModalTitle{
+#finishedModalTitle {
     font-size: 3rem;
 }
 
-#loadingModalBody p:nth-child(1){
-    margin:0;
+#loadingModalBody p:nth-child(1) {
+    margin: 0;
 }
 
-
-.modal-content{
+.modal-content {
     background-color: midnightblue;
     text-align: center;
     color: yellow;
     margin: 0.5rem;
 }
 
-h5{
+h5 {
     font-size: 2rem;
 }
 
-#welcomeModalTitle{
+#welcomeModalTitle {
     margin: 5px 0 0 0;
 }
 
-.btn-primary{
-    color:yellow;
+.btn-primary {
+    color: yellow;
     margin: 0 0.5rem;
     border: 1px solid yellow;
 }
 
-.btn-primary a{
+.btn-primary a {
     color: yellow;
 }
 
-.btn:hover{
+.btn:hover {
     border: 1px solid yellow;
 }
 
-#loading-gif{
-    background-image:url("../images/loading.gif") ;
+#loading-gif {
+    background-image: url("../images/loading.gif");
     background-size: cover;
     width: 100%;
     height: 200px;
 }
 
-#results{
+#results {
     display: block;
 }
 
-.result-wrapper, .result-wrapper h6{
+.result-wrapper,
+.result-wrapper h6 {
     font-size: 1.5rem;
 }
 
-#revealResults{
+#revealResults {
     text-decoration: underline;
     margin-bottom: 1rem;
 }
 
-#topResultsWrapper, #topResultsWrapperTime{
+#topResultsWrapper,
+#topResultsWrapperTime {
     margin-bottom: 2rem;
 }
 
-#timeResultHeader, #moveResultHeader{
+#timeResultHeader,
+#moveResultHeader {
     text-decoration: underline;
     font-size: 2rem;
 }
 
-.current-game-results{
+.current-game-results {
     border-bottom: 1px solid #dee2e6;
 }
 
-.modal-display{
+.modal-display {
     margin: 1rem;
 }
 
-.modal-content-display{
+.modal-content-display {
     margin: 0;
 }
 
-#displayCardsWrapper{
+#displayCardsWrapper {
     text-align: center;
     margin-top: 10px;
 }
 
- .display-cards {
+.display-cards {
     color: white;
     background-color: midnightblue;
     padding: 0 0;
@@ -344,77 +343,61 @@ h5{
     text-align: center;
     margin-left: 4.5vw;
     width: 263px;
-} 
-
-
-
+}
 
 /* Landscape for small mobile */
-@media screen and (min-width: 640px) and (max-height: 400px){
-
-#jumboimagePortrait{
+@media screen and (min-width: 640px) and (max-height: 400px) {
+    #jumboimagePortrait {
         display: none;
-}
+    }
 
-#jumboimageLandscape {
-    display: block;
-    width: 100%;
-    height: 362px;
-    padding: 0 25px 0 0;
-}
-    .navbar .navbar-brand{
-    height: 43px;
-    width: 39%;
-}
+    #jumboimageLandscape {
+        display: block;
+        width: 100%;
+        height: 362px;
+        padding: 0 25px 0 0;
+    }
+    .navbar .navbar-brand {
+        height: 43px;
+        width: 39%;
+    }
 
     .navbar .navbar-brand-modal {
         height: 43px;
         width: 65%;
     }
 
-    #gridItemGameInfo{
-    position: static;
-    }
-    
-    /* #welcomeModalTitle {
-    margin: 0 0 0 61.5px;
-    } */
-
-    #loading-gif{
-    width: 46%;
-    height: 100px;
-    margin-left: 14.66vw;
-
+    #gridItemGameInfo {
+        position: static;
     }
 
-    .modal-dialog{
+    #loading-gif {
+        width: 46%;
+        height: 100px;
+        margin-left: 14.66vw;
+    }
+
+    .modal-dialog {
         max-width: 400px;
         margin: 1.75rem auto;
     }
-    
-   /* .eight-cards{ 
-    width: 90px;
-    height: 34vh;
-    padding: 0;
-    margin-left: 0;
-    } */
 
-    #displayCardsWrapper{
+    #displayCardsWrapper {
         margin-top: 0;
     }
 
-    .display-cards{
+    .display-cards {
         display: inline-block;
         width: 170px;
         height: 65vh;
         margin-left: 10px;
     }
 
-    .display-cards:nth-child(odd){
+    .display-cards:nth-child(odd) {
         margin-left: 10px;
     }
-    
-    .container{
+
+    .container {
         max-width: 700px;
         margin-right: 10px;
         margin-left: 10px;
@@ -425,610 +408,592 @@ h5{
         margin-left: 20px;
     }
 
-    .result-wrapper{
+    .result-wrapper {
         font-size: 1.5rem;
     }
 
-    #timeResultHeader, #moveResultHeader {
+    #timeResultHeader,
+    #moveResultHeader {
         font-size: 2rem;
     }
 }
 
 /* Larger Mobile  Portrait */
-@media screen and (min-width: 375px) and (min-height: 400px){
-    .display-cards{
+@media screen and (min-width: 375px) and (min-height: 400px) {
+    .display-cards {
         margin-left: 6.57vw;
     }
-
-    
 }
-
 
 /* Larger Mobile Landscape */
-@media screen and (min-width: 667px) and (max-height:400px) {
-
-#loading-gif{
-    margin-left: 14.165vw;
-}
-
-.display-cards:nth-child(odd){
-        margin-left: 5px;
+@media screen and (min-width: 667px) and (max-height: 400px) {
+    #loading-gif {
+        margin-left: 14.165vw;
     }
 
+    .display-cards:nth-child(odd) {
+        margin-left: 5px;
+    }
 }
 
 /* iPad Portrait*/
 @media screen and (min-width: 768px) {
+    #jumboimagePortrait {
+        height: 1037px;
+        margin: -1rem 1rem 1rem 1rem;
+    }
 
-#jumboimagePortrait{
-    height: 1037px;
-    margin: -1rem 1rem 1rem 1rem;
-}
-
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
-    font-size: 1.75rem;
-}
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .active > .nav-link {
+        font-size: 1.75rem;
+    }
     .navbar .navbar-brand {
-    height: 90px;
-    width: 68%;
-}
+        height: 90px;
+        width: 68%;
+    }
 
-.navbar .navbar-brand-modal{
-    width: 73%;
-}
+    .navbar .navbar-brand-modal {
+        width: 73%;
+    }
 
-.navbar-toggler-icon, .navbar-light .navbar-toggler {
-    font-size: 2rem;
-}
+    .navbar-toggler-icon,
+    .navbar-light .navbar-toggler {
+        font-size: 2rem;
+    }
 
-#gridItemGame{
-    margin: 42px 0;
-}
+    #gridItemGame {
+        margin: 42px 0;
+    }
 
-.grid-game-info h6, .grid-game-info .fas {
-    font-size: 2rem;
-}
+    .grid-game-info h6,
+    .grid-game-info .fas {
+        font-size: 2rem;
+    }
 
-.grid-game-info .fas {
-    margin: 5px;
-}
+    .grid-game-info .fas {
+        margin: 5px;
+    }
 
-#easy, #medium, #hard {
-    font-size: 1.5rem;
-}
+    #easy,
+    #medium,
+    #hard {
+        font-size: 1.5rem;
+    }
 
-.row{
-    margin-top: 2.5rem;
-}
+    .row {
+        margin-top: 2.5rem;
+    }
 
-.display-cards{
-    margin: 10px;
-    height: 36vh;
-    display: inline-block;
-}
+    .display-cards {
+        margin: 10px;
+        height: 36vh;
+        display: inline-block;
+    }
 
-#displayCardsWrapper{
-    margin-top: 20px;
-}
+    #displayCardsWrapper {
+        margin-top: 20px;
+    }
 
-/* Modals */
-#loadingModalBody p:nth-child(1){
-    margin: 16px;
-}
+    /* Modals */
+    #loadingModalBody p:nth-child(1) {
+        margin: 16px;
+    }
 
-.speaker{
-    font-size:2rem;
-}
+    .speaker {
+        font-size: 2rem;
+    }
 
-/* Volume Modal */
+    /* Volume Modal */
 
-#volumeModalBody{
-    padding: 24px 16px;
-}
+    #volumeModalBody {
+        padding: 24px 16px;
+    }
 
-#volumeModalBody h5{
-    margin-bottom: 1.5rem;
-}
-/* Welcome modal */
-.modal-dialog {
-    max-width: 700px;
-    margin: 1.75rem auto;
-}
+    #volumeModalBody h5 {
+        margin-bottom: 1.5rem;
+    }
+    /* Welcome modal */
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
 
-#welcomeModalTitle{
-    width: 75%;
-}
+    #welcomeModalTitle {
+        width: 75%;
+    }
 
-.modal-title{
-    font-size: 3.5rem;
-}
+    .modal-title {
+        font-size: 3.5rem;
+    }
 
-.modal-body, #seeInstructions h6 {
-    font-size: 2rem;
-}
+    .modal-body,
+    #seeInstructions h6 {
+        font-size: 2rem;
+    }
 
-#nameInput{
-    font-size: 2rem;
-}
+    #nameInput {
+        font-size: 2rem;
+    }
 
-.btn{
-    font-size: 2rem;
- 
-}
+    .btn {
+        font-size: 2rem;
+    }
 
-/* Loading Modal */
-#loading-gif{
-    height: 402px;
-    width: 100%;
-    margin: 0;
-}
+    /* Loading Modal */
+    #loading-gif {
+        height: 402px;
+        width: 100%;
+        margin: 0;
+    }
 
-#loadingModalBody{
-    padding: 1.5rem 3rem;
-}
+    #loadingModalBody {
+        padding: 1.5rem 3rem;
+    }
 
-/* Finished Modal */
+    /* Finished Modal */
 
-#finishedModalTitle {
-    font-size: 4.5rem;
-}
+    #finishedModalTitle {
+        font-size: 4.5rem;
+    }
 
-#topResultsWrapper, #topResultsWrapperTime {
-    display: inline-block;
-}
+    #topResultsWrapper,
+    #topResultsWrapperTime {
+        display: inline-block;
+    }
 
-#topResultsWrapper{
-    margin-right: 50px;
-}
+    #topResultsWrapper {
+        margin-right: 50px;
+    }
 
-#topResultsWrapperTime {
-    margin-left: 50px;
-}
+    #topResultsWrapperTime {
+        margin-left: 50px;
+    }
 
-#revealResults{
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
+    #revealResults {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
 
-/* #totalMoves h6, #timeTaken h6{
-    font-size: 2rem;
-
-} */
-.result-wrapper h6{
-    font-size: 2rem;
-}
-
+    .result-wrapper h6 {
+        font-size: 2rem;
+    }
 }
 
 /********** iPad Landscape **********/
-@media screen and (min-width: 1024px) and (max-height: 801px){
-#jumboimagePortrait{
-        display: none;
-}
-
-#jumboimageLandscape {
-    display: block;
-    width: 100%;
-    height: 700px;
-    padding: 0 50px 0 0;
-}
-
-#welcomeModalTitle{
-    width: 65%;
-}
-
-.navbar .navbar-brand {
-    height: 77px;
-    width: 43%;
-}
-
-.navbar .navbar-brand-modal{
-    width: 62%;
-}
-
-.nav-item{
-    width: 25%;
-}
-
-.speaker{
-    font-size:2rem;
-}
-
-.ml-auto{
-    margin-right: 20px;
-}
-
-ul li {
-    margin: 0 10px;
-}
-
-
-#loading-gif{
-    height: 370px;
-}
-
-#finishedModalTitle {
-    font-size: 5.5rem;
-}
-
-#gridItemGameInfo{
-    position: static;
-}
-
-.row{
-    margin-top: 3rem;
-}
-
-#difficultyMode{
-    font-size: 2rem;
-}
-
-.grid-game-info h6 {
-    font-size: 2.5rem;
-}
-
-/* .eight-cards{
-    width: 136px;
-    height: 25vh;
-    margin-bottom: 42px;
-} */
-
-.display-cards {
-    margin: 0 0 20px 15px;
-    width: 40%;
-    display: inline-block;
-    height: 48vh;
-}
-
-#displayCard5, #displayCard6 {
-    margin-bottom: 0;
-}
-
-#displayCardsWrapper{
-    margin-top: 20px;
-}
-
-}
-
-
-
-/* iPad Pro Portrait */
-@media screen and (min-width: 1024px) and (min-height: 1366px){
-#jumboimagePortrait{
-    height: 1326px;
-    margin: 1rem 1rem 1rem 2.5rem;
-}
-.navbar .navbar-brand {
-    width: 55%;
-    height: 98px;
-}
-
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
-    font-size: 2.25rem;
-}
-
-.navbar .navbar-brand-modal{
-    width: 75%;
-}
-
-.nav-item{
-    margin:0 15px;
-    width: auto;
-}
-
-.speaker{
-    font-size: 2.5rem;
-}
-#gridItemGame {
-    margin: 70px 0;
-}
-
-.display-cards {
-    margin: 20px;
-    width: 348px;
-}
-
-.row {
-    margin-top: 4.5rem;
-}
-
-#easy, #medium, #hard{
-    font-size: 2.25rem;
-}
-
-.grid-game-info h6{
-    font-size: 2.5rem;
-}
-
-#finishedModalTitle {
-    font-size: 5.5rem;
-}
-
-.modal-dialog{
-    max-width: 900px;
-}
-
-.modal-title{
-    font-size: 5.5rem;
-}
-
-.modal-body{
-    font-size:3rem;
-}
-
-.modal-header .navbar-brand-modal{
-    height: 122px;
-}
-
-#seeInstructions h6 {
-    font-size: 3rem;
-}
-
-#nameInput{
-    font-size: 3rem;
-}
-
-.btn{
-    font-size: 3rem;
-}
-
-#loadingModalBody p{
-    margin-bottom: 24px;
-}
-
-#loading-gif{
-    height: 487px;
-    margin-bottom: 8px;
-}
-
-#volumeModalBody h5{
-    font-size: 3rem;
-}
-
-#revealResults{
-    font-size: 4rem;
-}
-
-.result-wrapper, .result-wrapper h6{
-    font-size: 2.5rem;
-}
-
-#timeResultHeader, #moveResultHeader{
-    font-size: 3rem;
-}
-}
-
-
-/* iPad Pro Landscape */
-@media screen and (min-width: 1366px) and (min-height: 1000px){
-    #jumboimagePortrait{
+@media screen and (min-width: 1024px) and (max-height: 801px) {
+    #jumboimagePortrait {
         display: none;
     }
 
     #jumboimageLandscape {
-    display: block;
-    width: 100%;
-    height: 900px;
-    padding: 130px 50px 0 0;
+        display: block;
+        width: 100%;
+        height: 700px;
+        padding: 0 50px 0 0;
+    }
+
+    #welcomeModalTitle {
+        width: 65%;
+    }
+
+    .navbar .navbar-brand {
+        height: 77px;
+        width: 43%;
+    }
+
+    .navbar .navbar-brand-modal {
+        width: 62%;
+    }
+
+    .nav-item {
+        width: 25%;
+    }
+
+    .speaker {
+        font-size: 2rem;
+    }
+
+    .ml-auto {
+        margin-right: 20px;
+    }
+
+    ul li {
+        margin: 0 10px;
+    }
+
+    #loading-gif {
+        height: 370px;
+    }
+
+    #finishedModalTitle {
+        font-size: 5.5rem;
+    }
+
+    #gridItemGameInfo {
+        position: static;
+    }
+
+    .row {
+        margin-top: 3rem;
+    }
+
+    #difficultyMode {
+        font-size: 2rem;
+    }
+
+    .grid-game-info h6 {
+        font-size: 2.5rem;
+    }
+
+    .display-cards {
+        margin: 0 0 20px 15px;
+        width: 40%;
+        display: inline-block;
+        height: 48vh;
+    }
+
+    #displayCard5,
+    #displayCard6 {
+        margin-bottom: 0;
+    }
+
+    #displayCardsWrapper {
+        margin-top: 20px;
+    }
 }
-    
-    .navbar .navbar-brand{
+
+/* iPad Pro Portrait */
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    #jumboimagePortrait {
+        height: 1326px;
+        margin: 1rem 1rem 1rem 2.5rem;
+    }
+    .navbar .navbar-brand {
+        width: 55%;
+        height: 98px;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .active > .nav-link {
+        font-size: 2.25rem;
+    }
+
+    .navbar .navbar-brand-modal {
+        width: 75%;
+    }
+
+    .nav-item {
+        margin: 0 15px;
+        width: auto;
+    }
+
+    .speaker {
+        font-size: 2.5rem;
+    }
+    #gridItemGame {
+        margin: 70px 0;
+    }
+
+    .display-cards {
+        margin: 20px;
+        width: 348px;
+    }
+
+    .row {
+        margin-top: 4.5rem;
+    }
+
+    #easy,
+    #medium,
+    #hard {
+        font-size: 2.25rem;
+    }
+
+    .grid-game-info h6 {
+        font-size: 2.5rem;
+    }
+
+    #finishedModalTitle {
+        font-size: 5.5rem;
+    }
+
+    .modal-dialog {
+        max-width: 900px;
+    }
+
+    .modal-title {
+        font-size: 5.5rem;
+    }
+
+    .modal-body {
+        font-size: 3rem;
+    }
+
+    .modal-header .navbar-brand-modal {
+        height: 122px;
+    }
+
+    #seeInstructions h6 {
+        font-size: 3rem;
+    }
+
+    #nameInput {
+        font-size: 3rem;
+    }
+
+    .btn {
+        font-size: 3rem;
+    }
+
+    #loadingModalBody p {
+        margin-bottom: 24px;
+    }
+
+    #loading-gif {
+        height: 487px;
+        margin-bottom: 8px;
+    }
+
+    #volumeModalBody h5 {
+        font-size: 3rem;
+    }
+
+    #revealResults {
+        font-size: 4rem;
+    }
+
+    .result-wrapper,
+    .result-wrapper h6 {
+        font-size: 2.5rem;
+    }
+
+    #timeResultHeader,
+    #moveResultHeader {
+        font-size: 3rem;
+    }
+}
+
+/* iPad Pro Landscape */
+@media screen and (min-width: 1366px) and (min-height: 1000px) {
+    #jumboimagePortrait {
+        display: none;
+    }
+
+    #jumboimageLandscape {
+        display: block;
+        width: 100%;
+        height: 900px;
+        padding: 130px 50px 0 0;
+    }
+
+    .navbar .navbar-brand {
         width: 37%;
     }
-    
-    .navbar .navbar-brand-modal{
+
+    .navbar .navbar-brand-modal {
         width: 68%;
         height: 110px;
     }
-    
-.navbar-nav{
-    margin-right: 10px;
 
-}
+    .navbar-nav {
+        margin-right: 10px;
+    }
 
-.nav-item{
-    width: auto;
-    margin: 0 10px;
-}
+    .nav-item {
+        width: auto;
+        margin: 0 10px;
+    }
 
-.navbar-light .navbar-nav .nav-link{
-    font-size: 2.25rem;
-}
-.speaker{
-    font-size: 2.5rem;
-}
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 2.25rem;
+    }
+    .speaker {
+        font-size: 2.5rem;
+    }
 
-#volumeModalBody h5{
-    font-size: 3rem;
-}
+    #volumeModalBody h5 {
+        font-size: 3rem;
+    }
 
-#welcomeModalTitle {
-    width: 68%;
-    height: 110px;
-}
+    #welcomeModalTitle {
+        width: 68%;
+        height: 110px;
+    }
 
-#seeInstructions h6 {
-    font-size: 3rem;
-}
+    #seeInstructions h6 {
+        font-size: 3rem;
+    }
 
-#loadingModalBody p{
-    font-size: 2.5rem;
-    margin-bottom: 24px;
-}
+    #loadingModalBody p {
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+    }
 
-.row {
-    margin-top: 4.5rem;
-}
+    .row {
+        margin-top: 4.5rem;
+    }
 
-#easy, #medium, #hard{
-    font-size: 2.25rem;
-}
-#gridItemGame {
-    margin: 50px 0;
-}
-.grid-game-info h6{
-    font-size: 2.5rem;
-}
+    #easy,
+    #medium,
+    #hard {
+        font-size: 2.25rem;
+    }
+    #gridItemGame {
+        margin: 50px 0;
+    }
+    .grid-game-info h6 {
+        font-size: 2.5rem;
+    }
 
-#loading-gif{
-    height: 465px;
-    width: 95%;
-    margin-left: 20px;
-    margin-bottom: 8px;
-}
+    #loading-gif {
+        height: 465px;
+        width: 95%;
+        margin-left: 20px;
+        margin-bottom: 8px;
+    }
 
-#finishedModalTitle {
-    font-size: 5.5rem;
-}
+    #finishedModalTitle {
+        font-size: 5.5rem;
+    }
 
-.modal-dialog{
-    max-width: 900px;
-} 
+    .modal-dialog {
+        max-width: 900px;
+    }
 
-.modal-title{
-    font-size: 4.5rem;
-}
+    .modal-title {
+        font-size: 4.5rem;
+    }
 
-.display-cards {
-    margin: 5px;
-    width: 263px;
-    display: inline-block;
-}
+    .display-cards {
+        margin: 5px;
+        width: 263px;
+        display: inline-block;
+    }
 
-#displayCardsWrapper{
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
+    #displayCardsWrapper {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
 
-#revealResults{
-    font-size: 4rem;
-}
+    #revealResults {
+        font-size: 4rem;
+    }
 
-.result-wrapper, .result-wrapper h6{
-    font-size: 2.5rem;
-}
+    .result-wrapper,
+    .result-wrapper h6 {
+        font-size: 2.5rem;
+    }
 
-#timeResultHeader, #moveResultHeader{
-    font-size: 3rem;
+    #timeResultHeader,
+    #moveResultHeader {
+        font-size: 3rem;
+    }
 }
-}
-
 
 /******** Laptop MD - Screen ***********/
-@media screen and (min-width: 1280px) and (max-height: 899px){
-        #jumboimagePortrait{
+@media screen and (min-width: 1280px) and (max-height: 899px) {
+    #jumboimagePortrait {
         display: none;
     }
 
     #jumboimageLandscape {
-    display: block;
-    width: 100%;
-    height: 790px;
-    padding: 0 50px 0 0;
+        display: block;
+        width: 100%;
+        height: 790px;
+        padding: 0 50px 0 0;
+    }
+    .navbar .navbar-brand {
+        width: 35%;
+    }
+
+    .navbar .navbar-brand-modal {
+        width: 62%;
+    }
+
+    .grid-game-info h6,
+    .grid-game-info .fas {
+        font-size: 2rem;
+    }
+
+    .display-cards {
+        margin-left: 30px;
+        display: inline-block;
+        width: 30%;
+    }
+
+    #displayCardsWrapper {
+        margin-left: 40px;
+    }
+
+    .modal-display {
+        max-width: 1200px;
+    }
+
+    #displayCardsModal {
+        padding-left: 17px;
+    }
+
+    #finishedModalTitle {
+        font-size: 5.5rem;
+    }
 }
-.navbar .navbar-brand {
-    width: 35%;
-}   
-
-.navbar .navbar-brand-modal {
-    width: 62%;
-}
-
-.grid-game-info h6, .grid-game-info .fas {
-    font-size: 2rem;}
-/*     
-    .eight-cards{
-    width: 154px;
-    height: 27vh;
-    padding-left: 28px;
-    } */
-
-.display-cards {
-    margin-left: 30px;
-    display: inline-block;
-    width: 30%;
-}
-
-#displayCardsWrapper {
-  
-    margin-left: 40px;
-}
-
-.modal-display {
-    max-width: 1200px;
-}
-
-#displayCardsModal{
-    padding-left: 17px;
-}
-
-#finishedModalTitle {
-    font-size: 5.5rem;
-}
-
-}
-
-
 
 /* Laptop HD - Screen */
-@media screen and (min-width: 1400px) and (min-height: 899px){
-
- #jumboimagePortrait{
+@media screen and (min-width: 1400px) and (min-height: 899px) {
+    #jumboimagePortrait {
         display: none;
     }
 
-#jumboimageLandscape {
-    display: block;
-    width: 100%;
-    height: 900px;
-    padding: 0 50px 0 0;
-}
-.navbar .navbar-brand {
-    width: 38%;
-    height: 98px;
-}
+    #jumboimageLandscape {
+        display: block;
+        width: 100%;
+        height: 900px;
+        padding: 0 50px 0 0;
+    }
+    .navbar .navbar-brand {
+        width: 38%;
+        height: 98px;
+    }
 
-.navbar .navbar-brand-modal {
-    width: 78%;
-    
-}
+    .navbar .navbar-brand-modal {
+        width: 78%;
+    }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
-    font-size: 2.25rem;
-}
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .active > .nav-link {
+        font-size: 2.25rem;
+    }
 
-.nav-item{
-    margin:0 15px;
-    width: auto;
-}
+    .nav-item {
+        margin: 0 15px;
+        width: auto;
+    }
 
-#welcomeModalTitle {
-    width: 82%;
-}
+    #welcomeModalTitle {
+        width: 82%;
+    }
 
-.modal-display {
-    max-width: 1300px;
-}
+    .modal-display {
+        max-width: 1300px;
+    }
 
-.display-cards {
-    margin-left: 30px;
-    display: inline-block;
-    width: 343px;
-    height: 54vh;
-}
+    .display-cards {
+        margin-left: 30px;
+        display: inline-block;
+        width: 343px;
+        height: 54vh;
+    }
 
-#displayCardsWrapper {
-    margin-top: 32px;
-    margin-right: 24px;
-}
+    #displayCardsWrapper {
+        margin-top: 32px;
+        margin-right: 24px;
+    }
 
-#displayCardsModal{
-    padding-left: 17px;
-}
+    #displayCardsModal {
+        padding-left: 17px;
+    }
 
-#finishedModalTitle {
-    font-size: 5.5rem;
+    #finishedModalTitle {
+        font-size: 5.5rem;
+    }
 }
-
-}
-
