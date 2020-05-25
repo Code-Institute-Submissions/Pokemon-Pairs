@@ -88,9 +88,9 @@ $(".fa-volume-up, #volumeNotAllowed").click(function(){
     $(endTheme).prop('muted', true);
 
      mute = 1;
-     console.log(mute);
+   
      sessionStorage.setItem("muted", mute);
-     console.log(sessionStorage.getItem("muted"));
+   
 });
 
 
@@ -98,10 +98,10 @@ $(".fa-volume-up, #volumeNotAllowed").click(function(){
 $(".mainThemeControl, #volumeAllowed").click(function(){
     toggleSpeakerIconToLoud();
     mute = 0;
-     console.log(mute);
+    
      sessionStorage.setItem("muted", mute);
-     console.log(sessionStorage.getItem("muted"));
-    //https://codepen.io/calebzahnd/pen/VvZZeJ
+   
+    //Support accessing properties from: https://codepen.io/calebzahnd/pen/VvZZeJ
       $(mainTheme).prop('muted', false); 
 });
 
@@ -109,20 +109,19 @@ $(".mainThemeControl, #volumeAllowed").click(function(){
 $(".endGameThemeControl, #volumeAllowed").click(function(){
     toggleSpeakerIconToLoud();
     mute = 0;
-     console.log(mute);
+    
      sessionStorage.setItem("muted", mute);
-     console.log(sessionStorage.getItem("muted"));
-    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    
+   
     $(endTheme).prop('muted', false);   
 });
 
 $("#gameThemeControl, #volumeAllowed").click(function(){
     toggleSpeakerIconToLoud();
     mute = 0;
-     console.log(mute);
+   
      sessionStorage.setItem("muted", mute);
-     console.log(sessionStorage.getItem("muted"));
-    //https://codepen.io/calebzahnd/pen/VvZZeJ
+    
     $(gameTheme).prop('muted', false);   
 });
 
@@ -190,7 +189,7 @@ $( document ).ready(function(){
 // Storing the players name when the user inputs the data
 $("#enterName").click(function(){
     userInteraction = 1;
-    console.log(userInteraction);
+ 
     sessionStorage.setItem("userInteraction", userInteraction);
 
     var playerName = document.getElementById("nameInput").value;
@@ -228,7 +227,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function(){
     var time = setInterval(loadingArray, 1000);
     function loadingArray(){
             if(apiResponseArray.length == 7){
-                // if(apiResponseArray.length == 6){
+              
                 $("#startGame").removeClass("display");
                 clearInterval(time);
             }
@@ -256,7 +255,7 @@ $("#hardButton").click(function(){
 var activeLink;
 var nonActiveLink;
 function selectingActiveLink(difficultyMode2){
-        console.log(difficultyMode);
+       
         if(difficultyMode == 1) activeLink = "#easy";
         else if(difficultyMode == 2) activeLink = "#medium";
         else activeLink = "#hard";
@@ -275,8 +274,7 @@ $("#seeCardsButton").click(function(){
 var cardIDArray = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Shuffling the array ID number
-//Shuffling array found at this tutorial
-//https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+//Shuffling array found in a tutorial - see README.md
 $("#startGame").click(function(){
      
  

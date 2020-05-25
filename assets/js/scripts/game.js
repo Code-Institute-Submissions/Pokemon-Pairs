@@ -98,39 +98,6 @@ $("#mediumButton").click(function(){
     }  
 });
 
-// $("#hardButton").click(function(){
-//     console.log("Accessed");
-//     if(apiResponseArray.length == 1){
-//         for (i = 0; i < 3; i++){
-//             var pokemonID = Math.floor((Math.random() * 645)+1); 
-//             $.ajax({
-//                 method:"GET",                
-//                 url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
-//             }).then(function(response){
-//                 ajaxCalls.push(Number(response.cards.length));
-//                 //apiResponseArray.push(response.cards[0].imageUrlHiRes);
-//             //Make this Maths.random + 1 as it will never choose 0. 
-//             // console.log(response.cards);
-//             // do {
-//             //     var hardCard1 = response.cards[Math.floor(Math.random() * 2)].imageUrlHiRes
-//             //     console.log(hardCard1);
-//             // } while (hardCard1 == apiResponseArray[0]){
-//             //     apiResponseArray.unshift(hardCard1);
-                        // console.log("Checked to ensure it is random.");
-//             // };
-
-//             // do {
-//             //     var hardCard2 = response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes
-//             //     console.log(hardCard2);
-//             // } while (hardCard2 == apiResponseArray[0]){
-//             //     apiResponseArray.unshift(hardCard2);
-//             // };
-//                 console.log(apiResponseArray);
-//             });
-//         }
-//     }
-// });
-
 $("#hardButton").click(function(){
     if(apiResponseArray.length == 1){
         for (i = 0; i < 3; i++){
@@ -140,65 +107,41 @@ $("#hardButton").click(function(){
                 url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID 
             }).then(function(response){
                 ajaxCalls.push(Number(response.cards.length));
-                console.log(response);
                 const firstHalfHardCard = response.cards.length / 2;
-                console.log(firstHalfHardCard);
+                
                 do {
                 var hardCard1 = response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes;
-                console.log(hardCard1);
+               
                 } while (hardCard1 == apiResponseArray[0]){
                  apiResponseArray.unshift(hardCard1);
-                        console.log("Checked to ensure it is random.");
+                     
                 };           
-                console.log(apiResponseArray);
+              
 
                  do {
                 var hardCard2 = response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes;
-                console.log(hardCard2);
+               
                 } while (hardCard2 == apiResponseArray[0]){
                  apiResponseArray.unshift(hardCard2);
-                        console.log("Checked to ensure it is random.");
+                       
                 };           
-                console.log(apiResponseArray);
-            //Make this Maths.random + 1 as it will never choose 0. 
-                console.log(apiResponseArray);
+               
+                
             });
         }
     }
 });
 
 //This will be the code for animating the cards
-/* Tutorial from http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
-   It has been modified to fit my purpose */
+/* Tutorial from in the credits. It has been modified to fit my purpose */
 $("#easyButton, #mediumButton, #hardButton").click(function(){
     for(j=1; j<7; j++){
         pairCounterArray[j] = 0;
     }     
 });
 
-function notAPair(){
-    animationInProgress = 1;
-    var wrongWait = setTimeout(pairNotFound, 750);
-                        function pairNotFound(){
-                        turningCardsFaceDown();
-                        }
-                    
-    for(j=1; j<13; j++){
-        pairCounterArray[j] = 0;
-    }  
-
-   var animationResetDelay = setTimeout(resetAnimationValue, 750);
-        function resetAnimationValue(){
-           animationInProgress = 0;
-    console.log("animation " + animationInProgress);
-    whichCardClicked = 0;
-                cardSelected = null;
-        console.log(whichCardClicked + cardSelected);
-        } 
-                          
-}
-
-
+//Selecting a card and deciding if it is a pair or not.
+//Which card has been selected
 
 pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];  
 var whichCardClicked;
@@ -259,7 +202,7 @@ $('#gameRow').on('click', '#card12', function(){
 
 var cardSelected;
 function clickedCard(whichCardClicked){
-        console.log(whichCardClicked);
+       
             if(whichCardClicked == 1) return cardSelected = `#card1`;
             else if(whichCardClicked == 2) return cardSelected = `#card2`;
             else if (whichCardClicked == 3) return cardSelected = `#card3`;
@@ -287,29 +230,47 @@ function pairSelected(whichCardClicked){
     else cardA = 11, cardB = 12, cardPair = 6;   
 }
 
+
+//Actions once a card is clicked
 var animationInProgress = 0;
+
+function notAPair(){
+    animationInProgress = 1;
+    var wrongWait = setTimeout(pairNotFound, 750);
+                        function pairNotFound(){
+                        turningCardsFaceDown();
+                        }
+                    
+    for(j=1; j<13; j++){
+        pairCounterArray[j] = 0;
+    }  
+
+   var animationResetDelay = setTimeout(resetAnimationValue, 750);
+        function resetAnimationValue(){
+           animationInProgress = 0;
+   
+    whichCardClicked = 0;
+                cardSelected = null;
+        
+        } 
+                          
+}
 
 $('#gameRow').on('click', '.card', function(){
     if(animationInProgress == 0){
-    // $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
-    // $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
     clickedCard(whichCardClicked);
-
-     pairSelected(whichCardClicked); 
+    pairSelected(whichCardClicked); 
     $(".cover", this).css("transform", "perspective( 600px ) rotateY( -180deg )");
     $(".face", this).css("transform", "perspective( 600px ) rotateY( 0deg )");
     }
 });
 
 $('#gameRow').on('click', cardSelected, function(){ 
-    console.log("function triggered.");
-    if(cardSelected != null){
-        console.log("Card selected");
     
+    if(cardSelected != null){
+       
     if(animationInProgress == 0){
-    console.log(cardSelected);
-    console.log("card a is = " + pairCounterArray[cardA]);
-    console.log(this);
+   
     movesTaken++
      pairCounterArray[whichCardClicked] = 1;
                
@@ -321,17 +282,10 @@ $('#gameRow').on('click', cardSelected, function(){
         if(sessionStorage.muted == 0){
         $("#matchingPairMusic").get(0).play();
         }
-        // if(sessionStorage.muted == 0){
-        //         toggleGameTheme();  
-        //         toggleSpeakerIconToLoud();  
-        // } else {
-        //             playGameThemeOnMute();
-        //         }
-        console.log(pairCounterArray);
-        console.log("We have a pair!");
-        
+     
+       
         animationInProgress = 1;
-        console.log("animation " + animationInProgress);
+       
         var wait = setTimeout(pairFound, 1000);
         function pairFound(){
         
@@ -344,7 +298,7 @@ $('#gameRow').on('click', cardSelected, function(){
         var animationResetDelay = setTimeout(resetAnimationValue, 500);
         function resetAnimationValue(){
            animationInProgress = 0;
-        console.log("animation " + animationInProgress); 
+        
         whichCardClicked = 0;
         cardSelected = null;
         }
@@ -354,7 +308,7 @@ $('#gameRow').on('click', cardSelected, function(){
     } else {  
     //Resets if a pair isn't found.
      pairCounterArray[whichCardClicked] = 0;
-     console.log(pairCounterArray);
+     
     var checking = 0;
     for(let i = 1; i<13; i++){
         if(pairCounterArray[i] == 1){
@@ -370,10 +324,11 @@ $('#gameRow').on('click', cardSelected, function(){
                     }
                 }}
             } else {
-                console.log("No card selected.");
+                
             }
     });
 
+    //Actions for once the game has finished
 
  //Opening up the finished modal
 $("#game").click(function(){
@@ -382,9 +337,6 @@ $("#game").click(function(){
 
         var revealTime = setTimeout(revealCards,2000);
         function revealCards(){
-            // $("#gameThemeMusic").get(0).pause();
-            // $("#endOfGameThemeMusic").get(0).play();
-
             toggleGameTheme();
      if(sessionStorage.muted == 0){
                 $(endTheme).prop('muted', false);
@@ -393,7 +345,7 @@ $("#game").click(function(){
         } else {
                     playEndOfGameThemeOnMute();
                 }
-        //change this to a for loop.
+        
             for(j=1; j<13; j++){
                 $(`#card${j}Match`).addClass("display");
             }
@@ -411,10 +363,7 @@ $("#game").click(function(){
             for(k=0; k<7; k++){
                 apiResponseArray.pop();
             }
-            // for(k=0; k<6; k++){
-            //     apiResponseArray.shift();
-            // }
-            console.log(apiResponseArray);
+                    
         }
     }        
 }); 
