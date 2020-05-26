@@ -124,7 +124,7 @@ Difficulty Modal
 2.	Users can select which difficulty they would like the game to be.
 3.	Alternatively, there is a button to take the user to the “Instructions” page.
 4.	Alternatively, there is a button to take the user to the “Contact” page.
-1.	A speaker icon which will allow the user to mute/unmute the music.
+5.	A speaker icon which will allow the user to mute/unmute the music.
 
 Loading Modal
 2.	An animated gif will play whilst the cards are loading.
@@ -161,6 +161,7 @@ As this project is designed for children, it was imperative that I build in mult
 These following design features are in place to stop children from unintentionally breaking the game.
 + Modals guide the children through to the game in an easy and straight forward way.
 + If the api doesn't load, then an emergency set of cards will be drawn from static images loaded onto the webpage.
++ Emergency cards will load automatically after 30 seconds if the api does not respond.
 + If a child does not input their name, it has a default of "guest". 
 + Clicking on the same card consectutively will not affect the game.
 + Clicking the same card twice will not increase the amount of moves recorded. 
@@ -173,6 +174,12 @@ These following design features are in place to stop children from unintentional
 ___
 <span id="technologiesUsed"></span>
 ### Technologies Used
+
+Languages used
+
+1. HTML
+2. CSS
+3. Javascript
 
 Bootstrap – https://getbootstrap.com/  
 The project uses Bootstrap to simplify the process of building a grid layout, implementing forms, cards, and creating buttons. Bootstrap was also used for responsive design. 
@@ -189,9 +196,54 @@ Jasmine testing Framework - https://jasmine.github.io/
 Please find the link to the test document here: [Link to testing page]()   
 
 
-
+___
 <span id="responsiveDesign"></span>
 ## Responsive Design
+
+This project has been optimised to the common devices on Google Chrome's Dev Tools.
+It has been specifically designed for the following:
+   + Moto G4
+   + iPhone 6/7/8
+   + iPad
+   + iPad Pro
+   + Laptop with MDPI screen
+   + Laptop with HiDPI screen
+This includes both portrait and landscape orientation for all of the above devices. 
+
+The majority of the website stays consistent to an easy user experience. There are minor changes to font-sizes etc.
+There are a few major resposive choices, detailed below.
+
+1. A message encouraging the user to turn their mobile landscape appears on mobile devices smaller than an iPad.
+
+2. Card layout in game
+
+   Small mobile and large mobile - portrait
+   The card layout is in a 2 x 6 grid.
+   The game information header will also stay at the top of the users screen.
+
+   iPad, Ipad Pro - portrait
+   The card layout is in a 4 x 3 grid.
+
+   All landscape devices and laptop screens
+   The cards are laid out in a 6 x 2 grid.
+
+3. Displayed cards at the end of the game
+
+   Small mobile and large mobile - portrait
+   Cards are laid out in a 1 x 6 grid.
+
+   Landscape mobiles, iPad portrait and landscape, iPad Pro portrait
+   Cards are laid out in a 2 x 3 grid.
+
+   iPad Pro landscape and Laptop screens
+   Cards are laid out in a 3 x 2 grid.
+
+4. Top results
+
+   For mobile devices, the top results are laid are stacked.
+   For devices larger than a mobile, they are presented inline with each other. 
+
+
 ___
 <span id="deployment"></span>
 ## Deployment
@@ -226,19 +278,22 @@ ___
 <span id="#tutorials"></span>
 Tutorials
 
-Animating cards
+For all of the following tutorials, I have edited the code necessary for my project. The links provide
+the source of my initial inspiration. 
+
+Animating cards:
 http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
 
-Shuffling Array
+Shuffling Array:
 https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 
-Using the Pokémon Cards API - Making the initial Ajax Calls
+Using the Pokémon Cards API - Making the initial Ajax Calls:
 https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 
-How to toggle sounds playing
+How to toggle sounds playing:
 //https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
 
-How to play sound when clicking a button
+How to play sound when clicking a button:
 //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
 
 
