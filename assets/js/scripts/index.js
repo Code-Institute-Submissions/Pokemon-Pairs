@@ -1,5 +1,5 @@
 // Set variables and arrays
-var nameChosen = 0;
+var nameChosen;
 var backupCardsArrayEasy = ["assets/images/backupcards/easy1.png", "assets/images/backupcards/easy2.png", "assets/images/backupcards/easy3.png", "assets/images/backupcards/easy4.png", "assets/images/backupcards/easy5.png", "assets/images/backupcards/easy6.png"];
 var backupCardsArrayMedium = ["assets/images/backupcards/medium1.png", "assets/images/backupcards/medium2.png", "assets/images/backupcards/medium3.png", "assets/images/backupcards/medium4.png", "assets/images/backupcards/medium5.png", "assets/images/backupcards/medium6.png"];
 var backupCardsArrayHard = ["assets/images/backupcards/hard1.png", "assets/images/backupcards/hard2.png", "assets/images/backupcards/hard3.png", "assets/images/backupcards/hard4.png", "assets/images/backupcards/hard5.png", "assets/images/backupcards/hard6.png"];
@@ -155,15 +155,15 @@ $(document).ready(function() {
                 $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
                 $(".jumbotron").slideUp("slow");
                 
-                
+            
                 var welcomeModalTime = setTimeout(revealWelcomeModal, 750);
                 function revealWelcomeModal() {
                     $("#welcomeModal").css("display", "block").addClass("in").addClass("show");
                     $("#indexBody").addClass("modal-open");
-                    clearTimeout(welcomeModalTime);
+                   
                 }
+            
             }
-            clearTimeout(time);
         });
     } else {
         if (sessionStorage.muted == 0) {
@@ -214,7 +214,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
         playMainThemeOnMute();
     }
 
-    var timeBackup = setTimeout(backupCards, 45000);
+    var timeBackup = setTimeout(backupCards, 30000);
 
     function backupCards() {
         if (apiResponseArray.length < 7) {
