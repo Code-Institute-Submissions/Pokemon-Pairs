@@ -289,10 +289,16 @@ JavaScript code
 
 CSS 
 
-In future projects - use media queries differently.
-Organise css into categories. At the moment there is a lot of repeated code in each media query where it could all just be in
-one query that is for "all screens bigger than mobile." Eg. - Font-size: 2rem on screens bigger than mobile rather than having 
-font-sizes in each query. 
+In future projects, I will aim to use media queries differently by organising my code into categories.
+At the moment there is a lot of repeated code in each media query. In order to get the CSS right for 
+screen sizes, I have used strict min-width and max-height media queries, meaning some code will have to be repeated.
+Whilst it is necessary to have some repetition such as margins, some code applies to all of the screen above a break point. This 
+In the future, I will be using more generic media queries (eg. min-width: 768px) to control shared aspects of the CSS.
+This will reduce the amount of code and improve readability. Then should I need more specific screen margins etc, I will
+you more specific media queries. 
+
+In addition, I aim to use more standardised methods such vw or vh to encourage responsive design without the repetition
+of code. I have achieved this on a small scale during this project but only for certain aspects of the website.
 
 
 Jasmine testing  
