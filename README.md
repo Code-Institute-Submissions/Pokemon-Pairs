@@ -22,7 +22,7 @@ ___
    - <a href="#deploymentLive">Deployment Live</a>
    - <a href="#deploymentLive">Deployment Local</a>
 + <a href="#credit">Credit</a>
-   - <a href="#tutorials">Tutorials, libraries and frameworks</a>
+   - <a href="#tutorials">Tutorials</a>
    - <a href="#media">Media</a>
    - <a href="#acknowledgements">Acknowledgements</a>
 + <a href="#project">Project Evaluation</a>
@@ -224,7 +224,7 @@ ___
 ## Credit
 
 <span id="#tutorials"></span>
-Tutorials, libraries and frameworks
+Tutorials
 
 Animating cards
 http://www.developphp.com/video/JavaScript/Trigger-CSS-Transitions-to-Control-Animations
@@ -241,19 +241,27 @@ How to toggle sounds playing
 How to play sound when clicking a button
 //https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked
 
-Pokémon cards are taken from an api found at 
-https://pokemontcg.io/
+
 
 <span id="media"></span>
 Media
 
-The photos used in this site were obtained from Google. They were all free so share and edit.
-Favicon generator
+The Pokémon cards are taken from an api found at:
+https://pokemontcg.io/
+
+The photos used in the Landing page image were found at: 
+https://www.cleanpng.com/
+
+The "Pokémon Pairs" photo used is from the following link: 
+https://textcraft.net/style/Textcraft/pokemon
+
+To generate my favicon, I used this website: 
 https://www.ionos.co.uk/tools/favicon-generator
 
-Theme songs
+The theme songs we taken from Youtube. The main theme at the beginning of the game is from this link:
 https://www.youtube.com/watch?v=PxzY57ImZdQ
 
+The rest of the music and sound effects come from this link:
 https://www.youtube.com/watch?v=axKDCZd4Mfc
 
 
