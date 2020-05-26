@@ -268,12 +268,24 @@ be to use Pokémon cards.
 ___
 <span id="project"></span>
 ## Project Evaluation
+
+I believe that the project meets its design purpose. The site is simple to navigate with intuitive modals to help guide
+younger users through the game. It gives clear instructions so that the users do not have to think too much about which
+button to click to get to the game. Instead of using link names like "Home", I have used Play! to help understanding of
+where the game is located.
+
+Throughout the code there are many fail-safes, as detailed in <a href="#defensiveFeatures">defensive features</a>. As the
+user audience is a young demographic, I have tried to ensure that unusual interaction with the site - such as clicking every
+thing at once - does not interrupt or break the game. 
+
+
 <span id="improvements"></span>
 ### Improvements
 
 JavaScript code
    + In future I want to explore using switch cases.
    + I want to look at short hand for conditional statements to make it clearer where the loops and functions are defined.
+
 
 CSS 
 
@@ -285,8 +297,8 @@ font-sizes in each query.
 
 Jasmine testing  
 I would like to use unit testing from the beginning of the project. 
-I think it will be useful to find out which functions are/aren't being called.
+I think it will be useful to find out which functions are/aren't being called and is much quicker.
 I used JS to check which functions are called, by using alerts or console.log. 
-However, this was inefficient. 
+However, this was inefficient and I had to simulate all of the scenarios.
 
 ___
