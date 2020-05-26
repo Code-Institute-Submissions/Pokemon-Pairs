@@ -208,19 +208,20 @@ var cardSelected;
 
 function clickedCard(whichCardClicked) {
 
-	if (whichCardClicked == 1) return cardSelected = `#card1`;
-	else if (whichCardClicked == 2) return cardSelected = `#card2`;
-	else if (whichCardClicked == 3) return cardSelected = `#card3`;
-	else if (whichCardClicked == 4) return cardSelected = `#card4`;
-	else if (whichCardClicked == 5) return cardSelected = `#card5`;
-	else if (whichCardClicked == 6) return cardSelected = `#card6`;
-	else if (whichCardClicked == 7) return cardSelected = `#card7`;
-	else if (whichCardClicked == 8) return cardSelected = `#card8`;
-	else if (whichCardClicked == 9) return cardSelected = `#card9`;
-	else if (whichCardClicked == 10) return cardSelected = `#card10`;
-	else if (whichCardClicked == 11) return cardSelected = `#card11`;
-	else if (whichCardClicked == 12) return cardSelected = `#card12`;
-	else cardSelected;
+	if (whichCardClicked == 1) cardSelected = `#card1`;
+	else if (whichCardClicked == 2) cardSelected = `#card2`;
+	else if (whichCardClicked == 3) cardSelected = `#card3`;
+	else if (whichCardClicked == 4)  cardSelected = `#card4`;
+	else if (whichCardClicked == 5)  cardSelected = `#card5`;
+	else if (whichCardClicked == 6)  cardSelected = `#card6`;
+	else if (whichCardClicked == 7)  cardSelected = `#card7`;
+	else if (whichCardClicked == 8)  cardSelected = `#card8`;
+	else if (whichCardClicked == 9)  cardSelected = `#card9`;
+	else if (whichCardClicked == 10)  cardSelected = `#card10`;
+	else if (whichCardClicked == 11)  cardSelected = `#card11`;
+	else if (whichCardClicked == 12)  cardSelected = `#card12`;
+    else cardSelected; 
+    return cardSelected;
 }
 
 var cardA;

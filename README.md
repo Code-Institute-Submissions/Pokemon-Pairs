@@ -115,7 +115,8 @@ Game
 
 Modals
 1.	Volume Modal – Users can choose whether they would like the music on or off.
-2.	Welcome Modal – 
+
+Welcome Modal – 
 3.	Users can enter their name to personalise the experience.
 4.	A speaker icon which will allow the user to mute/unmute the music.
 
@@ -136,6 +137,7 @@ Finished Modal
 2.	Users can see their previous top 3 scores (moves taken and how long it took).
 3.	There is a button allowing users to play again immediately.
 4.	There is a button allowing users to see the cards that have featured in each game.
+
 
 
  
