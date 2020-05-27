@@ -356,14 +356,16 @@ $('#gameRow').on('click', cardSelected, function() {
 $("#game").click(function() {
 	$("#startGame").addClass("display");
 	if (pairMatch == 6) {
-          themeSelector = 3;
-            activeTheme(themeSelector);
-            console.log(theme);
+        
+          
 
 		let revealTime = setTimeout(revealCards, 2000);
 
 		function revealCards() {
-			toggleThemeMusic();
+            toggleThemeMusic();
+            themeSelector = 3;
+            activeTheme(themeSelector);
+            console.log(theme);
 			if (sessionStorage.muted == 0) {
 				$(endTheme).prop('muted', false);
 				toggleThemeMusic();

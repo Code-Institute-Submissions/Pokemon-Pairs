@@ -15,7 +15,10 @@ let themeSelector;
 // Sound Support
 
 //Allows switching between play and pause.
-function toggleMainTheme() {
+function toggleThemeMusic() {
+    if(themeSelector == 2){
+        $(theme).prop("volume", 0.3);
+    }
     return theme.paused ? theme.play() : theme.pause();
 }
 
@@ -139,7 +142,7 @@ $(document).ready(function() {
             $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
             if (sessionStorage.muted == 0) {
                 $(mainTheme).prop('muted', false);
-                toggleMainTheme();
+                toggleThemeMusic();
                 toggleSpeakerIconToLoud();
             } else {
                 playMainThemeOnMute();
@@ -162,7 +165,7 @@ $(document).ready(function() {
         });
     } else {
         if (sessionStorage.muted == 0) {
-            toggleMainTheme();
+            toggleThemeMusic();
             toggleSpeakerIconToLoud();
 
         } else {
@@ -272,12 +275,13 @@ let cardIDArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 //Shuffling the array ID number
 //Shuffling array found in a tutorial - see README.md
 $("#startGame").click(function() {
+        toggleThemeMusic();
         themeSelector = 2;
         console.log(themeSelector);
         activeTheme(themeSelector);
         console.log(theme);
 
-    toggleMainTheme();
+    
     if (sessionStorage.muted == 0) {
 
         $(gameTheme).prop('muted', false);
@@ -390,7 +394,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function() {
 
     if (sessionStorage.muted == 0) {
         $(mainTheme).prop('muted', false);
-        toggleMainTheme();
+        toggleThemeMusic();
         toggleSpeakerIconToLoud();
     } else {
         playMainThemeOnMute();
