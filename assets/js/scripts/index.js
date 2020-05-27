@@ -12,6 +12,7 @@ let userInteraction;
 let theme;
 let themeSelector;
 let whichModal;
+let modalSelected;
 
 // Sound Support
 
@@ -84,15 +85,23 @@ function turningCardsFaceDown() {
 }
 
 //Modal functions
-
+function modalSelectionFunction(whichModal){
+    console.log("reached");
+    if(whichModal == 1) modalSelected = "#volumeModal";
+    else if(whichModal == 2) modalSelected = "#welcomeModal";
+    else if(whichModal == 3) modalSelected = "#difficultyModal";
+    else if(whichModal == 4) modalSelected = "#finishedModal";
+    else modalSelected;
+    return modalSelected;
+}
 
 function closeModal(modalSelected){
-$("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
+$(modalSelected).css("display", "none").removeClass("in").removeClass("show");
 $("#indexBody").removeClass("modal-open");
 }
 
 function openModal(modalSelected){
-$("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
+$(modalSelected).css("display", "block").addClass("in").addClass("show").addClass("modal-open");
 }
 
 
@@ -107,8 +116,10 @@ $(document).ready(function() {
     if (sessionStorage.name == null) {
         whichModal = 1;
         console.log(whichModal);
-        $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
-        $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+        // modalSelectionFunction(whichModal);
+        // openModal(modalSelected);
+        // $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
+        // $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
         
 
         $(".volume").click(function() {
