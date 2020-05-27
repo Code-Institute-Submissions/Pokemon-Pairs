@@ -92,6 +92,7 @@ All | Screen sizes | Timer will start when the game starts | True
 All | Screen sizes | Timer will end when the game ends | True
 All | Screen sizes | Timer will reset at the start of a new game | True
 All | Screen sizes | Timer will display a continuous record of the length of the game | True
+
 Game functionality
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
