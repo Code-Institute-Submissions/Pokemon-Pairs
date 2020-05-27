@@ -39,9 +39,9 @@ ___
 ## Rationale
 
 #### Pokémon Pairs - Gotta Match'Em All!
-The rationale for this project is to build a memory game for children. It is aimed at building
+The rationale for this project is to build a memory game for children or anyone who enjoys Pokémon. It is aimed at building
 their memory skills whilst keeping them entertained. Pokémon is hugely popular with younger
-children, especially since the release of Pokémon Go. Now, they can build up their skills, whilst
+players, especially since the release of Pokémon Go. Now, they can build up their skills, whilst
 competing against themselves. Can they complete the game in fewer moves or less time?
 
 ___
@@ -55,14 +55,15 @@ ___
 <span id="userStories"></span> 
 ### User Stories
 
-1. As a child, I want to easily navigate through the website so I can see all of the pages.
-2. As a child or a parent, I want to find the help page so I can learn how to play the game.
-3. As a child or a parent, I want to contact the company so I can give feedback on the game or have some questions answered.
-4. As a child, I want to personalise the game to me by giving the webpage data (entering my name).
-5. As a child, I want to be able to easily play the game without having to workout instructions.
-6. As a child, I want to see how well I have done at the end of the game by reviewing the scores from my game.
-7. As a child, I to be able to see if I have improved by looking at my previous scores.
-8. As a child, I want to able to choose whether I play again, so I can beat my previous score.
+1. As a player, I want to easily navigate through the website so I can see all of the pages.
+2. As a player or a parent, I want to find the help page so I can learn how to play the game.
+3. As a player or a parent, I want to contact the company so I can give feedback on the game or have some questions answered.
+4. As a player, I want to personalise the game to me by giving the webpage data (entering my name).
+5. As a player, I want to be able to easily play the game without having to workout instructions.
+6. As a player, I want to see how well I have done at the end of the game by reviewing the scores from my game.
+7. As a player, I to be able to see if I have improved by looking at my previous scores.
+8. As a player, I want to able to choose whether I play again, so I can beat my previous score.
+9. As a player, I want to able to see the cards I have previously used, so I can read the details easily.
 
 ___
 <span id="features"></span>
@@ -85,7 +86,7 @@ Navbar
 
 Help Page
 
-1. There is a link to a help sheet with image to support children's understanding.
+1. There is a link to a help sheet with image to support a player's understanding.
 2. Explains how to navigate the game to start playing.
 3. Explains the difference between each difficulty mode.
 4. Explains your choices after the game has finished.
@@ -153,21 +154,21 @@ Finished Modal
 
 1. I would like to add a timer that displays minutes and seconds.
 2. I would like to add a button that flashes when the game is ready to play.
-3. I would like to add in a hint button, which shows all the cards for a second to give children a clue if they get stuck.
+3. I would like to add in a hint button, which shows all the cards for a second to give players a clue if they get stuck.
 4. I would like to add a function where the user chooses which Pokémon they would like to see in the game.
 ___
 <span id="defensiveFeatures"></span>
 ## Defensive Features
 
-As this project is designed for children, it was imperative that I build in multiple fail-safes.
-These following design features are in place to stop children from unintentionally breaking the game.
-+ Modals guide the children through to the game in an easy and straight forward way.
+As this project is designed for an audience including children, it was imperative that I build in multiple fail-safes.
+These following design features are in place to stop players from unintentionally breaking the game.
++ Modals guide the players through to the game in an easy and straight forward way.
 + If the api doesn't load, then an emergency set of cards will be drawn from static images loaded onto the webpage.
 + Emergency cards will load automatically after 30 seconds if the api does not respond.
-+ If a child does not input their name, it has a default of "guest". 
++ If a player does not input their name, it has a default of "guest". 
 + Clicking on the same card consectutively will not affect the game.
 + Clicking the same card twice will not increase the amount of moves recorded. 
-+ Cards will disappear when a pair is chosen to prevent children from clicking them again. 
++ Cards will disappear when a pair is chosen to prevent players from clicking them again. 
 + User cannot click other cards whilst a pair is diappearing or the wrong pair is resetting.
 + Users cannot swap difficulties halfway through a game. 
 + User must fill in the required forms when sending feedback.
