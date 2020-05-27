@@ -9,6 +9,8 @@ const matchTheme = document.getElementById("matchingPairMusic");
 const endTheme = document.getElementById("endOfGameThemeMusic");
 let mute;
 let userInteraction;
+let theme;
+let themeSelector;
 
 // Sound Support
 
@@ -42,9 +44,10 @@ function toggleSpeakerIconToLoud() {
 }
 
 function activeTheme(themeSelector){
-    if (themeSelector == "main") theme = mainTheme;
-    else if (themeSelector == "game") theme = gameTheme;
-    else theme = endTheme;
+    if(themeSelector == 1) theme = mainTheme;
+    else if(themeSelector == 2) theme = gameTheme;
+    else if(themeSelector == 3) theme = endTheme;
+    else theme;
     return theme;
 }
 
@@ -136,9 +139,14 @@ function turningCardsFaceDown() {
 
 // Checking if this is the first time loggin on. 
 $(document).ready(function() {
+    themeSelector = 1;
+    console.log(themeSelector);
+    activeTheme(themeSelector);
+    console.log(theme);
     if (sessionStorage.name == null) {
         $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
+        
 
         $(".volume").click(function() {
             $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
@@ -277,7 +285,10 @@ let cardIDArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 //Shuffling the array ID number
 //Shuffling array found in a tutorial - see README.md
 $("#startGame").click(function() {
-
+        themeSelector = 2;
+        console.log(themeSelector);
+        activeTheme(themeSelector);
+        console.log(theme);
 
     toggleMainTheme();
     if (sessionStorage.muted == 0) {
@@ -370,6 +381,10 @@ $("#playAgainButton").click(function() {
 $("#playAgainButton, #playAgainButtonDisplay").click(function() {
     $("#easy, #medium, #hard").removeClass("active-mode");
     $("#gameRow").html(``);
+    themeSelector = 1;
+    activeTheme(themeSelector);
+    console.log(theme);
+
     let ajaxCallsSum = ajaxCalls.reduce(function(a, b) {
         return a + b;
     }, 0);

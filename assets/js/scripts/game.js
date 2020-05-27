@@ -356,19 +356,21 @@ $('#gameRow').on('click', cardSelected, function() {
 $("#game").click(function() {
 	$("#startGame").addClass("display");
 	if (pairMatch == 6) {
+          themeSelector = 3;
+            activeTheme(themeSelector);
+            console.log(theme);
 
 		let revealTime = setTimeout(revealCards, 2000);
 
 		function revealCards() {
-            toggleGameTheme();
-            
+			toggleGameTheme();
 			if (sessionStorage.muted == 0) {
 				$(endTheme).prop('muted', false);
 				toggleEndOfGameTheme();
 				toggleSpeakerIconToLoud();
 			} else {
                 playEndOfGameThemeOnMute();
-                // toggleEndOfGameTheme();
+                
 			}
 
 			for (let j = 1; j < 13; j++) {
