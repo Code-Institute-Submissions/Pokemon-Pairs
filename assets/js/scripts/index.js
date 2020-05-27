@@ -17,21 +17,12 @@ let themeSelector;
 //Allows switching between play and pause.
 function toggleThemeMusic() {
     if(themeSelector == 2){
-        $(theme).prop("volume", 0.3);
+    $(theme).prop("volume", "0.3");
     }
     return theme.paused ? theme.play() : theme.pause();
 }
 
-//Changes the visible sound icon
-function toggleSpeakerIconToMuted() {
-    $(".fa-volume-up").css("display", "none");
-    $(".fa-volume-mute").css("display", "inline-block");
-}
 
-function toggleSpeakerIconToLoud() {
-    $(".fa-volume-up").css("display", "inline-block");
-    $(".fa-volume-mute").css("display", "none");
-}
 
 function activeTheme(themeSelector){
     if(themeSelector == 1) theme = mainTheme;
@@ -44,11 +35,11 @@ function activeTheme(themeSelector){
 
 //Plays a theme on mute
 function playMainThemeOnMute() {
-    $(mainTheme).get(0).play();
+    $(theme).get(0).play();
     
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
-        $(mainTheme).prop('muted', true);
+        $(theme).prop('muted', true);
     }
 }
 
@@ -56,7 +47,7 @@ function playGameThemeOnMute() {
     toggleThemeMusic();
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
-        $(gameTheme).prop('muted', true);
+        $(theme).prop('muted', true);
     }
 }
 
@@ -64,7 +55,7 @@ function playEndOfGameThemeOnMute() {
     toggleThemeMusic();
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
-        $(endTheme).prop('muted', true);
+        $(theme).prop('muted', true);
     }
 }
 
@@ -74,10 +65,8 @@ function playEndOfGameThemeOnMute() {
 $(".fa-volume-up, #volumeNotAllowed").click(function() {
     toggleSpeakerIconToMuted();
     
-    $(gameTheme, mainTheme, endTheme).prop('muted', true);
-    $(mainTheme).prop('muted', true);
-    $(endTheme).prop('muted', true);
-
+    $(theme).prop('muted', true);
+    
     mute = 1;
 
     sessionStorage.setItem("muted", mute);
@@ -116,9 +105,18 @@ $("#gameThemeControl, #volumeAllowed").click(function() {
     $(gameTheme).prop('muted', false);
 });
 
+//Changes the visible sound icon
+function toggleSpeakerIconToMuted() {
+    $(".fa-volume-up").css("display", "none");
+    $(".fa-volume-mute").css("display", "inline-block");
+}
 
+function toggleSpeakerIconToLoud() {
+    $(".fa-volume-up").css("display", "inline-block");
+    $(".fa-volume-mute").css("display", "none");
+}
 
-
+//Turning cards face down
 function turningCardsFaceDown() {
     $(".cover").css("transform", "perspective( 600px ) rotateY( 0deg )");
     $(".face").css("transform", "perspective( 600px ) rotateY( 180deg )");
