@@ -8,7 +8,6 @@ const gameTheme = document.getElementById("gameThemeMusic");
 const matchTheme = document.getElementById("matchingPairMusic");
 const endTheme = document.getElementById("endOfGameThemeMusic");
 let mute;
-let supportPageSelected;
 let userInteraction;
 
 // Sound Support
@@ -57,14 +56,6 @@ function playGameThemeOnMute() {
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
         $(gameTheme).prop('muted', true);
-    }
-}
-
-function playMatchingPairThemeOnMute() {
-    toggleMatchingPairTheme();
-    if (sessionStorage.muted == 1) {
-        toggleSpeakerIconToMuted();
-        $(matchTheme).prop('muted', true);
     }
 }
 
@@ -255,7 +246,6 @@ $("#hardButton").click(function() {
 });
 
 let activeLink;
-let nonActiveLink;
 
 function selectingActiveLink(difficultyMode2) {
 
