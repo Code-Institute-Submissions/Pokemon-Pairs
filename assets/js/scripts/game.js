@@ -1,8 +1,8 @@
 //API tutorial used for initial ajax calls. It has been edited for my project. See README.md. 
 //It has been modified for my benefit
-var types = ["darkness", "water", "lightning", "fighting", "metal", "grass", "fire", "psychic", "fairy", "dragon", "colorless"];
-var ajaxCalls = [];
-var apiResponseArray = ["placeholder"];
+let types = ["darkness", "water", "lightning", "fighting", "metal", "grass", "fire", "psychic", "fairy", "dragon", "colorless"];
+let ajaxCalls = [];
+let apiResponseArray = ["placeholder"];
 let results = ["-", "-"];
 let resultsTime = ["-", "-"];
 let pairMatch = 0;
@@ -34,7 +34,7 @@ $("#startGame").click(function() {
 		storageToArray();
 	}
 
-	var stopWatch = setInterval(timer, 1000);
+	let stopWatch = setInterval(timer, 1000);
 
 	function timer() {
 		if (pairMatch < 6) {
@@ -74,7 +74,7 @@ $("#startGame").click(function() {
 $("#easyButton").click(function() {
 	if (apiResponseArray.length == 1) {
 		for (i = 0; i < 6; i++) {
-			var pokemonID = Math.floor((Math.random() * 645) + 1);
+			let pokemonID = Math.floor((Math.random() * 645) + 1);
 			$.ajax({
 				method: "GET",
 				url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID
@@ -89,7 +89,7 @@ $("#easyButton").click(function() {
 
 $("#mediumButton").click(function() {
 	if (apiResponseArray.length == 1) {
-		var pageNumber = [Math.floor(Math.random() * 4)];
+		let pageNumber = [Math.floor(Math.random() * 4)];
 		$.ajax({
 			method: "GET",
 			url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] + "&&page" + pageNumber
@@ -105,7 +105,7 @@ $("#mediumButton").click(function() {
 $("#hardButton").click(function() {
 	if (apiResponseArray.length == 1) {
 		for (i = 0; i < 3; i++) {
-			var pokemonID = Math.floor((Math.random() * 645) + 1);
+			let pokemonID = Math.floor((Math.random() * 645) + 1);
 			$.ajax({
 				method: "GET",
 				url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=" + pokemonID
@@ -114,7 +114,7 @@ $("#hardButton").click(function() {
 				const firstHalfHardCard = response.cards.length / 2;
 
 				do {
-					var hardCard1 = response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes;
+					let hardCard1 = response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes;
 
 				} while (hardCard1 == apiResponseArray[0]) {
 					apiResponseArray.unshift(hardCard1);
@@ -123,7 +123,7 @@ $("#hardButton").click(function() {
 
 
 				do {
-					var hardCard2 = response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes;
+					let hardCard2 = response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes;
 
 				} while (hardCard2 == apiResponseArray[0]) {
 					apiResponseArray.unshift(hardCard2);
@@ -148,7 +148,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
 //Which card has been selected
 
 pairCounterArray = ["placeholder", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-var whichCardClicked;
+let whichCardClicked;
 
 $('#gameRow').on('click', '#card1', function() {
 	whichCardClicked = 1;
@@ -204,7 +204,7 @@ $('#gameRow').on('click', '#card12', function() {
 	whichCardClicked = 12;
 });
 
-var cardSelected;
+let cardSelected;
 
 function clickedCard(whichCardClicked) {
 
@@ -224,9 +224,9 @@ function clickedCard(whichCardClicked) {
     return cardSelected;
 }
 
-var cardA;
-var cardB;
-var cardPair;
+let cardA;
+let cardB;
+let cardPair;
 
 function pairSelected(whichCardClicked) {
 	if (whichCardClicked == 1 || whichCardClicked == 2) cardA = 1, cardB = 2, cardPair = 1;
@@ -239,11 +239,11 @@ function pairSelected(whichCardClicked) {
 
 
 //Actions once a card is clicked
-var animationInProgress = 0;
+let animationInProgress = 0;
 
 function notAPair() {
 	animationInProgress = 1;
-	var wrongWait = setTimeout(pairNotFound, 750);
+	let wrongWait = setTimeout(pairNotFound, 750);
 
 	function pairNotFound() {
 		turningCardsFaceDown();
@@ -254,7 +254,7 @@ function notAPair() {
 		pairCounterArray[j] = 0;
 	}
 
-	var animationResetDelay = setTimeout(resetAnimationValue, 750);
+	let animationResetDelay = setTimeout(resetAnimationValue, 750);
 
 	function resetAnimationValue() {
 		animationInProgress = 0;
@@ -296,19 +296,19 @@ $('#gameRow').on('click', cardSelected, function() {
 
 				animationInProgress = 1;
 
-				var wait = setTimeout(pairFound, 1000);
+				let wait = setTimeout(pairFound, 1000);
 
 				function pairFound() {
 
 					$(`.cardMatchID${cardPair}`).fadeOut();
 
-					var wait2 = setTimeout(pairFound2, 400);
+					let wait2 = setTimeout(pairFound2, 400);
 
 					function pairFound2() {
 						$(`.pairFound${cardPair}`).removeClass("display");
 					}
 
-					var animationResetDelay = setTimeout(resetAnimationValue, 500);
+					let animationResetDelay = setTimeout(resetAnimationValue, 500);
 
 					function resetAnimationValue() {
 						animationInProgress = 0;
@@ -323,7 +323,7 @@ $('#gameRow').on('click', cardSelected, function() {
 				//Resets if a pair isn't found.
 				pairCounterArray[whichCardClicked] = 0;
 
-				var checking = 0;
+				let checking = 0;
 				for (let i = 1; i < 13; i++) {
 					if (pairCounterArray[i] == 1) {
 						checking++;
@@ -350,7 +350,7 @@ $("#game").click(function() {
 	$("#startGame").addClass("display");
 	if (pairMatch == 6) {
 
-		var revealTime = setTimeout(revealCards, 2000);
+		let revealTime = setTimeout(revealCards, 2000);
 
 		function revealCards() {
 			toggleGameTheme();
@@ -371,7 +371,7 @@ $("#game").click(function() {
 			$(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
 			$(".card > .face").css("transform", "perspective( 600px ) rotateY( 0deg )");
 		}
-		var wait = setTimeout(finishedModal, 4000);
+		let wait = setTimeout(finishedModal, 4000);
 
 		function finishedModal() {
 			$("#finishedModal").css("display", "block").addClass("in").addClass("show");
