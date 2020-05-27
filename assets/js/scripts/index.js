@@ -15,15 +15,6 @@ let themeSelector;
 // Sound Support
 
 //Allows switching between play and pause.
-function toggleThemeMusic() {
-    if(themeSelector == 2){
-    $(theme).prop("volume", "0.3");
-    }
-    return theme.paused ? theme.play() : theme.pause();
-}
-
-
-
 function activeTheme(themeSelector){
     if(themeSelector == 1) theme = mainTheme;
     else if(themeSelector == 2) theme = gameTheme;
@@ -32,6 +23,12 @@ function activeTheme(themeSelector){
     return theme;
 }
 
+function toggleThemeMusic() {
+    if(themeSelector == 2){
+    $(theme).prop("volume", "0.3");
+    }
+    return theme.paused ? theme.play() : theme.pause();
+}
 
 //Plays a theme on mute
 function playMainThemeOnMute() {
@@ -66,7 +63,7 @@ $(".fa-volume-up, #volumeNotAllowed").click(function() {
     toggleSpeakerIconToMuted();
     
     $(theme).prop('muted', true);
-    
+
     mute = 1;
 
     sessionStorage.setItem("muted", mute);
@@ -74,35 +71,15 @@ $(".fa-volume-up, #volumeNotAllowed").click(function() {
 });
 
 
-//Will allow specific songs to be played. 
-$(".mainThemeControl, #volumeAllowed").click(function() {
+//Will allow songs to be played aloud. 
+$(".mainThemeControl, #volumeAllowed, .endGameThemeControl, #gameThemeControl").click(function() {
     toggleSpeakerIconToLoud();
     mute = 0;
 
     sessionStorage.setItem("muted", mute);
 
     //Support accessing properties from: https://codepen.io/calebzahnd/pen/VvZZeJ
-    $(mainTheme).prop('muted', false);
-});
-
-
-$(".endGameThemeControl, #volumeAllowed").click(function() {
-    toggleSpeakerIconToLoud();
-    mute = 0;
-
-    sessionStorage.setItem("muted", mute);
-
-
-    $(endTheme).prop('muted', false);
-});
-
-$("#gameThemeControl, #volumeAllowed").click(function() {
-    toggleSpeakerIconToLoud();
-    mute = 0;
-
-    sessionStorage.setItem("muted", mute);
-
-    $(gameTheme).prop('muted', false);
+    $(theme).prop('muted', false);
 });
 
 //Changes the visible sound icon
@@ -139,7 +116,7 @@ $(document).ready(function() {
         $(".volume").click(function() {
             $("#volumeModal").css("display", "none").removeClass("in").removeClass("show").removeClass("modal-open");
             if (sessionStorage.muted == 0) {
-                $(mainTheme).prop('muted', false);
+                $(theme).prop('muted', false);
                 toggleThemeMusic();
                 toggleSpeakerIconToLoud();
             } else {
@@ -203,8 +180,8 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
     $("#indexBody").removeClass("modal-open");
 
     if (sessionStorage.muted == 0) {
-        $(mainTheme).prop('muted', false);
-        $(mainTheme).get(0).play();
+        $(theme).prop('muted', false);
+        $(theme).get(0).play();
         toggleSpeakerIconToLoud();
     } else {
         playMainThemeOnMute();
@@ -282,7 +259,7 @@ $("#startGame").click(function() {
     
     if (sessionStorage.muted == 0) {
 
-        $(gameTheme).prop('muted', false);
+        $(theme).prop('muted', false);
         toggleThemeMusic();
         toggleSpeakerIconToLoud();
     } else {
@@ -391,7 +368,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function() {
     $("#endOfGameThemeMusic").get(0).pause();
 
     if (sessionStorage.muted == 0) {
-        $(mainTheme).prop('muted', false);
+        $(theme).prop('muted', false);
         toggleThemeMusic();
         toggleSpeakerIconToLoud();
     } else {
