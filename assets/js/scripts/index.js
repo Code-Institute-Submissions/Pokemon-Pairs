@@ -307,7 +307,7 @@ $("#startGame").click(function() {
 
     //Generating html for each card
     let pairMatchID = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12];
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         $("#gameRow").append(`
                 <div  class="gameIndividualCardWrapper col-6 col-sm-2  col-md-3 col-lg-2 col-xl-2 ">
                     <div id="card${shuffledCardID[i]}" class="eight-cards card">
@@ -320,7 +320,7 @@ $("#startGame").click(function() {
     }
 
     // Adding images to the correct cards and display cards
-    for (j = 1; j < 13; j++) {
+    for (let j = 1; j < 13; j++) {
         let pairArray = ["placeholder", 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
         $(`#card${j}Face`).addClass(`pair${pairArray[j]}`);
         $(`#card${j}`).addClass(`cardMatchID${pairArray[j]}`);
@@ -328,7 +328,7 @@ $("#startGame").click(function() {
         $(`#card${j}Match`).addClass(`pairFound${pairArray[j]}`);
     }
 
-    for (k = 1; k < 7; k++) {
+    for (let k = 1; k < 7; k++) {
         $(`#displayCard${k}`).addClass(`pair${k}`);
     }
 
@@ -353,7 +353,7 @@ $("#startGame").click(function() {
         }
     }
     selectImages(difficultyMode);
-    for (j = 1; j < 7; j++) {
+    for (let j = 1; j < 7; j++) {
         $(`.pair${j}`).css("background-image", imageContainerArray[j - 1]);
     }
 
