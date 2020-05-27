@@ -11,6 +11,8 @@ let movesTaken;
 let recordMoves;
 let recordTimes;
 let pairCounterArray;
+let difficultyMode;
+
 
 
 //***************************************************************Results
