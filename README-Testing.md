@@ -88,10 +88,11 @@ Page      | Screen      | Desired outcome | Result
 Game information
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
-All | Screen sizes | Timer will start when the game starts | True
-All | Screen sizes | Timer will end when the game ends | True
-All | Screen sizes | Timer will reset at the start of a new game | True
-All | Screen sizes | Timer will display a continuous record of the length of the game | True
+Play! | Screen sizes | Timer will start when the game starts | True
+Play!| Screen sizes | Timer will end when the game ends | True
+Play! | Screen sizes | Timer will reset at the start of a new game | True
+Play! | Screen sizes | Timer will display a continuous record of the length of the game | True
+Play! | Mobile portrait | Game information section will stick to the top of the page when scrolling. |True
 
 Game functionality
 Page      | Screen      | Desired outcome | Result 
