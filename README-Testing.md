@@ -88,6 +88,10 @@ Page      | Screen      | Desired outcome | Result
 Game information
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
+All | Screen sizes | Timer will start when the game starts | True
+All | Screen sizes | Timer will end when the game ends | True
+All | Screen sizes | Timer will reset at the start of a new game | True
+All | Screen sizes | Timer will display a continuous record of the length of the game | True
 Game functionality
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
@@ -97,5 +101,7 @@ Page      | Screen      | Desired outcome | Result
 
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
-
-
+Play! | All | Pressing the speaker icon will mute the music | True
+Play! | All | Pressing the speaker icon will unmute the music | True
+Play! | All | Pressing no to volume will result in music not playing | True
+Play! | All | Pressing yes to the speaker button will play the music | True
