@@ -1,14 +1,14 @@
 // Set variables and arrays
-var nameChosen;
-var backupCardsArrayEasy = ["assets/images/backupcards/easy1.png", "assets/images/backupcards/easy2.png", "assets/images/backupcards/easy3.png", "assets/images/backupcards/easy4.png", "assets/images/backupcards/easy5.png", "assets/images/backupcards/easy6.png"];
-var backupCardsArrayMedium = ["assets/images/backupcards/medium1.png", "assets/images/backupcards/medium2.png", "assets/images/backupcards/medium3.png", "assets/images/backupcards/medium4.png", "assets/images/backupcards/medium5.png", "assets/images/backupcards/medium6.png"];
-var backupCardsArrayHard = ["assets/images/backupcards/hard1.png", "assets/images/backupcards/hard2.png", "assets/images/backupcards/hard3.png", "assets/images/backupcards/hard4.png", "assets/images/backupcards/hard5.png", "assets/images/backupcards/hard6.png"];
+let nameChosen;
+let backupCardsArrayEasy = ["assets/images/backupcards/easy1.png", "assets/images/backupcards/easy2.png", "assets/images/backupcards/easy3.png", "assets/images/backupcards/easy4.png", "assets/images/backupcards/easy5.png", "assets/images/backupcards/easy6.png"];
+let backupCardsArrayMedium = ["assets/images/backupcards/medium1.png", "assets/images/backupcards/medium2.png", "assets/images/backupcards/medium3.png", "assets/images/backupcards/medium4.png", "assets/images/backupcards/medium5.png", "assets/images/backupcards/medium6.png"];
+let backupCardsArrayHard = ["assets/images/backupcards/hard1.png", "assets/images/backupcards/hard2.png", "assets/images/backupcards/hard3.png", "assets/images/backupcards/hard4.png", "assets/images/backupcards/hard5.png", "assets/images/backupcards/hard6.png"];
 const mainTheme = document.getElementById("mainThemeMusic");
 const gameTheme = document.getElementById("gameThemeMusic");
 const matchTheme = document.getElementById("matchingPairMusic");
 const endTheme = document.getElementById("endOfGameThemeMusic");
-var mute;
-var supportPageSelected;
+let mute;
+let supportPageSelected;
 
 // Sound Support
 
@@ -150,13 +150,13 @@ $(document).ready(function() {
                 playMainThemeOnMute();
             }
             
-            var time = setTimeout(removeJumbo, 2000);
+            let time = setTimeout(removeJumbo, 2000);
             function removeJumbo() {
                 $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
                 $(".jumbotron").slideUp("slow");
                 
             
-                var welcomeModalTime = setTimeout(revealWelcomeModal, 750);
+                let welcomeModalTime = setTimeout(revealWelcomeModal, 750);
                 function revealWelcomeModal() {
                     $("#welcomeModal").css("display", "block").addClass("in").addClass("show");
                     $("#indexBody").addClass("modal-open");
@@ -190,7 +190,7 @@ $("#enterName").click(function() {
 
     sessionStorage.setItem("userInteraction", userInteraction);
 
-    var playerName = document.getElementById("nameInput").value;
+    let playerName = document.getElementById("nameInput").value;
     sessionStorage.setItem("playerName", playerName);
     sessionStorage.setItem("name", "1");
 
@@ -214,7 +214,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
         playMainThemeOnMute();
     }
 
-    var timeBackup = setTimeout(backupCards, 30000);
+    let timeBackup = setTimeout(backupCards, 30000);
 
     function backupCards() {
         if (apiResponseArray.length < 7) {
@@ -224,7 +224,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
         }
     }
 
-    var time = setInterval(loadingArray, 1000);
+    let time = setInterval(loadingArray, 1000);
 
     function loadingArray() {
         if (apiResponseArray.length == 7) {
@@ -253,8 +253,8 @@ $("#hardButton").click(function() {
     selectingActiveLink();
 });
 
-var activeLink;
-var nonActiveLink;
+let activeLink;
+let nonActiveLink;
 
 function selectingActiveLink(difficultyMode2) {
 
@@ -273,7 +273,7 @@ $("#seeCardsButton").click(function() {
 });
 
 //Distributing card images.
-var cardIDArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let cardIDArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 //Shuffling the array ID number
 //Shuffling array found in a tutorial - see README.md
@@ -290,10 +290,10 @@ $("#startGame").click(function() {
         playGameThemeOnMute();
     }
 
-    var shuffledCardID = shuffle(cardIDArray);
+    let shuffledCardID = shuffle(cardIDArray);
 
     function shuffle(array) {
-        var currentIndex = array.length,
+        let currentIndex = array.length,
             temporaryValue, randomIndex;
         while (0 !== currentIndex) {
             randomIndex = Math.floor(Math.random() * currentIndex);
@@ -306,7 +306,7 @@ $("#startGame").click(function() {
     }
 
     //Generating html for each card
-    var pairMatchID = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12];
+    let pairMatchID = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12];
     for (i = 0; i < 12; i++) {
         $("#gameRow").append(`
                 <div  class="gameIndividualCardWrapper col-6 col-sm-2  col-md-3 col-lg-2 col-xl-2 ">
@@ -321,7 +321,7 @@ $("#startGame").click(function() {
 
     // Adding images to the correct cards and display cards
     for (j = 1; j < 13; j++) {
-        var pairArray = ["placeholder", 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
+        let pairArray = ["placeholder", 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
         $(`#card${j}Face`).addClass(`pair${pairArray[j]}`);
         $(`#card${j}`).addClass(`cardMatchID${pairArray[j]}`);
         $(`#card${j}Cover`).addClass(`pairMatchID${pairArray[j]}`);
@@ -338,8 +338,8 @@ $("#startGame").click(function() {
     //Ensuring all the cards are face down
     turningCardsFaceDown();
 
-    var imageContainerArray = [];
-    var backupCardsArray;
+    let imageContainerArray = [];
+    let backupCardsArray;
 
     function selectImages() {
         if (apiResponseArray.length == 7) backupCardsArray = apiResponseArray;
@@ -348,7 +348,7 @@ $("#startGame").click(function() {
         else backupCardsArray = backupCardsArrayHard;
 
         for (let i = 0; i < 6; i++) {
-            var image = backupCardsArray[i].toString();
+            let image = backupCardsArray[i].toString();
             imageContainerArray.push('url(' + '"' + image + '"' + ')');
         }
     }
@@ -371,10 +371,10 @@ $("#playAgainButton").click(function() {
 $("#playAgainButton, #playAgainButtonDisplay").click(function() {
     $("#easy, #medium, #hard").removeClass("active-mode");
     $("#gameRow").html(``);
-    var ajaxCallsSum = ajaxCalls.reduce(function(a, b) {
+    let ajaxCallsSum = ajaxCalls.reduce(function(a, b) {
         return a + b;
     }, 0);
-    var totalAjaxCalls = (5000 - ajaxCallsSum);
+    let totalAjaxCalls = (5000 - ajaxCallsSum);
 
     if (totalAjaxCalls < 1000) {
         $("#usageWarning").removeClass("display");
