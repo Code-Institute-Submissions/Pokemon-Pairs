@@ -54,11 +54,11 @@ $("#startGame").click(function() {
 			$("#totalMoves").html(`<h6>Total moves: ${movesTaken} </h6>`);
 			$("#timeTaken").html(`<h6>Time taken: ${timeTaken} seconds<h6>`);
 
-			for (i = 1; i < 4; i++) {
+			for (let i = 1; i < 4; i++) {
 				$(`#resultMove${i}`).html(` ${results[i-1]}`);
 			}
 
-			for (j = 1; j < 4; j++) {
+			for (let j = 1; j < 4; j++) {
 				$(`#resultTime${j}`).html(` ${resultsTime[j-1]} seconds`);
 			}
 			resultToString();
@@ -73,7 +73,7 @@ $("#startGame").click(function() {
 
 $("#easyButton").click(function() {
 	if (apiResponseArray.length == 1) {
-		for (i = 0; i < 6; i++) {
+		for (let i = 0; i < 6; i++) {
 			let pokemonID = Math.floor((Math.random() * 645) + 1);
 			$.ajax({
 				method: "GET",
@@ -95,7 +95,7 @@ $("#mediumButton").click(function() {
 			url: "https://cors-anywhere.herokuapp.com/https://api.pokemontcg.io/v1/cards?types=" + types[Math.floor(Math.random() * 11)] + "&&page" + pageNumber
 		}).then(function(response) {
 			ajaxCalls.push(Number(response.cards.length));
-			for (i = 0; i < 6; i++) {
+			for (let i = 0; i < 6; i++) {
 				apiResponseArray.unshift(response.cards[Math.floor(Math.random() * response.cards.length)].imageUrlHiRes);
 			}
 		});
@@ -104,7 +104,7 @@ $("#mediumButton").click(function() {
 
 $("#hardButton").click(function() {
 	if (apiResponseArray.length == 1) {
-		for (i = 0; i < 3; i++) {
+		for (let i = 0; i < 3; i++) {
 			let pokemonID = Math.floor((Math.random() * 645) + 1);
 			$.ajax({
 				method: "GET",
@@ -139,7 +139,7 @@ $("#hardButton").click(function() {
 //This will be the code for animating the cards
 /* Tutorial from in the credits. It has been modified to fit my purpose */
 $("#easyButton, #mediumButton, #hardButton").click(function() {
-	for (j = 1; j < 7; j++) {
+	for (let j = 1; j < 7; j++) {
 		pairCounterArray[j] = 0;
 	}
 });
@@ -250,7 +250,7 @@ function notAPair() {
 		clearTimeout(wrongWait);
 	}
 
-	for (j = 1; j < 13; j++) {
+	for (let j = 1; j < 13; j++) {
 		pairCounterArray[j] = 0;
 	}
 
@@ -362,10 +362,10 @@ $("#game").click(function() {
 				playEndOfGameThemeOnMute();
 			}
 
-			for (j = 1; j < 13; j++) {
+			for (let j = 1; j < 13; j++) {
 				$(`#card${j}Match`).addClass("display");
 			}
-			for (i = 1; i < 13; i++) {
+			for (let i = 1; i < 13; i++) {
 				$(`#card${i}`).css("display", "block");
 			}
 			$(".card > .cover").css("transform", "perspective( 600px ) rotateY( -180deg )");
@@ -377,7 +377,7 @@ $("#game").click(function() {
 			$("#finishedModal").css("display", "block").addClass("in").addClass("show");
 			$("#indexBody").addClass("modal-open");
 			pairMatch = 0;
-			for (k = 0; k < 6; k++) {
+			for (let k = 0; k < 6; k++) {
                 apiResponseArray.shift();
                 console.log(apiResponseArray);
 			}
