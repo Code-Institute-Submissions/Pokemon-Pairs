@@ -367,11 +367,11 @@ $("#game").click(function() {
             activeTheme(themeSelector);
             console.log(theme);
 			if (sessionStorage.muted == 0) {
-				$(endTheme).prop('muted', false);
+				$(theme).prop('muted', false);
 				toggleThemeMusic();
 				toggleSpeakerIconToLoud();
 			} else {
-                playEndOfGameThemeOnMute();
+                playThemeMusicOnMute();
                 
 			}
 

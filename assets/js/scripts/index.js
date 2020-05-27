@@ -31,32 +31,14 @@ function toggleThemeMusic() {
 }
 
 //Plays a theme on mute
-function playMainThemeOnMute() {
+
+function playThemeMusicOnMute(){
     $(theme).get(0).play();
-    
-    if (sessionStorage.muted == 1) {
+     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
         $(theme).prop('muted', true);
     }
 }
-
-function playGameThemeOnMute() {
-    toggleThemeMusic();
-    if (sessionStorage.muted == 1) {
-        toggleSpeakerIconToMuted();
-        $(theme).prop('muted', true);
-    }
-}
-
-function playEndOfGameThemeOnMute() {
-    toggleThemeMusic();
-    if (sessionStorage.muted == 1) {
-        toggleSpeakerIconToMuted();
-        $(theme).prop('muted', true);
-    }
-}
-
-
 
 //Will mute all songs   
 $(".fa-volume-up, #volumeNotAllowed").click(function() {
@@ -120,7 +102,7 @@ $(document).ready(function() {
                 toggleThemeMusic();
                 toggleSpeakerIconToLoud();
             } else {
-                playMainThemeOnMute();
+                playThemeMusicOnMute();
             }
             
             let time = setTimeout(removeJumbo, 2000);
@@ -145,7 +127,7 @@ $(document).ready(function() {
 
         } else {
 
-            playMainThemeOnMute();
+            playThemeMusicOnMute();
         }
         $("#playerName").html(sessionStorage.getItem("playerName"));
         $(".jumbotron").slideUp();
@@ -184,7 +166,7 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
         $(theme).get(0).play();
         toggleSpeakerIconToLoud();
     } else {
-        playMainThemeOnMute();
+        playThemeMusicOnMute();
     }
 
     let timeBackup = setTimeout(backupCards, 30000);
@@ -263,7 +245,7 @@ $("#startGame").click(function() {
         toggleThemeMusic();
         toggleSpeakerIconToLoud();
     } else {
-        playGameThemeOnMute();
+        playThemeMusicOnMute();
     }
 
     let shuffledCardID = shuffle(cardIDArray);
@@ -372,7 +354,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function() {
         toggleThemeMusic();
         toggleSpeakerIconToLoud();
     } else {
-        playMainThemeOnMute();
+        playThemeMusicOnMute();
     }
 
     // Displaying difficulty modal at the beginning of each new game.
