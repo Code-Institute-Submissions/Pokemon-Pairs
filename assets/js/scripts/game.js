@@ -387,6 +387,8 @@ $("#game").click(function() {
 		let wait = setTimeout(finishedModal, 4000);
 
 		function finishedModal() {
+            whichModal = 4;
+        console.log(whichModal);
 			$("#finishedModal").css("display", "block").addClass("in").addClass("show");
 			$("#indexBody").addClass("modal-open");
 			pairMatch = 0;

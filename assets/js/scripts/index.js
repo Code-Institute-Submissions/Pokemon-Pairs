@@ -11,6 +11,7 @@ let mute;
 let userInteraction;
 let theme;
 let themeSelector;
+let whichModal;
 
 // Sound Support
 
@@ -82,6 +83,19 @@ function turningCardsFaceDown() {
 
 }
 
+//Modal functions
+
+
+function closeModal(modalSelected){
+$("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
+$("#indexBody").removeClass("modal-open");
+}
+
+function openModal(modalSelected){
+$("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
+}
+
+
 // *******************************************************************************
 
 // Checking if this is the first time loggin on. 
@@ -91,6 +105,8 @@ $(document).ready(function() {
     activeTheme(themeSelector);
     console.log(theme);
     if (sessionStorage.name == null) {
+        whichModal = 1;
+        console.log(whichModal);
         $("#volumeModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
         $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").addClass("display");
         
@@ -110,7 +126,8 @@ $(document).ready(function() {
                 $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
                 $(".jumbotron").slideUp("slow");
                 
-            
+                whichModal = 2;
+                console.log(whichModal);
                 let welcomeModalTime = setTimeout(revealWelcomeModal, 750);
                 function revealWelcomeModal() {
                     $("#welcomeModal").css("display", "block").addClass("in").addClass("show");
@@ -131,6 +148,8 @@ $(document).ready(function() {
         }
         $("#playerName").html(sessionStorage.getItem("playerName"));
         $(".jumbotron").slideUp();
+        whichModal = 3;
+        console.log(whichModal);
         $("#difficultyModalTitle").html("Are you ready, " + sessionStorage.getItem("playerName") + "?");
         $("#difficultyModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
 
@@ -148,16 +167,20 @@ $("#enterName").click(function() {
     let playerName = document.getElementById("nameInput").value;
     sessionStorage.setItem("playerName", playerName);
     sessionStorage.setItem("name", "1");
-
+    
+    whichModal = 2;
+    console.log(whichModal);
     $("#welcomeModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
-
     $("#playerName").html(sessionStorage.getItem("playerName"));
     $("#difficultyModalTitle").html(`Welcome, ${playerName}!`);
 });
 
 // Triggering the loading modal
 $("#easyButton, #mediumButton, #hardButton").click(function() {
+    whichModal = 3;
+    console.log(whichModal);
+
     $("#difficultyModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
 
@@ -222,6 +245,8 @@ function selectingActiveLink(difficultyMode2) {
 
 //Opening up the display cards modal
 $("#seeCardsButton").click(function() {
+    whichModal = 4;
+    console.log(whichModal);
     $("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
     $("#indexBody").removeClass("modal-open");
 });
@@ -321,8 +346,11 @@ $("#startGame").click(function() {
 
 //Closing 'play again' modal
 $("#playAgainButton").click(function() {
-    $("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
-    $("#indexBody").removeClass("modal-open");
+    whichModal = 4;
+    console.log(whichModal);
+    closeModal();
+    // $("#finishedModal").css("display", "none").removeClass("in").removeClass("show");
+    // $("#indexBody").removeClass("modal-open");
 });
 
 // Calculating the number of ajax calls previously made and alerting the user if they are close to the limit
@@ -360,5 +388,7 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function() {
     // Displaying difficulty modal at the beginning of each new game.
     $("#gridItemTimerDisplay").html("0 seconds");
     turningCardsFaceDown();
+    whichModal = 3;
+    console.log(whichModal);
     $("#difficultyModal").css("display", "block").addClass("in").addClass("show").addClass("modal-open");
 });
