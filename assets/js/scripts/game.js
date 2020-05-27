@@ -360,13 +360,15 @@ $("#game").click(function() {
 		let revealTime = setTimeout(revealCards, 2000);
 
 		function revealCards() {
-			toggleGameTheme();
+            toggleGameTheme();
+            
 			if (sessionStorage.muted == 0) {
 				$(endTheme).prop('muted', false);
 				toggleEndOfGameTheme();
 				toggleSpeakerIconToLoud();
 			} else {
-				playEndOfGameThemeOnMute();
+                playEndOfGameThemeOnMute();
+                // toggleEndOfGameTheme();
 			}
 
 			for (let j = 1; j < 13; j++) {
