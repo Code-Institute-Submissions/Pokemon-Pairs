@@ -3,9 +3,9 @@
 var types = ["darkness", "water", "lightning", "fighting", "metal", "grass", "fire", "psychic", "fairy", "dragon", "colorless"];
 var ajaxCalls = [];
 var apiResponseArray = ["placeholder"];
-results = ["-", "-"];
-resultsTime = ["-", "-"];
-pairMatch = 0;
+let results = ["-", "-"];
+let resultsTime = ["-", "-"];
+let pairMatch = 0;
 
 
 //***************************************************************Results
@@ -377,8 +377,9 @@ $("#game").click(function() {
 			$("#finishedModal").css("display", "block").addClass("in").addClass("show");
 			$("#indexBody").addClass("modal-open");
 			pairMatch = 0;
-			for (k = 0; k < 7; k++) {
-				apiResponseArray.pop();
+			for (k = 0; k < 6; k++) {
+                apiResponseArray.shift();
+                console.log(apiResponseArray);
 			}
 
 		}
