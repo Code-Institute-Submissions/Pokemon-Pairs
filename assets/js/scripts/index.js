@@ -41,7 +41,7 @@ function toggleSpeakerIconToLoud() {
     $(".fa-volume-mute").css("display", "none");
 }
 
-function playThemeOnMute(themeSelector){
+function activeTheme(themeSelector){
     if (themeSelector == "main") theme = mainTheme;
     else if (themeSelector == "game") theme = gameTheme;
     else theme = endTheme;
@@ -49,10 +49,9 @@ function playThemeOnMute(themeSelector){
 }
 
 
-
 //Plays a theme on mute
 function playMainThemeOnMute() {
-    // $(mainTheme).get(0).play();
+    $(mainTheme).get(0).play();
     
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
@@ -61,7 +60,7 @@ function playMainThemeOnMute() {
 }
 
 function playGameThemeOnMute() {
-    // toggleGameTheme();
+    toggleGameTheme();
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
         $(gameTheme).prop('muted', true);
@@ -69,7 +68,7 @@ function playGameThemeOnMute() {
 }
 
 function playEndOfGameThemeOnMute() {
-    // toggleEndOfGameTheme();
+    toggleEndOfGameTheme();
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
         $(endTheme).prop('muted', true);
@@ -82,7 +81,7 @@ function playEndOfGameThemeOnMute() {
 $(".fa-volume-up, #volumeNotAllowed").click(function() {
     toggleSpeakerIconToMuted();
     
-    $(gameTheme).prop('muted', true);
+    $(gameTheme, mainTheme, endTheme).prop('muted', true);
     $(mainTheme).prop('muted', true);
     $(endTheme).prop('muted', true);
 
@@ -110,6 +109,7 @@ $(".endGameThemeControl, #volumeAllowed").click(function() {
     mute = 0;
 
     sessionStorage.setItem("muted", mute);
+
 
     $(endTheme).prop('muted', false);
 });
@@ -148,8 +148,6 @@ $(document).ready(function() {
                 toggleSpeakerIconToLoud();
             } else {
                 playMainThemeOnMute();
-                $(mainTheme).get(0).play();
-
             }
             
             let time = setTimeout(removeJumbo, 2000);
@@ -175,7 +173,6 @@ $(document).ready(function() {
         } else {
 
             playMainThemeOnMute();
-            $(mainTheme).get(0).play();
         }
         $("#playerName").html(sessionStorage.getItem("playerName"));
         $(".jumbotron").slideUp();
@@ -215,7 +212,6 @@ $("#easyButton, #mediumButton, #hardButton").click(function() {
         toggleSpeakerIconToLoud();
     } else {
         playMainThemeOnMute();
-        $(mainTheme).get(0).play();
     }
 
     let timeBackup = setTimeout(backupCards, 30000);
@@ -290,8 +286,7 @@ $("#startGame").click(function() {
         toggleGameTheme();
         toggleSpeakerIconToLoud();
     } else {
-        //*playGameThemeOnMute();
-        toggleGameTheme();
+        playGameThemeOnMute();
     }
 
     let shuffledCardID = shuffle(cardIDArray);
@@ -397,7 +392,6 @@ $("#playAgainButton, #playAgainButtonDisplay").click(function() {
         toggleSpeakerIconToLoud();
     } else {
         playMainThemeOnMute();
-        $(mainTheme).get(0).play();
     }
 
     // Displaying difficulty modal at the beginning of each new game.
