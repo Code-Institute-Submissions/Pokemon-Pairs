@@ -21,7 +21,7 @@
             </div>
         </section>
         <!-- Image from: https://textcraft.net/style/Textcraft/pokemon -->
-        <header id="gridItemHeader">
+        <header id="gridItemHeader" class="display">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a id="#homeLinkLogo" class="navbar-brand" href="index.html"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
                 </div>
             </nav>
         </header>
-        <aside id="gridItemGameInfo">
+        <aside id="gridItemGameInfo" class="display">
             <div id="gridGameInfo" class="grid-game-info">
                 <div id="gridItemName">
                     <h6 id="playerName" class="game-info-text">Name</h6>
@@ -60,7 +60,7 @@
                 <div id="hard">Hard</div>
             </div>
         </aside>
-        <div id="gridItemGame">
+        <div id="gridItemGame" class="display">
             <audio id="gameThemeMusic" controls loop>
                 <source src="assets/music/gameTheme.mp3" type="audio/mpeg" />
             </audio>
@@ -78,7 +78,7 @@
         <!-- ******************** Modals ******************* -->
         <!-- ***** Allow volume modal ***** -->
 
-        <div class="modal fade" id="volumeModal" tabindex="-1" role="dialog" aria-labelledby="volumeModal" style="display: none;" aria-hidden="true">
+        <div class="modal fade" id="volumeModal" tabindex="-1" role="dialog" aria-labelledby="volumeModal" style="display: none;" data-backdrop="static" data-keyboard="false" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header navbar">
