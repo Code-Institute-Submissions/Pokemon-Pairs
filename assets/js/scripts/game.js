@@ -6,6 +6,11 @@ let apiResponseArray = ["placeholder"];
 let results = ["-", "-"];
 let resultsTime = ["-", "-"];
 let pairMatch = 0;
+let timeTaken;
+let movesTaken;
+let recordMoves;
+let recordTimes;
+let pairCounterArray;
 
 
 //***************************************************************Results

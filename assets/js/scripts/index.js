@@ -9,6 +9,7 @@ const matchTheme = document.getElementById("matchingPairMusic");
 const endTheme = document.getElementById("endOfGameThemeMusic");
 let mute;
 let supportPageSelected;
+let userInteraction;
 
 // Sound Support
 
