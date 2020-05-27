@@ -363,10 +363,10 @@ $("#game").click(function() {
 		let revealTime = setTimeout(revealCards, 2000);
 
 		function revealCards() {
-			toggleGameTheme();
+			toggleThemeMusic();
 			if (sessionStorage.muted == 0) {
 				$(endTheme).prop('muted', false);
-				toggleEndOfGameTheme();
+				toggleThemeMusic();
 				toggleSpeakerIconToLoud();
 			} else {
                 playEndOfGameThemeOnMute();

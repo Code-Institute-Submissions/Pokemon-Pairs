@@ -16,20 +16,7 @@ let themeSelector;
 
 //Allows switching between play and pause.
 function toggleMainTheme() {
-    return mainTheme.paused ? mainTheme.play() : mainTheme.pause();
-}
-
-function toggleGameTheme() {
-    $("#gameThemeMusic").prop("volume", "0.3");
-    return gameTheme.paused ? gameTheme.play() : gameTheme.pause();
-}
-
-function toggleMatchingPairTheme() {
-    return matchTheme.paused ? matchTheme.play() : matchTheme.pause();
-}
-
-function toggleEndOfGameTheme() {
-    return endTheme.paused ? endTheme.play() : endTheme.pause();
+    return theme.paused ? theme.play() : theme.pause();
 }
 
 //Changes the visible sound icon
@@ -63,7 +50,7 @@ function playMainThemeOnMute() {
 }
 
 function playGameThemeOnMute() {
-    toggleGameTheme();
+    toggleThemeMusic();
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
         $(gameTheme).prop('muted', true);
@@ -71,7 +58,7 @@ function playGameThemeOnMute() {
 }
 
 function playEndOfGameThemeOnMute() {
-    toggleEndOfGameTheme();
+    toggleThemeMusic();
     if (sessionStorage.muted == 1) {
         toggleSpeakerIconToMuted();
         $(endTheme).prop('muted', true);
@@ -294,7 +281,7 @@ $("#startGame").click(function() {
     if (sessionStorage.muted == 0) {
 
         $(gameTheme).prop('muted', false);
-        toggleGameTheme();
+        toggleThemeMusic();
         toggleSpeakerIconToLoud();
     } else {
         playGameThemeOnMute();
