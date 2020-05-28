@@ -81,19 +81,17 @@ On the help page, the text is now in containers to show clear steps for enjoying
 Please find my wireframes here, along with images of the game at each stage across a variety of responsive devices.
 This is for comparison of the changes between the two. 
 
-[Wireframes](assets/files/wireFrames.pdf) 
+[Wireframes](assets/files/wireFrames.pdf)
+
 [Responsive images of actual Sight](assets/files/responsiveImages.pdf)
 ___
 <span id="features"></span>
 ## Features
 
-1. Consistent navbar style across all pages.
-2. Link
-
 <span id="existingFeatures"></span>
 ### Existing Features
 
-Navbar
+<ins>Navbar</ins>
 
 1. Links to all the other pages allows the user to navigate seamlessly between pages.
 2. The navbar is consistent on every page and therefore a user can navigate to any part of the website from anywhere.
@@ -102,14 +100,14 @@ Navbar
 5. The "Play!" link will take the user to the game page. 
 6. In mobile view the navbar is collapsed allowing the users more space on the screen. The users can click the “hamburger” icon and still receive the full menu as a drop down function.
 
-Help Page
+<ins>Help Page</ins>
 
 1. There is a link to a help sheet with image to support a player's understanding.
 2. Explains how to navigate the game to start playing.
 3. Explains the difference between each difficulty mode.
 4. Explains your choices after the game has finished.
 
-Contact Page
+<ins>Contact Page
 
 1. A form is available to fill in and give feedback.
 2. There is an input for the following:
@@ -120,7 +118,7 @@ Contact Page
 3. There is a clear button for users to press and submit their feedback.
 4. A modal will appear 
 
-Play! Page
+<ins>Play! Page
 
 Game information bar
 Contains the following information:
@@ -135,9 +133,9 @@ Game
 Modals
 1.	Volume Modal – Users can choose whether they would like the music on or off.
 
-Welcome Modal – 
-3.	Users can enter their name to personalise the experience.
-4.	A speaker icon which will allow the user to mute/unmute the music.
+Welcome Modal 
+1.	Users can enter their name to personalise the experience.
+2.	A speaker icon which will allow the user to mute/unmute the music.
 
 Difficulty Modal
 1.	Users receive a welcome with their personalised name.
@@ -147,7 +145,7 @@ Difficulty Modal
 5.	A speaker icon which will allow the user to mute/unmute the music.
 
 Loading Modal
-2.	An animated gif will play whilst the cards are loading.
+1.	An animated gif will play whilst the cards are loading.
 3.	The “start game” will appear when the cards are ready.
 4.	A speaker icon which will allow the user to mute/unmute the music.
 
@@ -212,12 +210,11 @@ emailJS - I have used emailJS to allow the users to contact the game producers a
 JQuery – https://jquery.com/  
 
 Jasmine testing Framework - https://jasmine.github.io/
-
+___
 <span id="testing"></span>
-### Testing
+## Testing
 
-Please find the link to the test document here: [Link to testing page](assets/files/README-Testing.md)   
-
+Please find the link to the test document here: [Link to the testing page](assets/files/README-Testing.md)   
 
 ___
 <span id="responsiveDesign"></span>
@@ -233,7 +230,8 @@ It has been specifically designed for the following:
    + Laptop with HiDPI screen
 This includes both portrait and landscape orientation for all of the above devices. 
 
-The majority of the website stays consistent to an easy user experience. There are minor changes to font-sizes etc.
+The majority of the website stays consistent to an easy user experience. There are minor changes to font-sizes etc. Some 
+of these can be seen in the [responsiveImages](assets/files/responsiveImages.pdf)
 There are a few major resposive choices, detailed below.
 
 1. A message encouraging the user to turn their mobile landscape appears on mobile devices smaller than an iPad.
