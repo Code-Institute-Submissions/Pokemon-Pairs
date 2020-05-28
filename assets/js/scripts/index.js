@@ -48,7 +48,7 @@ function activeTheme(themeSelector) {
 
 function toggleThemeMusic() {
     if (themeSelector == 2) {
-        $(theme).prop("volume", "0.3");
+        $(theme).prop("volume", 0.2);
     }
     return theme.paused ? theme.play() : theme.pause();
 }
