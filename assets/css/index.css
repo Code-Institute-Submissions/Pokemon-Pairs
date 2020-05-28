@@ -807,6 +807,11 @@ h5 {
     .navbar-light .navbar-nav .nav-link {
         font-size: 2.25rem;
     }
+
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active > .nav-link {
+    font-size: 2.25rem;
+    }
+    
     .speaker {
         font-size: 2.5rem;
     }
