@@ -24,7 +24,7 @@ Page      | Desired outcome | Result
 Play!  | Design is responsive and readable | True
 Contact | Design is responsive and readable | True
 Help | Design is responsive and readable | True
-| | | 
+
 
 
 Mobile landscape
@@ -34,7 +34,7 @@ Page      | Desired outcome | Result
 Play!  | Design is responsive and readable | True
 Contact | Design is responsive and readable | True
 Help | Design is responsive and readable | True
-| | | 
+
 
 iPad portrait
 
@@ -43,7 +43,7 @@ Page      | Desired outcome | Result
 Play!  | Design is responsive and readable | True
 Contact | Design is responsive and readable | True
 Help | Design is responsive and readable | True
-| | | 
+ 
 
 iPad landscape
 
@@ -52,7 +52,7 @@ Page      | Desired outcome | Result
 Play!  | Design is responsive and readable | True
 Contact | Design is responsive and readable | True
 Help | Design is responsive and readable | True
-| | | 
+ 
 
 iPad Pro portrait
 
@@ -61,7 +61,7 @@ Page      | Desired outcome | Result
 Play!  | Design is responsive and readable | True
 Contact | Design is responsive and readable | True
 Help | Design is responsive and readable | True
-| | | 
+
 
 iPad Pro landscape
 
@@ -70,7 +70,7 @@ Page      | Desired outcome | Result
 Play!  | Design is responsive and readable | True
 Contact | Design is responsive and readable | True
 Help | Design is responsive and readable | True
-| | | 
+
 
 Laptop screens
 
@@ -79,7 +79,7 @@ Page      | Desired outcome | Result
 Play!  | Design is responsive and readable | True
 Contact | Design is responsive and readable | True
 Help | Design is responsive and readable | True
-| | | 
+
 
 ### Navbar
 
@@ -101,7 +101,7 @@ Help page | All screens        | Navbar link "Help" takes the user to the "Help"
 Contact page | All screens        | Navbar link "Play!" takes the user to the "Play!(Index)" page| True
 Contact page | All screens        | Navbar link "Contact" takes the user to the "Contact" page| True
 Contact page | All screens        | Navbar link "Help" takes the user to the "Help" page| True
-| | |
+
 
 Is the user story achievable? Yes.
 
@@ -115,7 +115,7 @@ All | Required form fields alert when they are empty | True
 All | Response modal appear upon successful email sent | True
 All | Sender receives an automatic reply | True
 All | The website owners receive an email | True
-| | |
+
 
 [Account holder email](../images/readmeImages/accountHolderEmail.png)
 
@@ -134,7 +134,7 @@ Screen      | Desired outcome | Result
 All | Is the text clear and easy to read? | True
 All | Is the same information available on each screen size? | True
 All | Does the link to the pictured instructions open in a new tab? | True
-| | |
+
 
 Is the user story achievable? Yes.
 
@@ -149,7 +149,7 @@ All| The modal opens at the correct time | True
 All|The modal closes when Yes or No is clicked | True
 All| Clicking yes plays the music | True
 All| Clicking no mutes the music | True
-| | | 
+
 
 
 <ins>Welcome Modal</ins>
@@ -162,7 +162,7 @@ All| The modal opens at the correct time | True
 All|The modal closes when Enter is clicked | True
 All| Player can fill in the field to input their name| True
 All| Intro music plays| True
-| | | 
+
 
 Is the user story achievable? Yes.
 
@@ -177,7 +177,7 @@ All| Contact Us takes the player to the contact page | True
 All| The message contains the player's name or guest | True
 All| Intro music plays| True
 All| Usage warning appears when a certain amount of api responses have been calculated. | True
-| | | 
+
 
 
 <ins>Loading Modal</ins>
@@ -190,7 +190,7 @@ All| The start button appears when the game has loaded | True
 All| The loading gif plays when the modal opens | True
 All| Intro music plays| True
 Mobile devices only | Screens smaller than an iPad have a message encouraging to play landscape | True
-| | | 
+
 
 [Mobile device - showing message](../images/readmeImages/mobileMessage.png)
 
@@ -212,7 +212,7 @@ All| Clicking the See Cards button will open the Display Cards Modal.| True
 All| Clicking the play again button will take the player to the Difficulty Modal. | True
 All| Clicking any of the buttons will close the modal.| True
 All| End of game music plays.| True
-| | | 
+
 
 Are the user stories achievable? Yes.
 
@@ -225,7 +225,7 @@ Screen      | Desired outcome | Result
 ----------- | --------------- | ---
 All| The cards from the game are displayed and are large enough to see the details | True
 All| End of game music plays.| True
-| | | 
+
 
 Is the user story achievable? True
 
@@ -244,7 +244,7 @@ Play! | All | The correct difficulty is highlighted based on the player's choice
 Play! | Mobile portrait | Game information section will stick to the top of the page when scrolling. |True
 Play! |All | When the page is refreshed the player's scores are remembered. |True
 Play! | Mobile portrait | When the page is refreshed the player's name is remembered. |True
-| | | 
+
 
 Game functionality
 

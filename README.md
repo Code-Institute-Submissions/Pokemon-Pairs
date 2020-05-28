@@ -395,6 +395,8 @@ API
      in the future. 
    + I have had to use the heroku CORS anywhere fix but I am aware that it is not a stable and secure position. In the future,
      I would like to have full access to the API which 'quick fixes'.
+   + I would like the game to remember how many api calls are called in an hour. It currently only measure it per session without
+     refreshing. 
 
 JavaScript code
    + In future I want to explore using switch cases.
@@ -416,6 +418,7 @@ of code. I have achieved this on a small scale during this project but only for 
 
 
 Jasmine testing  
+
 I would like to use unit testing from the beginning of the project. 
 I think it will be useful to find out which functions are/aren't being called and is much quicker.
 I used JS to check which functions are called, by using alerts or console.log. 

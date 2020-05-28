@@ -70,4 +70,3 @@ bd96d1e3fe54a16cb8e2845523a95c3ca3d75576 | FB - Changed numbers 6 and 7 to pull 
 3ee3f5ee7ae29aa77585b949160ad34d85a7582b | FB - changed let to var to be defined. Also changed *3 to *2 as there were only two values in the array1
 8cd4e5abe24890446704dfa3eeac9fce9cb93634 | FB - commited the saved version of the previous changes
 66a5916f1a3b5607ac57e81d60a8dbae47c00ffa | FB - The api reset button was accidently removing all of the array elements so the game wouldn't start a second time. Adjusted the loop.
-| | | 
