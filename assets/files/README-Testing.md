@@ -232,12 +232,14 @@ Game information
 
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
-Play! | Screen sizes | Timer will start when the game starts | True
-Play!| Screen sizes | Timer will end when the game ends | True
-Play! | Screen sizes | Timer will reset at the start of a new game | True
-Play! | Screen sizes | Timer will display a continuous record of the length of the game | True
-Play! | The correct difficulty is highlighted based on the player's choice| True
+Play! | All | Timer will start when the game starts | True
+Play!| All | Timer will end when the game ends | True
+Play! | All | Timer will reset at the start of a new game | True
+Play! |All| Timer will display a continuous record of the length of the game | True
+Play! | All | The correct difficulty is highlighted based on the player's choice| True
 Play! | Mobile portrait | Game information section will stick to the top of the page when scrolling. |True
+Play! |All | When the page is refreshed the player's scores are remembered. |True
+Play! | Mobile portrait | When the page is refreshed the player's name is remembered. |True
 
 | | | 
 
@@ -262,3 +264,4 @@ Play! | All | Pressing the speaker icon will mute the music | True
 Play! | All | Pressing the speaker icon will unmute the music | True
 Play! | All | Pressing no to volume will result in music not playing | True
 Play! | All | Pressing yes to the speaker button will play the music | True
+Play! | All| When the page is refreshed the player's music mute/unmute preferences are remembered |True
