@@ -119,9 +119,9 @@ All | The website owners receive an email | True
 
 [Account holder email](../images/readmeImages/accountHolderEmail.png)
 
-[Player auto email](images/readmeImages/playerAutoEmail.png)
+[Player auto email](../images/readmeImages/playerAutoEmail.png)
 
-[Successful email sent](images/readmeImages/feedbackReceived.png)
+[Successful email sent](../images/readmeImages/feedbackReceived.png)
 
 Is the user story achievable? Yes.
 
@@ -192,9 +192,9 @@ All| Intro music plays| True
 Mobile devices only | Screens smaller than an iPad have a message encouraging to play landscape | True
 | | | 
 
-[Mobile device - showing message](assets/images/readmeImages/iPadMessage.png)
+[Mobile device - showing message](../images/readmeImages/iPadMessage.png)
 
-[Tablet device - not showing message](assets/images/readmeImages/mobileMessage.png)
+[Tablet device - not showing message](../images/readmeImages/mobileMessage.png)
 
 
 
