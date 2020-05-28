@@ -39,27 +39,49 @@ Contact page | All screens        | Navbar link "Help" takes the user to the "He
 
 Is the user story achievable? Yes.
 
-
-
-
-
-
-
 ### Contact Page
 User story - As a player, I want to contact the company so I can give feedback on the game or have some questions answered.
 
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+Screen      | Desired outcome | Result 
+--------- | ----------- | --------------- 
+All | All form fields can be filled in | True
+All | Required form fields alert when they are empty | True
+All | Response modal appear upon successful email sent | True
+All | Sender receives an automatic reply | True
+All | The website owners receive an email | True
+| | |
+
+[Account holder email](assets/images/accountHolderEmail.png)
+[Player auto email](assets/images/playerAutoEmail.png)
+[Successful email sent](assets/images/feedbackReceived.png)
+
+Is the user story achievable? Yes.
+
+
 ### Help Page
 2. User story - As a player, I want to find the help page so I can learn how to play the game.
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+Screen      | Desired outcome | Result 
+--------- | ----------- | --------------- 
+All | Is the text clear and easy to read? | True
+All | Is the same information available on each screen size? | True
+All | Does the link to the pictured instructions open in a new tab? | True
+| | |
+
+Is the user story achievable? Yes.
+
 ### Play!
 
 ### Modals
 Volume Modal
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+Screen      | Desired outcome | Result 
+----------- | --------------- | ---
+All| The modal opens at the correct time | True
+All|The modal closes when Yes or No is clicked | True
+All| Clicking yes plays the music | True
+All| Clicking no mutes the music | True
+| | | 
+
+
 Welcome Modal
 4. User story - As a player, I want to personalise the game to me by giving the webpage data (entering my name).
 Page      | Screen      | Desired outcome | Result 
