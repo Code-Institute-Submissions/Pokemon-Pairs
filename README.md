@@ -8,7 +8,6 @@ ___
 
 ## Contents
 + <a href="#rationale">Rationale</a>
-+ <a href="">Planes</a>
 + <a href="#UX">UX</a> 
    - <a href="#userStories">User Stories</a>
 + <a href="#features">Features</a>
