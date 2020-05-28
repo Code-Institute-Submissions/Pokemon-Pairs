@@ -192,9 +192,9 @@ All| Intro music plays| True
 Mobile devices only | Screens smaller than an iPad have a message encouraging to play landscape | True
 | | | 
 
-[Mobile device - showing message](../images/readmeImages/iPadMessage.png)
+[Mobile device - showing message](../images/readmeImages/mobileMessage.png)
 
-[Tablet device - not showing message](../images/readmeImages/mobileMessage.png)
+[Tablet device - not showing message](../images/readmeImages/iPadMessage.png)
 
 
 

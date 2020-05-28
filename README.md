@@ -73,7 +73,7 @@ Adding in the information bar at the top of the game.
 Modals guiding the user through to the game and offering personalisation on the way.
 Having a 'display cards' modal as clearly the cards were too small to actually read.
 As the the screen didn't offer room for 16 cards, I have now used 12 cards in all difficulty modes.
-The change in the games difficulties meant I needed to add in a modal where the players could choose a difficulty.
+The change in the game's difficulties meant I needed to add in a modal where the players could choose a difficulty.
 I opted to put the difficulty on the modal rather than the bar at the top of the game so players couldn't change halfway through a game.
 On the help page, the text is now in containers to show clear steps for enjoying the game.
 
@@ -159,6 +159,7 @@ Display Cards Modal
 2. Players can press a button to play again.
 
 Music
+
 There is music through the game. There are 4 main sounds:
 1. Intro and welcome music.
 2. Game music.
