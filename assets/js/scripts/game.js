@@ -116,14 +116,14 @@ $("#hardButton").click(function () {
                 const firstHalfHardCard = response.cards.length / 2;
 
                 do {
-                    let hardCard1 = response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes;
+                    hardCard1 = response.cards[Math.floor(Math.random() * firstHalfHardCard)].imageUrlHiRes;
                 } while (hardCard1 == apiResponseArray[0]);
                 {
                     apiResponseArray.unshift(hardCard1);
                 }
 
                 do {
-                    let hardCard2 = response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes;
+                    hardCard2 = response.cards[Math.floor(Math.random() * (response.cards.length - firstHalfHardCard) + firstHalfHardCard)].imageUrlHiRes;
                 } while (hardCard2 == apiResponseArray[0]);
                 {
                     apiResponseArray.unshift(hardCard2);
