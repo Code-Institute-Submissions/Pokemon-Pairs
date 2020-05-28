@@ -117,7 +117,7 @@ All | Sender receives an automatic reply | True
 All | The website owners receive an email | True
 | | |
 
-[Account holder email](images/readmeImages/accountHolderEmail.png)
+[Account holder email](./images/readmeImages/accountHolderEmail.png)
 
 [Player auto email](images/readmeImages/playerAutoEmail.png)
 
