@@ -15,13 +15,79 @@ The jasmine tests are available on the repository. They focus on the output of s
 
 ## General Testing
 
+### Responsive Design
+
+Mobile portrait
+
+Page      | Desired outcome | Result 
+--------- | --------------- | ---
+Play!  | Design is responsive and readable | True
+Contact | Design is responsive and readable | True
+Help | Design is responsive and readable | True
+| | | 
+
+
+Mobile landscape
+
+Page      | Desired outcome | Result 
+--------- | --------------- | ---
+Play!  | Design is responsive and readable | True
+Contact | Design is responsive and readable | True
+Help | Design is responsive and readable | True
+| | | 
+
+iPad portrait
+
+Page      | Desired outcome | Result 
+--------- | --------------- | ---
+Play!  | Design is responsive and readable | True
+Contact | Design is responsive and readable | True
+Help | Design is responsive and readable | True
+| | | 
+
+iPad landscape
+
+Page      | Desired outcome | Result 
+--------- | --------------- | ---
+Play!  | Design is responsive and readable | True
+Contact | Design is responsive and readable | True
+Help | Design is responsive and readable | True
+| | | 
+
+iPad Pro portrait
+
+Page      | Desired outcome | Result 
+--------- | --------------- | ---
+Play!  | Design is responsive and readable | True
+Contact | Design is responsive and readable | True
+Help | Design is responsive and readable | True
+| | | 
+
+iPad Pro landscape
+
+Page      | Desired outcome | Result 
+--------- | --------------- | ---
+Play!  | Design is responsive and readable | True
+Contact | Design is responsive and readable | True
+Help | Design is responsive and readable | True
+| | | 
+
+Laptop screens
+
+Page      | Desired outcome | Result 
+--------- | --------------- | ---
+Play!  | Design is responsive and readable | True
+Contact | Design is responsive and readable | True
+Help | Design is responsive and readable | True
+| | | 
+
 ### Navbar
 
 User story - As a player, I want to easily navigate through the website so I can see all of the pages.
 
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
-All | All        | Design is as intended on the wireframes | True
+All     | Design is as intended on the wireframes | True
 All pages | All screens        | Navbar link embedded in the logo takes us to the "Index" page| True
 | | |
 Index page | All screens        | Navbar link "Play!" takes the user to the "Play!(Index)" page| True
@@ -51,9 +117,11 @@ All | Sender receives an automatic reply | True
 All | The website owners receive an email | True
 | | |
 
-[Account holder email](assets/images/accountHolderEmail.png)
-[Player auto email](assets/images/playerAutoEmail.png)
-[Successful email sent](assets/images/feedbackReceived.png)
+[Account holder email](assets/images/readmeImages/accountHolderEmail.png)
+
+[Player auto email](assets/images/readmeImages/playerAutoEmail.png)
+
+[Successful email sent](assets/images/readmeImages/feedbackReceived.png)
 
 Is the user story achievable? Yes.
 
@@ -83,43 +151,106 @@ All| Clicking no mutes the music | True
 
 
 Welcome Modal
+
 4. User story - As a player, I want to personalise the game to me by giving the webpage data (entering my name).
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+
+Screen      | Desired outcome | Result 
+----------- | --------------- | ---
+All| The modal opens at the correct time | True
+All|The modal closes when Enter is clicked | True
+All| Player can fill in the field to input their name| True
+All| Intro music plays| True
+| | | 
+
+Is the user story achievable? Yes.
+
 Difficulty Modal
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+
+Screen      | Desired outcome | Result 
+----------- | --------------- | ---
+All| The modal opens at the correct time | True
+All|The modal closes when any of the buttons are clicked | True
+All| See instructions takes the player to the Help page| True
+All| Contact Us takes the player to the contact page | True
+All| The message contains the player's name or guest | True
+All| Intro music plays| True
+| | | 
+
+
 Loading Modal
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+
+Screen      | Desired outcome | Result 
+----------- | --------------- | ---
+All| The modal opens at the correct time | True
+All|The modal closes when the start game is clicked| True
+All| The start button appears when the game has loaded | True
+All| The loading gif plays when the modal opens | True
+All| Intro music plays| True
+Mobile devices only | Screens smaller than an iPad have a message encouraging to play landscape | True
+
+[Mobile device - showing message](assets/images/readmeImages/iPadMessage.png)
+[Tablet device - not showing message](assets/images/readmeImages/mobileMessage.png)
+
+| | | 
+
 Finished Modal
+
 6. User story - As a player, I want to see how well I have done at the end of the game by reviewing the scores from my game.
 7. User story - As a player, I to be able to see if I have improved by looking at my previous scores.
 8. User story - As a player, I want to able to choose whether I play again, so I can beat my previous score.
 
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+Screen      | Desired outcome | Result 
+----------- | --------------- | ---
+All| The scores from the current game are displayed. | True
+All| The top three previous scores are displayed or blank. | True
+All| Clicking the See Cards button will open the Display Cards Modal.| True
+All| Clicking the play again button will take the player to the Difficulty Modal. | True
+All| Clicking any of the buttons will close the modal.| True
+All| End of game music plays.| True
+| | | 
+
+Are the user stories achievable? Yes.
 
 
 Display Cards Modal 
 9. User story - As a player, I want to able to see the cards I have previously used, so I can read the details easily.
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+
+Screen      | Desired outcome | Result 
+----------- | --------------- | ---
+All| The cards from the game are displayed and are large enough to see the details | True
+All| End of game music plays.| True
+| | | 
+
+Is the user story achievable? True
+
+
 ### Game Play
 
 Game information
+
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
 Play! | Screen sizes | Timer will start when the game starts | True
 Play!| Screen sizes | Timer will end when the game ends | True
 Play! | Screen sizes | Timer will reset at the start of a new game | True
 Play! | Screen sizes | Timer will display a continuous record of the length of the game | True
+Play! | The correct difficulty is highlighted based on the player's choice| True
 Play! | Mobile portrait | Game information section will stick to the top of the page when scrolling. |True
 
-Game functionality
-Page      | Screen      | Desired outcome | Result 
---------- | ----------- | --------------- | ---
+| | | 
 
+Game functionality
+
+Screen      | Desired outcome | Result 
+----------- | --------------- | ---
+All| Game music plays| True
+All| Cards rotate when clicked | True
+All| Cards rotate back when an unsuccessful pair is chosen | True
+All| Cards disappear slowly when a pair is found | True
+All| Pair music is played when a pair is found | True
+All| All cards are shown when all the pairs are found| True
+All| The finished modal opens when the pairs are found | True
+All| Double clicking the same card has no effect on the game. | True
 
 ### Sound functionality
 

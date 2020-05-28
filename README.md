@@ -1,6 +1,6 @@
 # Pokémon Pairs!
 
-![picture](/assets/images/test_response2.png)
+![picture](/assets/images/readmeImages/test_response2.png)
 
 
 ### [Live page](https://cgpalmer.github.io/Pokemon-Pairs/)
@@ -49,7 +49,6 @@ ___
 <span id="UX"></span>
 ## UX
 
-   + The “Home” page will have details about the club and what to expect from the meetings. It will contain a section with information for people to trial the book club. It will also have the prices for each subscription at the bottom of the page.
 <span id="userStories"></span> 
 ### User Stories
 
@@ -83,7 +82,7 @@ This is for comparison of the changes between the two.
 
 [Wireframes](assets/files/wireFrames.pdf)
 
-[Responsive images of actual Sight](assets/files/responsiveImages.pdf)
+[Responsive images of actual site](assets/files/responsiveImages.pdf)
 ___
 <span id="features"></span>
 ## Features
@@ -214,7 +213,26 @@ ___
 <span id="testing"></span>
 ## Testing
 
+I have posted a link for more detailed testing. 
+
 Please find the link to the test document here: [Link to the testing page](assets/files/README-Testing.md)   
+
+Interesting bugs
+
+1. Using template literals meant that I couldn't use jQuery selectors as normal. Instead, I had to bind them to a static 
+element on the page. This meant that when I clicked outside of a card, but within the static element, it still animated the
+cards and confused the game. I noticed that even though the animation was triggered, the page didn't identify an element.
+Therefore I put in an if statement saying to only trigger the animation if a element was clicked and to ignore it if it was
+null.
+
+2. In hard mode, you receive two images of the same pokemon to make it more difficult. However, sometimes you got the same
+images. This was because it drew one card from each set. The early sets had little or no variation. Therefore, I had to 
+put in a function for it to select one card from the beginning of the repsonse and other from the second half. I then put in
+a do while loop to alway check if each link was the same as the one that had just been pushed.
+
+4. The browser will put a random padding on a modal when opened. I still haven't found an elegant 
+solution to this as it is inconsistent. 
+
 
 ___
 <span id="responsiveDesign"></span>
@@ -297,7 +315,7 @@ ___
 ## Credit
 
 <span id="#tutorials"></span>
-Tutorials
+<ins>Tutorials</ins>
 
 For all of the following tutorials, I have edited the code necessary for my project. The links provide
 the source of my initial inspiration. 
@@ -312,6 +330,7 @@ Using the Pokémon Cards API - Making the initial Ajax Calls:
 https://www.youtube.com/watch?v=5zcSpVKxMao&t=1344s
 
 How to toggle sounds playing:
+
 //https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
 
 How to play sound when clicking a button:
@@ -320,7 +339,7 @@ How to play sound when clicking a button:
 
 
 <span id="media"></span>
-Media
+<ins>Media</ins>
 
 The Pokémon cards are taken from an api found at:
 https://pokemontcg.io/
@@ -344,7 +363,7 @@ https://www.youtube.com/watch?v=-BKfhq_TtcE
 
 
 <span id="acknowledgements"></span>
-Acknowledgements  
+<ins>Acknowledgements</ins>  
 
 Through discussion with my mentor, we decided a matching pairs game would give me an appropriate challenge.
 I received inspiration from playing Pokémon Go. I thought a great way to give the matching game a purpose would 
@@ -367,6 +386,13 @@ thing at once - does not interrupt or break the game.
 
 <span id="improvements"></span>
 ### Improvements
+
+API
+   + The api I have used gave a replacement image of the back of a pokemon card rather than the card. However because the
+     the api still responded and gave an image, I was unable to capture the error and put in a contingency. I would to do that
+     in the future. 
+   + I have had to use the heroku CORS anywhere fix but I am aware that it is not a stable and secure position. In the future,
+     I would like to have full access to the API which 'quick fixes'.
 
 JavaScript code
    + In future I want to explore using switch cases.
