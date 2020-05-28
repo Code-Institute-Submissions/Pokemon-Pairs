@@ -319,8 +319,10 @@ https://www.ionos.co.uk/tools/favicon-generator
 The theme songs we taken from Youtube. The main theme at the beginning of the game is from this link:
 https://www.youtube.com/watch?v=PxzY57ImZdQ
 
-The rest of the music and sound effects come from this link:
+The rest of the music and sound effects come from these links:
 https://www.youtube.com/watch?v=axKDCZd4Mfc
+
+https://www.youtube.com/watch?v=-BKfhq_TtcE
 
 
 <span id="acknowledgements"></span>
