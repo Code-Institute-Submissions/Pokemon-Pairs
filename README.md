@@ -94,10 +94,10 @@ ___
 
 1. Links to all the other pages allows the user to navigate seamlessly between pages.
 2. The navbar is consistent on every page and therefore a user can navigate to any part of the website from anywhere.
-3. The “Help” link will allow users to go to the “Help” page, where it will explain the rules of the game.
-4. The “Contact” link will allow users to go to the “Contact” page, where they can send off a feedback form.
+3. The “Help” link will allow players to go to the “Help” page, where it will explain the rules of the game.
+4. The “Contact” link will allow players to go to the “Contact” page, where they can send off a feedback form.
 5. The "Play!" link will take the user to the game page. 
-6. In mobile view the navbar is collapsed allowing the users more space on the screen. The users can click the “hamburger” icon and still receive the full menu as a drop down function.
+6. In mobile view the navbar is collapsed allowing the players more space on the screen. The players can click the “hamburger” icon and still receive the full menu as a drop down function.
 
 <ins>Help Page</ins>
 
@@ -114,7 +114,7 @@ ___
    + User's email to which they will receive and auto-reply.
    + User's have to check whether you have permission to use the email.
    + A text area to type in a message.
-3. There is a clear button for users to press and submit their feedback.
+3. There is a clear button for players to press and submit their feedback.
 4. A modal will appear 
 
 <ins>Play! Page
@@ -130,15 +130,15 @@ Game
 1. Each game will have 12 cards to choose from.
 
 Modals
-1.	Volume Modal – Users can choose whether they would like the music on or off.
+1.	Volume Modal – Players can choose whether they would like the music on or off.
 
 Welcome Modal 
-1.	Users can enter their name to personalise the experience.
+1.	Players can enter their name to personalise the experience.
 2.	A speaker icon which will allow the user to mute/unmute the music.
 
 Difficulty Modal
-1.	Users receive a welcome with their personalised name.
-2.	Users can select which difficulty they would like the game to be.
+1.	Players receive a welcome with their personalised name.
+2.	Players can select which difficulty they would like the game to be.
 3.	Alternatively, there is a button to take the user to the “Instructions” page.
 4.	Alternatively, there is a button to take the user to the “Contact” page.
 5.	A speaker icon which will allow the user to mute/unmute the music.
@@ -149,14 +149,14 @@ Loading Modal
 4.	A speaker icon which will allow the user to mute/unmute the music.
 
 Finished Modal
-1.	Users can see their scores from the game (moves taken and how long it took).
-2.	Users can see their previous top 3 scores (moves taken and how long it took).
-3.	There is a button allowing users to play again immediately.
-4.	There is a button allowing users to see the cards that have featured in each game.
+1.	Players can see their scores from the game (moves taken and how long it took).
+2.	Players can see their previous top 3 scores (moves taken and how long it took).
+3.	There is a button allowing players to play again immediately.
+4.	There is a button allowing players to see the cards that have featured in each game.
 
 Display Cards Modal
-1. Users can see all the cards from the game in much more detail.
-2. Users can press a button to play again.
+1. Players can see all the cards from the game in much more detail.
+2. Players can press a button to play again.
 
 Music
 There is music through the game. There are 4 main sounds:
@@ -187,7 +187,7 @@ These following design features are in place to stop players from unintentionall
 + Clicking the same card twice will not increase the amount of moves recorded. 
 + Cards will disappear when a pair is chosen to prevent players from clicking them again. 
 + User cannot click other cards whilst a pair is diappearing or the wrong pair is resetting.
-+ Users cannot swap difficulties halfway through a game. 
++ players cannot swap difficulties halfway through a game. 
 + User must fill in the required forms when sending feedback.
 + User must confirm that they have permission to use an email address. 
 + User will receive a message if the game reaches near its api limit in one session.
@@ -204,7 +204,9 @@ Languages used
 Bootstrap – https://getbootstrap.com/  
 The project uses Bootstrap to simplify the process of building a grid layout, implementing forms, cards, and creating buttons. Bootstrap was also used for responsive design. 
 
-emailJS - I have used emailJS to allow the users to contact the game producers and give feedback.
+emailJS - I have used emailJS to allow the players to contact the game producers and give feedback.
+
+https://www.emailjs.com/
 
 JQuery – https://jquery.com/  
 
@@ -258,7 +260,7 @@ There are a few major resposive choices, detailed below.
 
    Small mobile and large mobile - portrait
    The card layout is in a 2 x 6 grid.
-   The game information header will also stay at the top of the users screen.
+   The game information header will also stay at the top of the players screen.
 
    iPad, Ipad Pro - portrait
    The card layout is in a 4 x 3 grid.
@@ -314,7 +316,7 @@ ___
 <span id="credit"></span>
 ## Credit
 
-<span id="#tutorials"></span>
+<span id="tutorials"></span>
 <ins>Tutorials</ins>
 
 For all of the following tutorials, I have edited the code necessary for my project. The links provide
@@ -375,7 +377,7 @@ ___
 ## Project Evaluation
 
 I believe that the project meets its design purpose. The site is simple to navigate with intuitive modals to help guide
-younger users through the game. It gives clear instructions so that the users do not have to think too much about which
+younger players through the game. It gives clear instructions so that the players do not have to think too much about which
 button to click to get to the game. Instead of using link names like "Home", I have used Play! to help understanding of
 where the game is located.
 
