@@ -30,9 +30,6 @@ describe("Show which theme song has been chosen", function() {
     
 });
 
-
-
-
 describe("Show which theme modal is currently active", function() {
     
     beforeEach(function() {
