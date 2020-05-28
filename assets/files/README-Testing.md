@@ -6,7 +6,7 @@ I have used a combination of Jasmine Testing, bug fixes and a final project chec
 ## Bugs
 
 I have been testing bugs throughout the project. I kept a lot of commit which detailed the bug and the fix.
-Please find a full list here:- [Link to bugs page](assets/files/README-bugList.md)  
+Please find a full list here:- [Link to bugs page](README-bugList.md)  
 
 
 ## Jasmine Testing
