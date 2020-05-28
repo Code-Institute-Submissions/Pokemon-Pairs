@@ -87,7 +87,7 @@ User story - As a player, I want to easily navigate through the website so I can
 
 Page      | Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- | ---
-All     | Design is as intended on the wireframes | True
+All     | All screens | Design is as intended on the wireframes | True
 All pages | All screens        | Navbar link embedded in the logo takes us to the "Index" page| True
 | | |
 Index page | All screens        | Navbar link "Play!" takes the user to the "Play!(Index)" page| True
