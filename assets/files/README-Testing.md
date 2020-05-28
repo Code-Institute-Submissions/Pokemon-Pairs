@@ -187,11 +187,13 @@ All| The start button appears when the game has loaded | True
 All| The loading gif plays when the modal opens | True
 All| Intro music plays| True
 Mobile devices only | Screens smaller than an iPad have a message encouraging to play landscape | True
+| | | 
 
 [Mobile device - showing message](assets/images/readmeImages/iPadMessage.png)
+
 [Tablet device - not showing message](assets/images/readmeImages/mobileMessage.png)
 
-| | | 
+
 
 Finished Modal
 
