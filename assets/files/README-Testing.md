@@ -153,7 +153,7 @@ All| Clicking no mutes the music | True
 
 Welcome Modal
 
-4. User story - As a player, I want to personalise the game to me by giving the webpage data (entering my name).
+User story - As a player, I want to personalise the game to me by giving the webpage data (entering my name).
 
 Screen      | Desired outcome | Result 
 ----------- | --------------- | ---
@@ -199,9 +199,9 @@ Mobile devices only | Screens smaller than an iPad have a message encouraging to
 
 Finished Modal
 
-6. User story - As a player, I want to see how well I have done at the end of the game by reviewing the scores from my game.
-7. User story - As a player, I to be able to see if I have improved by looking at my previous scores.
-8. User story - As a player, I want to able to choose whether I play again, so I can beat my previous score.
+User story - As a player, I want to see how well I have done at the end of the game by reviewing the scores from my game.
+User story - As a player, I to be able to see if I have improved by looking at my previous scores.
+User story - As a player, I want to able to choose whether I play again, so I can beat my previous score.
 
 Screen      | Desired outcome | Result 
 ----------- | --------------- | ---
@@ -217,7 +217,8 @@ Are the user stories achievable? Yes.
 
 
 Display Cards Modal 
-9. User story - As a player, I want to able to see the cards I have previously used, so I can read the details easily.
+
+User story - As a player, I want to able to see the cards I have previously used, so I can read the details easily.
 
 Screen      | Desired outcome | Result 
 ----------- | --------------- | ---
@@ -242,7 +243,6 @@ Play! | All | The correct difficulty is highlighted based on the player's choice
 Play! | Mobile portrait | Game information section will stick to the top of the page when scrolling. |True
 Play! |All | When the page is refreshed the player's scores are remembered. |True
 Play! | Mobile portrait | When the page is refreshed the player's name is remembered. |True
-
 | | | 
 
 Game functionality
