@@ -127,7 +127,8 @@ Is the user story achievable? Yes.
 
 
 ### Help Page
-2. User story - As a player, I want to find the help page so I can learn how to play the game.
+User story - As a player, I want to find the help page so I can learn how to play the game.
+
 Screen      | Desired outcome | Result 
 --------- | ----------- | --------------- 
 All | Is the text clear and easy to read? | True
