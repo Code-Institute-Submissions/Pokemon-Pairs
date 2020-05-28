@@ -174,6 +174,7 @@ All| See instructions takes the player to the Help page| True
 All| Contact Us takes the player to the contact page | True
 All| The message contains the player's name or guest | True
 All| Intro music plays| True
+All| Usage warning appears when a certain amount of api responses have been calculated. | True
 | | | 
 
 
@@ -255,6 +256,8 @@ All| Pair music is played when a pair is found | True
 All| All cards are shown when all the pairs are found| True
 All| The finished modal opens when the pairs are found | True
 All| Double clicking the same card has no effect on the game. | True
+All| Backup cards are selected if the api hasn't responded in 30 seconds. | True
+
 
 ### Sound functionality
 
