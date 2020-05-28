@@ -196,7 +196,7 @@ Jasmine testing Framework - https://jasmine.github.io/
 <span id="testing"></span>
 ### Testing
 
-Please find the link to the test document here: [Link to testing page]()   
+Please find the link to the test document here: [Link to testing page](README.md)   
 
 
 ___
