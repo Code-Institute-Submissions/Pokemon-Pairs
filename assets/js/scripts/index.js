@@ -356,8 +356,9 @@ $("#startGame").click(function () {
 //Closing 'play again' modal
 $("#playAgainButton").click(function () {
     whichModal = 4;
-
     modalSelectionFunction(whichModal);
+    closeModal(modalSelected);
+
 });
 
 // Calculating the number of ajax calls previously made and alerting the user if they are close to the limit
