@@ -357,6 +357,7 @@ $("#startGame").click(function () {
 $("#playAgainButton").click(function () {
     whichModal = 4;
     modalSelectionFunction(whichModal);
+    
     closeModal(modalSelected);
 
 });
