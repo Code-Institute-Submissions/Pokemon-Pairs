@@ -484,6 +484,15 @@ h5 {
         margin-top: 2.5rem;
     }
 
+    #timeResultHeader, #moveResultHeader {
+    text-decoration: underline;
+    font-size: 2.5rem;
+    }
+
+    .result-wrapper, .result-wrapper h6 {
+    font-size: 2rem;
+    }
+
     .display-cards {
         margin: 10px;
         height: 36vh;
