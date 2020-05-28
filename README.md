@@ -49,8 +49,6 @@ ___
 <span id="UX"></span>
 ## UX
 
-
-
    + The “Home” page will have details about the club and what to expect from the meetings. It will contain a section with information for people to trial the book club. It will also have the prices for each subscription at the bottom of the page.
 <span id="userStories"></span> 
 ### User Stories
@@ -65,6 +63,26 @@ ___
 8. As a player, I want to able to choose whether I play again, so I can beat my previous score.
 9. As a player, I want to able to see the cards I have previously used, so I can read the details easily.
 
+### Wireframes
+
+Wireframes have been made using Balsamiq. I overestimated how much screen retail I would have during this project and there some of
+the designs have changed. I have also included many more modals than in the original wireframes because of my target 
+audience.
+
+Some of the changes include:
+Adding in the information bar at the top of the game.
+Modals guiding the user through to the game and offering personalisation on the way.
+Having a 'display cards' modal as clearly the cards were too small to actually read.
+As the the screen didn't offer room for 16 cards, I have now used 12 cards in all difficulty modes.
+The change in the games difficulties meant I needed to add in a modal where the players could choose a difficulty.
+I opted to put the difficulty on the modal rather than the bar at the top of the game so players couldn't change halfway through a game.
+On the help page, the text is now in containers to show clear steps for enjoying the game.
+
+Please find my wireframes here, along with images of the game at each stage across a variety of responsive devices.
+This is for comparison of the changes between the two. 
+
+[Wireframes](assets/files/wireFrames.pdf) 
+[Responsive images of actual Sight](assets/files/responsiveImages.pdf)
 ___
 <span id="features"></span>
 ## Features
@@ -139,14 +157,16 @@ Finished Modal
 3.	There is a button allowing users to play again immediately.
 4.	There is a button allowing users to see the cards that have featured in each game.
 
+Display Cards Modal
+1. Users can see all the cards from the game in much more detail.
+2. Users can press a button to play again.
 
-
- 
-
-
-
-
-
+Music
+There is music through the game. There are 4 main sounds:
+1. Intro and welcome music.
+2. Game music.
+3. Successful pair found music.
+4. Winning the game music.
 
 
 <span id="featuresLeftToImplement"></span>
