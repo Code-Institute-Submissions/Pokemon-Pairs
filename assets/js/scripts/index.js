@@ -146,7 +146,7 @@ $(document).ready(function () {
                 playThemeMusicOnMute();
             }
 
-            let time = setTimeout(removeJumbo, 2000);
+            let time = setTimeout(removeJumbo, 1500);
             function removeJumbo() {
                 $(".jumbotron").slideUp("slow");
                 $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
