@@ -148,8 +148,9 @@ $(document).ready(function () {
 
             let time = setTimeout(removeJumbo, 2000);
             function removeJumbo() {
-                $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
                 $(".jumbotron").slideUp("slow");
+                $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
+                
 
                 let welcomeModalTime = setTimeout(revealWelcomeModal, 750);
                 function revealWelcomeModal() {
@@ -169,6 +170,7 @@ $(document).ready(function () {
         }
         $("#playerName").html(sessionStorage.getItem("playerName"));
         $(".jumbotron").slideUp();
+        $("#gridItemHeader, #gridItemGameInfo, #gridItemGame").removeClass("display");
         whichModal = 3;
 
         modalSelectionFunction(whichModal);
